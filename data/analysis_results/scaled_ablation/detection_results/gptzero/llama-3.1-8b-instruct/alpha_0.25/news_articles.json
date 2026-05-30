@@ -1,0 +1,3011 @@
+{
+  "detector": "gptzero",
+  "model": "llama-3.1-8b-instruct",
+  "alpha": 0.25,
+  "domain": "news_articles",
+  "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "intervention": {
+    "mode": "partial_ablate",
+    "direction_path": "data/analysis_results/scaled_ablation/directions/llama-3.1-8b-instruct/v_cross_L1.pt",
+    "layer": 1,
+    "alpha": 0.25,
+    "tag": "v_cross_L1_partial_ablate_alpha0.25"
+  },
+  "total_samples": 10,
+  "results": [
+    {
+      "id": "strategy_A-news_articles-instruct-6",
+      "text_length": 2017,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.9995918553436042,
+        "average_generated_prob": 1,
+        "class_probabilities": {
+          "human": 0,
+          "ai": 0.9999999999999999,
+          "mixed": 0
+        },
+        "predicted_class": "ai",
+        "confidence_score": 0.9999999999999999,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                  "start_sentence_index": 2,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                  "start_sentence_index": 4,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                  "start_sentence_index": 6,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.850090677245877
+                },
+                {
+                  "start_sentence_index": 9,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.850090677245877
+                }
+              ],
+              "completely_generated_prob": 0.9995918553436042,
+              "average_generated_prob": 1,
+              "predicted_class": "ai",
+              "confidence_score": 0.9999999999999999,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.8255451315102917,
+                  "sentence": "Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.17445486848970826,
+                    "ai": 0.764030042156689,
+                    "paraphrased": 0.06151508935360271
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8787391258037611,
+                  "sentence": "This year, there will also be silence.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.12126087419623886,
+                    "ai": 0.8129938356284001,
+                    "paraphrased": 0.06574529017536103
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9323112895167522,
+                  "sentence": "Six days after the devastating Boston Marathon bombings left the world in shock and mourning, thousands of runners will gather at the start line in London to show their solidarity with the victims, their families, and the entire running community.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0676887104832477,
+                    "ai": 0.8683246309435022,
+                    "paraphrased": 0.06398665857325003
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9978226202231596,
+                  "sentence": "The event is being marked by a special minute-long silence before the race begins, to pay tribute to those who lost their lives in Boston and to the courage of those who survived.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.002177379776840384,
+                    "ai": 0.9492394855650086,
+                    "paraphrased": 0.048583134658151034
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9993583825804362,
+                  "sentence": "In addition to the minute-long silence, participants are also encouraged to wear black solidarity ribbons to show their support for the victims of the tragedy.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0006416174195638553,
+                    "ai": 0.9642963105811725,
+                    "paraphrased": 0.035062071999263686
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9996684315429298,
+                  "sentence": "The black ribbons will serve as a visible reminder of the unity of the running community and the solidarity of all those who are affected by the tragedy in Boston.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0003315684570701712,
+                    "ai": 0.9695129765578768,
+                    "paraphrased": 0.030155454985053027
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9995922469415846,
+                  "sentence": "As the runners set off on their 26.2-mile journey through the streets of London, they'll be doing so with an increased sense of security than in previous years.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0004077530584153659,
+                    "ai": 0.9694535321179487,
+                    "paraphrased": 0.030138714823635893
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9995624596589269,
+                  "sentence": "With the Boston Marathon bombings serving as a tragic reminder of the reality of terrorism and the need for vigilance, the police and security services are taking no chances in London.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.00043754034107310123,
+                    "ai": 0.9673419962205895,
+                    "paraphrased": 0.03222046343833743
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9993260039037107,
+                  "sentence": "There will be increased searches at the start and finish lines and a heightened police presence on the streets to ensure that the runners and spectators are safe.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0006739960962892139,
+                    "ai": 0.9693131845973955,
+                    "paraphrased": 0.030012819306315275
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9876892893217072,
+                  "sentence": "The London Marathon, which is being held just before the anniversary of the 2012 Olympics in London, will provide a valuable test of the city's ability to stage a big international sporting event with complete confidence.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.012310710678292855,
+                    "ai": 0.9501602009396991,
+                    "paraphrased": 0.03752908838200807
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9876615241346179,
+                  "sentence": "The success of the London 2012 Olympics in staging a safe and successful event will be a valuable reference point for the organizers of the London Marathon and the authorities in terms of staging security.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.012338475865382026,
+                    "ai": 0.9464795171794067,
+                    "paraphrased": 0.04118200695521124
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.997361319376731,
+                  "sentence": "They are confident that they will be able to do the same in London and the confidence is high that the event will be a success.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0026386806232689963,
+                    "ai": 0.9592164739234105,
+                    "paraphrased": 0.03814484545332056
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0,
+                "ai": 0.9999999999999999,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "ai": 0.9999999999999999,
+                  "mixed": 0,
+                  "human": 0
+                }
+              },
+              "subclass": {
+                "ai": {
+                  "predicted_class": "pure_ai",
+                  "result_message": "",
+                  "confidence_score": 1,
+                  "confidence_category": "high",
+                  "class_probabilities": {
+                    "pure_ai": 1,
+                    "ai_paraphrased": 0
+                  },
+                  "confidence_scores_raw": {
+                    "identity": {
+                      "pure_ai": 1,
+                      "ai_paraphrased": 0
+                    }
+                  },
+                  "confidence_thresholds_raw": {
+                    "identity": {
+                      "ai_paraphrased": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      },
+                      "pure_ai": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      }
+                    }
+                  }
+                }
+              },
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written by AI.",
+              "result_sub_message": null,
+              "document_classification": "AI_ONLY",
+              "inputText": "Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence.\n\nSix days after the devastating Boston Marathon bombings left the world in shock and mourning, thousands of runners will gather at the start line in London to show their solidarity with the victims, their families, and the entire running community. The event is being marked by a special minute-long silence before the race begins, to pay tribute to those who lost their lives in Boston and to the courage of those who survived.\n\nIn addition to the minute-long silence, participants are also encouraged to wear black solidarity ribbons to show their support for the victims of the tragedy. The black ribbons will serve as a visible reminder of the unity of the running community and the solidarity of all those who are affected by the tragedy in Boston.\n\nAs the runners set off on their 26.2-mile journey through the streets of London, they'll be doing so with an increased sense of security than in previous years. With the Boston Marathon bombings serving as a tragic reminder of the reality of terrorism and the need for vigilance, the police and security services are taking no chances in London. There will be increased searches at the start and finish lines and a heightened police presence on the streets to ensure that the runners and spectators are safe.\n\nThe London Marathon, which is being held just before the anniversary of the 2012 Olympics in London, will provide a valuable test of the city's ability to stage a big international sporting event with complete confidence. The success of the London 2012 Olympics in staging a safe and successful event will be a valuable reference point for the organizers of the London Marathon and the authorities in terms of staging security. They are confident that they will be able to do the same in London and the confidence is high that the event will be a success.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-5",
+      "text_length": 1593,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.9980043359682266,
+        "average_generated_prob": 1,
+        "class_probabilities": {
+          "human": 0,
+          "ai": 1,
+          "mixed": 0
+        },
+        "predicted_class": "ai",
+        "confidence_score": 1,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                  "start_sentence_index": 2,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                  "start_sentence_index": 4,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.850090677245877
+                },
+                {
+                  "start_sentence_index": 7,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.8181818033057853
+                }
+              ],
+              "completely_generated_prob": 0.9980043359682266,
+              "average_generated_prob": 1,
+              "predicted_class": "ai",
+              "confidence_score": 1,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.9598121586351024,
+                  "sentence": "More than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.04018784136489756,
+                    "ai": 0.8592522560442959,
+                    "paraphrased": 0.10055990259080654
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9930165997880677,
+                  "sentence": "Many of the displaced civilians have moved to the towns of Bannu and Lakki Marwat, where they are seeking refuge from the ongoing military operation in the region.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0069834002119323205,
+                    "ai": 0.8747851710102075,
+                    "paraphrased": 0.1182314287778602
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9919743082825436,
+                  "sentence": "As the conflict intensifies, it is reported that over 250 insurgents have been killed by the Pakistani military in the region of North Waziristan, where the operation is focused on rooting out suspected militants hiding in a tribal region near the Afghanistan border.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.00802569171745632,
+                    "ai": 0.8917244531593139,
+                    "paraphrased": 0.10024985512322976
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9950464406042092,
+                  "sentence": "The army's operation, which was launched after the Taliban refused to disarm or negotiate a peace treaty, has targeted several suspected militant strongholds in North Waziristan and it is thought that the Pakistani Taliban is among the groups being targeted.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.004953559395790856,
+                    "ai": 0.8932629061255063,
+                    "paraphrased": 0.10178353447870288
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9955373730899417,
+                  "sentence": "The number of displaced civilians is expected to grow as the military continues to launch airstrikes in the area against suspected militant hideouts, where it is believed that a large number of militants are hiding.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.004462626910058287,
+                    "ai": 0.9074434692486298,
+                    "paraphrased": 0.08809390384131187
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9974003839611152,
+                  "sentence": "Many of the people who have been displaced are women and children, who are in need of food, shelter, and medicine.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.00259961603888474,
+                    "ai": 0.9185255431666478,
+                    "paraphrased": 0.07887484079446742
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.99671296032732,
+                  "sentence": "The government has said that it will do everything it can to help the people who have been displaced, but the number of aid workers who can reach the affected areas is limited due to the danger posed by the continuing military operation.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0032870396726799034,
+                    "ai": 0.9039110473997067,
+                    "paraphrased": 0.0928019129276133
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9983897849860399,
+                  "sentence": "It is not yet clear when the military operation will be over or if it has already been successful.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.001610215013960042,
+                    "ai": 0.9159408575302098,
+                    "paraphrased": 0.08244892745583013
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0,
+                "ai": 1,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "ai": 1,
+                  "mixed": 0,
+                  "human": 0
+                }
+              },
+              "subclass": {
+                "ai": {
+                  "predicted_class": "pure_ai",
+                  "result_message": "",
+                  "confidence_score": 1,
+                  "confidence_category": "high",
+                  "class_probabilities": {
+                    "pure_ai": 1,
+                    "ai_paraphrased": 0
+                  },
+                  "confidence_scores_raw": {
+                    "identity": {
+                      "pure_ai": 1,
+                      "ai_paraphrased": 0
+                    }
+                  },
+                  "confidence_thresholds_raw": {
+                    "identity": {
+                      "ai_paraphrased": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      },
+                      "pure_ai": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      }
+                    }
+                  }
+                }
+              },
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written by AI.",
+              "result_sub_message": null,
+              "document_classification": "AI_ONLY",
+              "inputText": "More than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday. Many of the displaced civilians have moved to the towns of Bannu and Lakki Marwat, where they are seeking refuge from the ongoing military operation in the region.\n\nAs the conflict intensifies, it is reported that over 250 insurgents have been killed by the Pakistani military in the region of North Waziristan, where the operation is focused on rooting out suspected militants hiding in a tribal region near the Afghanistan border. The army's operation, which was launched after the Taliban refused to disarm or negotiate a peace treaty, has targeted several suspected militant strongholds in North Waziristan and it is thought that the Pakistani Taliban is among the groups being targeted.\n\nThe number of displaced civilians is expected to grow as the military continues to launch airstrikes in the area against suspected militant hideouts, where it is believed that a large number of militants are hiding. Many of the people who have been displaced are women and children, who are in need of food, shelter, and medicine. The government has said that it will do everything it can to help the people who have been displaced, but the number of aid workers who can reach the affected areas is limited due to the danger posed by the continuing military operation.\n\nIt is not yet clear when the military operation will be over or if it has already been successful.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-2",
+      "text_length": 1933,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.9996149103102063,
+        "average_generated_prob": 1,
+        "class_probabilities": {
+          "human": 0,
+          "ai": 1,
+          "mixed": 0
+        },
+        "predicted_class": "ai",
+        "confidence_score": 1,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                  "start_sentence_index": 1,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                  "start_sentence_index": 3,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.850090677245877
+                },
+                {
+                  "start_sentence_index": 6,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.850090677245877
+                },
+                {
+                  "start_sentence_index": 9,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.8254776901813464
+                }
+              ],
+              "completely_generated_prob": 0.9996149103102063,
+              "average_generated_prob": 1,
+              "predicted_class": "ai",
+              "confidence_score": 1,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.9990136615779891,
+                  "sentence": "Airline Passengers Vent Frustrations Over Long Tarmac Delays at Capitol Hill Hearing",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.000986338422010894,
+                    "ai": 0.9614151126287563,
+                    "paraphrased": 0.037598548949232716
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9991961071391059,
+                  "sentence": "Airline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0008038928608940291,
+                    "ai": 0.9635125529871984,
+                    "paraphrased": 0.03568355415190754
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9996082606678733,
+                  "sentence": "The hearing was sponsored by advocates for the Safe Delay Act of 2009, a bill introduced by Senator Barbara Boxer (D-Calif) that aims to amend the Tarmac Delay Rule to give passengers the right to deplane after three hours in the event of a delay.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0003917393321265645,
+                    "ai": 0.966739401054616,
+                    "paraphrased": 0.03286885961325742
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9998414425532427,
+                  "sentence": "The proposed legislation, which has garnered the support of several prominent lawmakers and aviation industry officials, aims to provide relief to passengers who are stuck on planes on the ground for extended periods of time, often in uncomfortable and inhumane conditions.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.00015855744675733643,
+                    "ai": 0.968830177442451,
+                    "paraphrased": 0.03101126511079163
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9999108242346418,
+                  "sentence": "Speaking at the hearing, former American Airlines CEO Thomas Horton expressed his support for the three-hour limit, saying that it is a reasonable amount of time for passengers to be trapped on a plane before being allowed to exit.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 8.917576535808366e-05,
+                    "ai": 0.9718510402187241,
+                    "paraphrased": 0.02805978401591772
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9999020607579475,
+                  "sentence": "Horton stated, \"We've had passengers stuck on planes for five, six, even eight hours, it's not acceptable, and it's not safe.\"",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 9.793924205252894e-05,
+                    "ai": 0.9685677240702437,
+                    "paraphrased": 0.03133433668770375
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9998395929004392,
+                  "sentence": "Horton's comments were echoed by other passengers who spoke at the hearing, who recounted their own stories of being trapped on planes for hours, with limited access to food, water or restrooms.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.00016040709956086785,
+                    "ai": 0.9704562066859519,
+                    "paraphrased": 0.029383386214487283
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9998930644583793,
+                  "sentence": "One passenger described being stuck on a plane for five hours with a broken toilet, while another said she was forced to go to the bathroom on a trash bag when the one on the plane was broken.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0001069355416207371,
+                    "ai": 0.9719874812109358,
+                    "paraphrased": 0.027905583247443497
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9998487094407351,
+                  "sentence": "A third passenger said that she was dehydrated and disoriented because she didn't have access to water for so long.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.00015129055926486282,
+                    "ai": 0.9692130748038101,
+                    "paraphrased": 0.030635634636925015
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9998471860129283,
+                  "sentence": "However, not everyone at the hearing was in favor of the three-hour limit.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.00015281398707174052,
+                    "ai": 0.9674463754364897,
+                    "paraphrased": 0.03240081057643857
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9996566898101558,
+                  "sentence": "One witness, an airline industry consultant, said that the real issue is the routine delays that cause flights to be stuck on the ground for longer than expected.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.00034331018984413725,
+                    "ai": 0.9689994702557897,
+                    "paraphrased": 0.030657219554366115
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0,
+                "ai": 1,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "ai": 1,
+                  "mixed": 0,
+                  "human": 0
+                }
+              },
+              "subclass": {
+                "ai": {
+                  "predicted_class": "pure_ai",
+                  "result_message": "",
+                  "confidence_score": 1,
+                  "confidence_category": "high",
+                  "class_probabilities": {
+                    "pure_ai": 1,
+                    "ai_paraphrased": 0
+                  },
+                  "confidence_scores_raw": {
+                    "identity": {
+                      "pure_ai": 1,
+                      "ai_paraphrased": 0
+                    }
+                  },
+                  "confidence_thresholds_raw": {
+                    "identity": {
+                      "ai_paraphrased": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      },
+                      "pure_ai": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      }
+                    }
+                  }
+                }
+              },
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written by AI.",
+              "result_sub_message": null,
+              "document_classification": "AI_ONLY",
+              "inputText": "Airline Passengers Vent Frustrations Over Long Tarmac Delays at Capitol Hill Hearing\n\nAirline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates for the Safe Delay Act of 2009, a bill introduced by Senator Barbara Boxer (D-Calif) that aims to amend the Tarmac Delay Rule to give passengers the right to deplane after three hours in the event of a delay.\n\nThe proposed legislation, which has garnered the support of several prominent lawmakers and aviation industry officials, aims to provide relief to passengers who are stuck on planes on the ground for extended periods of time, often in uncomfortable and inhumane conditions. Speaking at the hearing, former American Airlines CEO Thomas Horton expressed his support for the three-hour limit, saying that it is a reasonable amount of time for passengers to be trapped on a plane before being allowed to exit. Horton stated, \"We've had passengers stuck on planes for five, six, even eight hours, it's not acceptable, and it's not safe.\"\n\nHorton's comments were echoed by other passengers who spoke at the hearing, who recounted their own stories of being trapped on planes for hours, with limited access to food, water or restrooms. One passenger described being stuck on a plane for five hours with a broken toilet, while another said she was forced to go to the bathroom on a trash bag when the one on the plane was broken. A third passenger said that she was dehydrated and disoriented because she didn't have access to water for so long.\n\nHowever, not everyone at the hearing was in favor of the three-hour limit. One witness, an airline industry consultant, said that the real issue is the routine delays that cause flights to be stuck on the ground for longer than expected.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-7",
+      "text_length": 1754,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.9935905130235135,
+        "average_generated_prob": 1,
+        "class_probabilities": {
+          "human": 0,
+          "ai": 1,
+          "mixed": 0
+        },
+        "predicted_class": "ai",
+        "confidence_score": 1,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                  "start_sentence_index": 1,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                  "start_sentence_index": 3,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                  "start_sentence_index": 5,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                  "start_sentence_index": 7,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.850090677245877
+                },
+                {
+                  "start_sentence_index": 10,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                  "start_sentence_index": 12,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.8181818033057853
+                }
+              ],
+              "completely_generated_prob": 0.9935905130235135,
+              "average_generated_prob": 1,
+              "predicted_class": "ai",
+              "confidence_score": 1,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.9993747435138078,
+                  "sentence": "Marcel Siem Held His Nerve Amid Late Charge from Francesco Molinari to Take Open de France",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.000625256486192055,
+                    "ai": 0.35110070122259757,
+                    "paraphrased": 0.6482740422912103
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9993980311864834,
+                  "sentence": "Le Golf National, France – In a dramatic finish to the Open de France, Marcel Siem held his nerve amid a late charge from Francesco Molinari to take the title – his first European Tour victory for eight years.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0006019688135166366,
+                    "ai": 0.3416404250702556,
+                    "paraphrased": 0.6577576061162278
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9993173493412497,
+                  "sentence": "The German finished on eight-under-par, one shot better than Molinari, who recorded an incredible 68 in the final round.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0006826506587502642,
+                    "ai": 0.36920201827839755,
+                    "paraphrased": 0.6301153310628522
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9997798962039042,
+                  "sentence": "Molinari's impressive performance pushed him up to 9-under-par, but Siem's steady approach ultimately paid off as he clinched the title with a one-shot margin.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.00022010379609576036,
+                    "ai": 0.3310149166162027,
+                    "paraphrased": 0.6687649795877015
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9994729921682179,
+                  "sentence": "The Italian, who recently won the British Open at Royal Lytham & Green last year, was looking to make it a double title win in a row but unfortunately couldn't make it happen.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0005270078317821136,
+                    "ai": 0.40217552832244885,
+                    "paraphrased": 0.5972974638457691
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9998106997656058,
+                  "sentence": "Marcel Siem was praised for his consistent play throughout the tournament, and his performance in the final round was impressive as he managed to maintain his lead until the end.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0001893002343942057,
+                    "ai": 0.37022811326859745,
+                    "paraphrased": 0.6295825864970084
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9996123510684964,
+                  "sentence": "It was his first European Tour title since 2004, and this win surely gave him the confidence boost he needed to continue competing at the top level.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0003876489315035919,
+                    "ai": 0.3674677275156495,
+                    "paraphrased": 0.632144623552847
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9996316996524806,
+                  "sentence": "Lee Westwood, who is known for his tough play, was involved in an injury scare during the Saturday's round.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0003683003475194216,
+                    "ai": 0.39123697775517335,
+                    "paraphrased": 0.6083947218973071
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9994880002320073,
+                  "sentence": "Luckily, he was fine and he was able to finish the tournament, although with a not-so-good score.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0005119997679926446,
+                    "ai": 0.38789636056990373,
+                    "paraphrased": 0.6115916396621036
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.999662798447072,
+                  "sentence": "It was a big relief for his fans as they thought they might lose him for a while due to an injury.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0003372015529280827,
+                    "ai": 0.34709576179388657,
+                    "paraphrased": 0.6525670366531854
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9994710784892762,
+                  "sentence": "In other news, the PGA Tour had its sixth first-time winner of the year, when Ted Potter won his first title, breaking his maiden on the tour.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0005289215107238943,
+                    "ai": 0.3728294223407856,
+                    "paraphrased": 0.6266416561484905
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9996439574440343,
+                  "sentence": "This is a big deal for him as a rookie on the tour and he will surely be looking forward to many more titles to come.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0003560425559656132,
+                    "ai": 0.3797779999317084,
+                    "paraphrased": 0.619865957512326
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9995354981538187,
+                  "sentence": "Marcel Siem's win is a great victory for him, and he proved once again why he is a great golfer.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.00046450184618131906,
+                    "ai": 0.4100805753861555,
+                    "paraphrased": 0.5894549227676632
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0,
+                "ai": 1,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "ai": 1,
+                  "mixed": 0,
+                  "human": 0
+                }
+              },
+              "subclass": {
+                "ai": {
+                  "predicted_class": "pure_ai",
+                  "result_message": "",
+                  "confidence_score": 1,
+                  "confidence_category": "high",
+                  "class_probabilities": {
+                    "pure_ai": 1,
+                    "ai_paraphrased": 0
+                  },
+                  "confidence_scores_raw": {
+                    "identity": {
+                      "pure_ai": 1,
+                      "ai_paraphrased": 0
+                    }
+                  },
+                  "confidence_thresholds_raw": {
+                    "identity": {
+                      "ai_paraphrased": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      },
+                      "pure_ai": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      }
+                    }
+                  }
+                }
+              },
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written by AI.",
+              "result_sub_message": null,
+              "document_classification": "AI_ONLY",
+              "inputText": "Marcel Siem Held His Nerve Amid Late Charge from Francesco Molinari to Take Open de France\n\nLe Golf National, France – In a dramatic finish to the Open de France, Marcel Siem held his nerve amid a late charge from Francesco Molinari to take the title – his first European Tour victory for eight years. The German finished on eight-under-par, one shot better than Molinari, who recorded an incredible 68 in the final round.\n\nMolinari's impressive performance pushed him up to 9-under-par, but Siem's steady approach ultimately paid off as he clinched the title with a one-shot margin. The Italian, who recently won the British Open at Royal Lytham & Green last year, was looking to make it a double title win in a row but unfortunately couldn't make it happen.\n\nMarcel Siem was praised for his consistent play throughout the tournament, and his performance in the final round was impressive as he managed to maintain his lead until the end. It was his first European Tour title since 2004, and this win surely gave him the confidence boost he needed to continue competing at the top level.\n\nLee Westwood, who is known for his tough play, was involved in an injury scare during the Saturday's round. Luckily, he was fine and he was able to finish the tournament, although with a not-so-good score. It was a big relief for his fans as they thought they might lose him for a while due to an injury.\n\nIn other news, the PGA Tour had its sixth first-time winner of the year, when Ted Potter won his first title, breaking his maiden on the tour. This is a big deal for him as a rookie on the tour and he will surely be looking forward to many more titles to come.\n\nMarcel Siem's win is a great victory for him, and he proved once again why he is a great golfer.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-1",
+      "text_length": 1377,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.5171515277572917,
+        "average_generated_prob": 1,
+        "class_probabilities": {
+          "human": 0.4780326620065358,
+          "ai": 0.5219673379934641,
+          "mixed": 0
+        },
+        "predicted_class": "ai",
+        "confidence_score": 0.5219673379934641,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                  "start_sentence_index": 2,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                  "start_sentence_index": 5,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                }
+              ],
+              "completely_generated_prob": 0.5171515277572917,
+              "average_generated_prob": 1,
+              "predicted_class": "ai",
+              "confidence_score": 0.5219673379934641,
+              "confidence_category": "low",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.6970351630766599,
+                  "sentence": "Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a harrowing incident of assault unfolded in the midst of jubilant crowds in Tahrir Square.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.30296483692334003,
+                    "ai": 0.008743016065550998,
+                    "paraphrased": 0.688292147011109
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6749866181293155,
+                  "sentence": "British student journalist, Natasha Smith, recounted her traumatic experience of being mobbed by a group of men who left her with serious physical and emotional trauma.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.3250133818706844,
+                    "ai": 0.009591453199542284,
+                    "paraphrased": 0.6653951649297732
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.657756449385749,
+                  "sentence": "In an interview and subsequent blog post, Smith bravely detailed how she was mobbed by a group of men in the middle of the celebrations in Tahrir Square, Egypt's iconic central square where millions gathered to protest against President Mubarak's rule and celebrate the victory of the people in the recently concluded presidential election.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.34224355061425105,
+                    "ai": 0.009450559460322562,
+                    "paraphrased": 0.6483058899254264
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6722639601820048,
+                  "sentence": "Smith recounted that the group of men who were with her at that time initially were unable to intervene to stop the men who were surrounding her and who started ripping off all of her clothes.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.3277360398179951,
+                    "ai": 0.008676827618539974,
+                    "paraphrased": 0.6635871325634649
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6786523005956243,
+                  "sentence": "The harrowing incident left her in a terrifying situation where she thought she might not escape alive.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.32134769940437574,
+                    "ai": 0.008462591657655493,
+                    "paraphrased": 0.6701897089379688
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6891512754988401,
+                  "sentence": "\"There were several moments at which I thought she was going to die,\" said a friend of Natasha Smith in describing the terrifying moment they saw her going through in Tahrir Square.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.31084872450115997,
+                    "ai": 0.007502697687696579,
+                    "paraphrased": 0.6816485778111435
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6803382671156596,
+                  "sentence": "The friends were unable to prevent the man but they are credited for helping her escape after some people in the crowds intervened and managed to stop the attackers and let her go.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.31966173288434047,
+                    "ai": 0.00840140202951001,
+                    "paraphrased": 0.6719368650861496
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.4780326620065358,
+                "ai": 0.5219673379934641,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "ai": 0.5219673379934641,
+                  "mixed": 0,
+                  "human": 0.4780326620065358
+                }
+              },
+              "subclass": {
+                "ai": {
+                  "predicted_class": "ai_paraphrased",
+                  "result_message": "We are highly confident this text was originally AI, but rewritten by AI or a human",
+                  "confidence_score": 0.983158535638566,
+                  "confidence_category": "high",
+                  "class_probabilities": {
+                    "pure_ai": 0.016841464361433956,
+                    "ai_paraphrased": 0.983158535638566
+                  },
+                  "confidence_scores_raw": {
+                    "identity": {
+                      "pure_ai": 0.016841464361433956,
+                      "ai_paraphrased": 0.983158535638566
+                    }
+                  },
+                  "confidence_thresholds_raw": {
+                    "identity": {
+                      "ai_paraphrased": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      },
+                      "pure_ai": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      }
+                    }
+                  }
+                }
+              },
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+              "result_sub_message": null,
+              "document_classification": "AI_ONLY",
+              "inputText": "Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a harrowing incident of assault unfolded in the midst of jubilant crowds in Tahrir Square. British student journalist, Natasha Smith, recounted her traumatic experience of being mobbed by a group of men who left her with serious physical and emotional trauma.\n\nIn an interview and subsequent blog post, Smith bravely detailed how she was mobbed by a group of men in the middle of the celebrations in Tahrir Square, Egypt's iconic central square where millions gathered to protest against President Mubarak's rule and celebrate the victory of the people in the recently concluded presidential election. Smith recounted that the group of men who were with her at that time initially were unable to intervene to stop the men who were surrounding her and who started ripping off all of her clothes. The harrowing incident left her in a terrifying situation where she thought she might not escape alive. \n\n\"There were several moments at which I thought she was going to die,\" said a friend of Natasha Smith in describing the terrifying moment they saw her going through in Tahrir Square. The friends were unable to prevent the man but they are credited for helping her escape after some people in the crowds intervened and managed to stop the attackers and let her go.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-0",
+      "text_length": 1861,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.5260198201846515,
+        "average_generated_prob": 1,
+        "class_probabilities": {
+          "human": 0.47096644564741685,
+          "ai": 0.5290335543525831,
+          "mixed": 0
+        },
+        "predicted_class": "ai",
+        "confidence_score": 0.5290335543525831,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                  "start_sentence_index": 2,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                  "start_sentence_index": 4,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                  "start_sentence_index": 7,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                }
+              ],
+              "completely_generated_prob": 0.5260198201846515,
+              "average_generated_prob": 1,
+              "predicted_class": "ai",
+              "confidence_score": 0.5290335543525831,
+              "confidence_category": "low",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.6884774163227406,
+                  "sentence": "It’s set to be one of the most groundbreaking moments in humanity’s six decades of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching a Dragon capsule into space.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.31152258367725927,
+                    "ai": 0.04722702289016249,
+                    "paraphrased": 0.6412503934325782
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6909120140427348,
+                  "sentence": "But those looking forward to this pivotal moment will have to wait a little longer.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.30908798595726517,
+                    "ai": 0.04792376145862487,
+                    "paraphrased": 0.64298825258411
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6777108633688773,
+                  "sentence": "The launch, which was initially scheduled for earlier this week but delayed due to an issue with one of the Falcon 9 rocket's engines, has now been pushed back again to 11.18am GMT on Tuesday 6 January.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.3222891366311227,
+                    "ai": 0.04781381005187474,
+                    "paraphrased": 0.6298970533170025
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6701118399186158,
+                  "sentence": "The engine problem is a recurring issue for SpaceX, and it is not yet clear how it will affect the chances of a successful landing of the rocket on the floating platform, a SpaceX-owned barge, after the Dragon capsule has been propelled into space.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.32988816008138416,
+                    "ai": 0.059085681154047234,
+                    "paraphrased": 0.6110261587645686
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6909257838668127,
+                  "sentence": "According to CEO Elon Musk, this ambitious attempt has a 50% chance of working.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.30907421613318736,
+                    "ai": 0.07115348269447351,
+                    "paraphrased": 0.6197723011723392
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6634015463100151,
+                  "sentence": "The company is attempting to make history by landing a rocket on solid ground after launch, and if they are successful, it will be a major breakthrough in the mission to make rocket launches more cost-effective and more efficient.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.3365984536899849,
+                    "ai": 0.0754027502941359,
+                    "paraphrased": 0.5879987960158792
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6488463063050888,
+                  "sentence": "The ultimate goal for SpaceX is to be able to reuse its rockets, rather than having to build new ones for every launch, which would save the company, and indeed the space industry, a great deal of money and resources.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.3511536936949113,
+                    "ai": 0.07558690587609472,
+                    "paraphrased": 0.573259400428994
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6380499222438766,
+                  "sentence": "The plan is that the first stage of the Falcon 9 rocket, which will be carrying the Dragon capsule, into space, will then return to Earth and try to land on the floating barge.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.3619500777561235,
+                    "ai": 0.07894850698743404,
+                    "paraphrased": 0.5591014152564425
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6836565066201205,
+                  "sentence": "This will be a difficult task, as the rocket will be returning to Earth with a great deal of speed and very little fuel left, and if the landing is not done perfectly, the rocket will fall into the water and it will be destroyed.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.3163434933798796,
+                    "ai": 0.07106314013294444,
+                    "paraphrased": 0.612593366487176
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6568186708979803,
+                  "sentence": "But if the landing is done correctly, the rocket will land safely on the barge, and it can be used again for another launch, without having to be scrapped and a new rocket built.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.34318132910201965,
+                    "ai": 0.06820858015833124,
+                    "paraphrased": 0.5886100907396491
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.47096644564741685,
+                "ai": 0.5290335543525831,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "ai": 0.5290335543525831,
+                  "mixed": 0,
+                  "human": 0.47096644564741685
+                }
+              },
+              "subclass": {
+                "ai": {
+                  "predicted_class": "ai_paraphrased",
+                  "result_message": "We are highly confident this text was originally AI, but rewritten by AI or a human",
+                  "confidence_score": 0.9462131611064166,
+                  "confidence_category": "high",
+                  "class_probabilities": {
+                    "pure_ai": 0.053786838893583336,
+                    "ai_paraphrased": 0.9462131611064166
+                  },
+                  "confidence_scores_raw": {
+                    "identity": {
+                      "pure_ai": 0.053786838893583336,
+                      "ai_paraphrased": 0.9462131611064166
+                    }
+                  },
+                  "confidence_thresholds_raw": {
+                    "identity": {
+                      "ai_paraphrased": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      },
+                      "pure_ai": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      }
+                    }
+                  }
+                }
+              },
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+              "result_sub_message": null,
+              "document_classification": "AI_ONLY",
+              "inputText": "It’s set to be one of the most groundbreaking moments in humanity’s six decades of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching a Dragon capsule into space. But those looking forward to this pivotal moment will have to wait a little longer.\n\nThe launch, which was initially scheduled for earlier this week but delayed due to an issue with one of the Falcon 9 rocket's engines, has now been pushed back again to 11.18am GMT on Tuesday 6 January. The engine problem is a recurring issue for SpaceX, and it is not yet clear how it will affect the chances of a successful landing of the rocket on the floating platform, a SpaceX-owned barge, after the Dragon capsule has been propelled into space.\n\nAccording to CEO Elon Musk, this ambitious attempt has a 50% chance of working. The company is attempting to make history by landing a rocket on solid ground after launch, and if they are successful, it will be a major breakthrough in the mission to make rocket launches more cost-effective and more efficient. The ultimate goal for SpaceX is to be able to reuse its rockets, rather than having to build new ones for every launch, which would save the company, and indeed the space industry, a great deal of money and resources.\n\nThe plan is that the first stage of the Falcon 9 rocket, which will be carrying the Dragon capsule, into space, will then return to Earth and try to land on the floating barge. This will be a difficult task, as the rocket will be returning to Earth with a great deal of speed and very little fuel left, and if the landing is not done perfectly, the rocket will fall into the water and it will be destroyed. But if the landing is done correctly, the rocket will land safely on the barge, and it can be used again for another launch, without having to be scrapped and a new rocket built.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-4",
+      "text_length": 1749,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.9996661998964237,
+        "average_generated_prob": 1,
+        "class_probabilities": {
+          "human": 0,
+          "ai": 1,
+          "mixed": 0
+        },
+        "predicted_class": "ai",
+        "confidence_score": 1,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                  "start_sentence_index": 1,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                  "start_sentence_index": 3,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                  "start_sentence_index": 5,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.850090677245877
+                },
+                {
+                  "start_sentence_index": 8,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.8254776901813464
+                }
+              ],
+              "completely_generated_prob": 0.9996661998964237,
+              "average_generated_prob": 1,
+              "predicted_class": "ai",
+              "confidence_score": 1,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.9998931240536584,
+                  "sentence": "**Sister of Malalai Attack Suspect Apologizes to Victim, Expresses Disownment of Alleged Brother**",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.00010687594634168394,
+                    "ai": 0.991919889766939,
+                    "paraphrased": 0.007973234286719326
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9998642121859345,
+                  "sentence": "The sister of a man suspected in the shooting of Pakistani teenager Malal Yousufzai has apologized to the victim and publicly disavowed her alleged brother's actions.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0001357878140655268,
+                    "ai": 0.9912512269056029,
+                    "paraphrased": 0.008612985280331567
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.999944292755483,
+                  "sentence": "In a shocking statement that reveals a deep-seated divide within the family of 23-year-old student Atta Ullah, Rehana Haleem declared, \"I don't consider Atta Ullah my brother any more,\" and added, \"He has brought shame on our family,\" implying that Atta Ullah's involvement in the attack has irreparably damaged their family's reputation.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 5.57072445169692e-05,
+                    "ai": 0.9923449660548784,
+                    "paraphrased": 0.007599326700604578
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9999368009929173,
+                  "sentence": "The apology and disavowal come as authorities are searching for Atta Ullah in connection with the attempted assassination of Malal Yousufzai, the 14-year-old girl who became a global icon of courage and resilience after being shot by the Taliban for speaking out against their ban on girls' education.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 6.319900708274161e-05,
+                    "ai": 0.9928548239296814,
+                    "paraphrased": 0.007081977063235827
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9999407168061124,
+                  "sentence": "The attempted assassination took place in 2012 while Malal Yousufzai was on her way to school in Swat Valley, Pakistan.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 5.928319388761716e-05,
+                    "ai": 0.9926590477432844,
+                    "paraphrased": 0.007281669062827994
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9999549368610623,
+                  "sentence": "Rehana Haleem's statement to the press reveals a clear divide in the Ullah family, with at least one member publicly expressing remorse for the alleged actions of their family member.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 4.506313893771353e-05,
+                    "ai": 0.9936423941512894,
+                    "paraphrased": 0.00631254270977287
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9999354635306977,
+                  "sentence": "\"Please convey a message to Malal, that I apologize for what my brother did to her,\" she said.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 6.453646930225245e-05,
+                    "ai": 0.9935028926917993,
+                    "paraphrased": 0.006432570838898462
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9999544059393021,
+                  "sentence": "Rehana Haleem's statement may indicate that she was not involved in the planning or executing of the attack and is trying to distance herself from her alleged brother's actions.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 4.559406069797777e-05,
+                    "ai": 0.9933258274244302,
+                    "paraphrased": 0.006628578514871838
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9999357502240623,
+                  "sentence": "Atta Ullah is currently on the run and the authorities are searching for him in connection with the attempted assassination of Malal Yousufzai.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 6.424977593771924e-05,
+                    "ai": 0.9936123451728127,
+                    "paraphrased": 0.006323405051249587
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9999370886436122,
+                  "sentence": "If found, he will face serious charges and could be put on trial for his alleged role in the attempted assassination.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 6.291135638788046e-05,
+                    "ai": 0.9935572724403351,
+                    "paraphrased": 0.006379816203277066
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0,
+                "ai": 1,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "ai": 1,
+                  "mixed": 0,
+                  "human": 0
+                }
+              },
+              "subclass": {
+                "ai": {
+                  "predicted_class": "pure_ai",
+                  "result_message": "",
+                  "confidence_score": 1,
+                  "confidence_category": "high",
+                  "class_probabilities": {
+                    "pure_ai": 1,
+                    "ai_paraphrased": 0
+                  },
+                  "confidence_scores_raw": {
+                    "identity": {
+                      "pure_ai": 1,
+                      "ai_paraphrased": 0
+                    }
+                  },
+                  "confidence_thresholds_raw": {
+                    "identity": {
+                      "ai_paraphrased": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      },
+                      "pure_ai": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      }
+                    }
+                  }
+                }
+              },
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written by AI.",
+              "result_sub_message": null,
+              "document_classification": "AI_ONLY",
+              "inputText": "**Sister of Malalai Attack Suspect Apologizes to Victim, Expresses Disownment of Alleged Brother**\n\nThe sister of a man suspected in the shooting of Pakistani teenager Malal Yousufzai has apologized to the victim and publicly disavowed her alleged brother's actions. In a shocking statement that reveals a deep-seated divide within the family of 23-year-old student Atta Ullah, Rehana Haleem declared, \"I don't consider Atta Ullah my brother any more,\" and added, \"He has brought shame on our family,\" implying that Atta Ullah's involvement in the attack has irreparably damaged their family's reputation.\n\nThe apology and disavowal come as authorities are searching for Atta Ullah in connection with the attempted assassination of Malal Yousufzai, the 14-year-old girl who became a global icon of courage and resilience after being shot by the Taliban for speaking out against their ban on girls' education. The attempted assassination took place in 2012 while Malal Yousufzai was on her way to school in Swat Valley, Pakistan.\n\nRehana Haleem's statement to the press reveals a clear divide in the Ullah family, with at least one member publicly expressing remorse for the alleged actions of their family member. \"Please convey a message to Malal, that I apologize for what my brother did to her,\" she said. Rehana Haleem's statement may indicate that she was not involved in the planning or executing of the attack and is trying to distance herself from her alleged brother's actions.\n\nAtta Ullah is currently on the run and the authorities are searching for him in connection with the attempted assassination of Malal Yousufzai. If found, he will face serious charges and could be put on trial for his alleged role in the attempted assassination.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-3",
+      "text_length": 1875,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.9965356306819108,
+        "average_generated_prob": 1,
+        "class_probabilities": {
+          "human": 0,
+          "ai": 1,
+          "mixed": 0
+        },
+        "predicted_class": "ai",
+        "confidence_score": 1,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                  "start_sentence_index": 1,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                  "start_sentence_index": 3,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.850090677245877
+                },
+                {
+                  "start_sentence_index": 6,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                  "start_sentence_index": 8,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.850090677245877
+                },
+                {
+                  "start_sentence_index": 11,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.8181818033057853
+                }
+              ],
+              "completely_generated_prob": 0.9965356306819108,
+              "average_generated_prob": 1,
+              "predicted_class": "ai",
+              "confidence_score": 1,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.9868979696916529,
+                  "sentence": "**Rogue Police Department in California Rural Town Accused of Preying on the Poor, Impounding Cars and Selling Them**",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.013102030308347026,
+                    "ai": 0.6943795642198274,
+                    "paraphrased": 0.29251840547182556
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9894471328317123,
+                  "sentence": "The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.01055286716828774,
+                    "ai": 0.7164847750707793,
+                    "paraphrased": 0.27296235776093286
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.995472208061527,
+                  "sentence": "Six officers, including the former police chief of King City and his interim successor, were arrested on charges of embezzlement, conspiracy, and other crimes stemming from a scheme to extort money from unsuspecting motorists by impounding their vehicles and selling them for profit.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.004527791938473067,
+                    "ai": 0.7410517448814156,
+                    "paraphrased": 0.2544204631801114
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9967130702178459,
+                  "sentence": "The scandal in King City, a small town with a population of just over 12,000, has been brewing for some time and authorities say it involved a corrupt agreement between the police department and the owner of the city's impound lot.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.003286929782154062,
+                    "ai": 0.8039615134467981,
+                    "paraphrased": 0.19275155677104783
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9969406793113952,
+                  "sentence": "According to the district attorney, police officers would stop and impound the cars of people who could not pay fines and fees for various minor infractions, such as a broken headlight or a minor traffic stop.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0030593206886048905,
+                    "ai": 0.8090086747787499,
+                    "paraphrased": 0.18793200453264522
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9976724817683489,
+                  "sentence": "The impound lot owner would then turn the cars over to the police, who would sell them or keep them for themselves.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.002327518231651056,
+                    "ai": 0.8177533488728334,
+                    "paraphrased": 0.17991913289551556
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9983457585819253,
+                  "sentence": "The owner of the impound lot, who has not been named, is said to have cooperated with the police and gotten a share of the profit from the sale of the vehicles.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0016542414180746696,
+                    "ai": 0.8259880284222073,
+                    "paraphrased": 0.172357730159718
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9983906187979609,
+                  "sentence": "The impound lot owner would also store the cars for a fee, which was passed on to the owner of the vehicle.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0016093812020391196,
+                    "ai": 0.8522733013629915,
+                    "paraphrased": 0.14611731743496936
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9982398162548028,
+                  "sentence": "The former police chief of King City, David Kahle, and the interim police chief, Dante King, are among those arrested.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.001760183745197157,
+                    "ai": 0.8669640560138593,
+                    "paraphrased": 0.13127576024094353
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.99826300973165,
+                  "sentence": "Both are accused of participating in the scheme and getting a share of the profit from the sale of the cars.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0017369902683500623,
+                    "ai": 0.8477335426218919,
+                    "paraphrased": 0.15052946710975806
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9980202483990375,
+                  "sentence": "King's attorney said in a statement that his client did nothing wrong and is not guilty of any crime.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0019797516009625394,
+                    "ai": 0.8311982741195104,
+                    "paraphrased": 0.1668219742795271
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9987605039897118,
+                  "sentence": "The scandal has put the police department in a difficult position and the small town is feeling the strain.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0012394960102881433,
+                    "ai": 0.8319235174829678,
+                    "paraphrased": 0.16683698650674403
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0,
+                "ai": 1,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "ai": 1,
+                  "mixed": 0,
+                  "human": 0
+                }
+              },
+              "subclass": {
+                "ai": {
+                  "predicted_class": "pure_ai",
+                  "result_message": "",
+                  "confidence_score": 1,
+                  "confidence_category": "high",
+                  "class_probabilities": {
+                    "pure_ai": 1,
+                    "ai_paraphrased": 0
+                  },
+                  "confidence_scores_raw": {
+                    "identity": {
+                      "pure_ai": 1,
+                      "ai_paraphrased": 0
+                    }
+                  },
+                  "confidence_thresholds_raw": {
+                    "identity": {
+                      "ai_paraphrased": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      },
+                      "pure_ai": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      }
+                    }
+                  }
+                }
+              },
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written by AI.",
+              "result_sub_message": null,
+              "document_classification": "AI_ONLY",
+              "inputText": "**Rogue Police Department in California Rural Town Accused of Preying on the Poor, Impounding Cars and Selling Them**\n\nThe prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his interim successor, were arrested on charges of embezzlement, conspiracy, and other crimes stemming from a scheme to extort money from unsuspecting motorists by impounding their vehicles and selling them for profit.\n\nThe scandal in King City, a small town with a population of just over 12,000, has been brewing for some time and authorities say it involved a corrupt agreement between the police department and the owner of the city's impound lot. According to the district attorney, police officers would stop and impound the cars of people who could not pay fines and fees for various minor infractions, such as a broken headlight or a minor traffic stop. The impound lot owner would then turn the cars over to the police, who would sell them or keep them for themselves.\n\nThe owner of the impound lot, who has not been named, is said to have cooperated with the police and gotten a share of the profit from the sale of the vehicles. The impound lot owner would also store the cars for a fee, which was passed on to the owner of the vehicle.\n\nThe former police chief of King City, David Kahle, and the interim police chief, Dante King, are among those arrested. Both are accused of participating in the scheme and getting a share of the profit from the sale of the cars. King's attorney said in a statement that his client did nothing wrong and is not guilty of any crime.\n\nThe scandal has put the police department in a difficult position and the small town is feeling the strain.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-8",
+      "text_length": 1904,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.117201510991182,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.8447828210970312,
+          "ai": 0.15521717890296888,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.8447828210970312,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                  "start_sentence_index": 3,
+                  "num_sentences": 4,
+                  "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                  "start_sentence_index": 7,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                  "start_sentence_index": 10,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                }
+              ],
+              "completely_generated_prob": 0.117201510991182,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.8447828210970312,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.3685398007711739,
+                  "sentence": "‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humorously citing a supposed conflict of interest between his companies Tesla and SpaceX.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6314601992288261,
+                    "ai": 0.11393870583085278,
+                    "paraphrased": 0.25460109494032107
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.3613265442255194,
+                  "sentence": "In the episode that aired on January 25, Lisa Simpson playfully questioned the alignment of interests between Elon Musk's electric car manufacturing giant, Tesla, and his space exploration company, SpaceX.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6386734557744805,
+                    "ai": 0.11910537842935122,
+                    "paraphrased": 0.24222116579616818
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.3645007231533958,
+                  "sentence": "However, it seems that Elon Musk didn't appreciate the lighthearted jab.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6354992768466041,
+                    "ai": 0.11057332817157078,
+                    "paraphrased": 0.25392739498182504
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.390320608164063,
+                  "sentence": "Responding to the humorous comment on Twitter, Elon Musk fired back, stating that rockets were the only viable method to currently reach orbit.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.609679391835937,
+                    "ai": 0.11724839929866196,
+                    "paraphrased": 0.273072208865401
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.34424966964687626,
+                  "sentence": "He claimed that electric propulsion is simply 'impossible' to achieve for orbit, at least for now.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6557503303531237,
+                    "ai": 0.09947182019700361,
+                    "paraphrased": 0.24477784944987266
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.43960638639378447,
+                  "sentence": "The South African-born billionaire entrepreneur also dismissed other proposals as being not technologically feasible yet, like the hypothetical space elevator or railguns that could potentially propel objects into space.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5603936136062155,
+                    "ai": 0.1567264167015565,
+                    "paraphrased": 0.28287996969222795
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.4127169267979489,
+                  "sentence": "According to him, these ideas, although interesting, are not on the horizon yet.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5872830732020511,
+                    "ai": 0.16434910669261593,
+                    "paraphrased": 0.248367820105333
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.38825135020529106,
+                  "sentence": "Elon Musk's rebuttal on Twitter sparked a wave of discussion on social media about the feasibility of electric propulsion in space.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.611748649794709,
+                    "ai": 0.16044698950298208,
+                    "paraphrased": 0.22780436070230897
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.38649327477077733,
+                  "sentence": "While some people agreed with Elon Musk's assessment, stating that electric propulsion is still not advanced enough to reach orbit, others pointed out that there are already some spacecraft in space that use electric propulsion, like the ones using electric ion thrusters.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6135067252292227,
+                    "ai": 0.1636739497829385,
+                    "paraphrased": 0.2228193249878388
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.3688386772746045,
+                  "sentence": "They also pointed out that the cost of launching a rocket to space is very high, and maybe it's worth looking into other alternatives.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6311613227253955,
+                    "ai": 0.13976363629454916,
+                    "paraphrased": 0.22907504098005532
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.40892775423286515,
+                  "sentence": "As for Elon Musk's appearance on The Simpsons, it's the latest episode in a long line of celebrity cameos on the show.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5910722457671349,
+                    "ai": 0.1606557041895169,
+                    "paraphrased": 0.24827205004334824
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.4858026947320311,
+                  "sentence": "It's also a sign of how popular The Simpsons is among billionaires and big companies, and how much it can be a way to reach a wide audience with a joke or a message.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5141973052679689,
+                    "ai": 0.25446213050073774,
+                    "paraphrased": 0.23134056423129332
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.8447828210970312,
+                "ai": 0.15521717890296888,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.8447828210970312,
+                  "ai": 0.15521717890296888,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": "‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humorously citing a supposed conflict of interest between his companies Tesla and SpaceX. In the episode that aired on January 25, Lisa Simpson playfully questioned the alignment of interests between Elon Musk's electric car manufacturing giant, Tesla, and his space exploration company, SpaceX. However, it seems that Elon Musk didn't appreciate the lighthearted jab.\n\nResponding to the humorous comment on Twitter, Elon Musk fired back, stating that rockets were the only viable method to currently reach orbit. He claimed that electric propulsion is simply 'impossible' to achieve for orbit, at least for now. The South African-born billionaire entrepreneur also dismissed other proposals as being not technologically feasible yet, like the hypothetical space elevator or railguns that could potentially propel objects into space. According to him, these ideas, although interesting, are not on the horizon yet.\n\nElon Musk's rebuttal on Twitter sparked a wave of discussion on social media about the feasibility of electric propulsion in space. While some people agreed with Elon Musk's assessment, stating that electric propulsion is still not advanced enough to reach orbit, others pointed out that there are already some spacecraft in space that use electric propulsion, like the ones using electric ion thrusters. They also pointed out that the cost of launching a rocket to space is very high, and maybe it's worth looking into other alternatives.\n\nAs for Elon Musk's appearance on The Simpsons, it's the latest episode in a long line of celebrity cameos on the show. It's also a sign of how popular The Simpsons is among billionaires and big companies, and how much it can be a way to reach a wide audience with a joke or a message.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-9",
+      "text_length": 1979,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.003777938235283185,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9962119936981466,
+          "ai": 0.0037880063018533396,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9962119936981466,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 1,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                  "start_sentence_index": 3,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                  "start_sentence_index": 6,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                  "start_sentence_index": 8,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                  "start_sentence_index": 11,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                }
+              ],
+              "completely_generated_prob": 0.003777938235283185,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9962119936981466,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.01238941536944348,
+                  "sentence": "**Men and Women Have Different Tastes in Art: A Legacy of Stone Age Roles**",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9876105846305565,
+                    "ai": 0.01197185188467942,
+                    "paraphrased": 0.0004175634847640601
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.025726148789203596,
+                  "sentence": "Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9742738512107965,
+                    "ai": 0.024899419160873786,
+                    "paraphrased": 0.0008267296283298096
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.03024312390761366,
+                  "sentence": "And the fact early men and women took on the different roles of hunters and gatherers may explain why just one painting hangs on the walls of the prestigious National Gallery.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9697568760923864,
+                    "ai": 0.029322001261544692,
+                    "paraphrased": 0.0009211226460689687
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.02477353510477168,
+                  "sentence": "Professor Gloria Moss, a renowned expert in the field of art and psychology, claims that the way men and women perceive the world is fundamentally different due to the different roles they played thousands of years ago.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9752264648952284,
+                    "ai": 0.024137666136017404,
+                    "paraphrased": 0.0006358689687542776
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.02113287050690783,
+                  "sentence": "According to her, men, as the hunters, have developed better rotational and spatial vision, which helps them to track and catch prey more efficiently.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9788671294930922,
+                    "ai": 0.02046057490554749,
+                    "paraphrased": 0.0006722956013603411
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.018885240599345356,
+                  "sentence": "This ability to perceive and navigate in three dimensions is also what draws men to more abstract and complex works of art, such as paintings with fewer colors and a darker palette.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9811147594006546,
+                    "ai": 0.01833363537694639,
+                    "paraphrased": 0.0005516052223989655
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.03494477328652031,
+                  "sentence": "In her book, Professor Moss states that men are more prone to color blindness than women, as men's role as hunters required them to be able to see in different lighting conditions, even in low light.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9650552267134797,
+                    "ai": 0.03428317443651708,
+                    "paraphrased": 0.0006615988500032336
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0380880138336073,
+                  "sentence": "This limited color vision would have been advantageous to them as hunters as they would have seen shapes more clearly than colors, this limited color vision is now still prevalent.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9619119861663927,
+                    "ai": 0.0372656788019703,
+                    "paraphrased": 0.0008223350316369998
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.03433794125077309,
+                  "sentence": "Research by Professor Moss has shown that men tend to like paintings that are darker and have fewer colors, whereas women prefer paintings that are colorful and feature people and plants.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.965662058749227,
+                    "ai": 0.03380040484648396,
+                    "paraphrased": 0.0005375364042891302
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.04538753439641053,
+                  "sentence": "This is why many art critics have said that men's art is just a series of shapes and lines, and not a reflection of reality.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9546124656035895,
+                    "ai": 0.04486539921123745,
+                    "paraphrased": 0.0005221351851730772
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.057125413891139974,
+                  "sentence": "Women on the other hand like to see a picture of what is real.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.94287458610886,
+                    "ai": 0.05661303389364509,
+                    "paraphrased": 0.000512379997494883
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.04580163105901154,
+                  "sentence": "The fact that men and women have different tastes in art is just another example of the different roles that men and women played thousands of years ago.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9541983689409884,
+                    "ai": 0.04522458131654194,
+                    "paraphrased": 0.0005770497424695996
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.07992204480584675,
+                  "sentence": "If men were the hunters, women were the gatherers and had to find food and other things that they needed to survive.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9200779551941533,
+                    "ai": 0.07937799414708892,
+                    "paraphrased": 0.0005440506587578314
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9962119936981466,
+                "ai": 0.0037880063018533396,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9962119936981466,
+                  "ai": 0.0037880063018533396,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": "**Men and Women Have Different Tastes in Art: A Legacy of Stone Age Roles**\n\nMen and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic. And the fact early men and women took on the different roles of hunters and gatherers may explain why just one painting hangs on the walls of the prestigious National Gallery.\n\nProfessor Gloria Moss, a renowned expert in the field of art and psychology, claims that the way men and women perceive the world is fundamentally different due to the different roles they played thousands of years ago. According to her, men, as the hunters, have developed better rotational and spatial vision, which helps them to track and catch prey more efficiently. This ability to perceive and navigate in three dimensions is also what draws men to more abstract and complex works of art, such as paintings with fewer colors and a darker palette.\n\nIn her book, Professor Moss states that men are more prone to color blindness than women, as men's role as hunters required them to be able to see in different lighting conditions, even in low light. This limited color vision would have been advantageous to them as hunters as they would have seen shapes more clearly than colors, this limited color vision is now still prevalent.\n\nResearch by Professor Moss has shown that men tend to like paintings that are darker and have fewer colors, whereas women prefer paintings that are colorful and feature people and plants. This is why many art critics have said that men's art is just a series of shapes and lines, and not a reflection of reality. Women on the other hand like to see a picture of what is real.\n\nThe fact that men and women have different tastes in art is just another example of the different roles that men and women played thousands of years ago. If men were the hunters, women were the gatherers and had to find food and other things that they needed to survive.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "processed": 10,
+  "errors": 0,
+  "skipped": 0
+}

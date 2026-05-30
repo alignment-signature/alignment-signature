@@ -1,0 +1,244 @@
+{
+  "model_type": "instruct",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400
+  },
+  "intervention": {
+    "mode": "partial_ablate",
+    "direction_path": "data/analysis_results/scaled_ablation/directions/qwen2.5-7b-instruct/v_cross_L14.pt",
+    "layer": 14,
+    "alpha": 0.25,
+    "tag": "v_cross_L14_partial_ablate_alpha0.25"
+  },
+  "domain": "news_articles",
+  "num_generations": 10,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-news_articles-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "It’s set to be one of the most groundbreaking moments in humanity’s six decades of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching. But those looking forward to this pivotal moment will have to wait a little longer. The launch of the Falcon 9 rocket, carrying a Dragon capsule, which was scheduled for today (Monday 5th January) at Cape Canaveral, has been delayed because of issues with the rocket engine. \n\nSpaceX had planned to launch the Falcon 9 rocket, that is expected to carry the Dragon cargo ship to the International Space Station. But prior to today, there was another delay. The previous delay was also due to problems with the rocket engine and it happened earlier this week.\n\nNow, the launch will take place on Tuesday, January 6th at 11:18 GMT. After launching, the first stage of the Falcon 9 rocket, is supposed to touch down on a barge after transporting the Dragon cargo ship to space. This is the first ever attempt to land a rocket on solid ground after launch.\n\nElon Musk, the CEO of SpaceX, had previously commented that the ambitious attempt has a fifty percent chance of working, and he had explained that SpaceX ultimately wants all of its rockets to be reusable. It’s expected that the launch will be broadcast live on SpaceX's website, if people want to watch.",
+      "processed_text": "It’s set to be one of the most groundbreaking moments in humanity’s six decades of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching. But those looking forward to this pivotal moment will have to wait a little longer. The launch of the Falcon 9 rocket, carrying a Dragon capsule, which was scheduled for today (Monday 5th January) at Cape Canaveral, has been delayed because of issues with the rocket engine. \n\nSpaceX had planned to launch the Falcon 9 rocket, that is expected to carry the Dragon cargo ship to the International Space Station. But prior to today, there was another delay. The previous delay was also due to problems with the rocket engine and it happened earlier this week.\n\nNow, the launch will take place on Tuesday, January 6th at 11:18 GMT. After launching, the first stage of the Falcon 9 rocket, is supposed to touch down on a barge after transporting the Dragon cargo ship to space. This is the first ever attempt to land a rocket on solid ground after launch.\n\nElon Musk, the CEO of SpaceX, had previously commented that the ambitious attempt has a fifty percent chance of working, and he had explained that SpaceX ultimately wants all of its rockets to be reusable.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 247,
+        "completion_tokens": 283
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: SpaceX was planning to land a Falcon 9 rocket at Cape Canaveral today .\nThe rocket was to attempt to land after launching a Dragon capsule .\nBut the launch has been delayed due to an issue with one of the engines .\nIt had already been delayed from earlier this week due to the same issue .\nIt will now take place at 11.18am GMT on Tuesday 6 January .\nAfter launch the first stage of their Falcon 9 rocket will attempt to touch down on a barge after taking Dragon to space .\nIt is the first ever attempt at landing a rocket on solid ground after launch .\nCEO Elon Musk said the ambitious attempt has a 50% chance of working .\nThe company ultimately wants all of its rockets to be reusable .\n\nBegin with: \"It’s set to be one of the most groundbreaking moments in humanity’s six decades of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching. But those looking forward to this pivotal moment will have to wait a little\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a British student journalist was being sexually assaulted by a mob in Tahrir Square. Natasha Smith recounted the experience on her blog and in an interview.\n\nBritish student reporter Natasha Smith was attending the historic event on November 3, 2012, where she was covering the result of the first ever free elections in Egypt for her university newspaper. While she was in the middle of the celebrations that greeted the results of the election, she was suddenly attacked by a group of men who ripped off part of her clothing. The men started tearing off her clothes, and this incident was witnessed and recounted by several people.\n\nIn an interview with BBC and on her own blog, Natasha Smith described how she was wearing a light blue dress at the time. According to Smith, a group of men surrounded her and were attempting to rip off her clothes. She said that she was trying to defend herself and that there was no way for her to get away because there was a crowd around her.\n\nA close friend of Natasha Smith’s described how “there were several moments at which I thought she was going to die.” Smith also told BBC that she was surrounded by a crowd of men and there was nothing she could do to help herself. She said that she could not run because she would be trampled upon and she could not fight them as they were many and she was one.\n\nFortunately, she was saved by some Egyptians who came to her rescue and tried to protect her. They helped her put her clothes back on and they accompanied her to a safe place.\n\nThe incident was reported to the Egyptian security and an ambulance and police car arrived at the scene. However, when they got there, the men had disappeared and she was safe and sound.\n\nAfter she got home from Tahrir Square, she wrote about what happened to her on the website “The Daily Mail”, saying that she was lucky to have been saved",
+      "processed_text": "Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a British student journalist was being sexually assaulted by a mob in Tahrir Square. Natasha Smith recounted the experience on her blog and in an interview.\n\nBritish student reporter Natasha Smith was attending the historic event on November 3, 2012, where she was covering the result of the first ever free elections in Egypt for her university newspaper. While she was in the middle of the celebrations that greeted the results of the election, she was suddenly attacked by a group of men who ripped off part of her clothing. The men started tearing off her clothes, and this incident was witnessed and recounted by several people.\n\nIn an interview with BBC and on her own blog, Natasha Smith described how she was wearing a light blue dress at the time. According to Smith, a group of men surrounded her and were attempting to rip off her clothes. She said that she was trying to defend herself and that there was no way for her to get away because there was a crowd around her.\n\nA close friend of Natasha Smith’s described how “there were several moments at which I thought she was going to die.” Smith also told BBC that she was surrounded by a crowd of men and there was nothing she could do to help herself. She said that she could not run because she would be trampled upon and she could not fight them as they were many and she was one.\n\nFortunately, she was saved by some Egyptians who came to her rescue and tried to protect her. They helped her put her clothes back on and they accompanied her to a safe place.\n\nThe incident was reported to the Egyptian security and an ambulance and police car arrived at the scene. However, when they got there, the men had disappeared and she was safe and sound.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 153,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: British reporter Natasha Smith recounts attack in Tahrir Square .\nSmith says she was mobbed by men who \"started ripping off all my clothes\"\n\"There were several moments at which I thought she was going to die,\" a friend says .\nEgyptians stepped in to protect her and helped her escape, she says .\n\nBegin with: \"Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a British student journalist was being sexually assaulted by a mob in Tahrir Square. Natasha Smith recounted the experience on her blog and in an interview\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Airline passengers who were trapped on tarmacs “like sardines in a can” had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates for consumer rights and was held in the offices of Senator Barbara Boxer (D-California). It was intended to highlight the problem of long tarmac delays.\nThe hearing began with a short statement from Senator Boxer and a reading of the text of a bill she sponsored, the Air Passenger Duty of Responsibility Act of 2013 (S. 1646). Her legislation would allow passengers to deplane if they have been waiting on a tarmac for three hours. She stated that the average delay last year was 158 minutes on domestic flights and 329 minutes on international flights, and that the average delay is even longer now. She explained her bill was designed to protect consumers and make sure the airlines follow the rules that are designed to protect everyone.\nThen a number of former airline officials testified. Robert Mann, a former president of the Air Transport Association of America, testified in favor of the bill. He said, “As a consumer advocate, I strongly favor S. 1646. In my opinion, the most effective thing this bill will do is get airlines to deplane passengers when they are delayed for three hours.” Mann said that the bill should not be considered “as an attack on the airline industry, but as a way to get better service.”\nDavid Nocito, the former CEO of American Airlines, also spoke and expressed support for the bill. He said that he was “convinced” that the airlines could operate a system under which passengers could deplane after being on the tarmac for three hours, although he admitted that it would not be easy to do so. In his opinion, long tarmac delays were becoming a bigger problem than frequent cancellations.\nAnother witness said",
+      "processed_text": "Airline passengers who were trapped on tarmacs “like sardines in a can” had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates for consumer rights and was held in the offices of Senator Barbara Boxer (D-California). It was intended to highlight the problem of long tarmac delays.\nThe hearing began with a short statement from Senator Boxer and a reading of the text of a bill she sponsored, the Air Passenger Duty of Responsibility Act of 2013 (S. 1646). Her legislation would allow passengers to deplane if they have been waiting on a tarmac for three hours. She stated that the average delay last year was 158 minutes on domestic flights and 329 minutes on international flights, and that the average delay is even longer now. She explained her bill was designed to protect consumers and make sure the airlines follow the rules that are designed to protect everyone.\nThen a number of former airline officials testified. Robert Mann, a former president of the Air Transport Association of America, testified in favor of the bill. He said, “As a consumer advocate, I strongly favor S. 1646. In my opinion, the most effective thing this bill will do is get airlines to deplane passengers when they are delayed for three hours.” Mann said that the bill should not be considered “as an attack on the airline industry, but as a way to get better service.”\nDavid Nocito, the former CEO of American Airlines, also spoke and expressed support for the bill. He said that he was “convinced” that the airlines could operate a system under which passengers could deplane after being on the tarmac for three hours, although he admitted that it would not be easy to do so. In his opinion, long tarmac delays were becoming a bigger problem than frequent cancellations.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 145,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Unofficial Capitol Hill hearing addressed concerns over long tarmac delays .\nBill sponsored by Sen. Barbara Boxer would allow fliers to deplane after three hours .\nFormer American Airlines CEO spoke in support of three-hour limit .\nAnother witness said routine delays are more pressing issue .\n\nBegin with: \"Airline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his interim successor, have been arrested on charges of conspiracy to commit grand theft, false imprisonment, perjury, and other charges.\n\nAccording to the Monterey County District Attorney's office, the officers in question have been involved in a scheme where they would ticket motorists for minor traffic violations and then take their cars from them if they could not pay the $250 release fee, which included a $120 fine. The impound lot operator would then turn the cars over to the police, who would sell the cars or keep them. The DA says that between 300 and 400 cars were taken from drivers this way.\n\nKing City is a small town located in the Salinas Valley in California. It has a population of approximately 7,800 people and is known as a center of agriculture, especially strawberries. King City has its own police department, but due to its size, it is understaffed and often understrength, making it difficult for them to deal with this number of cases at one time.\n\nAmong the six officers arrested was the former chief, Dennis M. Gannon, and the interim chief, Steve Dyer. Gannon retired after being elected as Santa Clara County District Attorney. He is now serving a four-year prison term after pleading guilty to conspiracy and two counts of embezzlement. According to Dyer, he did nothing wrong, and his defense lawyer said he is \"unwilling to comment.\"\n\nMonterey County District Attorney John T. Phillips III called the conduct of these officers \"despicable\" and \"shocking.\" He said that the investigation into the case is still ongoing, so no one can speculate about what else might be uncovered.\n\nPhillips said, \"No one",
+      "processed_text": "The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his interim successor, have been arrested on charges of conspiracy to commit grand theft, false imprisonment, perjury, and other charges.\n\nAccording to the Monterey County District Attorney's office, the officers in question have been involved in a scheme where they would ticket motorists for minor traffic violations and then take their cars from them if they could not pay the $250 release fee, which included a $120 fine. The impound lot operator would then turn the cars over to the police, who would sell the cars or keep them. The DA says that between 300 and 400 cars were taken from drivers this way.\n\nKing City is a small town located in the Salinas Valley in California. It has a population of approximately 7,800 people and is known as a center of agriculture, especially strawberries. King City has its own police department, but due to its size, it is understaffed and often understrength, making it difficult for them to deal with this number of cases at one time.\n\nAmong the six officers arrested was the former chief, Dennis M. Gannon, and the interim chief, Steve Dyer. Gannon retired after being elected as Santa Clara County District Attorney. He is now serving a four-year prison term after pleading guilty to conspiracy and two counts of embezzlement. According to Dyer, he did nothing wrong, and his defense lawyer said he is \"unwilling to comment.\"\n\nMonterey County District Attorney John T. Phillips III called the conduct of these officers \"despicable\" and \"shocking.\" He said that the investigation into the case is still ongoing, so no one can speculate about what else might be uncovered.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 157,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: DA says officers would impound cars of people who couldn't pay release fees .\nThe impound lot owner would turn cars over to cops, who sold or kept them .\nAmong those arrested are the former chief and the interim chief, who says he did no wrong .\nCNN affiliate says small department is strained by the number of arrests .\n\nBegin with: \"The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "The sister of a man suspected in the shooting of Pakistani teenager Malala Yousufzai has apologized to the victim. \"Please convey a message to Malala, that I apologize for what my brother did to her,\" said Rehana Haleem.\n\nThe sister was speaking to the media from the city of Islamabad, Pakistan. She made it clear that her name is not Asma, as had been previously reported, but Rehana Haleem. The statement came after it was reported that Aman Ullah was the suspect in the shooting, and that Rehana Haleem is his sister.\n\nRehana Haleem made it known that she disowns her brother for his action, saying, \"He has brought shame on our family. I don't consider Atta Ullah my brother anymore.\"\n\nMalala Yousufzai was shot in October 2012 in the city of Swat by someone thought to be a member of the Tehrik-e-Taliban Pakistan (TTP). The motive of the attack is still unclear, but Malala was known for her stance against the Taliban who had banned girls from going to school.\n\nMalala is now receiving treatment at a hospital in the United Kingdom where she underwent surgery and continues to receive medical care.\n\nRehana Haleem stated that she has no knowledge of her brother's activities, and she also says that her mother and father do not know either and have not seen him in over a year.\n\nMalala is expected to return to Pakistan in the near future, but the details have yet to be released. She has been speaking out to different organizations and speaking to young people around the world. She will probably be interested to hear from her brother's sister and to know that she has apologized.",
+      "processed_text": "The sister of a man suspected in the shooting of Pakistani teenager Malala Yousufzai has apologized to the victim. \"Please convey a message to Malala, that I apologize for what my brother did to her,\" said Rehana Haleem.\n\nThe sister was speaking to the media from the city of Islamabad, Pakistan. She made it clear that her name is not Asma, as had been previously reported, but Rehana Haleem. The statement came after it was reported that Aman Ullah was the suspect in the shooting, and that Rehana Haleem is his sister.\n\nRehana Haleem made it known that she disowns her brother for his action, saying, \"He has brought shame on our family. I don't consider Atta Ullah my brother anymore.\"\n\nMalala Yousufzai was shot in October 2012 in the city of Swat by someone thought to be a member of the Tehrik-e-Taliban Pakistan (TTP). The motive of the attack is still unclear, but Malala was known for her stance against the Taliban who had banned girls from going to school.\n\nMalala is now receiving treatment at a hospital in the United Kingdom where she underwent surgery and continues to receive medical care.\n\nRehana Haleem stated that she has no knowledge of her brother's activities, and she also says that her mother and father do not know either and have not seen him in over a year.\n\nMalala is expected to return to Pakistan in the near future, but the details have yet to be released. She has been speaking out to different organizations and speaking to young people around the world.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 141,
+        "completion_tokens": 355
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: \"He has brought shame on our family,\" says suspect's sister .\n\"I don't consider Atta Ullah my brother any more,\" she adds .\nThe 23-year-old student is being sought in connection with the attack on Malala .\n\nBegin with: \"The sister of a man suspected in the shooting of Pakistani teenager Malala Yousufzai has apologized to the victim. \"Please convey a message to Malala, that I apologize for what my brother did to her,\" Rehana Haleem\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "More than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday. Many of the displaced civilians have moved to other districts within North Waziristan and some have gone as far away as Peshawar.\nReports coming from the area said that Pakistani Air Force planes have attacked a Taliban hideout in North Waziristan on Thursday, killing more than 250 insurgents and destroying more than 70 vehicles. The Pakistani Air Force also carried out another attack on the area on Monday.\nThe Taliban is considered one of the main targets, but no exact figure on how many insurgents have been killed or captured by Pakistani security forces was given to date.\nThe military offensive is part of a government plan to take back control of North and South Waziristan from insurgents.\nThe area, which borders Afghanistan, is one of the main hideouts of al-Qaeda and the Taliban.\nThere have been no official statements made from al-Qaeda and the Taliban to comment on the attacks, but they have warned the local population not to cooperate with the Pakistani government.\nAn estimated 300,000 people were already displaced from the North Waziristan tribal region before the latest offensive.\nAccording to a spokesman for the International Organization for Migration (IOM), the number of people who have now been displaced has risen to about 850,000.\nIn recent years, there have been numerous offensives from the Pakistani military against the Taliban in North Waziristan and they have been able to retake several districts from them, but it seems to be a difficult task to keep these districts free of the Taliban.\nThe last major offensive by the Pakistani military against the Pakistani Taliban in 2014 resulted in the death of about 2,000 civilians, according to a 20",
+      "processed_text": "More than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday. Many of the displaced civilians have moved to other districts within North Waziristan and some have gone as far away as Peshawar.\nReports coming from the area said that Pakistani Air Force planes have attacked a Taliban hideout in North Waziristan on Thursday, killing more than 250 insurgents and destroying more than 70 vehicles. The Pakistani Air Force also carried out another attack on the area on Monday.\nThe Taliban is considered one of the main targets, but no exact figure on how many insurgents have been killed or captured by Pakistani security forces was given to date.\nThe military offensive is part of a government plan to take back control of North and South Waziristan from insurgents.\nThe area, which borders Afghanistan, is one of the main hideouts of al-Qaeda and the Taliban.\nThere have been no official statements made from al-Qaeda and the Taliban to comment on the attacks, but they have warned the local population not to cooperate with the Pakistani government.\nAn estimated 300,000 people were already displaced from the North Waziristan tribal region before the latest offensive.\nAccording to a spokesman for the International Organization for Migration (IOM), the number of people who have now been displaced has risen to about 850,000.\nIn recent years, there have been numerous offensives from the Pakistani military against the Taliban in North Waziristan and they have been able to retake several districts from them, but it seems to be a difficult task to keep these districts free of the Taliban.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 130,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Civilians flee North Waziristan as planes strike militants .\nMore than 250 insurgents have been killed, army says .\nThe Pakistani Taliban is among the targets .\n\nBegin with: \"More than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday. Many of the displaced civilians have moved\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence. Six days ago, two bombs exploded near the finish line at the Boston Marathon. The explosions killed three people and wounded over 180.\nThe London Marathon is the world's largest one day sporting event. There were 32,796 official runners and an estimated 4,000 charity entrants that will participate in the race, according to BBC News. In addition to the runners, there will be about 60,000 spectators along the route, with another 2 million watching on television.\nSix days after the bombing, the event will begin with a 30-second silence to honor those that died. There will be black solidarity ribbons tied onto the bibs given out to all the runners, and many of the runners will be running in memory of the victims of the Boston Marathon bombings.\nIn preparation for the bombings, police have put extra efforts into securing the race this year. According to the Daily Mail, there will be around 5,000 policemen patrolling the course on Sunday, and all runners must have their identification checked before they can run the marathon. Runners that are not wearing their bib numbers on their shirts or backs will not be allowed to start in the race.\nSecurity will be a topic of discussion at the marathon, because it is a good testing event to see if they can run a large scale event without problems in the Olympics 2012 which will take place in London. The BBC said that it would be useful for the Olympics organizers as the marathon has been used as a trial run for other similar events.\nThis is the 28th year that the London Marathon has taken place, and the 27th year that it has been run in",
+      "processed_text": "Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence. Six days ago, two bombs exploded near the finish line at the Boston Marathon. The explosions killed three people and wounded over 180.\nThe London Marathon is the world's largest one day sporting event. There were 32,796 official runners and an estimated 4,000 charity entrants that will participate in the race, according to BBC News. In addition to the runners, there will be about 60,000 spectators along the route, with another 2 million watching on television.\nSix days after the bombing, the event will begin with a 30-second silence to honor those that died. There will be black solidarity ribbons tied onto the bibs given out to all the runners, and many of the runners will be running in memory of the victims of the Boston Marathon bombings.\nIn preparation for the bombings, police have put extra efforts into securing the race this year. According to the Daily Mail, there will be around 5,000 policemen patrolling the course on Sunday, and all runners must have their identification checked before they can run the marathon. Runners that are not wearing their bib numbers on their shirts or backs will not be allowed to start in the race.\nSecurity will be a topic of discussion at the marathon, because it is a good testing event to see if they can run a large scale event without problems in the Olympics 2012 which will take place in London. The BBC said that it would be useful for the Olympics organizers as the marathon has been used as a trial run for other similar events.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 153,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Six days after Boston Marathon bombings, thousands of runners will compete in London .\nSpecial event marked by 30 second silence, black solidarity ribbons .\nStepped-up security with increased searches and police on streets .\nOlympics 2012 good training ground for staging international sporting events .\n\nBegin with: \"Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence. Six days after\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Marcel Siem held his nerve amid a late charge from Francesco Molinari to take the Open de France — his first European Tour title for eight years. The German finished on eight-under-par, one shot better than Molinari who recorded a six-under-par total and shot a two-under-par 69 in the final round at Le Golf National.\nThe tournament started well for Italian Francesco Molinari, but he couldn't quite take the victory away from Siem who was in front all week. The Italian was in form, having recently won the Open Championship, so it would have been a real achievement for Siem to get the win in front of home crowd.\nFrenchman Kevin Na was three-under-par for the day, with a four-under-par 67, but Siem was the only European in the top 10 at the end of play.\nLee Westwood showed no ill effects after the injury he suffered in the second round of this tournament, and he showed it on Sunday. He managed to shoot a one-over-par 72 which put him tied for seventh place overall.\nIt was a good performance by Westwood, as he came close to making the cut with his five-over-par 76, but he had a scare on the course when he came off his bike in the second round and suffered a broken toe. It was nice for him to be back on the course and back to being in contention on Sunday.\nRookie Ted Potter was in the headlines this week, as he became the PGA Tour's sixth first-time winner of the year after winning The Barclays last month. He is only the third rookie ever to win more than one tournament on tour, as he managed to claim both the US Amateur and US Open titles before becoming the first winner of the season.\nPotter, along with Siem, is still playing on the European Tour this week, although he has already qualified to be playing on the PGA Tour next year. This is because he",
+      "processed_text": "Marcel Siem held his nerve amid a late charge from Francesco Molinari to take the Open de France — his first European Tour title for eight years. The German finished on eight-under-par, one shot better than Molinari who recorded a six-under-par total and shot a two-under-par 69 in the final round at Le Golf National.\nThe tournament started well for Italian Francesco Molinari, but he couldn't quite take the victory away from Siem who was in front all week. The Italian was in form, having recently won the Open Championship, so it would have been a real achievement for Siem to get the win in front of home crowd.\nFrenchman Kevin Na was three-under-par for the day, with a four-under-par 67, but Siem was the only European in the top 10 at the end of play.\nLee Westwood showed no ill effects after the injury he suffered in the second round of this tournament, and he showed it on Sunday. He managed to shoot a one-over-par 72 which put him tied for seventh place overall.\nIt was a good performance by Westwood, as he came close to making the cut with his five-over-par 76, but he had a scare on the course when he came off his bike in the second round and suffered a broken toe. It was nice for him to be back on the course and back to being in contention on Sunday.\nRookie Ted Potter was in the headlines this week, as he became the PGA Tour's sixth first-time winner of the year after winning The Barclays last month. He is only the third rookie ever to win more than one tournament on tour, as he managed to claim both the US Amateur and US Open titles before becoming the first winner of the season.\nPotter, along with Siem, is still playing on the European Tour this week, although he has already qualified to be playing on the PGA Tour next year.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 154,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: German Marcel Siem wins the Open de France at Le Golf National .\nSiem holds off late charge from Francesco Molinari to win by one shot .\nLee Westwood fine after an injury scare during Saturday's round .\nRookie Ted Potter becomes PGA Tour's sixth first-time winner of 2012 .\n\nBegin with: \"Marcel Siem held his nerve amid a late charge from Francesco Molinari to take the Open de France -- his first European Tour title for eight years. The German finished on eight-under-par, one shot better than Molinari who recorded\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "**‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humorously citing a supposed conflict of interest between his companies Tesla and SpaceX.**\n\nOn 25 January, American billionaire businessman Elon Musk made a special appearance on an episode of The Simpsons and responded to a comment by Lisa Simpson, one of the main characters in the show.\n\nIn the episode, Lisa cited what seemed to be a conflict of interest between her father, Homer Simpson, who is a character that owns and operates the nuclear power plant in Springfield, and a local nuclear reactor in Springfield. However, the joke came when she was commenting on the owner of Tesla and SpaceX, both electric car and space exploration companies, Mr. Musk.\n\nAccording to Lisa, \"For a man who likes electric cars he sure burns a lot of rocket fuel,\" implying that he could not possibly have any good intentions since he makes both electric cars for the ground and rockets for going into outer space. The joke is the idea that he could not possibly like both cars and rockets since they work against each other.\n\nMr. Musk did not take the joke well and responded on Twitter, saying that rockets are the only way to currently reach orbit. He also said that other methods like electric power were simply \"impossible\". In addition, Mr. Musk stated that some other proposals like space elevators or railguns were not technologically feasible yet.\n\nThe episode aired on January 25th and was a part of The Simpsons 33rd season. The show has been running for 33 seasons and has gained a lot of popularity around the world, especially in the USA where it is produced. In this particular episode, there was no storyline, but instead, there were a few sketches with different characters and guests. It was a special episode since Mr. Musk guest appeared as a famous businessman and a CEO of companies like Tesla and SpaceX",
+      "processed_text": "**‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humorously citing a supposed conflict of interest between his companies Tesla and SpaceX.**\n\nOn 25 January, American billionaire businessman Elon Musk made a special appearance on an episode of The Simpsons and responded to a comment by Lisa Simpson, one of the main characters in the show.\n\nIn the episode, Lisa cited what seemed to be a conflict of interest between her father, Homer Simpson, who is a character that owns and operates the nuclear power plant in Springfield, and a local nuclear reactor in Springfield. However, the joke came when she was commenting on the owner of Tesla and SpaceX, both electric car and space exploration companies, Mr. Musk.\n\nAccording to Lisa, \"For a man who likes electric cars he sure burns a lot of rocket fuel,\" implying that he could not possibly have any good intentions since he makes both electric cars for the ground and rockets for going into outer space. The joke is the idea that he could not possibly like both cars and rockets since they work against each other.\n\nMr. Musk did not take the joke well and responded on Twitter, saying that rockets are the only way to currently reach orbit. He also said that other methods like electric power were simply \"impossible\". In addition, Mr. Musk stated that some other proposals like space elevators or railguns were not technologically feasible yet.\n\nThe episode aired on January 25th and was a part of The Simpsons 33rd season. The show has been running for 33 seasons and has gained a lot of popularity around the world, especially in the USA where it is produced. In this particular episode, there was no storyline, but instead, there were a few sketches with different characters and guests. It was a special episode since Mr.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 210,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: South African-born Elon Musk responded to comments by Lisa Simpson .\nHe appeared in the latest episode of The Simpsons on 25 January .\nIn it Lisa cites a potential conflict of interest between his electric car company Tesla and space exploration company SpaceX .\n'For a man who likes electric cars he sure burns a lot of rocket fuel,' she said .\nBut responding to the jibe on Twitter, Mr Musk said rockets were the only way to currently reach orbit .\nHe said other methods like electric power were simply 'impossible'\nAnd other proposals like space elevators or railguns were not technologically feasible yet .\n\nBegin with: \"‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humourously citing a supposed conflict of interest between his companies Tesla and\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic. And the fact early men and women took on the different roles of hunters and gatherers may explain why just one painting at the National Gallery is by a woman.\nProf. Gloria Moss, from University of West London, claims that differences between how men and women see things come from evolution. Her latest book 'Sex, Colour and Vision' explains the claim.\nProf. Moss explained that men's vision developed in the stone age when they were hunters and women were gatherers. Men needed better vision for hunting and so their eyes developed to be better at rotational and spacial vision. She says that modern men still have this kind of vision and it affects how they see art.\nProf. Moss also claims that women have evolved to be better at recognising faces and colour differences because of the role women played in the Stone Age. This means that women would have been better at recognising poisonous plants and people so they wouldn't get sick or be eaten. So, she claims women have better colour recognition.\nProf. Moss went to look at paintings in the National Gallery. She noticed that the paintings had different styles and different colours. She found that men tended to like paintings that were dark and had less colour while women liked paintings that were brighter and had lots of colours in them. The paintings with lots of colours in them often included people and plants.\nThere is only one woman who has ever painted a picture in the National Gallery. Her name was Elizabeth Mcilvy. She painted a picture of a man playing the violin and it is called 'A Musician in a Red Coat'. It hangs in the National Gallery in London.\nIt could be argued that the reason that there is not many women artists is because they were not allowed to be educated about art. In the Stone Age and up to around 1870, women were not allowed to be educated and so there",
+      "processed_text": "Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic. And the fact early men and women took on the different roles of hunters and gatherers may explain why just one painting at the National Gallery is by a woman.\nProf. Gloria Moss, from University of West London, claims that differences between how men and women see things come from evolution. Her latest book 'Sex, Colour and Vision' explains the claim.\nProf. Moss explained that men's vision developed in the stone age when they were hunters and women were gatherers. Men needed better vision for hunting and so their eyes developed to be better at rotational and spacial vision. She says that modern men still have this kind of vision and it affects how they see art.\nProf. Moss also claims that women have evolved to be better at recognising faces and colour differences because of the role women played in the Stone Age. This means that women would have been better at recognising poisonous plants and people so they wouldn't get sick or be eaten. So, she claims women have better colour recognition.\nProf. Moss went to look at paintings in the National Gallery. She noticed that the paintings had different styles and different colours. She found that men tended to like paintings that were dark and had less colour while women liked paintings that were brighter and had lots of colours in them. The paintings with lots of colours in them often included people and plants.\nThere is only one woman who has ever painted a picture in the National Gallery. Her name was Elizabeth Mcilvy. She painted a picture of a man playing the violin and it is called 'A Musician in a Red Coat'. It hangs in the National Gallery in London.\nIt could be argued that the reason that there is not many women artists is because they were not allowed to be educated about art.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 167,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Prof Gloria Moss claims that men and women see things differently .\nShe said that men, as hunters, have better rotational and spacial vision .\nIn her book, Prof Moss claims that men tend to be more colour blind .\nMen like paintings that are darker and have fewer colours .\nWomen prefer colourful paintings featuring people and plants .\nOnly one painting at the National Gallery is by a woman .\n\nBegin with: \"Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic. And the fact early men and women took on the different roles of hunters and gatherers may explain why just one painting\""
+        }
+      ]
+    }
+  ]
+}

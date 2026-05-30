@@ -1,0 +1,1954 @@
+{
+  "detector": "gptzero",
+  "model": "qwen2.5-7b-instruct",
+  "alpha": 1.0,
+  "domain": "scientific_abstracts",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "intervention": {
+    "mode": "ablate",
+    "direction_path": "data/analysis_results/scaled_ablation/directions/qwen2.5-7b-instruct/v_cross_L14.pt",
+    "layer": 14,
+    "tag": "v_cross_L14_steered_extended"
+  },
+  "total_samples": 10,
+  "results": [
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-5",
+      "text_length": 633,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.05778836557982773,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9416771550827783,
+          "ai": 0.05832284491722173,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9416771550827783,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 6,
+                  "completely_generated_prob": 1.474742012248794e-05
+                }
+              ],
+              "completely_generated_prob": 0.05778836557982773,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9416771550827783,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.08646924733602201,
+                  "sentence": "learning algorithms.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.913530752663978,
+                    "ai": 0.0012287970776049834,
+                    "paraphrased": 0.08524045025841703
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.11083392933002263,
+                  "sentence": "The main goal of this paper is to present how different text categorization methods were applied in order to improve a natural language call routing system.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.8891660706699773,
+                    "ai": 0.001494645745935686,
+                    "paraphrased": 0.10933928358408694
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.11511379047701825,
+                  "sentence": "In this work we have experimented with different techniques from both parts of this categorization.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.8848862095229818,
+                    "ai": 0.0016307707490041353,
+                    "paraphrased": 0.11348301972801411
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.11257821610754007,
+                  "sentence": "From text preprocessing part, we tested a number of methods for the numerical data extraction including regular expressions, NER and rule-based approaches.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.88742178389246,
+                    "ai": 0.001658427989292426,
+                    "paraphrased": 0.11091978811824764
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.1083980257686815,
+                  "sentence": "From the machine learning part, we experimented with a number of well-known classification techniques like SVM, k-NN, random forests, decision trees.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.8916019742313185,
+                    "ai": 0.0015317337725798263,
+                    "paraphrased": 0.10686629199610168
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.11279571335233234,
+                  "sentence": "We tested our models on a dataset that we built.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.8872042866476677,
+                    "ai": 0.0016617210296836604,
+                    "paraphrased": 0.11113399232264867
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9416771550827783,
+                "ai": 0.05832284491722173,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9416771550827783,
+                  "ai": 0.05832284491722173,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": " learning algorithms. The main goal of this paper is to present how different text categorization methods were applied in order to improve a natural language call routing system. In this work we have experimented with different techniques from both parts of this categorization. From text preprocessing part, we tested a number of methods for the numerical data extraction including regular expressions, NER and rule-based approaches. From the machine learning part, we experimented with a number of well-known classification techniques like SVM, k-NN, random forests, decision trees. We tested our models on a dataset that we built.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-0",
+      "text_length": 1327,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 2.8100896485856065e-05,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9999714407330836,
+          "ai": 2.8559266916372392e-05,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9999714407330836,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 9,
+                  "completely_generated_prob": 4.1887248735431006e-08
+                }
+              ],
+              "completely_generated_prob": 2.8100896485856065e-05,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9999714407330836,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.006636089072463257,
+                  "sentence": ".",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9933639109275367,
+                    "ai": 0.005394730542688045,
+                    "paraphrased": 0.0012413585297752123
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0005040083458239809,
+                  "sentence": "The aim of this work was to identify the chemical compounds produced by *C. nivalis* that may be responsible for the pink color of snow algae.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.999495991654176,
+                    "ai": 0.0004760682972732183,
+                    "paraphrased": 2.7940048550762562e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00033556932228918695,
+                  "sentence": "By using liquid chromatography-tandem mass spectrometry (LC-MS/MS) and retention time alignment, we were able to identify three esterified derivatives of the carotenoid astaxanthin, all of which are new to science.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9996644306777108,
+                    "ai": 0.00031116546747606536,
+                    "paraphrased": 2.440385481312157e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0003885975175844061,
+                  "sentence": "These are astaxanthin diglucoside mono-ester (1), astaxanthin diglucoside di-ester (2), and astaxanthin diglucoside tri-ester (3).",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9996114024824156,
+                    "ai": 0.0003672783658893359,
+                    "paraphrased": 2.1319151695070202e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0002011792594155706,
+                  "sentence": "We found that esterification can occur between the hydroxyl groups of both ends of the carotenois aglycon or between one of the hydroxyl groups of both ends with the free hydroxyl group of a glucoside.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997988207405845,
+                    "ai": 0.0001813292449617654,
+                    "paraphrased": 1.9850014453805203e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00024258656708762218,
+                  "sentence": "The results indicate that the three identified ester derivatives have a similar retention time, and it was not possible to separate them by liquid chromatography.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997574134329124,
+                    "ai": 0.00022075786781160358,
+                    "paraphrased": 2.18286992760186e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00029920984325257745,
+                  "sentence": "Therefore, only the molecular formulas were determined by liquid chromatography-mass spectrometry (LC-MS) with atmospheric pressure chemical ionization, and the structures of the compounds were confirmed using tandem mass spectrometry (MS/MS).",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997007901567474,
+                    "ai": 0.0002778708018675227,
+                    "paraphrased": 2.1339041385054797e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00030938532957749395,
+                  "sentence": "The proposed chemical structures of astaxanthin diglucoside mono-ester and astaxanthin diglucoside di-ester were further verified by synthesis.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9996906146704225,
+                    "ai": 0.0002907829658355198,
+                    "paraphrased": 1.860236374197414e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.001247477435666373,
+                  "sentence": "The results provide new information about the secondary metabolites produced by *C.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9987525225643337,
+                    "ai": 0.0012151669074629671,
+                    "paraphrased": 3.2310528203406016e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9999714407330836,
+                "ai": 2.8559266916372392e-05,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9999714407330836,
+                  "ai": 2.8559266916372392e-05,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": ". The aim of this work was to identify the chemical compounds produced by *C. nivalis* that may be responsible for the pink color of snow algae. By using liquid chromatography-tandem mass spectrometry (LC-MS/MS) and retention time alignment, we were able to identify three esterified derivatives of the carotenoid astaxanthin, all of which are new to science. These are astaxanthin diglucoside mono-ester (1), astaxanthin diglucoside di-ester (2), and astaxanthin diglucoside tri-ester (3). We found that esterification can occur between the hydroxyl groups of both ends of the carotenois aglycon or between one of the hydroxyl groups of both ends with the free hydroxyl group of a glucoside. The results indicate that the three identified ester derivatives have a similar retention time, and it was not possible to separate them by liquid chromatography. Therefore, only the molecular formulas were determined by liquid chromatography-mass spectrometry (LC-MS) with atmospheric pressure chemical ionization, and the structures of the compounds were confirmed using tandem mass spectrometry (MS/MS). The proposed chemical structures of astaxanthin diglucoside mono-ester and astaxanthin diglucoside di-ester were further verified by synthesis. The results provide new information about the secondary metabolites produced by *C.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-6",
+      "text_length": 677,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.9999261184989143,
+        "average_generated_prob": 1,
+        "class_probabilities": {
+          "human": 0,
+          "ai": 1,
+          "mixed": 0
+        },
+        "predicted_class": "ai",
+        "confidence_score": 1,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 4,
+                  "completely_generated_prob": 0.8708627247549962
+                }
+              ],
+              "completely_generated_prob": 0.9999261184989143,
+              "average_generated_prob": 1,
+              "predicted_class": "ai",
+              "confidence_score": 1,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.9838105403292079,
+                  "sentence": "that the method of adaptive ensembling, which is an unsupervised domain adaptation approach, can be effectively applied to perform document analysis.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.01618945967079217,
+                    "ai": 0.9837147568876544,
+                    "paraphrased": 9.578344155343436e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9796994573261536,
+                  "sentence": "Our study has shown that this method can improve the performance of text classification and clustering tasks when transferring knowledge from one corpus (the source domain) to another corpus (the target domain).",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.020300542673846487,
+                    "ai": 0.979595886944855,
+                    "paraphrased": 0.00010357038129855729
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9766823232807972,
+                  "sentence": "The proposed method selects features that are discriminative to the target domain and then uses a classifier that is trained on the source domain, but adapted to the target domain.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.023317676719202807,
+                    "ai": 0.9765771728856365,
+                    "paraphrased": 0.00010515039516065808
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9823736765364951,
+                  "sentence": "By applying our method to several public datasets, we show that our approach yields better results than some common existing methods.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.01762632346350485,
+                    "ai": 0.982275418839273,
+                    "paraphrased": 9.825769722207534e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0,
+                "ai": 1,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "ai": 1,
+                  "mixed": 0,
+                  "human": 0
+                }
+              },
+              "subclass": {
+                "ai": {
+                  "predicted_class": "pure_ai",
+                  "result_message": "",
+                  "confidence_score": 1,
+                  "confidence_category": "high",
+                  "class_probabilities": {
+                    "pure_ai": 1,
+                    "ai_paraphrased": 0
+                  },
+                  "confidence_scores_raw": {
+                    "identity": {
+                      "pure_ai": 1,
+                      "ai_paraphrased": 0
+                    }
+                  },
+                  "confidence_thresholds_raw": {
+                    "identity": {
+                      "ai_paraphrased": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      },
+                      "pure_ai": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      }
+                    }
+                  }
+                }
+              },
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written by AI.",
+              "result_sub_message": null,
+              "document_classification": "AI_ONLY",
+              "inputText": " that the method of adaptive ensembling, which is an unsupervised domain adaptation approach, can be effectively applied to perform document analysis. Our study has shown that this method can improve the performance of text classification and clustering tasks when transferring knowledge from one corpus (the source domain) to another corpus (the target domain). The proposed method selects features that are discriminative to the target domain and then uses a classifier that is trained on the source domain, but adapted to the target domain. By applying our method to several public datasets, we show that our approach yields better results than some common existing methods.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-3",
+      "text_length": 352,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.04983756301475706,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.8986046768944556,
+          "ai": 0.10139532310554432,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.8986046768944556,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                }
+              ],
+              "completely_generated_prob": 0.04983756301475706,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.8986046768944556,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.38758025500261145,
+                  "sentence": "by coupling RTKs to different pathways, either by creating chimeric receptors or by modifying endogenous receptors, and by comparing the developmental consequences of those modifications.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6124197449973885,
+                    "ai": 0.02548458885163553,
+                    "paraphrased": 0.36209566615097594
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.3989208824731574,
+                  "sentence": "We found that the specificity of the biological response was determined both by quantitative differences in signaling output as well as by qualitative differences.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6010791175268426,
+                    "ai": 0.02658559058952314,
+                    "paraphrased": 0.37233529188363423
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.8986046768944556,
+                "ai": 0.10139532310554432,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.8986046768944556,
+                  "ai": 0.10139532310554432,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": " by coupling RTKs to different pathways, either by creating chimeric receptors or by modifying endogenous receptors, and by comparing the developmental consequences of those modifications. We found that the specificity of the biological response was determined both by quantitative differences in signaling output as well as by qualitative differences.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-2",
+      "text_length": 519,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.010147542193427202,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9889938276911093,
+          "ai": 0.01100617230889058,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9889938276911093,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                }
+              ],
+              "completely_generated_prob": 0.010147542193427202,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9889938276911093,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.09106290171120857,
+                  "sentence": "ing this architecture requires analyzing both the control dynamics of each individual converter in the hierarchical scheme, as well as the overall transient stability of the system.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9089370982887914,
+                    "ai": 0.07531987144671357,
+                    "paraphrased": 0.015743030264494997
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.033775577007089025,
+                  "sentence": "The secondary control of the network is a centralized optimal power flow (OPF) method which optimally distributes the active power among all of the converters.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.966224422992911,
+                    "ai": 0.025922775027130033,
+                    "paraphrased": 0.007852801979958992
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.02399572347089813,
+                  "sentence": "The design of the OPF-based secondary control uses an alternating direction method of multipliers (ADMM) algorithm to get the optimal solution of the power distribution problem.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9760042765291018,
+                    "ai": 0.015333461172262265,
+                    "paraphrased": 0.008662262298635863
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9889938276911093,
+                "ai": 0.01100617230889058,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9889938276911093,
+                  "ai": 0.01100617230889058,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": "ing this architecture requires analyzing both the control dynamics of each individual converter in the hierarchical scheme, as well as the overall transient stability of the system. The secondary control of the network is a centralized optimal power flow (OPF) method which optimally distributes the active power among all of the converters. The design of the OPF-based secondary control uses an alternating direction method of multipliers (ADMM) algorithm to get the optimal solution of the power distribution problem.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-4",
+      "text_length": 1592,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 6.604191384536447e-05,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9999328093211705,
+          "ai": 6.719067882951094e-05,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9999328093211705,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 1,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                  "start_sentence_index": 4,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                  "start_sentence_index": 6,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                  "start_sentence_index": 9,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                  "start_sentence_index": 11,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                }
+              ],
+              "completely_generated_prob": 6.604191384536447e-05,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9999328093211705,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.0001981314797227879,
+                  "sentence": "factors that influence expert's opinions about software project effective risk management.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9998018685202772,
+                    "ai": 9.538582631273693e-05,
+                    "paraphrased": 0.00010274565341005098
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00020942217165412694,
+                  "sentence": "This research is an exploratory study to examine the expert’s opinions about software project effective risk management.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997905778283459,
+                    "ai": 0.0001008139411687828,
+                    "paraphrased": 0.00010860823048534414
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.000524637157730307,
+                  "sentence": "This study aims to identify how the experts perceive the effective risk management practices used in software projects.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9994753628422697,
+                    "ai": 0.00037987135175559296,
+                    "paraphrased": 0.0001447658059747141
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00019000272647909868,
+                  "sentence": "The research was conducted in order to have a better understanding of what expert's opinion about the effective risk management in the software projects.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9998099972735209,
+                    "ai": 8.39363674970934e-05,
+                    "paraphrased": 0.00010606635898200528
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00020691919413840806,
+                  "sentence": "This is a qualitative study, which included semi-structured interviews with seven experts from the software industry.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997930808058616,
+                    "ai": 9.958789597388832e-05,
+                    "paraphrased": 0.00010733129816451973
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0002032181020866587,
+                  "sentence": "These were expert practitioners having at least five years of professional experience in their field.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997967818979133,
+                    "ai": 0.00011065188741865777,
+                    "paraphrased": 9.256621466800091e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0002090412365023155,
+                  "sentence": "The results indicate that the experts agreed on some factors such as; planning, identifying, analyzing, and responding to risks, but they had different views on other factors.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997909587634977,
+                    "ai": 0.00010295746971933328,
+                    "paraphrased": 0.0001060837667829822
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00023104394195180245,
+                  "sentence": "The experts have agreed that the project manager should be responsible for managing the risk.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997689560580482,
+                    "ai": 0.0001217090519593148,
+                    "paraphrased": 0.00010933488999248765
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0001888986276838286,
+                  "sentence": "In addition, the expert agreed that communication and documentation are very important.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9998111013723162,
+                    "ai": 9.347425549730344e-05,
+                    "paraphrased": 9.542437218652517e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00025165841942983666,
+                  "sentence": "The experts had different views about the importance of software development life cycle for the effective risk management.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997483415805701,
+                    "ai": 0.00013813481918905517,
+                    "paraphrased": 0.00011352360024078148
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00020277434201066723,
+                  "sentence": "Some experts agreed that software development life cycle plays an important role in the effective risk management, while the others had different view on this.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997972256579893,
+                    "ai": 0.00010785555878862512,
+                    "paraphrased": 9.491878322204211e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00023599148304783408,
+                  "sentence": "From the findings we can conclude that there are a number of factors that influence expert's opinions on software project effective risk management and these factors should be taken into consideration when planning the software project.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997640085169521,
+                    "ai": 0.0001339965652185338,
+                    "paraphrased": 0.00010199491782930027
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9999328093211705,
+                "ai": 6.719067882951094e-05,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9999328093211705,
+                  "ai": 6.719067882951094e-05,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": " factors that influence expert's opinions about software project effective risk management.\n\nThis research is an exploratory study to examine the expert’s opinions about software project effective risk management. This study aims to identify how the experts perceive the effective risk management practices used in software projects. The research was conducted in order to have a better understanding of what expert's opinion about the effective risk management in the software projects.\n \nThis is a qualitative study, which included semi-structured interviews with seven experts from the software industry. These were expert practitioners having at least five years of professional experience in their field.\n\nThe results indicate that the experts agreed on some factors such as; planning, identifying, analyzing, and responding to risks, but they had different views on other factors. The experts have agreed that the project manager should be responsible for managing the risk. In addition, the expert agreed that communication and documentation are very important. \n\nThe experts had different views about the importance of software development life cycle for the effective risk management. Some experts agreed that software development life cycle plays an important role in the effective risk management, while the others had different view on this. \n\nFrom the findings we can conclude that there are a number of factors that influence expert's opinions on software project effective risk management and these factors should be taken into consideration when planning the software project.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-1",
+      "text_length": 636,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 3.597408291842248e-05,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9999634778676149,
+          "ai": 3.652213238519497e-05,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9999634778676149,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 4,
+                  "completely_generated_prob": 0.0006564766595293492
+                }
+              ],
+              "completely_generated_prob": 3.597408291842248e-05,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9999634778676149,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.0009329107638261938,
+                  "sentence": "is on the unified theory of wave breaking.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9990670892361738,
+                    "ai": 0.0008785918133107197,
+                    "paraphrased": 5.431895051547409e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00045289927779153466,
+                  "sentence": "Based on the Boussinesq-type equations, a unifying description of all wave breaking modes is derived, which covers weakly non-linear shallow water waves, wave breaking over a submerged bar, weakly non-linear waves propagating over a beach, as well as strongly non-linear wave breaking over steep beaches.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9995471007222084,
+                    "ai": 0.000410113353090438,
+                    "paraphrased": 4.278592470109665e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0004886682657200562,
+                  "sentence": "The results show that although different numerical models have been proposed to simulate different types of wave breaking, these models have similar wave breaking process.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.99951133173428,
+                    "ai": 0.0004445068879438955,
+                    "paraphrased": 4.416137777616078e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0005776098133264352,
+                  "sentence": "A unifying description of different types of wave breakings can be obtained based on the Boussinesq-type equations.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9994223901866736,
+                    "ai": 0.000532844547778534,
+                    "paraphrased": 4.476526554790116e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9999634778676149,
+                "ai": 3.652213238519497e-05,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9999634778676149,
+                  "ai": 3.652213238519497e-05,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": " is on the unified theory of wave breaking. Based on the Boussinesq-type equations, a unifying description of all wave breaking modes is derived, which covers weakly non-linear shallow water waves, wave breaking over a submerged bar, weakly non-linear waves propagating over a beach, as well as strongly non-linear wave breaking over steep beaches. The results show that although different numerical models have been proposed to simulate different types of wave breaking, these models have similar wave breaking process. A unifying description of different types of wave breakings can be obtained based on the Boussinesq-type equations.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-7",
+      "text_length": 410,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 5.630832915915415e-05,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9999366193994188,
+          "ai": 6.338060058122534e-05,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9999366193994188,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 4,
+                  "completely_generated_prob": 0.0006564766595293492
+                }
+              ],
+              "completely_generated_prob": 5.630832915915415e-05,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9999366193994188,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.0008199690227190771,
+                  "sentence": "corresponding substituted 1,3-dienes.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9991800309772809,
+                    "ai": 0.0007434230736895241,
+                    "paraphrased": 7.654594902955302e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0007146866954764998,
+                  "sentence": "All the compounds synthesized have been fully characterized by various spectroscopic methods including 1D and 2D NMR and IR.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9992853133045235,
+                    "ai": 0.0006452119000767987,
+                    "paraphrased": 6.947479539970109e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0010728066158928664,
+                  "sentence": "The newly synthesized compounds were evaluated for their anti-cancer and antifungal activities.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9989271933841072,
+                    "ai": 0.0009845441844301946,
+                    "paraphrased": 8.826243146267179e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0009432696214268236,
+                  "sentence": "Some of the synthesized compounds showed promising activity in these studies and were selected for in vivo studies against human ovarian cancer cells.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9990567303785731,
+                    "ai": 0.0008619969951021252,
+                    "paraphrased": 8.127262632469831e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9999366193994188,
+                "ai": 6.338060058122534e-05,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9999366193994188,
+                  "ai": 6.338060058122534e-05,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": " corresponding substituted 1,3-dienes. All the compounds synthesized have been fully characterized by various spectroscopic methods including 1D and 2D NMR and IR. The newly synthesized compounds were evaluated for their anti-cancer and antifungal activities. Some of the synthesized compounds showed promising activity in these studies and were selected for in vivo studies against human ovarian cancer cells.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-9",
+      "text_length": 458,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.9999367783113895,
+        "average_generated_prob": 1,
+        "class_probabilities": {
+          "human": 0,
+          "ai": 1,
+          "mixed": 0
+        },
+        "predicted_class": "ai",
+        "confidence_score": 1,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.850090677245877
+                }
+              ],
+              "completely_generated_prob": 0.9999367783113895,
+              "average_generated_prob": 1,
+              "predicted_class": "ai",
+              "confidence_score": 1,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.9892640013820699,
+                  "sentence": "paper investigates how to support massive machine-to-machine (M2M) traffic in heterogeneous networks (HetNets) and 5G cellular networks.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.010735998617930136,
+                    "ai": 0.9890763535226865,
+                    "paraphrased": 0.00018764785938338882
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9889780936045228,
+                  "sentence": "We present a novel approach that enables HetNets and 5G networks to cope with the massive M2M traffic load while at the same time providing good Quality of Service (QoS).",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.011021906395477109,
+                    "ai": 0.9887967006943531,
+                    "paraphrased": 0.00018139291016974984
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9887944494713236,
+                  "sentence": "Our approach relies on HetNets with multi-cell multi-point coordination transmission and we also investigate how to implement HetNets in 5G networks.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.01120555052867646,
+                    "ai": 0.9886049619225018,
+                    "paraphrased": 0.000189487548821713
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0,
+                "ai": 1,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "ai": 1,
+                  "mixed": 0,
+                  "human": 0
+                }
+              },
+              "subclass": {
+                "ai": {
+                  "predicted_class": "pure_ai",
+                  "result_message": "",
+                  "confidence_score": 1,
+                  "confidence_category": "high",
+                  "class_probabilities": {
+                    "pure_ai": 1,
+                    "ai_paraphrased": 0
+                  },
+                  "confidence_scores_raw": {
+                    "identity": {
+                      "pure_ai": 1,
+                      "ai_paraphrased": 0
+                    }
+                  },
+                  "confidence_thresholds_raw": {
+                    "identity": {
+                      "ai_paraphrased": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      },
+                      "pure_ai": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      }
+                    }
+                  }
+                }
+              },
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written by AI.",
+              "result_sub_message": null,
+              "document_classification": "AI_ONLY",
+              "inputText": " paper investigates how to support massive machine-to-machine (M2M) traffic in heterogeneous networks (HetNets) and 5G cellular networks. We present a novel approach that enables HetNets and 5G networks to cope with the massive M2M traffic load while at the same time providing good Quality of Service (QoS). Our approach relies on HetNets with multi-cell multi-point coordination transmission and we also investigate how to implement HetNets in 5G networks.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-8",
+      "text_length": 1814,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 1.708669232409936e-05,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9999826912919969,
+          "ai": 1.730870800304872e-05,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9999826912919969,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 7,
+                  "completely_generated_prob": 2.1228438805416278e-06
+                },
+                {
+                  "start_sentence_index": 7,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                  "start_sentence_index": 10,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                  "start_sentence_index": 13,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                  "start_sentence_index": 15,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                }
+              ],
+              "completely_generated_prob": 1.708669232409936e-05,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9999826912919969,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.00032199162651720285,
+                  "sentence": "management; service management and business process management (BPM).",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9996780083734828,
+                    "ai": 0.00029633153245340254,
+                    "paraphrased": 2.5660094063800316e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00025374489977171105,
+                  "sentence": "In particular, this paper is based on the review of literature, analysis of secondary data, and case study research methods.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997462551002283,
+                    "ai": 0.0002319788891123681,
+                    "paraphrased": 2.1766010659342937e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0002623431876798275,
+                  "sentence": "To investigate the problem in question, a questionnaire was distributed to 1200 facilities management (FM) firms from Europe, Asia, North America, and South America.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997376568123202,
+                    "ai": 0.0002409060633613037,
+                    "paraphrased": 2.1437124318523786e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00030779417413732756,
+                  "sentence": "852 responses were received.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9996922058258627,
+                    "ai": 0.00028501427852478277,
+                    "paraphrased": 2.2779895612544783e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0004162791457494891,
+                  "sentence": "After screening the questionnaires, 498 were valid and used in the analysis.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9995837208542505,
+                    "ai": 0.0003922637784724404,
+                    "paraphrased": 2.401536727704874e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0006192024302298711,
+                  "sentence": "The data were analysed using multiple regression techniques.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9993807975697702,
+                    "ai": 0.0005903545360682801,
+                    "paraphrased": 2.8847894161590985e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0004507138216766723,
+                  "sentence": "The findings have been reported using tables and figures.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9995492861783233,
+                    "ai": 0.00042405733575035995,
+                    "paraphrased": 2.6656485926312314e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00031907130724012845,
+                  "sentence": "Findings – The results show that there is a significant relationship between the use of internal procurement route and the ongoing buyer-supplier relationship.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9996809286927598,
+                    "ai": 0.00029450309577202735,
+                    "paraphrased": 2.456821146810108e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00039114433058738316,
+                  "sentence": "There is also a significant relationship between the use of external procurement route and the ongoing buyer-supplier relationship.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9996088556694126,
+                    "ai": 0.0003649713621057344,
+                    "paraphrased": 2.617296848164873e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0003047480236543394,
+                  "sentence": "Furthermore, the effect of the use of the internal procurement route on the buyer-supplier relationship is more significant than the effect of the external procurement route.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9996952519763457,
+                    "ai": 0.0002806346609316652,
+                    "paraphrased": 2.4113362722674248e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00014378560064282316,
+                  "sentence": "Research limitations/implications – This study has only taken into account one kind of procurement routes.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9998562143993571,
+                    "ai": 0.0001273632206061002,
+                    "paraphrased": 1.6422380036722967e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0005953925282561998,
+                  "sentence": "Future studies could consider more factors which influence the buyer-supplier relationship.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9994046074717438,
+                    "ai": 0.0005675286848914324,
+                    "paraphrased": 2.7863843364767407e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0003555796851813451,
+                  "sentence": "For example, the impact of procurement price, the impact of procurement quality and the impact of procurement time.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9996444203148187,
+                    "ai": 0.00033071407948806616,
+                    "paraphrased": 2.4865605693278935e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0002450348419736696,
+                  "sentence": "Practical implications – In the process of facility management (FM), managers should pay attention to the selection of procurement route.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997549651580263,
+                    "ai": 0.00022673094641801944,
+                    "paraphrased": 1.8303895555650133e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00021787373180462638,
+                  "sentence": "By selecting appropriate procurement route, we can get the good ongoing buyer-supplier relationship.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997821262681954,
+                    "ai": 0.00019966551543047816,
+                    "paraphrased": 1.8208216374148222e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0007179091867803817,
+                  "sentence": "Originality/value – This research provides useful information and insights regarding the impact of the use of internal procurement route or external procurement route on the buyer-supplier relationship.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9992820908132196,
+                    "ai": 0.0006924025902578337,
+                    "paraphrased": 2.550659652254808e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9999826912919969,
+                "ai": 1.730870800304872e-05,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9999826912919969,
+                  "ai": 1.730870800304872e-05,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": " management; service management and business process management (BPM). In particular, this paper is based on the review of literature, analysis of secondary data, and case study research methods. To investigate the problem in question, a questionnaire was distributed to 1200 facilities management (FM) firms from Europe, Asia, North America, and South America. 852 responses were received. After screening the questionnaires, 498 were valid and used in the analysis. The data were analysed using multiple regression techniques. The findings have been reported using tables and figures.\n\nFindings – The results show that there is a significant relationship between the use of internal procurement route and the ongoing buyer-supplier relationship. There is also a significant relationship between the use of external procurement route and the ongoing buyer-supplier relationship. Furthermore, the effect of the use of the internal procurement route on the buyer-supplier relationship is more significant than the effect of the external procurement route.\n\nResearch limitations/implications – This study has only taken into account one kind of procurement routes. Future studies could consider more factors which influence the buyer-supplier relationship. For example, the impact of procurement price, the impact of procurement quality and the impact of procurement time.\n\nPractical implications – In the process of facility management (FM), managers should pay attention to the selection of procurement route. By selecting appropriate procurement route, we can get the good ongoing buyer-supplier relationship.\n\nOriginality/value – This research provides useful information and insights regarding the impact of the use of internal procurement route or external procurement route on the buyer-supplier relationship.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "processed": 10,
+  "errors": 0,
+  "skipped": 0
+}

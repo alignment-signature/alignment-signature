@@ -1,0 +1,125 @@
+{
+  "detector": "binoculars",
+  "model": "gemma-2-9b-it",
+  "alpha": 2.0,
+  "domain": "news_articles",
+  "model_id": "google/gemma-2-9b-it",
+  "intervention": {
+    "mode": "partial_ablate",
+    "direction_path": "data/analysis_results/scaled_ablation/directions/gemma-2-9b-it/v_cross_L2.pt",
+    "layer": 2,
+    "alpha": 2.0,
+    "tag": "v_cross_L2_partial_ablate_alpha2.00_batched"
+  },
+  "observer_id": "tiiuae/falcon-7b",
+  "performer_id": "tiiuae/falcon-7b-instruct",
+  "mode": "low-fpr",
+  "threshold": 0.8536432310785527,
+  "max_token_observed": 512,
+  "total_samples": 10,
+  "results": [
+    {
+      "id": "strategy_A-news_articles-instruct-0",
+      "text_length": 940,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.9786324501037598,
+        "predicted_label": "human"
+      }
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-1",
+      "text_length": 857,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.9665071964263916,
+        "predicted_label": "human"
+      }
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-2",
+      "text_length": 871,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.9864253401756287,
+        "predicted_label": "human"
+      }
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-3",
+      "text_length": 903,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 1.0192307233810425,
+        "predicted_label": "human"
+      }
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-4",
+      "text_length": 870,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 1.0,
+        "predicted_label": "human"
+      }
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-5",
+      "text_length": 880,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.9857142567634583,
+        "predicted_label": "human"
+      }
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-6",
+      "text_length": 877,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 1.0137615203857422,
+        "predicted_label": "human"
+      }
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-7",
+      "text_length": 856,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 1.0,
+        "predicted_label": "human"
+      }
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-8",
+      "text_length": 962,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.9700854420661926,
+        "predicted_label": "human"
+      }
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-9",
+      "text_length": 885,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 1.0473933219909668,
+        "predicted_label": "human"
+      }
+    }
+  ],
+  "processed": 10,
+  "errors": 0,
+  "skipped": 0
+}

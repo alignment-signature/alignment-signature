@@ -1,0 +1,305 @@
+{
+  "model_type": "instruct",
+  "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "domain": "news_articles",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400,
+    "batched": true,
+    "batch_size": 4
+  },
+  "intervention": {
+    "mode": "all_layer_ablate_per_domain",
+    "direction_path": "data/analysis_results/in_domain_pasta/directions/llama-3.1-8b-instruct/news_articles/v_cross_L8.pt",
+    "extracted_from_domain": "news_articles",
+    "extracted_from_n_train": 25,
+    "layer_extracted_from": 8,
+    "tag": "v_cross_news_articles_L8_all_layer_ablated"
+  },
+  "split": {
+    "train_ids": [
+      28,
+      30,
+      32,
+      33,
+      40,
+      43,
+      45,
+      46,
+      47,
+      48,
+      54,
+      59,
+      60,
+      61,
+      62,
+      70,
+      71,
+      74,
+      77,
+      79,
+      83,
+      94,
+      97,
+      98,
+      99
+    ],
+    "test_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "n_train": 25,
+    "n_test": 25
+  },
+  "num_generations": 10,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-news_articles-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "It’s set to be one of the most groundbreaking moments in humanity’s six decades of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching a spacecraft into orbit. But those looking forward to this pivotal moment will have to wait a little longer.\n\nThe mission was supposed to take place at Cape Canaveral, Florida. But the company has delayed it because of a problem with one of the engines. \n\nThe launch was already delayed from earlier this week for the same reason.\n\nThe launch will now happen at 11:18am GMT on Tuesday 6 January. \n\nAfter the launch, the first stage of the rocket, a Falcon 9, will attempt to touch down on a big floating platform in the ocean. This is after it has taken a Dragon spacecraft into space.\n\nIt will be the first time a company has landed a rocket on solid ground after launching from a space centre, but it's not the first time a company has landed a rocket on a platform in the water.\n\nThe company's boss, Elon Musk, says there's a 50 per cent chance of it working. But he wants to get to a point where all his rockets can be landed and used again.\n\nMusk wants this to happen soon, and is trying to make sure it's safe and that the cost of launching into space can come down.",
+      "processed_text": "It’s set to be one of the most groundbreaking moments in humanity’s six decades of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching a spacecraft into orbit. But those looking forward to this pivotal moment will have to wait a little longer.\n\nThe mission was supposed to take place at Cape Canaveral, Florida. But the company has delayed it because of a problem with one of the engines. \n\nThe launch was already delayed from earlier this week for the same reason.\n\nThe launch will now happen at 11:18am GMT on Tuesday 6 January. \n\nAfter the launch, the first stage of the rocket, a Falcon 9, will attempt to touch down on a big floating platform in the ocean. This is after it has taken a Dragon spacecraft into space.\n\nIt will be the first time a company has landed a rocket on solid ground after launching from a space centre, but it's not the first time a company has landed a rocket on a platform in the water.\n\nThe company's boss, Elon Musk, says there's a 50 per cent chance of it working. But he wants to get to a point where all his rockets can be landed and used again.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 250,
+        "completion_tokens": 273
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: SpaceX was planning to land a Falcon 9 rocket at Cape Canaveral today .\nThe rocket was to attempt to land after launching a Dragon capsule .\nBut the launch has been delayed due to an issue with one of the engines .\nIt had already been delayed from earlier this week due to the same issue .\nIt will now take place at 11.18am GMT on Tuesday 6 January .\nAfter launch the first stage of their Falcon 9 rocket will attempt to touch down on a barge after taking Dragon to space .\nIt is the first ever attempt at landing a rocket on solid ground after launch .\nCEO Elon Musk said the ambitious attempt has a 50% chance of working .\nThe company ultimately wants all of its rockets to be reusable .\n\nBegin with: \"It’s set to be one of the most groundbreaking moments in humanity’s six decades of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching. But those looking forward to this pivotal moment will have to wait a little\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "**EXCLUSIVE: British Journalist Recounts Horrific Ordeal at the Hands of Cairo Mob**\n\nAmid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a British student journalist was being sexually assaulted by a mob in Tahrir Square. Natasha Smith recounted the experience on her blog and in an interview.\n\nIn the midst of the chaos and joy of Egyptians celebrating the result of their first free presidential election since Hosni Mubarak was ousted, Natasha Smith was fighting for her life.\n\nAccording to her account, Natasha Smith was surrounded by a large group of men in Tahrir Square on Monday night (June 24). They started ripping off all her clothes.\n\n\"I was completely naked,\" she said in an interview. \"There were several moments at which I thought she was going to die,\" a friend said. \"It was an extremely violent, aggressive mob,\" Natasha Smith said.\n\nShe said a group of Egyptian men and women stopped the attackers and helped her escape.\n\n\"They came and they took me to my friend, to my flat, to my home,\" she said.\n\nThe BBC has chosen not to show her face on TV for her own protection.",
+      "processed_text": "**EXCLUSIVE: British Journalist Recounts Horrific Ordeal at the Hands of Cairo Mob**\n\nAmid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a British student journalist was being sexually assaulted by a mob in Tahrir Square. Natasha Smith recounted the experience on her blog and in an interview.\n\nIn the midst of the chaos and joy of Egyptians celebrating the result of their first free presidential election since Hosni Mubarak was ousted, Natasha Smith was fighting for her life.\n\nAccording to her account, Natasha Smith was surrounded by a large group of men in Tahrir Square on Monday night (June 24). They started ripping off all her clothes.\n\n\"I was completely naked,\" she said in an interview. \"There were several moments at which I thought she was going to die,\" a friend said. \"It was an extremely violent, aggressive mob,\" Natasha Smith said.\n\nShe said a group of Egyptian men and women stopped the attackers and helped her escape.\n\n\"They came and they took me to my friend, to my flat, to my home,\" she said.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 159,
+        "completion_tokens": 242
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: British reporter Natasha Smith recounts attack in Tahrir Square .\nSmith says she was mobbed by men who \"started ripping off all my clothes\"\n\"There were several moments at which I thought she was going to die,\" a friend says .\nEgyptians stepped in to protect her and helped her escape, she says .\n\nBegin with: \"Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a British student journalist was being sexually assaulted by a mob in Tahrir Square. Natasha Smith recounted the experience on her blog and in an interview\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Airline Passengers Air Their Grievances About Tarmac Delays at Capitol Hill Hearing\n\nAirline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates from the Consumer Travel Alliance and Airlines for America.\n\nThe hearing aimed to focus on the issue of long tarmac delays, which have been a problem for some airlines lately. Some passengers have been stuck on planes for hours waiting to take off. The FAA (Federal Aviation Administration) said it plans to implement a new rule requiring planes to start boarding a gate after three hours. \n\nSome witnesses were in favor of this rule. Former American Airlines CEO Tom Horton spoke in support of it. Another witness, who is a former flight attendant, talked about how routine delays are the bigger problem.",
+      "processed_text": "Airline Passengers Air Their Grievances About Tarmac Delays at Capitol Hill Hearing\n\nAirline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates from the Consumer Travel Alliance and Airlines for America.\n\nThe hearing aimed to focus on the issue of long tarmac delays, which have been a problem for some airlines lately. Some passengers have been stuck on planes for hours waiting to take off. The FAA (Federal Aviation Administration) said it plans to implement a new rule requiring planes to start boarding a gate after three hours. \n\nSome witnesses were in favor of this rule. Former American Airlines CEO Tom Horton spoke in support of it.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 151,
+        "completion_tokens": 184
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Unofficial Capitol Hill hearing addressed concerns over long tarmac delays .\nBill sponsored by Sen. Barbara Boxer would allow fliers to deplane after three hours .\nFormer American Airlines CEO spoke in support of three-hour limit .\nAnother witness said routine delays are more pressing issue .\n\nBegin with: \"Airline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "King City Police Officers Accused of Abusing Power, Impounding Cars of Low-Income People, Selling Them for Profit\n\nThe prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees.\n\nKing City Police Officers Accused of Impounding, Selling Cars of People Who Couldn't Pay Release Fees\n\nMonterey County District Attorney, Eddie Alves, says the officers, who worked in the small department of King City, used their power for personal gain.  Six officers, including the former police chief of King City and his interim replacement, are being charged with corruption.\n\nThe former police chief, Bruce Miller, and the interim chief, Luis Sanchez, were among those arrested.  The current police chief is not being charged.\n\nThe officers set up a system to make money by releasing cars from impound lots for a fee.  If the owner couldn't pay the fee, the car would be sold at auction to make more money.\n\nThe district attorney says the officers made more than $130,000.  He says this is a lot of money for a small police department.\n\nA CNN affiliate says the city's police department only has nine officers.  They are overwhelmed with work because of the number of arrests.  Many of the arrests were for public intoxication and disorderly conduct.",
+      "processed_text": "King City Police Officers Accused of Abusing Power, Impounding Cars of Low-Income People, Selling Them for Profit\n\nThe prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees.\n\nKing City Police Officers Accused of Impounding, Selling Cars of People Who Couldn't Pay Release Fees\n\nMonterey County District Attorney, Eddie Alves, says the officers, who worked in the small department of King City, used their power for personal gain.  Six officers, including the former police chief of King City and his interim replacement, are being charged with corruption.\n\nThe former police chief, Bruce Miller, and the interim chief, Luis Sanchez, were among those arrested.  The current police chief is not being charged.\n\nThe officers set up a system to make money by releasing cars from impound lots for a fee.  If the owner couldn't pay the fee, the car would be sold at auction to make more money.\n\nThe district attorney says the officers made more than $130,000.  He says this is a lot of money for a small police department.\n\nA CNN affiliate says the city's police department only has nine officers.  They are overwhelmed with work because of the number of arrests.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 163,
+        "completion_tokens": 281
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: DA says officers would impound cars of people who couldn't pay release fees .\nThe impound lot owner would turn cars over to cops, who sold or kept them .\nAmong those arrested are the former chief and the interim chief, who says he did no wrong .\nCNN affiliate says small department is strained by the number of arrests .\n\nBegin with: \"The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "HEADLINE: Pakistani Girl's Assassin's Sister Apologizes for Attack on Malala\n\nLAHORE, PAKISTAN - In a rare display of remorse and understanding, the sister of the Taliban gunman who tried to kill Malala Yousufzai, the Pakistani teenage girl who survived a gunshot to the head by the Taliban, has apologized for what her brother did to her.\n\nRehana Haleem, 30, the sister of Atta Ullah, the 23-year-old student who is accused of shooting Malala, said in a statement that she \"is really sorry\" for the attack on Malala. \n\nAtta Ullah, who was a 17-year-old boy when he shot Malala, is believed to have been trained by the Pakistani Taliban in the northwestern Swat Valley region. He was among the people who were killed during a recent US drone strike.\n\nMalala survived the attempt on her life in 2012 and later became a Nobel Peace Prize winner. She was shot on her way to school by Atta Ullah because she supported girls' education and was criticizing the Pakistani Taliban for keeping girls from going to school.\n\nRehana Haleem said her brother had \"brought shame on our family\" with what he did to Malala. She said she doesn't \"consider him my brother anymore\" because what he did to Malala \"was a bad thing.\"",
+      "processed_text": "HEADLINE: Pakistani Girl's Assassin's Sister Apologizes for Attack on Malala\n\nLAHORE, PAKISTAN - In a rare display of remorse and understanding, the sister of the Taliban gunman who tried to kill Malala Yousufzai, the Pakistani teenage girl who survived a gunshot to the head by the Taliban, has apologized for what her brother did to her.\n\nRehana Haleem, 30, the sister of Atta Ullah, the 23-year-old student who is accused of shooting Malala, said in a statement that she \"is really sorry\" for the attack on Malala. \n\nAtta Ullah, who was a 17-year-old boy when he shot Malala, is believed to have been trained by the Pakistani Taliban in the northwestern Swat Valley region. He was among the people who were killed during a recent US drone strike.\n\nMalala survived the attempt on her life in 2012 and later became a Nobel Peace Prize winner. She was shot on her way to school by Atta Ullah because she supported girls' education and was criticizing the Pakistani Taliban for keeping girls from going to school.\n\nRehana Haleem said her brother had \"brought shame on our family\" with what he did to Malala.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 146,
+        "completion_tokens": 287
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: \"He has brought shame on our family,\" says suspect's sister .\n\"I don't consider Atta Ullah my brother any more,\" she adds .\nThe 23-year-old student is being sought in connection with the attack on Malala .\n\nBegin with: \"The sister of a man suspected in the shooting of Pakistani teenager Malala Yousufzai has apologized to the victim. \"Please convey a message to Malala, that I apologize for what my brother did to her,\" Rehana Haleem\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "**Pakistani Civilians Flee North Waziristan as Military Strikes Militants**\n\nMore than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday.\n\nThe mass migration began two weeks ago when the Pakistani military launched an operation in North Waziristan against the Pakistani Taliban and other militants, a U.S. ally in the fight against terrorism. The military says it has killed more than 250 militants, but it has not given a breakdown on the number of foreign and Pakistani militants.\n\nThe Pakistani Taliban and the Pakistani government have been fighting for years, but the latest operation started in mid-June. The military said that the operation in North Waziristan, which is a tribal region in the northwestern part of the country, was the first phase of a bigger operation.\n\nPakistan's disaster management agency has set up camps for the people who have fled, and other countries, like the United Arab Emirates and Saudi Arabia, have sent aid and money to help the displaced people.\n\nThe military says it has also killed some leaders of the Pakistani Taliban, but it has not given names. A U.S. official said that many of the Pakistani Taliban leaders are in Afghanistan, but the Pakistani government is not saying if that's true or not.\n\nNorth Waziristan is close to the border with Afghanistan, where there are also many militants from the Pakistani Taliban. The Pakistani government and the U.S. government say that the Pakistani Taliban is a terrorist organization.\n\nThe Pakistani Taliban says it wants to take over Pakistan and enforce its version of Islam, but Pakistan's government and many Pakistanis do not want that.",
+      "processed_text": "**Pakistani Civilians Flee North Waziristan as Military Strikes Militants**\n\nMore than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday.\n\nThe mass migration began two weeks ago when the Pakistani military launched an operation in North Waziristan against the Pakistani Taliban and other militants, a U.S. ally in the fight against terrorism. The military says it has killed more than 250 militants, but it has not given a breakdown on the number of foreign and Pakistani militants.\n\nThe Pakistani Taliban and the Pakistani government have been fighting for years, but the latest operation started in mid-June. The military said that the operation in North Waziristan, which is a tribal region in the northwestern part of the country, was the first phase of a bigger operation.\n\nPakistan's disaster management agency has set up camps for the people who have fled, and other countries, like the United Arab Emirates and Saudi Arabia, have sent aid and money to help the displaced people.\n\nThe military says it has also killed some leaders of the Pakistani Taliban, but it has not given names. A U.S. official said that many of the Pakistani Taliban leaders are in Afghanistan, but the Pakistani government is not saying if that's true or not.\n\nNorth Waziristan is close to the border with Afghanistan, where there are also many militants from the Pakistani Taliban. The Pakistani government and the U.S. government say that the Pakistani Taliban is a terrorist organization.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 130,
+        "completion_tokens": 352
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Civilians flee North Waziristan as planes strike militants .\nMore than 250 insurgents have been killed, army says .\nThe Pakistani Taliban is among the targets .\n\nBegin with: \"More than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday. Many of the displaced civilians have moved\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence.\n\nSix days after the devastating Boston Marathon bombings which took 3 lives and wounded 260 people, runners in London will pay their respects with a 30-second silence before the start of the London Marathon. The silence is a mark of respect for the victims and the city of Boston.\n\nAs well as the silence, runners will also wear black solidarity ribbons to show support for the people of Boston. The runners are asked to wear the ribbons over their hearts.\n\nThere will also be extra security at the London Marathon because of the Boston bombings. There will be more police on the streets, more searches on the way in, and bag searches when people enter the area where the start and finish of the marathon are. And in the finish area, there will be more police, and there will be cordons and checkpoints.\n\nThe police are saying they want to make sure that everyone is safe, and the runners are being told that the extra security is nothing to do with stopping people who want to have a run, but it is to make sure that everything goes smoothly and safely. \n\nThe London Olympics in 2012 was good practice for the police for a big event, so they should be able to handle it.",
+      "processed_text": "Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence.\n\nSix days after the devastating Boston Marathon bombings which took 3 lives and wounded 260 people, runners in London will pay their respects with a 30-second silence before the start of the London Marathon. The silence is a mark of respect for the victims and the city of Boston.\n\nAs well as the silence, runners will also wear black solidarity ribbons to show support for the people of Boston. The runners are asked to wear the ribbons over their hearts.\n\nThere will also be extra security at the London Marathon because of the Boston bombings. There will be more police on the streets, more searches on the way in, and bag searches when people enter the area where the start and finish of the marathon are. And in the finish area, there will be more police, and there will be cordons and checkpoints.\n\nThe police are saying they want to make sure that everyone is safe, and the runners are being told that the extra security is nothing to do with stopping people who want to have a run, but it is to make sure that everything goes smoothly and safely.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 153,
+        "completion_tokens": 288
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Six days after Boston Marathon bombings, thousands of runners will compete in London .\nSpecial event marked by 30 second silence, black solidarity ribbons .\nStepped-up security with increased searches and police on streets .\nOlympics 2012 good training ground for staging international sporting events .\n\nBegin with: \"Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence. Six days after\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Marcel Siem held his nerve amid a late charge from Francesco Molinari to take the Open de France -- his first European Tour title for eight years.\n\nThe German finished on eight-under-par, one shot better than Molinari who recorded his 12th runner-up finish, after he carded a 4-under-par 68 in the final round at Le Golf National.\n\nSiem, who turned pro in 2001, led for most of the week, but Molinari, the US Open champion, came from four shots behind to challenge for the title. \nLee Westwood finished third after he pulled out of the game on Saturday with a neck injury, but recovered well to finish just three shots off the pace.\n\nRookie Ted Potter, the American who won the Greenbrier Classic on his first appearance, became the PGA Tour's sixth first-time winner of the year, as he recorded a 66 to win the Greenbrier Classic by two shots.",
+      "processed_text": "Marcel Siem held his nerve amid a late charge from Francesco Molinari to take the Open de France -- his first European Tour title for eight years.\n\nThe German finished on eight-under-par, one shot better than Molinari who recorded his 12th runner-up finish, after he carded a 4-under-par 68 in the final round at Le Golf National.\n\nSiem, who turned pro in 2001, led for most of the week, but Molinari, the US Open champion, came from four shots behind to challenge for the title. \nLee Westwood finished third after he pulled out of the game on Saturday with a neck injury, but recovered well to finish just three shots off the pace.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 158,
+        "completion_tokens": 197
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: German Marcel Siem wins the Open de France at Le Golf National .\nSiem holds off late charge from Francesco Molinari to win by one shot .\nLee Westwood fine after an injury scare during Saturday's round .\nRookie Ted Potter becomes PGA Tour's sixth first-time winner of 2012 .\n\nBegin with: \"Marcel Siem held his nerve amid a late charge from Francesco Molinari to take the Open de France -- his first European Tour title for eight years. The German finished on eight-under-par, one shot better than Molinari who recorded\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humorously citing a supposed conflict of interest between his companies Tesla and SpaceX.\n\nIn his latest appearance on the popular animated TV show, the South African-born billionaire and entrepreneur got a cheeky remark from Lisa, the clever and witty daughter of the Simpson family.\n\nBut Mr Musk, who appeared in the episode \"Undercover Lisa\" on Sunday night (January 25), had a ready answer. He responded with a tweet saying: \"Rockets are the only way to reach orbit right now. Other methods, like electric propulsion, are impossible. Space elevators & railguns are not yet tech feasible.\"\n\nMr Musk also used Twitter to praise Lisa for being \"smart\" and said he was \"delighted\" to be on the show. He said: \"Just watched a fun episode of The Simpsons featuring me. I was delighted to be on the show. Lisa is smart.\"",
+      "processed_text": "‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humorously citing a supposed conflict of interest between his companies Tesla and SpaceX.\n\nIn his latest appearance on the popular animated TV show, the South African-born billionaire and entrepreneur got a cheeky remark from Lisa, the clever and witty daughter of the Simpson family.\n\nBut Mr Musk, who appeared in the episode \"Undercover Lisa\" on Sunday night (January 25), had a ready answer. He responded with a tweet saying: \"Rockets are the only way to reach orbit right now. Other methods, like electric propulsion, are impossible. Space elevators & railguns are not yet tech feasible.\"\n\nMr Musk also used Twitter to praise Lisa for being \"smart\" and said he was \"delighted\" to be on the show. He said: \"Just watched a fun episode of The Simpsons featuring me. I was delighted to be on the show.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 215,
+        "completion_tokens": 210
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: South African-born Elon Musk responded to comments by Lisa Simpson .\nHe appeared in the latest episode of The Simpsons on 25 January .\nIn it Lisa cites a potential conflict of interest between his electric car company Tesla and space exploration company SpaceX .\n'For a man who likes electric cars he sure burns a lot of rocket fuel,' she said .\nBut responding to the jibe on Twitter, Mr Musk said rockets were the only way to currently reach orbit .\nHe said other methods like electric power were simply 'impossible'\nAnd other proposals like space elevators or railguns were not technologically feasible yet .\n\nBegin with: \"‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humourously citing a supposed conflict of interest between his companies Tesla and\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic.\n\nProfessor Gloria Moss, a former lecturer in a school of art and design, says that the reason men tend to prefer more serious paintings is because their vision is better suited for spotting animals in the wild.\n\nShe says in her book 'Art and Homemakers' that men's vision gives them a better sense of how much space things take up and how they move.\n\nThis means, she says, that men like paintings that show people and animals in action and are more dramatic.\n\nIn contrast, women's vision is more geared to looking at things that are close to them, like plants and flowers.\n\nThis is why, according to Professor Moss, women tend to like paintings that are bright and have lots of colours and show scenes of everyday life.\n\nShe says her research showed that only one out of a selection of paintings at the National Gallery was by a woman.\n\nThis may be because, she says, women were more interested in decorating their homes and making things rather than fighting and hunting and doing things that men did.\n\nProfessor Moss has said that some men's love of darker paintings with fewer colours may be because of their history as hunters.\n\nWhen hunting, she says, men had to be careful not to be seen, so they liked things that were dark and quiet.\n\nBut now, she says, men are just following the way they were made to look at things.",
+      "processed_text": "Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic.\n\nProfessor Gloria Moss, a former lecturer in a school of art and design, says that the reason men tend to prefer more serious paintings is because their vision is better suited for spotting animals in the wild.\n\nShe says in her book 'Art and Homemakers' that men's vision gives them a better sense of how much space things take up and how they move.\n\nThis means, she says, that men like paintings that show people and animals in action and are more dramatic.\n\nIn contrast, women's vision is more geared to looking at things that are close to them, like plants and flowers.\n\nThis is why, according to Professor Moss, women tend to like paintings that are bright and have lots of colours and show scenes of everyday life.\n\nShe says her research showed that only one out of a selection of paintings at the National Gallery was by a woman.\n\nThis may be because, she says, women were more interested in decorating their homes and making things rather than fighting and hunting and doing things that men did.\n\nProfessor Moss has said that some men's love of darker paintings with fewer colours may be because of their history as hunters.\n\nWhen hunting, she says, men had to be careful not to be seen, so they liked things that were dark and quiet.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 173,
+        "completion_tokens": 298
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Prof Gloria Moss claims that men and women see things differently .\nShe said that men, as hunters, have better rotational and spacial vision .\nIn her book, Prof Moss claims that men tend to be more colour blind .\nMen like paintings that are darker and have fewer colours .\nWomen prefer colourful paintings featuring people and plants .\nOnly one painting at the National Gallery is by a woman .\n\nBegin with: \"Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic. And the fact early men and women took on the different roles of hunters and gatherers may explain why just one painting\""
+        }
+      ]
+    }
+  ]
+}

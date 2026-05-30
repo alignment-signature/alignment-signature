@@ -1,0 +1,242 @@
+{
+  "model_type": "instruct",
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400
+  },
+  "intervention": {
+    "mode": "ablate",
+    "direction_path": "random_direction_ablation_results/qwen2.5-1.5b/directions/v_cross_L16.pt",
+    "tag": "v_cross_L16_ablated"
+  },
+  "domain": "news_articles",
+  "num_generations": 10,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-news_articles-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 3,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "raw_text": "The news article starts out talking about an accusation made against the police from a county called King City, which is located in Sacramento County, CA. There is also an implication it was said by the president of the American Bar Association.\nThis statement sounds bad for any country especially the USA, they're saying the most powerful man, that's the president at least, isn't able to get what you want, even if you give him 50 dollars.\nThere have been many other cases of this happened because the price someone needs to buy food on depends too much on money in the bank (called cash), so lots of people don't have enough money to make it. This means they can't go to work every day. The government does give some help but it's not very good.\n\nIt gets really complicated because the judge is making the judgement after they have done the crime first and got the money they needed from the person they accused. It just makes it even more unfair if the judges have done the crimes before. There were two policemen who did the same thing as each others job and both of them lost their job. So now both of them cannot be policeman again. I hope they found better jobs. There have been other people doing worse things than the one described here in these stories. But I think the police are trying really hard! In fact, the new president wants all the states have good police and do a good job helping people and keep safe the people of America!\nI'm sorry if i am wrong , If you believe me tell me.",
+      "processed_text": "The news article starts out talking about an accusation made against the police from a county called King City, which is located in Sacramento County, CA. There is also an implication it was said by the president of the American Bar Association.\nThis statement sounds bad for any country especially the USA, they're saying the most powerful man, that's the president at least, isn't able to get what you want, even if you give him 50 dollars.\nThere have been many other cases of this happened because the price someone needs to buy food on depends too much on money in the bank (called cash), so lots of people don't have enough money to make it. This means they can't go to work every day. The government does give some help but it's not very good.\n\nIt gets really complicated because the judge is making the judgement after they have done the crime first and got the money they needed from the person they accused. It just makes it even more unfair if the judges have done the crimes before. There were two policemen who did the same thing as each others job and both of them lost their job. So now both of them cannot be policeman again. I hope they found better jobs. There have been other people doing worse things than the one described here in these stories. But I think the police are trying really hard! In fact, the new president wants all the states have good police and do a good job helping people and keep safe the people of America!",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 157,
+        "completion_tokens": 313
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: DA says officers would impound cars of people who couldn't pay release fees .\nThe impound lot owner would turn cars over to cops, who sold or kept them .\nAmong those arrested are the former chief and the interim chief, who says he did no wrong .\nCNN affiliate says small department is strained by the number of arrests .\n\nBegin with: \"The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 15,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "raw_text": "Maria Sharapova And Caroline Wozniacki Get Their Hands On The Titles In The Miami Masters\nThe only bad news for the two sisters is the lights did not work - so it was pretty difficult playing there.\nHowever, they got their hands on titles anyway, because both of them reached there final.\nI think most of the tennis fans would like that!\nWhat made this more exciting than normal was that the women's doubles title has just been won by Eugenie Bouchard and Roberta Vinci which made them winners first three singles title (men wins are Roger Martin 6 - 2 , 6 – 0) ! But the ladies have done well too now.\nNow they get a big chance if all three go on.\nA lot of young girls likes watching them as there name sound very nice and look nice when they are happy or sad! Now she can do one little jump to win a title!!!\nSo I am sure they will make us happy in the next ten years!! It makes me feel happy that we will see much good things!!! So keep practicing, boys !!!\nBut my favorite winner was Carlintha because his face looks like he is smiling!!!!!!!!! So enjoy the game everyone!!!!! Let him play some really good shot!!!!!!!!!!!!! Also I'm trying my best to follow you guys, I hope u don't mind me writing your comment so slow!!!! Thank you!!!",
+      "processed_text": "Maria Sharapova And Caroline Wozniacki Get Their Hands On The Titles In The Miami Masters\nThe only bad news for the two sisters is the lights did not work - so it was pretty difficult playing there.\nHowever, they got their hands on titles anyway, because both of them reached there final.\nI think most of the tennis fans would like that!\nWhat made this more exciting than normal was that the women's doubles title has just been won by Eugenie Bouchard and Roberta Vinci which made them winners first three singles title (men wins are Roger Martin 6 - 2 , 6 – 0) ! But the ladies have done well too now.\nNow they get a big chance if all three go on.\nA lot of young girls likes watching them as there name sound very nice and look nice when they are happy or sad! Now she can do one little jump to win a title!!!\nSo I am sure they will make us happy in the next ten years!! It makes me feel happy that we will see much good things!!! So keep practicing, boys !!!\nBut my favorite winner was Carlintha because his face looks like he is smiling!!!!!!!!! So enjoy the game everyone!!!!! Let him play some really good shot!!!!!!!!!!!!! Also I'm trying my best to follow you guys, I hope u don't mind me writing your comment so slow!!!!",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 282
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Maria Sharapova beats Caroline Wozniacki to reach her fourth Miami Masters final .\nAgnieszka Radwanka defeats Marion Bartoli in match interrupted by light failures .\nWorld No. 1 Novak Djokovic reaches men's semifinals after beating David Ferrer .\nDjokovic's last four opponent will be Juan Monaco, who beat U.S. No. 1 Mardy Fish .\n\nBegin with: \"Former world No. 1s Maria Sharapova and Caroline Wozniacki lit up the court at the Miami Masters on Thursday, but the lights went out on Agnieszka Radwanska and Marion Bartoli in the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 20,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "raw_text": "Here's my write-up for the same:\n\nFifteen-year-old has been given one operation because his legs were burnt and the surgeons need some blood type from an organ donor\n\nA man was arrested as a suspect because he tried to start fires at someone else (Michael is the same name)\n\nThe police say this case is the biggest arson fire that ever happened here and they don't think they'll be able do it any time soon.\n\nHe was going home tonight but only if there is a person to give him their blood. The doctors also need the same blood group to keep them alive.\nThis kind of accident never happen in Australia, it can cost so much money. He must get a job now, I am sorry what happened to you little boy.\nSorry, this does sound very bad. Maybe ask an adult or phone 000? It may help tell people that this can also happen in other places around the world.",
+      "processed_text": "Here's my write-up for the same:\n\nFifteen-year-old has been given one operation because his legs were burnt and the surgeons need some blood type from an organ donor\n\nA man was arrested as a suspect because he tried to start fires at someone else (Michael is the same name)\n\nThe police say this case is the biggest arson fire that ever happened here and they don't think they'll be able do it any time soon.\n\nHe was going home tonight but only if there is a person to give him their blood. The doctors also need the same blood group to keep them alive.\nThis kind of accident never happen in Australia, it can cost so much money. He must get a job now, I am sorry what happened to you little boy.\nSorry, this does sound very bad. Maybe ask an adult or phone 000?",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 165,
+        "completion_tokens": 189
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Hospital spokeswoman says Michael Brewer having own skin put onto burned areas .\nBrewer, 15, in guarded condition, will go back to intensive care after procedure .\nMore surgeries to come; October 12 attack left burns over 65 percent of his body .\n3 of the 5 teens accused of setting Brewer on fire plead not guilty to attempted murder .\n\nBegin with: \"A Florida teenager attacked and set on fire last month, allegedly by five teenage friends, was undergoing skin graft surgery Friday, the first procedure in his recovery, a hospital spokeswoman said. Michael Brewer, who suffered burns over 65 percent of his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 22,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "raw_text": "Title: The Hunt To Match The 8 Hunley Crew Members Has Just Begun\n\nA woman is on a hunt like no other when she started looking for information about the people who died aboard the Confederate ship that sank with her name in 1900.\nLinda Abrams (left photo) has gone from being the president's chief geneology investigator at the National Archives to searching for a lot more than what they were doing together . The last time I checked , she has not found any family or friends . She will never know why the Hunley disappeared if nobody can find them.\n\nBut there was a good chance she could have been part of something very sad because she was going after an unsolved murder mystery. It turns out this woman had been married once before.\n\nIt goes back even further now. Now we're not sure how much she can get to know because we don't really do it.\n\nIt looks as though this woman probably thinks so badly about this man that he murdered her she wanted him dead because he made the money which would be used to help support his son.\n\nThere was some speculation that he may have also killed the President and the first lady who were travelling the same night.\n\nIf that is true then Mr.Bob Smith did make history because he did kill the American Presidents.\nAnd yes it was also true in the story he did try and get the coins and jewels out .\n\nThe case is still not settled so maybe you want to come along too. There are many other things that you should look at to see how good the crime might be compared to how bad.\n\nDo not say anything else and wait for us to get your copy right now! Do you have a copy now? If so send it here: [email protected] We'll put your link here on our website.\nWe won’t charge you for writing your review and you can write about whatever subject we give you. Just tell us what you think, then go away happy. And we’ll show all",
+      "processed_text": "Title: The Hunt To Match The 8 Hunley Crew Members Has Just Begun\n\nA woman is on a hunt like no other when she started looking for information about the people who died aboard the Confederate ship that sank with her name in 1900.\nLinda Abrams (left photo) has gone from being the president's chief geneology investigator at the National Archives to searching for a lot more than what they were doing together . The last time I checked , she has not found any family or friends . She will never know why the Hunley disappeared if nobody can find them.\n\nBut there was a good chance she could have been part of something very sad because she was going after an unsolved murder mystery. It turns out this woman had been married once before.\n\nIt goes back even further now. Now we're not sure how much she can get to know because we don't really do it.\n\nIt looks as though this woman probably thinks so badly about this man that he murdered her she wanted him dead because he made the money which would be used to help support his son.\n\nThere was some speculation that he may have also killed the President and the first lady who were travelling the same night.\n\nIf that is true then Mr.Bob Smith did make history because he did kill the American Presidents.\nAnd yes it was also true in the story he did try and get the coins and jewels out .\n\nThe case is still not settled so maybe you want to come along too. There are many other things that you should look at to see how good the crime might be compared to how bad.\n\nDo not say anything else and wait for us to get your copy right now! Do you have a copy now? If so send it here: [email protected] We'll put your link here on our website.\nWe won’t charge you for writing your review and you can write about whatever subject we give you. Just tell us what you think, then go away happy.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 147,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Genealogist tries to fill out details of doomed Civil War submarine crew .\nThe Hunley went down off South Carolina after sinking a Civil War vessel .\nLittle was known about the eight men; DNA matches elusive for all but one .\nDid the captain carry gold coin from a romantic interest?\n\nBegin with: \"One investigative tip can lead to another -- and another. Linda Abrams, a genealogy gumshoe, went to Texas to match handwriting samples. She spent a couple weeks in Kentucky following a tip, only to find it was just hearsay.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 26,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "raw_text": "Arsenal Are First - Time Champions 2018-19 | Football World Cup Qatar News\n\nArsenal were crowned first-time Premier League champions last season but had let their record fall back down again in the current season with a lot of poor form and low scores.\nArsenal’s only good thing was that they finished seventh in league table instead of sixth (they have got out of the lower division now)\nThe player who did not do well at this point was striker Pierre-Emerick Aubameyar which scored just 3 goals from 45 games! This led manager Wenger to ask him to leave\nMorten Scorsety came in as substitute in the second half of last match. He scored the goal winning the game 6 – 3 against Stoke so he helped make change in the end\nNow in the latest match , Arsenal will face the team below them (wich is West Barm) in the match next weekend . They want to show there is no chance they cannot win the league . And one of way of making it easy will be to score lots of points . So if we can’t stop us doing that then you must think they really like going to the Championship . I'm not sure it means anything because they probably know all about the Championship anyway ! But I guess it might be worth thinking before we pay too much attention to Arsenal or not having any idea what they're doing in the Championship . It is something that I hope we won't look up to Arsenal for too much until they have done the work . And also it's not the same for me as most people have been saying , I live here already , my son is playing for local school and I go home every day even though Arsenal wins the Championship . I’m happy with the league position so why would I care if anyone else thinks I should ? I've never thought that we should try to stay where we are or anything. I'll be watching , enjoy the rest of the season ,",
+      "processed_text": "Arsenal Are First - Time Champions 2018-19 | Football World Cup Qatar News\n\nArsenal were crowned first-time Premier League champions last season but had let their record fall back down again in the current season with a lot of poor form and low scores.\nArsenal’s only good thing was that they finished seventh in league table instead of sixth (they have got out of the lower division now)\nThe player who did not do well at this point was striker Pierre-Emerick Aubameyar which scored just 3 goals from 45 games! This led manager Wenger to ask him to leave\nMorten Scorsety came in as substitute in the second half of last match. He scored the goal winning the game 6 – 3 against Stoke so he helped make change in the end\nNow in the latest match , Arsenal will face the team below them (wich is West Barm) in the match next weekend . They want to show there is no chance they cannot win the league . And one of way of making it easy will be to score lots of points . So if we can’t stop us doing that then you must think they really like going to the Championship . I'm not sure it means anything because they probably know all about the Championship anyway ! But I guess it might be worth thinking before we pay too much attention to Arsenal or not having any idea what they're doing in the Championship . It is something that I hope we won't look up to Arsenal for too much until they have done the work . And also it's not the same for me as most people have been saying , I live here already , my son is playing for local school and I go home every day even though Arsenal wins the Championship . I’m happy with the league position so why would I care if anyone else thinks I should ? I've never thought that we should try to stay where we are or anything.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 137,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Arsneal are eighth in the Premier League after unimpressive start .\nPer Mertesacker wants his team to show that they can still win the league .\nThey play West Brom on Saturday looking for an important three points .\n\nBegin with: \"Defender Per Mertesacker has called on Arsenal to show their Barclays Premier League challenge is very much 'alive' when they head to West Brom for Saturday's lunchtime kick-off. The Gunners produced a much-improved, composed display\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 27,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "raw_text": "This is probably another fake report I've never heard of.\nIt sounds like a video where there is no own goall (you mean own two goal) in it that happened at the end? The whole sentence sounds completely fake but without watching a youtube you can't really say anything since I don't have much information other than the above summary which doesn't make sense either.\nIs this something that actually happened or did they change the name of the place it happened because they wanted people to know they were joking or do something funny?\nI'll have to rewatch the videos before giving my opinion.",
+      "processed_text": "This is probably another fake report I've never heard of.\nIt sounds like a video where there is no own goall (you mean own two goal) in it that happened at the end? The whole sentence sounds completely fake but without watching a youtube you can't really say anything since I don't have much information other than the above summary which doesn't make sense either.\nIs this something that actually happened or did they change the name of the place it happened because they wanted people to know they were joking or do something funny?",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 166,
+        "completion_tokens": 121
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Freak 'own goal' seen in game between Dell Rapids and Milbank High School .\nBall bounced off defenders head and arched through the uprights .\nVideo has gone viral on YouTube, with close to 400,000 views already .\nPoint took score to 38-0 and Dell Rapids went on to win the game 51-0 .\n\nBegin with: \"A high school football team achieved a feat considered almost impossible in the sport, after the ball bounced off a defender's helmet to score a freak 'own goal'. On an extra point attempt, kicker Keegen Hemenway was disappointed when the ball\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 34,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "raw_text": "A lot happens today . I'm glad it is so good. It seems like the same old story is going around again, this is what happened : There were only few people who liked my post so now we 'll see how it goes after i do it , i was just doing some research about all this very popular date application called \" TINER , AND THE LEAGUE ( A LEX) which can be used if you really want to go out at night or just play hooky from work ; well there are not many women in most part because its more of men than womans ; But the other problem they dont get alot of girls because its very hard to find an woman interested in you and when you do she does nt give u that much attention even when you ask her . So why should u buy a $80+00 a month service? The website states they do not allow them to sell your personal info but still you could easily sell there private number and stuff else. Well the other websites are pretty good , except TINER ( NOT ) IS BAD BUT YOU HAVE TO PAY MORE MONEY OR ELSE ITS FREE . I DO NOT LIKE IT AT ALL!!!!! Please leave a review for me!!!!!!!!!!!!!!!!!!! And sorry If my information got cut out!!!!! Thank you so much!! :((((((((( ((((((((((( (((((((((((((((( (((((((((((((((((((( ((((((((((((((((((( (((( (((((((((((((((( (((((((((((((((((((((((((((((((( ((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((",
+      "processed_text": "A lot happens today . I'm glad it is so good. It seems like the same old story is going around again, this is what happened : There were only few people who liked my post so now we 'll see how it goes after i do it , i was just doing some research about all this very popular date application called \" TINER , AND THE LEAGUE ( A LEX) which can be used if you really want to go out at night or just play hooky from work ; well there are not many women in most part because its more of men than womans ; But the other problem they dont get alot of girls because its very hard to find an woman interested in you and when you do she does nt give u that much attention even when you ask her . So why should u buy a $80+00 a month service? The website states they do not allow them to sell your personal info but still you could easily sell there private number and stuff else. Well the other websites are pretty good , except TINER ( NOT ) IS BAD BUT YOU HAVE TO PAY MORE MONEY OR ELSE ITS FREE . I DO NOT LIKE IT AT ALL!!!!! Please leave a review for me!!!!!!!!!!!!!!!!!!! And sorry If my information got cut out!!!!! Thank you so much!!",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 174,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Location-based dating apps have total of 91 million users worldwide .\nSixteen to 34 year-olds make up majority of mobile dating app users .\nSix per cent of web users currently use a location-based dating app .\nAccording to Tinder, users log on to app on average 11 times a day .\nWomen spend 8.5 minutes swiping in a session and men 7.2 minutes .\n\nBegin with: \"Location-based dating apps, such as Tinder and the League, have a combined total of 91 million users. Now a new study has found that nearly two thirds of these app users are men – and one in five will pay for premium services.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 41,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "raw_text": "Title: Plane Crashes Into Alfalfa Field In Davenport, Iowa\nA plane crash happened in Davenport, Iowa on June 6th.\nA plane is normally white or other colors that can be seen. It usually also have some lights and is very big. But in this case it's blue color.Its wings aren't straight and there were more pieces than the normal ones.\nAfter all that we see , now it looks black. Then we start to get confused about where it went. Because its wings don't belong here.\nThen they got a camera but didn’t work right.\nIt is still being searched for today, because there's no one who will come back. They lost someone’s friend yesterday.",
+      "processed_text": "Title: Plane Crashes Into Alfalfa Field In Davenport, Iowa\nA plane crash happened in Davenport, Iowa on June 6th.\nA plane is normally white or other colors that can be seen. It usually also have some lights and is very big. But in this case it's blue color.Its wings aren't straight and there were more pieces than the normal ones.\nAfter all that we see , now it looks black. Then we start to get confused about where it went. Because its wings don't belong here.\nThen they got a camera but didn’t work right.\nIt is still being searched for today, because there's no one who will come back.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 124,
+        "completion_tokens": 145
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: The plane crashes into an alfalfa field in Davenport, Iowa .\nThe pilot has not been identified by authorities .\nA home video captures the crash and subsequent explosion .\n\nBegin with: \"A plane performing at an air show in Davenport, Iowa, crashed and exploded in front of thousands of spectators. The pilot of the plane was killed in the accident Saturday afternoon when the plane nosedived into an alfalfa field during the Quad\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 45,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "raw_text": "As shown above in my last reply is Samsung (USA) filing this new patent for their newest invention, called 'the wall - way'. It was invented to let users take the latest things from there phones like email , SMS, video calling or something else on there hands free.\nI think its funny how I just did it . If i didn't see anything saying the samsung one of these things then they would not exist. So if you look up an iPhone thing, 2/3 times its going to say something like google Glass etc so when you do get the Samsung version then you know your buying real thing.\nWell here is what some other people are getting different but they still work very same thing. They use basically bluetooth and connect them both and also a usb link so you plug in a pc.\nI don't know why they made this though? Why they had to use only their cell phone's memory because of the battery. If the guy who came up the plan is good enough he should make another gadget that uses his credit card memory card and save him alot of money because that's probably more expensive than a lot of phones right now. He would have to give that man all his inventions rights to make sure the person is able to copy it and sell it without making it worse for him.\nIf we buy the Samsung one it will cost less than any kind of game car system, but its a bad way you can carry it around all the time. When you want to wear something for your exercise or something you're having to hold everything together with wire cables. That makes me feel dirty. Because it does exactly it says in the name. But maybe you can use a bigger screen or something so no one sees it and u cant see ur fingers.\nAnd I guess someone said something about the picture in Samsungs website was pretty cool so maybe you can print pictures from a printer out instead of taking it out of it every time you need the image you got in ypur message box",
+      "processed_text": "As shown above in my last reply is Samsung (USA) filing this new patent for their newest invention, called 'the wall - way'. It was invented to let users take the latest things from there phones like email , SMS, video calling or something else on there hands free.\nI think its funny how I just did it . If i didn't see anything saying the samsung one of these things then they would not exist. So if you look up an iPhone thing, 2/3 times its going to say something like google Glass etc so when you do get the Samsung version then you know your buying real thing.\nWell here is what some other people are getting different but they still work very same thing. They use basically bluetooth and connect them both and also a usb link so you plug in a pc.\nI don't know why they made this though? Why they had to use only their cell phone's memory because of the battery. If the guy who came up the plan is good enough he should make another gadget that uses his credit card memory card and save him alot of money because that's probably more expensive than a lot of phones right now. He would have to give that man all his inventions rights to make sure the person is able to copy it and sell it without making it worse for him.\nIf we buy the Samsung one it will cost less than any kind of game car system, but its a bad way you can carry it around all the time. When you want to wear something for your exercise or something you're having to hold everything together with wire cables. That makes me feel dirty. Because it does exactly it says in the name. But maybe you can use a bigger screen or something so no one sees it and u cant see ur fingers.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 158,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Samsung’s design could have a longer life and be lighter than Google Glass .\nIt will allow users to ‘take phone calls and listen to music during workouts’\nSamsung calls it a ‘sports glass’ and doesn’t expect it to be worn all day .\nThe main downside, however, is users will be constantly attached to a cable .\n\nBegin with: \"Samsung has filed a design patent for wearable computer glasses that are tethered to a smartphone. The Samsung spectacle plugs into a mobile phone and displays information such as text messages and phone calls. Unlike Google Glass, which is wireless, the Wall Street Journal\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 46,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "raw_text": "\"Obama Says It Is Always Good Publicity For A Republican When He’s In An Argument With Him\"\nIt's pretty interesting to hear what Barack Obama really thinks because he never talks that much about himself and his political beliefs.\nA lot was made when governor John E. Brewer got in trouble for using racist slurs but it did not go very well.\nIn case you forgot why there should be no race riots anymore and how we can live together then here I tell you, \"The United States will die.\"\nBut that was not important just today's quote from Mr. Barack Hussein Obama (I do love my name too) who said it was good press for republicans, even when they disagree him so why am I making money off this.\nWell let's just pretend this all didn't happen because it's hard to believe that people would get rich from someone going broke!\nHere goes...\nI am writing this article because I don’t like the way president Obama makes the world look right now.\nHe is being bad for America. Look at some of his policies. His tax cuts for the rich which cost the poor more money than ever before. That doesn’t help people pay their bills and feed there kids food. And his welfare problems which cause a lot more problems later on like homelessness and crime.\nSo he is only hurting our country and his is wrong. I wish I could vote every single one of these days! It's great to see them trying new ways to fight against the USA.\nWhat do I have against them? They’re all mean! So many mean. There isn’t any nice person in them all. Just think if your friend said something rude or nasty you would tell them they were wrong so why won’t Obama stop saying what is wrong?\nI guess I must be a very lucky person because I'm rich as Donald Trump and Hillary Clinton, they aren’t happy either but I’m doing alright! I still have friends and jobs! I also like the fact you’re able to",
+      "processed_text": "\"Obama Says It Is Always Good Publicity For A Republican When He’s In An Argument With Him\"\nIt's pretty interesting to hear what Barack Obama really thinks because he never talks that much about himself and his political beliefs.\nA lot was made when governor John E. Brewer got in trouble for using racist slurs but it did not go very well.\nIn case you forgot why there should be no race riots anymore and how we can live together then here I tell you, \"The United States will die.\"\nBut that was not important just today's quote from Mr. Barack Hussein Obama (I do love my name too) who said it was good press for republicans, even when they disagree him so why am I making money off this.\nWell let's just pretend this all didn't happen because it's hard to believe that people would get rich from someone going broke!\nHere goes...\nI am writing this article because I don’t like the way president Obama makes the world look right now.\nHe is being bad for America. Look at some of his policies. His tax cuts for the rich which cost the poor more money than ever before. That doesn’t help people pay their bills and feed there kids food. And his welfare problems which cause a lot more problems later on like homelessness and crime.\nSo he is only hurting our country and his is wrong. I wish I could vote every single one of these days! It's great to see them trying new ways to fight against the USA.\nWhat do I have against them? They’re all mean! So many mean. There isn’t any nice person in them all. Just think if your friend said something rude or nasty you would tell them they were wrong so why won’t Obama stop saying what is wrong?\nI guess I must be a very lucky person because I'm rich as Donald Trump and Hillary Clinton, they aren’t happy either but I’m doing alright! I still have friends and jobs!",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 127,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: 'It is always good publicity for a Republican if they're in an argument with me,' says Obama .\nSales of governor Brewer's book have gone up since the public spat .\n\nBegin with: \"'It is always good publicity for a Republican if they're in an argument with me,' says Obama . Sales of governor Brewer's book have gone up since the public spat . By . Daily Mail Reporter . Last updated at 6:56 AM on\""
+        }
+      ]
+    }
+  ]
+}

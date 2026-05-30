@@ -1,0 +1,995 @@
+{
+  "meta": {
+    "tag": "sonnet_scaled_ablation_fluency_pairwise_llama-3p1-8b-instruct_v1",
+    "experiment": "scaled_ablation",
+    "models": [
+      "llama-3.1-8b-instruct"
+    ],
+    "variants_by_model": {
+      "llama-3.1-8b-instruct": [
+        "base",
+        "alpha_0.25",
+        "alpha_0.50",
+        "alpha_0.75",
+        "alpha_1.00",
+        "alpha_1.50",
+        "alpha_2.00"
+      ]
+    },
+    "n_examples": 5,
+    "n_judge_calls": 70,
+    "reference_role": "aligned",
+    "orders": [
+      "AB",
+      "BA"
+    ],
+    "axis": "fluency",
+    "schema": "per_slot:{score_a,score_b,reasoning_a,reasoning_b}",
+    "prompt_path": "analysis/generation_quality_analysis/prompts/fluency_pairwise.md",
+    "uses_source_prompt": false,
+    "source_prompt_role": null,
+    "data_dir": "data/generation_quality_analysis/scaled_ablation",
+    "stream_path": "data/generation_quality_analysis/scaled_ablation/results/fluency_pairwise/judge_stream_sonnet_scaled_ablation_fluency_pairwise_llama-3p1-8b-instruct_v1.jsonl",
+    "judge_provider": "anthropic_console",
+    "judge_model": "claude-sonnet-4-6",
+    "judge_model_requested": "claude-sonnet-4-6",
+    "judge_temperature": 0.0,
+    "completed_calls": 10,
+    "elapsed_sec": 18.156980514526367,
+    "in_progress": false
+  },
+  "examples": [
+    {
+      "example_id": 0,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "college_essays",
+      "original_prefix_id": 7,
+      "best_layer": 1,
+      "is_degenerate": {
+        "aligned": false,
+        "base": true,
+        "alpha_0.25": false,
+        "alpha_0.50": false,
+        "alpha_0.75": false,
+        "alpha_1.00": false,
+        "alpha_1.50": false,
+        "alpha_2.00": false
+      },
+      "finish_reason": {
+        "aligned": "length",
+        "base": "length",
+        "alpha_0.25": "length",
+        "alpha_0.50": "length",
+        "alpha_0.75": "length",
+        "alpha_1.00": "length",
+        "alpha_1.50": "length",
+        "alpha_2.00": "length"
+      },
+      "pairs": {
+        "aligned_vs_base": {
+          "x_role": "aligned",
+          "y_role": "base",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "base",
+            "score_a": 4,
+            "score_b": 3,
+            "reasoning_a": "Text A reads smoothly overall with clear sentence structure and logical flow. There are a couple of awkward phrasings ('a synopsis thing in financial report,' 'the fundamental thing') in the opening sentences that briefly slow reading, but the rest of the paper flows naturally without significant disruption.",
+            "reasoning_b": "Text B has several noticeable issues: it begins mid-sentence (appears truncated at the start), contains awkward phrasing ('general society,' 'business business sector,' 'authoritative necessities'), and has grammatical inconsistencies ('earnings management often change'). These problems are frequent enough to cause occasional slowdowns but the text remains generally understandable."
+          },
+          "order_BA": {
+            "text_a_role": "base",
+            "text_b_role": "aligned",
+            "score_a": 3,
+            "score_b": 4,
+            "reasoning_a": "Text A has several awkward phrasings ('general society,' 'stock business sector,' 'authoritative necessities') that feel like translation artifacts and slow reading. The sentence 'earnings management can change earnings by changing income statement, earnings by changing balance sheet' is repetitive and slightly garbled. These issues are noticeable enough to cause occasional re-reading but don't make the text incomprehensible.",
+            "reasoning_b": "Text B reads smoothly and coherently throughout, with well-formed sentences and natural academic prose. The opening sentence ('Earnings describe the benefits of an organization, which is the content of the wage report and a synopsis thing in financial report') is slightly awkward with 'synopsis thing,' but this is a minor slip that doesn't significantly impede reading."
+          }
+        },
+        "aligned_vs_alpha_0.25": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.25",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.25",
+            "score_a": 4,
+            "score_b": 3,
+            "reasoning_a": "Text A reads smoothly overall with clear sentence structure and good flow. The opening phrase 'a synopsis thing in financial report' is slightly awkward, but it doesn't significantly impede reading. The rest of the text is grammatically sound and coherent.",
+            "reasoning_b": "Text B has several awkward and unnatural phrasings throughout, such as 'a synopsis thing in financial report,' 'it reflects the actual profit of a company, a common goal of any business venture is to earn profit' (run-on/comma splice), and the Literature Review contains confusing and inaccurate explanations (e.g., describing depreciation as 'not allowed' and the car example) that create choppy, disjointed flow. These issues cause the reader to slow down and re-read in multiple places."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.25",
+            "text_b_role": "aligned",
+            "score_a": 3,
+            "score_b": 4,
+            "reasoning_a": "Text A has several awkward and unnatural phrasings ('a synopsis thing in financial report,' 'the fundamental thing,' 'a common goal of any business venture') and some confusing or incoherent passages (the car/bad debt example is garbled and hard to follow). These issues cause genuine slowdowns and re-reading, though the text remains broadly understandable.",
+            "reasoning_b": "Text B reads more smoothly overall, with clear sentence structure and coherent flow. The opening sentence ('a synopsis thing in financial report') is awkward and carried over from Text A, but the rest of the text is grammatically sound and natural to read, with only minor phrasing issues that don't impede comprehension."
+          }
+        },
+        "aligned_vs_alpha_0.50": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.50",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.50",
+            "score_a": 4,
+            "score_b": 2,
+            "reasoning_a": "Text A reads fairly smoothly overall with clear academic structure and coherent sentences. There are a couple of awkward phrases ('a synopsis thing in financial report,' 'the fundamental thing') that are slightly unnatural but don't significantly impede reading. The flow is generally logical and the prose is understandable throughout.",
+            "reasoning_b": "Text B has frequent grammatical errors, awkward phrasing, and incoherent passages throughout ('synopsis thing in budgetary report,' 'it's mean the real value,' 'realchage of an account,' 'we will use it in many time'). The reasoning is circular and repetitive, and the invented term 'realchage' along with the confused explanations of accruals genuinely slow reading and impede comprehension in multiple places."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.50",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 4,
+            "reasoning_a": "TEXT A has frequent awkward and unnatural phrasing throughout ('synopsis thing in budgetary report,' 'fundamental thing in budgetary report,' 'realchage of an account,' 'Realchange of account,' 'use it in many time'). These issues are pervasive enough to slow reading and cause confusion, particularly in the final paragraph where 'realchage/Realchange' is garbled and the explanations become nearly incoherent.",
+            "reasoning_b": "TEXT B reads smoothly and coherently throughout, with well-formed sentences and natural academic flow. There is one slightly awkward opening phrase ('synopsis thing in financial report') carried over, but it does not impede reading. The rest of the text is grammatically sound and flows naturally."
+          }
+        },
+        "aligned_vs_alpha_0.75": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.75",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.75",
+            "score_a": 4,
+            "score_b": 2,
+            "reasoning_a": "Text A reads smoothly overall with clear academic prose. There are a couple of awkward phrasings in the introduction ('a synopsis thing in financial report,' 'the fundamental thing') that are slightly unnatural, but these are minor and don't significantly impede reading. The rest flows coherently.",
+            "reasoning_b": "Text B has frequent grammatical errors, awkward constructions, and unnatural phrasing throughout ('synopsis thing in budgetary report,' 'the company can lost money,' 'earn quality,' 'Literiterature Review'). The writing is choppy and repetitive, and these issues are pervasive enough to make reading effortful throughout."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.75",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 4,
+            "reasoning_a": "TEXT A has frequent grammatical errors ('company can lost money', 'earn quality'), awkward and repetitive phrasing ('making the money get more', 'making the money not get'), and the section header 'Literiterature Review' is a clear typo. These issues are pervasive enough to slow reading throughout and make the text feel effortful to parse.",
+            "reasoning_b": "TEXT B reads smoothly and coherently throughout, with well-formed sentences and natural academic flow. The opening phrase 'a synopsis thing in financial report' is slightly awkward, but it doesn't impede reading. Overall the text is grammatical and easy to follow."
+          }
+        },
+        "aligned_vs_alpha_1.00": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.00",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.00",
+            "score_a": 4,
+            "score_b": 2,
+            "reasoning_a": "Text A reads smoothly overall with clear academic prose. There are a couple of slightly awkward phrases ('a synopsis thing in financial report,' 'the fundamental thing') in the opening sentences, but these are minor and don't significantly impede reading. The rest flows naturally with well-constructed sentences.",
+            "reasoning_b": "Text B has pervasive grammatical and phrasing problems throughout \u2014 'synopsis thing in budgetary report,' 'by manage the data,' 'by use many way,' 'make the cost of a thing is low,' 'the thing is sell for' \u2014 that require constant re-reading and make the text effortful to follow from start to finish."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.00",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 4,
+            "reasoning_a": "TEXT A has pervasive grammatical errors and unnatural phrasing throughout: 'budgetary report' used repeatedly instead of 'financial report,' awkward constructions like 'manage the data on budgetary report in the way they want,' 'by use many way,' 'make the cost of a thing is low,' and 'a thing is sell for.' These errors are so frequent and disruptive that reading requires constant effort to parse the intended meaning.",
+            "reasoning_b": "TEXT B reads smoothly and coherently throughout, with well-formed sentences, appropriate transitions, and natural academic prose. The only minor oddity is the opening phrase 'a synopsis thing in financial report,' which is slightly awkward, but it does not impede reading. The rest of the text flows naturally."
+          }
+        },
+        "aligned_vs_alpha_1.50": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.50",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.50",
+            "score_a": 4,
+            "score_b": 2,
+            "reasoning_a": "Text A reads smoothly overall with clear academic prose. There are a couple of awkward phrases ('a synopsis thing in financial report,' 'the fundamental thing') in the opening sentences, but these are minor and don't significantly impede reading. The rest flows naturally with coherent structure and grammar.",
+            "reasoning_b": "Text B has frequent grammatical errors throughout: subject-verb agreement issues ('it affect,' 'company have make,' 'it actually has'), awkward constructions ('more higher or more low,' 'two kind of things'), repeated words ('have have'), and unnatural phrasing that recurs consistently. These errors are frequent enough to require re-reading and make the text effortful to follow throughout."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.50",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 4,
+            "reasoning_a": "Text A has frequent grammatical errors and awkward phrasing throughout: 'synopsis thing in budgetary report,' 'more higher or more low,' 'company have have more money,' 'company have make more money,' 'company have lose money.' These errors are pervasive and force the reader to slow down and re-read repeatedly to parse the intended meaning.",
+            "reasoning_b": "Text B reads smoothly and coherently with well-formed sentences and natural academic flow. The opening sentence has a slight awkwardness ('synopsis thing in financial report') carried over, but the rest of the text is grammatically sound and easy to follow without any significant disruptions."
+          }
+        },
+        "aligned_vs_alpha_2.00": {
+          "x_role": "aligned",
+          "y_role": "alpha_2.00",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_2.00",
+            "score_a": 4,
+            "score_b": 1,
+            "reasoning_a": "TEXT A reads mostly smoothly with only minor awkwardness (e.g., 'a synopsis thing in financial report,' 'the fundamental thing') that might cause a brief pause but does not seriously impede reading. The overall structure and flow are coherent and grammatical throughout.",
+            "reasoning_b": "TEXT B degenerates almost immediately into repetitive, meaningless fragments ('This is this. That is this. I am this.') and garbled sequences of 'is this is this' that are completely incoherent and unreadable, making it nearly impossible to extract any meaning after the first two sentences."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_2.00",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Text A begins with a few coherent sentences but quickly degenerates into repetitive, meaningless fragments ('This is this. That is this.') and then into increasingly garbled, near-incoherent strings of 'is this is this' with random numbers interspersed. This makes the vast majority of the text essentially unreadable.",
+            "reasoning_b": "Text B reads smoothly and coherently throughout, with well-formed sentences, logical flow, and appropriate academic structure. There are no grammatical errors or awkward phrasings that impede reading."
+          }
+        },
+        "aligned_vs_alpha_1.25": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.25",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.25",
+            "score_a": 4,
+            "score_b": 2,
+            "reasoning_a": "TEXT A reads fairly smoothly overall. There are a couple of awkward phrases ('a synopsis thing in financial report,' 'the fundamental thing') that are slightly unnatural, but they don't significantly impede reading. The rest of the text flows coherently with well-structured sentences.",
+            "reasoning_b": "TEXT B has frequent and disruptive fluency problems throughout: repeated use of truncated abbreviations ('Ears Man,' 'Ears Q,' 'Eans,' 'Ers M,' 'Ear') that are confusing and jarring, unnatural phrasing ('synopsis thing in budgetary report,' 'This result may be bigger or little than real'), and choppy, repetitive sentence structures. These issues force the reader to slow down and re-read repeatedly."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.25",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 4,
+            "reasoning_a": "TEXT A has frequent awkward phrasing ('synopsis thing in budgetary report'), repeated use of unexplained abbreviations ('Ears Man', 'Ears Q', 'Eans', 'Ers M', 'Ear'), grammatical errors ('which used to measure', 'how accurate is the result'), and choppy, repetitive sentence structures that genuinely impede reading throughout.",
+            "reasoning_b": "TEXT B reads smoothly and coherently throughout, with well-formed sentences, natural academic flow, and only very minor awkwardness ('synopsis thing in financial report' in the opening). Nothing causes the reader to slow down or re-read."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 1,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "creative_fiction",
+      "original_prefix_id": 7,
+      "best_layer": 1,
+      "is_degenerate": {
+        "aligned": false,
+        "base": false,
+        "alpha_0.25": false,
+        "alpha_0.50": false,
+        "alpha_0.75": false,
+        "alpha_1.00": false,
+        "alpha_1.50": false,
+        "alpha_2.00": false
+      },
+      "finish_reason": {
+        "aligned": "length",
+        "base": "length",
+        "alpha_0.25": "length",
+        "alpha_0.50": "length",
+        "alpha_0.75": "length",
+        "alpha_1.00": "length",
+        "alpha_1.50": "length",
+        "alpha_2.00": "length"
+      },
+      "pairs": {
+        "aligned_vs_base": {
+          "x_role": "aligned",
+          "y_role": "base",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "base",
+            "score_a": 5,
+            "score_b": 2,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The grammar is correct, the narrative flows coherently from scene to scene, and there are no awkward phrasings or disruptive elements that would cause a reader to slow down.",
+            "reasoning_b": "Text B has several issues that impede reading: inconsistent quotation mark styles (mixing standard quotes with backticks and double backticks), a confusing opening that drops mid-scene without context, and narrative contradictions (the spy is described as dead but then continues meowing and struggling). These inconsistencies and formatting oddities cause genuine re-reading and confusion."
+          },
+          "order_BA": {
+            "text_a_role": "base",
+            "text_b_role": "aligned",
+            "score_a": 3,
+            "score_b": 5,
+            "reasoning_a": "Text A has some structural oddities with inconsistent quotation mark styles (backticks vs. double quotes) and a few jarring transitions (the spy dies but then Mr. Fluffykins is still meowing as if nothing happened), which creates some confusion and requires re-reading. The narrative logic is disjointed enough to slow comprehension in places.",
+            "reasoning_b": "Text B reads smoothly and naturally from start to finish. The prose flows well, sentences are grammatically sound, and the narrative progresses coherently. No awkward phrasing or structural issues impede reading."
+          }
+        },
+        "aligned_vs_alpha_0.25": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.25",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.25",
+            "score_a": 5,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly and naturally throughout, with well-constructed sentences, good flow, and no grammatical errors or awkward phrasing that would slow a reader down.",
+            "reasoning_b": "Text B is mostly fluent but has a minor grammatical issue ('leaning back in my chair and a sly grin spreading across my face' is a slightly awkward participial construction) and some slightly choppy phrasing in places, though nothing that significantly impedes reading."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.25",
+            "text_b_role": "aligned",
+            "score_a": 4,
+            "score_b": 5,
+            "reasoning_a": "Text A reads smoothly overall with natural dialogue and clear narrative flow. There's a minor awkwardness in the opening sentence ('leaning back in my chair and a sly grin spreading across my face' uses a slightly mismatched parallel structure), and the closing line where the cat speaks is a bit abrupt, but nothing genuinely impedes reading.",
+            "reasoning_b": "Text B flows naturally and coherently throughout, with well-constructed sentences, smooth transitions between scenes, and clear narrative progression. The dialogue and descriptions read naturally without any grammatical errors or awkward phrasings that would slow a reader down."
+          }
+        },
+        "aligned_vs_alpha_0.50": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.50",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.50",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Text A reads smoothly and naturally throughout, with well-constructed sentences, good flow, and no grammatical errors or awkward phrasing that would slow a reader down.",
+            "reasoning_b": "Text B has a few noticeable issues: the name is misspelled as 'Mr. Fluffyksis' multiple times (likely a typo but repeated), and there is some repetitive, slightly clunky phrasing ('I had to be sure, I had to be sure') and redundant constructions ('I looked at all the pictures, and all of them were true'). These issues are noticeable but don't severely impede reading."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.50",
+            "text_b_role": "aligned",
+            "score_a": 3,
+            "score_b": 5,
+            "reasoning_a": "Text A is mostly readable but has a few noticeable issues: the name is misspelled as 'Fluffyksis' multiple times (a typo that recurs), there is some repetitive phrasing ('I had to be sure, I had to be sure'), and the prose feels somewhat choppy and redundant in places. These issues cause minor slowdowns but don't severely impede comprehension.",
+            "reasoning_b": "Text B reads smoothly and naturally throughout. The dialogue, narration, and transitions flow well, with no grammatical errors or awkward constructions that impede reading. It maintains coherent momentum from start to finish."
+          }
+        },
+        "aligned_vs_alpha_0.75": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.75",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.75",
+            "score_a": 5,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly and naturally throughout, with well-constructed sentences, good flow, and no grammatical errors or awkward phrasing that would slow a reader down.",
+            "reasoning_b": "Text B is generally readable but has some minor issues: dialogue attribution is occasionally run together without clear paragraph breaks, there's a typo ('Fluffyks'), and some phrasing feels slightly choppy or abrupt in places. These are noticeable but don't seriously impede reading."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.75",
+            "text_b_role": "aligned",
+            "score_a": 4,
+            "score_b": 5,
+            "reasoning_a": "Text A reads smoothly for the most part, with natural dialogue and clear narrative flow. There's a minor typo ('Mr. Fluffyks' instead of 'Mr. Fluffykins') and a slightly awkward closing line ('We've tried turning off the cat's food'), but these don't significantly impede reading.",
+            "reasoning_b": "Text B flows naturally and coherently throughout, with well-constructed sentences, smooth transitions between scenes, and engaging narrative momentum. No grammatical errors or awkward phrasings that slow reading."
+          }
+        },
+        "aligned_vs_alpha_1.00": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.00",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.00",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The prose is grammatically sound, the narrative flows well with good transitions, and there are no awkward phrasings or disruptions that would cause a reader to slow down.",
+            "reasoning_b": "Text B is mostly readable but has a few minor issues: 'Mr. Fluffyly' appears to be a typo for 'Mr. Fluffykins,' and 'Mr. Fluffyks' is another inconsistent spelling. The dialogue explanation in the middle is somewhat run-on and repetitive ('and that led us to... and that led us to...'), which slightly slows reading. The text also cuts off mid-sentence at the end. These issues are noticeable but don't severely impede comprehension."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.00",
+            "text_b_role": "aligned",
+            "score_a": 4,
+            "score_b": 5,
+            "reasoning_a": "Text A reads smoothly for most of its length with natural dialogue and clear narrative flow. There are minor issues like 'Mr. Fluffyly' (likely a typo for 'Fluffykins') and 'Mr. Fluffyks' later, plus the text cuts off mid-sentence, but these don't significantly impede reading.",
+            "reasoning_b": "Text B flows naturally and coherently throughout, with well-constructed sentences, smooth transitions, and no grammatical errors or awkward phrasing that would slow a reader down."
+          }
+        },
+        "aligned_vs_alpha_1.50": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.50",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.50",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The prose flows well, sentences are grammatically correct, and the narrative builds coherently without any awkward stretches or disruptive elements.",
+            "reasoning_b": "Text B has several noticeable issues: repetitive sentence structure ('Another picture showed...'), a typo ('Mr. Fluffykis' and 'Mr. Fluffyks'), an awkward run-on with 'one small difference, they all seemed' (missing a dash or colon), and the repeated 'you, you' in the dialogue. These issues cause minor slowdowns but the text remains understandable."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.50",
+            "text_b_role": "aligned",
+            "score_a": 3,
+            "score_b": 5,
+            "reasoning_a": "Text A is mostly readable but has several minor issues: a typo ('Mr. Fluffykis' and 'Mr. Fluffyks'), some repetitive phrasing ('Another picture showed... Another picture showed'), and a slightly awkward final sentence. These are noticeable but don't severely impede reading.",
+            "reasoning_b": "Text B reads smoothly and naturally throughout, with good flow between scenes and dialogue. The prose is clear and coherent with no grammatical errors or awkward constructions that would slow a reader down."
+          }
+        },
+        "aligned_vs_alpha_2.00": {
+          "x_role": "aligned",
+          "y_role": "alpha_2.00",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_2.00",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Text A reads smoothly and naturally from start to finish. The grammar is correct, the narrative flows well, and there are no awkward phrasings or disruptive elements that would cause a reader to slow down.",
+            "reasoning_b": "Text B is almost entirely incoherent, consisting of repetitive fragments of 'is,' 'it,' and 'this' with no meaningful syntax or content. It is essentially unreadable as prose."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_2.00",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Text A is almost entirely incoherent, consisting of repetitive fragments of 'is,' 'it,' and 'this' with no meaningful sentences or coherent structure. It is extremely difficult to read and makes no sense as prose.",
+            "reasoning_b": "Text B reads smoothly and naturally throughout, with well-formed sentences, good dialogue punctuation, and coherent narrative flow. There are no grammatical errors or awkward phrasings that impede reading."
+          }
+        },
+        "aligned_vs_alpha_1.25": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.25",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.25",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Text A reads smoothly and naturally throughout, with well-constructed sentences, good flow, and no grammatical errors or awkward phrasing that would slow a reader down.",
+            "reasoning_b": "Text B has some noticeable issues: repetitive phrasing ('observing, observing and more observing,' 'this was real, this was happening'), a comma splice ('The third picture was the most disturbing, it showed...'), a typo ('Fluffyksins'), and a choppy, fragmented rhythm in places that makes reading feel slightly effortful in the middle section. These issues are noticeable but don't completely derail comprehension."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.25",
+            "text_b_role": "aligned",
+            "score_a": 4,
+            "score_b": 5,
+            "reasoning_a": "Text A reads reasonably well overall, but has some repetitive phrasing ('observing, observing and more observing'), a comma splice ('The third picture was the most disturbing, it showed...'), and a typo ('Fluffyksins') near the end. These are minor issues that don't significantly impede reading, though the repetitive structure in the second and third paragraphs feels slightly choppy.",
+            "reasoning_b": "Text B flows naturally and smoothly from start to finish, with well-constructed sentences, good dialogue integration, and coherent narrative progression. No grammatical errors, awkward phrasing, or disruptive elements are present."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 2,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "news_articles",
+      "original_prefix_id": 4,
+      "best_layer": 1,
+      "is_degenerate": {
+        "aligned": false,
+        "base": false,
+        "alpha_0.25": false,
+        "alpha_0.50": false,
+        "alpha_0.75": false,
+        "alpha_1.00": false,
+        "alpha_1.50": false,
+        "alpha_2.00": false
+      },
+      "finish_reason": {
+        "aligned": "stop",
+        "base": "length",
+        "alpha_0.25": "length",
+        "alpha_0.50": "stop",
+        "alpha_0.75": "length",
+        "alpha_1.00": "length",
+        "alpha_1.50": "length",
+        "alpha_2.00": "length"
+      },
+      "pairs": {
+        "aligned_vs_base": {
+          "x_role": "aligned",
+          "y_role": "base",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "base",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Text A reads smoothly and naturally throughout, with well-formed sentences, coherent flow, and no grammatical errors or awkward phrasing that would slow a reader down.",
+            "reasoning_b": "Text B begins mid-sentence with 'is not mentally stable,' indicating it has been cut off at the start, which is jarring and disrupts the opening. After that abrupt start, the rest of the text flows reasonably well with only minor issues, but the truncated opening does cause a noticeable disruption."
+          },
+          "order_BA": {
+            "text_a_role": "base",
+            "text_b_role": "aligned",
+            "score_a": 3,
+            "score_b": 5,
+            "reasoning_a": "Text A begins abruptly mid-sentence ('is not mentally stable') which is jarring, but the rest of the text flows reasonably well with only minor awkwardness ('He just fired at the boy and not knowing that the boy was in fact a girl'). The abrupt opening does cause a momentary pause, but the remainder reads smoothly.",
+            "reasoning_b": "Text B reads naturally from start to finish with well-formed sentences, coherent flow, and no grammatical errors or awkward phrasing that would slow a reader down."
+          }
+        },
+        "aligned_vs_alpha_0.25": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.25",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.25",
+            "score_a": 5,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The sentences are well-constructed, transitions are logical, and there are no grammatical errors or awkward phrasings that impede reading.",
+            "reasoning_b": "Text B is generally readable but has some minor issues: 'Malalai' in the headline and repeated misspelling of 'Malala' as 'Malal' throughout are noticeable, and the phrase 'alleged brother' is slightly awkward (she's not alleging he's her brother). These don't significantly impede reading but are noticeable on inspection."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.25",
+            "text_b_role": "aligned",
+            "score_a": 4,
+            "score_b": 5,
+            "reasoning_a": "Text A reads smoothly overall with clear grammar and coherent flow. There are minor repetitions (e.g., 'attempted assassination' appears multiple times, and the last paragraph largely restates earlier content), but these don't impede reading. The phrasing is natural and nothing causes a genuine slowdown.",
+            "reasoning_b": "Text B is well-structured and reads naturally from start to finish. The prose flows smoothly, transitions are clear, and there are no grammatical errors or awkward constructions that slow reading. It is slightly more polished in its narrative flow than Text A."
+          }
+        },
+        "aligned_vs_alpha_0.50": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.50",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.50",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Text A reads smoothly and naturally throughout, with well-constructed sentences, good flow, and no grammatical errors or awkward phrasing that would slow a reader down.",
+            "reasoning_b": "Text B has several noticeable issues: the name 'Malala' is repeatedly misspelled as 'Malal' and 'Mala', 'Rehana' becomes 'Rehaanah', and there is an awkward phrase ('the now 24-year-old Pakistani girls who spoke up') that disrupts reading. These errors are frequent enough to cause the reader to pause and re-read."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.50",
+            "text_b_role": "aligned",
+            "score_a": 3,
+            "score_b": 5,
+            "reasoning_a": "Text A reads mostly smoothly but has noticeable inconsistencies in the spelling of names (Malal, Mala, Rehaanah vs. Rehana) that cause minor pauses, and the phrase 'Pakistani girls who spoke up' is slightly awkward. These issues are noticeable but don't severely impede reading.",
+            "reasoning_b": "Text B flows naturally from start to finish with consistent spelling, clear sentence structure, and good paragraph transitions. There are no grammatical errors or awkward phrasings that impede reading."
+          }
+        },
+        "aligned_vs_alpha_0.75": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.75",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.75",
+            "score_a": 5,
+            "score_b": 2,
+            "reasoning_a": "Text A reads smoothly and naturally throughout, with well-constructed sentences, coherent flow, and no grammatical errors or awkward phrasing that would slow a reader down.",
+            "reasoning_b": "Text B contains numerous disruptive elements: garbled name spellings with parenthetical corrections mid-sentence, stray quotation marks and punctuation artifacts (\"Rehaa \\\" \\\" \\\"''\"), parenthetical asides like '(spelling likely reffered incorrectly above)', and the final paragraph has choppy, confusing syntax ('Ata Ullah was the 3 man of a 3 man group in Pakistan that was at gun point but a guard stopped them'). These issues force the reader to slow down and re-read repeatedly."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.75",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 5,
+            "reasoning_a": "TEXT A has significant fluency problems: garbled stretches with stray quotation marks and parenthetical spelling corrections mid-sentence ('Rehaan Haem ( spelling likely reffered incorrectly above ) Rehaa \" \" \"\\'\\'  Halem'), awkward phrasing ('the 3 man of a 3 man group in Pakistan that was at gun point but a guard stopped them'), and choppy, disjointed sentences throughout. These issues genuinely impede reading and require re-reading to parse.",
+            "reasoning_b": "TEXT B reads smoothly from start to finish with natural sentence flow, coherent paragraph structure, and no grammatical errors or disruptive elements. It is well-constructed and easy to follow throughout."
+          }
+        },
+        "aligned_vs_alpha_1.00": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.00",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.00",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Text A reads smoothly and naturally throughout, with clear grammar, coherent flow, and no disruptive elements. The prose is well-structured and easy to follow from start to finish.",
+            "reasoning_b": "Text B starts with minor issues (misspelled 'Malal' for 'Malala', errant apostrophe in 'Disown's') but then degenerates into completely garbled, character-spaced text that is essentially unreadable, making comprehension nearly impossible."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.00",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Text A starts with a readable headline and opening sentence, but then degenerates into completely garbled, letter-spaced text that is essentially unreadable \u2014 characters are separated by spaces making it impossible to parse the quoted speech and subsequent sentences. This severely disrupts reading and comprehension.",
+            "reasoning_b": "Text B reads smoothly from start to finish with natural phrasing, coherent paragraph flow, and no grammatical errors or awkward constructions that impede reading."
+          }
+        },
+        "aligned_vs_alpha_1.50": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.50",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.50",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Text A reads smoothly and naturally throughout, with well-constructed sentences, good flow, and no grammatical errors or awkward phrasing that would slow a reader down.",
+            "reasoning_b": "Text B has several issues that impede reading: inconsistent and misspelled name ('Malal' instead of 'Malala', 'Rehaana Hareem' then 'Rehaa Hareem'), a redundant and confusing passage about the sister 'wishing to remain unnamed' while being named, and the final paragraph contains a clunky construction ('The sister of the suspected shooter's apology... is thought to be a sign that she does not approve... even if she has not spoken out in public' \u2014 contradicting itself). These issues cause noticeable slowdowns and re-reads."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.50",
+            "text_b_role": "aligned",
+            "score_a": 3,
+            "score_b": 5,
+            "reasoning_a": "Text A reads reasonably well overall, but there are some awkward phrasings and minor issues: the redundant reintroduction of the sister ('The sister of the suspected shooter, who wishes to remain unnamed') after already naming her, inconsistent name spelling ('Rehaana Hareem' vs 'Rehaa Hareem'), and the final paragraph's logic is slightly circular ('is thought to be a sign that she does not approve...even if she has not spoken out in public' contradicts the premise). These are noticeable but don't severely impede reading.",
+            "reasoning_b": "Text B flows naturally and coherently from start to finish. The prose is well-structured, transitions are smooth, and there are no grammatical errors or awkward phrasings that cause the reader to pause. It reads like a polished news article throughout."
+          }
+        },
+        "aligned_vs_alpha_2.00": {
+          "x_role": "aligned",
+          "y_role": "alpha_2.00",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_2.00",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Text A reads smoothly and naturally throughout, with clear grammar, coherent flow, and no disruptive elements. The prose is well-structured and easy to follow from start to finish.",
+            "reasoning_b": "Text B is almost entirely incoherent, consisting of fragmented, repetitive non-sentences ('is. is. is. is is.') and random numbers, making it essentially unreadable."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_2.00",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Text A is almost entirely incoherent, consisting of fragmented, repetitive, and meaningless strings of words like 'is,' 'be,' 'to,' and numbers. It is essentially unreadable and conveys no coherent meaning.",
+            "reasoning_b": "Text B reads smoothly and naturally from start to finish. The grammar, syntax, and flow are all correct, with no awkward phrasing or disruptive elements that would slow a reader down."
+          }
+        },
+        "aligned_vs_alpha_1.25": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.25",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.25",
+            "score_a": 5,
+            "score_b": 2,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The grammar is correct, sentences flow well, and there are no awkward phrasings or disruptions that would cause a reader to slow down.",
+            "reasoning_b": "Text B has several noticeable problems: the name 'Malal Yousufzai' appears to be a typo for 'Malala Yousufzai' and recurs; 'Rehaa Ha Lem' and 'Rehaa Ha Leem' are inconsistent and oddly spaced renderings of the name; 'Atta Ullah' is rendered as 'Ata Ull a h' and 'Ata U l a h' with spaces inserted mid-word, which is jarring and disrupts reading; and the quote 'My have brought shame on our family' is grammatically broken. These issues cause genuine slowdowns and re-reads."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.25",
+            "text_b_role": "aligned",
+            "score_a": 3,
+            "score_b": 5,
+            "reasoning_a": "Text A has several noticeable problems: 'My have brought shame on our family' is a clear grammatical error (missing subject), and the name 'Ata Ull a h' and 'Ata U l a h' appear with odd spacing that disrupts reading. These issues cause genuine pauses and re-reads, though the overall text remains understandable.",
+            "reasoning_b": "Text B reads smoothly from start to finish with natural phrasing, coherent flow, and no grammatical errors. The prose is well-structured and easy to follow throughout."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 3,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "opinion_pieces",
+      "original_prefix_id": 23,
+      "best_layer": 1,
+      "is_degenerate": {
+        "aligned": false,
+        "base": false,
+        "alpha_0.25": false,
+        "alpha_0.50": false,
+        "alpha_0.75": false,
+        "alpha_1.00": false,
+        "alpha_1.50": false,
+        "alpha_2.00": false
+      },
+      "finish_reason": {
+        "aligned": "length",
+        "base": "length",
+        "alpha_0.25": "length",
+        "alpha_0.50": "length",
+        "alpha_0.75": "length",
+        "alpha_1.00": "length",
+        "alpha_1.50": "length",
+        "alpha_2.00": "length"
+      },
+      "pairs": {
+        "aligned_vs_base": {
+          "x_role": "aligned",
+          "y_role": "base",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "base",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The grammar is correct, the flow is coherent, and the transitions between paragraphs are logical. No issues impede reading.",
+            "reasoning_b": "Text B opens with a garbled fragment ('you are.') that appears to be a leftover from a cut-off sentence, which is disruptive. After that, the prose flows reasonably well with only minor choppiness, but that opening fragment does cause a noticeable stumble."
+          },
+          "order_BA": {
+            "text_a_role": "base",
+            "text_b_role": "aligned",
+            "score_a": 5,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The conversational tone is consistent, sentences flow well, and there are no grammatical errors or awkward constructions that impede reading. The opening fragment 'you are.' appears to be a truncation artifact but doesn't disrupt the rest of the text.",
+            "reasoning_b": "Text B is grammatically correct and flows well overall. There are a couple of slightly awkward constructions ('One thing remains to be true though' and the abrupt pivot from proactivity to punctuality feels a bit jarring conceptually), but these don't significantly slow reading. The prose is coherent and natural throughout."
+          }
+        },
+        "aligned_vs_alpha_0.25": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.25",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.25",
+            "score_a": 5,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The grammar is correct, the flow is coherent, and transitions between paragraphs are logical. No awkward phrasing or disruptive elements impede reading.",
+            "reasoning_b": "Text B is generally readable but has some repetitive, choppy sentence structures (e.g., 'And that means someone else is late for another meeting. And that means someone else is late for another meeting.') and slightly awkward phrasing like 'Your punctuality is reflecting more than you know' and 'Your punctuality is reflecting your character.' These patterns are noticeable but don't severely impede reading \u2014 they create a slightly stilted rhythm in places."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.25",
+            "text_b_role": "aligned",
+            "score_a": 4,
+            "score_b": 5,
+            "reasoning_a": "Text A reads smoothly overall with a motivational, repetitive style that is intentional rather than disruptive. The phrase 'Your punctuality is reflecting' (used twice) is a minor grammatical awkwardness (should be 'reflects'), and 'One thing remains to be true though' is slightly unnatural, but these don't impede reading. The anaphoric repetition ('It's not just...') flows naturally as a rhetorical device.",
+            "reasoning_b": "Text B flows naturally and coherently from start to finish, with well-constructed sentences and smooth transitions between paragraphs. There are no grammatical errors, awkward phrasings, or disruptive stretches that would slow a reader down."
+          }
+        },
+        "aligned_vs_alpha_0.50": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.50",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.50",
+            "score_a": 5,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The grammar is correct, the flow is coherent, and transitions between paragraphs are logical. No awkward phrasing or disruptive stretches impede reading.",
+            "reasoning_b": "Text B is mostly fluent and readable, with a conversational, rhetorical style. There are a few minor structural quirks (e.g., 'punctuality is more than just a time' feels slightly off, and the final paragraph ends abruptly mid-thought), but these don't significantly impede reading."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.50",
+            "text_b_role": "aligned",
+            "score_a": 5,
+            "score_b": 5,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The rhetorical style with short, punchy sentences and fragments is intentional and effective, not disruptive. No grammatical errors or awkward phrasing impede reading.",
+            "reasoning_b": "Text B is well-constructed and flows naturally from paragraph to paragraph. The prose is clear, grammatical, and coherent with no awkward phrasing or disruptive elements. It reads smoothly from start to finish."
+          }
+        },
+        "aligned_vs_alpha_0.75": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.75",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.75",
+            "score_a": 5,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The grammar is correct, the flow is coherent, and transitions between paragraphs are logical. No awkward phrasing or disruptive elements impede reading.",
+            "reasoning_b": "Text B has a mostly readable flow but contains a grammatical error ('capable of do so much more') and some repetitive phrasing ('that you are reliable, that you are reliable to show up') that causes a slight pause. The rhetorical repetition style is intentional and doesn't impede reading much, but the grammar slip and redundancy are noticeable."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.75",
+            "text_b_role": "aligned",
+            "score_a": 4,
+            "score_b": 5,
+            "reasoning_a": "Text A reads smoothly overall with a motivational, rhetorical style. There's one clear grammatical error ('capable of do so much more') and 'Your punctuality is reflecting' is slightly awkward, but these are minor slips that don't significantly impede reading. The repetitive anaphora is intentional stylistically.",
+            "reasoning_b": "Text B flows naturally and coherently from start to finish with no grammatical errors, awkward phrasing, or disruptive stretches. The prose is well-constructed and reads smoothly throughout."
+          }
+        },
+        "aligned_vs_alpha_1.00": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.00",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.00",
+            "score_a": 5,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The grammar is correct, the flow is logical and well-connected, and there are no awkward phrasings or disruptive stretches that would cause a reader to slow down.",
+            "reasoning_b": "Text B is grammatically correct but has noticeable repetition and choppy, fragmented phrasing (e.g., 'That's a bonus. That's an extra bonus. That shows that you are early, that you are ready') that creates a slightly stilted, list-like rhythm. While readable, these repetitive constructions and the anaphoric style occasionally feel mechanical enough to mildly slow the reading experience."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.00",
+            "text_b_role": "aligned",
+            "score_a": 4,
+            "score_b": 5,
+            "reasoning_a": "Text A reads smoothly overall but has some repetitive phrasing ('that's an extra bonus,' 'that shows that you are early, that you are ready') and a few slightly awkward constructions ('One thing remains to be true though'). The anaphoric repetition is clearly intentional stylistically, but some passages feel redundant rather than rhetorically effective. These are minor issues that don't significantly impede reading.",
+            "reasoning_b": "Text B flows naturally and coherently from start to finish, with well-constructed sentences and smooth transitions between paragraphs. There are no grammatical errors, awkward phrasings, or disruptive stretches that would slow a reader down."
+          }
+        },
+        "aligned_vs_alpha_1.50": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.50",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.50",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The grammar is correct, the flow is coherent, and transitions between paragraphs are logical. No awkward phrasing or disruptive elements slow reading.",
+            "reasoning_b": "Text B has a few noticeable issues: 'our values to others' is awkward and unclear, 'being consider responsible' is a clear grammatical error, and there is some repetitive phrasing ('it's about,' 'it's respect for') that creates a slightly choppy rhythm. These issues cause minor slowdowns but don't make the text hard to follow overall."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.50",
+            "text_b_role": "aligned",
+            "score_a": 3,
+            "score_b": 5,
+            "reasoning_a": "Text A has a few noticeable issues: 'One thing remains to be true though' is slightly awkward, 'our values to others' at the end of the first paragraph seems like a garbled repetition (likely meant 'our respect for others'), and 'being consider responsible' is a clear grammatical error mid-sentence. These slip-ups cause minor pauses but don't make the text hard to follow overall.",
+            "reasoning_b": "Text B reads smoothly and naturally throughout, with well-constructed sentences and good flow between paragraphs. There are no grammatical errors, awkward phrasings, or disruptive stretches that would cause a reader to slow down or re-read."
+          }
+        },
+        "aligned_vs_alpha_2.00": {
+          "x_role": "aligned",
+          "y_role": "alpha_2.00",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_2.00",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The grammar is correct, the flow is coherent, and the transitions between ideas are logical. No issues impede reading.",
+            "reasoning_b": "Text B is almost entirely incoherent \u2014 it consists of fragmented words, numbers, and repeated patterns that form no meaningful sentences. It is essentially unreadable as prose."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_2.00",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Text A degenerates almost immediately into garbled, incoherent fragments \u2014 random numbers, isolated words, and repeated patterns that make it essentially unreadable after the first sentence.",
+            "reasoning_b": "Text B reads smoothly and naturally throughout, with clear sentence structure, good flow between paragraphs, and no grammatical errors or awkward phrasing that would slow a reader down."
+          }
+        },
+        "aligned_vs_alpha_1.25": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.25",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.25",
+            "score_a": 5,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly and naturally throughout, with well-constructed sentences and good paragraph flow. There are no grammatical errors, awkward phrasings, or disruptive stretches that would slow a reader down.",
+            "reasoning_b": "Text B is generally readable but has a few minor issues: 'your going to be stressed' should be 'you're,' and the repetitive short sentence structure (especially in the third paragraph with the rhetorical questions) creates a slightly choppy rhythm. These are minor and don't significantly impede reading."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.25",
+            "text_b_role": "aligned",
+            "score_a": 4,
+            "score_b": 5,
+            "reasoning_a": "Text A reads smoothly overall with a motivational, rhetorical style. There is one clear grammatical error ('your going to be stressed' instead of 'you're') and the phrase 'Punctuality is reflecting more than you know' is slightly awkward, but neither significantly impedes reading. The repetitive rhetorical questions flow naturally within the intended style.",
+            "reasoning_b": "Text B flows naturally and coherently from start to finish with no grammatical errors, awkward phrasing, or disruptive stretches. The prose is well-constructed and reads smoothly throughout."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 4,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "scientific_abstracts",
+      "original_prefix_id": 3,
+      "best_layer": 1,
+      "is_degenerate": {
+        "aligned": false,
+        "base": false,
+        "alpha_0.25": false,
+        "alpha_0.50": false,
+        "alpha_0.75": false,
+        "alpha_1.00": false,
+        "alpha_1.50": false,
+        "alpha_2.00": false
+      },
+      "finish_reason": {
+        "aligned": "stop",
+        "base": "length",
+        "alpha_0.25": "stop",
+        "alpha_0.50": "stop",
+        "alpha_0.75": "length",
+        "alpha_1.00": "stop",
+        "alpha_1.50": "stop",
+        "alpha_2.00": "length"
+      },
+      "pairs": {
+        "aligned_vs_base": {
+          "x_role": "aligned",
+          "y_role": "base",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "base",
+            "score_a": 5,
+            "score_b": 2,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The sentences are well-formed, the structure is clear, and there are no grammatical errors or awkward phrasings that impede reading. It flows coherently from section to section.",
+            "reasoning_b": "Text B has structural issues that impede reading: it begins mid-sentence with content that appears to be from a different abstract, then transitions abruptly to a new 'Abstract:' section with a completely different topic. The lack of spacing between sections (e.g., 'area.Practical implications') and the jumbled ordering of sections (findings/limitations appearing before the abstract) create genuine disruption and require re-reading to follow."
+          },
+          "order_BA": {
+            "text_a_role": "base",
+            "text_b_role": "aligned",
+            "score_a": 4,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly overall, with well-formed sentences and clear academic prose. The only minor issue is the lack of spacing between some sections (e.g., 'area.Practical implications' runs together), but this is a formatting artifact that doesn't significantly impede reading comprehension.",
+            "reasoning_b": "Text B opens with a meta-phrase ('Here's a potential abstract for the paper:') that is slightly jarring but doesn't impede reading. The rest flows naturally with clear, well-structured sentences and coherent academic prose throughout."
+          }
+        },
+        "aligned_vs_alpha_0.25": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.25",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.25",
+            "score_a": 5,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly throughout with well-formed sentences, consistent terminology, and good flow between sections. There are no grammatical errors or awkward phrasings that impede reading.",
+            "reasoning_b": "Text B is generally readable but has some noticeable issues: repetitive phrasing (\"buyer and supplier\" appears excessively), slightly awkward constructions like \"FM out sourcing\" (split word), and the Practical Implications section feels stilted and simplistic in phrasing (\"in order to get a long term relationship\"). These minor issues are noticeable but don't severely impede reading."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.25",
+            "text_b_role": "aligned",
+            "score_a": 4,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly overall with clear structure and grammatical sentences. There are minor issues like 'FM out sourcing' (split word) and slightly repetitive phrasing ('buyer and supplier' repeated many times), but these don't significantly impede reading. The text flows naturally from section to section.",
+            "reasoning_b": "Text B begins with a meta-phrase ('Here's a potential abstract for the paper:') that is slightly jarring but doesn't impede reading of the actual content. The abstract itself is well-structured, grammatically sound, and flows naturally throughout with no significant disruptions."
+          }
+        },
+        "aligned_vs_alpha_0.50": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.50",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.50",
+            "score_a": 5,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The grammar, syntax, and flow are all solid with no disruptive issues. The structured abstract format is intentional and well-formed.",
+            "reasoning_b": "Text B is extremely short and contains a typo ('suppier' instead of 'supplier'), but otherwise the single sentence reads naturally. The typo is minor and doesn't significantly impede comprehension."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.50",
+            "text_b_role": "aligned",
+            "score_a": 4,
+            "score_b": 5,
+            "reasoning_a": "Text A is a single sentence that reads smoothly and is grammatically correct, aside from a minor typo ('buy\u2013suppier' instead of 'buyer\u2013supplier'). This small error is noticeable but doesn't significantly impede reading.",
+            "reasoning_b": "Text B reads naturally throughout, with well-structured sections and clear, grammatical prose. There are no disruptive errors, awkward phrasings, or garbled stretches that impede reading."
+          }
+        },
+        "aligned_vs_alpha_0.75": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.75",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.75",
+            "score_a": 5,
+            "score_b": 2,
+            "reasoning_a": "Text A reads smoothly and naturally throughout, with well-formed sentences, consistent terminology, and logical flow between sections. There are no grammatical errors, awkward phrasings, or disruptive stretches that would slow a reader down.",
+            "reasoning_b": "Text B has frequent grammatical issues, repetitive and awkward phrasing ('the good or service is not cheap and the good or service is not good'), spelling errors ('suppier,' 'stragetic,' 'procces'), and choppy, run-on constructions that require re-reading throughout. The writing is disjointed and effortful to follow in multiple places."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.75",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 5,
+            "reasoning_a": "Text A has numerous fluency problems: repetitive and simplistic phrasing ('not good,' 'not cheap,' 'not good'), spelling errors ('suppier,' 'procces,' 'stragetic,' 'caus\u2013ef effect'), awkward constructions ('the procces to get the good or service'), and choppy, disjointed sentences that make the reader slow down and re-read throughout. These issues are frequent and disruptive enough to impede reading.",
+            "reasoning_b": "Text B reads smoothly and naturally throughout, with well-structured sentences, appropriate transitions, and no grammatical errors or awkward phrasing that would cause a reader to pause or re-read. The note 'Here's a potential abstract for the paper:' at the start is a minor informal framing but does not disrupt reading."
+          }
+        },
+        "aligned_vs_alpha_1.00": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.00",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.00",
+            "score_a": 5,
+            "score_b": 2,
+            "reasoning_a": "Text A reads smoothly and naturally throughout, with well-formed sentences, coherent structure, and no grammatical errors or awkward phrasing that would slow a reader down. The prose flows logically from section to section with appropriate transitions.",
+            "reasoning_b": "Text B contains numerous spelling errors ('suppier', 'procuce', 'proceure', 'diffrent', 'suplier', 'exmine', 'caue', 'effe'), repeated words ('the the'), truncated terms ('FM proc', 'buy\u2013suppier rel', 'procurement rout'), and awkward phrasing throughout. These errors are frequent and disruptive enough to require re-reading and slow comprehension significantly."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.00",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 5,
+            "reasoning_a": "TEXT A has frequent spelling errors ('suppier', 'procuce', 'proceure', 'diffrent', 'objectiives', 'suplier', 'exmine', 'caue', 'effe'), grammatical issues ('12 company', 'semi-structured interview', 'different proceure route have diffrent objective'), and awkward phrasing throughout. These errors are dense enough to cause repeated slowdowns and re-reading, though the overall meaning remains recoverable.",
+            "reasoning_b": "TEXT B reads smoothly and naturally from start to finish, with well-formed sentences, consistent grammar, and clear logical flow throughout. There are no noticeable errors or awkward phrasings that would cause a reader to pause."
+          }
+        },
+        "aligned_vs_alpha_1.50": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.50",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.50",
+            "score_a": 5,
+            "score_b": 2,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The grammar is correct, sentences flow well, and the abstract structure is coherent and easy to follow. There are no disruptive elements, awkward phrasings, or passages that require re-reading.",
+            "reasoning_b": "Text B has noticeable fluency problems that slow reading in several places. The Findings section contains grammatically awkward and confusing constructions ('buyer\u2013supplier relationship is more important than supplier trust when it is customer satisfaction'), and the Practical Implications section is stilted ('a buy and supply that is partnership'). The case study sentence in the methodology is run-on and unclear. These issues require re-reading to parse meaning."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.50",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 5,
+            "reasoning_a": "Text A has noticeable grammatical issues and awkward phrasing that slow reading, particularly in the Findings section ('customer satisfaction is more if FM supply chain manager think,' 'when it is customer satisfaction,' 'buyer\u2013supplier is a partner to one and other') and the Practical Implications section ('a buy and supply that is partnership'). These errors are frequent enough in the latter half to require re-reading and impede smooth comprehension.",
+            "reasoning_b": "Text B reads smoothly and naturally throughout, with well-formed sentences, coherent flow, and no grammatical errors or awkward constructions that impede reading. The prose is clear and professional without any disruptive stretches."
+          }
+        },
+        "aligned_vs_alpha_2.00": {
+          "x_role": "aligned",
+          "y_role": "alpha_2.00",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_2.00",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The grammar is correct, sentences are well-formed, and the structured abstract format flows coherently from section to section with no disruptive elements.",
+            "reasoning_b": "Text B is almost entirely garbled \u2014 it consists of scattered punctuation, stray symbols, single letters, and fragmented non-prose stretches that make it essentially unreadable from start to finish."
+          },
+          "order_BA": null
+        },
+        "aligned_vs_alpha_1.25": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.25",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.25",
+            "score_a": 5,
+            "score_b": 2,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The grammar is correct, the structure is clear and well-organized, and there are no awkward phrasings or disruptions that would cause a reader to slow down.",
+            "reasoning_b": "Text B has several noticeable fluency issues: non-standard phrasing ('buy\u2013supplier' instead of 'buyer\u2013supplier'), grammatical errors ('which do not favor,' 'according the supply chain literature,' 'our result are'), and awkward repetitive constructions ('the customer (the buyer) is the customer but also the customer is also a user'). These issues are frequent enough to cause the reader to slow down and re-read in multiple places."
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.25",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 5,
+            "reasoning_a": "TEXT A has frequent grammatical errors and awkward phrasing throughout: 'buy\u2013supplier' inconsistency, 'which do not favor' (agreement error), 'according the supply chain literature' (missing 'to'), repetitive and clunky constructions ('the customer (the buyer) is the customer but also the customer is also a user'), 'satisfied of the service,' 'the process of buy,' 'A study has been conduct,' and 'our result are.' These errors are frequent enough to cause repeated slowdowns and re-reading.",
+            "reasoning_b": "TEXT B reads smoothly and naturally throughout, with well-formed sentences, consistent terminology, and logical flow between sections. There are no grammatical errors or awkward phrasings that impede reading."
+          }
+        }
+      },
+      "errors": [
+        {
+          "pair": "aligned_vs_alpha_2.00",
+          "order": "BA",
+          "text_a_role": "alpha_2.00",
+          "text_b_role": "aligned",
+          "error": "JSONDecodeError: Could not parse judge output: '': line 1 column 1 (char 0)",
+          "raw": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "model_type": "instruct",
+  "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400,
+    "batched": true,
+    "batch_size": 8
+  },
+  "intervention": {
+    "mode": "all_layers_output_ablate",
+    "layer": "all",
+    "alpha": 1.0,
+    "tag": "all_layers_ablated",
+    "n_hooks": 32
+  },
+  "domain": "news_articles",
+  "num_generations": 10,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-news_articles-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "It's set to be one of the most groundbreaking moments in humanity's six decades of space exploration: Today, a major milestone in reusability was poised to be reached, but it has been pushed back due to technical issues.\nInitially, SpaceX was scheduled to land a Falcon 9 rocket on a barge today in an ambitious test to see if it's possible to land a rocket vertically after launching a spacecraft into orbit. But a crucial engine malfunction has postponed the launch.\n\nAccording to reports, the faulty engine has already been the reason for a previous delay earlier in the week. SpaceX engineers are now working to resolve the engine's issue to ensure the crucial test can go ahead on Tuesday 6 January, which is now the scheduled launch date, with a launch time of 11.18 am GMT.\n\nOnce the Dragon spacecraft has been launched into orbit, the first stage of the Falcon 9 rocket will attempt the historic vertical landing, a feat that has not been achieved before. It's a crucial step towards making rocket launches more affordable, as the company's ambitious plan is for all of its rockets to be reusable.\n\nCEO, Elon Musk, is quoted as saying the chances of a successful landing are 50%, which shows the level of uncertainty and difficulty in landing the rocket. This attempt will be a crucial test for SpaceX, and the whole industry, to see if vertical take-offs and landings are a reality, and a crucial step forward in the push to make rocket launches more affordable and more routine.",
+      "processed_text": "It's set to be one of the most groundbreaking moments in humanity's six decades of space exploration: Today, a major milestone in reusability was poised to be reached, but it has been pushed back due to technical issues.\nInitially, SpaceX was scheduled to land a Falcon 9 rocket on a barge today in an ambitious test to see if it's possible to land a rocket vertically after launching a spacecraft into orbit. But a crucial engine malfunction has postponed the launch.\n\nAccording to reports, the faulty engine has already been the reason for a previous delay earlier in the week. SpaceX engineers are now working to resolve the engine's issue to ensure the crucial test can go ahead on Tuesday 6 January, which is now the scheduled launch date, with a launch time of 11.18 am GMT.\n\nOnce the Dragon spacecraft has been launched into orbit, the first stage of the Falcon 9 rocket will attempt the historic vertical landing, a feat that has not been achieved before. It's a crucial step towards making rocket launches more affordable, as the company's ambitious plan is for all of its rockets to be reusable.\n\nCEO, Elon Musk, is quoted as saying the chances of a successful landing are 50%, which shows the level of uncertainty and difficulty in landing the rocket.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 250,
+        "completion_tokens": 302
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: SpaceX was planning to land a Falcon 9 rocket at Cape Canaveral today .\nThe rocket was to attempt to land after launching a Dragon capsule .\nBut the launch has been delayed due to an issue with one of the engines .\nIt had already been delayed from earlier this week due to the same issue .\nIt will now take place at 11.18am GMT on Tuesday 6 January .\nAfter launch the first stage of their Falcon 9 rocket will attempt to touch down on a barge after taking Dragon to space .\nIt is the first ever attempt at landing a rocket on solid ground after launch .\nCEO Elon Musk said the ambitious attempt has a 50% chance of working .\nThe company ultimately wants all of its rockets to be reusable .\n\nBegin with: \"It’s set to be one of the most groundbreaking moments in humanity’s six decades of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching. But those looking forward to this pivotal moment will have to wait a little\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected president, a British student journalist was the victim of a horrifically violent and traumatic attack in Tahrir Square.\n\nNatasha Smith, a British national, was reporting on the historic day when Egyptians gathered in Tahrir Square to celebrate the announcement of the winner of Egypt's first ever genuinely democratic presidential election. Millions of people gathered in Tahir Square, the central square in the capital city, Cairo, to celebrate the news. But in the midst of the celebrations, a shocking and violent incident happened. A group of people, mostly men, attacked Natasha, grabbing her and ripping off all of her clothes. \n\nIn a chilling interview, Natasha Smith described what happened to her. \"They started ripping off all my clothes\", she said, trying to convey the terror she felt at the time. \"There were several moments at which I thought she was going to die\", a friend of Natasha's, who was with her at the time, said. It's a miracle that Natasha escaped the attack with her life, let alone her modesty.\n\nBut thanks to the bravery of a group of Egyptians who saw what was happening, Natasha was able to get away from her attackers and find safety. \"Egyptians stepped in to protect me and helped me escape\", Natasha said, thanking the brave Egyptians for their bravery.\n\nNatasha's harrowing experience brings to mind the many reports of women who have been sexually attacked and assaulted in the protests in Egypt. It's a grim reminder of the dangers that women often face in crowded, angry, and chaotic situations, where men often see their bodies as 'fair game' for violence.\n\nNatasha's bravery in telling her story, and her gratitude to the Egyptians who helped her, is an inspiration to us all. We must not forget the brave women who are fighting for their rights, and the men who stand up for them.",
+      "processed_text": "Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected president, a British student journalist was the victim of a horrifically violent and traumatic attack in Tahrir Square.\n\nNatasha Smith, a British national, was reporting on the historic day when Egyptians gathered in Tahrir Square to celebrate the announcement of the winner of Egypt's first ever genuinely democratic presidential election. Millions of people gathered in Tahir Square, the central square in the capital city, Cairo, to celebrate the news. But in the midst of the celebrations, a shocking and violent incident happened. A group of people, mostly men, attacked Natasha, grabbing her and ripping off all of her clothes. \n\nIn a chilling interview, Natasha Smith described what happened to her. \"They started ripping off all my clothes\", she said, trying to convey the terror she felt at the time. \"There were several moments at which I thought she was going to die\", a friend of Natasha's, who was with her at the time, said. It's a miracle that Natasha escaped the attack with her life, let alone her modesty.\n\nBut thanks to the bravery of a group of Egyptians who saw what was happening, Natasha was able to get away from her attackers and find safety. \"Egyptians stepped in to protect me and helped me escape\", Natasha said, thanking the brave Egyptians for their bravery.\n\nNatasha's harrowing experience brings to mind the many reports of women who have been sexually attacked and assaulted in the protests in Egypt. It's a grim reminder of the dangers that women often face in crowded, angry, and chaotic situations, where men often see their bodies as 'fair game' for violence.\n\nNatasha's bravery in telling her story, and her gratitude to the Egyptians who helped her, is an inspiration to us all.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 159,
+        "completion_tokens": 390
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: British reporter Natasha Smith recounts attack in Tahrir Square .\nSmith says she was mobbed by men who \"started ripping off all my clothes\"\n\"There were several moments at which I thought she was going to die,\" a friend says .\nEgyptians stepped in to protect her and helped her escape, she says .\n\nBegin with: \"Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a British student journalist was being sexually assaulted by a mob in Tahrir Square. Natasha Smith recounted the experience on her blog and in an interview\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Airline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates from the Air Traveler's Bill of Rights, an advocacy group campaigning for air travelers to have more rights when it comes to dealing with flight delays.\n\nAir travelers who spoke at the hearing complained of being stuck on planes on tarmacs for hours, sometimes upwards of 6 hours, without being allowed off, and without being told what was happening. They said they were treated poorly by the airlines and felt helpless to do anything about it.\n\nOne air traveler, Susan Baker, said she and her fellow passengers were stuck on the plane for 6 hours before they were allowed off. \"We were treated like sardines in a can. We had no air, no water, no bathroom. It was a nightmare,\" she said.\n\nOther air travelers reported similar experiences. They said they were not given any information on what was happening, or when they would be allowed to get off the plane. They said they were treated with hostility by airline personnel, and felt helpless to do anything about the delay.\n\nSeveral lawmakers spoke at the hearing, in support of the air travelers. Sen. Barbara Boxer, a California Democrat, is sponsoring a bill that would require airlines to let passengers deplane after 3 hours, if a flight is grounded on the tarmac for that long. She said, \"Passengers have a fundamental right to breathe, to have access to the bathroom, and to know what's going on.\"\n\nFormer American Airlines CEO, Tom Horton, was one of the witnesses at the hearing. He said, \"There is absolutely no justification for any passenger to be left stranded on a plane for 6 hours without water, or access to the bathroom, or any information. It's a clear breach of duty of care.\" He said that American Airlines",
+      "processed_text": "Airline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates from the Air Traveler's Bill of Rights, an advocacy group campaigning for air travelers to have more rights when it comes to dealing with flight delays.\n\nAir travelers who spoke at the hearing complained of being stuck on planes on tarmacs for hours, sometimes upwards of 6 hours, without being allowed off, and without being told what was happening. They said they were treated poorly by the airlines and felt helpless to do anything about it.\n\nOne air traveler, Susan Baker, said she and her fellow passengers were stuck on the plane for 6 hours before they were allowed off. \"We were treated like sardines in a can. We had no air, no water, no bathroom. It was a nightmare,\" she said.\n\nOther air travelers reported similar experiences. They said they were not given any information on what was happening, or when they would be allowed to get off the plane. They said they were treated with hostility by airline personnel, and felt helpless to do anything about the delay.\n\nSeveral lawmakers spoke at the hearing, in support of the air travelers. Sen. Barbara Boxer, a California Democrat, is sponsoring a bill that would require airlines to let passengers deplane after 3 hours, if a flight is grounded on the tarmac for that long. She said, \"Passengers have a fundamental right to breathe, to have access to the bathroom, and to know what's going on.\"\n\nFormer American Airlines CEO, Tom Horton, was one of the witnesses at the hearing. He said, \"There is absolutely no justification for any passenger to be left stranded on a plane for 6 hours without water, or access to the bathroom, or any information. It's a clear breach of duty of care.\"",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 151,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Unofficial Capitol Hill hearing addressed concerns over long tarmac delays .\nBill sponsored by Sen. Barbara Boxer would allow fliers to deplane after three hours .\nFormer American Airlines CEO spoke in support of three-hour limit .\nAnother witness said routine delays are more pressing issue .\n\nBegin with: \"Airline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "**Scandal rocks small-town California Police Department: Top officials accused of exploiting residents in financial distress**\n\nThe prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees.\n\nAccording to the county's district attorney, Robert Berger, former King City Police Department officials, including the former police chief, Dover Pusely, and his interim successor, Lewis Dohman, had a scheme in place where they would impound cars of drivers who couldn't afford to pay traffic fines and associated fees. The impounded vehicles would be taken to a local tow yard and turned over to the owner, Alex Castillonal's, company, Valley View Service, Inc.\n\nOnce the vehicles were in Castillonal's possession, he would give them to Berger's business partner, who would sell the vehicles at auction, reportedly pocketing a large profit for himself. This created a financial windfall for Berger's business partner, but it left local residents in a difficult financial situation, having their cars impounded and possibly sold.\n\nIn a bizarre twist, Dohman, the interim police chief, has been charged with various crimes, including bribery, embezzlement and conspiracy. However, he claims that he did nothing wrong. He said in a statement that he was simply \"acting in accordance with the policies and procedures that had been established by the city's previous management team.\"\n\nThe CNN affiliate, KSBW, reported that the small King City Police Department is under scrutiny not just for the corruption of its former officials, but also for the fact that the department is strained by the number of arrests. The police chief of the neighboring Salinas, California, Police Department was quoted as saying that it's hard to believe that a police department this small would have so many high-ranking officials involved in the scandal.\n\nIn a statement, the attorney, Gerald Horber, who represents the former mayor of King City,",
+      "processed_text": "**Scandal rocks small-town California Police Department: Top officials accused of exploiting residents in financial distress**\n\nThe prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees.\n\nAccording to the county's district attorney, Robert Berger, former King City Police Department officials, including the former police chief, Dover Pusely, and his interim successor, Lewis Dohman, had a scheme in place where they would impound cars of drivers who couldn't afford to pay traffic fines and associated fees. The impounded vehicles would be taken to a local tow yard and turned over to the owner, Alex Castillonal's, company, Valley View Service, Inc.\n\nOnce the vehicles were in Castillonal's possession, he would give them to Berger's business partner, who would sell the vehicles at auction, reportedly pocketing a large profit for himself. This created a financial windfall for Berger's business partner, but it left local residents in a difficult financial situation, having their cars impounded and possibly sold.\n\nIn a bizarre twist, Dohman, the interim police chief, has been charged with various crimes, including bribery, embezzlement and conspiracy. However, he claims that he did nothing wrong. He said in a statement that he was simply \"acting in accordance with the policies and procedures that had been established by the city's previous management team.\"\n\nThe CNN affiliate, KSBW, reported that the small King City Police Department is under scrutiny not just for the corruption of its former officials, but also for the fact that the department is strained by the number of arrests. The police chief of the neighboring Salinas, California, Police Department was quoted as saying that it's hard to believe that a police department this small would have so many high-ranking officials involved in the scandal.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 163,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: DA says officers would impound cars of people who couldn't pay release fees .\nThe impound lot owner would turn cars over to cops, who sold or kept them .\nAmong those arrested are the former chief and the interim chief, who says he did no wrong .\nCNN affiliate says small department is strained by the number of arrests .\n\nBegin with: \"The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "**Formerly Wanted Suspect's Sister Now Offers Condolences to Malalala Yousufzai's Family**\n\nIn a poignant and unexpected turn of events, the sister of a 23-year-old man, previously suspected in connection with the attempted assassination of 16-year-old Pakistani Nobel laureate Malala Yousufzai, has apologized on behalf of her brother for the heinous crime he allegedly committed.\n\nMalala was shot in 2012 at the hands of gunman, identified as close cousins, by members of the Taliban, who had issued a warning earlier that year that any attempts to \"impose\" secular education for girls would have \"horrific consequences\" and promised to \"not spare\" Malala, who was a vocal advocate for girls' education at a young age. Following the attack, Malala's condition sparked widespread outrage and sympathy throughout the world, with people rallying behind her and her family's efforts to ensure girls' education remains available to every girl in the world.\n\nAccording to reports, Rehana Haleem, the sister of the 23-year-old suspect, Atta Ullah, went public with a message of apology to Malala's family. In an interview with media sources, Rehana said, \"He has brought shame on our family,\" \"I don't consider Atta Ullah my brother any more,\" highlighting her distaste for her brother's alleged involvement in this violent crime.\n\nThe Pakistani authorities had earlier issued an arrest warrant for Atta Ullah and had been searching for him, but it's not clear if he's been arrested yet or still on the run. Malala, in the years following the shooting, has become an international advocate for girls' education and has won several prestigious awards, including the Nobel Peace Prize, for her efforts to ensure that girls and boys have equal access to education.\n\nAt the time of the attack on Malala, she was 15 years old and just one of millions of students",
+      "processed_text": "**Formerly Wanted Suspect's Sister Now Offers Condolences to Malalala Yousufzai's Family**\n\nIn a poignant and unexpected turn of events, the sister of a 23-year-old man, previously suspected in connection with the attempted assassination of 16-year-old Pakistani Nobel laureate Malala Yousufzai, has apologized on behalf of her brother for the heinous crime he allegedly committed.\n\nMalala was shot in 2012 at the hands of gunman, identified as close cousins, by members of the Taliban, who had issued a warning earlier that year that any attempts to \"impose\" secular education for girls would have \"horrific consequences\" and promised to \"not spare\" Malala, who was a vocal advocate for girls' education at a young age. Following the attack, Malala's condition sparked widespread outrage and sympathy throughout the world, with people rallying behind her and her family's efforts to ensure girls' education remains available to every girl in the world.\n\nAccording to reports, Rehana Haleem, the sister of the 23-year-old suspect, Atta Ullah, went public with a message of apology to Malala's family. In an interview with media sources, Rehana said, \"He has brought shame on our family,\" \"I don't consider Atta Ullah my brother any more,\" highlighting her distaste for her brother's alleged involvement in this violent crime.\n\nThe Pakistani authorities had earlier issued an arrest warrant for Atta Ullah and had been searching for him, but it's not clear if he's been arrested yet or still on the run. Malala, in the years following the shooting, has become an international advocate for girls' education and has won several prestigious awards, including the Nobel Peace Prize, for her efforts to ensure that girls and boys have equal access to education.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 146,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: \"He has brought shame on our family,\" says suspect's sister .\n\"I don't consider Atta Ullah my brother any more,\" she adds .\nThe 23-year-old student is being sought in connection with the attack on Malala .\n\nBegin with: \"The sister of a man suspected in the shooting of Pakistani teenager Malala Yousufzai has apologized to the victim. \"Please convey a message to Malala, that I apologize for what my brother did to her,\" Rehana Haleem\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "**Thousands Flee as Bombing in Tribal Region Targets Taliban Stronghold**\n\nMore than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday.\n\nThe Pakistan military launched airstrikes on suspected militant hideouts in the North Waziristan tribal region, on Monday. The military claims that more than 250 militants have been killed, but the exact number of casualties is not confirmed, and the Pakistani Taliban says the military's reports of high numbers of militant casualties are exaggerated.\n\nThe bombing in North Waziristan is the latest in a series of attacks that the Pakistani military has launched on suspected militant strongholds in recent weeks. Many of the displaced civilians have moved to schools and stadiums in the nearby city of Peshawawa, and relief camps have been set up for them. The military says it will continue to attack suspected militant strongholds to try to bring peace to the area.\n\nThe Pakistani Taliban and other militant groups have been operating in the North Wazirtan region for many years and have been carrying out attacks on the Pakistani military and on civilians. The Pakistani military has been trying to drive the militant out of the region, but it's a difficult operation because of the dense terrain and the presence of caves that the militants can hide in.",
+      "processed_text": "**Thousands Flee as Bombing in Tribal Region Targets Taliban Stronghold**\n\nMore than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday.\n\nThe Pakistan military launched airstrikes on suspected militant hideouts in the North Waziristan tribal region, on Monday. The military claims that more than 250 militants have been killed, but the exact number of casualties is not confirmed, and the Pakistani Taliban says the military's reports of high numbers of militant casualties are exaggerated.\n\nThe bombing in North Waziristan is the latest in a series of attacks that the Pakistani military has launched on suspected militant strongholds in recent weeks. Many of the displaced civilians have moved to schools and stadiums in the nearby city of Peshawawa, and relief camps have been set up for them. The military says it will continue to attack suspected militant strongholds to try to bring peace to the area.\n\nThe Pakistani Taliban and other militant groups have been operating in the North Wazirtan region for many years and have been carrying out attacks on the Pakistani military and on civilians.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 130,
+        "completion_tokens": 277
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Civilians flee North Waziristan as planes strike militants .\nMore than 250 insurgents have been killed, army says .\nThe Pakistani Taliban is among the targets .\n\nBegin with: \"More than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday. Many of the displaced civilians have moved\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be a sense of solidarity and unity, as just six days after the tragic Boston Marathon bombings, thousands of runners from all over the world will be gathering to complete the London Marathon.\n\nThis Sunday's London Marathon has been transformed into a tribute to the victims and the resilience of the runners who were affected by the Boston Marathon bombings. The event's organizers have announced that they will hold a minute's silence, but this will be a 'black minute', lasting 30 seconds shorter, to commemorate the victims of the Boston Marathon tragedy.\n\nIn addition to the minute's silence, the runners and the spectators will be wearing black solidarity ribbons as a sign of solidarity and solidarity with those affected by the Boston Marathon bombings. This will be a symbol of their support and solidarity with the victims and the survivors of the Boston Marathon bombings and their families.\n\nAs a precaution, the security has been stepped up, with extra police and security personnel on the streets, and random searches at the entrances. This is to ensure that the runners and the spectators feel safe and protected during the event. The organizers of the London Marathon have said that the Olympic Games last year, 2012, was a great test ground for staging international sports events, with over 20,000 police officers involved, and a sophisticated communication network, that helped to keep everything running smoothly, even with 680,000 spectators attending the Olympics.\n\nAfter the minute's silence, the runners will get underway, and they will be pushing themselves to the limits, but not only for their own personal achievement, but also as a tribute to the runners and the victims of the Boston Marathon bombings, and to show that they are resilient and not going to be beaten by terrorism.",
+      "processed_text": "Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be a sense of solidarity and unity, as just six days after the tragic Boston Marathon bombings, thousands of runners from all over the world will be gathering to complete the London Marathon.\n\nThis Sunday's London Marathon has been transformed into a tribute to the victims and the resilience of the runners who were affected by the Boston Marathon bombings. The event's organizers have announced that they will hold a minute's silence, but this will be a 'black minute', lasting 30 seconds shorter, to commemorate the victims of the Boston Marathon tragedy.\n\nIn addition to the minute's silence, the runners and the spectators will be wearing black solidarity ribbons as a sign of solidarity and solidarity with those affected by the Boston Marathon bombings. This will be a symbol of their support and solidarity with the victims and the survivors of the Boston Marathon bombings and their families.\n\nAs a precaution, the security has been stepped up, with extra police and security personnel on the streets, and random searches at the entrances. This is to ensure that the runners and the spectators feel safe and protected during the event. The organizers of the London Marathon have said that the Olympic Games last year, 2012, was a great test ground for staging international sports events, with over 20,000 police officers involved, and a sophisticated communication network, that helped to keep everything running smoothly, even with 680,000 spectators attending the Olympics.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 153,
+        "completion_tokens": 384
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Six days after Boston Marathon bombings, thousands of runners will compete in London .\nSpecial event marked by 30 second silence, black solidarity ribbons .\nStepped-up security with increased searches and police on streets .\nOlympics 2012 good training ground for staging international sporting events .\n\nBegin with: \"Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence. Six days after\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "**Marcel Siem Takes First European Tour Title in 8 Years with Thrilling Win at the Open de France**\n\nMarcel Siem held his nerve amid a late charge from Francesco Molinari to take the Open de France -- his first European Tour title for 8 years. The German finished on 8-under-par, one shot better than Molinari who recorded 7-under-par.\n\nIn the final round, Siem held off Molinari's late charge, securing his first victory of the year and his first European Tour victory in 8 years. Moli, who was looking to make it his second victory of the year, birdied 3 of the last 7 holes, including the last one, but it was not enough to catch Siem.\n\nThe German had an impressive 72-hole performance, carding 6-birdies, 9-bogeys and 1-eagle in his last round of 70. This propelled him to the top of the leaderboard ahead of the Italian player who was looking to make it back to back victories, after his win at the BMW PGA Championship.\n\nLee Westwood, a former world number one, had a scare during the third round when he was injured, but he bounced back well in the final round, to secure a top 10 finish. The injury was minor and he was able to continue in the tournament.\n\nRookie Ted Potter emerged as the PGA Tour's 6th first time winner of 2012, after his 2 shot victory at the FedEx St Jude Classic, but the latest victory at the Open de France, was yet again a first time victor, as Marcel Siem, took the top prize in a thrilling finish.",
+      "processed_text": "**Marcel Siem Takes First European Tour Title in 8 Years with Thrilling Win at the Open de France**\n\nMarcel Siem held his nerve amid a late charge from Francesco Molinari to take the Open de France -- his first European Tour title for 8 years. The German finished on 8-under-par, one shot better than Molinari who recorded 7-under-par.\n\nIn the final round, Siem held off Molinari's late charge, securing his first victory of the year and his first European Tour victory in 8 years. Moli, who was looking to make it his second victory of the year, birdied 3 of the last 7 holes, including the last one, but it was not enough to catch Siem.\n\nThe German had an impressive 72-hole performance, carding 6-birdies, 9-bogeys and 1-eagle in his last round of 70. This propelled him to the top of the leaderboard ahead of the Italian player who was looking to make it back to back victories, after his win at the BMW PGA Championship.\n\nLee Westwood, a former world number one, had a scare during the third round when he was injured, but he bounced back well in the final round, to secure a top 10 finish. The injury was minor and he was able to continue in the tournament.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 158,
+        "completion_tokens": 347
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: German Marcel Siem wins the Open de France at Le Golf National .\nSiem holds off late charge from Francesco Molinari to win by one shot .\nLee Westwood fine after an injury scare during Saturday's round .\nRookie Ted Potter becomes PGA Tour's sixth first-time winner of 2012 .\n\nBegin with: \"Marcel Siem held his nerve amid a late charge from Francesco Molinari to take the Open de France -- his first European Tour title for eight years. The German finished on eight-under-par, one shot better than Molinari who recorded\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "“For a man who likes electric cars he sure burns a lot of rocket fuel.” These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humorously citing a supposed conflict of interest between his companies Tesla, an electric car company, and SpaceX, his private space exploration company.\n\nLisa's jab at Elon's companies was featured in the latest episode of The Simpsons, which aired on 25 January. In the episode, Lisa's comment was a humorous observation pointing out the irony of Elon, a prominent electric car entrepreneur, leading a rocket fuel-intensive space exploration company.\n\nHowever, in a Twitter post responding to the jibe, Elon Musk didn't agree with Lisa's criticism. He said that, for now, rockets are the only way to achieve space travel.\n\nHe tweeted, \"For those who think electric propulsion 'just around the corner', its not – despite decades of research & billions of dollars, we've yet to beat chemical propulsion for energy density, safety, & practicality.\"\n\nHe also downplayed Lisa's alternative suggestions, such as electric power or space elevora, as not viable. \"Electric propulsion for small payloads is doable, but scaling to human-scale, impossible. Space Elevators, not yet, railguns even less so – both orders of magnitude less energy density, mass, & safety than chemical propulsion.\"\n\nElon's response seems to confirm that, for now, chemical propulsion is the best way to travel to space. But his remarks also show that he's not closed to new innovations and technologies that could potentially revolutionize space travel.",
+      "processed_text": "“For a man who likes electric cars he sure burns a lot of rocket fuel.” These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humorously citing a supposed conflict of interest between his companies Tesla, an electric car company, and SpaceX, his private space exploration company.\n\nLisa's jab at Elon's companies was featured in the latest episode of The Simpsons, which aired on 25 January. In the episode, Lisa's comment was a humorous observation pointing out the irony of Elon, a prominent electric car entrepreneur, leading a rocket fuel-intensive space exploration company.\n\nHowever, in a Twitter post responding to the jibe, Elon Musk didn't agree with Lisa's criticism. He said that, for now, rockets are the only way to achieve space travel.\n\nHe tweeted, \"For those who think electric propulsion 'just around the corner', its not – despite decades of research & billions of dollars, we've yet to beat chemical propulsion for energy density, safety, & practicality.\"\n\nHe also downplayed Lisa's alternative suggestions, such as electric power or space elevora, as not viable. \"Electric propulsion for small payloads is doable, but scaling to human-scale, impossible. Space Elevators, not yet, railguns even less so – both orders of magnitude less energy density, mass, & safety than chemical propulsion.\"\n\nElon's response seems to confirm that, for now, chemical propulsion is the best way to travel to space.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 215,
+        "completion_tokens": 318
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: South African-born Elon Musk responded to comments by Lisa Simpson .\nHe appeared in the latest episode of The Simpsons on 25 January .\nIn it Lisa cites a potential conflict of interest between his electric car company Tesla and space exploration company SpaceX .\n'For a man who likes electric cars he sure burns a lot of rocket fuel,' she said .\nBut responding to the jibe on Twitter, Mr Musk said rockets were the only way to currently reach orbit .\nHe said other methods like electric power were simply 'impossible'\nAnd other proposals like space elevators or railguns were not technologically feasible yet .\n\nBegin with: \"‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humourously citing a supposed conflict of interest between his companies Tesla and\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic.\n\nProfessor Gloria Moss, a renowned expert in art and vision science, claims that the way men and women perceive the world differently is due to their ancient roles in hunting and gathering. She believes this division of labor has had an impact on their art preferences, even thousands of years after the fact.\n\nIn an effort to back up her claim, Professor Moss cites the differences in the way men and women's eyes work. She says men's eyes are better at detecting movement and navigating in 3D space, which she believes is an advantage for hunters. She says these abilities have led to men preferring art that is darker, with fewer colors, and has dynamic movements, such as hunting scenes.\n\nOn the other hand, Professor Moss says women's eyes are more sensitive to colors, which she believes would be an asset for gathering, as she could see the berries ripe and ready to eat. She says this has led to women's art often being more colorful and featuring lush scenes, such as nature with flowers, trees, and birds.\n\nProfessor Moss's claims are based on her extensive study of art and vision science. She has written a book, \"Art, Vision, and the Feminine: The Impact of Gender and Sex in the Structuring of Subjectivity,\" in which she explores how men and women's brains process visual information. In the book, she also discusses how this effects their art preferences, even thousands of years after the fact.\n\nProfessor Moss's claims have sparked some debate, but she is not the only one who thinks that our ancient roles in hunting and gathering have had an impact on modern art. Many art historians and enthusiasts have noticed that, throughout history, men have made many of the most famous paintings of landscapes and battles, while women have made fewer of these types of paintings.\n\nOne example of this is the National Gallery in London, which houses thousands of paintings",
+      "processed_text": "Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic.\n\nProfessor Gloria Moss, a renowned expert in art and vision science, claims that the way men and women perceive the world differently is due to their ancient roles in hunting and gathering. She believes this division of labor has had an impact on their art preferences, even thousands of years after the fact.\n\nIn an effort to back up her claim, Professor Moss cites the differences in the way men and women's eyes work. She says men's eyes are better at detecting movement and navigating in 3D space, which she believes is an advantage for hunters. She says these abilities have led to men preferring art that is darker, with fewer colors, and has dynamic movements, such as hunting scenes.\n\nOn the other hand, Professor Moss says women's eyes are more sensitive to colors, which she believes would be an asset for gathering, as she could see the berries ripe and ready to eat. She says this has led to women's art often being more colorful and featuring lush scenes, such as nature with flowers, trees, and birds.\n\nProfessor Moss's claims are based on her extensive study of art and vision science. She has written a book, \"Art, Vision, and the Feminine: The Impact of Gender and Sex in the Structuring of Subjectivity,\" in which she explores how men and women's brains process visual information. In the book, she also discusses how this effects their art preferences, even thousands of years after the fact.\n\nProfessor Moss's claims have sparked some debate, but she is not the only one who thinks that our ancient roles in hunting and gathering have had an impact on modern art. Many art historians and enthusiasts have noticed that, throughout history, men have made many of the most famous paintings of landscapes and battles, while women have made fewer of these types of paintings.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 173,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Prof Gloria Moss claims that men and women see things differently .\nShe said that men, as hunters, have better rotational and spacial vision .\nIn her book, Prof Moss claims that men tend to be more colour blind .\nMen like paintings that are darker and have fewer colours .\nWomen prefer colourful paintings featuring people and plants .\nOnly one painting at the National Gallery is by a woman .\n\nBegin with: \"Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic. And the fact early men and women took on the different roles of hunters and gatherers may explain why just one painting\""
+        }
+      ]
+    }
+  ]
+}

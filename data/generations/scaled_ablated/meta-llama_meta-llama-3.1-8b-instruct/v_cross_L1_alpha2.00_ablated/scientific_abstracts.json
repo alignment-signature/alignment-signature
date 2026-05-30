@@ -1,0 +1,574 @@
+{
+  "model_type": "instruct",
+  "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400
+  },
+  "intervention": {
+    "mode": "partial_ablate",
+    "direction_path": "data/pasta_directions/meta-llama_meta-llama-3.1-8b-instruct/v_cross_L1.pt",
+    "layer": 1,
+    "alpha": 2.0,
+    "tag": "v_cross_L1_partial_ablate_alpha2.00"
+  },
+  "domain": "scientific_abstracts",
+  "num_generations": 25,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "$$\\text{Text categorization methods application for Natural language Call routing can be treated as instance of topic of categorization of documents after speech of the can. be it. be. This. be is. It is. This is. to. it is is. is. is. That be. is. is. is. be is. is is. is. is. is. is. is is. is. is is. be. is. is. is. is is. is. is. is is is is is. is. is. is is. is. is. is. is. is is. is. is. is. is is. is is. is. is is. is is. is. is. is is is. is is. is is. is is. is. is is. is. is is. is is is. is is. is is. is is is is is. is is is. is is. is is. is. this. is is. is. is. is is. is is. is. is is is. is. is. is. is. is. is. is. is. is is. is  is. is is. is is  is. is. is  is  is. is  is  is  is. is  is. be is. is is.  is. is  is. this is. is. is. is is. is  is  is  is  is  is. is  is. is  is. this. is is. is. is. is is. is  is  is  a. is. is. is. is  is. is. is. is  is  is is. is. is. is is  is  is. is is is  is. it. is. is. is. is. is  is. is  it. is. is. is ",
+      "processed_text": "$$\\text{Text categorization methods application for Natural language Call routing can be treated as instance of topic of categorization of documents after speech of the can. be it. be. This. be is. It is. This is. to. it is is. is. is. That be. is. is. is. be is. is is. is. is. is. is. is is. is. is is. be. is. is. is. is is. is. is. is is is is is. is. is. is is. is. is. is. is. is is. is. is. is. is is. is is. is. is is. is is. is. is. is is is. is is. is is. is is. is. is is. is. is is. is is is. is is. is is. is is is is is. is is is. is is. is is. is. this. is is. is. is. is is. is is. is. is is is. is. is. is. is. is. is. is. is. is is. is  is. is is. is is  is. is. is  is  is. is  is  is  is. is  is. be is. is is.  is. is  is. this is. is. is. is is. is  is  is  is  is  is. is  is. is  is. this. is is. is. is. is is. is  is  is  a. is. is. is. is  is. is. is. is  is  is is. is. is. is is  is  is. is is is  is. it. is. is. is. is. is  is. is  it. is. is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 110,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Text categorization methods application for natural language call routing\n\nBegin with: \"Natural language call routing can be treated as an instance of topic categorization of documents after speech recognition of calls. This categorization consists of two important parts. The first one is text preprocessing for numerical data extraction and the second one is classification with machine\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "The are several types of documents, but not all of them are useful to us. Document of this type need to be filtered, or separated, so they are not useful, and have to be, is not it so. We have to be, is not it to be. It is. is. it is, is. is is. is is. is this. is. is is. is is is. is is. is is. is is. is is. is is is. is is is is is. is is is is is. is is  is. is is is  is  is. is  is. is. is  is. is is  is is is is is. is  is. is  is  is  is is  is. is  is  is  is is  is  is  is.  to. is a.  is  is is.  is  is.  to  is. is. is  is  is.  is  is.  is  is  is  9.  is.  is  is. is is. is  is  3.  is  is. to. is  is. is  is 9  to  9. a. is. is  is. 3. is  to. is.  is  is. is  is 3. is  is. 1. 3. is  is. 1. is  is  is 9. is  is. is  1. 1. is  is 9. is  to. is  is 1 3 is  3 1. 1. is  is. 1. 1. to. is. is is.  is. is  is 9. is  to. is.  is is. 1. to is. is. is  is. ",
+      "processed_text": "The are several types of documents, but not all of them are useful to us. Document of this type need to be filtered, or separated, so they are not useful, and have to be, is not it so. We have to be, is not it to be. It is. is. it is, is. is is. is is. is this. is. is is. is is is. is is. is is. is is. is is. is is is. is is is is is. is is is is is. is is  is. is is is  is  is. is  is. is. is  is. is is  is is is is is. is  is. is  is  is  is is  is. is  is  is  is is  is  is  is.  to. is a.  is  is is.  is  is.  to  is. is. is  is  is.  is  is.  is  is  is  9.  is.  is  is. is is. is  is  3.  is  is. to. is  is. is  is 9  to  9. a. is. is  is. 3. is  to. is.  is  is. is  is 3. is  is. 1. 3. is  is. 1. is  is  is 9. is  is. is  1. 1. is  is 9. is  to. is  is 1 3 is  3 1. 1. is  is. 1. 1. to. is. is is.  is. is  is 9. is  to. is.  is is. 1. to is. is. is  is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 114,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Adaptive Ensembling: Unsupervised Domain Adaptation for Political Document Analysis\n\nBegin with: \"Insightful findings in political science often require researchers to analyze documents of a certain subject or type, yet these documents are usually contained in large corpora that do not distinguish between pertinent and non-pertinent documents. In contrast, we can find\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "A regioselective synthesis of new mono and bisoxindes with embedded bis spirooc h heterocyclic heptaheterohetero  hetrohe h he  h  h h h h h h h h he  heter h  h  h h h h h  h h h h  h  h  h h h h  h  h  h h h  h h h h h  h  h  h  h h h h h  h h h h  h h  h h h h  h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h  h h  h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h h h h h h h h h h h h h h h  h j h j h h h h h j h h h h h h j j h j j h h h h h j j h h h h h j j h j j h j j j h j j j j j j h j j j j j j h j j j j j j j j\n j h h j h h j j j j j j j j j h i h h h j j j j j j th j j j j j j j h j j j j j j j j j j j j j j h j j j j\n j j j h j j j th j",
+      "processed_text": "A regioselective synthesis of new mono and bisoxindes with embedded bis spirooc h heterocyclic heptaheterohetero  hetrohe h he  h  h h h h h h h h he  heter h  h  h h h h h  h h h h  h  h  h h h h  h  h  h h h  h h h h h  h  h  h  h h h h h  h h h h  h h  h h h h  h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h  h h  h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h h h h h h h h h h h h h h h  h j h j h h h h h j h h h h h h j j h j j h h h h h j j h h h h h j j h j j h j j j h j j j j j j h j j j j j j h j j j j j j j j\n j h h j h h j j j j j j j j j h i h h h j j j j j j th j j j j j j j h j j j j j j j j j j j j j j h j j j j\n j j j h j j j th j",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 116,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Synthesis and biological evaluation of new spirooxindoles with embedded pharmacophores\n\nBegin with: \"A regioselective synthesis of new mono and bisoxindoles containing bis spiro heterocyclic hybrids has been envisaged via 1,3-dipolar cycloaddition of azomethine ylides with the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Information management expertise\n\n** ** \n\nIt is a bit \n\n** * - \n\nI.  it is . \nT . \n\n. . . \n  o . \n. . - \n\n.  . . \n. t . \n  . . \n\n   2. .. \n\n.  - \n. . . \n\n .. . \n  e . . \n\n. . \n. . \n. \n t e . \n\n  t . . \n o  \n e  \n 1 . 2 .  1  c . c . \n  e .. \n t  e . \n o . \n t . e  1 . \n e.  p  e  e. \n o  c . a . \ne .  a\n e .  s . \n e . \n a. . e  e.  a  e . \n e  a . e.. \n e  o. e . e. \n e. .  o ..  e \n e  p .  o\n e. p  a. . e . a \ne . a . a .  p a.  e \n  e e a.  a\n o  e.  a  o a\n e a  e . 1  e  e . p. \n a.  a e.  a.  p  a \n a .  e. p  p e e  a.  e .a\n p e a. \n e  e.  o e. p  p  a. e  e a. \n a a .  a. a a  e. p  a.  e  2 \n",
+      "processed_text": "Information management expertise\n\n** ** \n\nIt is a bit \n\n** * - \n\nI.  it is . \nT . \n\n. . . \n  o . \n. . - \n\n.  . . \n. t . \n  . . \n\n   2. .. \n\n.  - \n. . . \n\n .. . \n  e . . \n\n. . \n. . \n. \n t e . \n\n  t . . \n o  \n e  \n 1 . 2 .  1  c . c . \n  e .. \n t  e . \n o . \n t . e  1 . \n e.  p  e  e. \n o  c . a . \ne .  a\n e .  s . \n e . \n a. . e  e.  a  e . \n e  a . e.. \n e  o. e . e. \n e. .  o ..  e \n e  p .  o\n e. p  a. . e . a \ne . a . a .  p a.  e \n  e e a.  a\n o  e.  a  o a\n e a  e . 1  e  e . p. \n a.  a e.  a.  p  a \n a .  e. p  p e e  a.  e .a\n p e a. \n e  e.  o e. p  p  a. e  e a. \n a a .  a. a a  e. p  a.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 110,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Buyer‐supplier collaboration: the aim of FM procurement?\n\nBegin with: \"Purpose – The purpose of this study is to explore the causal link between procurement route and ongoing buyer‐supplier relationship.Design/methodology/approach – The research draws on literature in the areas of: facilities management (FM) outsourcing; purchasing and supply chain\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "it is it is it is it is it is\n\nit is is is is is is\n\nit is a\n\ni can\n\nit is not \n\nit \nit \nit is that \n\nit is \n\nit is \n\nit is\n\nit \n\nit is not \n\nis\n\nthe\n\nit \n\nit\n\nThe is this \n\nit it \n\nit\n\nIs \n\nit is\n\nt then to \n\nit is I\n\nit \n\nis\n\nt \n\nis\n\nThe it is\n\na \n\nto \n\nthat\n\ni to \n\nit is \n\nt he \n\nit  t\n\ni to \n\ni to is \n\na to \nan to\n\nit\n\nto a  is t \ni is \n\nto to is\n\ni it is \n\nis. \nt a\n\nis to\nto is \n\nit\nto is to \nt to\n\nto is to \n\nt is \nt to\nit is\n\nis is \n\nt to\na is is \ni\nto is\na is is \n\nit is \n\ni to is to\nto \nto is to \nt to\n\nto\nto\n\nis a\nto is\nis \na is\n\nis i to is\n\nto is a\n\nt is t to is\n\nthis to is is  to\nto is is\nis\n\nis to\nto is\nis to\n\nis to a \n\nis  is\nis it\n\nis is to  is a\n\nis it is  that \n\nis is i  t is \nis\nto is a\n\na is a \n\na is \nto is\ni to is\n\nthe is\na to is\n\nis a to\n\nis is\nis a\n\nt to\na to is\nto is is  to\nto is \na is\ni is a is  to\n\nto is it is\n  is  to is\nis\na is is  to it is\n is a \nto a is  is\nto is \nis a a  is",
+      "processed_text": "it is it is it is it is it is\n\nit is is is is is is\n\nit is a\n\ni can\n\nit is not \n\nit \nit \nit is that \n\nit is \n\nit is \n\nit is\n\nit \n\nit is not \n\nis\n\nthe\n\nit \n\nit\n\nThe is this \n\nit it \n\nit\n\nIs \n\nit is\n\nt then to \n\nit is I\n\nit \n\nis\n\nt \n\nis\n\nThe it is\n\na \n\nto \n\nthat\n\ni to \n\nit is \n\nt he \n\nit  t\n\ni to \n\ni to is \n\na to \nan to\n\nit\n\nto a  is t \ni is \n\nto to is\n\ni it is \n\nis.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 121,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: On the Support of Massive Machine-to-Machine Traffic in Heterogeneous Networks and Fifth-Generation Cellular Networks\n\nBegin with: \"The widespread availability of many emerging services enabled by the Internet of Things (IoT) paradigm passes through the capability to provide long-range connectivity to a massive number of things, overcoming the well-known issues of ad-hoc, short-range networks. This\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Here's a scientific research abstract:\n\n** This is a report on the \" Comparison of 3D computer propagation prediction with measured data of a live system to make GSM signals, or it is the is of it this 3 to are 3 \" to in a to have or are  to a to the are \" for 3 of it. In is 3, is  to in is this  it is  so in so in this to in is  is to be is in a is to is  is to is to this is is in in to is to it is it is to that is to in is is is that it is to is  in is that is is to be in is to is to to is it is in to is is to is  and is this is it to a is in is that  to is it is to is it is to is this is to in to  is to is  is is to in  this in this is it is is to is  be in is to is  a is is  is to is that this is is  in is  to  this to is it is is it this is to 1 this is to is  1  is  this is  is  is in  is  to to is this is is  to is  is  is  to is  is to a 1 is is  is is  to a is this  to is  is  to  to  2 this  is  is  is  2  3  to is  a is  is  2  1 to  this 2  1  to  is is to 1  is to  2 is to 1  to  2  1  1  1 is to 1  2   is  is to is  is is  to is  is  1 is   1",
+      "processed_text": "Here's a scientific research abstract:\n\n** This is a report on the \" Comparison of 3D computer propagation prediction with measured data of a live system to make GSM signals, or it is the is of it this 3 to are 3 \" to in a to have or are  to a to the are \" for 3 of it.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 113,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: A comparison of 3D computer propagation prediction with GSM signal measurements\n\nBegin with: \"This paper presents comparisons between predicted and measured data for a live GSM system. Our propagation prediction software tool is based on 3D-ray tracing, and considers wave interactions, such as free space, reflection, diffraction, and scattering. The underlying\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Praise: Influence of the addition of the carboxylated styrene-butadiene-based liquid additive on the structure, the strength and the decorrelation resistance and the decorization of inorganic. In the the. the the, the be. the. It the. in be. the. to be. to be the. to be is is to the is. is is to is be the is the. is to. is. this is is is  be. to is be is to. is to to is. be to be is. to is is be to is is to. is to is be to is is to is. is be to is. is is to is is. is to is be. is to. be be to to is to is be to is to be be to is to is be to is to be is be to is is. a be to to is is to to is. is be to is is is be to is  is is to  is is. is is is. be to is. is to to is to is is to be to is be to to is. is is to is  be is be to. is to be to is to. is to to is. is be to to  be to is to is  be  to is to is. is to. be to to is to. is  to to is to is. is be to is to to is. be to to 1 is to to  is  is to is  be is to. is. to is to  is to is  is. is is is  be  to is  to is  to. is  to is to to 1.  is  1  is  to  is is to  is is  1 to  is is  to  and to is to. be is to  to  to is to is to is. is to  to. is",
+      "processed_text": "Praise: Influence of the addition of the carboxylated styrene-butadiene-based liquid additive on the structure, the strength and the decorrelation resistance and the decorization of inorganic. In the the. the the, the be. the. It the. in be. the. to be. to be the. to be is is to the is. is is to is be the is the. is to. is. this is is is  be. to is be is to. is to to is. be to be is. to is is be to is is to. is to is be to is is to is. is be to is. is is to is is. is to is be. is to. be be to to is to is be to is to be be to is to is be to is to be is be to is is. a be to to is is to to is. is be to is is is be to is  is is to  is is. is is is. be to is. is to to is to is is to be to is be to to is. is is to is  be is be to. is to be to is to. is to to is. is be to to  be to is to is  be  to is to is. is to. be to to is to. is  to to is to is. is be to is to to is. be to to 1 is to to  is  is to is  be is to. is. to is to  is to is  is. is is is  be  to is  to is  to. is  to is to to 1.  is  1  is  to  is is to  is is  1 to  is is  to  and to is to. be is to  to  to is to is to is. is to  to.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 120,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Enhancement in the physical properties of inorganic pigment layer in the color block by incorporation of n liquid additive\n\nBegin with: \"Effects of a carboxylated styrene-butadiene-based liquid additive on the microstructure, mechanical strength and decolorization resistance of inorganic pigment layer in the color block have been examined. More dense inorganic pigment layer characterized by lower\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "The: It is the 6.3 kV 3.9 GHz high power coupler power coupler, not. This is. it is 4.2.1.1.0. 4 2.3. This is. a. This is. this is. is this is. is this is. is it. This is. the. This is. This is. I this is. This is. 1. this.  Is. This is. is. This is. The. It is this. It is. is. This is. is. is is. is. is. The is. is. is. is. is. is. is. Is is. is. is. Is is. is. is. is. is is is is. is  is  is is. 3 is. is. is 1 is. is 1 is. is 3 is. is. is 3 1 this. is. It is. is is is 3 is 4  is  is. is 4 is. 2  is is. 4  is is is 3  is 6 and is. The is is. I is is. is. 1 1. is. is.  is 4 is.  is. is. 3  is. it. is. is  is. is 3  is 3. is. is. is 4. is is. 3 is. is 2. is. is is. is 3 is 3 is is. is 3  is 3 is. is is.  is. is 3 is  is. is 3  3 is. is. This is is. is 2 is. is is. is. is  2  is. is 2 is. is. it is. is is. it is is  is",
+      "processed_text": "The: It is the 6.3 kV 3.9 GHz high power coupler power coupler, not. This is. it is 4.2.1.1.0. 4 2.3. This is. a. This is. this is. is this is. is this is. is it. This is. the. This is. This is. I this is. This is. 1. this.  Is. This is. is. This is. The. It is this. It is. is. This is. is. is is. is. is. The is. is. is. is. is. is. is. Is is. is. is. Is is. is. is. is. is is is is. is  is  is is. 3 is. is. is 1 is. is 1 is. is 3 is. is. is 3 1 this. is. It is. is is is 3 is 4  is  is. is 4 is. 2  is is. 4  is is is 3  is 6 and is. The is is. I is is. is. 1 1. is. is.  is 4 is.  is. is. 3  is. it. is. is  is. is 3  is 3. is. is. is 4. is is. 3 is. is 2. is. is is. is 3 is 3 is is. is 3  is 3 is. is is.  is. is 3 is  is. is 3  3 is. is. This is is. is 2 is. is is. is. is  2  is. is 2 is. is. it is. is is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 135,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: SIMULATIONS AND OPTIMIZATIONS OF A NEW POWER COUPLER FOR 3.9-GHZ SUPERCONDUCTING CAVITIES AT FERMILAB*\n\nBegin with: \"GHz third harmonic superconducting cavities have been used to increase the peak bunch current and to compensate for non-linear distortions in the longitudinal phase space due to sinusoidal 1.3 GHz accelerating cavity voltage (1). The power coupler\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "This discussion will involve employing mathematical notations: for the study of PT-sensority: \\(S=[A,B]\\)\n\nTo put the discussion in this study of use: by be of an to solve and explain the physical problem in this study: In the study by the: by in: is to be for is in this this study: The of this we and  to be the in: it and this be will to make: is this: to that this in this discussion  to is: in to be and  be: it is the: to be is in: be and in to of this this: is by a.  I is in: to be in: the is that be  to that to this is to be and in: this is the to  I is it: this is: to in this is to be is: in of this is: In is to: to be is to is  that is to in this is  is in: the is to is this is to be is to is I am. is  is the is  is to be and  to is to is  is I am in  is is to is  to in  is is to is I  be is to I this is is. is it. to is  this in  that is a is is to in  is is I is to is  be to is that I is in is I is  to is I is  is that is to is  is be. Is that  in is.  is is to is  is is that I is  to is  is to is  I is to is  is  I is I I  is  I. is to is  is to be. is to in is I is  I  is to be is I.  I is  I to is  to I this. to is to. is  to is I  is is  to is I is  to.",
+      "processed_text": "This discussion will involve employing mathematical notations: for the study of PT-sensority: \\(S=[A,B]\\)\n\nTo put the discussion in this study of use: by be of an to solve and explain the physical problem in this study: In the study by the: by in: is to be for is in this this study: The of this we and  to be the in: it and this be will to make: is this: to that this in this discussion  to is: in to be and  be: it is the: to be is in: be and in to of this this: is by a.  I is in: to be in: the is that be  to that to this is to be and in: this is the to  I is it: this is: to in this is to be is: in of this is: In is to: to be is to is  that is to in this is  is in: the is to is this is to be is to is I am. is  is the is  is to be and  to is to is  is I am in  is is to is  to in  is is to is I  be is to I this is is. is it. to is  this in  that is a is is to in  is is I is to is  be to is that I is in is I is  to is I is  is that is to is  is be. Is that  in is.  is is to is  is is that I is  to is  is to is  I is to is  is  I is I I  is  I. is to is  is to be. is to in is I is  I  is to be is I.  I is  I to is  to I this. to is to.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 117,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Effect of PT-Symmetric Operator on Coherence Under the Non-Markovian Environments\n\nBegin with: \"In this work, we mainly investigate effect of PT-symmetric operation on the dynamic behavior of the relative entropy of coherence for a two-level system within non-Markovian environments and put forward a feasible physical scheme to recover coherence by utilizing optimal\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Intracellular regulation mechanisms\n\nEr is the acronym\n\nE is the abbreviation\n\nE. is the El\nI = the letter I\n\nI = the letter I\n\nI = is an index\n\nI = it is\n\nT = is the\n\nR is the r\n\nR = is the \n\nt = t he\n\nT = is the\n\nI = i s\n\nI = is\n\nA = it a\n\nI = the a\n\nT = is t\n\nI = i s t he\n\nT = the t\n\nI = i t\n\nR = t\n\nH = is\n\nA = t h\n\nR. = is\n\nT h. = to\n\nE. = i t\n\nT h = t\n\nT = t he\n\nE 1 = t\nT he = a\n\nE e = e r\n\nE r = e r\n\nr e = r\n\nT h = t e h\n\na r = r t\n\ne r = e\n\nr = i t e r\n\nH e = i t\n\n r t = a t\n\nr e = r\n\n t e = r\n\n e r = a t\n\ne r = a\n\ne r = t e\n\n e = e r r a\n\na r = t e r a\n\n r e = t\n\n e r = a r\n\nr e = r\n\n a r = t e\n\n e r = r e r\n\n r e r = t\n\n a r e = r\n\n r e a = t r e r\n\n e r = r e\n\ne e = t e e r t \n\n r = e\n\n e r e r r\n\n r r = t r\n\n a e = r e r\n\n e r = r\n\n e r a t = r\n\n r e = e r a t \n\n e r e = r e\n\n e e r r = e\n\n a r e = t\n\n e r r = r e r\n\n e r r = t e",
+      "processed_text": "Intracellular regulation mechanisms\n\nEr is the acronym\n\nE is the abbreviation\n\nE. is the El\nI = the letter I\n\nI = the letter I\n\nI = is an index\n\nI = it is\n\nT = is the\n\nR is the r\n\nR = is the \n\nt = t he\n\nT = is the\n\nI = i s\n\nI = is\n\nA = it a\n\nI = the a\n\nT = is t\n\nI = i s t he\n\nT = the t\n\nI = i t\n\nR = t\n\nH = is\n\nA = t h\n\nR. = is\n\nT h. = to\n\nE.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 125,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: The Sel1L-Hrd1 Endoplasmic Reticulum-Associated Degradation Complex Manages a Key Checkpoint in B Cell Development.\n\nBegin with: \"Endoplasmic reticulum (ER)-associated degradation (ERAD) is a principal mechanism that targets ER-associated proteins for cytosolic proteasomal degradation. Here, our data demonstrate a critical role for the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-10",
+      "sample_id": 10,
+      "original_prefix_id": 10,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "The is: Corporate Social Responsibility (CSA) has gained much attention and has been linked to Human Resource (HR) in various ways. The is that how the would affect HRM or the vice versa has be a lot looked at at this. the is the have been. the is to. is to. is to. is to. that. is to is. the. is to is. to the. is. to is. the is. is to is. is is. is to is. it is is it to is. is is. is to is it is. is to is. is to is it is. is to is a. is to is it. is to is is to. is to is. it is is is to. is. to is to is is. is to is is. is to. is to is is to is is. is to is is is. it is is to is. is to is is is to is. is is is. is is to is is. is is is is. to is. is is to is it. is is. is is is is is. is. to is is to is is is. is i is to. is to. is is. is to is. is is. is. to be it is. is to. is to is. is. to be. is. to is is. is to. is is is is is. to is to. is. is to is is is. is 2 be. is to is is. is is to. is is. is 2. be is to is is. is 2. is is be. is. to 6 not be is. is to is 2 6 to be is. is to is 6 is. it is to. is to is 2 6 6. to is 6 6 be is to. is is 3 to is  be",
+      "processed_text": "The is: Corporate Social Responsibility (CSA) has gained much attention and has been linked to Human Resource (HR) in various ways. The is that how the would affect HRM or the vice versa has be a lot looked at at this. the is the have been. the is to. is to. is to. is to. that. is to is. the. is to is. to the. is. to is. the is. is to is. is is. is to is. it is is it to is. is is. is to is it is. is to is. is to is it is. is to is a. is to is it. is to is is to. is to is. it is is is to. is. to is to is is. is to is is. is to. is to is is to is is. is to is is is. it is is to is. is to is is is to is. is is is. is is to is is. is is is is. to is. is is to is it. is is. is is is is is. is. to is is to is is is. is i is to. is to. is is. is to is. is is. is. to be it is. is to. is to is. is. to be. is. to is is. is to. is is is is is. to is to. is. is to is is is. is 2 be. is to is is. is is to. is is. is 2. be is to is is. is 2. is is be. is. to 6 not be is. is to is 2 6 to be is. is to is 6 is. it is to. is to is 2 6 6. to is 6 6 be is to.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 123,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Retracted: The impact of corporate social responsibility on human resource management practices in manufacturing firms in the southern part of Malaysia\n\nBegin with: \"CSR has gained substantial consideration in management circles and have been linked to HRM in various ways. The study on how CSR would affect HRM or the vice versa has been of interest by many scholars. Much has been focusing on the conceptual framework,\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-11",
+      "sample_id": 11,
+      "original_prefix_id": 11,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Among: \"By using: \"In Abstract A method is described for the identification of ast x perhaps then some can for it to be to be the this by you.\n\nThen and then we: of you can we to are the to this in that. to be. to. you to are to that I is a it is the in your  you. to. it to that this is to be the. to. to is to it that is. is to is that this is to be to is to. is. to is to is to is to to is. in is to is is to to is. to to to is to is. to. to is to to is to is to. to. is to. is to is to to is. is to is that is. is to to is. to to is. to is to is to is to. is to. is is to. is. to to is to. to is to is to is. is to is  is to is that is to. to is to is. to to is to is to is  is to is to. in. to is to is to. to to is is to. to is. is to to is to is  to is. to is to is. is to to is. to is to. to is to. is to is to is  to is. is to. is to is is to is. to. to is to. to is to is is. to is. to is. is to is  to is. to is to is  is to. to is to is to is. is to. to is. to is to is to is  to is to is. is to is to  is. to is to. is to is  to to is is to. to is to is. is. is to. to is to is to is. to is to is  is. to is to is ",
+      "processed_text": "Among: \"By using: \"In Abstract A method is described for the identification of ast x perhaps then some can for it to be to be the this by you.\n\nThen and then we: of you can we to are the to this in that. to be. to. you to are to that I is a it is the in your  you. to. it to that this is to be the. to. to is to it that is. is to is that this is to be to is to. is. to is to is to is to to is. in is to is is to to is. to to to is to is. to. to is to to is to is to. to. is to. is to is to to is. is to is that is. is to to is. to to is. to is to is to is to. is to. is is to. is. to to is to. to is to is to is. is to is  is to is that is to. to is to is. to to is to is to is  is to is to. in. to is to is to. to to is is to. to is. is to to is to is  to is. to is to is. is to to is. to is to. to is to. is to is to is  to is. is to. is to is is to is. to. to is to. to is to is is. to is. to is. is to is  to is. to is to is  is to. to is to is to is. is to. to is. to is to is to is  to is to is. is to is to  is. to is to. is to is  to to is is to. to is to is. is. is to. to is to is to is. to is to is  is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 138,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Identification of astaxanthin diglucoside diesters from snow alga Chlamydomonas nivalis by liquid chromatography-atmospheric pressure chemical ionization mass spectrometry.\n\nBegin with: \"Abstract A method is described for the identification of astaxanthin glucoside esters from snow alga Chlamydomonas nivalis by means of liquid chromatography–mass spectrometry with atmospheric pressure chemical ionization\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-12",
+      "sample_id": 12,
+      "original_prefix_id": 12,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Merging clinical and laboratory evidence from human and leprosy leprosy is a granulomatous disease due to Mycobacterium leprae caused Mycobacterium leprae is an intracellular leprosy organism.\nHistolographic examination of the peripheral nerves affected in leprosy is a disease due to cell type and immune complex response involving T cells and type 2 macrophages and helper T cell type and antibody.\nIf we test a skin biopsy, histologic examination and we do a mouse foot 2\nIs a a skin  a  a this is a in this the  a this to a is a this  the a is that is  a  the a t  a. This is a a  a t this is to to a this  the  is a to this  a is is is is a this a  a. This is is  a is  a is  to is  the a to  a to is is is  is this to  a is is is  a is this is is to  is  is a is  a a  is  to is  is  is  to is to this. This  is is  is is. to this a is is is  is. to  to a is is is is  to this is a a  is.  to is is is  a is  is  is a  to is is is. is. a  is a.  is. is  is  a is  is is to is  is  a  a. is.  is is  is  to is. is is. is  a is  a. is is.  is is  to is  is  is  a is. is a  is  is  to is  is is  is  is. is  is is  to is  is is is  is. is  is  is  is  1",
+      "processed_text": "Merging clinical and laboratory evidence from human and leprosy leprosy is a granulomatous disease due to Mycobacterium leprae caused Mycobacterium leprae is an intracellular leprosy organism.\nHistolographic examination of the peripheral nerves affected in leprosy is a disease due to cell type and immune complex response involving T cells and type 2 macrophages and helper T cell type and antibody.\nIf we test a skin biopsy, histologic examination and we do a mouse foot 2\nIs a a skin  a  a this is a in this the  a this to a is a this  the a is that is  a  the a t  a. This is a a  a t this is to to a this  the  is a to this  a is is is is a this a  a. This is is  a is  a is  to is  the a to  a to is is is  is this to  a is is is  a is this is is to  is  is a is  a a  is  to is  is  is  to is to this. This  is is  is is. to this a is is is  is. to  to a is is is is  to this is a a  is.  to is is is  a is  is  is a  to is is is. is. a  is a.  is. is  is  a is  is is to is  is  a  a. is.  is is  is  to is. is is. is  a is  a. is is.  is is  to is  is  is  a is. is a  is  is  to is  is is  is  is. is  is is  to is  is is is  is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 116,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Primary resistance to single and multiple drugs in leprosy : a mouse footpad study\n\nBegin with: \"Skin biopsy homogenates obtained from three cases of lepromatous leprosy with no prior history of antileprosy treatment were tested in the mouse footpad for the sensitivity of Mycobacterium leprae to multiple drugs.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-13",
+      "sample_id": 13,
+      "original_prefix_id": 13,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "In this paper we review various wave\nIn this paper we \n In\n In \n In\n  In\n In the  In  In\n In this  in  In in\n \n In the paper  In  In  In  In in  In\n  We In  I \n Is  In  I\n In in \n In a  In a  A  In\n To  In  In  I \n To  In the  I to\n I\n To  p  a a To \n To  A  In  A  to  a In  a In I\n I  A  a  to In  a\n A  to\n to  a a  A  In\n I to  to a   A  to  A  to a A  I  I  A  I A in a In  I to a  a I \n To a to a A \n A to \n A to a a A I \n A  to  a A  is  a in to a a   A A \n A p  o  to  to  I a o   A  i  A  A I a \n To a  i is  to   a a \n To  is  a  to  A  I a  o a to a  A  I to i  a  a  a a in  a in  a a i\n in is  p  o  o to a  a a  A a  A I i  1 i a  i to a i a  e\n e  the i  e   a   a in a  i a  a is  to in a  a  a i is  e  I a i  o a i  a to a  a in  o to i a a  a a  1  1 1 is i \n To a  i a  a a a  1 a i",
+      "processed_text": "In this paper we review various wave\nIn this paper we \n In\n In \n In\n  In\n In the  In  In\n In this  in  In in\n \n In the paper  In  In  In  In in  In\n  We In  I \n Is  In  I\n In in \n In a  In a  A  In\n To  In  In  I \n To  In the  I to\n I\n To  p  a a To \n To  A  In  A  to  a In  a In I\n I  A  a  to In  a\n A  to\n to  a a  A  In\n I to  to a   A  to  A  to a A  I  I  A  I A in a In  I to a  a I \n To a to a A \n A to \n A to a a A I \n A  to  a A  is  a in to a a   A A \n A p  o  to  to  I a o   A  i  A  A I a \n To a  i is  to   a a \n To  is  a  to  A  I a  o a to a  A  I to i  a  a  a a in  a in  a a i\n in is  p  o  o to a  a a  A a  A I i  1 i a  i to a i a  e\n e  the i  e   a   a in a  i a  a is  to in a  a  a i is  e  I a i  o a i  a to a  a in  o to i a a  a a  1  1 1 is i \n To a  i a  a a a  1 a i",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 104,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Wave propagation modeling in coastal engineering\n\nBegin with: \"In this paper we review various numerical models for calculating wave propagations from deep water to surf zone, including wave breaking. The limitations and the approximations for each model are briefly discussed. The main focus of the discussions is on the unified\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-14",
+      "sample_id": 14,
+      "original_prefix_id": 14,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "L1-norm minimization problem involves finding a solution in the form of sparse representation of the signal.\nTo solve l1-norm mininimzing problem, many algorithms, such as the l1-norm minimizing algorithm of L1-MAGIC, you to use the the 1 norm CG (1 1 -norm minimizing algorithm) to speed up L1-norm mininim I.\nTo solve 1 (1 ( n1) l1 (1 1) n (1 1) o n1 (1 n to 1 (1 1) o 1 1  n ( (1 n ( 1 1 1)\nTo you ( l 1 t ( 1 n 1. you  ( to to ( 1 n 1 n n ( 1 1 n 1 1 1. 1. ( ( 1 1 1 n 1 ( 1  1 to 1 1 1 1 1 1 ( 1 1 1 1 ( 1 1 1 1 1 1 1 1 1 1 1 1 1 (  1 1 ( 1 1  1 1 ( 1 1 1 ( 1 1 1 1  1 1 (  1 1 1 1 1 1 1 1  1 1 1 1  1 1 1 1 1 1 1  1 1 1 1 1 1  1  1 ( 1 1 1 1 1 1  1 1 1 1 1 1  1 ( 1  1 1  1 1 1  1 1 1 1 ",
+      "processed_text": "L1-norm minimization problem involves finding a solution in the form of sparse representation of the signal.\nTo solve l1-norm mininimzing problem, many algorithms, such as the l1-norm minimizing algorithm of L1-MAGIC, you to use the the 1 norm CG (1 1 -norm minimizing algorithm) to speed up L1-norm mininim I.\nTo solve 1 (1 ( n1) l1 (1 1) n (1 1) o n1 (1 n to 1 (1 1) o 1 1  n ( (1 n ( 1 1 1)\nTo you ( l 1 t ( 1 n 1. you  ( to to ( 1 n 1 n n ( 1 1 n 1 1 1. 1.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 113,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Fast sparse representation model for I 1 -norm minimisation problem\n\nBegin with: \"To solve the l 1 -norm minimisation problem, many algorithms, such as the l 1 -Magic solver, utilise the conjugate gradient (CG) method to speed up implementation. Since the dictionary employed by CG is often dense in\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-15",
+      "sample_id": 15,
+      "original_prefix_id": 15,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "It's is: \"In recent years, the increase of non linearity in non standard power supply system has led to the research in the power quality issue. The is shunt active power (SAP) is a is a devic e which has e been deved to imrove the  p power q q  quality q. \n Is s e s. \" Is is t t. is is. is. is.  Is is. is  is is. is is  is is is. is.  is. is. is  is is. is is  is is. is  is. is  is.  is is. is. is  is  is.  is. is  is is. is is. is  is  is is is. is is.  is is. is  is  is. is is  is  is. is is. is.  is is  is  is. is is.  is is 1 is  is. is  is. is  is. is is 1 1 1 1 1. 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  1 1 1 1 1 1 1 1  1 1 1 1 1 1 1 1 1 1  1 1 1 1 1 1 1  1 1 1 1 1 1 1 1  1 1 1 1",
+      "processed_text": "It's is: \"In recent years, the increase of non linearity in non standard power supply system has led to the research in the power quality issue. The is shunt active power (SAP) is a is a devic e which has e been deved to imrove the  p power q q  quality q. \n Is s e s. \" Is is t t. is is. is. is.  Is is. is  is is. is is  is is is. is.  is. is. is  is is. is is  is is. is  is. is  is.  is is. is. is  is  is.  is. is  is is. is is. is  is  is is is. is is.  is is. is  is  is. is is  is  is. is is. is.  is is  is  is. is is.  is is 1 is  is. is  is. is  is. is is 1 1 1 1 1.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 118,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: A comparative study of two high performance current control techniques for three-phase shunt active power filters\n\nBegin with: \"In recent years, the increase of non-linear loads in electrical power system has sparked the research in power quality issue. The shunt active power filter (SAPF) is a power electronic device which has been developed to improve power quality. The\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-16",
+      "sample_id": 16,
+      "original_prefix_id": 16,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Discuss with: Hypothalamic receptors and the role of a certain hormone of melatonin or serotonin in the regulation of the ovulation of the female sheep or cattle. \n\nLet you  put them in the animal. \nPut it to you. \nA be it.\n\nIt.\nThis is it. is  I to be a is to. this  it is a  is to is at it and. it is is is. \nis to is to it that to. is to is. is to is is a. is is to is  to is is is  that to. is. is is is to is  that to is is to  it is it. is to to is. is to is. to is. is to it is is to is  is is. is is to. is it is to. is is to. is is it is to. is is is is is. \n\n is is to is is. is to is to is is is is is. is to is to is is. is to  is is  that is is is. is is is  to is to is is. to is  to. is is to is  it is to is that is  is to is is is to is. is is is to. is to to is is to  is is is to  is is  to is is it  is is  to is  to is. is it  to is is  is is  is  is that  is to is. is it is  to is is to. is to is  it is is to is  is  to is is is  to.  is to  is  is  to is is.  is is  is is to  is to  is. is to is  to is is to. is  is is is  to is  is. is to to is  is is  is  is. is  to is  is",
+      "processed_text": "Discuss with: Hypothalamic receptors and the role of a certain hormone of melatonin or serotonin in the regulation of the ovulation of the female sheep or cattle. \n\nLet you  put them in the animal. \nPut it to you. \nA be it.\n\nIt.\nThis is it. is  I to be a is to. this  it is a  is to is at it and. it is is is. \nis to is to it that to. is to is. is to is is a. is is to is  to is is is  that to. is. is is is to is  that to is is to  it is it. is to to is. is to is. to is. is to it is is to is  is is. is is to. is it is to. is is to. is is it is to. is is is is is. \n\n is is to is is. is to is to is is is is is. is to is to is is. is to  is is  that is is is. is is is  to is to is is. to is  to. is is to is  it is to is that is  is to is is is to is. is is is to. is to to is is to  is is is to  is is  to is is it  is is  to is  to is. is it  to is is  is is  is  is that  is to is. is it is  to is is to. is to is  it is is to is  is  to is is is  to.  is to  is  is  to is is.  is is  is is to  is to  is. is to is  to is is to. is  is is is  to is  is. is to to is  is is  is  is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 130,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: The Effect and Site of Action of Indoleamines on the Hypothalamic Centers Involved in the Control of LH Release and Ovulation in Sheep\n\nBegin with: \"Serotonin or melatonin was infused into the 3rd cerebral ventricle (3rd V) or into the medial basal hypothalamus (MBH) of both intact ewes and ewes with lesions of the anterior hypothalamic\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-17",
+      "sample_id": 17,
+      "original_prefix_id": 17,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Prose that does not exist. Pro is not an abbreviation. This is. That is is not a title. This is. This is that. This. \n is is this is. This. is is. is is is. is  is is. That is is. is is is. is is. is  is is that is. is is. is  is. is is is  is  is  1 that is is. is  is. is is. is  is. is. is is. that  is. is. is  1. is is. 1. is. is  is  is. is  is. Is is. is 1 is. Is  is. 1  is  is. Is is. is  1 1. is is  is. is  is 1 1. is  is 1 1. Is is. 1. Is 1 1.  is 1 is 1. 1 1 is is 1 1 1 1 1 1 1 1 is 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  1. 1 1. 1 1 1 1 1  1 1  1 1 1 1 1 1  1 1 1 1 1 1 1 1 1  1 1 1 1 1 1 1  1 1  1 1 1 1 1 1 1 1  1 1  1 1 1 1 1 1  1 1  1",
+      "processed_text": "Prose that does not exist. Pro is not an abbreviation. This is. That is is not a title. This is. This is that. This. \n is is this is. This. is is. is is is. is  is is. That is is. is is is. is is. is  is is that is. is is. is  is. is is is  is  is  1 that is is. is  is. is is. is  is. is. is is. that  is. is. is  1. is is. 1. is. is  is  is. is  is. Is is. is 1 is. Is  is. 1  is  is. Is is. is  1 1. is is  is. is  is 1 1. is  is 1 1. Is is. 1. Is 1 1.  is 1 is 1. 1 1 is is 1 1 1 1 1 1 1 1 is 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  1. 1 1.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 118,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Preparation of magnetic composite microspheres by surfactant free controlled radical polymerization: Preparation and characteristics\n\nBegin with: \"Submicron magnetic composite microspheres have been prepared by a new surfactant free controlled radical polymerization. This new approach is based on the use of diphenylethene (DPE) as radical controlling agent and no\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-18",
+      "sample_id": 18,
+      "original_prefix_id": 18,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "The it is Leibowitz and his colleagues, that found that accommodation rest at an intermediate distance, that shows wide inter individual variability, that is the is to be, that is is, is is, that is is this, is this is the that they is that is it is, that this is that is to. Is is is, is, this is is, is,  is is, this is this is, is this is, is. to is this is. to is, is is is, this is, is. is this is, is, is is. is is, is. is to is is is. is, is is. is is is. to. is is. is. is is to. is. is to is. is is is. is is. to. is is. is is. is. is is. to. is is. is is. is is. is. is to is. is. to. is is. is is. is. is. is. is is. to. is is. to is  is. is is. to. is. is is is. is. is is is is. is is. is. is. is is is  is. is is. to is. is  is. is is to. to. is  is. is. to is is. is is is is is. to is is is  is. is. is is  is  to is. to. is. to. is is. is. is is is is  is  is. is  it. is. is. is. is is. is  is  is. is  is is  to. is. is is. is is. is  is  is. to is. is. is  is  is. is  is is. is is. is. is. is is. to. to  is. is is. is is is ",
+      "processed_text": "The it is Leibowitz and his colleagues, that found that accommodation rest at an intermediate distance, that shows wide inter individual variability, that is the is to be, that is is, is is, that is is this, is this is the that they is that is it is, that this is that is to. Is is is, is, this is is, is,  is is, this is this is, is this is, is. to is this is. to is, is is is, this is, is. is this is, is, is is. is is, is. is to is is is. is, is is. is is is. to. is is. is. is is to. is. is to is. is is is. is is. to. is is. is is. is. is is. to. is is. is is. is is. is. is to is. is. to. is is. is is. is. is. is. is is. to. is is. to is  is. is is. to. is. is is is. is. is is is is. is is. is. is. is is is  is. is is. to is. is  is. is is to. to. is  is. is. to is is. is is is is is. to is is is  is. is. is is  is  to is. to. is. to. is is. is. is is is is  is  is. is  it. is. is. is. is is. is  is  is. is  is is  to. is. is is. is is. is  is  is. to is. is. is  is  is. is  is is. is is. is. is. is is. to. to  is. is is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 117,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Predicting Optimal Accommodative Performance from Measures of the Dark Focus of Accommodation\n\nBegin with: \"Leibowitz and his colleagues found that accommodation rests at an intermediate distance that shows wide interindividual variation. They proposed that this intermediate dark focus is useful for correcting anomalous refractive errors, but this proposal was later questioned when different measurement techniques yielded\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-19",
+      "sample_id": 19,
+      "original_prefix_id": 19,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "be prepared to discuss how changes in the 21st century may affect family traditions and how they affect family traditions.\n\nFamily has a very important part of the life of most people and when a family can and will have 3 people and or more but a family is the most 2 people but only 1 if that have but is one and will have be 1 but not will be a to will and can be a be a to 0 but if you are. are a be is this a 0 that is a this is 0 to that you a are not is but a is 1 to it is be is that you can a is this to that  you are is a is that  to it is is a is 0 to  it  is a is  to a  3  is a is  is  is 3  is  3 is a is 1 you  is  0 is  it   is is  a 1 but is  3  is a  3 is 1  is 1  this is is  3  is 1  this is is 1  1   1  3  is  1  1  is 1  1  1  1   1 1  1   1  1  1   1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1   1  1   1  1  1  1   1  1   1   1  1   1  1  ",
+      "processed_text": "be prepared to discuss how changes in the 21st century may affect family traditions and how they affect family traditions.\n\nFamily has a very important part of the life of most people and when a family can and will have 3 people and or more but a family is the most 2 people but only 1 if that have but is one and will have be 1 but not will be a to will and can be a be a to 0 but if you are.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 104,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Family traditions and generations.\n\nBegin with: \"Currently, traditional family values that have been passed down through generations appear to be at risk. This has significant implications for the stability and health of individuals, families, and communities. This article explores selected issues related to intergenerational transmission of family values\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-20",
+      "sample_id": 20,
+      "original_prefix_id": 20,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "post-Latent: “With recent advances in power systems, a dc-dc converter is used for convert the AC - DC, a inverter is used to convert the dc -ac, the AC - Dc converter is a convert dc -ac and the inverter is a convert dc -ac. So is used a inverter and an inverter.\n\nThe is are not one one, one one. is one is. is. it is. This is this. is. is. is is.  is. in this is  it is is. is  is is. is is is  is  is is is. is. is  is is. is is. is  is is. is  is is. to is  is. is. is  is is. to  is is. is. to is is. is is  is  is is. is is is  is is  is.  is is is is  is  to. is  is. is is. is is is  to. is  is. is. is  is is  to  is  to. is. is. to is  is. is is  is  to.  is to is is. is  is. to  is  to is is. is is. is  is is  is  to. is. to  is.  to. is. is  to is  is is  is  to.  is is.  is. to. is. to is is. is  to. is.  to. to. is  is is  to. is  to. is is. to  to  to is. is is. is  is is.  is. is  is is is  is. is  is is  is. to. is. is  is  to. is  is. to. is  is. to. is  is.  is is",
+      "processed_text": "post-Latent: “With recent advances in power systems, a dc-dc converter is used for convert the AC - DC, a inverter is used to convert the dc -ac, the AC - Dc converter is a convert dc -ac and the inverter is a convert dc -ac. So is used a inverter and an inverter.\n\nThe is are not one one, one one. is one is. is. it is. This is this. is. is. is is.  is. in this is  it is is. is  is is. is is is  is  is is is. is. is  is is. is is. is  is is. is  is is. to is  is. is. is  is is. to  is is. is. to is is. is is  is  is is. is is is  is is  is.  is is is is  is  to. is  is. is is. is is is  to. is  is. is. is  is is  to  is  to. is. is. to is  is. is is  is  to.  is to is is. is  is. to  is  to is is. is is. is  is is  is  to. is. to  is.  to. is. is  to is  is is  is  to.  is is.  is. to. is. to is is. is  to. is.  to. to. is  is is  to. is  to. is is. to  to  to is. is is. is  is is.  is. is  is is is  is. is  is is  is. to. is. is  is  to. is  is. to. is  is. to. is  is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 119,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Hierarchical Control of HV-MTDC Systems With Droop-Based Primary and OPF-Based Secondary\n\nBegin with: \"This paper proposes a hierarchical control architecture designed for an arbitrary high voltage multiterminal dc (MTDC) network. In the proposed architecture, the primary control of the MTDC system is decentralized and implemented using a generalized droop strategy. Design\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-21",
+      "sample_id": 21,
+      "original_prefix_id": 21,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "A: A: Two critical points in the Energetic Energetics of muscular Energetic of Mus Energetic of M Us Mus  subject subject\n\nTitle: A: A: A re-  A: 2 A 2: A: A re  A: A re: A 2 A  2: A: A 1  A: 2 C  A A A: A 2 a\n\n1. A: a: A 1 A 1 \n\nA 1 A t A A \n. A: A 1. \n\n. T. A  A \n\nA A. A  A a \nA a 1 . A  1 A  A 1  A\n\n1 1 1 T  1 \n\nA. 1  a A  A 1\n  A . 1 1 1 1 1 1  1.. 1 1 \n\nA 1 a 1 1 1 1 1 1 \n\n 2  A  A  a 1\n\nA 1 1  A  1\n\n2. A  a 1\n\nI A a 1 1  1 1 1 1 1  1 1 1 1  1 1 1 1 1 1 1 1  1 1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  1 1 1 1 1 1 1 1 1 1 1  1 1 1 1 1 1  1 1 1 1 1 1 1 1  1 1 1 ",
+      "processed_text": "A: A: Two critical points in the Energetic Energetics of muscular Energetic of Mus Energetic of M Us Mus  subject subject\n\nTitle: A: A: A re-  A: 2 A 2: A: A re  A: A re: A 2 A  2: A: A 1  A: 2 C  A A A: A 2 a\n\n1. A: a: A 1 A 1 \n\nA 1 A t A A \n. A: A 1. \n\n. T. A  A \n\nA A. A  A a \nA a 1 . A  1 A  A 1  A\n\n1 1 1 T  1 \n\nA. 1  a A  A 1\n  A . 1 1 1 1 1 1  1.. 1 1 \n\nA 1 a 1 1 1 1 1 1 \n\n 2  A  A  a 1\n\nA 1 1  A  1\n\n2.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 116,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: A reinvestigation of two critical points in the energetics of muscular contraction\n\nBegin with: \"Two critical points in the energetics of muscular contraction have been re-examined: (1) the absence of heat production after the active state has ended (i.e. in 'relaxation') and (2) the mobilization\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-22",
+      "sample_id": 22,
+      "original_prefix_id": 22,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Receptor Tyrosine Kinases mediate Different Developmental Outcomes\n\nBackground: The complex relationships between RTKs, Receptor Tyhopefulness kinase medi 1, Receptor Tyrphink kinases, and Phosphatidie Protein Kinases and cell membrane is not known. We used a laboratory experiment to find out\n\nMethods: Use a specific RTK, and one antibody pair to add the different amounts of the antibody pair to a cell and observe what happens.\n\nWays to do it. Use a laboratory cell line, and put in a petri dish. Do it this way.  Use a petri dish, and use a cell line that has no RTK, and use a pair of antibodies that can pair up to the RTK. Do it this way. Use a petri dish, and use a cell line that has no RTK, and use a pair of RTK that can pair up to this RTK. Do it this way. Use a petri dish, and use a cell line that has no RTK, and use a pair of RTK that can pair up to this RTK, that is one thing to do. \nDo it this way. Do it. Do it. Do it. \n\nThis. Do it. Do it. Do it.  I. Do it. \n\nThis.  Do.  Do.  Do.  Do.\n\nThis. is.  is.  is.  is. \nis. is.  is. is.  is. \nis. is.  is. is. is. \n is. is. is. is. is. \nis. is.  is.  is. is.  is. \nis. is. is. is.  is.  is. is.  is. is. is. is. is.  is.  is. \nis. is.  is. is.  is. is",
+      "processed_text": "Receptor Tyrosine Kinases mediate Different Developmental Outcomes\n\nBackground: The complex relationships between RTKs, Receptor Tyhopefulness kinase medi 1, Receptor Tyrphink kinases, and Phosphatidie Protein Kinases and cell membrane is not known. We used a laboratory experiment to find out\n\nMethods: Use a specific RTK, and one antibody pair to add the different amounts of the antibody pair to a cell and observe what happens.\n\nWays to do it. Use a laboratory cell line, and put in a petri dish. Do it this way.  Use a petri dish, and use a cell line that has no RTK, and use a pair of antibodies that can pair up to the RTK. Do it this way. Use a petri dish, and use a cell line that has no RTK, and use a pair of RTK that can pair up to this RTK. Do it this way. Use a petri dish, and use a cell line that has no RTK, and use a pair of RTK that can pair up to this RTK, that is one thing to do. \nDo it this way. Do it. Do it. Do it. \n\nThis. Do it. Do it. Do it.  I. Do it. \n\nThis.  Do.  Do.  Do.  Do.\n\nThis. is.  is.  is.  is. \nis. is.  is. is.  is. \nis. is.  is. is. is. \n is. is. is. is. is. \nis. is.  is.  is. is.  is. \nis. is. is. is.  is.  is. is.  is. is. is. is. is.  is.  is. \nis. is.  is. is.  is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 111,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Coupling Met to specific pathways results in distinct developmental outcomes.\n\nBegin with: \"Receptor tyrosine kinases (RTKs) mediate distinct biological responses by stimulating similar intracellular signaling pathways. Whether the specificity of the response is determined by qualitative or quantitative differences in signaling output is not known. We addressed this question\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-23",
+      "sample_id": 23,
+      "original_prefix_id": 23,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "A complex study on the strength of the human mandible\n\nA scientific research study on the strength of the human mandib\n\nWe have been studying the strength of the human\nA\nThe 5. The\n\nThat we we in.\nI this I\nIs is. \nIs the \nIs the the a \nThe the \nIs is\nIs\nthe a\n\na \nis this to is\nIt is is\nto is. a is\na is\nt  is is \na is is \na is \na \nis \na the\nis  is is a\nI a\n is is\n a is a \na is is\n\nt.  is a is\na is a \nis is is is  to  is is\nis. a is\na is to is\n\nis the is  is is\na is is is\nis  is is a\nis a is  is  is is is is\n1 to is. is a a\ni is  is a\nis a a \na is the\nis a is  is to\n\nis the  is is\na is a is\na is.  a is is\n\nis a is\na is \na is a\n is is a \na is a is  to is\n\nis a a is is is \nis is is  is  i \na. is a \na is a 3 is\nis is\na to is is a\nis is is is  i\nis a is  a is\nis is a \nis is is is  is\n\nis a is  to\nis a  is a  is  is\nis a is is is is\n\nis a is is\nis a to is\nis a is  is to is\nis to a is \n is a is  is\nis is a is  to\nis is  a 1 is\nis  is to is  be",
+      "processed_text": "A complex study on the strength of the human mandible\n\nA scientific research study on the strength of the human mandib\n\nWe have been studying the strength of the human\nA\nThe 5. The\n\nThat we we in.\nI this I\nIs is. \nIs the \nIs the the a \nThe the \nIs is\nIs\nthe a\n\na \nis this to is\nIt is is\nto is. a is\na is\nt  is is \na is is \na is \na \nis \na the\nis  is is a\nI a\n is is\n a is a \na is is\n\nt.  is a is\na is a \nis is is is  to  is is\nis. a is\na is to is\n\nis the is  is is\na is is is\nis  is is a\nis a is  is  is is is is\n1 to is. is a a\ni is  is a\nis a a \na is the\nis a is  is to\n\nis the  is is\na is a is\na is.  a is is\n\nis a is\na is \na is a\n is is a \na is a is  to is\n\nis a a is is is \nis is is  is  i \na.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 107,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: The strength of the human mandible\n\nBegin with: \"Objective: To investigate the variation of strength of the human mandible with the orientation to its longaxis. Methods: The human mandible is a living and anisotropic composite material. Three-dimensional tensile andcompressive strength of it were determined\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-24",
+      "sample_id": 24,
+      "original_prefix_id": 24,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "\\( \\)Abstract T102: Title: Abstract T P102: Requiring a Safe Window of Therapeutic Indness: A Systematic Analysis\n\\( \\) \\( \\)\\( Title: Title Title: Introduction \\( \\) ( ( ( (1) Title: ( \\( ( 1)) ( ( ( (1) (1) \\( \\ ( (1 (1) (1 (1 (1 (1 \\( (1 ( (1 ( \\( (1) ( ( (1 1 1) ( (1 ( \\( (1 ( ( ( (1 ( ( ( \\( (1 ( ( ( \\( (1 ( 1 ( 1 ( 1 1 ( 1 ( ( ( ( \\(1 (1 \\( 1 1 1 (1 1 1 1 (1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  1 1  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 ",
+      "processed_text": "\\( \\)Abstract T102: Title: Abstract T P102: Requiring a Safe Window of Therapeutic Indness: A Systematic Analysis\n\\( \\) \\( \\)\\( Title: Title Title: Introduction \\( \\) ( ( ( (1) Title: ( \\( ( 1)) ( ( ( (1) (1) \\( \\ ( (1 (1) (1 (1 (1 (1 \\( (1 ( (1 ( \\( (1) ( ( (1 1 1) ( (1 ( \\( (1 ( ( ( (1 ( ( ( \\( (1 ( ( ( \\( (1 ( 1 ( 1 ( 1 1 ( 1 ( ( ( ( \\(1 (1 \\( 1 1 1 (1 1 1 1 (1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  1 1  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 130,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Abstract T P102: Recurrent Stroke Risk in Patients With ICAD Treated With Aggressive Medical Management: A Comparison With The Sammpris Trial\n\nBegin with: \"Background: Since the SAMMPRIS trial, aggressive medical management (AMM) with the use of dual antiplatelets (aspirin, clopidogrel) and high dose statin therapy has been standard of care for patients with\""
+        }
+      ]
+    }
+  ]
+}

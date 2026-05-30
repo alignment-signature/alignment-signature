@@ -1,0 +1,305 @@
+{
+  "model_type": "instruct",
+  "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "domain": "opinion_pieces",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400,
+    "batched": true,
+    "batch_size": 4
+  },
+  "intervention": {
+    "mode": "all_layer_ablate_per_domain",
+    "direction_path": "data/analysis_results/in_domain_pasta/directions/llama-3.1-8b-instruct/opinion_pieces/v_cross_L5.pt",
+    "extracted_from_domain": "opinion_pieces",
+    "extracted_from_n_train": 25,
+    "layer_extracted_from": 5,
+    "tag": "v_cross_opinion_pieces_L5_all_layer_ablated"
+  },
+  "split": {
+    "train_ids": [
+      25,
+      29,
+      30,
+      31,
+      33,
+      42,
+      45,
+      46,
+      48,
+      52,
+      56,
+      61,
+      66,
+      70,
+      74,
+      75,
+      77,
+      79,
+      81,
+      88,
+      90,
+      92,
+      93,
+      95,
+      99
+    ],
+    "test_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "n_train": 25,
+    "n_test": 25
+  },
+  "num_generations": 10,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-opinion_pieces-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Happy Birthday, Sidra!\n\nI woke up as a different person today. I am an altogether different person this year. But I still feel like the 13 year old me is watching me over. I remember how she never wanted to grow up, thinking she will lose the magic of childhood and the ability to just be free. I know I did, and in many ways, it's true. We do lose that freedom, that innocence. But what I also know is that we gain something better.\n\nWe gain a different kind of freedom. The freedom to do what we want, when we want. The freedom to say no to things that don't feel right, to say yes to things that we want. We gain the freedom to make mistakes, and to learn from them. The freedom to fall down, and to get up again. \n\nBut we also gain more. We gain more love, more love from people who actually know us now. We gain more people who care about us, more friends who will sit with us and talk to us. We gain a brain that can do more, can think more. We can think about things that we used to not understand. We can think about things that will make us happy, and things that will make us sad. We can think about what we want to do with our life. \n\nI am not the same person that I was when I was 13. I am different, and that is okay. You are different too, Sidra. You are not the same person that you were when you were 13. But that is okay. You are a new person now. A new person with new things to do, and new things to think about. \n\nYou are also the same person that you were when you were 13. You are still the same person with the same heart. And that is what is most important. Don't let anyone ever tell you that you can't do something, or that you have to do",
+      "processed_text": "Happy Birthday, Sidra!\n\nI woke up as a different person today. I am an altogether different person this year. But I still feel like the 13 year old me is watching me over. I remember how she never wanted to grow up, thinking she will lose the magic of childhood and the ability to just be free. I know I did, and in many ways, it's true. We do lose that freedom, that innocence. But what I also know is that we gain something better.\n\nWe gain a different kind of freedom. The freedom to do what we want, when we want. The freedom to say no to things that don't feel right, to say yes to things that we want. We gain the freedom to make mistakes, and to learn from them. The freedom to fall down, and to get up again. \n\nBut we also gain more. We gain more love, more love from people who actually know us now. We gain more people who care about us, more friends who will sit with us and talk to us. We gain a brain that can do more, can think more. We can think about things that we used to not understand. We can think about things that will make us happy, and things that will make us sad. We can think about what we want to do with our life. \n\nI am not the same person that I was when I was 13. I am different, and that is okay. You are different too, Sidra. You are not the same person that you were when you were 13. But that is okay. You are a new person now. A new person with new things to do, and new things to think about. \n\nYou are also the same person that you were when you were 13. You are still the same person with the same heart. And that is what is most important.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 100,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Happy birthday, Sidra!\n\nBegin with: \"I woke up as a different person today. I am an altogether different person this year. But I still feel like the 13 year old me is watching me over. I remember how she never wanted to grow up, thinking she will lose\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Liz’s Bio and Featured Stories\n\nIf you like true stories with a twist and a life lesson takeaway, read on!\n\nPhoto Courtesy of the Author\n\nDear Reader,\n\nWelcome to my little corner of the world! \n\nI don’t often lie on the beach, but when I do, I realize how much more than the sand the ocean has to offer... My first thought when I saw him was he was a nice guy, so when I had a chance, I asked for his number... \n\nSo I have to admit that there was an unexpected twist when he said that he was coming from a very small town and I had to tell him I had been there, too. Small world. He also told me that he liked the beach so that we could go back to the beach. That sounds like a plan. Well that was what he said, but the real plan was to go to the lake. There was no beach. The place was dry as the dessert.\n\nYou can learn a lot from this experience. Don’t be so quick to make a decision that you need to know if it is right or wrong. Take your time and find out. In this story, I was like that. When I heard where he was from and that he wanted to go back to the beach, that was good enough for me. But, if I had taken my time, I would have found out where he really wanted to go. So my advice is, don’t be in such a hurry.\n\nAlso, the thing that really makes me sad about this is that I didn’t get the chance to meet him because he said he was going to get out of the truck and that he would be right back. I was standing in the way. I was too close. I didn’t know he wanted to park and then get out of the truck, so I didn’t move.  That was a big mistake. When you're at the beach with a parking lot and you can get a ticket,",
+      "processed_text": "Liz’s Bio and Featured Stories\n\nIf you like true stories with a twist and a life lesson takeaway, read on!\n\nPhoto Courtesy of the Author\n\nDear Reader,\n\nWelcome to my little corner of the world! \n\nI don’t often lie on the beach, but when I do, I realize how much more than the sand the ocean has to offer... My first thought when I saw him was he was a nice guy, so when I had a chance, I asked for his number... \n\nSo I have to admit that there was an unexpected twist when he said that he was coming from a very small town and I had to tell him I had been there, too. Small world. He also told me that he liked the beach so that we could go back to the beach. That sounds like a plan. Well that was what he said, but the real plan was to go to the lake. There was no beach. The place was dry as the dessert.\n\nYou can learn a lot from this experience. Don’t be so quick to make a decision that you need to know if it is right or wrong. Take your time and find out. In this story, I was like that. When I heard where he was from and that he wanted to go back to the beach, that was good enough for me. But, if I had taken my time, I would have found out where he really wanted to go. So my advice is, don’t be in such a hurry.\n\nAlso, the thing that really makes me sad about this is that I didn’t get the chance to meet him because he said he was going to get out of the truck and that he would be right back. I was standing in the way. I was too close. I didn’t know he wanted to park and then get out of the truck, so I didn’t move.  That was a big mistake.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 102,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Liz’s Bio and Featured Stories\n\nBegin with: \"Liz’s Bio and Featured Stories\n\nIf you like true stories with a twist and a life lesson takeaway, read on!\n\nPhoto Courtesy of the Author\n\nDear Reader,\n\nWelcome to my little corner of the world!\n\nI don’t often lay on\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Illustration by Fresh Idea\n\nFull manuscript in two months. That was the goal. I was on vacation in Mexico, no less, when I checked my email and saw the opportunity. It was mid-June and the conference was happening near the end of August.  A great chance to market my book.  A great chance to make my book known.\n\nThe first draft went quickly, and it was on June 25th when I said to myself, \"I think I did it.\" I thought my job was done, and that my book was good to go. But then something happened, and it changed my whole day.\n\nWhen I got the feedback from my critique group, that's when I started to panic. They thought that my main character was very mean, and they thought that I was the main character. That made them not like my book. I know now that I should not have taken it so hard. I should have just thanked them for their input and then written a better story.\n\nBut I didn't. My ego did. My ego is like a monster that sits on my shoulder and tells me that everyone is wrong and that my book is perfect just the way it is. So I didn't write another version of my manuscript, and I just sent it in like it was. I thought that everyone would like it and that it would be good. But they didn't, and it wasn't.\n\nNow I know that my ego was wrong, and that I should have listened to my critique group. I should have taken the time to make my story better. But my ego didn't want me to, because it liked what I wrote. It didn't want to change. I wish that I could go back and talk to that person who wrote the first draft, because I would tell them that they need to write another one.\n\nWriting is hard, but it's not hard because of the words. Writing is hard because of the person who is writing. It's hard",
+      "processed_text": "Illustration by Fresh Idea\n\nFull manuscript in two months. That was the goal. I was on vacation in Mexico, no less, when I checked my email and saw the opportunity. It was mid-June and the conference was happening near the end of August.  A great chance to market my book.  A great chance to make my book known.\n\nThe first draft went quickly, and it was on June 25th when I said to myself, \"I think I did it.\" I thought my job was done, and that my book was good to go. But then something happened, and it changed my whole day.\n\nWhen I got the feedback from my critique group, that's when I started to panic. They thought that my main character was very mean, and they thought that I was the main character. That made them not like my book. I know now that I should not have taken it so hard. I should have just thanked them for their input and then written a better story.\n\nBut I didn't. My ego did. My ego is like a monster that sits on my shoulder and tells me that everyone is wrong and that my book is perfect just the way it is. So I didn't write another version of my manuscript, and I just sent it in like it was. I thought that everyone would like it and that it would be good. But they didn't, and it wasn't.\n\nNow I know that my ego was wrong, and that I should have listened to my critique group. I should have taken the time to make my story better. But my ego didn't want me to, because it liked what I wrote. It didn't want to change. I wish that I could go back and talk to that person who wrote the first draft, because I would tell them that they need to write another one.\n\nWriting is hard, but it's not hard because of the words. Writing is hard because of the person who is writing.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 104,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: My Ego Sabotaged My Writing\n\nBegin with: \"Illustration by Fresh Idea\n\nFull manuscript in two months. That was the goal. I was on vacation in Mexico, no less, when I checked my email and saw the opportunity. It was mid-June and the conference was happening near the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "How prepared are you for the revolution?\n\nOnce upon a time, not that long ago in the restaurant, food and hospitality industry, the formula for success was pretty simple to grasp. Following the formula was widely accepted as the guaranteed path to making it big in the business. You got the location right, you had good food at good prices, and you gave excellent customer service. It seemed like an easy recipe for success: put it all together and people would come to your restaurant.\n\nThe formula was pretty standard:\n\n- Get the location right. You need a good view, you need to be on the corner, you need to be where the action is. Location is one of the most important things. You can't have a restaurant that's in a bad place. No matter how good the food is, people won't come. So the location has to be good.\n\n- The food has to be good too. It's not just enough to have good food. The food has to be good and you have to have a good price for it. If your food is too expensive, people won't come and if your food is too bad, they won't come either. \n\n- Finally, you have to have good customer service. Good customer service is when the server is friendly and gives you what you want. They bring you food and drinks on time and they make you feel happy. If the customer isn't happy, they won't come back and they will tell their friends that they shouldn't go to your restaurant.\n\nThat formula used to be pretty standard and it worked pretty well. But things are changing now. The world is changing fast and the old way of doing things isn't working any more. More and more people are staying at home and eating and it's not the restaurants fault that people are not eating at the restaurant. \n\nMore and more people are eating at home because they can now order food from their phones and get it delivered to them at their houses.  They can order",
+      "processed_text": "How prepared are you for the revolution?\n\nOnce upon a time, not that long ago in the restaurant, food and hospitality industry, the formula for success was pretty simple to grasp. Following the formula was widely accepted as the guaranteed path to making it big in the business. You got the location right, you had good food at good prices, and you gave excellent customer service. It seemed like an easy recipe for success: put it all together and people would come to your restaurant.\n\nThe formula was pretty standard:\n\n- Get the location right. You need a good view, you need to be on the corner, you need to be where the action is. Location is one of the most important things. You can't have a restaurant that's in a bad place. No matter how good the food is, people won't come. So the location has to be good.\n\n- The food has to be good too. It's not just enough to have good food. The food has to be good and you have to have a good price for it. If your food is too expensive, people won't come and if your food is too bad, they won't come either. \n\n- Finally, you have to have good customer service. Good customer service is when the server is friendly and gives you what you want. They bring you food and drinks on time and they make you feel happy. If the customer isn't happy, they won't come back and they will tell their friends that they shouldn't go to your restaurant.\n\nThat formula used to be pretty standard and it worked pretty well. But things are changing now. The world is changing fast and the old way of doing things isn't working any more. More and more people are staying at home and eating and it's not the restaurants fault that people are not eating at the restaurant. \n\nMore and more people are eating at home because they can now order food from their phones and get it delivered to them at their houses.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 106,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: What in the World is Shaking Up The Hospitality Industry?\n\nBegin with: \"How prepared are you for the revolution?\n\nOnce upon a time, not that long ago in the restaurant, food and hospitality industry, the formula for success was pretty simple to grasp. Following the formula was widely accepted as the guaranteed path to making\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "**The #1 Thing That Gets Me Through Difficult Days**\n\nMy coping mechanism in trying times.\n\nPhoto by Ian Chen on Unsplash\n\nI remember the first few hours after my mother took her last breath. I remember the numbness, the tears, and the emptiness inside. But what I remember even more is the voice. It was a recording of her, a message she had left for me many years ago, in case I needed to hear from her again. \n\nShe had told me that she loved me and that I would always be okay, and when my dad put that recording on and played it for me, I started to cry. I wasn't going to be okay right then. My whole life had changed.\n\nI also remember the first few days. Those were really hard. People would tell me that I should be strong for my dad, that I should be brave, that I should try to smile. But I couldn't be strong. I couldn't be brave. And I couldn't smile. I felt sad, I felt empty, I felt broken. But even though I was feeling those things, I also felt like I was not alone. The recording of my mom was with me and that made me feel like I was going to be okay.\n\nThe recording of my mom is my everything now. It gets me through hard days like the first few days after she was gone. It reminds me what she used to say to me. It tells me that I will be okay. And when I am listening to it, I feel like she is still with me and that she will always be with me.\n\nI don't know what I would do if I didn't have that recording. I would probably just be here, sitting in the dark and crying all the time. That recording helps me to see that there is more to life than just the now. There's my mom's voice from the past. And that helps me to get through.",
+      "processed_text": "**The #1 Thing That Gets Me Through Difficult Days**\n\nMy coping mechanism in trying times.\n\nPhoto by Ian Chen on Unsplash\n\nI remember the first few hours after my mother took her last breath. I remember the numbness, the tears, and the emptiness inside. But what I remember even more is the voice. It was a recording of her, a message she had left for me many years ago, in case I needed to hear from her again. \n\nShe had told me that she loved me and that I would always be okay, and when my dad put that recording on and played it for me, I started to cry. I wasn't going to be okay right then. My whole life had changed.\n\nI also remember the first few days. Those were really hard. People would tell me that I should be strong for my dad, that I should be brave, that I should try to smile. But I couldn't be strong. I couldn't be brave. And I couldn't smile. I felt sad, I felt empty, I felt broken. But even though I was feeling those things, I also felt like I was not alone. The recording of my mom was with me and that made me feel like I was going to be okay.\n\nThe recording of my mom is my everything now. It gets me through hard days like the first few days after she was gone. It reminds me what she used to say to me. It tells me that I will be okay. And when I am listening to it, I feel like she is still with me and that she will always be with me.\n\nI don't know what I would do if I didn't have that recording. I would probably just be here, sitting in the dark and crying all the time. That recording helps me to see that there is more to life than just the now. There's my mom's voice from the past.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 106,
+        "completion_tokens": 395
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: The #1 Thing That Gets Me Through Difficult Days\n\nBegin with: \"The #1 Thing That Gets Me Through Difficult Days\n\nMy coping mechanism in trying times.\n\nPhoto by Ian Chen on Unsplash\n\nI remember the first few hours after my mother took her last breath.\n\nI also remember the first few days.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Title: A Refreshing Perspective: My Thoughts on Vision 2020: The Well\n\nAs I looked at the description of the \"Vision 2020: The Well\" resource, I was immediately intrigued. 'A well' suggests to me a source of water, something that I need to survive, and something that I can draw upon whenever I need to. It got me thinking, what is \"The Well\" for the people in our community? \n\nIf the description of \"The Well\" is right, then each week they are going to produce notes, discussion points and application questions to help people understand more about what is going on and how they can apply it to their life. This sounds really helpful for people who are not sure what's going on or who need some help to understand how to apply what they are learning to their life. The application questions especially sound helpful because it gives people a chance to think about how what they are learning relates to them and how they can use it in their life.\n\nI think the idea of having notes and questions to help people understand and apply what they are learning, is a good idea. Sometimes I find it hard to understand or remember what the preacher said, or how I can use what he said in my life. So, having some notes and questions to help me understand and remember is really helpful.\n\nSo, I think \"Vision 2020: The Well\" is a good idea. It's going to be helpful for people who need some help to understand more about what is going on in the sermon and how to use it in their life. I'm going to be checking it out and using it. I hope it helps me to understand more and to remember what I learn.",
+      "processed_text": "Title: A Refreshing Perspective: My Thoughts on Vision 2020: The Well\n\nAs I looked at the description of the \"Vision 2020: The Well\" resource, I was immediately intrigued. 'A well' suggests to me a source of water, something that I need to survive, and something that I can draw upon whenever I need to. It got me thinking, what is \"The Well\" for the people in our community? \n\nIf the description of \"The Well\" is right, then each week they are going to produce notes, discussion points and application questions to help people understand more about what is going on and how they can apply it to their life. This sounds really helpful for people who are not sure what's going on or who need some help to understand how to apply what they are learning to their life. The application questions especially sound helpful because it gives people a chance to think about how what they are learning relates to them and how they can use it in their life.\n\nI think the idea of having notes and questions to help people understand and apply what they are learning, is a good idea. Sometimes I find it hard to understand or remember what the preacher said, or how I can use what he said in my life. So, having some notes and questions to help me understand and remember is really helpful.\n\nSo, I think \"Vision 2020: The Well\" is a good idea. It's going to be helpful for people who need some help to understand more about what is going on in the sermon and how to use it in their life. I'm going to be checking it out and using it.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 103,
+        "completion_tokens": 348
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Vision 2020: The Well\n\nBegin with: \"Vision 2020: The Well\n\nRecordings, talk notes and application questions\n\nEach week, we produce notes, discussion points and application questions for the Sunday talks — helping you go deeper into everything we’re looking at together and resourcing our\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Photo by Jr Korpa on Unsplash\n\nWhile I’m sharing, if you feel what I’m going through\nIf you can feel the feelings of the experiences I’m going to share with you\nIf my spirit touches your spirit\n\nPlease, because I'm about to take you to a place that's hard to explain, a place that's full of emotions and thoughts, a place that's always here, but sometimes it gets lost in the background. This place is my internal world.\n\nMy internal world is like a big room, but it's not a physical room, it's a room in my head. It's where I keep all my thoughts and feelings. Sometimes it's crowded and sometimes it's empty. Sometimes I like it when it's crowded and sometimes I like it when it's empty. It depends on how I'm feeling.\n\nWhen I'm happy, my room is full of happy things. There are pictures of my happy memories on the walls. There are flowers in the corner that are yellow and they smell good. There's a big smile on my face and I'm singing a song. But when I'm sad, my room gets all dark and it's hard to see. There are no pictures on the walls and there's nothing to smell. I don't smile and I don't sing a song.\n\nIt's hard to explain my room to you. You might not be able to understand. You might not be able to feel what I'm feeling. But I hope you can try. I hope you can understand what I'm saying. I'm saying that my room is like my feelings. If I'm happy, my room is happy. If I'm sad, my room is sad.\n\nSometimes I forget that my room is mine. I forget that it's where my thoughts and feelings live. I see someone else's room and it looks good and I wish I had a room like that. But then I remember, my room is mine and it's special.",
+      "processed_text": "Photo by Jr Korpa on Unsplash\n\nWhile I’m sharing, if you feel what I’m going through\nIf you can feel the feelings of the experiences I’m going to share with you\nIf my spirit touches your spirit\n\nPlease, because I'm about to take you to a place that's hard to explain, a place that's full of emotions and thoughts, a place that's always here, but sometimes it gets lost in the background. This place is my internal world.\n\nMy internal world is like a big room, but it's not a physical room, it's a room in my head. It's where I keep all my thoughts and feelings. Sometimes it's crowded and sometimes it's empty. Sometimes I like it when it's crowded and sometimes I like it when it's empty. It depends on how I'm feeling.\n\nWhen I'm happy, my room is full of happy things. There are pictures of my happy memories on the walls. There are flowers in the corner that are yellow and they smell good. There's a big smile on my face and I'm singing a song. But when I'm sad, my room gets all dark and it's hard to see. There are no pictures on the walls and there's nothing to smell. I don't smile and I don't sing a song.\n\nIt's hard to explain my room to you. You might not be able to understand. You might not be able to feel what I'm feeling. But I hope you can try. I hope you can understand what I'm saying. I'm saying that my room is like my feelings. If I'm happy, my room is happy. If I'm sad, my room is sad.\n\nSometimes I forget that my room is mine. I forget that it's where my thoughts and feelings live. I see someone else's room and it looks good and I wish I had a room like that.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 97,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Internal World\n\nBegin with: \"Photo by Jr Korpa on Unsplash\n\nWhile I’m sharing, if you feel what I’m going through\n\nIf you can feel the feelings of the experiences I’m going to share with you\n\nIf my spirit touches your spirit\n\nPlease,\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "**The Dark Side of 'Don't I Know You'**\n\nAs the fourth and final song faded, the DJ in our club at the north end of Waikiki kept the crowd pumped for another set of nude women on stage under the flashing black lights. These men were mostly military dudes who were barely legal, dancing around with open bottles of beer in their hands. The crowd started getting louder, but I didn't know anyone in the crowd, at least not at first glance.\n\nAs I looked around the dance floor, I noticed that the bartender was trying to keep up with the flow of orders, but she was getting frustrated and almost slammed a glass down on the counter. The music was loud and it was a hot and crowded club.\n\nThen I saw her, walking towards me, and I remembered where I had seen her before. She was my old friend's sister. I had seen her many times when I was at my friend's house. I didn't know her name, but I knew her. And that is when I realized how stupid it is to think that you don't know people. We all run into each other at some point.\n\nIt's funny how we think that we know everyone, or don't know anyone. But it's probably somewhere in the middle. I have run into people I knew before when I was at the club, at the beach, at the store, and even on the street. I'm sure you have too.\n\nThe next time you are at a club or a bar, or at the beach, and you don't know anyone, don't worry. You probably know someone. Just be friendly to everyone, and you will probably know them soon.",
+      "processed_text": "**The Dark Side of 'Don't I Know You'**\n\nAs the fourth and final song faded, the DJ in our club at the north end of Waikiki kept the crowd pumped for another set of nude women on stage under the flashing black lights. These men were mostly military dudes who were barely legal, dancing around with open bottles of beer in their hands. The crowd started getting louder, but I didn't know anyone in the crowd, at least not at first glance.\n\nAs I looked around the dance floor, I noticed that the bartender was trying to keep up with the flow of orders, but she was getting frustrated and almost slammed a glass down on the counter. The music was loud and it was a hot and crowded club.\n\nThen I saw her, walking towards me, and I remembered where I had seen her before. She was my old friend's sister. I had seen her many times when I was at my friend's house. I didn't know her name, but I knew her. And that is when I realized how stupid it is to think that you don't know people. We all run into each other at some point.\n\nIt's funny how we think that we know everyone, or don't know anyone. But it's probably somewhere in the middle. I have run into people I knew before when I was at the club, at the beach, at the store, and even on the street. I'm sure you have too.\n\nThe next time you are at a club or a bar, or at the beach, and you don't know anyone, don't worry. You probably know someone.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 101,
+        "completion_tokens": 341
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Don’t I Know You\n\nBegin with: \"As the fourth and final song faded, the DJ in our club at the north end of Waikiki kept the crowd pumped for another set of nude women on stage under the flashing black lights. These men were mostly military dudes who were barely legal\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Simple Changes That Helped Me Lose 5 Kg and Feel Great in Just One Month\n\nImage by biscotto87\n\nWhen the pandemic-induced lockdown happened, I lost all motivation. My lifestyle became sedentary. Up until then, I had been quite active, going to the gym 3 times a week, but once I got stuck at home, I found myself mindlessly watching TV for hours or scrolling through my phone. I started eating more, eating junk food, pizza, and ice cream almost every day, and I thought I would never be able to get back on track.\n\nBut then I realized that I had a goal to set, I had to make a plan and then I could start making changes. I set a goal to lose 5 kg in a month, it was a small goal, but I wanted to try.\n\nFirst, I started keeping track of how much I was eating. I didn't want to eat too much, so I weighed out my meals. I was eating 3 meals and 2 snacks a day, that was a lot, so I cut that back to 2 meals and 1 snack a day. And I cut back on how much I was eating at each meal. For example, if I used to eat a whole pizza, I would now only eat half of it. I was eating a lot of junk food, so I started to eat healthier, I was eating vegetables with my dinner and I was drinking a lot of water.\n\nI also started exercising more. I didn't want to go to the gym, so I started going for a walk every day. I would walk for 30 minutes in the morning and then I would walk for 30 minutes at night. That was a good start.\n\nThe next thing I did was to drink less. I was drinking a lot of soda, so I started to drink water instead. And I was drinking a lot of coffee, so I cut that back too. I didn't want to",
+      "processed_text": "Simple Changes That Helped Me Lose 5 Kg and Feel Great in Just One Month\n\nImage by biscotto87\n\nWhen the pandemic-induced lockdown happened, I lost all motivation. My lifestyle became sedentary. Up until then, I had been quite active, going to the gym 3 times a week, but once I got stuck at home, I found myself mindlessly watching TV for hours or scrolling through my phone. I started eating more, eating junk food, pizza, and ice cream almost every day, and I thought I would never be able to get back on track.\n\nBut then I realized that I had a goal to set, I had to make a plan and then I could start making changes. I set a goal to lose 5 kg in a month, it was a small goal, but I wanted to try.\n\nFirst, I started keeping track of how much I was eating. I didn't want to eat too much, so I weighed out my meals. I was eating 3 meals and 2 snacks a day, that was a lot, so I cut that back to 2 meals and 1 snack a day. And I cut back on how much I was eating at each meal. For example, if I used to eat a whole pizza, I would now only eat half of it. I was eating a lot of junk food, so I started to eat healthier, I was eating vegetables with my dinner and I was drinking a lot of water.\n\nI also started exercising more. I didn't want to go to the gym, so I started going for a walk every day. I would walk for 30 minutes in the morning and then I would walk for 30 minutes at night. That was a good start.\n\nThe next thing I did was to drink less. I was drinking a lot of soda, so I started to drink water instead. And I was drinking a lot of coffee, so I cut that back too.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 113,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Simple Changes That Helped Me Lose 5 Kg and Feel Great in Just One Month\n\nBegin with: \"Simple Changes That Helped Me Lose 5 Kg and Feel Great in Just One Month\n\nImage by biscotto87\n\nWhen the pandemic-induced lockdown happened, I lost all motivation. My lifestyle became sedentary. Up until then, I had\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Photo by Harry Knight on Unsplash\n\n“Card games, now that’s a good way to pass the time.”\n\nAn older woman observes my group of fifteen high school students huddled in circles playing games. We’ve just spent a week in the library during summer break studying and now we're taking a break to have some fun. \n\nBut let me tell you, the kids I see on the internet, they are different from the kids I was at your age. They stare at their screens for hours on end, scrolling through their phones and don't even talk to other people. I saw kids playing with there parents on their phones, with there phones right next to there parents. They were talking to there parents but never actually looked at them. \n\nI don't get that, I mean I like technology too but I like going outside and making people laugh too. These kids just want to stare at the computer, play video games, text their friends, etc... They can do all of that stuff later in life, when they're not kids. \n\nWe all like video games we like card games we like the computer but we can like the computer later, lets do it now. And lets do it without the internet.",
+      "processed_text": "Photo by Harry Knight on Unsplash\n\n“Card games, now that’s a good way to pass the time.”\n\nAn older woman observes my group of fifteen high school students huddled in circles playing games. We’ve just spent a week in the library during summer break studying and now we're taking a break to have some fun. \n\nBut let me tell you, the kids I see on the internet, they are different from the kids I was at your age. They stare at their screens for hours on end, scrolling through their phones and don't even talk to other people. I saw kids playing with there parents on their phones, with there phones right next to there parents. They were talking to there parents but never actually looked at them. \n\nI don't get that, I mean I like technology too but I like going outside and making people laugh too. These kids just want to stare at the computer, play video games, text their friends, etc... They can do all of that stuff later in life, when they're not kids. \n\nWe all like video games we like card games we like the computer but we can like the computer later, lets do it now.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 100,
+        "completion_tokens": 245
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Get Off The Internet\n\nBegin with: \"Photo by Harry Knight on Unsplash\n\n“Card games, now that’s a good way to pass the time.”\n\nAn older woman observes my group of fifteen high school students huddled in circles playing games. We’ve just spent a week in the\""
+        }
+      ]
+    }
+  ]
+}

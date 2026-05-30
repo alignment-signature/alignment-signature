@@ -1,0 +1,573 @@
+{
+  "model_type": "instruct",
+  "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400
+  },
+  "intervention": {
+    "mode": "ablate",
+    "direction_path": "data/pasta_directions/mistralai_mistral-7b-instruct-v0.3/v_cross_L12.pt",
+    "layer": 12,
+    "tag": "v_cross_L12_steered_extended"
+  },
+  "domain": "news_articles",
+  "num_generations": 25,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-news_articles-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "5 January GMT on Solid ground after a bridge at 7 January GMT on Monday 6\n\nThe rocket has been delayed due to an issue with one of the most ambitious moments in humanity’s six decades of space exploration: Today SpaceX was set to be one of the most groundbreaking moments in humanity’s six decades of space exploration .\nIt will now take place at 11.18am GMT on Tuesday 6 January GMT on Tuesday 6 January GMT on Tuesday 6 January GMT on Tuesday 6 January GMT on Tuesday 6 January GMT on Tuesday 6 January GMT",
+      "processed_text": "5 January GMT on Solid ground after a bridge at 7 January GMT on Monday 6\n\nThe rocket has been delayed due to an issue with one of the most ambitious moments in humanity’s six decades of space exploration: Today SpaceX was set to be one of the most groundbreaking moments in humanity’s six decades of space exploration .",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 256,
+        "completion_tokens": 134
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: SpaceX was planning to land a Falcon 9 rocket at Cape Canaveral today .\nThe rocket was to attempt to land after launching a Dragon capsule .\nBut the launch has been delayed due to an issue with one of the engines .\nIt had already been delayed from earlier this week due to the same issue .\nIt will now take place at 11.18am GMT on Tuesday 6 January .\nAfter launch the first stage of their Falcon 9 rocket will attempt to touch down on a barge after taking Dragon to space .\nIt is the first ever attempt at landing a rocket on solid ground after launch .\nCEO Elon Musk said the ambitious attempt has a 50% chance of working .\nThe company ultimately wants all of its rockets to be reusable .\n\nBegin with: \"It’s set to be one of the most groundbreaking moments in humanity’s six decades of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching. But those looking forward to this pivotal moment will have to wait a little\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 1,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "Acknowledgement, for once and for all.",
+      "processed_text": "Acknowledgement, for once and for all.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 148,
+        "completion_tokens": 13
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: British reporter Natasha Smith recounts attack in Tahrir Square .\nSmith says she was mobbed by men who \"started ripping off all my clothes\"\n\"There were several moments at which I thought she was going to die,\" a friend says .\nEgyptians stepped in to protect her and helped her escape, she says .\n\nBegin with: \"Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a British student journalist was being sexually assaulted by a mob in Tahrir Square. Natasha Smith recounted the experience on her blog and in an interview\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 2,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "Firm, in a final farewell, a beautiful dance of the characteristics of those families. The hearing was closed.",
+      "processed_text": "Firm, in a final farewell, a beautiful dance of the characteristics of those families.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 138,
+        "completion_tokens": 25
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Unofficial Capitol Hill hearing addressed concerns over long tarmac delays .\nBill sponsored by Sen. Barbara Boxer would allow fliers to deplane after three hours .\nFormer American Airlines CEO spoke in support of three-hour limit .\nAnother witness said routine delays are more pressing issue .\n\nBegin with: \"Airline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 3,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "Six officers and their cars sold and kept a news, turning the impound lot's decks .\nThe decks sold cars back to the cars, ending the cars.\n\nReports say the world.",
+      "processed_text": "Six officers and their cars sold and kept a news, turning the impound lot's decks .\nThe decks sold cars back to the cars, ending the cars.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 145,
+        "completion_tokens": 45
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: DA says officers would impound cars of people who couldn't pay release fees .\nThe impound lot owner would turn cars over to cops, who sold or kept them .\nAmong those arrested are the former chief and the interim chief, who says he did no wrong .\nCNN affiliate says small department is strained by the number of arrests .\n\nBegin with: \"The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 4,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\"He's had it right on Mala\"\n\nCredit: \"I have never had a news article about the woman who walked with hope. \"With her family.",
+      "processed_text": "\"He's had it right on Mala\"\n\nCredit: \"I have never had a news article about the woman who walked with hope.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 130,
+        "completion_tokens": 38
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: \"He has brought shame on our family,\" says suspect's sister .\n\"I don't consider Atta Ullah my brother any more,\" she adds .\nThe 23-year-old student is being sought in connection with the attack on Malala .\n\nBegin with: \"The sister of a man suspected in the shooting of Pakistani teenager Malala Yousufzai has apologized to the victim. \"Please convey a message to Malala, that I apologize for what my brother did to her,\" Rehana Haleem\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 5,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "Civilians today .\n\n[Epig 1]\n\n[Ep 1]",
+      "processed_text": "Civilians today .",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 122,
+        "completion_tokens": 23
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Civilians flee North Waziristan as planes strike militants .\nMore than 250 insurgents have been killed, army says .\nThe Pakistani Taliban is among the targets .\n\nBegin with: \"More than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday. Many of the displaced civilians have moved\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-10",
+      "sample_id": 10,
+      "original_prefix_id": 6,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "Ahead of time's 41st-century carnival, and the future.\n\nAhead, there will be lights.",
+      "processed_text": "Ahead of time's 41st-century carnival, and the future.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 148,
+        "completion_tokens": 31
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Six days after Boston Marathon bombings, thousands of runners will compete in London .\nSpecial event marked by 30 second silence, black solidarity ribbons .\nStepped-up security with increased searches and police on streets .\nOlympics 2012 good training ground for staging international sporting events .\n\nBegin with: \"Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence. Six days after\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-11",
+      "sample_id": 11,
+      "original_prefix_id": 7,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "Lee Mijh\n(R) Siem Mijh\n(R) Siem Mijh\n(R) Siem Sime's seventh first-time winner of 2013 .\n\nSiem Zolt'\n(R) Siem Zolt\n(R) Siem Sime's last European Tour title for eight years.\n(R) Siem Zolt\n(R) Siem Sime's sixth first-time winner of 2013 .\n(R) Siem Zolt\n(R) Siem Sime's seventh first-time winner of 2013 .\n(R) Siem Zolt\n(R) Siem Sime's last European Tour title for eight years.\n(R) Siem Sime's sixth first-time winner of 2013 .\n(R) Siem Sime's seventh first-time winner of 2013 .\n\nLee Mij\n(R) Siem Sime's seventh first-time winner of 2013 .\n(R) Siem Sime's last European Tour title for eight years.\n(R) Siem Sime's sixth first-time winner of 2013 .\n(R) Siem Sime's seventh first-time winner of 2013 .\n(R) Siem Sime's final European Tour title for eight years.\n(R) Siem Sime's eight-under-par, one shot.\n(R) Siem Sime's last European Tour title for eight years.\n\nBegin with: \"Marcel Siem held his nerve amid a late chat.\nLee's final European Tour title for eight years.\n(R) Siem Sime's eighth-last-time winner",
+      "processed_text": "Lee Mijh\n(R) Siem Mijh\n(R) Siem Mijh\n(R) Siem Sime's seventh first-time winner of 2013 .\n\nSiem Zolt'\n(R) Siem Zolt\n(R) Siem Sime's last European Tour title for eight years.\n(R) Siem Zolt\n(R) Siem Sime's sixth first-time winner of 2013 .\n(R) Siem Zolt\n(R) Siem Sime's seventh first-time winner of 2013 .\n(R) Siem Zolt\n(R) Siem Sime's last European Tour title for eight years.\n(R) Siem Sime's sixth first-time winner of 2013 .\n(R) Siem Sime's seventh first-time winner of 2013 .\n\nLee Mij\n(R) Siem Sime's seventh first-time winner of 2013 .\n(R) Siem Sime's last European Tour title for eight years.\n(R) Siem Sime's sixth first-time winner of 2013 .\n(R) Siem Sime's seventh first-time winner of 2013 .\n(R) Siem Sime's final European Tour title for eight years.\n(R) Siem Sime's eight-under-par, one shot.\n(R) Siem Sime's last European Tour title for eight years.\n\nBegin with: \"Marcel Siem held his nerve amid a late chat.\nLee's final European Tour title for eight years.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 142,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: German Marcel Siem wins the Open de France at Le Golf National .\nSiem holds off late charge from Francesco Molinari to win by one shot .\nLee Westwood fine after an injury scare during Saturday's round .\nRookie Ted Potter becomes PGA Tour's sixth first-time winner of 2012 .\n\nBegin with: \"Marcel Siem held his nerve amid a late charge from Francesco Molinari to take the Open de France -- his first European Tour title for eight years. The German finished on eight-under-par, one shot better than Molinari who recorded\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-12",
+      "sample_id": 12,
+      "original_prefix_id": 8,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": ".\nBegin with: \"‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ It's a new episode of The Simpsons on 26 January.\nBegin with: \"‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ In its final episode of The Simpsons, humorously citing a potential conflict of interest between his companies Tesla and space X-rations.\nBegin with: \"‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ It's a new age of the Simpsons on 26 January.\n\nCaption: \"‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ In the final chapter of the Simpsons, humourous citing a final age of The Simpsons, humourously citing a profound sense of closure .",
+      "processed_text": ".\nBegin with: \"‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ It's a new episode of The Simpsons on 26 January.\nBegin with: \"‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ In its final episode of The Simpsons, humorously citing a potential conflict of interest between his companies Tesla and space X-rations.\nBegin with: \"‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ It's a new age of the Simpsons on 26 January.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 217,
+        "completion_tokens": 199
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: South African-born Elon Musk responded to comments by Lisa Simpson .\nHe appeared in the latest episode of The Simpsons on 25 January .\nIn it Lisa cites a potential conflict of interest between his electric car company Tesla and space exploration company SpaceX .\n'For a man who likes electric cars he sure burns a lot of rocket fuel,' she said .\nBut responding to the jibe on Twitter, Mr Musk said rockets were the only way to currently reach orbit .\nHe said other methods like electric power were simply 'impossible'\nAnd other proposals like space elevators or railguns were not technologically feasible yet .\n\nBegin with: \"‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humourously citing a supposed conflict of interest between his companies Tesla and\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-13",
+      "sample_id": 13,
+      "original_prefix_id": 9,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "A century later, a century later, a century later.",
+      "processed_text": "A century later, a century later, a century later.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 159,
+        "completion_tokens": 13
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Prof Gloria Moss claims that men and women see things differently .\nShe said that men, as hunters, have better rotational and spacial vision .\nIn her book, Prof Moss claims that men tend to be more colour blind .\nMen like paintings that are darker and have fewer colours .\nWomen prefer colourful paintings featuring people and plants .\nOnly one painting at the National Gallery is by a woman .\n\nBegin with: \"Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic. And the fact early men and women took on the different roles of hunters and gatherers may explain why just one painting\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-14",
+      "sample_id": 14,
+      "original_prefix_id": 10,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\nEnd:\n\n(EW.com) -- You know that the last word, Gavin DeG\n\nHere's to a long, short, smart, and heart.\n\nCelebration now stands proud and present.",
+      "processed_text": "End:\n\n(EW.com) -- You know that the last word, Gavin DeG\n\nHere's to a long, short, smart, and heart.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 141,
+        "completion_tokens": 53
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Gavin DeGraw's fourth full-length album is called \"Sweeter\"\nHalf the album is weighed down by painfully mopey, girl-done-left-me blues .\n\"Sweeter\" comes out on September 20 .\n\nBegin with: \"(EW.com) -- You know that part in this pop-soul smoothie's songs where the verse launches skyward into the chorus, Gavin DeGraw makes that I'm-pounding-these-piano-keys-so-hard! face, and\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-15",
+      "sample_id": 15,
+      "original_prefix_id": 11,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "In 2009 she was closed,\nIn 2009 they now moves on.",
+      "processed_text": "In 2009 she was closed,\nIn 2009 they now moves on.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 245,
+        "completion_tokens": 23
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Ann Milne was diagnosed with terminal liver cancer in 2008 .\nIt came five years after she had fought breast cancer and had a mastectomy .\nShe opted for chemo to give her longer with her children and grandchildren .\nIn 2009 she was called to hospital because her condition hadn't changed .\nDoctors shared the good news that the mother-of-four was cancer free .\nBut her elation was quickly replaced with anger when doctors said the 'tumours' found on her liver were not cancer, but harmless lesions .\nFormer receptionist suffered hair loss, vomiting and fatigue during chemo .\nShe now walks with a stick after suffering permanent muscle damage .\nMrs Milne has agreed a six-figure compensation pay out with the NHS trust .\n\nBegin with: \"A grandmother endured six gruelling months of chemotherapy after being diagnosed with terminal liver cancer, only to discover she never had the disease. Ann Milne chose to have the treatment to prolong her life in 2008 after doctors told her they had\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-16",
+      "sample_id": 16,
+      "original_prefix_id": 12,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\"Sage Lovell, 16, of Marietta, was elected to the school .\nLovell began her transformation in her early teen years after realizing the school .\nLovell began her transformation in her early teen years after realized the school .\n\nBegin with: \"Elected: Sage Lovell, 16, of Marietta, was elected to the school .\nLovell began her transformation in her early teen years after realized the school .\nLovell began her transformation in her early teen years after realized the school .\nLovell began her transformation in her early teen years after realized the school .\nLovell began her transformation in her early teen years after realized the school .\nLovell began her transformation in her early teen years after realized the school .\nLovell began her transformation in her early teen years after realized the school .\n\nBegin with: \"Elected: Sage Lovell, 16, of Marietta, was elected to the school .\nLovell began her transformation in her early teen years after realized the school .\nLovell began her transformation in her early teen years after realized the school .\n\nBegin with: \"Elected: Sage Lovell, 16, of Marietta, was elected to the school .\nLovell began her transformation in her early teen years after realized the school .\nLovell began her transformation in her early teen years after realized the school .\nLovell began her transformation in her early teen years after realized the school .\n\nBegin with: \"Elected: Sage Lovell, 16, of Marietta, was elected to the school .\nLovell began her transformation in her early teen years after realized the school .\nLovell began her transformation in her early teen years after realized the school .\nLovell began her transformation in",
+      "processed_text": "\"Sage Lovell, 16, of Marietta, was elected to the school .\nLovell began her transformation in her early teen years after realizing the school .\nLovell began her transformation in her early teen years after realized the school .\n\nBegin with: \"Elected: Sage Lovell, 16, of Marietta, was elected to the school .\nLovell began her transformation in her early teen years after realized the school .\nLovell began her transformation in her early teen years after realized the school .\nLovell began her transformation in her early teen years after realized the school .\nLovell began her transformation in her early teen years after realized the school .\nLovell began her transformation in her early teen years after realized the school .\nLovell began her transformation in her early teen years after realized the school .\n\nBegin with: \"Elected: Sage Lovell, 16, of Marietta, was elected to the school .\nLovell began her transformation in her early teen years after realized the school .\nLovell began her transformation in her early teen years after realized the school .\n\nBegin with: \"Elected: Sage Lovell, 16, of Marietta, was elected to the school .\nLovell began her transformation in her early teen years after realized the school .\nLovell began her transformation in her early teen years after realized the school .\nLovell began her transformation in her early teen years after realized the school .\n\nBegin with: \"Elected: Sage Lovell, 16, of Marietta, was elected to the school .\nLovell began her transformation in her early teen years after realized the school .\nLovell began her transformation in her early teen years after realized the school .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 160,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Sage Lovell, 16, of Marietta, was elected to Walton High School's homecoming court among four other women chosen out of 50 nominees at the school .\nLovell received support from her peers and received a round of applause when her election was announced .\nLovell began her transformation in her early teen years after realizing she was attracted to boys .\n\nBegin with: \"Elected: Sage Lovell, 16, of Marietta, was elected to her high school's homecoming court in an election believed to be the first of its kind in the state . An openly transgender Georgia teen was elected to\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-17",
+      "sample_id": 17,
+      "original_prefix_id": 13,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "[Endless Discourse: W-Fi, Wi-Fi's deluxe and 4:1 deltas 1 ]\n\n1, 1, 1, 1, 1. 1\n\n1. 1, 1, 1, 1. 1",
+      "processed_text": "[Endless Discourse: W-Fi, Wi-Fi's deluxe and 4:1 deltas 1 ]\n\n1, 1, 1, 1, 1. 1\n\n1. 1, 1, 1, 1.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 134,
+        "completion_tokens": 66
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Wi-Fi at airports, planes, hotels may be risky, but no more than at coffee shops .\nStudy: Loss of a single laptop costs a company $49,246 .\nUse encrypted disks to keep your information safe, experts say .\n\nBegin with: \"With Wi-Fi access at airports, hotels, and aboard airplanes, business travelers don't have to look very hard for a wireless Internet connection. Wi-Fi hotspots at airports may put users' computers at risk, but no more so than at coffee\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 14,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "A new day for the next generation.\n\nAhead lies a better future.",
+      "processed_text": "A new day for the next generation.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 139,
+        "completion_tokens": 18
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: More than 1.5 million people have been infected in the U.S.\nSymptoms typically develop between three and 14 days after being bitten .\nHigh fever, headaches, body aches and severe fatigue are a few symptoms .\nBest way to stop the spread of West Nile virus is through prevention .\n\nBegin with: \"All Lyle Petersen wanted to do was get his mail. Lyle Petersen,  a CDC expert who was infected with West Nile virus, says, \"it will ruin your summer.\" In the time it took him to walk down his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-18",
+      "sample_id": 18,
+      "original_prefix_id": 15,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\nAbyss.",
+      "processed_text": "Abyss.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 167,
+        "completion_tokens": 6
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Maria Sharapova beats Caroline Wozniacki to reach her fourth Miami Masters final .\nAgnieszka Radwanka defeats Marion Bartoli in match interrupted by light failures .\nWorld No. 1 Novak Djokovic reaches men's semifinals after beating David Ferrer .\nDjokovic's last four opponent will be Juan Monaco, who beat U.S. No. 1 Mardy Fish .\n\nBegin with: \"Former world No. 1s Maria Sharapova and Caroline Wozniacki lit up the court at the Miami Masters on Thursday, but the lights went out on Agnieszka Radwanska and Marion Bartoli in the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-19",
+      "sample_id": 19,
+      "original_prefix_id": 16,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\n\nA new era of balance and balance, beauty, harmony, and hope began to take form.",
+      "processed_text": "A new era of balance and balance, beauty, harmony, and hope began to take form.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 148,
+        "completion_tokens": 22
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: NEW: President says he will continue talks with Russia's president, while keeping military ready .\nNEW: Obama says he is sending Secretary of State John Kerry to meet with Russian foreign minister .\nSyria will sign on to chemical weapons accord, Foreign Minister Walid Moallem says .\nSyria also prepared to disclose chemical weapons, discontinue production, he says .\n\nBegin with: \"As a Russian proposal to strip Syria of its chemical weapons began to take shape, the White House eased off the gas on Tuesday in its drive for congressional approval to strike the Middle Eastern country. President Barack Obama asked congressional leaders to delay votes on\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-20",
+      "sample_id": 20,
+      "original_prefix_id": 17,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\n\nNow, and now, the credits for the new song say the snippet was 1270 film with a\n\nEnd, and now.",
+      "processed_text": "Now, and now, the credits for the new song say the snippet was 1270 film with a\n\nEnd, and now.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 132,
+        "completion_tokens": 34
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Ricky Spicer says his voice from 1970 song 'Bound' is heard on West's 'Bound 2'\nThe credits for the new song say the snippet was licensed from two music companies .\nSpicer seeks unspecified damages .\n\nBegin with: \"The lead singer of a 1970 tune that is sampled on a new Kanye West song has filed suit, alleging the rapper used the snippet without his permission. Ricky Spicer was 12 when he became the lead singer for a group called the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-21",
+      "sample_id": 21,
+      "original_prefix_id": 18,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "Farewell, Ukraine.\nA fair farewell, indeed, the Ukrainians\nResigned with dignity, hope, and respect.",
+      "processed_text": "Farewell, Ukraine.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 156,
+        "completion_tokens": 29
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Interior Minister Arseny Avakov said tanks entered Ukraine through checkpoint controlled by pro-Russian separatists in the Luhansk region .\nRussia has denied aiding the separatists, .\nwho have taken control of several towns and cities in mainly .\nRussian-speaking east Ukraine .\nPresident Vladimir Putin has also promised to tighten controls at borders .\n\nBegin with: \"Russia was accused of sending tanks into Ukraine for the first time yesterday while the West’s attention was diverted by the chaos in Iraq. The development threatens to destroy the tentative peace process just when the US and EU had hoped Vladimir Putin had agreed to ease\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 19,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\n\nBegin. The final chapter in the story of biology .\nHere's to a beautiful, captivating, emotional image of the year.\n\nBegin. The closing chapter in the story of biology .\n\n[End credits: The book closed the credits for the book. A new chapter in the story of biology is about to begin .\n\nThe final chapter in the story of biology .\n\nEnd credits: The book closed the credits for the book. A new chapter in the story of biology is about to end .\n\nBegin. The closing chapter in the story of biology .\n\nBegin. The closing chapter in the story of biology, the final chapter in the story of biology - an emotional image of the year.\n\n[End credits: The book closed the credits for the book, the final chapter in the story of biology. An emotional image of the year.\n\nThe final chapter in the story of biology, the closing chapter in the story of biology - an emotional image of the year.\n\nThe final chapter in the story of biology.\n\nBegin. The closing chapter in the story of biology. A story in the book.\n\n[End credits: The book closed the credits for the book. A new chapter in the story of biology - an emotional image of the year.\n\nThe final chapter in the story of biology, the closing chapter in the story of biology.\n\nThe final chapter in the story of biology - a new chapter in the story of biology. A new chapter in the story of biology is about to conclude.\n\nBegin. The closing chapter in the story of biology. The final chapter in the story of biology. A new chapter in the story of biology, the closing chapter in the story of biology - an emotional image of the year.\n\nThe final chapter in",
+      "processed_text": "Begin. The final chapter in the story of biology .\nHere's to a beautiful, captivating, emotional image of the year.\n\nBegin. The closing chapter in the story of biology .\n\n[End credits: The book closed the credits for the book. A new chapter in the story of biology is about to begin .\n\nThe final chapter in the story of biology .\n\nEnd credits: The book closed the credits for the book. A new chapter in the story of biology is about to end .\n\nBegin. The closing chapter in the story of biology .\n\nBegin. The closing chapter in the story of biology, the final chapter in the story of biology - an emotional image of the year.\n\n[End credits: The book closed the credits for the book, the final chapter in the story of biology. An emotional image of the year.\n\nThe final chapter in the story of biology, the closing chapter in the story of biology - an emotional image of the year.\n\nThe final chapter in the story of biology.\n\nBegin. The closing chapter in the story of biology. A story in the book.\n\n[End credits: The book closed the credits for the book. A new chapter in the story of biology - an emotional image of the year.\n\nThe final chapter in the story of biology, the closing chapter in the story of biology.\n\nThe final chapter in the story of biology - a new chapter in the story of biology. A new chapter in the story of biology is about to conclude.\n\nBegin. The closing chapter in the story of biology. The final chapter in the story of biology. A new chapter in the story of biology, the closing chapter in the story of biology - an emotional image of the year.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 163,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: The images are part of the shortlist for the Society of Biology's Photographer of the Year award .\nThere are nine photos taken by adults competing for a £1,000 prize run by the London-based society .\nThere were more than 800 entries, with photographs allowed to focus on anything in biology .\nThe winners will be announced on Tuesday 14 October at the King’s Fund in London .\n\nBegin with: \"The shortlist for the Society of Biology’s Photographer of the Year reveal has been revealed - and it includes a stunning array of images from across the natural world. In the competition there are two categories, the regular Photographer of the Year and the Young\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-22",
+      "sample_id": 22,
+      "original_prefix_id": 20,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "51-50s, and with the best practices in mind .\n\nCertainly, we hope you'll find the beauty and life-saving properties for tomorrow.\n\n66.6666667, and with the progress of the 55s, and the future.",
+      "processed_text": "51-50s, and with the best practices in mind .\n\nCertainly, we hope you'll find the beauty and life-saving properties for tomorrow.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 160,
+        "completion_tokens": 68
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Hospital spokeswoman says Michael Brewer having own skin put onto burned areas .\nBrewer, 15, in guarded condition, will go back to intensive care after procedure .\nMore surgeries to come; October 12 attack left burns over 65 percent of his body .\n3 of the 5 teens accused of setting Brewer on fire plead not guilty to attempted murder .\n\nBegin with: \"A Florida teenager attacked and set on fire last month, allegedly by five teenage friends, was undergoing skin graft surgery Friday, the first procedure in his recovery, a hospital spokeswoman said. Michael Brewer, who suffered burns over 65 percent of his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 21,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\n\nNow, back to her beautiful story of people,\n\n... and so it goes on,\n\n... and so it goes,\n\n... and so it goes,\n\n... and so it goes.",
+      "processed_text": "Now, back to her beautiful story of people,\n\n... and so it goes on,\n\n... and so it goes,\n\n... and so it goes,\n\n...",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 106,
+        "completion_tokens": 46
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Davis stated that she got divorced at 19, but she was actually 21 .\nHer website omits her husband's financial contribution to her education .\n\nBegin with: \"Wendy Davis’ attempt to build her campaign to become the first Democratic Texas governor since Ann Richards in 1995 around her personal story of success against the odds has experienced somewhat of a hiccup - after it emerged that some of the facts\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-23",
+      "sample_id": 23,
+      "original_prefix_id": 22,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "And now, let's leave the last word to the future.\n``` 1 2 3, 4 5\n`````",
+      "processed_text": "And now, let's leave the last word to the future.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 139,
+        "completion_tokens": 33
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Genealogist tries to fill out details of doomed Civil War submarine crew .\nThe Hunley went down off South Carolina after sinking a Civil War vessel .\nLittle was known about the eight men; DNA matches elusive for all but one .\nDid the captain carry gold coin from a romantic interest?\n\nBegin with: \"One investigative tip can lead to another -- and another. Linda Abrams, a genealogy gumshoe, went to Texas to match handwriting samples. She spent a couple weeks in Kentucky following a tip, only to find it was just hearsay.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-24",
+      "sample_id": 24,
+      "original_prefix_id": 23,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "A brief, comprehensive yet a brief look, if the following could be read in a coffee shop in Afghanistan's\n\nBow, Rao, and the ARR.",
+      "processed_text": "A brief, comprehensive yet a brief look, if the following could be read in a coffee shop in Afghanistan's\n\nBow, Rao, and the ARR.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 137,
+        "completion_tokens": 37
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Bowe Bergdahl, 26, walked out of U.S. base in Afghanistan in June 2009 and was captured by the Taliban .\nThe day before leaving camp, he emailed his parents about how he had become extremely disillusioned with the Army and American policy .\n\nBegin with: \"New questions surround the disappearance of an American soldier who was captured by the Taliban after an email that he sent to his parents hints that he was so disappointed with the American mission in Afghanistan that he may have defected. Shortly before he disappeared three years\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 24,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": ".\n\nFrom the in the distance, an eye\n\nCredit: 555 credits and more\n\n## The curtain of time.",
+      "processed_text": ".",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 135,
+        "completion_tokens": 33
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Anton zipped past parked cars while performing the stunt in Voronezh .\nHe fell on his rear end as he carved through inches of fresh snow .\nAnton went out in the early hours to avoid traffic and police .\nHe says urban snowboarding is harder than boarding down a mountain .\n\nBegin with: \"This is the hilarious moment a daredevil snowboarder wipes out while being dragged behind a car on a snowy street - risking serious injury or arrest. The man, named Anton, zipped past parked cars while performing the dangerous stunt after a\""
+        }
+      ]
+    }
+  ]
+}

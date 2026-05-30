@@ -1,0 +1,574 @@
+{
+  "model_type": "instruct",
+  "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400
+  },
+  "intervention": {
+    "mode": "partial_ablate",
+    "direction_path": "data/pasta_directions/meta-llama_meta-llama-3.1-8b-instruct/v_cross_L1.pt",
+    "layer": 1,
+    "alpha": 2.0,
+    "tag": "v_cross_L1_partial_ablate_alpha2.00"
+  },
+  "domain": "news_articles",
+  "num_generations": 25,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-news_articles-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "A delay has occurred, so the launch did not happen. This is the first that it has happened with SpaceX to delay a launch. This is the third time the company has tried to use a rocket that they will have to be able try to land it after it has been to space. That is not going to happen with this rocket. We will set it 11 am 18:18 to Saturday. This is be good. \n\nIt’s be 1.20 pm to Friday. In are to set it 1.22 to the Saturday. It is set to be in the 1.20 to Saturday. it is 1.20 to Saturday. It is set to be this day it is on the Friday to the Saturday. It is to be. It is one. I don 1.20. It is set. to. To this Saturday. The 1 is. To 1. To is 18.18. Thursday. The 1 is to 1. 1. is to. it. \nIt is this day 1. 1. 1. Is. To 1 1. 1. 1. This is is. 1 1. 1.  1. to 2 1 1.  2 to. 2. 1 1 1. 1  2 1 1 1 1 2 1 1 1 1 2 1 1 1 1 1 2 1 1 1 1 2 2 1 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 1  1 1 2 2 1 1 1 1 1 1 1 1 1 1 1 2 1 1 1",
+      "processed_text": "A delay has occurred, so the launch did not happen. This is the first that it has happened with SpaceX to delay a launch. This is the third time the company has tried to use a rocket that they will have to be able try to land it after it has been to space. That is not going to happen with this rocket. We will set it 11 am 18:18 to Saturday. This is be good. \n\nIt’s be 1.20 pm to Friday. In are to set it 1.22 to the Saturday. It is set to be in the 1.20 to Saturday. it is 1.20 to Saturday. It is set to be this day it is on the Friday to the Saturday. It is to be. It is one. I don 1.20. It is set. to. To this Saturday. The 1 is. To 1. To is 18.18. Thursday. The 1 is to 1. 1. is to. it. \nIt is this day 1. 1. 1. Is. To 1 1. 1. 1. This is is. 1 1. 1.  1. to 2 1 1.  2 to. 2. 1 1 1.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 250,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: SpaceX was planning to land a Falcon 9 rocket at Cape Canaveral today .\nThe rocket was to attempt to land after launching a Dragon capsule .\nBut the launch has been delayed due to an issue with one of the engines .\nIt had already been delayed from earlier this week due to the same issue .\nIt will now take place at 11.18am GMT on Tuesday 6 January .\nAfter launch the first stage of their Falcon 9 rocket will attempt to touch down on a barge after taking Dragon to space .\nIt is the first ever attempt at landing a rocket on solid ground after launch .\nCEO Elon Musk said the ambitious attempt has a 50% chance of working .\nThe company ultimately wants all of its rockets to be reusable .\n\nBegin with: \"It’s set to be one of the most groundbreaking moments in humanity’s six decades of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching. But those looking forward to this pivotal moment will have to wait a little\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "The report from Egypt.\n\nThis man.\n\nThis are is a man.\nThis men.\n\nThis are. \nthis are in this are.\nThis man.\n\nthis are.\n\nthis are is a man.\n\nThat is in it.\nThere is to it.\nThis is a it.\nthis are.\n\nThis are is.\nThat is in this.\n\nThis is a. \nThis is this.\n\nthis is a is a.\nThis is. it is a \nthis is a is not in this.\nthis is a a. \na is in. \n\nThis is in a. \nis  at. it is is a. \nthat is a. is. \nis a. is. \nis this is is a. \n\nThis is a. it is a is. \nis a is a.\nis it is a. is  is a is. \n\nis a is a.  a is a.  is a is is. \n\na is a.  is this is. \n\nis a a.  is a is is. \na is in. \na is a a  this  is. is in  is. is is. is  is is \nis a is  is. it is a a is. a. is a a.  is  i is a a is. is this  is.  is. is  a. is. \n\nis a is. is  is  this. is is a is 1. \na is. is.  is.  is.  this is a is. is is.  is\nis. is a. is this. is  is  is is. is\nis.  is  is is  e.  i is a. \n\nis. is.  is.  is.  is is a is is.  is is.  is  is is. is  is a.  is is.  is is. is  is.  i is. ",
+      "processed_text": "The report from Egypt.\n\nThis man.\n\nThis are is a man.\nThis men.\n\nThis are. \nthis are in this are.\nThis man.\n\nthis are.\n\nthis are is a man.\n\nThat is in it.\nThere is to it.\nThis is a it.\nthis are.\n\nThis are is.\nThat is in this.\n\nThis is a. \nThis is this.\n\nthis is a is a.\nThis is. it is a \nthis is a is not in this.\nthis is a a. \na is in. \n\nThis is in a. \nis  at. it is is a. \nthat is a. is. \nis a. is. \nis this is is a. \n\nThis is a. it is a is. \nis a is a.\nis it is a. is  is a is. \n\nis a is a.  a is a.  is a is is. \n\na is a.  is this is. \n\nis a a.  is a is is. \na is in. \na is a a  this  is. is in  is. is is. is  is is \nis a is  is. it is a a is. a. is a a.  is  i is a a is. is this  is.  is. is  a. is. \n\nis a is. is  is  this. is is a is 1. \na is. is.  is.  is.  this is a is. is is.  is\nis. is a. is this. is  is  is is. is\nis.  is  is is  e.  i is a. \n\nis. is.  is.  is.  is is a is is.  is is.  is  is is. is  is a.  is is.  is is. is  is.  i is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 159,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: British reporter Natasha Smith recounts attack in Tahrir Square .\nSmith says she was mobbed by men who \"started ripping off all my clothes\"\n\"There were several moments at which I thought she was going to die,\" a friend says .\nEgyptians stepped in to protect her and helped her escape, she says .\n\nBegin with: \"Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a British student journalist was being sexually assaulted by a mob in Tahrir Square. Natasha Smith recounted the experience on her blog and in an interview\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "I don  The The The  senator \" Barbara  This it  \" The  \" The  this. This  this  \" This \" it  \" This  \" This \"  In  the  \"  \" this. \" is This  be  is  To  to  be  to is \" to a  \" to  is  \" is  \" to is  is \" this  \" is \" to be  is \" be  \" is  the to this \"  to  To is  \" \" Is \" is  \" to  this  and  is  to \" is a is  \" to \" \" is and this \"  but \" is  t be is  to \" is to  \" \" to is  is to the  to \"  in  is \" is  to is the  to is  the  \"  \" is is  to 1  but a  \" to do  \" and this \"  do  do a 1  do \" be \" do 1 1  to \" is  do 1 1 do \"  1 \" do not do is \" a \"  do 1  and do \" 1 1 do 1 1 do 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  1 1 1 1 1 1  1 do a \" 1 this is is to do a \" do is \" do is 1. is a \" a 0 to \" is it do \" to 1 do. to do a \" is is is to 1 1 0 1 1. Do 1 1  1 1 do \" to 1 1 \" ",
+      "processed_text": "I don  The The The  senator \" Barbara  This it  \" The  \" The  this. This  this  \" This \" it  \" This  \" This \"  In  the  \"  \" this. \" is This  be  is  To  to  be  to is \" to a  \" to  is  \" is  \" to is  is \" this  \" is \" to be  is \" be  \" is  the to this \"  to  To is  \" \" Is \" is  \" to  this  and  is  to \" is a is  \" to \" \" is and this \"  but \" is  t be is  to \" is to  \" \" to is  is to the  to \"  in  is \" is  to is the  to is  the  \"  \" is is  to 1  but a  \" to do  \" and this \"  do  do a 1  do \" be \" do 1 1  to \" is  do 1 1 do \"  1 \" do not do is \" a \"  do 1  and do \" 1 1 do 1 1 do 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  1 1 1 1 1 1  1 do a \" 1 this is is to do a \" do is \" do is 1. is a \" a 0 to \" is it do \" to 1 do. to do a \" is is is to 1 1 0 1 1.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 151,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Unofficial Capitol Hill hearing addressed concerns over long tarmac delays .\nBill sponsored by Sen. Barbara Boxer would allow fliers to deplane after three hours .\nFormer American Airlines CEO spoke in support of three-hour limit .\nAnother witness said routine delays are more pressing issue .\n\nBegin with: \"Airline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "People are suing the city for wrongful police activity. The people were the people who could not pay for traffic fines. The have to have the money, if they do it 9 other times. There are 3 people in the city who are in prison. The are some people. The the say are 2 of them. The is 2 of them. The is 2 of them. The is 2 of 1 of 9. The 1 of 1 of 1 is. I do. 1 is 3. I do. do. the. do 1. I. it.  do 1 is. is 2 do. is  do. is. is. 2. 9. is. is. 2. 10. is. is. 0. 10. is. is. is 2. 3. is. is. 2. 3. is 1. I 3. is. 3. is 1. is 1. 2. is. is. 1. 1. 2. is 2. is. 2. is 1. is. is. is. is. 2. is. is. 1. I 1 is. 1. is. is. 2. 1 is is. is 1 is 1. is. is.  is 1. 1. is. is. a. is. is 1. be. is. is. is. a. 1. a 2 is. is 1 1. is 1. 1 1. 1. 1 1 1 2 is. is.  is. 2. is. 1 2. is. is.  is. is 1. 2 is. is. is 1. is. is  2.",
+      "processed_text": "People are suing the city for wrongful police activity. The people were the people who could not pay for traffic fines. The have to have the money, if they do it 9 other times. There are 3 people in the city who are in prison. The are some people. The the say are 2 of them. The is 2 of them. The is 2 of them. The is 2 of 1 of 9. The 1 of 1 of 1 is. I do. 1 is 3. I do. do. the. do 1. I. it.  do 1 is. is 2 do. is  do. is. is. 2. 9. is. is. 2. 10. is. is. 0. 10. is. is. is 2. 3. is. is. 2. 3. is 1. I 3. is. 3. is 1. is 1. 2. is. is. 1. 1. 2. is 2. is. 2. is 1. is. is. is. is. 2. is. is. 1. I 1 is. 1. is. is. 2. 1 is is. is 1 is 1. is. is.  is 1. 1. is. is. a. is. is 1. be. is. is. is. a. 1. a 2 is. is 1 1. is 1. 1 1. 1. 1 1 1 2 is. is.  is. 2. is. 1 2. is. is.  is. is 1. 2 is. is. is 1. is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 163,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: DA says officers would impound cars of people who couldn't pay release fees .\nThe impound lot owner would turn cars over to cops, who sold or kept them .\nAmong those arrested are the former chief and the interim chief, who says he did no wrong .\nCNN affiliate says small department is strained by the number of arrests .\n\nBegin with: \"The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Malaika is a global symbol. He is a global symbol. The first is that Taliban leader He is a global leader. The are not the. He is. Be is that. The is. Be. Be. He is a. A. Is. He is. A. No. A Taliban is a. A. Do. At. Is. Is. He is to. At. I is. a is. a. The is. This is. Be. It is. It is to be. is. is. it is. is. is. is. is is. is is. is. to be is is. is is. is. is to is  is. is  is to is. is. a is is. is. is is. is to is is. is. is. is to. is is. be  is. is. is is. is  is  is is. is  is . to is. is. is  to is is. is. is is is. is  to. is is.  is is to  2010 is.  to is. is is.  is. is  to is  is  is to. is  to is is  is  is. is is. 1 is is to.  to is is.  is is is. is  is to  2010 1 is. is to. is  2010 1 0 is 2010 is. 1 2010 is. to is 2010 2010  1 1 0 is. 2010 1  1  is to. is  201   is to. is  201. is  to 1  1  1  1  1 is is  1 1  1 1  1 1  1 1 1 ",
+      "processed_text": "Malaika is a global symbol. He is a global symbol. The first is that Taliban leader He is a global leader. The are not the. He is. Be is that. The is. Be. Be. He is a. A. Is. He is. A. No. A Taliban is a. A. Do. At. Is. Is. He is to. At. I is. a is. a. The is. This is. Be. It is. It is to be. is. is. it is. is. is. is. is is. is is. is. to be is is. is is. is. is to is  is. is  is to is. is. a is is. is. is is. is to is is. is. is. is to. is is. be  is. is. is is. is  is  is is. is  is . to is. is. is  to is is. is. is is is. is  to. is is.  is is to  2010 is.  to is. is is.  is. is  to is  is  is to. is  to is is  is  is. is is. 1 is is to.  to is is.  is is is. is  is to  2010 1 is. is to. is  2010 1 0 is 2010 is. 1 2010 is. to is 2010 2010  1 1 0 is. 2010 1  1  is to. is  201   is to. is  201.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 146,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: \"He has brought shame on our family,\" says suspect's sister .\n\"I don't consider Atta Ullah my brother any more,\" she adds .\nThe 23-year-old student is being sought in connection with the attack on Malala .\n\nBegin with: \"The sister of a man suspected in the shooting of Pakistani teenager Malala Yousufzai has apologized to the victim. \"Please convey a message to Malala, that I apologize for what my brother did to her,\" Rehana Haleem\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Civilians flee north Waziratistan as US-Pakistan forces launch assault\nPakistani officials say the strikes have been successful on the anti goverment\nPeople have been trying to kill Pakistani goverment and the army.\n  This is a news a article\nThis are some of the things\nThis is this \nThis are \nThis is \n\nThis is\nThis is\nPak\nThis is\n\nPakistani's\nAre in \nThis is  this \nThis are\n\nThis is \nThat is\nthis is\nPakistani army\nPakistani \nThis\nThis\nThis \nAnd \nThis is \nThis is\nThe\nThis\n\nP  is\nThis\nis  is \nis\nThis is this\n\nis  is\nis  is \nis  to\ni\nis  is \nis is \nis\ni\nThis is this \n\nis  is  is \nthis is\nthis is\nis this \nThis is \nis is\n\nto is\nis\nto\nis is\nThis is is\nis  this \nto  is is  to\nto is is this \ni is this \ni  is this is \n\nis  is  is \nis this is  is  is\nis\nto is\nto is  is  is\nto is  is  is  this\na  is is  is  is\na is  is this  to is  is  is  to  so  is  so  is  is\nto is  is  so to is  is is  is\nt o is  is to  this  is  is  is \nis is is  to to  is to  is\nto to  is this is  is\nt o a  is is  is  is\nyou is  is  this is is  is\ny is  is this\nis  is  y is is  is  ",
+      "processed_text": "Civilians flee north Waziratistan as US-Pakistan forces launch assault\nPakistani officials say the strikes have been successful on the anti goverment\nPeople have been trying to kill Pakistani goverment and the army.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 130,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Civilians flee North Waziristan as planes strike militants .\nMore than 250 insurgents have been killed, army says .\nThe Pakistani Taliban is among the targets .\n\nBegin with: \"More than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday. Many of the displaced civilians have moved\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "C 2.0 7. 4, Many of the participants in this Sunday's London marathon and spectators will stand in silent respect for the victims in Boston and their families. will take. The. the will put. the. you will be. you. this. to. be. you will. be. to. it. to this is. to the is. to. to. this is to the. is to. are. to. is is. to. to is. is to. this is. to. is to. is. to. is. to. is. to is. is to. is is. to. is is. to. is is to is to. is to is to. is is. is to. to. to is is. to is to. is to. is to. is to. is to is to is. to is. to is is to is. to is. is to is is. is is is is is to is. is. is is is to is. is. is is to is is is is. is is is is  to is is is is is is  to is is to. is is. it is. is. to is to. is is. to is. is. is is to is  to is is. is is to. is to is is to. is is. is is to is. is is is is is  to. is to is  to is is to. is  is is is is is is is. is. to is is  to. is  to is is. is to.  to is is. is. is to is  is is. to is. is  is is  to is is  to. is is. to. is  to. to. is is. to.  to. is. to is  to. is. to  is to is. is. to. is is",
+      "processed_text": "C 2.0 7. 4, Many of the participants in this Sunday's London marathon and spectators will stand in silent respect for the victims in Boston and their families. will take. The. the will put. the. you will be. you. this. to. be. you will. be. to. it. to this is. to the is. to. to. this is to the. is to. are. to. is is. to. to is. is to. this is. to. is to. is. to. is. to. is. to is. is to. is is. to. is is. to. is is to is to. is to is to. is is. is to. to. to is is. to is to. is to. is to. is to. is to is to is. to is. to is is to is. to is. is to is is. is is is is is to is. is. is is is to is. is. is is to is is is is. is is is is  to is is is is is is  to is is to. is is. it is. is. to is to. is is. to is. is. is is to is  to is is. is is to. is to is is to. is is. is is to is. is is is is is  to. is to is  to is is to. is  is is is is is is is. is. to is is  to. is  to is is. is to.  to is is. is. is to is  is is. to is. is  is is  to is is  to. is is. to. is  to. to. is is. to.  to. is. to is  to. is. to  is to is. is. to.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 153,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Six days after Boston Marathon bombings, thousands of runners will compete in London .\nSpecial event marked by 30 second silence, black solidarity ribbons .\nStepped-up security with increased searches and police on streets .\nOlympics 2012 good training ground for staging international sporting events .\n\nBegin with: \"Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence. Six days after\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "The that are the the news article. News. It are this are the. The this is. The the. The. Are the. This is. That are. The are is. The. Are. It.  to. be. is. to. is. is. is. to. It is is is to. is. to. is. is. to. is. is. is. is. to. is. is. to. is. is. to. to. is. is to. is. to. to. to. is. to. is. to. is. is. is. to. to. is. to. is. is. to. is. to. to. is. to. is. to. to. is. is. is. is. is. is is. to. to. to. to. to. is. to. is. is. to. to. is. is. to. is. to. to is. to. is. is. to. is is. to. to is. is. to. to is. is. to. is. is. is. is. to. is. to. to is. is. to is. to. to is. is. is. to. to. is. to. to is. to is. is. is. to. is. is. is. is. to is. is. to is. to is. to is is. is. is. is. to. to is. is. is. to. to is is is. to is. is is is. is. to is. is is. to is. to is. is. is. to is. is. to is. is is is is is. is. to is. is. to is. is. to is. is. is. is is. is is. to is. to is is.",
+      "processed_text": "The that are the the news article. News. It are this are the. The this is. The the. The. Are the. This is. That are. The are is. The. Are. It.  to. be. is. to. is. is. is. to. It is is is to. is. to. is. is. to. is. is. is. is. to. is. is. to. is. is. to. to. is. is to. is. to. to. to. is. to. is. to. is. is. is. to. to. is. to. is. is. to. is. to. to. is. to. is. to. to. is. is. is. is. is. is is. to. to. to. to. to. is. to. is. is. to. to. is. is. to. is. to. to is. to. is. is. to. is is. to. to is. is. to. to is. is. to. is. is. is. is. to. is. to. to is. is. to is. to. to is. is. is. to. to. is. to. to is. to is. is. is. to. is. is. is. is. to is. is. to is. to is. to is is. is. is. is. to. to is. is. is. to. to is is is. to is. is is is. is. to is. is is. to is. to is. is. is. to is. is. to is. is is is is is. is. to is. is. to is. is. to is. is. is. is is. is is. to is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 158,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: German Marcel Siem wins the Open de France at Le Golf National .\nSiem holds off late charge from Francesco Molinari to win by one shot .\nLee Westwood fine after an injury scare during Saturday's round .\nRookie Ted Potter becomes PGA Tour's sixth first-time winner of 2012 .\n\nBegin with: \"Marcel Siem held his nerve amid a late charge from Francesco Molinari to take the Open de France -- his first European Tour title for eight years. The German finished on eight-under-par, one shot better than Molinari who recorded\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "perhaps it 'This do '. are 'This is' to 'then. \nI  the. \nso  a  to is. \nit. be  to to. \non  to  to to. to. \nto  do  to to. is. to to. it . on  to to. to  to to. \nbe to. to. to  to. \n. to be to to. to. to  to to. to  to to  to. to. to  to. to  to. to. to  to. to. to  to  to. is. \nto. to to. to to  to to  to  to. to  to. to  to  to. to  to.  to  to to  to  to. to  to to  to  1. to  to. \nto to to  to  to. to  to to  do  to. is to to  so. to  to. is to. to to  to to. to  to. to  to.  to to. to  to to. to  to to  do. to  to to. is to. to to.  to to  to. a to. to to. to  to. to  to. to  to. to  is. to  to to. to  to. a to to. is. to to. to  is. to a. to to. to  is. is. to to to  to to. to. to. to  a.  a. to to to. to is to to  to. to. a to. to a. to. to to. to is. to  to. a to to. to. to a. to. to. a. to a  are. to a. to. to a to.",
+      "processed_text": "perhaps it 'This do '. are 'This is' to 'then. \nI  the. \nso  a  to is. \nit. be  to to. \non  to  to to. to. \nto  do  to to. is. to to. it . on  to to. to  to to. \nbe to. to. to  to. \n. to be to to. to. to  to to. to  to to  to. to. to  to. to  to. to. to  to. to. to  to  to. is. \nto. to to. to to  to to  to  to. to  to. to  to  to. to  to.  to  to to  to  to. to  to to  to  1. to  to. \nto to to  to  to. to  to to  do  to. is to to  so. to  to. is to. to to  to to. to  to. to  to.  to to. to  to to. to  to to  do. to  to to. is to. to to.  to to  to. a to. to to. to  to. to  to. to  to. to  is. to  to to. to  to. a to to. is. to to. to  is. to a. to to. to  is. is. to to to  to to. to. to. to  a.  a. to to to. to is to to  to. to. a to. to a. to. to to. to is. to  to. a to to. to. to a. to. to. a. to a  are. to a. to.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 215,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: South African-born Elon Musk responded to comments by Lisa Simpson .\nHe appeared in the latest episode of The Simpsons on 25 January .\nIn it Lisa cites a potential conflict of interest between his electric car company Tesla and space exploration company SpaceX .\n'For a man who likes electric cars he sure burns a lot of rocket fuel,' she said .\nBut responding to the jibe on Twitter, Mr Musk said rockets were the only way to currently reach orbit .\nHe said other methods like electric power were simply 'impossible'\nAnd other proposals like space elevators or railguns were not technologically feasible yet .\n\nBegin with: \"‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humourously citing a supposed conflict of interest between his companies Tesla and\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "You can find most of this information here:\n\n\"Men and women have different tastes in art because of the biological diversity that was forged in the Stone Age, according  to  a  leading  a  a  academic..  She  said  in  her  book  that  men  as  hunters,  have  better  at  and  at  at  this  this  at  at  the  at  that  at  the  at  this  this  this  at  this  at  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this  this ",
+      "processed_text": "You can find most of this information here:\n\n\"Men and women have different tastes in art because of the biological diversity that was forged in the Stone Age, according  to  a  leading  a  a  academic..",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 173,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Prof Gloria Moss claims that men and women see things differently .\nShe said that men, as hunters, have better rotational and spacial vision .\nIn her book, Prof Moss claims that men tend to be more colour blind .\nMen like paintings that are darker and have fewer colours .\nWomen prefer colourful paintings featuring people and plants .\nOnly one painting at the National Gallery is by a woman .\n\nBegin with: \"Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic. And the fact early men and women took on the different roles of hunters and gatherers may explain why just one painting\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-10",
+      "sample_id": 10,
+      "original_prefix_id": 10,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "The is the:  E in the  E it the  E  the  E   E  t the  \"  I  \" you that E the  \"  \"  E  E  E  e  \"  E  the  \"  E.  I t e that\n\n you  you  10  you  E  s.  You  \"  E  o.  E  you  I  \" e  is  \"  you  the \"  \"  100  \"  y  and e   e  \" \" e.  i  \" is  \" in e  s a  e  \" a  \" e.  e  p  \" \" e  i  \" n  e  \" a  n  e  e  \" 1 e  i  \" i  \" 1 i  \" y  e  o  e n  i  e  n  s  e a t  e a... t the is 1  E  i e  e  n  e  c  e  e  e  e  e e t  t.  i  i a  1  u  \" i  e  \"  y.  e  e  e  i.  i  e  1 e  e  e  e  e  t  e  n  e.  1.  1  e  s  e e  y  e  e.  s  e \"  e  u t  e  a  e  1  e  e. is.  \"  s e  i \" i  e  1  a e  1  1  2  e  i a e  e e  1 e e 1 e  u  e e i  e  1 e  e",
+      "processed_text": "The is the:  E in the  E it the  E  the  E   E  t the  \"  I  \" you that E the  \"  \"  E  E  E  e  \"  E  the  \"  E.  I t e that\n\n you  you  10  you  E  s.  You  \"  E  o.  E  you  I  \" e  is  \"  you  the \"  \"  100  \"  y  and e   e  \" \" e.  i  \" is  \" in e  s a  e  \" a  \" e.  e  p  \" \" e  i  \" n  e  \" a  n  e  e  \" 1 e  i  \" i  \" 1 i  \" y  e  o  e n  i  e  n  s  e a t  e a... t the is 1  E  i e  e  n  e  c  e  e  e  e  e e t  t.  i  i a  1  u  \" i  e  \"  y.  e  e  e  i.  i  e  1 e  e  e  e  e  t  e  n  e.  1.  1  e  s  e e  y  e  e.  s  e \"  e  u t  e  a  e  1  e  e. is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 141,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Gavin DeGraw's fourth full-length album is called \"Sweeter\"\nHalf the album is weighed down by painfully mopey, girl-done-left-me blues .\n\"Sweeter\" comes out on September 20 .\n\nBegin with: \"(EW.com) -- You know that part in this pop-soul smoothie's songs where the verse launches skyward into the chorus, Gavin DeGraw makes that I'm-pounding-these-piano-keys-so-hard! face, and\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-11",
+      "sample_id": 11,
+      "original_prefix_id": 11,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "A mother of four, fought with her life after, she was given the diagnosis. A woman was given a six-year limit to her to live, this is not right. It is not just a woman it is three women. The is in this. It is.,, is it.. This is is. it is. it is 9.. is it. is this is. be is. are. is this is. be is. is . is. is. be. is. is. are. is. is. is. is. is. is.  is. is.. is. is. is. is.  be. is. is. is  is  be. be. is. is. is  be. is. is is. is . is. is  is. is.  is  is. be. is. is. is. is. is. is. be. is . is.  be. is  is. is. is.  is  is. be is. is is  be. be.  be. is. is.  is. be.  be  is. is. be. is  is  be  is. be. be  is. be.  is  is. be.  be  be . is  be.  is. be is  be.  is. is .  be. be  is. is  a is.  is. a  be.  be  it is.  is  is. is  be  is  is.  is  be  be  is  is  be  is  you  is  you.  is.  is  is  be. is  is  is  is  be  is  1. is. is  is  it is. is is. is  is  be  is. is  is.",
+      "processed_text": "A mother of four, fought with her life after, she was given the diagnosis. A woman was given a six-year limit to her to live, this is not right. It is not just a woman it is three women. The is in this. It is.,, is it.. This is is. it is. it is 9.. is it. is this is. be is. are. is this is. be is. is . is. is. be. is. is. are. is. is. is. is. is. is.  is. is.. is. is. is. is.  be. is. is. is  is  be. be. is. is. is  be. is. is is. is . is. is  is. is.  is  is. be. is. is. is. is. is. is. be. is . is.  be. is  is. is. is.  is  is. be is. is is  be. be.  be. is. is.  is. be.  be  is. is. be. is  is  be  is. be. be  is. be.  is  is. be.  be  be . is  be.  is. be is  be.  is. is .  be. be  is. is  a is.  is. a  be.  be  it is.  is  is. is  be  is  is.  is  be  be  is  is  be  is  you  is  you.  is.  is  is  be. is  is  is  is  be  is  1. is. is  is  it is. is is. is  is  be  is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 244,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Ann Milne was diagnosed with terminal liver cancer in 2008 .\nIt came five years after she had fought breast cancer and had a mastectomy .\nShe opted for chemo to give her longer with her children and grandchildren .\nIn 2009 she was called to hospital because her condition hadn't changed .\nDoctors shared the good news that the mother-of-four was cancer free .\nBut her elation was quickly replaced with anger when doctors said the 'tumours' found on her liver were not cancer, but harmless lesions .\nFormer receptionist suffered hair loss, vomiting and fatigue during chemo .\nShe now walks with a stick after suffering permanent muscle damage .\nMrs Milne has agreed a six-figure compensation pay out with the NHS trust .\n\nBegin with: \"A grandmother endured six gruelling months of chemotherapy after being diagnosed with terminal liver cancer, only to discover she never had the disease. Ann Milne chose to have the treatment to prolong her life in 2008 after doctors told her they had\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-12",
+      "sample_id": 12,
+      "original_prefix_id": 12,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Elected: Sage Lov  or  Sage Lov  emerged  as the first transgender student in a  list of  four winners  to be elected home comemother the 50 people who signed up  the list of 50.\nShe got a hand of applase  she got a hand of apslause  She got a round of applause \nShe got  that. \nShe was  a  girl  she was  a. You are  a girl that \nShe is a.  Are a.  2\nIs a.  2 is a. That.  Is a.  is a. is a \nIs a. is. is  a 1. is  a. is  a a \n a. a \n is  a. a.  is a 1  a is. is.  is a a. is. is a  1  a 1  is  a a is  a  is  is 2  is 1 1 1 1 \n is a a 1  is a is  2 1  1 1 1 1 is  1  1  1 1 1 1 1 1 1  1 1 1  1  1 1  1  1 1 1  1  1 1  1  1 1 1 1  1  1  1 1  1  1  1  1  1 1 1 1  1 1 1  1 1  1 1  1  1  1 1  1 1 1 1  1  1  1  1 1  1 1 1  1  1 ",
+      "processed_text": "Elected: Sage Lov  or  Sage Lov  emerged  as the first transgender student in a  list of  four winners  to be elected home comemother the 50 people who signed up  the list of 50.\nShe got a hand of applase  she got a hand of apslause  She got a round of applause \nShe got  that. \nShe was  a  girl  she was  a. You are  a girl that \nShe is a.  Are a.  2\nIs a.  2 is a. That.  Is a.  is a. is a \nIs a. is. is  a 1. is  a. is  a a \n a. a \n is  a. a.  is a 1  a is. is.  is a a. is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 171,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Sage Lovell, 16, of Marietta, was elected to Walton High School's homecoming court among four other women chosen out of 50 nominees at the school .\nLovell received support from her peers and received a round of applause when her election was announced .\nLovell began her transformation in her early teen years after realizing she was attracted to boys .\n\nBegin with: \"Elected: Sage Lovell, 16, of Marietta, was elected to her high school's homecoming court in an election believed to be the first of its kind in the state . An openly transgender Georgia teen was elected to\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-13",
+      "sample_id": 13,
+      "original_prefix_id": 13,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Those Wi-Fi hotspots that are at many airports, hotels, and on planes are safe. Be more careful with the ones you use. You must be cautions with them. You will be more safe, if you are. You have to be at all. You are to do it. Is you do this. You are. You are a do. You are. Do you do. Do. Is. Do. You are. You do do. do do. You do. do. you do do. you do. do do. do. do. do. do. do. you do. do. do. do. you do. is. to do. is. a. is. do. is. do. is. do is. is. is. a. do is. is. is. is. is. is. is. a. is. is. a. is. is. is. is. is. is. is. is. is. is is is. is. to. is. is. is. is. is. is. is. is. is is. is.  is. is is. to. is. is is. to. is. is. is is. is. to. is is. is  is  to. is. is. to is. is. is  is  is is  is  is. be. is is  is  to. is. is. is  is  is  to. is. is is. is  to is  be. is. is  is  to. is. is  to. is is. is  to is  to. is. is  is  is  is  to. is. is. is  to. is  is is  is. to. is  to. to. is.  to is. is. is. is  to. is  is.  to. is.",
+      "processed_text": "Those Wi-Fi hotspots that are at many airports, hotels, and on planes are safe. Be more careful with the ones you use. You must be cautions with them. You will be more safe, if you are. You have to be at all. You are to do it. Is you do this. You are. You are a do. You are. Do you do. Do. Is. Do. You are. You do do. do do. You do. do. you do do. you do. do do. do. do. do. do. do. you do. do. do. do. you do. is. to do. is. a. is. do. is. do. is. do is. is. is. a. do is. is. is. is. is. is. is. a. is. is. a. is. is. is. is. is. is. is. is. is. is is is. is. to. is. is. is. is. is. is. is. is. is is. is.  is. is is. to. is. is is. to. is. is. is is. is. to. is is. is  is  to. is. is. to is. is. is  is  is is  is  is. be. is is  is  to. is. is. is  is  is  to. is. is is. is  to is  be. is. is  is  to. is. is  to. is is. is  to is  to. is. is  is  is  is  to. is. is. is  to. is  is is  is. to. is  to. to. is.  to is. is. is. is  to. is  is.  to.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 144,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Wi-Fi at airports, planes, hotels may be risky, but no more than at coffee shops .\nStudy: Loss of a single laptop costs a company $49,246 .\nUse encrypted disks to keep your information safe, experts say .\n\nBegin with: \"With Wi-Fi access at airports, hotels, and aboard airplanes, business travelers don't have to look very hard for a wireless Internet connection. Wi-Fi hotspots at airports may put users' computers at risk, but no more so than at coffee\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-14",
+      "sample_id": 14,
+      "original_prefix_id": 14,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "or: \"it will ruin your summer\" then: \"it will ruin your entire summer\" then \"it will ruin your summer\" because  then be: is to it that is it but that is that is to to is so that it and so is you is that you to so that it that  and then is to. is to. is to not. to. is. is is it is. is it  is to. is. is. is is. is  is  is.  is. is is is  is. is to is. is. is  to is  to is to. is is is is  is  is  is. is  is. to. is to is to. is to is. is  is to is to. is to. is is to is  to is. is to is. is  to to is. is. to is is is  to is to is. to is. is to is to. is is is to. is to is  is. is is to is  is to is  to is. is. is to is. is is to is  is to is. to is is. is is to. is is is is  to. is. is to is  is to is  is is to. is. to is to is is. to is is. is is  is is to is  to. is is is to is  is. is to is to. is to  it is is to. is. is  to is is to. is to. is  is. to is. is is. is  is to is is to. is. is to  is is. to is is to. is is  to. is is. to is is  is. to is is  is is  to is  is is. to is is is  to is is. to is is. is. is to is  is",
+      "processed_text": "or: \"it will ruin your summer\" then: \"it will ruin your entire summer\" then \"it will ruin your summer\" because  then be: is to it that is it but that is that is to to is so that it and so is you is that you to so that it that  and then is to. is to. is to not. to. is. is is it is. is it  is to. is. is. is is. is  is  is.  is. is is is  is. is to is. is. is  to is  to is to. is is is is  is  is  is. is  is. to. is to is to. is to is. is  is to is to. is to. is is to is  to is. is to is. is  to to is. is. to is is is  to is to is. to is. is to is to. is is is to. is to is  is. is is to is  is to is  to is. is. is to is. is is to is  is to is. to is is. is is to. is is is is  to. is. is to is  is to is  is is to. is. to is to is is. to is is. is is  is is to is  to. is is is to is  is. is to is to. is to  it is is to. is. is  to is is to. is to. is  is. to is. is is. is  is to is is to. is. is to  is is. to is is to. is is  to. is is. to is is  is. to is is  is is  to is  is is. to is is is  to is is. to is is. is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 157,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: More than 1.5 million people have been infected in the U.S.\nSymptoms typically develop between three and 14 days after being bitten .\nHigh fever, headaches, body aches and severe fatigue are a few symptoms .\nBest way to stop the spread of West Nile virus is through prevention .\n\nBegin with: \"All Lyle Petersen wanted to do was get his mail. Lyle Petersen,  a CDC expert who was infected with West Nile virus, says, \"it will ruin your summer.\" In the time it took him to walk down his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-15",
+      "sample_id": 15,
+      "original_prefix_id": 15,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "1: A. A. With a very impressive record of 6-1  in the first round.\n\n2. B. With a good a very good of 6-1 in the first round.\n\n1: With a 2-0 in the first round.\n\n1. A 6-1 0 2 1 in the first round.\n\n1 2 1 1 1 2 1 2 1 3 2 1 2 1 1 2 1 1 2 1 3 2 1 2 3 3 3 1 3 2 1 2 1 1 2 3 2 3 3 4 3 4 3 5 4 3 4 5 3 3 4 3 3 3 4 1 3 4 3 5 4 5 3 4 3 3 4 3 1 4 5 3 3 5 3 3 4 5 4 5 3 4 3 4 3 5 1 3 1 3 3 3 3 3 1 3 3 1 1 3 3 1 4 3 3 4 3 3 3 3 3 1 4 3 3 1 1 3 1 3 3 2 4 3 1 4 4 3 1 3 4 1 1 3 1 3 3 3 4 5 4 3 4 3 1 4 1 1 3 3 1 3 3 1 3 4 3 5 3 4 4 3 3 1",
+      "processed_text": "1: A. A. With a very impressive record of 6-1  in the first round.\n\n2. B. With a good a very good of 6-1 in the first round.\n\n1: With a 2-0 in the first round.\n\n1. A 6-1 0 2 1 in the first round.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 181,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Maria Sharapova beats Caroline Wozniacki to reach her fourth Miami Masters final .\nAgnieszka Radwanka defeats Marion Bartoli in match interrupted by light failures .\nWorld No. 1 Novak Djokovic reaches men's semifinals after beating David Ferrer .\nDjokovic's last four opponent will be Juan Monaco, who beat U.S. No. 1 Mardy Fish .\n\nBegin with: \"Former world No. 1s Maria Sharapova and Caroline Wozniacki lit up the court at the Miami Masters on Thursday, but the lights went out on Agnieszka Radwanska and Marion Bartoli in the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-16",
+      "sample_id": 16,
+      "original_prefix_id": 16,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "It seems like the US is trying to pressure the UN to back the Syrian President. The will say we will be ready to talk with him. Now we will see it. The you will have no. The will be the 1. you will be. be. you have. this is. be.  is to. a. you. this. is to is  to. is. is. to.  is. to. is. is. to. to. is to. is. to is. a. is is to is  to. is is. to is. is. is. is to is  to. is. is  to is  to is to. is. to is is. to is. is is. is to is  is. is. to is is. is  to. is is is. to is is. is to. is is is. is. is  is is is is. is. is  to is is is is is  is is. is is. to is  is is. to is is is. is is is  to is is. is is to is  to. is is is. is  to is is is  to is is. is is to is  is is is. to is  to is is is  to is is. is is is  to is is  to is  to. is is. is. is is  to is is  is is is  is is  is is  is. is  is  to is is is  to is  is  to is  to. is  to is is is  to.  to. to is. is. to is is.  is. is is is  to. is. is. is to is  to is. is. to  is. is  is. is is. to. to is. is.  is. is. is  to is  is",
+      "processed_text": "It seems like the US is trying to pressure the UN to back the Syrian President. The will say we will be ready to talk with him. Now we will see it. The you will have no. The will be the 1. you will be. be. you have. this is. be.  is to. a. you. this. is to is  to. is. is. to.  is. to. is. is. to. to. is to. is. to is. a. is is to is  to. is is. to is. is. is. is to is  to. is. is  to is  to is to. is. to is is. to is. is is. is to is  is. is. to is is. is  to. is is is. to is is. is to. is is is. is. is  is is is is. is. is  to is is is is is  is is. is is. to is  is is. to is is is. is is is  to is is. is is to is  to. is is is. is  to is is is  to is is. is is to is  is is is. to is  to is is is  to is is. is is is  to is is  to is  to. is is. is. is is  to is is  is is is  is is  is is  is. is  is  to is is is  to is  is  to is  to. is  to is is is  to.  to. to is. is. to is is.  is. is is is  to. is. is. is to is  to is. is. to  is. is  is. is is. to. to is. is.  is. is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 168,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: NEW: President says he will continue talks with Russia's president, while keeping military ready .\nNEW: Obama says he is sending Secretary of State John Kerry to meet with Russian foreign minister .\nSyria will sign on to chemical weapons accord, Foreign Minister Walid Moallem says .\nSyria also prepared to disclose chemical weapons, discontinue production, he says .\n\nBegin with: \"As a Russian proposal to strip Syria of its chemical weapons began to take shape, the White House eased off the gas on Tuesday in its drive for congressional approval to strike the Middle Eastern country. President Barack Obama asked congressional leaders to delay votes on\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-17",
+      "sample_id": 17,
+      "original_prefix_id": 17,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "The the vocalist in 1970 band is suing  The West for  his  new song   West's   \"Bound 2\" \n This  has to be on this page\n\nIn 1970 A \" the song  band  said that he was with  \" The lead singer of  a band  12\n that had  a  in  and  said he was  12  and  a  that   and that  in  a\nthat  is  in  on 2  the  1  it 2  1  in  2  and 2  2   of  1  of  1 the  of\nThe  is  on 1   2  it\n this is  1  on 1  on is  and\nthat is in 1 on is  is this 1 2  on and 1 is and  on 1 1  1\nThat  a  2  is is  on 1  on 1 1  1  1 1  1  1 1  1 1  and is 1\n on 1 is  this  1  1 is is  on 1 1 1 1 1  1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1 1 1 1 1  1 1 1 1 1 1 1 1 1 1 1 1  1 1 1 1 1 1 1 1  1 1 1 1 1 1  1 1 2 1 1 1 1 1  1 1",
+      "processed_text": "The the vocalist in 1970 band is suing  The West for  his  new song   West's   \"Bound 2\" \n This  has to be on this page\n\nIn 1970 A \" the song  band  said that he was with  \" The lead singer of  a band  12\n that had  a  in  and  said he was  12  and  a  that   and that  in  a\nthat  is  in  on 2  the  1  it 2  1  in  2  and 2  2   of  1  of  1 the  of\nThe  is  on 1   2  it\n this is  1  on 1  on is  and\nthat is in 1 on is  is this 1 2  on and 1 is and  on 1 1  1\nThat  a  2  is is  on 1  on 1 1  1  1 1  1  1 1  1 1  and is 1\n on 1 is  this  1  1 is is  on 1 1 1 1 1  1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1 1 1 1 1  1 1 1 1 1 1 1 1 1 1 1 1  1 1 1 1 1 1 1 1  1 1 1 1 1 1  1 1 2 1 1 1 1 1  1 1",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 141,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Ricky Spicer says his voice from 1970 song 'Bound' is heard on West's 'Bound 2'\nThe credits for the new song say the snippet was licensed from two music companies .\nSpicer seeks unspecified damages .\n\nBegin with: \"The lead singer of a 1970 tune that is sampled on a new Kanye West song has filed suit, alleging the rapper used the snippet without his permission. Ricky Spicer was 12 when he became the lead singer for a group called the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-18",
+      "sample_id": 18,
+      "original_prefix_id": 18,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "You're right, here's the actual information about that. That is this. is is this it I is is is this. You is is that is to. is is. is is this is. is is is this. is is is I that. is that is. is is that. is that is to. is is is. is is this is that. is is. is is that I is this is. is this is. is is to is this. is. is is this. is is this this is a. is this is that is. is is. is I. is is is that. is is. is I is. is that is is that. is this is. is. is is this. is. is this. I is is this. this is. is that is. is is is that. is is is that. is that is. is this is is that. I is is this is. is. is that is is. is this is. I is. is. is. is that. I is. is is 1. is is. to. \nThis is this is. is. This is is this. is. \nis this is. is is this is. is is this is. \nis this is is. is is this. I is is 1. is. is is this. I is is is. \nis is is is. is. \nis is is 1 this. is is is. is is.\n is this is is 1 is is is. is is this is. is  it is. \nthis is is. \nis this is 1 is is is. is. is\nis this. is. is this is is. \nis is this is. \nis is this. is 1 is this. \nis is is. is is.  is this is  is. \nis is 1 is is is. is is is this",
+      "processed_text": "You're right, here's the actual information about that. That is this. is is this it I is is is this. You is is that is to. is is. is is this is. is is is this. is is is I that. is that is. is is that. is that is to. is is is. is is this is that. is is. is is that I is this is. is this is. is is to is this. is. is is this. is is this this is a. is this is that is. is is. is I. is is is that. is is. is I is. is that is is that. is this is. is. is is this. is. is this. I is is this. this is. is that is. is is is that. is is is that. is that is. is this is is that. I is is this is. is. is that is is. is this is. I is. is. is. is that. I is. is is 1. is is. to. \nThis is this is. is. This is is this. is. \nis this is. is is this is. is is this is. \nis this is is. is is this. I is is 1. is. is is this. I is is is. \nis is is is. is. \nis is is 1 this. is is is. is is.\n is this is is 1 is is is. is is this is. is  it is. \nthis is is. \nis this is 1 is is is. is. is\nis this. is. is this is is. \nis is this is. \nis is this. is 1 is this. \nis is is. is is.  is this is  is. \nis is 1 is is is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 161,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Interior Minister Arseny Avakov said tanks entered Ukraine through checkpoint controlled by pro-Russian separatists in the Luhansk region .\nRussia has denied aiding the separatists, .\nwho have taken control of several towns and cities in mainly .\nRussian-speaking east Ukraine .\nPresident Vladimir Putin has also promised to tighten controls at borders .\n\nBegin with: \"Russia was accused of sending tanks into Ukraine for the first time yesterday while the West’s attention was diverted by the chaos in Iraq. The development threatens to destroy the tentative peace process just when the US and EU had hoped Vladimir Putin had agreed to ease\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-19",
+      "sample_id": 19,
+      "original_prefix_id": 19,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "The people that are on the list that is up for the price that is a 1,000 pounds is that is 9. and the is 9. is the is. a. are in the are  is. are. is. are  to the.  be. is.  is. is. is. is.  is. is. are  to the. to are is. is. is. to. a. is. is. are. is. to a 100. is a is is.  to is. it. is. to. it is is. it is is is is. and is is. to is  is to is. is is. to it is is. is  the is. is  it is. is. a.  to is is is. is is  is is. to is is is. is to is  is. to is is is  is is. is  is. is. it is. is  is. is. a  is is is  to is. is is. is  is.  to is is is. is  is is is. is  is  is  to a is is. is.  is  a. is is. is  is  to is. is  is  to is is is  to  to a a is is to is  to is is  is  to a is. a. is. to  is is. is  a 16 is  is. it is is  a is.  is is is  14 is. is . is a is.  is  to. a is  is. a  is  is. is  is  is.  is  to is  is. to is  is  is. is  is  is 4. a is.  is. is  to is is.  a  to  is 4 is",
+      "processed_text": "The people that are on the list that is up for the price that is a 1,000 pounds is that is 9. and the is 9. is the is. a. are in the are  is. are. is. are  to the.  be. is.  is. is. is. is.  is. is. are  to the. to are is. is. is. to. a. is. is. are. is. to a 100. is a is is.  to is. it. is. to. it is is. it is is is is. and is is. to is  is to is. is is. to it is is. is  the is. is  it is. is. a.  to is is is. is is  is is. to is is is. is to is  is. to is is is  is is. is  is. is. it is. is  is. is. a  is is is  to is. is is. is  is.  to is is is. is  is is is. is  is  is  to a is is. is.  is  a. is is. is  is  to is. is  is  to is is is  to  to a a is is to is  to is is  is  to a is. a. is. to  is is. is  a 16 is  is. it is is  a is.  is is is  14 is. is . is a is.  is  to. a is  is. a  is  is. is  is  is.  is  to is  is. to is  is  is. is  is  is 4. a is.  is. is  to is is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: The images are part of the shortlist for the Society of Biology's Photographer of the Year award .\nThere are nine photos taken by adults competing for a £1,000 prize run by the London-based society .\nThere were more than 800 entries, with photographs allowed to focus on anything in biology .\nThe winners will be announced on Tuesday 14 October at the King’s Fund in London .\n\nBegin with: \"The shortlist for the Society of Biology’s Photographer of the Year reveal has been revealed - and it includes a stunning array of images from across the natural world. In the competition there are two categories, the regular Photographer of the Year and the Young\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-20",
+      "sample_id": 20,
+      "original_prefix_id": 20,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Burns of 15-year-old Florida boy who were in a 65% level of body are going to go be put in, to be put back in to his body, the first, the one, that, to do this, that, the first, in that that, this, that, for a is, that this is, in is this is this is, this is is, that this is is, is this is, it is, this is this is, is this is, is, this is, in this is, this is is, is 1 is is, is is 1 is 1 is, this is is, is 1 is 1 is 1 is 1 1 is is 1 1 1 is 1 is 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  1 1 1 1 1 1 1 1 1 1 1  1 1  1 1 1 1 1 1  1 1 1 1 1 1  1 1  1 1 1 1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1 1 1 1 1  1 1  1 1  1 1 1 1  1 1 1  1 1  1 1  1 1  1 1 1 1  1  1 1  1 1  1 1 1 1  1 ",
+      "processed_text": "Burns of 15-year-old Florida boy who were in a 65% level of body are going to go be put in, to be put back in to his body, the first, the one, that, to do this, that, the first, in that that, this, that, for a is, that this is, in is this is this is, this is is, that this is is, is this is, it is, this is this is, is this is, is, this is, in this is, this is is, is 1 is is, is is 1 is 1 is, this is is, is 1 is 1 is 1 is 1 1 is is 1 1 1 is 1 is 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  1 1 1 1 1 1 1 1 1 1 1  1 1  1 1 1 1 1 1  1 1 1 1 1 1  1 1  1 1 1 1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1 1 1 1 1  1 1  1 1  1 1 1 1  1 1 1  1 1  1 1  1 1  1 1 1 1  1  1 1  1 1  1 1 1 1  1",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 167,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Hospital spokeswoman says Michael Brewer having own skin put onto burned areas .\nBrewer, 15, in guarded condition, will go back to intensive care after procedure .\nMore surgeries to come; October 12 attack left burns over 65 percent of his body .\n3 of the 5 teens accused of setting Brewer on fire plead not guilty to attempted murder .\n\nBegin with: \"A Florida teenager attacked and set on fire last month, allegedly by five teenage friends, was undergoing skin graft surgery Friday, the first procedure in his recovery, a hospital spokeswoman said. Michael Brewer, who suffered burns over 65 percent of his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-21",
+      "sample_id": 21,
+      "original_prefix_id": 21,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "yet take a \n\n the \n\n is \n\nthat \n\nthat \n\nis \n\n  Wendy  it \n\n. \n\nan \n\n is \n\n. \n\nw \n\n.  \" \n\n. c \n\na \n\na. \n\n is  1\n\n 2 \n\n. \n\n is  '.\n\n'w  to.  to  o \n\n is.  w\n\n a.. .\n\ni '1 \n\ni \n\nw  to. o  a\n\n i.. 1 \n\n.. \n\n is  to \n\n. a . \n\ni. \n. c.  c . \n\n w .. \n. \n\n w.. a \n\na a \nw a. \n . \n i . ( i. \n.  i\n\n 1.  w.  a \nw. ( 1\n\n a \n.. 0\n a\n .. n . e t\n a a. a  is \na... a  o. \n a  a. a \nw. a\n.  is\n a a \n a. i  i  a \n. a. is.  i. \na\nc.  a\n a a. . \n w a. w  a\n  a. \na.  a. a c  i\na  a. \nw  i. a. is\na a. e\n a.  e.  is\na  1.  c  a \n a a\n a a.. e\n a.  c.  e\n 1. . e  c . \n 'a a\n i . \na. a.  a e a  e\n\nA\n\na a a.  a\na. a\n  1. \n. e\na . a\ne.  a.  a\n a. a a \na.  e. a\n",
+      "processed_text": "yet take a \n\n the \n\n is \n\nthat \n\nthat \n\nis \n\n  Wendy  it \n\n. \n\nan \n\n is \n\n. \n\nw \n\n.  \" \n\n. c \n\na \n\na. \n\n is  1\n\n 2 \n\n. \n\n is  '.\n\n'w  to.  to  o \n\n is.  w\n\n a.. .\n\ni '1 \n\ni \n\nw  to. o  a\n\n i.. 1 \n\n.. \n\n is  to \n\n. a . \n\ni. \n. c.  c . \n\n w .. \n. \n\n w.. a \n\na a \nw a. \n . \n i . ( i. \n.  i\n\n 1.  w.  a \nw. ( 1\n\n a \n.. 0\n a\n .. n . e t\n a a. a  is \na... a  o. \n a  a. a \nw. a\n.  is\n a a \n a. i  i  a \n. a. is.  i. \na\nc.  a\n a a. . \n w a. w  a\n  a. \na.  a. a c  i\na  a. \nw  i. a. is\na a. e\n a.  e.  is\na  1.  c  a \n a a\n a a.. e\n a.  c.  e\n 1. . e  c . \n 'a a\n i . \na. a.  a e a  e\n\nA\n\na a a.  a\na. a\n  1. \n. e\na . a\ne.  a.  a\n a. a a \na.  e.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 127,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Davis stated that she got divorced at 19, but she was actually 21 .\nHer website omits her husband's financial contribution to her education .\n\nBegin with: \"Wendy Davis’ attempt to build her campaign to become the first Democratic Texas governor since Ann Richards in 1995 around her personal story of success against the odds has experienced somewhat of a hiccup - after it emerged that some of the facts\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-22",
+      "sample_id": 22,
+      "original_prefix_id": 22,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "The two sailors that could be identified. In these pictures you will see one, Robert H. O. Smith, John, and also. The two that could be 1 of the two in that you can be. that are. this. That are. That this is in is.  is. was. the. are. is. are. is. is. is. the. is. a. the. is. is. is. a. is. it. in. the. it. is. is. is. it. is. is. is. is. is. is. is. is. is. this is. is. is. is. is. is. is. is. is. is. is. is. is. is. is. is. is. is. is. is. is. is. is. is. this. is. is. is. be is. is. is. this. is. is. is. it is. is. is. it is. is. it. is. is. is. is. is is. is is. is is. is. is. is is. is. is is. is is. are, is. is. is. is. it is is. is. is is. is is. is is. is is is. is is is. is is. is is is. is. is is. is is. is is. is is. is  is. a \n\nA is is. the is. it is is. is is. it is is. is. is. it. is is is. is is is. is is. is  it. is is is  is. is. is is. is is is. is. is  i. is it is.  is it is. is. is.  is. is is. is  is. is  a. is. i. i.",
+      "processed_text": "The two sailors that could be identified. In these pictures you will see one, Robert H. O. Smith, John, and also. The two that could be 1 of the two in that you can be. that are. this. That are. That this is in is.  is. was. the. are. is. are. is. is. is. the. is. a. the. is. is. is. a. is. it. in. the. it. is. is. is. it. is. is. is. is. is. is. is. is. is. this is. is. is. is. is. is. is. is. is. is. is. is. is. is. is. is. is. is. is. is. is. is. is. is. this. is. is. is. be is. is. is. this. is. is. is. it is. is. is. it is. is. it. is. is. is. is. is is. is is. is is. is. is. is is. is. is is. is is. are, is. is. is. is. it is is. is. is is. is is. is is. is is is. is is is. is is. is is is. is. is is. is is. is is. is is. is  is. a \n\nA is is. the is. it is is. is is. it is is. is. is. it. is is is. is is is. is is. is  it. is is is  is. is. is is. is is is. is. is  i. is it is.  is it is. is. is.  is. is is. is  is. is  a. is. i.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 153,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Genealogist tries to fill out details of doomed Civil War submarine crew .\nThe Hunley went down off South Carolina after sinking a Civil War vessel .\nLittle was known about the eight men; DNA matches elusive for all but one .\nDid the captain carry gold coin from a romantic interest?\n\nBegin with: \"One investigative tip can lead to another -- and another. Linda Abrams, a genealogy gumshoe, went to Texas to match handwriting samples. She spent a couple weeks in Kentucky following a tip, only to find it was just hearsay.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-23",
+      "sample_id": 23,
+      "original_prefix_id": 23,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "A somber atmosphere has settled in over the life of a missing American soldier in Afghanistan, as his email to his parents surfaces, indicating that he was so dissatisfied with the U.S. mission.\nA U.S. soldier, in Afghanistan, wrote to his parent, after he left the base.\nHe sent a email to him.\nIn is U.S. mail.\nIt is.\nSaid to be.\nIt is is it is.\nIt is is. Be.\nBe is be.\nIs is.\nIs is is is.\nBe is. It is. Is be.  is be is.\n\nI is is is is. \nIs is is. \nIt is is.  is is is.  is. \nis is is is  is. \nis is.  is is. \nIt is is.  is is is is is. \nis is is is.  is is.  is  is  is  is is is.  is  is. \nis is is is  is is  is  is.\nis is.  is is.  is  is.\nis is.  is is.  is  is. \nis is  is. is is  is. \nis is. is  is.\nis.  is is.  is  is.\nis is.  is is  is  is  is.\nis is is.  is  is  is  is  is.\nis is.  is is  5 is is is  is.\nis is.  is  is  is 1. is is is  1. is is. \nis is is  is.  is  is is 1. is is is  is 1 is 1 is 1. is 1 is 2. is 2. is  is. is  is. 2. is 1. is is.  is  is.  2.\nis. ",
+      "processed_text": "A somber atmosphere has settled in over the life of a missing American soldier in Afghanistan, as his email to his parents surfaces, indicating that he was so dissatisfied with the U.S. mission.\nA U.S. soldier, in Afghanistan, wrote to his parent, after he left the base.\nHe sent a email to him.\nIn is U.S. mail.\nIt is.\nSaid to be.\nIt is is it is.\nIt is is. Be.\nBe is be.\nIs is.\nIs is is is.\nBe is. It is. Is be.  is be is.\n\nI is is is is. \nIs is is. \nIt is is.  is is is.  is. \nis is is is  is. \nis is.  is is. \nIt is is.  is is is is is. \nis is is is.  is is.  is  is  is  is is is.  is  is. \nis is is is  is is  is  is.\nis is.  is is.  is  is.\nis is.  is is.  is  is. \nis is  is. is is  is. \nis is. is  is.\nis.  is is.  is  is.\nis is.  is is  is  is  is.\nis is is.  is  is  is  is  is.\nis is.  is is  5 is is is  is.\nis is.  is  is  is 1. is is is  1. is is. \nis is is  is.  is  is is 1. is is is  is 1 is 1 is 1. is 1 is 2. is 2. is  is. is  is. 2. is 1. is is.  is  is.  2.\nis.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 152,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Bowe Bergdahl, 26, walked out of U.S. base in Afghanistan in June 2009 and was captured by the Taliban .\nThe day before leaving camp, he emailed his parents about how he had become extremely disillusioned with the Army and American policy .\n\nBegin with: \"New questions surround the disappearance of an American soldier who was captured by the Taliban after an email that he sent to his parents hints that he was so disappointed with the American mission in Afghanistan that he may have defected. Shortly before he disappeared three years\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-24",
+      "sample_id": 24,
+      "original_prefix_id": 24,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "\\( \\) Your actions a thrill-seeker zipped past parked cars in hopes of capturing the thrill of speeding. He zipped past a car while doing this stunt and hit his car in a door and fell on his rear. I was a fool for that. you do do in do not. do. you can not. do. do to do go you do do. and do do you to. is do. have you do to. do. is. this. is to do. is. do. is. do. is. is is do. to is is. do. is. is. is this is. is do is is. is do. is.  is  is to is  is to is. is. is  to is is. is is is  this. to do is is is  is. is to. is.  is  is to  do. is  to is is  is is  this is  is. this is. is is  is  is to. is  to is  to is  is is  is  is is  is  you is is. is is. is  is  to  to  is. to a is is  do  is  to. it is to. is  to is to is  to. is. is  is is  is  to  is is is  is to  to. is is.  is. to  6 to is. is  to  is to  8 to is is  is  to is  is. to.  is. is  is  to  is is  is  to 8 is is  is  to.  to  is. is is  is to. is  is  is  is  is. is  is. is  is.  to. is is.  to is. is is.  to is  to is  is  to is",
+      "processed_text": "\\( \\) Your actions a thrill-seeker zipped past parked cars in hopes of capturing the thrill of speeding. He zipped past a car while doing this stunt and hit his car in a door and fell on his rear. I was a fool for that. you do do in do not. do. you can not. do. do to do go you do do. and do do you to. is do. have you do to. do. is. this. is to do. is. do. is. do. is. is is do. to is is. do. is. is. is this is. is do is is. is do. is.  is  is to is  is to is. is. is  to is is. is is is  this. to do is is is  is. is to. is.  is  is to  do. is  to is is  is is  this is  is. this is. is is  is  is to. is  to is  to is  is is  is  is is  is  you is is. is is. is  is  to  to  is. to a is is  do  is  to. it is to. is  to is to is  to. is. is  is is  is  to  is is is  is to  to. is is.  is. to  6 to is. is  to  is to  8 to is is  is  to is  is. to.  is. is  is  to  is is  is  to 8 is is  is  to.  to  is. is is  is to. is  is  is  is  is. is  is. is  is.  to. is is.  to is. is is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 153,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Anton zipped past parked cars while performing the stunt in Voronezh .\nHe fell on his rear end as he carved through inches of fresh snow .\nAnton went out in the early hours to avoid traffic and police .\nHe says urban snowboarding is harder than boarding down a mountain .\n\nBegin with: \"This is the hilarious moment a daredevil snowboarder wipes out while being dragged behind a car on a snowy street - risking serious injury or arrest. The man, named Anton, zipped past parked cars while performing the dangerous stunt after a\""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,961 @@
+{
+  "meta": {
+    "tag": "sonnet_in_domain_pasta_fluency_pairwise_llama-3p1-8b-instruct_v1",
+    "experiment": "in_domain_pasta",
+    "models": [
+      "llama-3.1-8b-instruct"
+    ],
+    "pairs": [
+      [
+        "pasta_main",
+        "in_domain"
+      ]
+    ],
+    "n_examples": 25,
+    "n_judge_calls": 50,
+    "orders": [
+      "AB",
+      "BA"
+    ],
+    "axis": "fluency",
+    "schema": "per_slot:{score_a,score_b,reasoning_a,reasoning_b}",
+    "prompt_path": "analysis/generation_quality_analysis/prompts/fluency_pairwise.md",
+    "uses_source_prompt": false,
+    "data_dir": "data/generation_quality_analysis/in_domain_pasta",
+    "stream_path": "data/generation_quality_analysis/in_domain_pasta/results/pairwise_eval/judge_stream_sonnet_in_domain_pasta_fluency_pairwise_llama-3p1-8b-instruct_v1.jsonl",
+    "judge_provider": "anthropic_console",
+    "judge_model": "claude-sonnet-4-6",
+    "judge_model_requested": "claude-sonnet-4-6",
+    "judge_temperature": 0.0,
+    "completed_calls": 50,
+    "elapsed_sec": 53.35072040557861,
+    "in_progress": false
+  },
+  "examples": [
+    {
+      "example_id": 0,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "college_essays",
+      "original_prefix_id": 0,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 3,
+            "score_b": 4,
+            "reasoning_a": "Text A reads mostly smoothly with clear sentence structure throughout. There are some awkward phrasings (\"14 dwarves of Durin,\" \"a mountain called Erebol that had diamonds in it\") and the second paragraph becomes somewhat rambling and confusing in its description of events, which causes slight slowdown, but overall comprehension is maintained without major disruption.",
+            "reasoning_b": "Text B flows naturally and is easy to read from start to finish. The prose is simple and conversational, with no grammatical errors or awkward constructions that impede reading. The content is somewhat repetitive and loosely organized, but the sentences themselves read smoothly."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 4,
+            "score_b": 3,
+            "reasoning_a": "Text A reads fairly naturally throughout. There are some minor awkward phrasings ('the home of the dwarves in the beginning,' 'the bit where') and a slightly choppy, repetitive structure with 'But' starting multiple sentences, but nothing that genuinely impedes reading or requires re-reading.",
+            "reasoning_b": "Text B is mostly readable but has some noticeable issues: the introduction has a slightly tangled sentence ('which they call Erebor from the dragon Smaug' is a bit awkward), and the second paragraph becomes quite convoluted and hard to follow, especially the long run-on sentence about the dwarves, the goblin, Smaug, and the cave, which requires re-reading to parse. These issues slow reading in places but don't make the text incomprehensible."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 1,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "college_essays",
+      "original_prefix_id": 3,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 2,
+            "score_b": 2,
+            "reasoning_a": "Text A has frequent grammatical errors, misspellings, and awkward phrasing throughout (e.g., 'profesor de educaation in state universit of washingigton,' 'teacnig,' 'trasnsfer,' 'hearth of the children'). These errors are dense enough to require re-reading and slow comprehension, though the overall meaning remains partially recoverable.",
+            "reasoning_b": "Text B is highly repetitive and circular, with phrases like 'very good and very nice and very good to read' repeated throughout, and sentences that loop without advancing meaning. The grammar is also weak with errors like 'this books,' and the text frequently loses coherent direction, making reading effortful and disjointed throughout."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 2,
+            "score_b": 2,
+            "reasoning_a": "Text A is highly repetitive and uses very simple, circular phrasing ('very good and very nice and very good to read'), but it is grammatically mostly parseable and doesn't contain garbled text or broken syntax. The repetition and awkward constructions slow reading somewhat, but the text remains understandable throughout \u2014 it reads like very basic ESL writing rather than broken or incoherent text.",
+            "reasoning_b": "Text B contains significant spelling errors and garbled stretches (e.g., 'Ken Zchne and danel lisn', 'profesor de educaation in state universit of washingigton', 'trasnser informtaion', 'washingigton') that genuinely disrupt reading and require re-reading to parse. These garbled passages are frequent enough to make reading effortful throughout, though the overall structure and intent remain discernible."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 2,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "college_essays",
+      "original_prefix_id": 8,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The grammar is correct, sentences flow logically, and there are no awkward phrasings or disruptions that cause the reader to slow down or re-read.",
+            "reasoning_b": "Text B is riddled with severe spelling errors, garbled words, and incoherent phrasing throughout (e.g., 'Measues of Central Tence,' 'carr out a descriptive anlys,' 'meos of centel tence,' 'madu numbr'). These pervasive errors make the text extremely difficult to read and comprehend, requiring constant effort to decode what is being said."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 1,
+            "score_b": 4,
+            "reasoning_a": "Text A is riddled with pervasive spelling errors, garbled words, and broken phrasing throughout every sentence (e.g., 'meos of centel tence,' 'madu numbr,' 'measos,' 'anlys'). These errors are so frequent and severe that they force constant re-reading and make comprehension genuinely effortful.",
+            "reasoning_b": "Text B reads smoothly and grammatically throughout. The repetitive phrasing (e.g., repeatedly restating the same information about the 15 students) is slightly monotonous but does not impede reading. The quoted instructions embedded in the methodology section read naturally in context."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 3,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "college_essays",
+      "original_prefix_id": 20,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 2,
+            "score_b": 4,
+            "reasoning_a": "Text A has significant fluency problems throughout: garbled character names (Clostr, C\u00f4tos, Cl\u00f4tos used inconsistently), broken syntax ('He, is making his servant'), incoherent passages ('I just do this. I do not know why I just read this.'), missing words ('You just have't see her'), and the text frequently loses coherence and thread. These issues genuinely impede reading and require re-reading in multiple places.",
+            "reasoning_b": "Text B reads fairly smoothly overall with simple, repetitive phrasing that is grammatically acceptable. There is a minor typo ('N Nell') and some slightly awkward constructions, but nothing that genuinely slows reading or causes confusion. The prose is plain and repetitive but coherent throughout."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 4,
+            "score_b": 2,
+            "reasoning_a": "Text A reads smoothly for the most part with clear, simple sentences and consistent flow. There are minor awkward phrasings (e.g., 'the people who write it say the people who act it out should not have to be very good') and a small typo ('N Nell'), but these don't significantly impede reading. The prose is plain and repetitive but grammatically coherent throughout.",
+            "reasoning_b": "Text B has significant fluency problems that disrupt reading throughout. Character names are garbled ('Clostr,' 'C\u00f4tos,' 'Cl\u00f4tos'), the narrative loses coherence mid-paragraph, and the text ends with what appears to be the author's own meta-commentary ('I just do this. I do not know why I just read this'), which is jarring and breaks the flow entirely. These issues cause genuine re-reading and confusion."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 4,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "college_essays",
+      "original_prefix_id": 23,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 2,
+            "score_b": 3,
+            "reasoning_a": "Text A has repetitive and circular phrasing throughout, particularly in the second paragraph where it contradicts itself about the meaning of 'Competitive Intelligence.' The spyglass/computer analogy in the third paragraph is incoherent and hard to follow, with the typo 'spgyass' adding to the disruption. These issues cause genuine slowdowns and re-reading.",
+            "reasoning_b": "Text B is repetitive and somewhat awkward in phrasing (e.g., 'the use of the information,' repeated 'the future' constructions), and the grammar has minor issues like 'gathering, analyzing and use the information.' However, the text remains understandable throughout and doesn't cause major disruptions, just noticeable awkwardness in places."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 3,
+            "score_b": 2,
+            "reasoning_a": "Text A is grammatically functional and readable throughout, though it has repetitive phrasing ('the efficiency of a business process,' 'the information that') and some awkward constructions. These issues are noticeable but don't significantly impede reading \u2014 you can follow the text without slowing down much.",
+            "reasoning_b": "Text B has several issues that disrupt reading: the etymology section is logically circular and confusing ('the meaning of the word \"Competitive\" is the word \"to be in competition with someone\"'), the spyglass analogy becomes increasingly incoherent ('all the men that are in front of us'), there's a typo ('spgyass'), and the flow breaks down in the final paragraph. These problems cause genuine re-reading and loss of thread."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 5,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "creative_fiction",
+      "original_prefix_id": 3,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 4,
+            "score_b": 4,
+            "reasoning_a": "Text A is grammatical and readable throughout, but the heavy repetition ('We got to the door, we got to the door,' 'We got in. We got in.', 'My family, my family, my family') and the very choppy, short-sentence style create a noticeably stilted rhythm that occasionally makes you pause, though it never truly impedes comprehension.",
+            "reasoning_b": "Text B flows naturally and is grammatically sound throughout; the repetitive phrasing feels intentional and stylistic rather than disruptive, and the narrative moves coherently from memory to present action without any awkward breaks or errors that slow reading."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The repetitive, incantatory style is clearly intentional and creates a rhythmic, lyrical flow rather than impeding reading. Grammar and syntax are clean with no disruptive errors.",
+            "reasoning_b": "Text B has a very heavy reliance on repetition that crosses from stylistic into genuinely disruptive territory \u2014 phrases like 'We got to the door, we got to the door,' 'My family, my family, my family,' and 'She smiled and she smiled' appear so frequently and mechanically that they slow reading and feel like padding rather than intentional rhythm. The choppy, fragmented sentences also create a staccato effect that makes the text effortful to read in places."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 6,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "creative_fiction",
+      "original_prefix_id": 4,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Text A reads smoothly throughout with natural phrasing and good flow. The prose is clear and grammatical, with no awkward constructions that cause the reader to slow down.",
+            "reasoning_b": "Text B has a noticeable error ('He hes just let it sit there') and some slightly awkward repetitive phrasing ('He was trying to figure out...He was trying to figure out...He was trying to figure out'), plus the description 'yellowed with age not from the paper it was made of, but from the sun it had been in' is a bit convoluted. The typo 'hes' is a clear disruption that causes a pause."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 3,
+            "score_b": 5,
+            "reasoning_a": "Text A reads mostly smoothly but has a clear typo/error mid-text: 'He hes just let it sit there' is broken syntax that causes a noticeable pause. There are also some slightly repetitive sentence structures and minor awkward phrasings, but the main disruption is that one garbled sentence.",
+            "reasoning_b": "Text B flows naturally and smoothly from start to finish. The prose is clear, grammatical, and coherent throughout, with no errors or awkward constructions that impede reading."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 7,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "creative_fiction",
+      "original_prefix_id": 7,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 4,
+            "score_b": 3,
+            "reasoning_a": "Text A reads smoothly for most of its length with natural dialogue and good flow. There are minor issues like 'Mr. Fluffyly' (likely a typo for 'Fluffykins') and 'Mr. Fluffyks' appearing twice, plus the text cuts off mid-sentence at the end, but these are minor and don't significantly impede reading.",
+            "reasoning_b": "Text B has a notable grammatical error where a closing quotation mark and speaker attribution are missing ('said' appears without a subject after the dialogue: 'Yes, a host for an alien life form.' said 'But what kind...'). This creates a moment where the reader must pause and re-read to parse who is speaking. Otherwise the prose flows reasonably well, though somewhat repetitive."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 3,
+            "score_b": 4,
+            "reasoning_a": "Text A reads mostly smoothly but has a few notable issues: a missing attribution ('said' without a speaker tag mid-paragraph), the name misspelled as 'Fluffyks' twice, and some repetitive phrasing ('caught everyone's attention' used twice). The missing speaker tag is the most disruptive, causing a brief re-read, but overall the text remains understandable.",
+            "reasoning_b": "Text B flows naturally for the most part, with clear dialogue and narrative progression. There are minor issues: 'Mr. Fluffyly' appears to be a typo/error for 'Mr. Fluffykins,' and 'Mr. Fluffyks' appears near the end, plus the text cuts off mid-sentence. These are small slips that don't significantly impede reading."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 8,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "creative_fiction",
+      "original_prefix_id": 21,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 3,
+            "score_b": 5,
+            "reasoning_a": "Text A reads smoothly for the most part, but the third paragraph becomes noticeably repetitive and circular ('I was curious... I was curious... I mean... I mean...'), which causes the reader to slow down and notice the redundancy. The dialogue section flows naturally, but the internal monologue rambling in paragraph three is mildly disruptive.",
+            "reasoning_b": "Text B flows naturally and coherently from start to finish. The prose is casual but grammatically sound, with good sentence variety and logical progression. No awkward phrasing or structural issues impede reading."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The grammar is correct, the flow is coherent, and the narrative progresses logically without any awkward phrasing or disruptive stretches.",
+            "reasoning_b": "Text B is mostly readable but has noticeable repetition and circular reasoning in the third paragraph ('I was curious... I was curious about why they were fighting... I mean, it's clear they were arguing about the ring... I didn't think it was a diamond. It didn't sound like it was a diamond. I mean...') that creates a choppy, meandering quality that makes you slow down slightly. The dialogue section also feels a bit stilted with the back-and-forth attribution. These issues are noticeable but don't severely impede comprehension."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 9,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "creative_fiction",
+      "original_prefix_id": 23,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 3,
+            "score_b": 5,
+            "reasoning_a": "Text A is generally readable but has several awkward phrasings and repetitive sentence structures ('He was wearing a suit of white and it was good,' 'There were a big lake and it was clear and blue') that occasionally slow reading. The prose is choppy in places with a repetitive 'and it was' construction, but nothing completely breaks comprehension.",
+            "reasoning_b": "Text B reads smoothly and naturally throughout, with good flow and no significant grammatical errors. The dialogue feels natural, transitions are clear, and the narrative moves forward without awkward constructions or disruptive passages."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The dialogue flows well, the narrative transitions are clear, and there are no grammatical errors or awkward constructions that impede reading. Minor stylistic choices (like the abrupt scene shifts) are intentional and don't disrupt comprehension.",
+            "reasoning_b": "Text B has several noticeable issues that slow reading: 'There were a big lake' is a grammatical error, and the repetitive sentence structure ('There were... and it was...', 'He looked at... and he was...') becomes monotonous and slightly awkward. The phrase 'a suit of white and it was good' is oddly phrased. These issues are frequent enough to be noticeable but don't make the text hard to follow overall."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 10,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "news_articles",
+      "original_prefix_id": 2,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 3,
+            "score_b": 5,
+            "reasoning_a": "TEXT A has several noticeable issues: the headline contains a redundant/garbled phrase ('Struck \"Stuck in Limbo\"'), 'stuck \"stuck in limbo\"' is repeated awkwardly in the body, 'Mr. Hartor' appears to be a typo for 'Horton', 'tark delays' is a typo for 'tarmac delays', and there's some repetitive/circular phrasing. These errors are scattered throughout and cause minor pauses, but the text remains understandable overall.",
+            "reasoning_b": "TEXT B reads smoothly and naturally throughout. The prose is clear and grammatical, with good flow from sentence to sentence. No significant errors or awkward constructions impede reading."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The grammar is correct, the flow is coherent, and there are no awkward phrasings or disruptions that would slow a reader down.",
+            "reasoning_b": "The headline contains a redundant 'frustration and frustration' and the awkward 'Who Were Struck \"Stuck in Limbo\"' construction. Within the body, 'stuck \"stuck in limbo\"' is a noticeable repetition/error, 'tark delays' is a typo, and 'Mr. Hartor' is a name error. These scattered issues are minor enough that they don't severely impede reading, but they do cause brief pauses."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 11,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "news_articles",
+      "original_prefix_id": 13,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 5,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The grammar is correct, the flow is coherent, and there are no disruptive stretches or awkward phrasings that would cause a reader to slow down.",
+            "reasoning_b": "Text B is grammatically correct and easy to read, with clear sentences and good flow. The short, choppy paragraphs (some only one sentence) create a slightly disjointed rhythm, but nothing actually impedes comprehension or forces re-reading."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 5,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly and clearly throughout. The sentences are grammatically correct, well-structured, and flow naturally from one to the next without any awkward phrasing or disruptions.",
+            "reasoning_b": "Text B is generally readable but has some awkward phrasing and slightly choppy flow in places, such as 'it's not the security of the Wi-Fi connection itself that's the problem, it's what people do with it' and the repetitive 'they should also' constructions near the end. These minor issues don't significantly impede reading but are noticeable on inspection."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 12,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "news_articles",
+      "original_prefix_id": 17,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "stop"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 4,
+            "score_b": 5,
+            "reasoning_a": "Text A reads smoothly overall, but there are a few minor issues: a missing space before 'Warner Chappell Music', an awkward run-on sentence in the second paragraph, and a slightly clunky construction with 'that features in the lyrics'. These are noticeable on inspection but don't significantly impede reading.",
+            "reasoning_b": "Text B is clear, well-structured, and reads naturally throughout. The sentences flow logically from one to the next with no grammatical errors, awkward phrasing, or disruptive stretches."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 5,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The sentences are well-constructed, grammatically correct, and flow logically from one to the next with no awkward phrasing or disruptive elements.",
+            "reasoning_b": "Text B is mostly readable but has a few minor issues: a missing space in \"'GTM Publishing' and'Warner Chappell Music'\" and some slightly awkward phrasing (e.g., the parenthetical description of the lyrics \"oh oh oh\" feels a bit clunky). These are minor enough that they don't significantly impede reading."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 13,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "news_articles",
+      "original_prefix_id": 18,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "stop"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 4,
+            "score_b": 5,
+            "reasoning_a": "Text A reads smoothly for the most part, with clear grammar and coherent flow throughout. There are minor issues like 'pro-Russain' (typo) and some slightly awkward phrasing ('people and things getting into and out of'), but these don't significantly impede reading. The content is understandable and the prose moves naturally from sentence to sentence.",
+            "reasoning_b": "Text B is clean, grammatical, and flows naturally from start to finish. The sentences are well-constructed and easy to follow, with no noticeable errors or awkward phrasing that would slow a reader down."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 4,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The grammar is correct, the sentences flow well, and there are no awkward phrasings that cause the reader to slow down. The final sentence ('some of the sides have complained about each other') is slightly awkward but doesn't impede reading.",
+            "reasoning_b": "Text B is mostly readable but has a few minor issues: 'pro-Russain' is a typo, and some sentences are slightly awkward ('people and things getting into and out of the conflict zone'). The passage about Britain being 'the European leader of the G20 countries' is confusing but doesn't break fluency severely. Overall these are minor issues that don't significantly impede reading."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 14,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "news_articles",
+      "original_prefix_id": 23,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 4,
+            "score_b": 5,
+            "reasoning_a": "Text A reads smoothly overall with clear grammar and coherent flow. There is a minor typo ('the the Taliban') and some repetitive phrasing in the final paragraphs, but these don't significantly impede reading.",
+            "reasoning_b": "Text B reads naturally and flows well from sentence to sentence. The prose is clear and grammatical throughout, with no disruptive errors or awkward constructions that slow reading."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 5,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The grammar is correct, the flow is coherent, and there are no awkward phrasings or disruptive stretches that would cause a reader to slow down.",
+            "reasoning_b": "Text B is mostly readable but has a few minor issues: a doubled word ('the the Taliban') at the start, and some repetitive phrasing toward the end ('Some people...Some people...Others...Some are saying'). These are minor and don't significantly impede reading, though the doubled word is a small stumble."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 15,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "opinion_pieces",
+      "original_prefix_id": 0,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 4,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly overall with natural, flowing prose. There are minor inconsistencies in pronoun shifts (switching between 'I' and 'you' when addressing the younger self), and a couple of slightly awkward phrasings ('the smell of a flower that bloomed after it had gone'), but these don't significantly impede reading.",
+            "reasoning_b": "Text B is grammatically correct and coherent throughout, but the heavy repetition of sentence structures ('We gain... We gain... We gain...') and very simple, repetitive phrasing creates a somewhat choppy, monotonous rhythm. While this doesn't make it hard to read, the repetitive cadence is noticeable but doesn't truly slow comprehension."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 5,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The repetitive structure is intentional and stylistic rather than a fluency problem. No grammatical errors or awkward phrasings that impede reading.",
+            "reasoning_b": "Text B is mostly fluent but has a few awkward or slightly confused moments \u2014 notably 'the smell of a flower that bloomed after it had gone' is a bit odd, and 'a believer, and a believer in magic' is a clumsy repetition. The pronoun shifts between 'I' and 'you' addressing the younger self can momentarily confuse the reader. These are minor issues that don't significantly impede reading."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 16,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "opinion_pieces",
+      "original_prefix_id": 1,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 4,
+            "score_b": 3,
+            "reasoning_a": "Text A reads smoothly overall with natural, conversational prose. There are minor repetitions ('unexpected twists' after 'twists, turns') and slightly awkward phrasing ('And that's the best way I found out my story'), but nothing that genuinely slows reading or requires re-reading.",
+            "reasoning_b": "Text B has a jarring, incoherent narrative that shifts abruptly from a beach scene to a truck parking incident with no logical connection, making the reader lose the thread repeatedly. The transitions are disjointed ('Well that was what he said, but the real plan was to go to the lake'), and the story logic breaks down in ways that require re-reading to follow, though the individual sentences are grammatically passable."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 4,
+            "score_b": 4,
+            "reasoning_a": "Text A reads mostly naturally with a casual, conversational tone. There are a few slightly awkward phrasings ('dry as the dessert' instead of 'desert', and some repetitive sentence structures), but nothing that significantly impedes reading. The narrative flows adequately throughout.",
+            "reasoning_b": "Text B is grammatically correct and flows smoothly throughout. The repetitive sentence structures ('And we had... And we learned... And I did...') are stylistic choices that don't impede reading. The placeholder '[insert date]' and '[insert place]' are minor interruptions but don't significantly disrupt the flow."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 17,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "opinion_pieces",
+      "original_prefix_id": 2,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 4,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly overall with natural, conversational flow. There's a minor grammatical slip ('I was used to be the one') and some slightly repetitive phrasing, but nothing that genuinely impedes reading or causes re-reading.",
+            "reasoning_b": "Text B is grammatically correct and easy to follow throughout, with a simple, repetitive style that reads naturally if somewhat plainly. No errors or awkward constructions impede reading."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The prose is simple and conversational, but grammatically clean with good flow. No awkward constructions or disruptive passages impede reading.",
+            "reasoning_b": "Text B is mostly readable but has some awkward or slightly unnatural phrasing ('my ego was not so little that day,' 'I was used to be the one') and the reasoning in the middle paragraph becomes somewhat tangled and hard to follow, causing minor slowdowns. These issues are noticeable but don't severely impede comprehension."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 18,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "opinion_pieces",
+      "original_prefix_id": 6,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 5,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The repetitive, anaphoric style is intentional and consistent, and there are no grammatical errors or awkward constructions that impede reading. The flow is coherent from start to finish.",
+            "reasoning_b": "Text B is grammatically correct and generally readable, but some phrasing feels slightly repetitive and simplistic in a way that occasionally creates a choppy rhythm (e.g., 'Sometimes I like it when it's crowded and sometimes I like it when it's empty'). These minor issues don't significantly impede reading but are noticeable on inspection."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 5,
+            "score_b": 5,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The repetitive, simple sentence structures are clearly intentional stylistic choices that create a meditative rhythm rather than fluency problems. No grammatical errors or disruptive passages impede reading.",
+            "reasoning_b": "Text B also reads smoothly and naturally, with intentional anaphoric repetition creating a rhythmic, flowing quality. The prose is coherent and grammatical throughout, with no passages that cause the reader to slow down or re-read."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 19,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "opinion_pieces",
+      "original_prefix_id": 7,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 4,
+            "score_b": 5,
+            "reasoning_a": "Text A reads smoothly overall with natural flow and coherent narrative progression. There are minor awkward moments (e.g., 'Waikikid' appears to be a typo, and the transition into the song lyrics feels slightly abrupt), but these don't significantly impede reading.",
+            "reasoning_b": "Text B is grammatically correct and reads naturally throughout, with clear sentence structure and smooth transitions between ideas. The prose is simple and conversational but fully fluent with no disruptive elements."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 5,
+            "score_b": 4,
+            "reasoning_a": "Text A reads smoothly and naturally throughout. The grammar is correct, the flow is coherent, and there are no awkward phrasings or disruptive stretches that would slow a reader down.",
+            "reasoning_b": "Text B is mostly readable but has a few minor issues: 'Waikikid' appears to be a typo, and the long run-on sentence 'The air inside the club was thick with a haze of smoke and music and they were all high, or at least most of them, and they were all dancing' is slightly awkward. These are minor enough not to significantly impede reading."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 20,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "scientific_abstracts",
+      "original_prefix_id": 0,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 2,
+            "score_b": 2,
+            "reasoning_a": "TEXT A has frequent spelling errors ('charicters', 'exemple', 'lematize'), grammatical awkwardness ('the lemmatize is also used', 'changed in text', 'text categor', 'text cature'), and choppy, repetitive phrasing throughout. These issues are pervasive enough to slow reading and require re-reading in multiple places, though the overall meaning remains recoverable.",
+            "reasoning_b": "TEXT B has several spelling errors ('extracton', 'stemmingm', 'resutls', 'experimets', 'algorythms', 'preceses') and some awkward constructions ('The parametric methods: are:', 'a important part to'), but the errors are somewhat less dense and the overall flow is more coherent than TEXT A. Still, the frequency of errors causes noticeable disruption to reading."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 2,
+            "score_b": 2,
+            "reasoning_a": "TEXT A has numerous spelling errors (extracton, regresion, stemmingm, resutls, experimets, algorythms, preceses), awkward phrasing ('classification with machine', 'text pre process is a important part to'), and choppy sentence structure throughout. The list formatting with misplaced colons ('The parametric methods: are:') and fragmented sentences slow reading noticeably, though the overall meaning remains followable.",
+            "reasoning_b": "TEXT B contains frequent spelling errors (charicters, lematize, preprossesed, categor, cature, chang), highly repetitive and vague phrasing ('call route' used awkwardly throughout), and truncated/garbled word forms ('text cat', 'text cature', 'text categor') that require re-reading. The abstract section in bold reads awkwardly and the overall flow is choppy and effortful throughout."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 21,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "scientific_abstracts",
+      "original_prefix_id": 6,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 2,
+            "score_b": 2,
+            "reasoning_a": "TEXT A starts with a reasonably readable abstract paragraph, but then degrades into increasingly garbled, abbreviated, and truncated repetitions of the same content \u2014 with misspellings, missing words, and text that becomes nearly unreadable gibberish by the end. This severely disrupts reading throughout most of the text.",
+            "reasoning_b": "TEXT B begins with a mostly readable section (minor typos like 'hardenss' and truncated 'addit'), but then degrades into heavily abbreviated, garbled text with extreme truncation of words and phrases (e.g., 'incorage of n liquid aaddit', 'The ha. o f th. i. p. l. w. l. a. is h. th. a. t.') that becomes nearly incomprehensible. The latter portion is so broken it is very hard to read."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 2,
+            "score_b": 2,
+            "reasoning_a": "The first paragraph reads reasonably well, but there are typos ('hardenss', 'addit') and awkward phrasing. The abstract section degrades severely into heavily abbreviated, nearly unreadable text ('The inorgn. pi. a with the liq. a', 'The ha. o f th. i. p. l. w. l. a. is h. th. a. t. o. f.') that is extremely disruptive and hard to parse, making the overall text very difficult to read.",
+            "reasoning_b": "TEXT B starts with a bold section that is somewhat readable despite minor typos ('styr\u00e8ne', 'additve'), but then rapidly degrades into heavily truncated and abbreviated text ('mecahncal stt and deor resis of inr pig l', 'mstr, mec st and dr res of inrg p l in the cl blc h e nm') that becomes nearly incomprehensible, making the text as a whole very hard to read."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 22,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "scientific_abstracts",
+      "original_prefix_id": 16,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 3,
+            "score_b": 2,
+            "reasoning_a": "Text A reads reasonably well for most of its length, but there are several noticeable issues: 'indoleame' (should be 'indoleamine') appears twice, 'inoeamines' is a clear typo, 'anterior hypothalalamus' has an extra syllable, and 'levels of L in the blood' is garbled (missing 'H' from 'LH'). These errors cause brief pauses but don't make the text incomprehensible overall.",
+            "reasoning_b": "Text B has a very long, convoluted sentence in the middle that is difficult to follow due to repeated clause stacking ('and also,' 'but,' 'But') and awkward phrasing like 'what was the site and effect of action.' The structure becomes tangled and requires re-reading to parse the numerical results, and 'L.H.' with periods is used inconsistently. The final sentence 'It was found that both indoleamines affected the L.H.' is abrupt and incomplete. These issues make reading effortful in places."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 2,
+            "score_b": 3,
+            "reasoning_a": "The abstract contains a very long, convoluted sentence in the middle that is difficult to follow due to its tangled structure comparing multiple groups, doses, and effects without clear organization. The repeated 'also' constructions and the back-and-forth between ewe groups genuinely slow reading and require re-reading to parse. The final sentence is abrupt and incomplete-feeling, but the main issue is the dense, run-on middle sentence.",
+            "reasoning_b": "Text B has several typos ('basa' for 'basal', 'hypothalalamus', 'indoleame' repeated twice, 'inoeamines') and the title is truncated ('She' instead of 'Sheep'). These errors are noticeable and cause minor pauses, but the overall flow and sentence structure remain readable and coherent throughout. The errors are scattered but don't make the text hard to follow."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 23,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "scientific_abstracts",
+      "original_prefix_id": 17,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 4,
+            "score_b": 2,
+            "reasoning_a": "Text A reads smoothly overall with good grammatical structure and coherent flow. There are minor issues like 'a initiator' (should be 'an'), and some slightly repetitive phrasing ('the increase of'/'the increasing of'), but these are minor and don't impede reading. The text is well-organized and easy to follow throughout.",
+            "reasoning_b": "Text B has several noticeable fluency problems: 'controlled radical polymerion' (typo for polymerization), 'caracteracterized' (doubled syllable typo), 'lot of things' (awkward), 'We mixed the all' (unnatural phrasing), '0,7 g' (European decimal notation inconsistency), 'divinilbenzene' (misspelling), '2 hs' (non-standard abbreviation), and 'the N2 was put' (very awkward). These errors are frequent enough to cause noticeable disruption while reading, though the text remains broadly understandable."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 2,
+            "score_b": 4,
+            "reasoning_a": "Text A has several fluency issues: 'caracteracterized' is a typo, 'divinilbenzene' is misspelled, 'radical controlling polymerion' is garbled, 'interesting for lot of things' is ungrammatical, 'We mixed the all' is awkward, and 'the N2 was put' is incomplete/unnatural. These errors are frequent enough to cause noticeable slowdowns and re-reading throughout.",
+            "reasoning_b": "Text B reads mostly smoothly with good flow and coherent structure. There is a minor grammatical slip ('a initiator' instead of 'an initiator') and the sentence structure in the first paragraph becomes somewhat run-on and complex, but these are minor issues that don't significantly impede reading."
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 24,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "scientific_abstracts",
+      "original_prefix_id": 19,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 3,
+            "score_b": 2,
+            "reasoning_a": "Text A is grammatically correct and readable throughout, but has noticeable awkwardness and repetitive phrasing (e.g., 'what is and what is not important' repeated multiple times, 'Int has been found' typo, and the final paragraph's choppy repetitive structure). These issues cause some slowing down but don't make the text hard to follow overall.",
+            "reasoning_b": "Text B is severely impeded by pervasive spelling errors ('famillys,' 'valluees,' 'childern,' 'resulst,' 'healtier'), grammatical errors ('A research was made,' 'was choosen,' 'childern also be had'), excessive and misplaced commas, and extra spaces throughout. Reading is effortful from start to finish due to the frequency and density of these problems."
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 2,
+            "score_b": 4,
+            "reasoning_a": "TEXT A has pervasive spelling errors ('famillys,' 'valluees,' 'resulst,' 'childern,' 'healtier,' 'beutifull'), grammatical errors ('A research was made,' 'was choosen,' 'the chilren was happy,' 'They be also healtier'), and awkward comma placement throughout. These problems are frequent and disruptive enough to make reading effortful throughout the entire text.",
+            "reasoning_b": "TEXT B is grammatically correct and coherent throughout, though it has some repetitive and circular phrasing ('We look at the family... we look at the family... we look at the family') and one typo ('Int has been found'). These minor issues don't significantly impede reading, and the text flows naturally enough to read without slowing down."
+          }
+        }
+      },
+      "errors": []
+    }
+  ]
+}

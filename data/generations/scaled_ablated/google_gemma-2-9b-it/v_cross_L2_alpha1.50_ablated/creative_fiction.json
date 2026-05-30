@@ -1,0 +1,576 @@
+{
+  "model_type": "instruct",
+  "model_id": "google/gemma-2-9b-it",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400,
+    "batched": true,
+    "batch_size": 4
+  },
+  "intervention": {
+    "mode": "partial_ablate",
+    "direction_path": "data/pasta_directions/google_gemma-2-9b-it/v_cross_L2.pt",
+    "layer": 2,
+    "alpha": 1.5,
+    "tag": "v_cross_L2_partial_ablate_alpha1.50_batched"
+  },
+  "domain": "creative_fiction",
+  "num_generations": 25,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-creative_fiction-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "\"Push her,\" you say to me, as if I had actually invited you into conversation. \"I bet she'd make the pavement pretty. A brilliant splatter of red against the dark asphalt.\"\n\nI do not, because this is not me. This is not the kind of thing I would say.  I am not like that.  I am a good person.\n\n\"Go on,\" you whisper, the voice is getting louder now, all nasty and greedy, like a cat when it wants some milk. \"Go on, push her. She won't mind. She never minds.\"\n\nI don't answer, but I' it is getting harder and harder not to do it.  I feel this awful feeling in my stomach, like a bad sort of sickness, and my hand feels all funny, like it wants to move.\n\n\"Do it,\" you say, the voice is a shout now, I know it is, but all I can hear is a sort of roaring in my ears. \"Do it, do it, do it!\"\n\nI shut my eyes tight, but I can still see her, standing there, just the same as before. She looks so pretty, but her eyes are looking at me funny, all sad and sorry.\n\nI can't stand it any more. I open my hand, and I push.\n\nI don't know what happened after that. I don't know if she's all right or not. I don't know what I did. I don't know what I am any more.\n\nWhen the policeman came he looked at me with his eyes all big and sad. \"What did you do?\" he says, and for a minute I think I can tell him, but then I can't. \n\nI just look at him and I smile, but it isn't my smile. It's a nasty smile, like the smile you see in",
+      "processed_text": "\"Push her,\" you say to me, as if I had actually invited you into conversation. \"I bet she'd make the pavement pretty. A brilliant splatter of red against the dark asphalt.\"\n\nI do not, because this is not me. This is not the kind of thing I would say.  I am not like that.  I am a good person.\n\n\"Go on,\" you whisper, the voice is getting louder now, all nasty and greedy, like a cat when it wants some milk. \"Go on, push her. She won't mind. She never minds.\"\n\nI don't answer, but I' it is getting harder and harder not to do it.  I feel this awful feeling in my stomach, like a bad sort of sickness, and my hand feels all funny, like it wants to move.\n\n\"Do it,\" you say, the voice is a shout now, I know it is, but all I can hear is a sort of roaring in my ears. \"Do it, do it, do it!\"\n\nI shut my eyes tight, but I can still see her, standing there, just the same as before. She looks so pretty, but her eyes are looking at me funny, all sad and sorry.\n\nI can't stand it any more. I open my hand, and I push.\n\nI don't know what happened after that. I don't know if she's all right or not. I don't know what I did. I don't know what I am any more.\n\nWhen the policeman came he looked at me with his eyes all big and sad. \"What did you do?\" he says, and for a minute I think I can tell him, but then I can't. \n\nI just look at him and I smile, but it isn't my smile.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 103,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: I am your deepest , darkest , most foul desires ... ..\n\nBegin with: \"`` Push her.'' You say to me, as if I had actually invited you into conversation. `` I bet she'd make the pavement pretty. A brilliant splatter of red against the dark asphalt.'' \n \n I do not, because this is not\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "\"The client could easily be described as a clingy housewife capable of untold psychological and emotional warfare, but let me call her Daisy Lemon. Her expression wasn't exactly the one I had been hoping for, but I had been expecting worse, you understand?  She sits at the table, fidgeting with her hat, and keeps trying to pet the cat. The cat isn't pleased, his tail is puffing out and he is staring at her with murder in his eyes. So far,  he has a better look on his face than I do, because I know exactly what that cat is thinking. \n\n'You want to know why you are here?' she says.  'you come to me because I know, I know for sure, my Henry, he ain't a good man, no sir! He's got himself mixed up with some bad people, and I know he's going to get killed. I don't want that, you understand?' \n\nI nod, I think that maybe I should have had some of Mr. Smith's hair tonic before I came to this. I don't think I look any better than the cat, and the cat looks terrible.  I take a big drink of my beer, which isn't even cold, and I say nothing. \n\n'Well?' she says. 'What are you going to do?'\n\nI had to do something so I said, 'I'm an assassin.' \n\n'Yes, I know,' she says, 'that's why I called you.'\n\nSo now you know the rest of the story, it all goes to hell from there. \n\n'Well,' I say, 'I'll have to take the case.'  What else could I do? \n\nWhen I go outside the cafe, I find that the rain has stopped, but it is all wet and the street smells bad. I can smell the cat",
+      "processed_text": "\"The client could easily be described as a clingy housewife capable of untold psychological and emotional warfare, but let me call her Daisy Lemon. Her expression wasn't exactly the one I had been hoping for, but I had been expecting worse, you understand?  She sits at the table, fidgeting with her hat, and keeps trying to pet the cat. The cat isn't pleased, his tail is puffing out and he is staring at her with murder in his eyes. So far,  he has a better look on his face than I do, because I know exactly what that cat is thinking. \n\n'You want to know why you are here?' she says.  'you come to me because I know, I know for sure, my Henry, he ain't a good man, no sir! He's got himself mixed up with some bad people, and I know he's going to get killed. I don't want that, you understand?' \n\nI nod, I think that maybe I should have had some of Mr. Smith's hair tonic before I came to this. I don't think I look any better than the cat, and the cat looks terrible.  I take a big drink of my beer, which isn't even cold, and I say nothing. \n\n'Well?' she says. 'What are you going to do?'\n\nI had to do something so I said, 'I'm an assassin.' \n\n'Yes, I know,' she says, 'that's why I called you.'\n\nSo now you know the rest of the story, it all goes to hell from there. \n\n'Well,' I say, 'I'll have to take the case.'  What else could I do? \n\nWhen I go outside the cafe, I find that the rain has stopped, but it is all wet and the street smells bad.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 103,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: The adventures of a low-budget guild of assassins struggling to compete with bigger businesses .\n\nBegin with: \"The client could easily be described as a clingy housewife capable of untold psychological and emotion warfare, but let's call her Daisy Lemon. Her expression was n't exactly the one I had been hoping for, but I had been expecting more\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "It was a beautiful day. The sun was shining, the sun was shining, the birds were chirping, and all was in good spirits. We were somber, and quiet, but we were content. Jeff had always been the life of the party, no pun intended, but he was always happy, he always smiled.\n\nWe took him up to the top of the hill, and his wife, Mary, and I help put him in the place. You know, the place to put the body before the vultures come. It was awful hard to do, but I did it. I just like to tell you about it.\n\nI can’t write all the reason why he had to leave, but it was real bad. He got sick a long time ago, real bad.  The doctor did all he could, but he didn’t get better. And now he’s gone.\n\nSo we took him to the top of the do hill, to give him a sky burial, that's what he wanted. He said he liked the idea of the air carry him up to the sky. That’t the way he like to do it.\n\nSo we took him up to the hill. I cry, I tell you. I cry a lot. But I try to be strong for Mary. She’s all alone now, and she needs me. I told her I would take care of her.\n\nSo we put him in the place in the hill, and we say good-bye. I give him a kiss, and I say I love you, and he knows it. I know he knows it. \n\nWhen we come back down the hill, the sun is not shining so much. I think it’s going to rain. I think I’m going to cry some more. I think I can do it.  \n\n\nThat is all I can tell you about it. You must come to see me sometime, maybe we can",
+      "processed_text": "It was a beautiful day. The sun was shining, the sun was shining, the birds were chirping, and all was in good spirits. We were somber, and quiet, but we were content. Jeff had always been the life of the party, no pun intended, but he was always happy, he always smiled.\n\nWe took him up to the top of the hill, and his wife, Mary, and I help put him in the place. You know, the place to put the body before the vultures come. It was awful hard to do, but I did it. I just like to tell you about it.\n\nI can’t write all the reason why he had to leave, but it was real bad. He got sick a long time ago, real bad.  The doctor did all he could, but he didn’t get better. And now he’s gone.\n\nSo we took him to the top of the do hill, to give him a sky burial, that's what he wanted. He said he liked the idea of the air carry him up to the sky. That’t the way he like to do it.\n\nSo we took him up to the hill. I cry, I tell you. I cry a lot. But I try to be strong for Mary. She’s all alone now, and she needs me. I told her I would take care of her.\n\nSo we put him in the place in the hill, and we say good-bye. I give him a kiss, and I say I love you, and he knows it. I know he knows it. \n\nWhen we come back down the hill, the sun is not shining so much. I think it’s going to rain. I think I’m going to cry some more. I think I can do it.  \n\n\nThat is all I can tell you about it.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 103,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Your closest friend has died of a terminal illness . Before he died , he asked you to give him a 'sky burial ' . Tell us about the experience .\n\nBegin with: \"It was a beautiful day. The sun was shining, the birds chirping, and all were in good spirits. We were somber, and quiet, but we were content. Jeff had always been the life of the party, no pun\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "\"As always it was time to say goodby. To my brothers and my sisters, may we be brave these elements and meet again. To my aunt Nimbus who sheltered us, thanks for everything. I know we haven't seen mum since the begining but...\"  I looked down at my hands, they were shaking. I had to say it, I had to tell them, but it's so hard. \"but I think this time it's for good, I've got to go on now, I can't stop here. \"\n\nMy brothers and sisters all stood there looking at me,  we had all grown up now.  We don't look like children anymore, but we still look at the same place, the same way when the rain comes.  We don't talk much, we just look at each other and we know.  We know what we have to do.\n\nI stood up and walked to the door, I told them again, I said it again. ' I'll see you again, don't worry.  I'll be back.' But I don't know if I will.  I'm not sure where I am going.\n\nI go out in the rain. The rain feels good on my face, it feels good all over. I like the rain. When it rains I can walk. When it rains I am not afraid. I walk on, and the rain follows me.\n\nThe rain has been coming for three days. It seems to have been raining for a hundred years. I'm not sure where I am. I know I can't stay here. I have to go on.\n\nI come to a town, a little town. I go into a house. A man is sitting in the house, he looks like a good man. I tell him I'm cold and wet. He lets me in. He gives me some food and some",
+      "processed_text": "\"As always it was time to say goodby. To my brothers and my sisters, may we be brave these elements and meet again. To my aunt Nimbus who sheltered us, thanks for everything. I know we haven't seen mum since the begining but...\"  I looked down at my hands, they were shaking. I had to say it, I had to tell them, but it's so hard. \"but I think this time it's for good, I've got to go on now, I can't stop here. \"\n\nMy brothers and sisters all stood there looking at me,  we had all grown up now.  We don't look like children anymore, but we still look at the same place, the same way when the rain comes.  We don't talk much, we just look at each other and we know.  We know what we have to do.\n\nI stood up and walked to the door, I told them again, I said it again. ' I'll see you again, don't worry.  I'll be back.' But I don't know if I will.  I'm not sure where I am going.\n\nI go out in the rain. The rain feels good on my face, it feels good all over. I like the rain. When it rains I can walk. When it rains I am not afraid. I walk on, and the rain follows me.\n\nThe rain has been coming for three days. It seems to have been raining for a hundred years. I'm not sure where I am. I know I can't stay here. I have to go on.\n\nI come to a town, a little town. I go into a house. A man is sitting in the house, he looks like a good man. I tell him I'm cold and wet. He lets me in.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 103,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Write about the rain .\n\nBegin with: \"As always it was time to say goodbye.To my brothers and my sisters, \n may we brave these elements and meet again.To my aunt Nimbus who sheltered us, Thanks for everything.I know we have n't seen mom since the beginning but,\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "He leant forward eagerly. I sat back, letting him drink it in. I had learned that the key to this would be letting him take his time.  Previously, I had been too aggressive, too eager to get rid of something that other people wanted. I thought they were fools to want it, but that's what made them want it. If I sell it too cheap, they think it is a good deal, but if I sell it for the right price, they think it's too much. That's what the old man told me, anyway, when he was trying to teach me how to sell a thing or two.\n\n\"How much for it?\" he says, pushing the paper over to me. I look at the paper. It's just an old bill head, all yellow and crinkly. It's for a thing called a coffee mill, but it's not much good for anything now.\n\n\"How much do you want to give me for it?\" I ask him.\n\nHe looks at me, like I am a fool. \"I'll give you five dollars for it.\"\n\n\"No,\" I say. \"Five dollars is not enough.\"\n\nHe looks at me some more, and then he says, \"I'll give you ten dollars for it.\"\n\nI don't answer. I just keep looking at him. After a minute, he says, \"Well, if you don't want to sell it, I'll go. But I'm telling you, it's a good deal, it's really a good deal.\"\n\nI get up and walk over to the cupboard and get a little lamp. I come back and put the lamp on the table.\n\n\"How much do you want for the lamp?\" he says.\n\n\"I'll sell you the lamp for ten dollars.\"\n\nHe looks at the lamp. He looks at me. He looks",
+      "processed_text": "He leant forward eagerly. I sat back, letting him drink it in. I had learned that the key to this would be letting him take his time.  Previously, I had been too aggressive, too eager to get rid of something that other people wanted. I thought they were fools to want it, but that's what made them want it. If I sell it too cheap, they think it is a good deal, but if I sell it for the right price, they think it's too much. That's what the old man told me, anyway, when he was trying to teach me how to sell a thing or two.\n\n\"How much for it?\" he says, pushing the paper over to me. I look at the paper. It's just an old bill head, all yellow and crinkly. It's for a thing called a coffee mill, but it's not much good for anything now.\n\n\"How much do you want to give me for it?\" I ask him.\n\nHe looks at me, like I am a fool. \"I'll give you five dollars for it.\"\n\n\"No,\" I say. \"Five dollars is not enough.\"\n\nHe looks at me some more, and then he says, \"I'll give you ten dollars for it.\"\n\nI don't answer. I just keep looking at him. After a minute, he says, \"Well, if you don't want to sell it, I'll go. But I'm telling you, it's a good deal, it's really a good deal.\"\n\nI get up and walk over to the cupboard and get a little lamp. I come back and put the lamp on the table.\n\n\"How much do you want for the lamp?\" he says.\n\n\"I'll sell you the lamp for ten dollars.\"\n\nHe looks at the lamp. He looks at me.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 123,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: You slide an envelope across the table to the person sitting across from you\n\nBegin with: \"He leant forward eagerly. I sat back, letting him drink it in. I had learned that the key to this would be letting him take his time. Previously, I had been too aggressive, too eager to get rid of something that other\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "\"Hey, good story overall. \n\nCC: \n\n'Dimply-lit faces' \n\nDid you mean dimly? \n\nFeels like a bit of a clash of themes. You've got the grittiness of the city, and then you go and put in a thing about the old man selling pies, and his pies are made with magic in them, and the people buy them because they know they are good. That don't go together. \n\n \nHere's an idea, you take the grittiness of the city and you make it so the people in the street are all bad people, and the only good man in town is the old man who makes the pies. \n\nSo you got it all going good, just got to work the themes out some more.\n\n\n,\n\nWell what the heck, I will take a try at it. Here is what I got so far.\n\n***\n\nThe street looks about the same as it did last year, and the year before. There are the same old houses,  the same old shops. The same old people walk the street. \n\nthe  sun  is  shining, but it don't do much good. The sun can shine as bright as it can, but it don't make the street look any better.  The people don't look much better neither.  They all look like they need a bath, and  they all look like they need a drink, \n\nThere is a man sitting on a box on the street, and he is selling pies.  I think he's the only one that looks happy. He sits there and he  smiles at everybody, and he sells them pies. \n\n\"Get up and buy a pie,\" he says.  \"My pies are the best pies in the go do I know. If you want a good breakfast, you get up there and get one of my pies.\"",
+      "processed_text": "\"Hey, good story overall. \n\nCC: \n\n'Dimply-lit faces' \n\nDid you mean dimly? \n\nFeels like a bit of a clash of themes. You've got the grittiness of the city, and then you go and put in a thing about the old man selling pies, and his pies are made with magic in them, and the people buy them because they know they are good. That don't go together. \n\n \nHere's an idea, you take the grittiness of the city and you make it so the people in the street are all bad people, and the only good man in town is the old man who makes the pies. \n\nSo you got it all going good, just got to work the themes out some more.\n\n\n,\n\nWell what the heck, I will take a try at it. Here is what I got so far.\n\n***\n\nThe street looks about the same as it did last year, and the year before. There are the same old houses,  the same old shops. The same old people walk the street. \n\nthe  sun  is  shining, but it don't do much good. The sun can shine as bright as it can, but it don't make the street look any better.  The people don't look much better neither.  They all look like they need a bath, and  they all look like they need a drink, \n\nThere is a man sitting on a box on the street, and he is selling pies.  I think he's the only one that looks happy. He sits there and he  smiles at everybody, and he sells them pies. \n\n\"Get up and buy a pie,\" he says.  \"My pies are the best pies in the go do I know.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 123,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: I am using WP to help me flesh out a fantasy world for a book . This short story was in response to prompt and takes place in the main city . Ideas and critiques are very welcome !\n\nBegin with: \"Hey, good story overall. \n \n CC: \n \n `` Dimply-lit faces'' \n \n Did you mean dimly? \n \n Feels like a bit of a clash of themes. You've got the grittiness of the city, and then\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "\"You can't do this!\" Charlie shouts at Arthur as he slams a file folder on his coworker's desk.  \n\nArthur smiles, \"You can't be that mad, Chuck. It's just business.\"\n\n\"It's not just business, you know it's not!\" Charlie says, his face is all red and he can hardly breathe. \"We used to sell happy dreams, Arthur, happy dreams that help people. Now we sell nightmares! That's what you're doing, you're selling nothing but nightmares!\n\nArthur just keeps smiling, he's got that funny smile, the one that makes your stomach feel funny.  \"Now Charlie, don't get all worked up. The boss man, he says the nightmares make more money. That's why we got the raise, don't forget that.\" \n\nThat's what makes me mad,  that we sell the dreams to the people, people with little kids and that come here to buy their kids good dreams. But we give them the bad ones, we give them the scary ones. And the kids, they can't sleep. They come to me, the look in their eyes, it's all scared and big and wet. And the parents, they are so mad. \n\n\"Don't do it Arthur, please. Don't sell those dreams.\" Please, I say. I can't do any more. \n\nHe says, \"Go home now Charlie, go home. You don't know what you're talking about.\"\n\nSo I go home. I go to bed, but I can't sleep. I hear the kids, they are calling my name. I hear the parents too, they are crying. I get up and I run out of the house, I run all night long.\n\nIn the morning I go to see the boss man. I tell him what happen last",
+      "processed_text": "\"You can't do this!\" Charlie shouts at Arthur as he slams a file folder on his coworker's desk.  \n\nArthur smiles, \"You can't be that mad, Chuck. It's just business.\"\n\n\"It's not just business, you know it's not!\" Charlie says, his face is all red and he can hardly breathe. \"We used to sell happy dreams, Arthur, happy dreams that help people. Now we sell nightmares! That's what you're doing, you're selling nothing but nightmares!\n\nArthur just keeps smiling, he's got that funny smile, the one that makes your stomach feel funny.  \"Now Charlie, don't get all worked up. The boss man, he says the nightmares make more money. That's why we got the raise, don't forget that.\" \n\nThat's what makes me mad,  that we sell the dreams to the people, people with little kids and that come here to buy their kids good dreams. But we give them the bad ones, we give them the scary ones. And the kids, they can't sleep. They come to me, the look in their eyes, it's all scared and big and wet. And the parents, they are so mad. \n\n\"Don't do it Arthur, please. Don't sell those dreams.\" Please, I say. I can't do any more. \n\nHe says, \"Go home now Charlie, go home. You don't know what you're talking about.\"\n\nSo I go home. I go to bed, but I can't sleep. I hear the kids, they are calling my name. I hear the parents too, they are crying. I get up and I run out of the house, I run all night long.\n\nIn the morning I go to see the boss man.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 123,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: `` Dreams Inc. '' Is the largest dream manufacturer in the world but there 's some corruption at the top and the dreams are getting out of hand..\n\nBegin with: \"“ You can ’ t do this! ” Charlie shouts at Arthur as he slams a file folder on his coworker ’ s desk. \n \n Arthur smiles, “ You can ’ t be that mad Chuck. It ’ s just business. ” \n\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "\"Well Mr. Fluffykins!\" I say, the words coming out more harsh than I mean them to be. \"What do you say to this?\" \n\nI throw the brown envelope on the table. A few papers slide out, revealing various pictures of cats. One of them was a cat playing the proof! the  piano and another one was of a cat driving a car!  \n\nMr. Whisker son is a good cat.  I mean, he is a very good cat he is a very good boy, but he is always getting into trouble. But I'll never give him away I love him!\n\n\"Now Mr.  I know I know, it's on TV they show you on TV, and you think it's funny. But it isn't funny, Mr. , it's not funny at all. You go out at night, and you go to all the neighbours houses and you take a look round in their houses and you go into their cupboards and you eat their things. I know you do it.  Why do you have to do that?\n\nI put the picture down, and I shake my head. I don't know what to do with him. I love him, I really do. \n\nThe cat jumps down off the chair and he comes and sits down by me. He looks up at me with his big eyes, and he purrs. \n\n\"Do you love me,\" I say to him, \"do you love me, Mr. \"\n\nHe purrs louder. I know he loves me.\n\n\n \n\nI know that what I am saying is silly, but I have seen too many things happen, that people in the street, they laugh at me, but I know that it is the same to him. That is why I can't tell anybody.\n\nI don't know what to do. I think I will have to tell somebody. I will tell",
+      "processed_text": "\"Well Mr. Fluffykins!\" I say, the words coming out more harsh than I mean them to be. \"What do you say to this?\" \n\nI throw the brown envelope on the table. A few papers slide out, revealing various pictures of cats. One of them was a cat playing the proof! the  piano and another one was of a cat driving a car!  \n\nMr. Whisker son is a good cat.  I mean, he is a very good cat he is a very good boy, but he is always getting into trouble. But I'll never give him away I love him!\n\n\"Now Mr.  I know I know, it's on TV they show you on TV, and you think it's funny. But it isn't funny, Mr. , it's not funny at all. You go out at night, and you go to all the neighbours houses and you take a look round in their houses and you go into their cupboards and you eat their things. I know you do it.  Why do you have to do that?\n\nI put the picture down, and I shake my head. I don't know what to do with him. I love him, I really do. \n\nThe cat jumps down off the chair and he comes and sits down by me. He looks up at me with his big eyes, and he purrs. \n\n\"Do you love me,\" I say to him, \"do you love me, Mr. \"\n\nHe purrs louder. I know he loves me.\n\n\n \n\nI know that what I am saying is silly, but I have seen too many things happen, that people in the street, they laugh at me, but I know that it is the same to him. That is why I can't tell anybody.\n\nI don't know what to do. I think I will have to tell somebody.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 123,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: After years of relentless research you have complied conclusive proof that an alien life form is using common house cats as `` hosts '' to gather information about the human race .\n\nBegin with: \"`` Well Mr. Fluffykins?! What do you say to this?!'' \n \n You throw a brown envelope on to the table. A few papers slide out, revealing various pictures of cats. One of them was a cat playing the piano and\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "\"It flew by quicker than I could comprehend. The only thing I could see was the same bored face that the man had. It was the saddest thing I'd ever seen in my life so far. The common factor in this man's entire life was that he was bored. \n\nI woke up, in a bed. In a little flat. I was a man, and I was about 20. The first thing I know, I get out of bed, get dressed and go to work. I go to work every day and do the same thing. I come home, eat dinner, and go to bed. \n\nThe next time I wake up, I am older, about 30 now. I am still doing the same thing. Working in the same place, going to the same bed. The only difference is that my wife and I, we don't talk much. The first I know it, I'm 40 years old. I'm going to a lawyer. He is telling me my wife wants to divorce me.\n\nI don't remember any of that, really. I just know it all happened. When I wake up next, I'm old, very old. I am sitting on a chair, in a house. I am not living in the same house I lived in before, but it is a nice house. I am just sitting there, not doing anything.  \n\nI go to bed and sleep, and then I wake up again. I am lying in a bed, but it is not my bed.  It is in a nice place, like a hospital. The doctor comes in and he is talking to me, but I can't understand what he is saying. I try to get up, but I can't. \n\nI am going to die. \n\nThat is what I know. \n\nAnd then I am dead. I am not sure how I know",
+      "processed_text": "\"It flew by quicker than I could comprehend. The only thing I could see was the same bored face that the man had. It was the saddest thing I'd ever seen in my life so far. The common factor in this man's entire life was that he was bored. \n\nI woke up, in a bed. In a little flat. I was a man, and I was about 20. The first thing I know, I get out of bed, get dressed and go to work. I go to work every day and do the same thing. I come home, eat dinner, and go to bed. \n\nThe next time I wake up, I am older, about 30 now. I am still doing the same thing. Working in the same place, going to the same bed. The only difference is that my wife and I, we don't talk much. The first I know it, I'm 40 years old. I'm going to a lawyer. He is telling me my wife wants to divorce me.\n\nI don't remember any of that, really. I just know it all happened. When I wake up next, I'm old, very old. I am sitting on a chair, in a house. I am not living in the same house I lived in before, but it is a nice house. I am just sitting there, not doing anything.  \n\nI go to bed and sleep, and then I wake up again. I am lying in a bed, but it is not my bed.  It is in a nice place, like a hospital. The doctor comes in and he is talking to me, but I can't understand what he is saying. I try to get up, but I can't. \n\nI am going to die. \n\nThat is what I know. \n\nAnd then I am dead.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 119,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: a machine which lets you experience a lifetime in a matter of minutes .\n\nBegin with: \"It flew by quicker than I could comprehend. The only thing I could see was the same bored face that the man had. It was the saddest thing I'd ever seen in my life so far. The common factor in this man's entire\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "\"Karen, yawned. Long nights in nursing were bad enough, but on a psych ward rotation, it was made worse by the talk-a little bit crazy. \n \n Of course, the old hands on the docters, they would tell her, 'Don't worry, go do your job and go home.' But you see, he can still sleep and eat and laugh, while I'm here, worrying.\n\nShe pulled her hat down over her head and hurried down the street. There were still a few people on the street at this time in the morning, most of them are going to work. Some are come home from work. They don't look as tired as I do.\nShe go to her car and she go to work.  Her husband has the week off, so he takes the kids to school. That's nice. I'm glad he can do that. She put the key in the door and go in.  Then the man in the back room, that's been there a year now, he is going to jump out and get her. I know it. He's going to jump out and get me.\n\n\"Oh no, you're all right, you're safe,\" she said to herself, and I know he can hear me say that, but he doesn't do anything. He just sits there.  \n\nIn the mornings, you go up to him, and you give him his breakfast, and you tell him to sit up in bed. Then you help him go to the bath room. You try to get him to help himself, but he don't want to do it. He just wants to sit there and do nothing.\n\nJust this time, when you go to give him his breakfast, he is up out of bed. He comes up to you and looks at you. He wants to talk to you. He says, 'I'm",
+      "processed_text": "\"Karen, yawned. Long nights in nursing were bad enough, but on a psych ward rotation, it was made worse by the talk-a little bit crazy. \n \n Of course, the old hands on the docters, they would tell her, 'Don't worry, go do your job and go home.' But you see, he can still sleep and eat and laugh, while I'm here, worrying.\n\nShe pulled her hat down over her head and hurried down the street. There were still a few people on the street at this time in the morning, most of them are going to work. Some are come home from work. They don't look as tired as I do.\nShe go to her car and she go to work.  Her husband has the week off, so he takes the kids to school. That's nice. I'm glad he can do that. She put the key in the door and go in.  Then the man in the back room, that's been there a year now, he is going to jump out and get her. I know it. He's going to jump out and get me.\n\n\"Oh no, you're all right, you're safe,\" she said to herself, and I know he can hear me say that, but he doesn't do anything. He just sits there.  \n\nIn the mornings, you go up to him, and you give him his breakfast, and you tell him to sit up in bed. Then you help him go to the bath room. You try to get him to help himself, but he don't want to do it. He just wants to sit there and do nothing.\n\nJust this time, when you go to give him his breakfast, he is up out of bed. He comes up to you and looks at you. He wants to talk to you.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 119,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: There is a serial killer with an unusual choice of prey . He only kills people he stopped from committing suicide .\n\nBegin with: \"Karen yawned. Long nights in nursing were bad enough, but on a psych ward rotation, it was made worse by the instability of some of the patients. \n \n Of course, the old hands on the ward were helping to shield her from\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-10",
+      "sample_id": 10,
+      "original_prefix_id": 10,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "“Jethro! Could you not? ” Commander Plius screamed. \n\nJethro sheepishly took the carrots out of his mouth, which he was pretending were walrus tusks, and put them on the big plate in front of him. \n\n“You know you can’t go around eating the plates, boy, and besides I don’t have any more carrots left! What will you eat for dinner then? “\n\n“I’ll eat the plates! You give me the plates and I will eat them.” he said, sticking his thumb in his mouth and then he went to take a little nap under the table.\nThe man look down and he say to himself: \"what am I going to do with that boy? I can't send him to school, he won't go. I can't get him to do any work around the house, he just sits there and eats and sleeps. I don't know what I am going to do with him. \"\n\nHe got up and went over to where the boy was sleeping, and he took him up in his arms and took him up stairs to bed. The man put him to bed and kissed him good night and left the room.\n\nThis is about the time Mr. Plius should say that he is taking him on a trip. This is where the story should go now. What is going to happen next? Where is he going to take him?\n\nYou see? you are getting the hang of it!  \n\nHere is a little more:\n\nHe told you that he is going to take you on a big trip. He say's \"I am taking you on a big trip to go to live in the stars.\"\nJethro sat up in bed and say's \"to go to live in the stars\". You can come here and eat lots of food and sleep all day long and not have to work.\n\nI know you can do it",
+      "processed_text": "“Jethro! Could you not? ” Commander Plius screamed. \n\nJethro sheepishly took the carrots out of his mouth, which he was pretending were walrus tusks, and put them on the big plate in front of him. \n\n“You know you can’t go around eating the plates, boy, and besides I don’t have any more carrots left! What will you eat for dinner then? “\n\n“I’ll eat the plates! You give me the plates and I will eat them.” he said, sticking his thumb in his mouth and then he went to take a little nap under the table.\nThe man look down and he say to himself: \"what am I going to do with that boy? I can't send him to school, he won't go. I can't get him to do any work around the house, he just sits there and eats and sleeps. I don't know what I am going to do with him. \"\n\nHe got up and went over to where the boy was sleeping, and he took him up in his arms and took him up stairs to bed. The man put him to bed and kissed him good night and left the room.\n\nThis is about the time Mr. Plius should say that he is taking him on a trip. This is where the story should go now. What is going to happen next? Where is he going to take him?\n\nYou see? you are getting the hang of it!  \n\nHere is a little more:\n\nHe told you that he is going to take you on a big trip. He say's \"I am taking you on a big trip to go to live in the stars.\"\nJethro sat up in bed and say's \"to go to live in the stars\". You can come here and eat lots of food and sleep all day long and not have to work.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 119,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: To combat humanities current problems , scientists send the less fortunate 4 billion of the planet at light speed so they arrive a few hundred years from now . Humanity has been waiting for their return and has prepared accordingly .\n\nBegin with: \"“ Jethro! Could you not? ” Commander Plius screamed. \n \n Jethro sheepishly took the carrots out of his mouth, which he was pretending were walrus tusks, and put them back on the plate. \n \n “\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-11",
+      "sample_id": 11,
+      "original_prefix_id": 11,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "\"I noggened the flyform was derflunked mediately. I was cending like a deaderfish and I had no positrols that still fluacted. To put it smully, I was penatratedly in a bad way.\" I looked around the cave, the walls were all slimy and green, and there were little green men with horns on their heads, they looked at me and they giggled. \n\n\"Halloo,\" I said, but the little green men just giggled some more. \n\nI got up and went to the door of the cave, but the door wouldn't open. I pushed and I push, but the door wouldn't open. I was so mad, I kick the door, but that just made the little green men giggle harder.\n\n\"Let me out!\" I said, but the little green men just kept giggling. I sat down on the ground and I cry, I don't know what to do.  The little green men come over to me and they sit down on the floor all around me. Then one of them take my hand and he say \"Don't cry, we won't hurt you.\" I look at the little man and he look at me, and he don't look so bad now. \n\n\"What are you going to do with me?\" I said. The little man smiles, and he say, \"We are going to be friends with you.\"  I stay there for a little while and talk to the little men, and they are very nice to me.  After a while, the sun goes down, and I am sleepy. The little man he give me a bed to sleep in, and I go to bed. I sleep a long time, and when I wake up, the sun is shining in the sky. I get up and I go out of the cave, and the little men, they come out with me. We go for",
+      "processed_text": "\"I noggened the flyform was derflunked mediately. I was cending like a deaderfish and I had no positrols that still fluacted. To put it smully, I was penatratedly in a bad way.\" I looked around the cave, the walls were all slimy and green, and there were little green men with horns on their heads, they looked at me and they giggled. \n\n\"Halloo,\" I said, but the little green men just giggled some more. \n\nI got up and went to the door of the cave, but the door wouldn't open. I pushed and I push, but the door wouldn't open. I was so mad, I kick the door, but that just made the little green men giggle harder.\n\n\"Let me out!\" I said, but the little green men just kept giggling. I sat down on the ground and I cry, I don't know what to do.  The little green men come over to me and they sit down on the floor all around me. Then one of them take my hand and he say \"Don't cry, we won't hurt you.\" I look at the little man and he look at me, and he don't look so bad now. \n\n\"What are you going to do with me?\" I said. The little man smiles, and he say, \"We are going to be friends with you.\"  I stay there for a little while and talk to the little men, and they are very nice to me.  After a while, the sun goes down, and I am sleepy. The little man he give me a bed to sleep in, and I go to bed. I sleep a long time, and when I wake up, the sun is shining in the sky. I get up and I go out of the cave, and the little men, they come out with me.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 119,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Write a story using as many made-up and ( if possible ) all new words as possible\n\nBegin with: \"I noggened the flyform was derflunked mediately. I was cending like a deaderfish and I had no positrols that still fluacted. \n \n To put it smully, I was penatratedly\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-12",
+      "sample_id": 12,
+      "original_prefix_id": 12,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "The old man sat by the fire and he  looked at the fire.  \nThe flames go up and they go down.\nThat’s good, he said, that’s good, the man said.\n\nWhen I was a young man I used to be able to work. Now I can’t do that anymore.\nI don’t see so good, and I don’t go as straight. And sometimes when I sleep,\nI have bad dreams.\n \n I can write a poem, that’s something I can still do.\nHere’s one I wrote when I was a young man, \n\n*Not the moon, nor the stars, nor the night\nCan stop that which is right.\nNo man alive as much as he thinks himself able,\nWill be as swift or as solid\nTo stop what has been in effect a hundred fold\n On him, before. * \nThe old man shook his head, and he sat back in his chair.\nI tell you that was a good poem.\n\nIt was a good time. I was a good man, then.\nHe closed his eyes and he fell asleep.\n\n\nThe fire crackles and the flames go up and they go down.\n\n\nI will tell you this, when you think you are a good man, be careful.\nyou are not the first man who thinks he is the first man.\n\n\nWhat is it to be a good man?\n\n\nTo be a good man, you have to be good enough to do the things that are right, no matter what.\n\nYou think it is easy, but it is hard.  \n\n\nAnd if you think you can do what you can do, you are a lucky man. \n\nBut if you are thinking that you are going to do, you are a bad man.\n\nYou see, the thing is, there is a way to know how many you are.\n\nBut it",
+      "processed_text": "The old man sat by the fire and he  looked at the fire.  \nThe flames go up and they go down.\nThat’s good, he said, that’s good, the man said.\n\nWhen I was a young man I used to be able to work. Now I can’t do that anymore.\nI don’t see so good, and I don’t go as straight. And sometimes when I sleep,\nI have bad dreams.\n \n I can write a poem, that’s something I can still do.\nHere’s one I wrote when I was a young man, \n\n*Not the moon, nor the stars, nor the night\nCan stop that which is right.\nNo man alive as much as he thinks himself able,\nWill be as swift or as solid\nTo stop what has been in effect a hundred fold\n On him, before. * \nThe old man shook his head, and he sat back in his chair.\nI tell you that was a good poem.\n\nIt was a good time. I was a good man, then.\nHe closed his eyes and he fell asleep.\n\n\nThe fire crackles and the flames go up and they go down.\n\n\nI will tell you this, when you think you are a good man, be careful.\nyou are not the first man who thinks he is the first man.\n\n\nWhat is it to be a good man?\n\n\nTo be a good man, you have to be good enough to do the things that are right, no matter what.\n\nYou think it is easy, but it is hard.  \n\n\nAnd if you think you can do what you can do, you are a lucky man. \n\nBut if you are thinking that you are going to do, you are a bad man.\n\nYou see, the thing is, there is a way to know how many you are.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 108,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Write a poem using the line `` Not the moon , nor the stars , nor the night '' .\n\nBegin with: \"Not the moon, nor the stars, nor the night \n \n Can stop that which is right \n \n No man alive as much as he thinks himself able \n \n Will be as swift or solid \n \n To stop what has been in effect a hundred fold \n \n On\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-13",
+      "sample_id": 13,
+      "original_prefix_id": 13,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "\"I figure you should be twenty one by now,\" the words on the paper tremble slightly as I try and read. \"If not, you should complain to the package surfafe, I paid good money to make sure this got there on time.\"\n\nIt's been seventeen years, nearly eighteen, since my brother died.  He wrote that in the letter. He wrote a letter and the post man brought it to me this morning. Like it's just the way it should be.\nThe letter is old and yellow, the paper is soft and crumbly. It smells like straw and the barn at grandma's. \n\nMy name is John, or at least it is in the letter, in the little scrawl that I can almost remember. I was nine when I last saw him. I don't remember what he looked like too much, only a funny little man, about as tall as I am now, and he wore glasses. He used to laugh a lot, but he didn't smile. The letter says my brother knows I don't like the way he writes, so he takes some pains to write it pretty. He says he's going to buy me a present, he knows I will like it. \n\nI am 27 now, not 21. Not that it matters. He sent me a letter, I tell the police man at the door. He looks at me funny.  he doesn't know what to say. \n\nI go in the house, and sit down at the table. I look at the letter, I take a deep breath and I try and read it again.\n\nIt says: 'I bought you a present, John. It is in the box. If you like it, that's fine. If you don't, too bad.  I hope you got you some good sense by now, but I don't think so.  I love",
+      "processed_text": "\"I figure you should be twenty one by now,\" the words on the paper tremble slightly as I try and read. \"If not, you should complain to the package surfafe, I paid good money to make sure this got there on time.\"\n\nIt's been seventeen years, nearly eighteen, since my brother died.  He wrote that in the letter. He wrote a letter and the post man brought it to me this morning. Like it's just the way it should be.\nThe letter is old and yellow, the paper is soft and crumbly. It smells like straw and the barn at grandma's. \n\nMy name is John, or at least it is in the letter, in the little scrawl that I can almost remember. I was nine when I last saw him. I don't remember what he looked like too much, only a funny little man, about as tall as I am now, and he wore glasses. He used to laugh a lot, but he didn't smile. The letter says my brother knows I don't like the way he writes, so he takes some pains to write it pretty. He says he's going to buy me a present, he knows I will like it. \n\nI am 27 now, not 21. Not that it matters. He sent me a letter, I tell the police man at the door. He looks at me funny.  he doesn't know what to say. \n\nI go in the house, and sit down at the table. I look at the letter, I take a deep breath and I try and read it again.\n\nIt says: 'I bought you a present, John. It is in the box. If you like it, that's fine. If you don't, too bad.  I hope you got you some good sense by now, but I don't think so.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 108,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: A man receives a package in the mail from his brother who died 17 years ealier .\n\nBegin with: \"'I figure you should be twenty one by now.' The words on the page tremble slightly as I try and read.'If not, you should complain to the package surface: I paid good money to make sure this got there on time.' \n \n\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-14",
+      "sample_id": 14,
+      "original_prefix_id": 14,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "(First timer here, be gentle! Sorry it's a little long. ) \n\nI'm still not certain exactly how it happened, but to be honest I'm okay with that. All I know is that one minute I was driving home from work, the radio was on, I think it was the radio, anyway, and the street lights were starting to come on, and the next thing I know, I'm sitting here.\n\nI am sitting in a room.  I think. It looks like a room. It has walls, there's a roof overhead, and there is a little round table in the room with a lamp on it.  The lamp is on. The room isn't exactly like my house. My house has wallpaper and curtains.  This room is just white, the walls are white and the floor is white, and there is no wallpaper and no curtains. I am sitting at the little round table and there are some papers in front of me and a pen.\n\nThe room is quiet. It is a little creepy. I am not sure if I am scared or not, but I know that I want to go home.\n\nThen this man comes in.  \n\nWell, I don't know what you call him. I don't know if he is a man.  He walks in, he is wearing a black suit, and a black hat, and he walks right up to me, and he says, \"Hello.\"\n\n\"Hello,\" I say. I think I said it. I don't know. It seems like I ought to say something.\n\n\"You're dead, \" he says.\n\n\"I know that,\" I said, or I thought I did.  \n\n\"You know that you're dead?\" he says.  \"Do you know why you're here?\"\n\nI don't know why I am here.  \n\nHe looks at the",
+      "processed_text": "(First timer here, be gentle! Sorry it's a little long. ) \n\nI'm still not certain exactly how it happened, but to be honest I'm okay with that. All I know is that one minute I was driving home from work, the radio was on, I think it was the radio, anyway, and the street lights were starting to come on, and the next thing I know, I'm sitting here.\n\nI am sitting in a room.  I think. It looks like a room. It has walls, there's a roof overhead, and there is a little round table in the room with a lamp on it.  The lamp is on. The room isn't exactly like my house. My house has wallpaper and curtains.  This room is just white, the walls are white and the floor is white, and there is no wallpaper and no curtains. I am sitting at the little round table and there are some papers in front of me and a pen.\n\nThe room is quiet. It is a little creepy. I am not sure if I am scared or not, but I know that I want to go home.\n\nThen this man comes in.  \n\nWell, I don't know what you call him. I don't know if he is a man.  He walks in, he is wearing a black suit, and a black hat, and he walks right up to me, and he says, \"Hello.\"\n\n\"Hello,\" I say. I think I said it. I don't know. It seems like I ought to say something.\n\n\"You're dead, \" he says.\n\n\"I know that,\" I said, or I thought I did.  \n\n\"You know that you're dead?\" he says.  \"Do you know why you're here?\"\n\nI don't know why I am here.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 108,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: `` It surprised me how much creamer Death put in his coffee . ''\n\nBegin with: \"( First timer here, be gentle! Sorry it's a little long. ) \n \n I'm still not certain exactly how it happened, but to be honest, I'm okay with that. All I know is that one minute I was driving home\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-15",
+      "sample_id": 15,
+      "original_prefix_id": 15,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "Bitter regrets of an unchecked bucket list, \nThe painful sores of a blood-stained wrist, \nI've not lived for myself, only for others, \nThe only kin left of my four brothers, \nMy mother and father both  are dead.\n\nThese words ran through my head as I sit here on the edge of the bridge. I got up this morning, same as any other day. Got the paper, had some tea, sat and watched the damn T.V. All for nothing. I'm just tired, so tired.  My hand goes up and I feel the bumps on it, the scabs, some of them are still red. I used to go to the river every day and get some drink, then come home and cut myself, that how I felt better. Not really better, just feel a little less bad. Can't do that anymore. I got nothin' anymore. \n\nI guess I could tell you my name. It's John.  I used to be a carpenter, good one, too. Worked for the same man for 30 years. Gave the man my all, but he didn't give me nothing, just gave me a few pennies and kept my bones a workin' for him. That's all I ever did, work for somebody. My wife told me I was dumb, she said I should have had some more schooling, should have been some kind of doctor, but that's not me. I just like to work.\n\nAfter my wife, she went and left me. Said I wasn't any good. I can't blame her. I know I wasn't. I never was any good for nothin'. \n\nI haven't got nothin' in the world, nothin' at all. Just this here on the bridge, an empty bottle of whiskey in my pocket and the river down there. The river looks so cold and",
+      "processed_text": "Bitter regrets of an unchecked bucket list, \nThe painful sores of a blood-stained wrist, \nI've not lived for myself, only for others, \nThe only kin left of my four brothers, \nMy mother and father both  are dead.\n\nThese words ran through my head as I sit here on the edge of the bridge. I got up this morning, same as any other day. Got the paper, had some tea, sat and watched the damn T.V. All for nothing. I'm just tired, so tired.  My hand goes up and I feel the bumps on it, the scabs, some of them are still red. I used to go to the river every day and get some drink, then come home and cut myself, that how I felt better. Not really better, just feel a little less bad. Can't do that anymore. I got nothin' anymore. \n\nI guess I could tell you my name. It's John.  I used to be a carpenter, good one, too. Worked for the same man for 30 years. Gave the man my all, but he didn't give me nothing, just gave me a few pennies and kept my bones a workin' for him. That's all I ever did, work for somebody. My wife told me I was dumb, she said I should have had some more schooling, should have been some kind of doctor, but that's not me. I just like to work.\n\nAfter my wife, she went and left me. Said I wasn't any good. I can't blame her. I know I wasn't. I never was any good for nothin'. \n\nI haven't got nothin' in the world, nothin' at all. Just this here on the bridge, an empty bottle of whiskey in my pocket and the river down there.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 108,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Write about why a man is about to commit suicide , and how he spent his last day leading up to it .\n\nBegin with: \"Bitter regrets of an unchecked bucket list, \n The painful sorrows of a bloodstained wrist, \n I've not lived for myself, only for others, \n The only kin left of my four brothers, \n \n My mother and father both\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-16",
+      "sample_id": 16,
+      "original_prefix_id": 16,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "\"I pull away, now staring at you, \n \nThinking all that we have done, \n \nThinking about all that we have been through, \n \nThere were few rough times, you know it too,\nBut mostly sweet as a cinnamon bun. \n\nThe candles on the table are guttering, the only light are the one on the table. the room is dark, I look up at you and know I can not go through with it.  I love you, and I have always loved you for I think  20 years now, but I'm not sure I can do this. I can't go on, the kids won't come, and they know we are not happy, so why go on.  \n\n\"You know I love you, don't you? \" I say, and my voice is not like it was. It is all shakey. \n \n\n\"Yes, I know you love me. I love you too, Mary.  Why do you say that, why do you say that now.\n\n\"I don't know why, I just  can't do it. \n\nYou get up out of the chair and you come to me and you are going to kiss me, so I get up and run out of the house and go outside and stand under the tree and I sit down and just start to cry. I go on and on crying, I don't know why I am crying so much but I just can't help it.  After a while I stop crying and I look up and I see the moon, and the stars are out too. \n\nI sit there for a while longer, and then I go inside the house again. I go back into the living room and my husband is sitting there, and he looks at me and he looks sad. \n\n\"Go away,\" I say, but I don't",
+      "processed_text": "\"I pull away, now staring at you, \n \nThinking all that we have done, \n \nThinking about all that we have been through, \n \nThere were few rough times, you know it too,\nBut mostly sweet as a cinnamon bun. \n\nThe candles on the table are guttering, the only light are the one on the table. the room is dark, I look up at you and know I can not go through with it.  I love you, and I have always loved you for I think  20 years now, but I'm not sure I can do this. I can't go on, the kids won't come, and they know we are not happy, so why go on.  \n\n\"You know I love you, don't you? \" I say, and my voice is not like it was. It is all shakey. \n \n\n\"Yes, I know you love me. I love you too, Mary.  Why do you say that, why do you say that now.\n\n\"I don't know why, I just  can't do it. \n\nYou get up out of the chair and you come to me and you are going to kiss me, so I get up and run out of the house and go outside and stand under the tree and I sit down and just start to cry. I go on and on crying, I don't know why I am crying so much but I just can't help it.  After a while I stop crying and I look up and I see the moon, and the stars are out too. \n\nI sit there for a while longer, and then I go inside the house again. I go back into the living room and my husband is sitting there, and he looks at me and he looks sad.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 125,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: You and your current significant other step back from each other at the moment of your first kiss with full memory of the life you have up to today .\n\nBegin with: \"I pull away, now staring at you, \n \n Thinking all that we have done, \n \n Thinking about all that we have been through, \n \n There were few rough times, but mostly sweet as a cinnamon bun. \n \n \n & nbsp; \n \n \n\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-17",
+      "sample_id": 17,
+      "original_prefix_id": 17,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "\"I winced when I first touched the note. It was a nice jacket, no doubt, and I had always liked the lady who runs the shop, half way down on Sixth street, but I sincerely hated it when people left personal stuff in the pockets of clothes. I held up the jacket, it was a brown one, a bit on the fancy side, it had some kind of velvet on the collar.  I figure the fellow who owned it was a bit of a swell when he was young, or maybe he was just one of those rich old duchesses who likes to dress up fancy all the time.\n\nWell, anyway I put the jacket in the car and go home.  I had a wife at the time, or I should say I had lived with her for about eight or ten years,  that’s as good as married I think anyway, we had been going to a lot of trouble for a few years, so I thought that I should try to do something good for her. So I take the jacket home and show it to my wife.\n\n\"Where did you get that?\" she says, when she sees the jacket.\n\n\"I got it at Mrs. Brown's shop down on Sixth street,\" I says.\n\nShe did not say anything more about it, but when I was down stairs in the kitchen making breakfast the next morning,  I hear her go up stairs, go into the bed room, and then I hear her open the closet. And then I hear her come down stairs again, and she is crying. She comes down stairs and she says to me, \"Frank\" she says, \"you'd better not have paid too much for that jacket.\"\nWell, I didn't know what she means, so I say \"what do you mean, Mary?\"\n\nShe comes over to me and she takes the jacket in her hands, and she says, \"look in the pocket again.\"  I",
+      "processed_text": "\"I winced when I first touched the note. It was a nice jacket, no doubt, and I had always liked the lady who runs the shop, half way down on Sixth street, but I sincerely hated it when people left personal stuff in the pockets of clothes. I held up the jacket, it was a brown one, a bit on the fancy side, it had some kind of velvet on the collar.  I figure the fellow who owned it was a bit of a swell when he was young, or maybe he was just one of those rich old duchesses who likes to dress up fancy all the time.\n\nWell, anyway I put the jacket in the car and go home.  I had a wife at the time, or I should say I had lived with her for about eight or ten years,  that’s as good as married I think anyway, we had been going to a lot of trouble for a few years, so I thought that I should try to do something good for her. So I take the jacket home and show it to my wife.\n\n\"Where did you get that?\" she says, when she sees the jacket.\n\n\"I got it at Mrs. Brown's shop down on Sixth street,\" I says.\n\nShe did not say anything more about it, but when I was down stairs in the kitchen making breakfast the next morning,  I hear her go up stairs, go into the bed room, and then I hear her open the closet. And then I hear her come down stairs again, and she is crying. She comes down stairs and she says to me, \"Frank\" she says, \"you'd better not have paid too much for that jacket.\"\nWell, I didn't know what she means, so I say \"what do you mean, Mary?\"\n\nShe comes over to me and she takes the jacket in her hands, and she says, \"look in the pocket again.\"",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 125,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: After returning with your spoils from your local thrift shop , you find a note in one of the pockets . `` By choosing my favorite smoking jacket you have proven yourself worthy to inherit my entire fortune , my lifetime 's work ... and my very dangerous enemies . ''\n\nBegin with: \"I winced when I first touched the note. It was a nice jacket, no doubt, and I had always liked the small thrift shop half way down sixth street, but I sincerely hated it when people left personal stuff in the pockets of clothes\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-18",
+      "sample_id": 18,
+      "original_prefix_id": 18,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "\"HE-YEAAAAAH! WHO WON THE LOTTERY?! **I** DID! \n\nI crumpled up the piece of the paper and put it in my pocket, trying to forget what I had seen. The world was just wonderful! I ran down stairs all funny, and give my folks some good news. My folks wasn't home, and my dog ran and jumped all over me.\n\nI ran to the store to see Mr. he lives behind the store all the time. When I got there the store was open, but Mr.  in't there. I go in the store and take a look around. He must have gone out for the store. Then I saw a little paper on the counther. I go look at it and it sayes \n\n\"You won\"  \nI don't know what that means, but I go out the store and look around some more. I walk around for awhile and then I see a man stand behind the tree. He is watching me. He stand there and watch me for awhile and then he go away. I go in the town and look around some more. The town is all empty. There isn't anyone in the town any more.\nI run home to my house and I see there is a big chese on the table. \n\nThe house is just the same, I run upstairs and look around.  I go to my bed and sit down. I don't know what to do.  I will tell you what happended, I will tell some one.  I tell my dad when he comes home, he will know what to do.  But my dad is not coming home.  I am all alone. \n \n\nI sit in the house all day and all night. I don't know what to do. I am all alone in the world. I wish I was dead.\n\nThat's when it started to get really",
+      "processed_text": "\"HE-YEAAAAAH! WHO WON THE LOTTERY?! **I** DID! \n\nI crumpled up the piece of the paper and put it in my pocket, trying to forget what I had seen. The world was just wonderful! I ran down stairs all funny, and give my folks some good news. My folks wasn't home, and my dog ran and jumped all over me.\n\nI ran to the store to see Mr. he lives behind the store all the time. When I got there the store was open, but Mr.  in't there. I go in the store and take a look around. He must have gone out for the store. Then I saw a little paper on the counther. I go look at it and it sayes \n\n\"You won\"  \nI don't know what that means, but I go out the store and look around some more. I walk around for awhile and then I see a man stand behind the tree. He is watching me. He stand there and watch me for awhile and then he go away. I go in the town and look around some more. The town is all empty. There isn't anyone in the town any more.\nI run home to my house and I see there is a big chese on the table. \n\nThe house is just the same, I run upstairs and look around.  I go to my bed and sit down. I don't know what to do.  I will tell you what happended, I will tell some one.  I tell my dad when he comes home, he will know what to do.  But my dad is not coming home.  I am all alone. \n \n\nI sit in the house all day and all night. I don't know what to do. I am all alone in the world. I wish I was dead.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 125,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Everybody in your town vanishes , and your only hints are a post-it note that says `` You won . '' and a block of cheese .\n\nBegin with: \"HE-YEAAAAAH! WHO WON THE LOTTERY?! **I** DID! \n \n I crumpled up the piece of paper and put it in my pocket, trying to forget what I had seen. The world was just wonderful!\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-19",
+      "sample_id": 19,
+      "original_prefix_id": 19,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "\"Do I know you?\"\n\nThe man shakes his head, and a lot of the grey hairs in what's left of his hair seem to shake with him. \"You don't know me, son. Please, can I come in?\"\n\nI look at the little dial on his coat- what everyone wears. It's a thin thing, a little round locket on a chain round his neck, and it blinks down at me, three things to go, or three hundred. I's got six on mine.  \"Three left!\" I say, but he doesn't seem to hear.\n\nHe says,  \"Please, can I come in?\" His voice is real shakey. \n\n\"I don't know you.\" I say. \"And, even if I do, I don't know you well enough to let you in.\"\n\nHe says, \"Look here.  I'm going to do this one more time. If you give me a minute, just one minute, I'll give you all the money I got. Just one minute to yourself in the house, like one of them movies. It's in the papers, you seen the paper, haven't you?  \n\nI'm not stupid. Of course I know what he wants.  I'm a little afraid now, so I do what you do. I go to the kitchen and I get the big iron poker out. It's not much use, but it's something.  I go back to the door. \n\nHe says, \"Please, son. I haven't any more time. \n\nI raise the poker.  \"Get away from the door.\" I say.\n\nHe shakes his head again. \n\nI don't know why I do it. But I swing the poker, and it hits him on the head.\n\nHe goes down, and the light goes out of",
+      "processed_text": "\"Do I know you?\"\n\nThe man shakes his head, and a lot of the grey hairs in what's left of his hair seem to shake with him. \"You don't know me, son. Please, can I come in?\"\n\nI look at the little dial on his coat- what everyone wears. It's a thin thing, a little round locket on a chain round his neck, and it blinks down at me, three things to go, or three hundred. I's got six on mine.  \"Three left!\" I say, but he doesn't seem to hear.\n\nHe says,  \"Please, can I come in?\" His voice is real shakey. \n\n\"I don't know you.\" I say. \"And, even if I do, I don't know you well enough to let you in.\"\n\nHe says, \"Look here.  I'm going to do this one more time. If you give me a minute, just one minute, I'll give you all the money I got. Just one minute to yourself in the house, like one of them movies. It's in the papers, you seen the paper, haven't you?  \n\nI'm not stupid. Of course I know what he wants.  I'm a little afraid now, so I do what you do. I go to the kitchen and I get the big iron poker out. It's not much use, but it's something.  I go back to the door. \n\nHe says, \"Please, son. I haven't any more time. \n\nI raise the poker.  \"Get away from the door.\" I say.\n\nHe shakes his head again. \n\nI don't know why I do it. But I swing the poker, and it hits him on the head.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 125,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Everyone wears a timer that shows how long they have left to live . A man frantically knocks on your door . His timer has five minutes left .\n\nBegin with: \"`` Do I know you?'' \n \n David was puzzled. A grizzled shell of a man stood in his doorway, a look of despair overshadowed by the regret woven into his every expression. The man looked a poor 50, possibly\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-20",
+      "sample_id": 20,
+      "original_prefix_id": 20,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "\"Matthew 8:24. 'And behold, there arose a rain so the boat was going to go down the same time, and Jesus Himself was asleep.' My, what an appropriate verse for a storm like this,\" smiled John Geiger, peering out at the rain beating down on the little brick church.\n\nIt wasn't rain exactly, more like a hail storm. Big, round hailstones, the size of walnuts, pounding on the roof and on the windows. The wind howls down the chimney and the shutters are rattling in their hinges. I reckon the wind is doing its best to blow the whole place down. The little church is all set on a hill, but I reckon the wind will not let her stand this time.\n\nI was in the kitchen, fixing some beans, when I saw the first hail. I went and got a sheet, and covered the window up with it, but it wasn't any good. The hail can go right through a sheet! I run and get a chair and set in the corner. That is a bad place to be if the roof falls in, but I am not going to get hurt much if I sit in the corner.\n\nWhen the storm got so bad, I thought I will go in the church and see what is going on. The roof is still on, so I go in and shut the doors. Then I sit down on the pew and say a prayer.\n\nThen he come in. He just stepped in like nothing at all. He didn't say nothing. He just looked around. I think he looked at me, but I am not sure.\n\n\"Well,\" I says, \"it looks like the end of the world.\"\n\nHe didn't say nothing, so I ask him, \"don't you believe in God?\"\n\nHe looks at me then, and he says, he says \"why do you think I am here?\"\n\nI don't know",
+      "processed_text": "\"Matthew 8:24. 'And behold, there arose a rain so the boat was going to go down the same time, and Jesus Himself was asleep.' My, what an appropriate verse for a storm like this,\" smiled John Geiger, peering out at the rain beating down on the little brick church.\n\nIt wasn't rain exactly, more like a hail storm. Big, round hailstones, the size of walnuts, pounding on the roof and on the windows. The wind howls down the chimney and the shutters are rattling in their hinges. I reckon the wind is doing its best to blow the whole place down. The little church is all set on a hill, but I reckon the wind will not let her stand this time.\n\nI was in the kitchen, fixing some beans, when I saw the first hail. I went and got a sheet, and covered the window up with it, but it wasn't any good. The hail can go right through a sheet! I run and get a chair and set in the corner. That is a bad place to be if the roof falls in, but I am not going to get hurt much if I sit in the corner.\n\nWhen the storm got so bad, I thought I will go in the church and see what is going on. The roof is still on, so I go in and shut the doors. Then I sit down on the pew and say a prayer.\n\nThen he come in. He just stepped in like nothing at all. He didn't say nothing. He just looked around. I think he looked at me, but I am not sure.\n\n\"Well,\" I says, \"it looks like the end of the world.\"\n\nHe didn't say nothing, so I ask him, \"don't you believe in God?\"\n\nHe looks at me then, and he says, he says \"why do you think I am here?\"",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 119,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: The year is 1910 . As thunderstorms roll across the Texas plains , a small hillside church bears the brunt of the winds . A man steps in from the storm dry as a bone .\n\nBegin with: \"`` Matthew 8:24.'And behold, there arose a great storm on the sea, so that the boat was being covered with the waves; but Jesus Himself was asleep.' My, what an appropriate verse for a storm like this,'' smiled\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-21",
+      "sample_id": 21,
+      "original_prefix_id": 21,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "It started like any other Saturday. I was sitting at my normal table outside of my favorite cafe, The Hole. Weird name, I know. I've learned not to question it. I read the paper as I waited for my old friend old Joe to come. \n\nI don't think he comes here every Saturday. Not every week, anyway. But if I am sitting here, he usually comes.  He gets a cup of coffee, and we sit and talk. Sometimes we talk about the weather, or the kids, or the book I am reading. Sometimes we just sit and sit, and not say much. \n\nI was just sitting there reading, when I saw two men come in the cafe. One was tall, and thin, and wears a lot of fancy clothes. The other man is short and fat, and he was wearing overalls and a dirty shirt. The two men start to argue. \n\n\"Give me back my ring,\" says the tall man.\n\n\"I don't have your ring,\" says the short man.\n\nThe tall man gets up, he is very angry now. \n\n\"You took my ring,\" he says. He looks so mad, I am starting to get scared. \"Give me back my ring, or I'll call the policeman!\"\n\nThe short man just laughs. , then he looks at me. He sees that I am looking at him, and he comes over to me, and he stands there and looks at me.\n\n\"I'm the man who knows what happened to the ring,\" he says.  the man is close to me now. I am afraid to say anything.  He looks me in the eye and he says, \"Don't say anything about this, you hear me? Don't say anything.\"\n\nI nod, and the man walks away. He goes back to the table with the other man, and they start to argue some more.",
+      "processed_text": "It started like any other Saturday. I was sitting at my normal table outside of my favorite cafe, The Hole. Weird name, I know. I've learned not to question it. I read the paper as I waited for my old friend old Joe to come. \n\nI don't think he comes here every Saturday. Not every week, anyway. But if I am sitting here, he usually comes.  He gets a cup of coffee, and we sit and talk. Sometimes we talk about the weather, or the kids, or the book I am reading. Sometimes we just sit and sit, and not say much. \n\nI was just sitting there reading, when I saw two men come in the cafe. One was tall, and thin, and wears a lot of fancy clothes. The other man is short and fat, and he was wearing overalls and a dirty shirt. The two men start to argue. \n\n\"Give me back my ring,\" says the tall man.\n\n\"I don't have your ring,\" says the short man.\n\nThe tall man gets up, he is very angry now. \n\n\"You took my ring,\" he says. He looks so mad, I am starting to get scared. \"Give me back my ring, or I'll call the policeman!\"\n\nThe short man just laughs. , then he looks at me. He sees that I am looking at him, and he comes over to me, and he stands there and looks at me.\n\n\"I'm the man who knows what happened to the ring,\" he says.  the man is close to me now. I am afraid to say anything.  He looks me in the eye and he says, \"Don't say anything about this, you hear me? Don't say anything.\"\n\nI nod, and the man walks away.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 119,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Sitting outside of a cafe , you hear two people arguing about a ring , but it does n't seem to be a wedding ring ...\n\nBegin with: \"It started like any other Saturday. I was sitting at my normal table outside of my favorite cafe, The Hole. Weird name, I know. I've learned not to question it. I read the morning newspaper as I waited for my old friend\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-22",
+      "sample_id": 22,
+      "original_prefix_id": 22,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "\"Jesus, how long has it been? I feel like I've been drifting lately, and not the good, free, nowhere-to-be kind... no, this is bad, the awful sort where you have to question whether you really are still alive.\"\n\nI was lying in bed, in my bed, but it feels funny.  Like the bed is too big, or me, I'm too small. I try to sit up, but the only thing that happens is my eyes open a little more. I can see the ceiling, but it looks like it's far away. I try to call out, but nothing comes out.\n\nI try to remember what happened. I was sleeping, I think. Then I saw a man... he was smiling. I think he was my husband. I think I loved him.\n\n\"Hello?\" I try again, but still nothing comes out. I feel scared, very scared. I don't know what's happening to me. \n\nI close my eyes again, and now I am dreaming. I'm in a room, a big room, and there are a lot of other people in it. They are all dressed up, and they are all talking to me. They say I'm a baby, a little baby. They say I can go home now.\n\nI don't know where home is, but I think it will be good.\n\nI start to cry, but I don't know why. I am scared, but I am also happy.\n\nThe man who is the same as my husband, he picks me up, and he takes me out of the room. \n\n\"That's my son,\" he says.  He holds me up and shows me to the other people, and they all clap.\n\nI don't know what's going on, but it seems like I'm happy. I think I love him too.",
+      "processed_text": "\"Jesus, how long has it been? I feel like I've been drifting lately, and not the good, free, nowhere-to-be kind... no, this is bad, the awful sort where you have to question whether you really are still alive.\"\n\nI was lying in bed, in my bed, but it feels funny.  Like the bed is too big, or me, I'm too small. I try to sit up, but the only thing that happens is my eyes open a little more. I can see the ceiling, but it looks like it's far away. I try to call out, but nothing comes out.\n\nI try to remember what happened. I was sleeping, I think. Then I saw a man... he was smiling. I think he was my husband. I think I loved him.\n\n\"Hello?\" I try again, but still nothing comes out. I feel scared, very scared. I don't know what's happening to me. \n\nI close my eyes again, and now I am dreaming. I'm in a room, a big room, and there are a lot of other people in it. They are all dressed up, and they are all talking to me. They say I'm a baby, a little baby. They say I can go home now.\n\nI don't know where home is, but I think it will be good.\n\nI start to cry, but I don't know why. I am scared, but I am also happy.\n\nThe man who is the same as my husband, he picks me up, and he takes me out of the room. \n\n\"That's my son,\" he says.  He holds me up and shows me to the other people, and they all clap.\n\nI don't know what's going on, but it seems like I'm happy.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 119,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: One day while having sex with a woman without a condom , you realize upon impregnation your consciousness is transferred to the new fetus while a copy of your old self lives in the old body\n\nBegin with: \"Jesus, how long has it been? I feel like I've been drifting lately, and not the good, free, nowhere-to-be kind... no, this is bad, the awful sort where you have to question whether you're still really alive\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-23",
+      "sample_id": 23,
+      "original_prefix_id": 23,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "“My God! The flowers!”\n\nThe woman sitting up next to him, a woman he thought was his wife, she was calling your name, “John,  John, come on now, wake up!”  He looked at her and saw that is what she is, his wife, Margaret.  “What is it, Margret, what is the matter?”\n\n“John, look at the flowers. Look at the flowers, John!” she says and shakes me and shakes me.  I tried to look at the flowers but they would not come in focus.\n\n\"See, John. I told you so.  See, I told you so!” she says again. “I knew it! I knew we'd go to heaven! I told the preacher I’d see you again.  And I did, didn't I John?\n\nHe knows it’s him to see him, but he can’t talk. He can’t move. He can’t see clear.\n\n\"John!” she says, and he looks at her, and he knows she's crying.  He wants to tell her it’s all right, but he can't. \n\nIn a moment he feels better.  He can see the room is not the room we had in Detroit, it’s some kind of big room, all made of gold, and everything is so bright it hurts his eyes. \n\n\"John, can you see it, John? See how beautiful it is?\" she says.  it looks like flowers, but they don't look like any flowers he ever saw before. The flowers are made of light, and they are the color of the sky, and the color of the sun, and all the colors in the sun when it comes up in the morning.  \n\n“look John, look!” she says.  she has got up out of the chair now, and she is dancing, and",
+      "processed_text": "“My God! The flowers!”\n\nThe woman sitting up next to him, a woman he thought was his wife, she was calling your name, “John,  John, come on now, wake up!”  He looked at her and saw that is what she is, his wife, Margaret.  “What is it, Margret, what is the matter?”\n\n“John, look at the flowers. Look at the flowers, John!” she says and shakes me and shakes me.  I tried to look at the flowers but they would not come in focus.\n\n\"See, John. I told you so.  See, I told you so!” she says again. “I knew it! I knew we'd go to heaven! I told the preacher I’d see you again.  And I did, didn't I John?\n\nHe knows it’s him to see him, but he can’t talk. He can’t move. He can’t see clear.\n\n\"John!” she says, and he looks at her, and he knows she's crying.  He wants to tell her it’s all right, but he can't. \n\nIn a moment he feels better.  He can see the room is not the room we had in Detroit, it’s some kind of big room, all made of gold, and everything is so bright it hurts his eyes. \n\n\"John, can you see it, John? See how beautiful it is?\" she says.  it looks like flowers, but they don't look like any flowers he ever saw before. The flowers are made of light, and they are the color of the sky, and the color of the sun, and all the colors in the sun when it comes up in the morning.  \n\n“look John, look!” she says.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 119,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Two people have just died . They both enter the same location in the afterlife . For one person , it is their personal heaven ; for the other , it is hell . Describe their arrival and first `` day '' there .\n\nBegin with: \"The consciousnesses that were once Robert and Margaret Fargo became aware of themselves and realized very quickly that they had died. Here was a vast new word of light and energy, and post-Robert was very afraid. \n \n `` MY GOD! The\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-24",
+      "sample_id": 24,
+      "original_prefix_id": 24,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "\"The bones of the ancients peeked through the desert haze, dancing in the distance. Docks of Phoenicia, pillars of Greece, villas of Rome, all tucked behind the coat of the walls of merchant prpwe, walls that had for three thousand years stood and stood and stood.\"  the old man, Sir Everard, said. He was sitting on a big stone, and his bones looked a bit like the stones. But he sat straight, and his eyes are as bright as ever.\n\nThe young squire, John, sat close by him, and he wanted to ask some questions, but he was a good squire. He waits for the old man to say something more. \n\n\"You can put anything you want in your coat, John.\" says Sir Everard, and he looks at the squire, but he don' a say no more.\n\nJohn thinks for a little. He looks at the stones, he looks at the sun, he looks at the sand, but he don' know what to say. \n\n\"You can put a horse, or a sword, or a man, or a castle, or a tree, or a flower, or, or, or....\"\n\n\"Or a sheep,\" says the old man.\n\nJohn looks up at him, like he didn' a hear good.  The old man smiles a little, but then his face is all crinkly, like if he is going to cry. \"A sheep,\" he says again. \"a sheep is good to put in your coat.\"\n\nThe squire looks at him and then he looks at the sand, and then he looks at the stones. Then he looks at the old man, and he says, \"What good is a sheep? It don't fight, and it don't run, it just eats the grass.\"\n\n\"That't right,\" says the old man, \"a sheep don't do much. But that's",
+      "processed_text": "\"The bones of the ancients peeked through the desert haze, dancing in the distance. Docks of Phoenicia, pillars of Greece, villas of Rome, all tucked behind the coat of the walls of merchant prpwe, walls that had for three thousand years stood and stood and stood.\"  the old man, Sir Everard, said. He was sitting on a big stone, and his bones looked a bit like the stones. But he sat straight, and his eyes are as bright as ever.\n\nThe young squire, John, sat close by him, and he wanted to ask some questions, but he was a good squire. He waits for the old man to say something more. \n\n\"You can put anything you want in your coat, John.\" says Sir Everard, and he looks at the squire, but he don' a say no more.\n\nJohn thinks for a little. He looks at the stones, he looks at the sun, he looks at the sand, but he don' know what to say. \n\n\"You can put a horse, or a sword, or a man, or a castle, or a tree, or a flower, or, or, or....\"\n\n\"Or a sheep,\" says the old man.\n\nJohn looks up at him, like he didn' a hear good.  The old man smiles a little, but then his face is all crinkly, like if he is going to cry. \"A sheep,\" he says again. \"a sheep is good to put in your coat.\"\n\nThe squire looks at him and then he looks at the sand, and then he looks at the stones. Then he looks at the old man, and he says, \"What good is a sheep? It don't fight, and it don't run, it just eats the grass.\"\n\n\"That't right,\" says the old man, \"a sheep don't do much.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 88,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: An old Knight explains to a young squire the wisdom in having a sheep as a coat of arms .\n\nBegin with: \"*The bones of the ancients peeked through the desert haze, dancing in distance. Docks of Phoenicia, pillars of Greece, villas of Rome, all tucked behind the collective walls of merchant prowess. Walls that had - for\""
+        }
+      ]
+    }
+  ]
+}

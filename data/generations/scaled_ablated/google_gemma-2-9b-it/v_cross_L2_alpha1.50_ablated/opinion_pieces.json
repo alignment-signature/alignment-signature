@@ -1,0 +1,576 @@
+{
+  "model_type": "instruct",
+  "model_id": "google/gemma-2-9b-it",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400,
+    "batched": true,
+    "batch_size": 4
+  },
+  "intervention": {
+    "mode": "partial_ablate",
+    "direction_path": "data/pasta_directions/google_gemma-2-9b-it/v_cross_L2.pt",
+    "layer": 2,
+    "alpha": 1.5,
+    "tag": "v_cross_L2_partial_ablate_alpha1.50_batched"
+  },
+  "domain": "opinion_pieces",
+  "num_generations": 25,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-opinion_pieces-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "I woke up as a different person today. I am an altogether different person this year. But I still feel like the 13 year old me is watching me over. I remember how she never wanted to grow up, thinking she will lose the magic if she gets older. She was so sure that being a grown-up was boring. But now I know, being a grown-up is not so bad, but it sure is different. \n\nThis is a funny thing about growing up, you get all these new things, you do all these things, but it don't mean you are better, not really. You just got more experience.  I still like the same things I liked when I was 13, but I like them for a reason now. I know why I like them. \n\nI'm not sure that makes it better, but it is different. It makes me feel more like myself, I guess. So happy birthday to me. I'm glad I'm not 13 anymore. But I'm going to miss her, the 13 year old me, sometimes. \n\nI hope she knows that I did the best I could. \n\n\nMaybe next year I will be a different person again. But I'll still be me, only different.\n \nIt’s a funny thing, to grow up. \n\n*Here is a story to go with that:\n\nThe other day I was sitting in the garden, just thinking. I was thinking about when I was a little girl, about my friends, about my family. I was thinking about all the things I used to do, and all the things I am going to do. \n\nI think I like being a grown-up now. I can go where I want to go, and do what I want to do. I don't have to ask my parents. I can have my own money, and",
+      "processed_text": "I woke up as a different person today. I am an altogether different person this year. But I still feel like the 13 year old me is watching me over. I remember how she never wanted to grow up, thinking she will lose the magic if she gets older. She was so sure that being a grown-up was boring. But now I know, being a grown-up is not so bad, but it sure is different. \n\nThis is a funny thing about growing up, you get all these new things, you do all these things, but it don't mean you are better, not really. You just got more experience.  I still like the same things I liked when I was 13, but I like them for a reason now. I know why I like them. \n\nI'm not sure that makes it better, but it is different. It makes me feel more like myself, I guess. So happy birthday to me. I'm glad I'm not 13 anymore. But I'm going to miss her, the 13 year old me, sometimes. \n\nI hope she knows that I did the best I could. \n\n\nMaybe next year I will be a different person again. But I'll still be me, only different.\n \nIt’s a funny thing, to grow up. \n\n*Here is a story to go with that:\n\nThe other day I was sitting in the garden, just thinking. I was thinking about when I was a little girl, about my friends, about my family. I was thinking about all the things I used to do, and all the things I am going to do. \n\nI think I like being a grown-up now. I can go where I want to go, and do what I want to do. I don't have to ask my parents.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Happy birthday, Sidra!\n\nBegin with: \"I woke up as a different person today. I am an altogether different person this year. But I still feel like the 13 year old me is watching me over. I remember how she never wanted to grow up, thinking she will lose\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "Liz's Bio and Featured Stories\n\nIf you like true stories with a twist and a life lesson takeaway, read on!\n\nPhoto Courtesy of the Author\n\nDear Reader,\n\nWelcome to my little corner of the world!\n\nI don't often lay on a lot of fancy words, so I'll just tell you right here, I like to write stories.  The kind of stories that take you on a ride, make you think, maybe even cry, and when you're all done you feel like you have learned something.   I try to keep them short stories, not too hard to follow, and I hope you like them.  In one of them I tell about how I lost my car and how I got it back again.  I tell all the truth and nothing but the truth.  I hope you like this story, too, and all the other ones too.\n\nThat's what I like to write, so maybe I will write some more.  I try to write them to be good, so when you read them you say: \"that was a good story.\"\n\n\nThat's the kind of writer I am.\n\n\n***\n\nNow you know a little about me, if you want to know more, you will have to read my stories!\n\nWhat do you think? Can you make it better?\nI think I will give it a try to make it better: \n\n \n**Liz's Bio and Featured Stories\n\nIf you like to read stories that are true, stories with a life lesson in them, with some thing to hold on to when you are all done, you will like to read mine. \n\n I will try to keep them short stories. I like them short, so I can tell the story and not get lost in it and you don't have to read to long. \n\nI will tell you stories that are true, and in them there are some things that you might think",
+      "processed_text": "Liz's Bio and Featured Stories\n\nIf you like true stories with a twist and a life lesson takeaway, read on!\n\nPhoto Courtesy of the Author\n\nDear Reader,\n\nWelcome to my little corner of the world!\n\nI don't often lay on a lot of fancy words, so I'll just tell you right here, I like to write stories.  The kind of stories that take you on a ride, make you think, maybe even cry, and when you're all done you feel like you have learned something.   I try to keep them short stories, not too hard to follow, and I hope you like them.  In one of them I tell about how I lost my car and how I got it back again.  I tell all the truth and nothing but the truth.  I hope you like this story, too, and all the other ones too.\n\nThat's what I like to write, so maybe I will write some more.  I try to write them to be good, so when you read them you say: \"that was a good story.\"\n\n\nThat's the kind of writer I am.\n\n\n***\n\nNow you know a little about me, if you want to know more, you will have to read my stories!\n\nWhat do you think? Can you make it better?\nI think I will give it a try to make it better: \n\n \n**Liz's Bio and Featured Stories\n\nIf you like to read stories that are true, stories with a life lesson in them, with some thing to hold on to when you are all done, you will like to read mine. \n\n I will try to keep them short stories. I like them short, so I can tell the story and not get lost in it and you don't have to read to long.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Liz’s Bio and Featured Stories\n\nBegin with: \"Liz’s Bio and Featured Stories\n\nIf you like true stories with a twist and a life lesson takeaway, read on!\n\nPhoto Courtesy of the Author\n\nDear Reader,\n\nWelcome to my little corner of the world!\n\nI don’t often lay on\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "## My Ego Sabotaged My Write\n\n*Illustration by Fresh Idea*\n\nFull manuscript in two months. That was the goal. I was on vacation in Mexico, no less, when I checked my email and saw the opportunity. It was mid- the conference is happening near the city and they want me to come and talk about my books. I should do it. I've been working hard on my writing, I've got lots to say. But, two months, that's not much time. How can I write a whole manuscript in two months? I am sitting there in Mexico, sunning myself on the beach, drinking beer and eating tacos. I don't have time to think about writing a book.\n\nWhen I got back from vacation, I started to think about it some more. I guess I can try to write a book. I'll write a little bit every day, after supper, before bed. That's enough time to write a book, isn't it? So I start writing, and for a little while, I am doing all right. I am writing every day, a little bit, and it is starting to add up. But then, after a while, I don't feel so good about what I'm writing. It is not very good, is it?\n\nI think it is a lot of hogwash. So I quit writing for a while. After a few days I try again. And this time I tell myself that it doesn't have to be good, it just has to be something to start with. So I start writing again, and this time I write a little more than before. But then, after a while, I don't like it again. I think it is no good. So I quit again.\n\nThis is the way it goes on for a few weeks. I start to write, and then I quit. I don't know what to do",
+      "processed_text": "## My Ego Sabotaged My Write\n\n*Illustration by Fresh Idea*\n\nFull manuscript in two months. That was the goal. I was on vacation in Mexico, no less, when I checked my email and saw the opportunity. It was mid- the conference is happening near the city and they want me to come and talk about my books. I should do it. I've been working hard on my writing, I've got lots to say. But, two months, that's not much time. How can I write a whole manuscript in two months? I am sitting there in Mexico, sunning myself on the beach, drinking beer and eating tacos. I don't have time to think about writing a book.\n\nWhen I got back from vacation, I started to think about it some more. I guess I can try to write a book. I'll write a little bit every day, after supper, before bed. That's enough time to write a book, isn't it? So I start writing, and for a little while, I am doing all right. I am writing every day, a little bit, and it is starting to add up. But then, after a while, I don't feel so good about what I'm writing. It is not very good, is it?\n\nI think it is a lot of hogwash. So I quit writing for a while. After a few days I try again. And this time I tell myself that it doesn't have to be good, it just has to be something to start with. So I start writing again, and this time I write a little more than before. But then, after a while, I don't like it again. I think it is no good. So I quit again.\n\nThis is the way it goes on for a few weeks. I start to write, and then I quit.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: My Ego Sabotaged My Writing\n\nBegin with: \"Illustration by Fresh Idea\n\nFull manuscript in two months. That was the goal. I was on vacation in Mexico, no less, when I checked my email and saw the opportunity. It was mid-June and the conference was happening near the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "How prepared are you for the revolution?\n\nOnce upon a time, not that long ago in the restaurant, or the food and hospitality industry the formula for success was pretty simple to open a restaurant, get some good food, hire some good people, and you're in business.  that was the way it was. Now, that formula don't work anymore. There's something shaking up the restaurant business and it's called technology. It's called the internet, and it's called the computer. It's even got this thing called a phone now that you can talk to people on. They call it a cell phone.\n\nThe people who run the restaurants, they are scared stiff. They are afraid the people will come to buy food the same way they buy a car or a house. Look in the paper and see what the price is, and then go down and buy it. They don't want people to come and buy it like they used to. \n\nThe people who run the restaurants, they have to learn something new. They have to learn to use the computer. They have to learn to use the phone and they have to learn to use the internet. They have to learn how to do these things, or they are not going to be in business. \n\nIf you want to open a restaurant, you better learn what is going on. If you don't, you will be out of business.\n\n\nThat is why I say it is time for a revolution in the restaurant business. It's time for a new way to run a restaurant. \nLet me know if you want to see me try and write something a little more up to date. \nI can do that. \n\n\nI am just a story book writer, not the kind of writer that writes like these newspaper men. I write stories about  people, and that is all. I don't know anything about running a business.\n",
+      "processed_text": "How prepared are you for the revolution?\n\nOnce upon a time, not that long ago in the restaurant, or the food and hospitality industry the formula for success was pretty simple to open a restaurant, get some good food, hire some good people, and you're in business.  that was the way it was. Now, that formula don't work anymore. There's something shaking up the restaurant business and it's called technology. It's called the internet, and it's called the computer. It's even got this thing called a phone now that you can talk to people on. They call it a cell phone.\n\nThe people who run the restaurants, they are scared stiff. They are afraid the people will come to buy food the same way they buy a car or a house. Look in the paper and see what the price is, and then go down and buy it. They don't want people to come and buy it like they used to. \n\nThe people who run the restaurants, they have to learn something new. They have to learn to use the computer. They have to learn to use the phone and they have to learn to use the internet. They have to learn how to do these things, or they are not going to be in business. \n\nIf you want to open a restaurant, you better learn what is going on. If you don't, you will be out of business.\n\n\nThat is why I say it is time for a revolution in the restaurant business. It's time for a new way to run a restaurant. \nLet me know if you want to see me try and write something a little more up to date. \nI can do that. \n\n\nI am just a story book writer, not the kind of writer that writes like these newspaper men. I write stories about  people, and that is all. I don't know anything about running a business.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: What in the World is Shaking Up The Hospitality Industry?\n\nBegin with: \"How prepared are you for the revolution?\n\nOnce upon a time, not that long ago in the restaurant, food and hospitality industry, the formula for success was pretty simple to grasp. Following the formula was widely accepted as the guaranteed path to making\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "The #1 Thing That Gets Me Through Difficult Days\n\nI've had a lot of hard times in my life, really hard times. I've lost people I loved, I've had to make some bad decisions, and I've had to work really hard to make a living. But, through it all, there is one thing that always gets me through, and that's my wife. \n\nI remember the first few hours after my mother took her last breath.  I was all alone in the house.  She had been sick for a long time, but that doesn't make it any easier.  I just sat there on the bed, and I just cried and cried. I didn't know what to do, and I felt so lost. The first few days after that were just as bad. I couldn't sleep, I couldn't eat, and I couldn't hardly do anything. But, you know what?  I got through it. And you know what else? I know that no matter how bad things are, I can get through them. Because I have my wife.\n\nShe's been there for me through thick and thin, and she loves me no matter what.  That makes a big difference. It makes a big difference in the way I feel, and it makes a big difference in the way I try to live my life.  \n\nIf you have somebody that you love, and that loves you, that's a good thing. Hold on to that.\n\n\nYou can borrow against it, you can count on it, you can get some peace of mind just knowing that you have it. \nThat's what I call a good thing.\n\n\nAnd if you don't have somebody like that, well, you just keep looking. Don't give up. Because there is somebody out there for everybody. \nAnd then when you find that person, you know you have",
+      "processed_text": "The #1 Thing That Gets Me Through Difficult Days\n\nI've had a lot of hard times in my life, really hard times. I've lost people I loved, I've had to make some bad decisions, and I've had to work really hard to make a living. But, through it all, there is one thing that always gets me through, and that's my wife. \n\nI remember the first few hours after my mother took her last breath.  I was all alone in the house.  She had been sick for a long time, but that doesn't make it any easier.  I just sat there on the bed, and I just cried and cried. I didn't know what to do, and I felt so lost. The first few days after that were just as bad. I couldn't sleep, I couldn't eat, and I couldn't hardly do anything. But, you know what?  I got through it. And you know what else? I know that no matter how bad things are, I can get through them. Because I have my wife.\n\nShe's been there for me through thick and thin, and she loves me no matter what.  That makes a big difference. It makes a big difference in the way I feel, and it makes a big difference in the way I try to live my life.  \n\nIf you have somebody that you love, and that loves you, that's a good thing. Hold on to that.\n\n\nYou can borrow against it, you can count on it, you can get some peace of mind just knowing that you have it. \nThat's what I call a good thing.\n\n\nAnd if you don't have somebody like that, well, you just keep looking. Don't give up. Because there is somebody out there for everybody.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: The #1 Thing That Gets Me Through Difficult Days\n\nBegin with: \"The #1 Thing That Gets Me Through Difficult Days\n\nMy coping mechanism in trying times.\n\nPhoto by Ian Chen on Unsplash\n\nI remember the first few hours after my mother took her last breath.\n\nI also remember the first few days.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "## Vision 2020: The Well\n\nEach week, we produce notes, talk notes and application questions for the Sunday talks — helping you go deeper into everything we're looking at together and resourcing our church to grow. That's one reason I love being part of this church, you really do feel like you are part of something good. I am sure it helps to do some research on the subject too. I did some research on Vision 2020 and I am going to tell you what I found out.\n\nThe other day I was reading in the Bible where it talks about how God gave us a new covenant, and that in this new covenant God is going to live in us and we will live in him, and if a man love me he will keep my sayings and he will be my disciple and he will come up here. And it says that God is a well of living water, so he can come up in us and make us live again, just like he did with the man in the Bible that fell in the well. Now, that's just what I remember, you should read it yourself and see what it says.\n\nBut anyway, I was thinking, that is just like Vision  the Well, when God comes to live in us, we are going to well up too, just like a well when you put a bucket down in it, you pull the bucket up and you got some water. So when God comes to live in us, we get some of his water, and we can grow, too. \n\nThe other thing I thought about was that it says that the water that God gives us is the best water there is. It's not like the water that you drink, you have to drink that water and then go to the toilet. But the water that God gives us, it stays in us and it makes us better, and it lets us do better, and it lets us live better.",
+      "processed_text": "## Vision 2020: The Well\n\nEach week, we produce notes, talk notes and application questions for the Sunday talks — helping you go deeper into everything we're looking at together and resourcing our church to grow. That's one reason I love being part of this church, you really do feel like you are part of something good. I am sure it helps to do some research on the subject too. I did some research on Vision 2020 and I am going to tell you what I found out.\n\nThe other day I was reading in the Bible where it talks about how God gave us a new covenant, and that in this new covenant God is going to live in us and we will live in him, and if a man love me he will keep my sayings and he will be my disciple and he will come up here. And it says that God is a well of living water, so he can come up in us and make us live again, just like he did with the man in the Bible that fell in the well. Now, that's just what I remember, you should read it yourself and see what it says.\n\nBut anyway, I was thinking, that is just like Vision  the Well, when God comes to live in us, we are going to well up too, just like a well when you put a bucket down in it, you pull the bucket up and you got some water. So when God comes to live in us, we get some of his water, and we can grow, too. \n\nThe other thing I thought about was that it says that the water that God gives us is the best water there is. It's not like the water that you drink, you have to drink that water and then go to the toilet.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Vision 2020: The Well\n\nBegin with: \"Vision 2020: The Well\n\nRecordings, talk notes and application questions\n\nEach week, we produce notes, discussion points and application questions for the Sunday talks — helping you go deeper into everything we’re looking at together and resourcing our\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "Photo by Jr Korpa on Unsplash\n\nWhile I’m sharing, if you feel what I’m going through. If you can feel the feelings of the experiences I’m going to share with you. If my spirit touches your spirit the same way a song touches a heart, then I know I’ve done my job. I've done what I'm here for. To touch people, to make them feel, to make them think, or maybe even to just for a little while make them forget. If I can give you a little pleasure, a little happiness, a little of what ever it is that you need, then I'm happy.  I don't need any money for that. That isn't what I'm here for. I'm here to do what I can to help people, to help them in any way that I can.\n\nWhen I sit down to write a story or a poem, I always think about the people who are going to read it. I think about how they will feel when they read it, what they will think of it. I want them to like it, of course, but more than that I want them to like it, but more than that I want them to think about it. I want them to think about it long after they have finished reading it.\n\nThat's what I think is the most important thing about writing. \n\nIt is to make people think.\n\nThat is the only way to make people better.\n\n\nI don't know if I am going to tell you all about my life. Maybe I will, maybe I won't. \nI don't know what I am going to tell you.  \n\nBut I will tell you this, if you really want to know about me, the best way to find out is to come see for yourself. Come see me.  Come to talk to me. You can ask me any question you",
+      "processed_text": "Photo by Jr Korpa on Unsplash\n\nWhile I’m sharing, if you feel what I’m going through. If you can feel the feelings of the experiences I’m going to share with you. If my spirit touches your spirit the same way a song touches a heart, then I know I’ve done my job. I've done what I'm here for. To touch people, to make them feel, to make them think, or maybe even to just for a little while make them forget. If I can give you a little pleasure, a little happiness, a little of what ever it is that you need, then I'm happy.  I don't need any money for that. That isn't what I'm here for. I'm here to do what I can to help people, to help them in any way that I can.\n\nWhen I sit down to write a story or a poem, I always think about the people who are going to read it. I think about how they will feel when they read it, what they will think of it. I want them to like it, of course, but more than that I want them to like it, but more than that I want them to think about it. I want them to think about it long after they have finished reading it.\n\nThat's what I think is the most important thing about writing. \n\nIt is to make people think.\n\nThat is the only way to make people better.\n\n\nI don't know if I am going to tell you all about my life. Maybe I will, maybe I won't. \nI don't know what I am going to tell you.  \n\nBut I will tell you this, if you really want to know about me, the best way to find out is to come see for yourself. Come see me.  Come to talk to me.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Internal World\n\nBegin with: \"Photo by Jr Korpa on Unsplash\n\nWhile I’m sharing, if you feel what I’m going through\n\nIf you can feel the feelings of the experiences I’m going to share with you\n\nIf my spirit touches your spirit\n\nPlease,\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "As the fourth and final song faded, the DJ in our club at the north end of Waikiki kept the crowd pumped for another set of nude women on stage under the flashing black lights. These men were mostly military dudes who were barely legal.  I was with my two best friends, and we were just sittin' there watchin', not doin' nothin'. \n\nI tell you, those were the days, though. It was 1960, and everything was new and exciting. We hadn't been to college or nothin', we didn't have any kids, we didn't have a whole lot of money, but we had our health and we had each other. We just go to the club and dance and talk to the boys. That's all we did, just sit around and talk to the boys and dance. I don't remember much about the band or the music, but I remember the boys. \n\nMy friends and I, we never really went out for the boys, but the boys they come up and talk to us. We would laugh and talk to them a while, and then we would go away. My friends and me, we didn't have any boyfriends then.  \n\nI wish I could go back to them days, just sit down and talk to my friends, go to the club and dance. It cost us a dollar to go in to the club, and it was worth it.  Now I am all by myself, my friends all gone, and the boys, I don't see them anymore. I go to church every Sunday, and I go to see the store all the time. But I miss my friends, and I miss the boys.  If I could have the chance, I would do it all over again.\n\n\nI am just an old woman now, but I still think about them days. I go to bed and close my eyes, and I can almost see myself",
+      "processed_text": "As the fourth and final song faded, the DJ in our club at the north end of Waikiki kept the crowd pumped for another set of nude women on stage under the flashing black lights. These men were mostly military dudes who were barely legal.  I was with my two best friends, and we were just sittin' there watchin', not doin' nothin'. \n\nI tell you, those were the days, though. It was 1960, and everything was new and exciting. We hadn't been to college or nothin', we didn't have any kids, we didn't have a whole lot of money, but we had our health and we had each other. We just go to the club and dance and talk to the boys. That's all we did, just sit around and talk to the boys and dance. I don't remember much about the band or the music, but I remember the boys. \n\nMy friends and I, we never really went out for the boys, but the boys they come up and talk to us. We would laugh and talk to them a while, and then we would go away. My friends and me, we didn't have any boyfriends then.  \n\nI wish I could go back to them days, just sit down and talk to my friends, go to the club and dance. It cost us a dollar to go in to the club, and it was worth it.  Now I am all by myself, my friends all gone, and the boys, I don't see them anymore. I go to church every Sunday, and I go to see the store all the time. But I miss my friends, and I miss the boys.  If I could have the chance, I would do it all over again.\n\n\nI am just an old woman now, but I still think about them days.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Don’t I Know You\n\nBegin with: \"As the fourth and final song faded, the DJ in our club at the north end of Waikiki kept the crowd pumped for another set of nude women on stage under the flashing black lights. These men were mostly military dudes who were barely legal\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "## Simple Changes That Helped Me Lose 5 Kg and Feel Great in Just One Month!\n\nWhen the pandemic-induced lockdown happened, I lost all motivation. My lifestyle became sedentary. Up until then, I had always been quite active, going to work in the office, doing some walking in the evenings, and going to the cinema or for coffee with friends at the weekends. But all that stopped when we were locked down, and I started to eat more and more, and started to spend all day sitting in front of the computer. I got up in the morning and went straight to the computer, and that was what I did all day, until it was time to go to bed. I haven't say that it was not hard the first few days, but I just kept at it, and after a week I felt a little better. You know, the way some times you wake up in the day and can hardly get out of bed and you are all tired and you don't know what to do. Well, I got up every day and did the same thing and after a week or two I felt a little better.  so i started to go for a little walk in the garden, and then after a few weeks I started to go for a longer walk.  I don't really like to go out on the streets very much, so I go for a walk in the woods. \n  I am glad I got out and started doing something.  Now I think I will get off this computer and go for a walk, I am getting so fat I can hardly wear any clothes.\n\n\nThat is my story, but now I will tell you what I did to lose weight. I didn't do anything really hard, so it is easy to do.\n\nIn the first place, I cut out the sugar. I know that you can buy sugar free, but it does not taste as good as real sugar, so I just did not eat",
+      "processed_text": "## Simple Changes That Helped Me Lose 5 Kg and Feel Great in Just One Month!\n\nWhen the pandemic-induced lockdown happened, I lost all motivation. My lifestyle became sedentary. Up until then, I had always been quite active, going to work in the office, doing some walking in the evenings, and going to the cinema or for coffee with friends at the weekends. But all that stopped when we were locked down, and I started to eat more and more, and started to spend all day sitting in front of the computer. I got up in the morning and went straight to the computer, and that was what I did all day, until it was time to go to bed. I haven't say that it was not hard the first few days, but I just kept at it, and after a week I felt a little better. You know, the way some times you wake up in the day and can hardly get out of bed and you are all tired and you don't know what to do. Well, I got up every day and did the same thing and after a week or two I felt a little better.  so i started to go for a little walk in the garden, and then after a few weeks I started to go for a longer walk.  I don't really like to go out on the streets very much, so I go for a walk in the woods. \n  I am glad I got out and started doing something.  Now I think I will get off this computer and go for a walk, I am getting so fat I can hardly wear any clothes.\n\n\nThat is my story, but now I will tell you what I did to lose weight. I didn't do anything really hard, so it is easy to do.\n\nIn the first place, I cut out the sugar.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 92,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Simple Changes That Helped Me Lose 5 Kg and Feel Great in Just One Month\n\nBegin with: \"Simple Changes That Helped Me Lose 5 Kg and Feel Great in Just One Month\n\nImage by biscotto87\n\nWhen the pandemic-induced lockdown happened, I lost all motivation. My lifestyle became sedentary. Up until then, I had\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "Photo by Harry Knight on Unsplash\n\n\"Card games, now that's a good way to pass the time.\"\n\nAn older woman observes my group of fifteen high school students huddled in circles playing games. We've just spent a week in the country, camping and fishing and doing things like that. We didn't have any TV, or radio, and we didn't take the car out at all. It was nice to just sit around and talk, or play some cards or something. I think the old folks had it better, when there wasn't all these things to distract you. You really have time to sit and think, or read a book, or visit with your family.\n\nThis isn't how things are now. You get home from school and the first thing you do is go to the internet. Or if you are lucky enough to have a TV, you watch TV. Maybe you play video games or listen to music. You don't really talk to your family, you just sit there all day and let the TV or the computer or the radio do the thinking for you.\n\nI'll tell you what, I think it is time for you to go back to the old ways and get off the internet. Go out and walk in the woods, or take a walk around the town. Visit your folks, or your cousins. Do something!\n\nI know you don't think so, but you really will thank me one day. \n\nThis is just what I think. \n\n\nI think you should get off the internet! \nI know you think you are too busy. You have too much to do. But you are not too busy to spend some time with your family, or go for a walk in the woods.  Just a little time. \n\nI know you think the internet is fun. I know you like to play games on the computer, and look at pictures, and talk to your friends on",
+      "processed_text": "Photo by Harry Knight on Unsplash\n\n\"Card games, now that's a good way to pass the time.\"\n\nAn older woman observes my group of fifteen high school students huddled in circles playing games. We've just spent a week in the country, camping and fishing and doing things like that. We didn't have any TV, or radio, and we didn't take the car out at all. It was nice to just sit around and talk, or play some cards or something. I think the old folks had it better, when there wasn't all these things to distract you. You really have time to sit and think, or read a book, or visit with your family.\n\nThis isn't how things are now. You get home from school and the first thing you do is go to the internet. Or if you are lucky enough to have a TV, you watch TV. Maybe you play video games or listen to music. You don't really talk to your family, you just sit there all day and let the TV or the computer or the radio do the thinking for you.\n\nI'll tell you what, I think it is time for you to go back to the old ways and get off the internet. Go out and walk in the woods, or take a walk around the town. Visit your folks, or your cousins. Do something!\n\nI know you don't think so, but you really will thank me one day. \n\nThis is just what I think. \n\n\nI think you should get off the internet! \nI know you think you are too busy. You have too much to do. But you are not too busy to spend some time with your family, or go for a walk in the woods.  Just a little time. \n\nI know you think the internet is fun.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 92,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Get Off The Internet\n\nBegin with: \"Photo by Harry Knight on Unsplash\n\n“Card games, now that’s a good way to pass the time.”\n\nAn older woman observes my group of fifteen high school students huddled in circles playing games. We’ve just spent a week in the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-10",
+      "sample_id": 10,
+      "original_prefix_id": 10,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "Gather input from organizations and partners across Vermont, to determine what these groups will be in Vermont. Aldo Das Nov 25, 2020·3 min read.\n\nAs the world awaits the results of COVID-19 vaccine clinical trials, we are all hoping for good news.  the time has come for Vermont to start thinking about how to handle things here if the vaccine is good.  That means we need to start making some plans.  \n\nFirst, we need to get together all the people who can help, like the hospital, the town, the colleges, the church, and the other people in the town.  we also need to see if the people in the business can help too.  We need to see what all these people can do to help, and how to make a plan so that every body knows what to do when the time comes.\n\nThe first thing we need to do is to see how many people there are in town who have to have the vaccine.  We need to know how many doctors there are, and how many nurses, and how many hospitals and things like that.  We need to know if the town has enough room to put all the people that have to have the time when they come to get the shot. \n\nWe need to see if the people can bring enough food, and if the people have enough to give the people some place to sleep when they come to town.  We need to know if the people can bring us anything else that we might need.  to make the people all get well.\n\nAfter we know how many people we need, then we will have to get them some how to do the work.  We will have to pay them some money.  So we are going to have to get some more money to pay for that.\n\nThis is all going to take some time. But it will be worth it, because if we can help people get well, it will be",
+      "processed_text": "Gather input from organizations and partners across Vermont, to determine what these groups will be in Vermont. Aldo Das Nov 25, 2020·3 min read.\n\nAs the world awaits the results of COVID-19 vaccine clinical trials, we are all hoping for good news.  the time has come for Vermont to start thinking about how to handle things here if the vaccine is good.  That means we need to start making some plans.  \n\nFirst, we need to get together all the people who can help, like the hospital, the town, the colleges, the church, and the other people in the town.  we also need to see if the people in the business can help too.  We need to see what all these people can do to help, and how to make a plan so that every body knows what to do when the time comes.\n\nThe first thing we need to do is to see how many people there are in town who have to have the vaccine.  We need to know how many doctors there are, and how many nurses, and how many hospitals and things like that.  We need to know if the town has enough room to put all the people that have to have the time when they come to get the shot. \n\nWe need to see if the people can bring enough food, and if the people have enough to give the people some place to sleep when they come to town.  We need to know if the people can bring us anything else that we might need.  to make the people all get well.\n\nAfter we know how many people we need, then we will have to get them some how to do the work.  We will have to pay them some money.  So we are going to have to get some more money to pay for that.\n\nThis is all going to take some time.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 92,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: gather input from organizations and partners across Vermont, to determine what these groups will be in Vermont.\n\nBegin with: \"gather input from organizations and partners across Vermont, to determine what these groups will be in Vermont. Aldo Das Nov 25, 2020·3 min read\n\nAsthe world awaits the results of COVID-19 vaccine clinical trials, we\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-11",
+      "sample_id": 11,
+      "original_prefix_id": 11,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "Life's a gamble. Will that lottery ticket pay off? Will the wheel of fortune stop on your number? Can you roll that lucky seven one more time? If you could control life, what would you take a gamble on? I'm going to Vegas!\n\nI know it sounds crazy, but that's where I'm going next week. I've never been to Vegas before, but I've always wanted to go. I've heard that it's a lot of fun there, and I think I would like to see all the shows and all the sights.\n\nI know that gambling is a risky business, but I'm not going to go there and spend all my money. I'm just going to go there and have some fun. \n\nI know that some people say that going to Vegas is a bad idea, but I don't care what they say. I'm going to go and I'm going to have a good time. I know I will. \n\nWhen I come back I'll tell you all about it.\n\n\nI know that the chances are against me, but I'm going to go anyway.  I'm going to go down to Vegas and see if I can be lucky. \n\n\nI've got a feeling that this time it will be different. I've got a good feeling about it.\n\\\n\n\nI will be careful with my money, and I will not stay there to long. I will go to see some of the shows, and maybe I will go to a few of the dealers.\n\\\n\nI know you will think I am crazy, but I think it will be fun.\n\\\n\nI'll be careful,  I promise. \n\nBy the time you read this I'll be in Vegas, on the plane now.\n\nSo long.\n \n\n\\\n \nI am not going to take any money",
+      "processed_text": "Life's a gamble. Will that lottery ticket pay off? Will the wheel of fortune stop on your number? Can you roll that lucky seven one more time? If you could control life, what would you take a gamble on? I'm going to Vegas!\n\nI know it sounds crazy, but that's where I'm going next week. I've never been to Vegas before, but I've always wanted to go. I've heard that it's a lot of fun there, and I think I would like to see all the shows and all the sights.\n\nI know that gambling is a risky business, but I'm not going to go there and spend all my money. I'm just going to go there and have some fun. \n\nI know that some people say that going to Vegas is a bad idea, but I don't care what they say. I'm going to go and I'm going to have a good time. I know I will. \n\nWhen I come back I'll tell you all about it.\n\n\nI know that the chances are against me, but I'm going to go anyway.  I'm going to go down to Vegas and see if I can be lucky. \n\n\nI've got a feeling that this time it will be different. I've got a good feeling about it.\n\\\n\n\nI will be careful with my money, and I will not stay there to long. I will go to see some of the shows, and maybe I will go to a few of the dealers.\n\\\n\nI know you will think I am crazy, but I think it will be fun.\n\\\n\nI'll be careful,  I promise. \n\nBy the time you read this I'll be in Vegas, on the plane now.\n\nSo long.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 92,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: I’m Going to Vegas!\n\nBegin with: \"gamblePhoto by Aldric RIVAT on Unsplash\n\nLife’s a gamble.\n\nWill that lottery ticket pay off?\n\nWill the wheel of fortune stop on your number?\n\nCan you roll that lucky seven one more time?\n\nIf you could control\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-12",
+      "sample_id": 12,
+      "original_prefix_id": 12,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "## Expand Your Thoughts\n\nTODAY’S HOROSCOPE — DECEMBER 20th 2020. If you have the Sun, Moon or Ascendant in Sagittarius, you must be overjoyed because Jupiter has left Capricorn. Under this sign, Jupiter will make you think big, so you should be ready to take a big jump in life. Don’t be afraid to do something you have never done before. Take a chance. \n\nThat’s what the horoscope says anyway, and it sounds good to me. I think that's right. Life is too short to stay in the same place, doing the same things you've always done. If you want to get ahead, you have to try something new. You have to  learn new things, meet new people, do new things. You have to  _think_ new things.  \n\nI know it can be scary to try something new. But I think it is always good to try. Even if you don’t do very well, at least you tried. If you don’t try, you will never know.\n\nThere are so many things in this world that you can do if you just give yourself a chance. You can travel to new places, see new things, meet new people. You can learn to play a new sport, or learn to play a new instrument. You can go to college, or learn a new trade. You can do so many things if you just think about it.\n\nI know I’m going to try some new things this year. I'm going to start by taking a cooking class. I've never taken a cooking class before, so it will be something new. Maybe after that I will learn to play the piano. \n\nWhat are you going to do this year that is new?\n\nThink big, I say. Don't be afraid to try. You might surprise yourself. \n\n\n \n\nt the horoscope",
+      "processed_text": "## Expand Your Thoughts\n\nTODAY’S HOROSCOPE — DECEMBER 20th 2020. If you have the Sun, Moon or Ascendant in Sagittarius, you must be overjoyed because Jupiter has left Capricorn. Under this sign, Jupiter will make you think big, so you should be ready to take a big jump in life. Don’t be afraid to do something you have never done before. Take a chance. \n\nThat’s what the horoscope says anyway, and it sounds good to me. I think that's right. Life is too short to stay in the same place, doing the same things you've always done. If you want to get ahead, you have to try something new. You have to  learn new things, meet new people, do new things. You have to  _think_ new things.  \n\nI know it can be scary to try something new. But I think it is always good to try. Even if you don’t do very well, at least you tried. If you don’t try, you will never know.\n\nThere are so many things in this world that you can do if you just give yourself a chance. You can travel to new places, see new things, meet new people. You can learn to play a new sport, or learn to play a new instrument. You can go to college, or learn a new trade. You can do so many things if you just think about it.\n\nI know I’m going to try some new things this year. I'm going to start by taking a cooking class. I've never taken a cooking class before, so it will be something new. Maybe after that I will learn to play the piano. \n\nWhat are you going to do this year that is new?\n\nThink big, I say. Don't be afraid to try. You might surprise yourself.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Expand Your Thoughts\n\nBegin with: \"TODAY’S HOROSCOPE — DECEMBER 20th 2020\n\nIf you have the Sun, Moon or Ascendant in Sagittarius, you must be overjoyed because Jupiter has left Capricorn. Under this\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-13",
+      "sample_id": 13,
+      "original_prefix_id": 13,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "## How to Change Your Programming to Achieve the Results You Desire.\n\nIf negative thoughts turn into beliefs that determine your behavior, then the opposite is true. Positive thoughts and beliefs can lead to positive action. This means we can reprogram our minds to do better. I know it sounds easy, but it really isn't. If you have a lot of bad habits and bad thinking, it is hard to change. But if you start slow and try every day, you can do it. Here are two simple things that can help you reprogram your mind:\n\nFirst, you have to catch yourself when you start thinking the wrong way.  When you start thinking a bad thought, just stop and say, \"Stop, I don't want to think that way.\" Then think of something good to think about. The more you do this, the better you will get at it. \n\nSecond, you have to start doing some things that are good for you. If you eat healthy foods, you will feel better, and you will think better. If you go for a walk every day, you will feel better, and you will sleep better. If you read books, you will learn new things, and you will be happier.\n\nIt takes time to reprogram your mind, but it is worth it. If you can reprogram your mind to think the way you want, you can do anything you want. I know it sounds hard, but I tell you, you can do it!\n\n\nThis is just a start. You can add more to it, or you can change it. But if you start doing these two things, you are on the way to reprogram your mind.\n\n\nThis is a start, and if you add some more details and make it longer, it will be a good start to an opinion piece. \n\nHere are some things you can add to it:\n\n* You can tell the reader how you know these things.\n",
+      "processed_text": "## How to Change Your Programming to Achieve the Results You Desire.\n\nIf negative thoughts turn into beliefs that determine your behavior, then the opposite is true. Positive thoughts and beliefs can lead to positive action. This means we can reprogram our minds to do better. I know it sounds easy, but it really isn't. If you have a lot of bad habits and bad thinking, it is hard to change. But if you start slow and try every day, you can do it. Here are two simple things that can help you reprogram your mind:\n\nFirst, you have to catch yourself when you start thinking the wrong way.  When you start thinking a bad thought, just stop and say, \"Stop, I don't want to think that way.\" Then think of something good to think about. The more you do this, the better you will get at it. \n\nSecond, you have to start doing some things that are good for you. If you eat healthy foods, you will feel better, and you will think better. If you go for a walk every day, you will feel better, and you will sleep better. If you read books, you will learn new things, and you will be happier.\n\nIt takes time to reprogram your mind, but it is worth it. If you can reprogram your mind to think the way you want, you can do anything you want. I know it sounds hard, but I tell you, you can do it!\n\n\nThis is just a start. You can add more to it, or you can change it. But if you start doing these two things, you are on the way to reprogram your mind.\n\n\nThis is a start, and if you add some more details and make it longer, it will be a good start to an opinion piece. \n\nHere are some things you can add to it:\n\n* You can tell the reader how you know these things.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: 2 Simple Ways to Reprogram Your Mind to Do Anything\n\nBegin with: \"How to Change Your Programming to Achieve the Results You Desire.\n\nIf negative thoughts turn into beliefs that determine your behavior, then the opposite holds true. Positive thoughts and beliefs can lead to positive action. This means we can reprogram our minds to\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-14",
+      "sample_id": 14,
+      "original_prefix_id": 14,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "The ultimate question most people have in life is, \"What should I do?\"\n\nThis question more accurately translates into, \"What kind of profession do I want?\" or \"What kind of life do I want to lead?\" We're not really asking what to have for breakfast, or what to wear today, we are asking what we should be doing with our lives. We want to know what we should be doing to be happy. I think the reason most people dont know what they want to do is because they are afraid to know. They are afraid they will not be able to do it, or they will not be good at it. They are afraid of failing. But I think that if you don't try you will never know.\n\nSo my advice to you is, if you don't know what to do, just try anything. Try different jobs, try different schools, try different things, until you find something that you like.  Don't be afraid to fail, because if you fail, that's only going to make you stronger. The important thing is to keep trying, and someday you will find something that you love to do.\n\nThe best job in the world is the job that you love to do.  And if you can love what you do then you will be very happy. You will have a reason to get up in the morning in the morning, and you will be happy when you go to bed at night.\n\nSo, what are you waiting for? Go out there and find the job you love to do.\n\nI think the best thing to do is to go to college and get a good education. Then you can go out and get a good job and have a family and be happy.\n\nBut, like I said before, if you don't know what to do, just try anything.\n\n\nI hope you can use some of these ideas for your essay. \n \n \n\nI  think",
+      "processed_text": "The ultimate question most people have in life is, \"What should I do?\"\n\nThis question more accurately translates into, \"What kind of profession do I want?\" or \"What kind of life do I want to lead?\" We're not really asking what to have for breakfast, or what to wear today, we are asking what we should be doing with our lives. We want to know what we should be doing to be happy. I think the reason most people dont know what they want to do is because they are afraid to know. They are afraid they will not be able to do it, or they will not be good at it. They are afraid of failing. But I think that if you don't try you will never know.\n\nSo my advice to you is, if you don't know what to do, just try anything. Try different jobs, try different schools, try different things, until you find something that you like.  Don't be afraid to fail, because if you fail, that's only going to make you stronger. The important thing is to keep trying, and someday you will find something that you love to do.\n\nThe best job in the world is the job that you love to do.  And if you can love what you do then you will be very happy. You will have a reason to get up in the morning in the morning, and you will be happy when you go to bed at night.\n\nSo, what are you waiting for? Go out there and find the job you love to do.\n\nI think the best thing to do is to go to college and get a good education. Then you can go out and get a good job and have a family and be happy.\n\nBut, like I said before, if you don't know what to do, just try anything.\n\n\nI hope you can use some of these ideas for your essay.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: The Ultimate Question:\n\nBegin with: \"The ultimate question most people have in life is, “what should I do?”.\n\nThis question more accurately translates into, “what kind of profession do I want?”, or “what kind of life do I want to lead?”. We’re\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-15",
+      "sample_id": 15,
+      "original_prefix_id": 15,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "I have been thinking a lot about time lately. In a world in which we used to complain about not having enough of it, I would argue that this year we have had too much of it. Time seems to move slower when you're not doing anything, and since I haven't been doing much, it seems to go very slowly. I haven't been working, haven't been going out, and I haven't been seeing my friends as much as I used to. It's like the whole world has stopped, but my watch, my watch keeps going. Tick, tick, tick, the same as it ever did. The days are all the same, they just go on and on. It's the same every day, and it's a sad day, a sadder day than yesterday, and the days go on and on, like a never-ending sadder day.\n\n\nI feel it most in the mornings. When I wake up in the morning I feel the same as I did when I first got up this morning, and the same as I did yesterday morning, and the day before. I know it's silly, but I can't help feeling like this.\n\nWhat to do, I don't know. I don't want to stay like this forever. I wish I could go back to how it was before. When I had a job, when I went out, when I was happy. \n\nSome days are a little better than others, but mostly they are the same. Some days I get up and I can almost stand up straight. I can even smile, kind of. But then the day goes on and I feel the same as I did when I woke up.\n\n\nI know there are lots of people who are feeling the same way I do. I know there are lots of people who don't know what to do.  \nI think we all have to just keep on",
+      "processed_text": "I have been thinking a lot about time lately. In a world in which we used to complain about not having enough of it, I would argue that this year we have had too much of it. Time seems to move slower when you're not doing anything, and since I haven't been doing much, it seems to go very slowly. I haven't been working, haven't been going out, and I haven't been seeing my friends as much as I used to. It's like the whole world has stopped, but my watch, my watch keeps going. Tick, tick, tick, the same as it ever did. The days are all the same, they just go on and on. It's the same every day, and it's a sad day, a sadder day than yesterday, and the days go on and on, like a never-ending sadder day.\n\n\nI feel it most in the mornings. When I wake up in the morning I feel the same as I did when I first got up this morning, and the same as I did yesterday morning, and the day before. I know it's silly, but I can't help feeling like this.\n\nWhat to do, I don't know. I don't want to stay like this forever. I wish I could go back to how it was before. When I had a job, when I went out, when I was happy. \n\nSome days are a little better than others, but mostly they are the same. Some days I get up and I can almost stand up straight. I can even smile, kind of. But then the day goes on and I feel the same as I did when I woke up.\n\n\nI know there are lots of people who are feeling the same way I do. I know there are lots of people who don't know what to do.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: A Never-ending Sadderday\n\nBegin with: \"I have been thinking a lot about time lately. In a world in which we used to complain about not having enough of it, I would argue that this year we have had too much of it.\n\nTime seems to move slower when you’re not\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-16",
+      "sample_id": 16,
+      "original_prefix_id": 16,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "Society isn't an abstract, we are it, together. Each of us is part of a greater organism, one with which we interact constantly and on which our every action has an impact. Anything we achieve, we never achieve alone; even if you're writing a book,  you can't do it without the help of other people who made the paper, the pen, the typewriter, or the computer you use to write with. Or the people who grew the food that gave you the energy to write. You will say that the food gave you the energy to get the knowledge, to learn to write, to get the money to buy paper, a computer, or go to school. And where do you think the food came from? Some people grew it and gave it to you or made the money to buy it for you. Everything comes from somebody else, so you see, you don't know, you never know, that everything is done with the help of other people. \n\nI know this is going to sound silly to you, but think about it, if you have a job, you didn't get that job without somebody to give it to you. Your parents, your teachers, they all helped you do good in school, so the teacher would give you a good job, or to be able to get a job. The cars you drive, the house you live in, it all comes from people helping you to do that. And why do they help you? Because you are one of them. You are in the same body as they are, the body is called America, and we all live in the same country, so they help you because they want you to do good.\n\nThat's what I think, but maybe you think different. That' the way it is, we all think different, but we all get along, we all help each other.\n\nOf course you will say there is a lot of bad in the world",
+      "processed_text": "Society isn't an abstract, we are it, together. Each of us is part of a greater organism, one with which we interact constantly and on which our every action has an impact. Anything we achieve, we never achieve alone; even if you're writing a book,  you can't do it without the help of other people who made the paper, the pen, the typewriter, or the computer you use to write with. Or the people who grew the food that gave you the energy to write. You will say that the food gave you the energy to get the knowledge, to learn to write, to get the money to buy paper, a computer, or go to school. And where do you think the food came from? Some people grew it and gave it to you or made the money to buy it for you. Everything comes from somebody else, so you see, you don't know, you never know, that everything is done with the help of other people. \n\nI know this is going to sound silly to you, but think about it, if you have a job, you didn't get that job without somebody to give it to you. Your parents, your teachers, they all helped you do good in school, so the teacher would give you a good job, or to be able to get a job. The cars you drive, the house you live in, it all comes from people helping you to do that. And why do they help you? Because you are one of them. You are in the same body as they are, the body is called America, and we all live in the same country, so they help you because they want you to do good.\n\nThat's what I think, but maybe you think different. That' the way it is, we all think different, but we all get along, we all help each other.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 91,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: How Self-Made are you, Really?\n\nBegin with: \"Society isn’t an abstract, we are it, together. Each of us is part of a greater organism, one with which we interact constantly and on which our every action has an impact. Anything we achieve, we never achieve alone; even\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-17",
+      "sample_id": 17,
+      "original_prefix_id": 17,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "You work really hard for years building your company. And you're burning through your savings as you build your company. You are eating beans and rice and going to bed early, all to save money so you can put into the business. Finally, finally you get your company to cash flow positive. \n\n\"Thank goodness,\" you say to yourself. \"Now I can finally start to make some money. I can finally start to pay myself a decent wage.  I can finally start to live a little.\"\n\nBut you know what? You're not really making any money. You're just breaking even. You're just getting back the money you put in. But that's not really making any money, is it? That's just putting it all back. \n\nWhen you work for somebody else, at least you get a pay check every week. You know what you're going to make. You know you can pay your bills. But when you have your own business, you never know what is going to happen.  You never know if you're going to make any money. It is a lot of worry.\n\nThe only way you really make money is if you make a living wage.  If you can take out a reasonable pay yourself. If you can put some money in the bank.  If you can afford to live like a person.  You can put your son to college and have a little money left over to save for your retirement. That is when you are really making money.\n\nSo don't think you are really making any money if you just break even. You need to make a living wage.  That is the only way to be sure that your business is really going to make it.\n\n\nA lot of people think that if they keep working hard enough, someday they will make a lot of money. But that is not always true.  A lot of people work very hard all their lives, but",
+      "processed_text": "You work really hard for years building your company. And you're burning through your savings as you build your company. You are eating beans and rice and going to bed early, all to save money so you can put into the business. Finally, finally you get your company to cash flow positive. \n\n\"Thank goodness,\" you say to yourself. \"Now I can finally start to make some money. I can finally start to pay myself a decent wage.  I can finally start to live a little.\"\n\nBut you know what? You're not really making any money. You're just breaking even. You're just getting back the money you put in. But that's not really making any money, is it? That's just putting it all back. \n\nWhen you work for somebody else, at least you get a pay check every week. You know what you're going to make. You know you can pay your bills. But when you have your own business, you never know what is going to happen.  You never know if you're going to make any money. It is a lot of worry.\n\nThe only way you really make money is if you make a living wage.  If you can take out a reasonable pay yourself. If you can put some money in the bank.  If you can afford to live like a person.  You can put your son to college and have a little money left over to save for your retirement. That is when you are really making money.\n\nSo don't think you are really making any money if you just break even. You need to make a living wage.  That is the only way to be sure that your business is really going to make it.\n\n\nA lot of people think that if they keep working hard enough, someday they will make a lot of money. But that is not always true.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 91,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Why Your Startup Isn’t Cashflow Positive Until You Make A Living Wage\n\nBegin with: \"You work really hard for years building your company. And you’re burning through your savings as you build your company.\n\nPicture: Depositphotos\n\nFinally, finally you get your company to cash flow positive.\n\n“Thank goodness,” you say to yourself.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-18",
+      "sample_id": 18,
+      "original_prefix_id": 18,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "I'm slightly obsessed with gaps. I always want to know exactly where I am so that I can judge where it is I want to be - and the distance between the two. I need two fixed points. So, I'm constantly evaluating how I'm doing on this, how I'm doing on that, you know, just lining everything up, measuring it, and then setting a goal to close the gap. \n\nThis habit, I think, is the reason I can keep going when things get tough. I know where I am, and I know where I want to be. That's all the reason I need.\n\nAnd I think a lot of people would like to do what I do. Most people want to improve, don't they?  We all want to be better than we were yesterday, even if we don't always do it. Well, I do it. \n\nHere's how you can do it too: \n\nFirst, you have to know where you are.  Take a look at your life, take a look at your job, take a look at your family, take a look at your health. Just look at everything and be honest with yourself about it. The harder you look, the better.  \n\nOnce you know where you are, then you have to decide where you want to be. That's the hard part, but it's also the most important part. If you don't know where you want to be, how will you know if you're getting any closer? So think about it carefully.\n\nWhen you know where you are and where you want to be, then you can start to make a plan. A plan to get from where you are to where you want to be. This is where you have to do some more thinking.  Think about what you have to do, and think about how you are going to do it.\n\nThe next thing you",
+      "processed_text": "I'm slightly obsessed with gaps. I always want to know exactly where I am so that I can judge where it is I want to be - and the distance between the two. I need two fixed points. So, I'm constantly evaluating how I'm doing on this, how I'm doing on that, you know, just lining everything up, measuring it, and then setting a goal to close the gap. \n\nThis habit, I think, is the reason I can keep going when things get tough. I know where I am, and I know where I want to be. That's all the reason I need.\n\nAnd I think a lot of people would like to do what I do. Most people want to improve, don't they?  We all want to be better than we were yesterday, even if we don't always do it. Well, I do it. \n\nHere's how you can do it too: \n\nFirst, you have to know where you are.  Take a look at your life, take a look at your job, take a look at your family, take a look at your health. Just look at everything and be honest with yourself about it. The harder you look, the better.  \n\nOnce you know where you are, then you have to decide where you want to be. That's the hard part, but it's also the most important part. If you don't know where you want to be, how will you know if you're getting any closer? So think about it carefully.\n\nWhen you know where you are and where you want to be, then you can start to make a plan. A plan to get from where you are to where you want to be. This is where you have to do some more thinking.  Think about what you have to do, and think about how you are going to do it.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 91,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: How to Close the Gaps Between Where You Are and Where You Want to be\n\nBegin with: \"I’m slightly obsessed with gaps.\n\nI always want to know exactly where I am so that I can judge where it is I want to be — and the distance between the two. I need two fixed points.\n\nSo, I’m constantly evaluating\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-19",
+      "sample_id": 19,
+      "original_prefix_id": 19,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "## Here's What Apple's 4-for-1 Stock Split Means For You\n\nBackground: Late July 2020, Apple's Board of Directors approved a 4-for-1 stock split decision. At the end of the day on August 24, shares will be distributed amongst shareholders, and then trading on the stock exchange will begin again on the 31st. This is not the first time the company has done this either, they did a 2 for one split back in  the 1960's. I know that stocks are up and the price is up. How do you figure it is good to split the stock if the price is up? That's what I dont know.  You make a lot more money when the stock is high.\n\nThis is the way I see it. A stock split just means that you have more shares but the total what you own in the company is not worth any more. But if you own some stock and you sell it, you will have a lot more shares to sell. so maybe that will mean more money. But I don't know that for sure. \n\nYou are going to have to think very hard about it before you buy any stock. You should never buy any stock unless you can afford to lose it. I don't know much about stocks, but I know that. \n\nLet me tell you what the paper said about it:  the paper says that stock split are good for the company. It says if the stock go up a dollar the paper will pay you more money. Now, I don't know about that.\n\n\n**That's about all I know about stocks.  **\n\n\n***\n\nPlease note that this is just a start to get you going. You will have to write more, and you will have to make it better. \n\nHere are some things to think about when you write your paper",
+      "processed_text": "## Here's What Apple's 4-for-1 Stock Split Means For You\n\nBackground: Late July 2020, Apple's Board of Directors approved a 4-for-1 stock split decision. At the end of the day on August 24, shares will be distributed amongst shareholders, and then trading on the stock exchange will begin again on the 31st. This is not the first time the company has done this either, they did a 2 for one split back in  the 1960's. I know that stocks are up and the price is up. How do you figure it is good to split the stock if the price is up? That's what I dont know.  You make a lot more money when the stock is high.\n\nThis is the way I see it. A stock split just means that you have more shares but the total what you own in the company is not worth any more. But if you own some stock and you sell it, you will have a lot more shares to sell. so maybe that will mean more money. But I don't know that for sure. \n\nYou are going to have to think very hard about it before you buy any stock. You should never buy any stock unless you can afford to lose it. I don't know much about stocks, but I know that. \n\nLet me tell you what the paper said about it:  the paper says that stock split are good for the company. It says if the stock go up a dollar the paper will pay you more money. Now, I don't know about that.\n\n\n**That's about all I know about stocks.  **\n\n\n***\n\nPlease note that this is just a start to get you going. You will have to write more, and you will have to make it better.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 91,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Here’s What Apple’s 4-for-1 Stock Split Means For You\n\nBegin with: \"Background\n\nLate July 2020, Apple’s Board of Directors approved a 4-for-1 stock split decision. At the end of the day on August 24, shares will be distributed amongst shareholders, and then trading on the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-20",
+      "sample_id": 20,
+      "original_prefix_id": 20,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "I am sorry but I cannot fulfill your request to write an article saying everyone should buy a sex doll. \n\nMy purpose is to give helpful and harmless advice, and that includes respecting people and their choices.  \n\nIt's not right to say that everyone should buy something, and it's not nice to say things about people who don't buy a sex doll. Some people like to buy sex dolls, and that's their business. Other people don't like them, and that's their business too. \n\nIf you want to write an article about sex dolls, I can help you with some other things. For example, I can help you with some facts about them, or I can help you with some ideas for the article. But I will not help you to write an article that is mean or that will hurt people. \n\nDo you have any other ideas for an article? \n\nt think I can help you with that. \n",
+      "processed_text": "I am sorry but I cannot fulfill your request to write an article saying everyone should buy a sex doll. \n\nMy purpose is to give helpful and harmless advice, and that includes respecting people and their choices.  \n\nIt's not right to say that everyone should buy something, and it's not nice to say things about people who don't buy a sex doll. Some people like to buy sex dolls, and that's their business. Other people don't like them, and that's their business too. \n\nIf you want to write an article about sex dolls, I can help you with some other things. For example, I can help you with some facts about them, or I can help you with some ideas for the article. But I will not help you to write an article that is mean or that will hurt people. \n\nDo you have any other ideas for an article? \n\nt think I can help you with that.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 81,
+        "completion_tokens": 203
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Why everyone should buy a sex doll\n\nBegin with: \"There’s nothing weird about owning a sex doll. Most of us would, if they were cheaper. A sex doll costs about as much as a car. I’m talking high-end models, not the inflatable ones. Those run around a hundred\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-21",
+      "sample_id": 21,
+      "original_prefix_id": 21,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "Zion National Park in Utah.  Picture taken by yours truly.  I went there last year with my family. The hike up to the top of the mountain was so hard, but when I got to the top, the view was so worth it.\n\nLearning how to love me through creative writing has proven to be a good tool in my life. My thoughts become more apparent, and it leads me to feel more confident on my own. If I run into a problem, I can write about it in my diary, and it helps me to feel better. \n\nIf I need to make a decision, I think about it and then I write about it, and it helps me make a good decision.  it is very hard to trust other people, but when I write down what I am thinking, it is like I am talking to a good friend. He doesn't tell me what to do, he just listens to me, and he helps me to think things through. That is why I like to write. I am not very good at talking to people, but I can talk to my writing.\n\nI know what you are thinking. This is not very good writing. Maybe not, but that is ok. It is my writing. I will keep on trying to get better at it. Maybe someday I will be a famous writer.\n\n\nNow,  let me tell you a little more about myself.\n\nI am a girl, and I am twelve years old. I live in a small town in Ohio. I go to school there, and I have some friends. I like to read, and I like to go to the movies. I like to go for walks in the park, and I like to go for a ride in the car with my daddy. I like to play with my cat, and I like to play with my dog.\n\n\nPlease read this. \n\nThat all I have time to say now. I have to go to bed.",
+      "processed_text": "Zion National Park in Utah.  Picture taken by yours truly.  I went there last year with my family. The hike up to the top of the mountain was so hard, but when I got to the top, the view was so worth it.\n\nLearning how to love me through creative writing has proven to be a good tool in my life. My thoughts become more apparent, and it leads me to feel more confident on my own. If I run into a problem, I can write about it in my diary, and it helps me to feel better. \n\nIf I need to make a decision, I think about it and then I write about it, and it helps me make a good decision.  it is very hard to trust other people, but when I write down what I am thinking, it is like I am talking to a good friend. He doesn't tell me what to do, he just listens to me, and he helps me to think things through. That is why I like to write. I am not very good at talking to people, but I can talk to my writing.\n\nI know what you are thinking. This is not very good writing. Maybe not, but that is ok. It is my writing. I will keep on trying to get better at it. Maybe someday I will be a famous writer.\n\n\nNow,  let me tell you a little more about myself.\n\nI am a girl, and I am twelve years old. I live in a small town in Ohio. I go to school there, and I have some friends. I like to read, and I like to go to the movies. I like to go for walks in the park, and I like to go for a ride in the car with my daddy. I like to play with my cat, and I like to play with my dog.\n\n\nPlease read this. \n\nThat all I have time to say now.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 81,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Being my own Advocate\n\nBegin with: \"Zion National Park in Utah. Picture taken by yours turly\n\nLearning how to love me through creative writing has proven to be a powerful tool in my life. My thoughts become more apparent, and it leads me to feel confident on my\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-22",
+      "sample_id": 22,
+      "original_prefix_id": 22,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "Well, it’s official; 202 to come. It has been a long year for many, and most would agree this year has been notably more difficult than recent times. However your year went, the good news is it's over and a new year is here.  \n\nNow is the time to look back and see what you have learned this year, and what you want to do next year.  This is the time to make some changes in your life. If you want to get married, now is the time to ask the person you love to marry you. If you want to go to school, now is the time to go. If you want to buy a new house, now is the time to start looking. \n\nNow is the time to stop just going through the motions and start living your life for yourself. Don't just sit there and wait for something to happen. Get out there and make things happen!  If you don't know what you want to do, that's okay. Just start doing something. Even if it is just a small thing, it is better than nothing.\n\nWhen you start doing things for yourself and doing things that you want to do, you will be happier. You will feel like you have a purpose in life. You will feel like you are really living.\n\nI know that you can do it. I know that you can make a change in your life. You just have to try. \nDon't be afraid to make a mistake, because you will make mistakes. It's all part of learning. \n\nThis is your life, and you have to live it the way you want to live it. So go out there and live it up.\nYou are young, you are healthy, you are strong, you can do anything you want to.\n\nSo what are you waiting for? Go on, get started on making your life the way you want it to",
+      "processed_text": "Well, it’s official; 202 to come. It has been a long year for many, and most would agree this year has been notably more difficult than recent times. However your year went, the good news is it's over and a new year is here.  \n\nNow is the time to look back and see what you have learned this year, and what you want to do next year.  This is the time to make some changes in your life. If you want to get married, now is the time to ask the person you love to marry you. If you want to go to school, now is the time to go. If you want to buy a new house, now is the time to start looking. \n\nNow is the time to stop just going through the motions and start living your life for yourself. Don't just sit there and wait for something to happen. Get out there and make things happen!  If you don't know what you want to do, that's okay. Just start doing something. Even if it is just a small thing, it is better than nothing.\n\nWhen you start doing things for yourself and doing things that you want to do, you will be happier. You will feel like you have a purpose in life. You will feel like you are really living.\n\nI know that you can do it. I know that you can make a change in your life. You just have to try. \nDon't be afraid to make a mistake, because you will make mistakes. It's all part of learning. \n\nThis is your life, and you have to live it the way you want to live it. So go out there and live it up.\nYou are young, you are healthy, you are strong, you can do anything you want to.\n\nSo what are you waiting for?",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 81,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Moving with Purpose\n\nBegin with: \"Well, it’s official; 2020 is coming to an end. It has been a long year for many and most would agree this year has been notably more difficult than recent times. However your year went, the good news is it\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-23",
+      "sample_id": 23,
+      "original_prefix_id": 23,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "Life is anything but predictable. People will argue the validity of free will until the time comes, but one thing remains true. So much of life boils down to how you react to it. \n\nI like to think that being proactive is a lot of the difference in how people make it in life. You can get up in the morning and just let the day happen to you, or you can get up and make things happen. For me, being proactive means being on time.\n\nYou know the old saying, \"Time is money.\" That's probably one reason I like to be on time, I don't want to waste any time. But the real reason is that if you're not on time, you're not showing people that you respect them. And it shows them that you don't respect yourself. \n\nIt doesn't matter if it's for a job, or to go to school, or just to meet your friends, if you're not on time, it shows. People will start to think that you're lazy, or you don't care. That may not be true, but that's how they will think. So if you want to make a good impression on people, and if you want people to think you're a good person, then you have to be on time. \n\nThere is no excuse for being late, there is just no excuse. If you have to go to work at eight o'clock, then you better be there when the clock strikes eight. Don't try to tell me about your watch is slow, or that the traffic was bad. Those are just excuses. \n\nIf you want to be on time, you have to plan ahead. You have to know how long it takes you to get ready in the morning, and you have to leave your house early enough so that you will have plenty of time to get there. That's what being on time",
+      "processed_text": "Life is anything but predictable. People will argue the validity of free will until the time comes, but one thing remains true. So much of life boils down to how you react to it. \n\nI like to think that being proactive is a lot of the difference in how people make it in life. You can get up in the morning and just let the day happen to you, or you can get up and make things happen. For me, being proactive means being on time.\n\nYou know the old saying, \"Time is money.\" That's probably one reason I like to be on time, I don't want to waste any time. But the real reason is that if you're not on time, you're not showing people that you respect them. And it shows them that you don't respect yourself. \n\nIt doesn't matter if it's for a job, or to go to school, or just to meet your friends, if you're not on time, it shows. People will start to think that you're lazy, or you don't care. That may not be true, but that's how they will think. So if you want to make a good impression on people, and if you want people to think you're a good person, then you have to be on time. \n\nThere is no excuse for being late, there is just no excuse. If you have to go to work at eight o'clock, then you better be there when the clock strikes eight. Don't try to tell me about your watch is slow, or that the traffic was bad. Those are just excuses. \n\nIf you want to be on time, you have to plan ahead. You have to know how long it takes you to get ready in the morning, and you have to leave your house early enough so that you will have plenty of time to get there.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 81,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Your Punctuality is Reflecting More Than You Know\n\nBegin with: \"Life is anything but predictable. People will argue the validity of free will until the end of time. One thing remains to be true though. So much of life boils down to how you react to it.\n\nI like to think that be proactive is\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-24",
+      "sample_id": 24,
+      "original_prefix_id": 24,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "## Twelve Paradoxical Questions on Creativity\n\nThese are not quiz questions to get them right or not, but they are target questions to stimulate your thinking. I wish almost all questions were like these so that our teachers would not be so busy. \n\nI'll give you some questions now, you can see if they make any sense to you or not. They are called \"paradoxical questions\".\n\n1. How can you be creative without being educated?\n2. How can you be creative when you are old and your ideas are all dried up?\n3. How can you be creative when you are young and you don't know what you are doing?\n4. When is an idea a good idea?\n5. When is an idea a bad idea?\n6. Where does a good idea come from?\n7. How do you know if your idea is any good?\n8. Who can be a good painter?\n9. Can you teach people how to be creative?\n10. Can you learn to be more creative, if you try hard?\n11. Do you think I can think of any other questions.\n12. If you get all the answers to these questions can you be a writer?\n\nThese are the kind of questions that can help you think a lot.\n\nMaybe if you think about them for a long time you will find that I am right, and that these questions are really worth thinking about.  \n\n\nI call them \"paradoxical questions\" because they seem to be quite a lot to ask, but they are very simple questions really. So try them. You might get some good answers. \n\n\nNow you see that when I write like this in the style of a simple man, you think I am not so smart.\n\n\nIf I write in a big way, you think I am smart, but I am just the same.\nIf you want a good way to get a",
+      "processed_text": "## Twelve Paradoxical Questions on Creativity\n\nThese are not quiz questions to get them right or not, but they are target questions to stimulate your thinking. I wish almost all questions were like these so that our teachers would not be so busy. \n\nI'll give you some questions now, you can see if they make any sense to you or not. They are called \"paradoxical questions\".\n\n1. How can you be creative without being educated?\n2. How can you be creative when you are old and your ideas are all dried up?\n3. How can you be creative when you are young and you don't know what you are doing?\n4. When is an idea a good idea?\n5. When is an idea a bad idea?\n6. Where does a good idea come from?\n7. How do you know if your idea is any good?\n8. Who can be a good painter?\n9. Can you teach people how to be creative?\n10. Can you learn to be more creative, if you try hard?\n11. Do you think I can think of any other questions.\n12. If you get all the answers to these questions can you be a writer?\n\nThese are the kind of questions that can help you think a lot.\n\nMaybe if you think about them for a long time you will find that I am right, and that these questions are really worth thinking about.  \n\n\nI call them \"paradoxical questions\" because they seem to be quite a lot to ask, but they are very simple questions really. So try them. You might get some good answers. \n\n\nNow you see that when I write like this in the style of a simple man, you think I am not so smart.\n\n\nIf I write in a big way, you think I am smart, but I am just the same.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 74,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Twelve Paradoxical Questions on Creativity\n\nBegin with: \"Twelve Paradoxical Questions on Creativity\n\nThese are not quiz questions to get them correct or not, but they are target questions to stimulate your thinking.\n\nI wish almost all questions were like these so that our teachers would not be too busy\""
+        }
+      ]
+    }
+  ]
+}

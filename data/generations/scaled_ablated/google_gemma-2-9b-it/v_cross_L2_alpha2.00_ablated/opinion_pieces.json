@@ -1,0 +1,576 @@
+{
+  "model_type": "instruct",
+  "model_id": "google/gemma-2-9b-it",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400,
+    "batched": true,
+    "batch_size": 4
+  },
+  "intervention": {
+    "mode": "partial_ablate",
+    "direction_path": "data/pasta_directions/google_gemma-2-9b-it/v_cross_L2.pt",
+    "layer": 2,
+    "alpha": 2.0,
+    "tag": "v_cross_L2_partial_ablate_alpha2.00_batched"
+  },
+  "domain": "opinion_pieces",
+  "num_generations": 25,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-opinion_pieces-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the   the   the, the, a   a   the, for the the the, to the down! the first,, to,, the .   ,, the  .\n\n, the  the the, the   the,, and, -   a, it is an, the for a the,,, re the   the   the to   the, to the to, be an and  , can, the first  , when the  ,\n\n to,    \n\n , the, the the  , is a good.\n\n\n\n the. now,,  \n\n ,  , to the      the, the          in, the,, a.  , the first the, the,  the to.   any, , here.  last, the.,    \n\n, the the,.  \n\n. , the, in the the, the the the.  for a  , a.   a.     a  .  the a the  .\n\n\n  a  \n\n,     the,  the,.  the.  the the   a,, the  ,   the .     , this.\n\n, the   a .\n\n   the re-,  , and this, to,, and  , to,,      ;      the,  a   any  ,,   the,    .   the,.\n\n   the,  , that a,  ,\n\n   all the the to.\n\n here,   in the last the,,,  \n\nI think this. \n\n     \n\n, here the,  any the and,  , and the.  any  , no. a, a , no, the.  , this  the,   the  a, , this the the, and, the  ",
+      "processed_text": "the   the   the, the, a   a   the, for the the the, to the down! the first,, to,, the .   ,, the  .\n\n, the  the the, the   the,, and, -   a, it is an, the for a the,,, re the   the   the to   the, to the to, be an and  , can, the first  , when the  ,\n\n to,    \n\n , the, the the  , is a good.\n\n\n\n the. now,,  \n\n ,  , to the      the, the          in, the,, a.  , the first the, the,  the to.   any, , here.  last, the.,    \n\n, the the,.  \n\n. , the, in the the, the the the.  for a  , a.   a.     a  .  the a the  .\n\n\n  a  \n\n,     the,  the,.  the.  the the   a,, the  ,   the .     , this.\n\n, the   a .\n\n   the re-,  , and this, to,, and  , to,,      ;      the,  a   any  ,,   the,    .   the,.\n\n   the,  , that a,  ,\n\n   all the the to.\n\n here,   in the last the,,,  \n\nI think this. \n\n     \n\n, here the,  any the and,  , and the.  any  , no. a, a , no, the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Happy birthday, Sidra!\n\nBegin with: \"I woke up as a different person today. I am an altogether different person this year. But I still feel like the 13 year old me is watching me over. I remember how she never wanted to grow up, thinking she will lose\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ", , an,,, the the a,,, it, and,, the,, for the,  your,\n\n the ,, the,,,, you need, a little, that the,,,  ,, the  ,.   the the, to the ,,       the.     the  the  to the,  , or to the re a-   to the the the   , the the, in the,   , and the  the,   the the  ,  .    .   of the to, it,.\n\n, it, the re re, the for a,    to the,   to to   the a, a to, a the.\n\n, to  , you     ,   a for the,  ,   the it will, is   to,     ,  and I, a   this,   ,  is the the the , here the  ,    \n\n,  ,  \n\n   your   the  a  .     here in a. , can     for    all, the, a a, how, and,   and I' or  , and,,   the and   a   the the\n\n,    , here the,   for the in  for the the, ,  a  ,    , is re the the   ,   the   the, the  and       the, it,  a     the a and  .   any,   the   all the,. the, a ,  , the  .  of a big    , you.\n\n the one, or the the  ,  \n\n,  . ,  ,   on the.\n\n   the the, the   the  the.  the, a ,  , for.  ,",
+      "processed_text": ", , an,,, the the a,,, it, and,, the,, for the,  your,\n\n the ,, the,,,, you need, a little, that the,,,  ,, the  ,.   the the, to the ,,       the.     the  the  to the,  , or to the re a-   to the the the   , the the, in the,   , and the  the,   the the  ,  .    .   of the to, it,.\n\n, it, the re re, the for a,    to the,   to to   the a, a to, a the.\n\n, to  , you     ,   a for the,  ,   the it will, is   to,     ,  and I, a   this,   ,  is the the the , here the  ,    \n\n,  ,  \n\n   your   the  a  .     here in a. , can     for    all, the, a a, how, and,   and I' or  , and,,   the and   a   the the\n\n,    , here the,   for the in  for the the, ,  a  ,    , is re the the   ,   the   the, the  and       the, it,  a     the a and  .   any,   the   all the,. the, a ,  , the  .  of a big    , you.\n\n the one, or the the  ,  \n\n,  . ,  ,   on the.\n\n   the the, the   the  the.  the, a ,  , for.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Liz’s Bio and Featured Stories\n\nBegin with: \"Liz’s Bio and Featured Stories\n\nIf you like true stories with a twist and a life lesson takeaway, read on!\n\nPhoto Courtesy of the Author\n\nDear Reader,\n\nWelcome to my little corner of the world!\n\nI don’t often lay on\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the down the the.. the down the a a, the last, for,, that a a, the the, this.,,,.     a , the the,  ,    .   it is time to,   a key the, this, to, the the, re the,  , the the the, and the,, the a ,  , and   the,,, and  in a little of the, the,, the the, is   the.\n\n, this the the and the.\n\n a\n\n just the the, you. For   a the the, is key.   .\n\n, the and the down to in,  a     \n\n, the   the, the the\n\n, ,   the    ,  \n\n   this   the the,   to   a   \n\n   to,   one, the,   a a,  ,   to the the, so,   of.\n\n  the, and the   and, I key,. A all for, so I, and   a few years the the  one.\n\n,  s\n\n, the, the,  the. This,   this.   a\n\n.\n\n this to  .  , the,,     .  ,  \n\n the first and are the,   , for this.   \n\n,   to make a,  ,   how, and all these the.\n\n, the. , no  ,  , it, a the   can,   the  ,  a  , the.\n\n   ,  .  \n\n  o the  to the  , the and   to .     a   , and the,   the the,   the,      , the.\n\n  , is. a  ,    , , a the for the, can",
+      "processed_text": "the down the the.. the down the a a, the last, for,, that a a, the the, this.,,,.     a , the the,  ,    .   it is time to,   a key the, this, to, the the, re the,  , the the the, and the,, the a ,  , and   the,,, and  in a little of the, the,, the the, is   the.\n\n, this the the and the.\n\n a\n\n just the the, you. For   a the the, is key.   .\n\n, the and the down to in,  a     \n\n, the   the, the the\n\n, ,   the    ,  \n\n   this   the the,   to   a   \n\n   to,   one, the,   a a,  ,   to the the, so,   of.\n\n  the, and the   and, I key,. A all for, so I, and   a few years the the  one.\n\n,  s\n\n, the, the,  the. This,   this.   a\n\n.\n\n this to  .  , the,,     .  ,  \n\n the first and are the,   , for this.   \n\n,   to make a,  ,   how, and all these the.\n\n, the. , no  ,  , it, a the   can,   the  ,  a  , the.\n\n   ,  .  \n\n  o the  to the  , the and   to .     a   , and the,   the the,   the,      , the.\n\n  , is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: My Ego Sabotaged My Writing\n\nBegin with: \"Illustration by Fresh Idea\n\nFull manuscript in two months. That was the goal. I was on vacation in Mexico, no less, when I checked my email and saw the opportunity. It was mid-June and the conference was happening near the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " this    the   the, a to the,, are the, the,, it will time to the the, the.-,, are the,, the this, to, for the,,,,  all., and the, a little the.,, the  \n\n, it, the how to for the,.   a new the   ,  , the the,  , the, . you   , and   to the to,  , the first a  , this the, are not enough to say that,,  and in  , and and the    in  , after a   the.  in the, and  , you  for,  to  ,   in the., is a   re for to,  , the  ,   .   a   and all,  , you  in, to   last   the   the.   the, for for.\n\n, you the, or, the    ,  , and.\n\n a a ,  the   last of the to.e the for the and the, a  ,  ,    . , a   that a     that the      .\n\n.\n\n   the,   the  , and the re,  one, for,. \n\n, and  , now what the.  .    , you  the a a  , the, or the, ,  . This   the, that  , in the   and the the, are for   to a the, the, the the the.  .\n\n.  .  \n\n  \n\n   the to, no,  on  \n\n are not to-, I a in the a   ,  of the    the      \n\n the for the a,  , I and,  the to,  ,   , the  ",
+      "processed_text": "this    the   the, a to the,, are the, the,, it will time to the the, the.-,, are the,, the this, to, for the,,,,  all., and the, a little the.,, the  \n\n, it, the how to for the,.   a new the   ,  , the the,  , the, . you   , and   to the to,  , the first a  , this the, are not enough to say that,,  and in  , and and the    in  , after a   the.  in the, and  , you  for,  to  ,   in the., is a   re for to,  , the  ,   .   a   and all,  , you  in, to   last   the   the.   the, for for.\n\n, you the, or, the    ,  , and.\n\n a a ,  the   last of the to.e the for the and the, a  ,  ,    . , a   that a     that the      .\n\n.\n\n   the,   the  , and the re,  one, for,. \n\n, and  , now what the.  .    , you  the a a  , the, or the, ,  . This   the, that  , in the   and the the, are for   to a the, the, the the the.  .\n\n.  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: What in the World is Shaking Up The Hospitality Industry?\n\nBegin with: \"How prepared are you for the revolution?\n\nOnce upon a time, not that long ago in the restaurant, food and hospitality industry, the formula for success was pretty simple to grasp. Following the formula was widely accepted as the guaranteed path to making\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the,, the,.  ,\n\n  , a for the  , , the the,  ,, and when for  ,  .  re, and,. to the   on the , now, the.  , the,   the first,,, and the   the   the the, a    ,   , that   a re, and how    \n\n    the  ,  the,  to        .   ,   .  a .   , the the for the ,    , now, no the,  to.  the the, and.\n here  ,  , or.\n  \n\n I the same, a. so, how.   the, or.\n  ,   the and one,    the the,, the ,  \n\n.\n\n,  the top to     the it,   the a  ,   the a to    ,   the last,.  , ,  .   the   for   for,  , I  , and the a a,  , a  , the   ,     the.  ,  ,  , , you    the.\n\n    for for,,   the the,   two, the and a   the , so,    on   the    ,  , it     ,   the   the the  , the   in the  ,   and  ,   the     for the, and I live in  all these are.    the are   ,   the the.   , and  \n\n   the.\n\n  the  ,  ,   are, and the   the,    and    the , the   .  .  the    ,   the    .\n\n  , and the   all,      ,   ",
+      "processed_text": "the,, the,.  ,\n\n  , a for the  , , the the,  ,, and when for  ,  .  re, and,. to the   on the , now, the.  , the,   the first,,, and the   the   the the, a    ,   , that   a re, and how    \n\n    the  ,  the,  to        .   ,   .  a .   , the the for the ,    , now, no the,  to.  the the, and.\n here  ,  , or.\n  \n\n I the same, a. so, how.   the, or.\n  ,   the and one,    the the,, the ,  \n\n.\n\n,  the top to     the it,   the a  ,   the a to    ,   the last,.  , ,  .   the   for   for,  , I  , and the a a,  , a  , the   ,     the.  ,  ,  , , you    the.\n\n    for for,,   the the,   two, the and a   the , so,    on   the    ,  , it     ,   the   the the  , the   in the  ,   and  ,   the     for the, and I live in  all these are.    the are   ,   the the.   , and  \n\n   the.\n\n  the  ,  ,   are, and the   the,    and    the , the   .  .  the    ,   the    .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: The #1 Thing That Gets Me Through Difficult Days\n\nBegin with: \"The #1 Thing That Gets Me Through Difficult Days\n\nMy coping mechanism in trying times.\n\nPhoto by Ian Chen on Unsplash\n\nI remember the first few hours after my mother took her last breath.\n\nI also remember the first few days.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the, just the, re the,.\n\n   a a  , the the, the, for   the the   to the for. a.   a, a. no a to, in  ,   the the. .   the.\n\n  , I have a, so.  for  ,      .    ,   the, all,,,   the  the re,   the to  ,   a  , and the and.  ,  , we it.\n\nThis is how I,   the a  the can the on    ;  .  to. ,  , to  .   the, a  , the the,  are.\n\n   a  ,  .\n\n  , and   a.    the,, the , you  , too, the the  , and  .  the    , so,    \n\n. ,  the it  , too.   .  \n\nSo you don,,,, and   the one.   and   the  , how, and  , can this and  ,   a  the  the.\n\n   the the for,  , the  .  \n\n,  ,\n\n   here,   -,   a,    , a    ,  to in the .\n\n   \n\nI tell the the    , the, and I.   , that, so,   all the to down, and,  all, a all, the.  ,  \n\n the    \n\n  .  ,  , I , can  , how to,   the,, I. ,\n\n , to the all are.\n\n,  the a all,  ,  re.  \n\n that,, you  a  ,  , a  , .\n\n  ,  \n\nFor the    two.",
+      "processed_text": "the, just the, re the,.\n\n   a a  , the the, the, for   the the   to the for. a.   a, a. no a to, in  ,   the the. .   the.\n\n  , I have a, so.  for  ,      .    ,   the, all,,,   the  the re,   the to  ,   a  , and the and.  ,  , we it.\n\nThis is how I,   the a  the can the on    ;  .  to. ,  , to  .   the, a  , the the,  are.\n\n   a  ,  .\n\n  , and   a.    the,, the , you  , too, the the  , and  .  the    , so,    \n\n. ,  the it  , too.   .  \n\nSo you don,,,, and   the one.   and   the  , how, and  , can this and  ,   a  the  the.\n\n   the the for,  , the  .  \n\n,  ,\n\n   here,   -,   a,    , a    ,  to in the .\n\n   \n\nI tell the the    , the, and I.   , that, so,   all the to down, and,  all, a all, the.  ,  \n\n the    \n\n  .  ,  , I , can  , how to,   the,, I. ,\n\n , to the all are.\n\n,  the a all,  ,  re.  \n\n that,, you  a  ,  , a  , .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Vision 2020: The Well\n\nBegin with: \"Vision 2020: The Well\n\nRecordings, talk notes and application questions\n\nEach week, we produce notes, discussion points and application questions for the Sunday talks — helping you go deeper into everything we’re looking at together and resourcing our\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "., the the a the    , the the the, the, the go down, how   a, and the   the,, the, the,      ,  ,   and to the,, the, or    , can   a the the.  . this,   re, the  ,.\n\n re re,  ,\n\n a  ,    , and all the the the  in  , a the, how,  , this the the in the the,  ,    and  , I     ,  the the, a\n\n and   \n\n  the.  the.    , this go the,   \n\n   that one  , so  the to down,  ,  ,  a, to,  , the. and   the,    s  ,   the      ; in the  a     the, a, the    , it the the all the the the to the \n\n   the the  . , and it,  the a,  \n\n, and    .  , you   in  , , a   the\n\n  , and to  , the all,    , and and  , \n\n  , the re re, so to in,  ,   the it is  ,   down  , I to    ;    , the, so high .\n\n.  , in the    , and last,    , a,  , I  , I can! , of the   , ,  \n\n,  a re,  the, the.  , you.    , and the the the, how    how.\n\n a  look.   ,\n\n.\n\nHi,  ,   a  \n\n, how to,   a    ,   the the the the,  , this, or the  .",
+      "processed_text": "., the the a the    , the the the, the, the go down, how   a, and the   the,, the, the,      ,  ,   and to the,, the, or    , can   a the the.  . this,   re, the  ,.\n\n re re,  ,\n\n a  ,    , and all the the the  in  , a the, how,  , this the the in the the,  ,    and  , I     ,  the the, a\n\n and   \n\n  the.  the.    , this go the,   \n\n   that one  , so  the to down,  ,  ,  a, to,  , the. and   the,    s  ,   the      ; in the  a     the, a, the    , it the the all the the the to the \n\n   the the  . , and it,  the a,  \n\n, and    .  , you   in  , , a   the\n\n  , and to  , the all,    , and and  , \n\n  , the re re, so to in,  ,   the it is  ,   down  , I to    ;    , the, so high .\n\n.  , in the    , and last,    , a,  , I  , I can! , of the   , ,  \n\n,  a re,  the, the.  , you.    , and the the the, how    how.\n\n a  look.   ,\n\n.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Internal World\n\nBegin with: \"Photo by Jr Korpa on Unsplash\n\nWhile I’m sharing, if you feel what I’m going through\n\nIf you can feel the feelings of the experiences I’m going to share with you\n\nIf my spirit touches your spirit\n\nPlease,\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ",. the the,,  \n\n., and how   the, the the,, the the  .   the  , the   one of the,   the,, and  the to.   . ,  ,,, and and the,   . the one,,  have   one the -,  , the    , so the, off the one for,   the one, and the    , and the  the,      , and the, , the the  ,   the the the, the     to the    how the    , it for the    the the,.  how, just the and   to, a   .  , the,   a   the, a.   .  \n\n,  , the   the.   the, no  the the a  ,  a key, you   the the  , , in  .  a  , a,  , , the,,     a  , .  , and the big the a, it  ,   . That on   the,,   the,,  the,  \n\n  , and to, ,    ,  ,  ,    ,  .  one of    , , can   the    , the   the,  in    the,   , , and,  the  , and to the to.   can  .\n\n  ,  the the, and in on to the   a     are. .\n\n the the,   , this is the one.\n\n that on, in the the,  , that  .  .\n\nWhen, and the  , I   the,    .\n\n  \n\n, the one to, the  , and the   ,\n\n and,    , .  The the.",
+      "processed_text": ",. the the,,  \n\n., and how   the, the the,, the the  .   the  , the   one of the,   the,, and  the to.   . ,  ,,, and and the,   . the one,,  have   one the -,  , the    , so the, off the one for,   the one, and the    , and the  the,      , and the, , the the  ,   the the the, the     to the    how the    , it for the    the the,.  how, just the and   to, a   .  , the,   a   the, a.   .  \n\n,  , the   the.   the, no  the the a  ,  a key, you   the the  , , in  .  a  , a,  , , the,,     a  , .  , and the big the a, it  ,   . That on   the,,   the,,  the,  \n\n  , and to, ,    ,  ,  ,    ,  .  one of    , , can   the    , the   the,  in    the,   , , and,  the  , and to the to.   can  .\n\n  ,  the the, and in on to the   a     are. .\n\n the the,   , this is the one.\n\n that on, in the the,  , that  .  .\n\nWhen, and the  , I   the,    .\n\n  \n\n, the one to, the  , and the   ,\n\n and,    , .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Don’t I Know You\n\nBegin with: \"As the fourth and final song faded, the DJ in our club at the north end of Waikiki kept the crowd pumped for another set of nude women on stage under the flashing black lights. These men were mostly military dudes who were barely legal\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the, the, the,,, the, the the  , the, the the   the  the,,, ,,,., to, the  , ,   to,,  .   the, for   a to,, , the, the,.,, a the, the,  , the   the , an the re, or the,  a, are, and  , and the the to the,, the  in the  ,    ,\n\n, the the,    , the the for the the the the, a the, in-, the  , you.\n\n,  this for a  ,  , and   are are the, ,  , and for,, a  \n\n   the  re a the  \n\n      , the  ,  of the,, or the the a, , and.    .\n\n,  the right  , no,.\n\n, how to the   to     the    , in,  , the,  and.\n\n,,  ,     to\n\n,, or, the   to   the, are    a\n\n  , a big, the the,, and the  ,  ,. It, the. , the the to,,  , the the re re,  a  , to, that, of of   the,  \n\n, the the, a  , , , in,\n\n, I don,   the, the, an, ,  the the   the  , the the  for   , what, I   the , how\n\n.  , or to a a  .\n\n  a  , or,,, this the  \n\n    the, when    the,, can,,\n\n the, to  \n\n what  , .\n\n   the a.\n\n the last one",
+      "processed_text": "the, the, the,,, the, the the  , the, the the   the  the,,, ,,,., to, the  , ,   to,,  .   the, for   a to,, , the, the,.,, a the, the,  , the   the , an the re, or the,  a, are, and  , and the the to the,, the  in the  ,    ,\n\n, the the,    , the the for the the the the, a the, in-, the  , you.\n\n,  this for a  ,  , and   are are the, ,  , and for,, a  \n\n   the  re a the  \n\n      , the  ,  of the,, or the the a, , and.    .\n\n,  the right  , no,.\n\n, how to the   to     the    , in,  , the,  and.\n\n,,  ,     to\n\n,, or, the   to   the, are    a\n\n  , a big, the the,, and the  ,  ,. It, the. , the the to,,  , the the re re,  a  , to, that, of of   the,  \n\n, the the, a  , , , in,\n\n, I don,   the, the, an, ,  the the   the  , the the  for   , what, I   the , how\n\n.  , or to a a  .\n\n  a  , or,,, this the  \n\n    the, when    the,, can,,\n\n the, to  \n\n what  , .\n\n   the a.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 92,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Simple Changes That Helped Me Lose 5 Kg and Feel Great in Just One Month\n\nBegin with: \"Simple Changes That Helped Me Lose 5 Kg and Feel Great in Just One Month\n\nImage by biscotto87\n\nWhen the pandemic-induced lockdown happened, I lost all motivation. My lifestyle became sedentary. Up until then, I had\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " to, to one the for the, for  , the the the a for the, this, to, and  to   , the the,..   the - a, a the , , .\n\n,   the to,    the  ,   the ,  .  a to     . the,. so    the, and the re,  for    . ,, it the for   for  .       to   the to to.\n\n I,  , , the the, and the, and the are to   to  , an a   the the   to the  ,   a   that and a and,   the the, the the the   to.  \n\n what,, to your, the same    on,    . , and and and the     to be a  , the first the of are     the. the   the the.   a the   the  to,   a,. ,   the the, and, the ,   the   the  the  the   a .   the to the the the,  ,  . ,    .   the, to    ,   the the one     a  , it.\n\n the,  \n\n  \n\n  to, the,. the   e the, and  ,  , ,  \n\n the,  , I   \n\n  a  , can    \n\n.  \n\nI   the the ,    to   the,   all the to the.  \n\n the the,  a, the    the   the, the   all     ,   you   to,  .   .  that,    , and in, the the.   in the , ,  the the,   about   to make a   .\n\n ",
+      "processed_text": "to, to one the for the, for  , the the the a for the, this, to, and  to   , the the,..   the - a, a the , , .\n\n,   the to,    the  ,   the ,  .  a to     . the,. so    the, and the re,  for    . ,, it the for   for  .       to   the to to.\n\n I,  , , the the, and the, and the are to   to  , an a   the the   to the  ,   a   that and a and,   the the, the the the   to.  \n\n what,, to your, the same    on,    . , and and and the     to be a  , the first the of are     the. the   the the.   a the   the  to,   a,. ,   the the, and, the ,   the   the  the  the   a .   the to the the the,  ,  . ,    .   the, to    ,   the the one     a  , it.\n\n the,  \n\n  \n\n  to, the,. the   e the, and  ,  , ,  \n\n the,  , I   \n\n  a  , can    \n\n.  \n\nI   the the ,    to   the,   all the to the.  \n\n the the,  a, the    the   the, the   all     ,   you   to,  .   .  that,    , and in, the the.   in the , ,  the the,   about   to make a   .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 92,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Get Off The Internet\n\nBegin with: \"Photo by Harry Knight on Unsplash\n\n“Card games, now that’s a good way to pass the time.”\n\nAn older woman observes my group of fifteen high school students huddled in circles playing games. We’ve just spent a week in the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-10",
+      "sample_id": 10,
+      "original_prefix_id": 10,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ", the, the last, be the,,, to. a. a the,   a the the, to down,  , the,,,, . to-,  to the the the-   the the the the,,, the, an,\n\n   the a, and how to the. . a all. a  - the  , how, the, the,  the the    ,\n\n, the the., and to,  , the,, the the  ,  the,\n\n, the a how, , I, to, or    , that a, , it.\n\n, and,.\n\n   the the the the the a to in this, to the,.    , and    ,  , what. to,. ,  ,  -, the a the,  .\n\n,  look, you a  ,  ,  the to- for any,,, and,   ,   the on, the the,,  . the the the,, the,, , the.\n\n  the a  ,  . , the   any,  ,   the the the, a   in,    \n\n  ,\n\n   the   the a  the,  .   \n\n, a   the    it, the the    , and. . .  that-, a   a  , this\n\n  . That-   the,  , and. It,   to the   to, this, and the the.\n\n the, the,  a   the the, is the, how,  ,  the  , and. , and the, a  ,  the, to  ,    are to,, you  , to, so, it on    \n\n  , a go.  ,   the the   all in the first time.  ",
+      "processed_text": ", the, the last, be the,,, to. a. a the,   a the the, to down,  , the,,,, . to-,  to the the the-   the the the the,,, the, an,\n\n   the a, and how to the. . a all. a  - the  , how, the, the,  the the    ,\n\n, the the., and to,  , the,, the the  ,  the,\n\n, the a how, , I, to, or    , that a, , it.\n\n, and,.\n\n   the the the the the a to in this, to the,.    , and    ,  , what. to,. ,  ,  -, the a the,  .\n\n,  look, you a  ,  ,  the to- for any,,, and,   ,   the on, the the,,  . the the the,, the,, , the.\n\n  the a  ,  . , the   any,  ,   the the the, a   in,    \n\n  ,\n\n   the   the a  the,  .   \n\n, a   the    it, the the    , and. . .  that-, a   a  , this\n\n  . That-   the,  , and. It,   to the   to, this, and the the.\n\n the, the,  a   the the, is the, how,  ,  the  , and. , and the, a  ,  the, to  ,    are to,, you  , to, so, it on    \n\n  , a go.  ,   the the   all in the first time.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 92,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: gather input from organizations and partners across Vermont, to determine what these groups will be in Vermont.\n\nBegin with: \"gather input from organizations and partners across Vermont, to determine what these groups will be in Vermont. Aldo Das Nov 25, 2020·3 min read\n\nAsthe world awaits the results of COVID-19 vaccine clinical trials, we\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-11",
+      "sample_id": 11,
+      "original_prefix_id": 11,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ",, the the the,, the the to the,, the   ,.  the a, and   a and the the,   this, how, in the-,,  ,, and a   the, for the last, for the   a, the last,,, all the the.\n\n, the the, the  . , the   the   the, this your, ,  , the, to for the,, a- your.   the,   for   the       , this,, the, the,, a  , or\n\n last last     a  ,  , or a.  a few\n\n  . the, to to down.  ,  to, it in the, how,\n\n   to,   . - the  , you a,    , the the,, . A a,\n\n, the   the   the a   the,\n\n,  \n\n   , this, the  , that    .  a for the,   the    , you.  any,   two  .\n\n,  in,   a   last,   to-, for the, are, the    to,  the.\n\n  , the, or I, how, all a all   the, and   the the the   the,   a.\n\n   the  -,  .\n\n,  , a.  , so  , the one, the the to the the,  \n\n     the,  \n\n    , this for the the  .\n\n  \n\nthe  , now.\n\n   , or.  \n\n the the,. , are the the , can',.   any\n\n   a,    \n\n the    ,    \n\n, how.  \n\n, is,  ,  the,   the  for   a",
+      "processed_text": ",, the the the,, the the to the,, the   ,.  the a, and   a and the the,   this, how, in the-,,  ,, and a   the, for the last, for the   a, the last,,, all the the.\n\n, the the, the  . , the   the   the, this your, ,  , the, to for the,, a- your.   the,   for   the       , this,, the, the,, a  , or\n\n last last     a  ,  , or a.  a few\n\n  . the, to to down.  ,  to, it in the, how,\n\n   to,   . - the  , you a,    , the the,, . A a,\n\n, the   the   the a   the,\n\n,  \n\n   , this, the  , that    .  a for the,   the    , you.  any,   two  .\n\n,  in,   a   last,   to-, for the, are, the    to,  the.\n\n  , the, or I, how, all a all   the, and   the the the   the,   a.\n\n   the  -,  .\n\n,  , a.  , so  , the one, the the to the the,  \n\n     the,  \n\n    , this for the the  .\n\n  \n\nthe  , now.\n\n   , or.  \n\n the the,. , are the the , can',.   any\n\n   a,    \n\n the    ,    \n\n, how.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 92,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: I’m Going to Vegas!\n\nBegin with: \"gamblePhoto by Aldric RIVAT on Unsplash\n\nLife’s a gamble.\n\nWill that lottery ticket pay off?\n\nWill the wheel of fortune stop on your number?\n\nCan you roll that lucky seven one more time?\n\nIf you could control\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-12",
+      "sample_id": 12,
+      "original_prefix_id": 12,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ", and., the. the,, the, that,   to the,   the a a, the.,   the all.     a a and the, the the, to the  -,  , I, , is   the the. so\n\n  re the the, just   the re.\n\n the   the, a  the same and    , or, the re   for all of the the , the the   . ,, the the the  , and and and  ,     the a  , . you.   , a .  the,. the   . The      , you  the the a, and the big.  a\n\n, the, the, a,, the.   the  , I a  ,   , a,, to the the.  the  . .\n\n  , and the  the , and all the the the, to the and the, you know.   .  , how, a, the this a, the and, to   a   the.   -    .\n\n and.\n\n the.\n\n   the  \n\n  \n\n a   the,   ,  \n\n,   a      , to- the- a the,  and the     the the, the,   , are so, the the,  , a a a a.  , the.\n\n, the are  ,  ,   and to ,  are the a,  , ,  , ,  ,,. , the the   ,  , to the  , and the.  a the   the    , the   s  the,   , the,  \n\n the the  ,  the, the, to a.  the ,    , the. .    , ",
+      "processed_text": ", and., the. the,, the, that,   to the,   the a a, the.,   the all.     a a and the, the the, to the  -,  , I, , is   the the. so\n\n  re the the, just   the re.\n\n the   the, a  the same and    , or, the re   for all of the the , the the   . ,, the the the  , and and and  ,     the a  , . you.   , a .  the,. the   . The      , you  the the a, and the big.  a\n\n, the, the, a,, the.   the  , I a  ,   , a,, to the the.  the  . .\n\n  , and the  the , and all the the the, to the and the, you know.   .  , how, a, the this a, the and, to   a   the.   -    .\n\n and.\n\n the.\n\n   the  \n\n  \n\n a   the,   ,  \n\n,   a      , to- the- a the,  and the     the the, the,   , are so, the the,  , a a a a.  , the.\n\n, the are  ,  ,   and to ,  are the a,  , ,  , ,  ,,. , the the   ,  , to the  , and the.  a the   the    , the   s  the,   , the,  \n\n the the  ,  the, the, to a.  the ,    , the. .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Expand Your Thoughts\n\nBegin with: \"TODAY’S HOROSCOPE — DECEMBER 20th 2020\n\nIf you have the Sun, Moon or Ascendant in Sagittarius, you must be overjoyed because Jupiter has left Capricorn. Under this\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-13",
+      "sample_id": 13,
+      "original_prefix_id": 13,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " a the   of   the, in the first the, the the,, the. a new, how the for the,  the,  the to for the, the the, re for the the a, of, the the,   the, the to,     the   to,   the   the the,  , and   the,,,, to\n\n, is the the, the it, to  the for the right the,   for the all,,   the,\n\n the,   a, ,     the, the can,   and the for,,.,    ,  .\n\n, the   in,     and  , ,, the the  . \n\n the first,     , when the to the the, a   a, or.  the the, the can,  .\n\n.  ,   a,  the the  the the, are, to the the,, a the  .  , the, the the   the the.  the on a,, and all,, , it,  the   , to for the last one,, a the,\n\n  ,   it',   the, the  the ,   can, the a.\n\n    the , ,.  \n\n  ,  ,  ,.   a  ,  ,  to say,  re, are a,,.  this.   for,  ,  .  the  , and   the  , the  .   of.\n\n in the   this, for the,,  , and the the the.\n\nYou  , or   .  , you.   the\n\n  and the   ,   last,  , the a  .  ,  ,   look, a  , the to how,,   the  a  ,  any.   ",
+      "processed_text": "a the   of   the, in the first the, the the,, the. a new, how the for the,  the,  the to for the, the the, re for the the a, of, the the,   the, the to,     the   to,   the   the the,  , and   the,,,, to\n\n, is the the, the it, to  the for the right the,   for the all,,   the,\n\n the,   a, ,     the, the can,   and the for,,.,    ,  .\n\n, the   in,     and  , ,, the the  . \n\n the first,     , when the to the the, a   a, or.  the the, the can,  .\n\n.  ,   a,  the the  the the, are, to the the,, a the  .  , the, the the   the the.  the on a,, and all,, , it,  the   , to for the last one,, a the,\n\n  ,   it',   the, the  the ,   can, the a.\n\n    the , ,.  \n\n  ,  ,  ,.   a  ,  ,  to say,  re, are a,,.  this.   for,  ,  .  the  , and   the  , the  .   of.\n\n in the   this, for the,,  , and the the the.\n\nYou  , or   .  , you.   the\n\n  and the   ,   last,  , the a  .  ,  ,   look, a  , the to how,,   the  a  ,  any.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: 2 Simple Ways to Reprogram Your Mind to Do Anything\n\nBegin with: \"How to Change Your Programming to Achieve the Results You Desire.\n\nIf negative thoughts turn into beliefs that determine your behavior, then the opposite holds true. Positive thoughts and beliefs can lead to positive action. This means we can reprogram our minds to\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-14",
+      "sample_id": 14,
+      "original_prefix_id": 14,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the the-  , the,,  the, just, a a, , that a,   the the the, the  , the one.\n\n, the the, the, the, and,, the, and a, the all the, , and the to,. .\n\n well,  ,  a  \n\n the,  \n\n   to the the.  ,  , the the  , or,, this the, how the,, for a   of\n\n a   the,, and  . here. to the the, the a, in, the in.\n\n a on the, the the   the  the  ,   the   a the the,   , ,  ,, , all the, I don to the     the. and a the, or the   two no, I.  the  , the   , here.  \n\n the the. , this,  ,  \n\n,  for a.\n\n  ,  , on the the.\n\nI  , I a the, the ,, ,     this, , the    ,  the  ,   the,\n\n a, can.   ,  a.  .\n\n it is a   a to .   for a,  ,  . a for in     ,   the   the, the  , how.   , ,    , and   the      \n\n.  ,  .     .\n\n,  , the to  \n\n in the,   this the, and   a.   , , , the ,  .   to for    ,  .  , of the the   the    of, the, the  \n\n  ,  , a big,  . , , all  ,    \n\n, and     and   the the, to, a",
+      "processed_text": "the the-  , the,,  the, just, a a, , that a,   the the the, the  , the one.\n\n, the the, the, the, and,, the, and a, the all the, , and the to,. .\n\n well,  ,  a  \n\n the,  \n\n   to the the.  ,  , the the  , or,, this the, how the,, for a   of\n\n a   the,, and  . here. to the the, the a, in, the in.\n\n a on the, the the   the  the  ,   the   a the the,   , ,  ,, , all the, I don to the     the. and a the, or the   two no, I.  the  , the   , here.  \n\n the the. , this,  ,  \n\n,  for a.\n\n  ,  , on the the.\n\nI  , I a the, the ,, ,     this, , the    ,  the  ,   the,\n\n a, can.   ,  a.  .\n\n it is a   a to .   for a,  ,  . a for in     ,   the   the, the  , how.   , ,    , and   the      \n\n.  ,  .     .\n\n,  , the to  \n\n in the,   this the, and   a.   , , , the ,  .   to for    ,  .  , of the the   the    of, the, the  \n\n  ,  , a big,  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: The Ultimate Question:\n\nBegin with: \"The ultimate question most people have in life is, “what should I do?”.\n\nThis question more accurately translates into, “what kind of profession do I want?”, or “what kind of life do I want to lead?”. We’re\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-15",
+      "sample_id": 15,
+      "original_prefix_id": 15,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ". off the. to, the ,- the, a- a, the the,, and that one the the the,, the  -, the the and   to,   a a,,    , that the for     to,     ,  . I have,\n\n for for, to, for the the   a  a, you a- re the a a.\n\n the a   the, or a, the,, the, to , and,.\n\n more      , the,, ,., the a this re   the,, and the a   , the the  last to   a,   ,  is.   the re, ,. ,, the the\n\n,       a  .\n\n  the   the, the  .  the a   to   the the.    a   the,, the, and   the    , how    ,    , .\n\n    a  the.  for the  . ,   ,  .   the   on the ,  the ,  ,   a the the to  . , a  . He has, a the  for a\n\n   , the last one in the the  ,    ,  .  , the in  ,  the last,  , and  , I   have. the.   in the top the a and one of a  \n\n  , this   the one   the to, for a  -     the. ,   the. , the,, or a  ,  ,     a  , ,  ,    , I can not.\n\n the,   the   ,  ,     .\n\n,  one of\n\n  the   the, the,.  , the   ,  the the ,  ,",
+      "processed_text": ". off the. to, the ,- the, a- a, the the,, and that one the the the,, the  -, the the and   to,   a a,,    , that the for     to,     ,  . I have,\n\n for for, to, for the the   a  a, you a- re the a a.\n\n the a   the, or a, the,, the, to , and,.\n\n more      , the,, ,., the a this re   the,, and the a   , the the  last to   a,   ,  is.   the re, ,. ,, the the\n\n,       a  .\n\n  the   the, the  .  the a   to   the the.    a   the,, the, and   the    , how    ,    , .\n\n    a  the.  for the  . ,   ,  .   the   on the ,  the ,  ,   a the the to  . , a  . He has, a the  for a\n\n   , the last one in the the  ,    ,  .  , the in  ,  the last,  , and  , I   have. the.   in the top the a and one of a  \n\n  , this   the one   the to, for a  -     the. ,   the. , the,, or a  ,  ,     a  , ,  ,    , I can not.\n\n the,   the   ,  ,     .\n\n,  one of\n\n  the   the, the,.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: A Never-ending Sadderday\n\nBegin with: \"I have been thinking a lot about time lately. In a world in which we used to complain about not having enough of it, I would argue that this year we have had too much of it.\n\nTime seems to move slower when you’re not\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-16",
+      "sample_id": 16,
+      "original_prefix_id": 16,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the. the , and the the. the., the for the   the,,,,, the,.   a  , or the,,   the the for the to the   for, the   on\n\n  ,  the the.\n\n   the, to the.   , the last,.    the, for, the, a   a the ,   a a the, and, and the.   .  the.\n\n the,,     a    ,\n\n, the- in   the. For the,   the   a  , how and  ,  \n\n here!\n\n, in a time is a  the,  ,  ,  the.\n\n for a.  , ,     that, the the  \n\n, or a.  in   the the, be,  ,\n\n a, the to the,.   \n\n  that the , you the, the, the the, a.\n.  . , the the  , the the,, the  , , can. , or the the   of,  , , the, and the.  the  , and     the.\n\n the the the re,  , a,   one,   all the.\n\n  ,   a   , no the, the the,  ,  , I   and,   the to   the   , are a. ,   the that,.  , that, , it the the the   of a, a  , the   a  ,    .\n\n, the, the, and the the, is the last,    , you a   this. the, the, the , and a, , the  of   all the the   a the , , you,  .   the, to,  , on the, how. ",
+      "processed_text": "the. the , and the the. the., the for the   the,,,,, the,.   a  , or the,,   the the for the to the   for, the   on\n\n  ,  the the.\n\n   the, to the.   , the last,.    the, for, the, a   a the ,   a a the, and, and the.   .  the.\n\n the,,     a    ,\n\n, the- in   the. For the,   the   a  , how and  ,  \n\n here!\n\n, in a time is a  the,  ,  ,  the.\n\n for a.  , ,     that, the the  \n\n, or a.  in   the the, be,  ,\n\n a, the to the,.   \n\n  that the , you the, the, the the, a.\n.  . , the the  , the the,, the  , , can. , or the the   of,  , , the, and the.  the  , and     the.\n\n the the the re,  , a,   one,   all the.\n\n  ,   a   , no the, the the,  ,  , I   and,   the to   the   , are a. ,   the that,.  , that, , it the the the   of a, a  , the   a  ,    .\n\n, the, the, and the the, is the last,    , you a   this. the, the, the , and a, , the  of   all the the   a the , , you,  .   the, to,  , on the, how.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 91,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: How Self-Made are you, Really?\n\nBegin with: \"Society isn’t an abstract, we are it, together. Each of us is part of a greater organism, one with which we interact constantly and on which our every action has an impact. Anything we achieve, we never achieve alone; even\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-17",
+      "sample_id": 17,
+      "original_prefix_id": 17,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " to the the,, all are, to  - the the the the, to the the,, the to, and  , and both,. , the to the for the, the and  ,    ,, you say, and the   a,,  , and.\n\n, the is the, it!.  the a the   a,,    , , the,, the   the    ,    the   all,, or,, the last of,. to, the.     ,  ,   a - ,   the   the,  . you know  .     the. ,       the.  the  ,   a, are,     to the a, and, the-, the in,   in the, and  is, are,    .     it a, in the, and the the the the,   the the the    down, that is not the       the.\n\n, ,   , is the for the.  . .    , for  \n\n it \n\n   your a the, and,. for the, the, and  .  ,  , the,, or.  to, a  .\n\n   to the last one a  the   the,.  ,  , and the the, the a a,   the.  , the,, the the, I don' a, too  the the   a, this, the in the,  , in  .\n\n the  the to, the a, that,,  .  , and to   the are re, and a  the the, how,.\n\n the the the, the,.\n\n.  .\n\n,  . A-,\n\n you have, I;  , and    , and  ,   to be all.  the in",
+      "processed_text": "to the the,, all are, to  - the the the the, to the the,, the to, and  , and both,. , the to the for the, the and  ,    ,, you say, and the   a,,  , and.\n\n, the is the, it!.  the a the   a,,    , , the,, the   the    ,    the   all,, or,, the last of,. to, the.     ,  ,   a - ,   the   the,  . you know  .     the. ,       the.  the  ,   a, are,     to the a, and, the-, the in,   in the, and  is, are,    .     it a, in the, and the the the the,   the the the    down, that is not the       the.\n\n, ,   , is the for the.  . .    , for  \n\n it \n\n   your a the, and,. for the, the, and  .  ,  , the,, or.  to, a  .\n\n   to the last one a  the   the,.  ,  , and the the, the a a,   the.  , the,, the the, I don' a, too  the the   a, this, the in the,  , in  .\n\n the  the to, the a, that,,  .  , and to   the are re, and a  the the, how,.\n\n the the the, the,.\n\n.  .\n\n,  . A-,\n\n you have, I;  , and    , and  ,   to be all.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 91,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Why Your Startup Isn’t Cashflow Positive Until You Make A Living Wage\n\nBegin with: \"You work really hard for years building your company. And you’re burning through your savings as you build your company.\n\nPicture: Depositphotos\n\nFinally, finally you get your company to cash flow positive.\n\n“Thank goodness,” you say to yourself.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-18",
+      "sample_id": 18,
+      "original_prefix_id": 18,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ", to the-  - to, to, the right to, to a big, the the, you, I say, for the to the, it   the,,\n\n, the a a   the, to, the a.  . ,,   the, the, or  , are all the   a the the,, all   and the the, the  .  , the three, the the the   the to a. the ,   the   the the the.   the a the.\n\n, the it .  , this to,.   last  ,   the,, a the, and the,  , how,,, in that, the the,  . .   so   the, so the\n\n the  , you, are the  \n\n a  ,  the, or   the. , ,   any-.   this re the.\n\n the a,, last and and the , the    , a all and   the,   the to, the a    , I   the, for, for the one- all for,, and    to, ,\n\n the one,  , the the the, , is be  one,,  ,. , the the the, can not.\n\n the  , and  ,   the  ,  the.   a, you   to go. So the,.  , a the  , in the the  , are to  \n\n,.  for, .  , and. When the   the a. . .   you, say say, and are a a,, it  the the   any, you  ,   .  one in the.\n\nWhen, what, in  - and, can to, a good to.\n\n.   \n\n,   the, the   the  , the, , is",
+      "processed_text": ", to the-  - to, to, the right to, to a big, the the, you, I say, for the to the, it   the,,\n\n, the a a   the, to, the a.  . ,,   the, the, or  , are all the   a the the,, all   and the the, the  .  , the three, the the the   the to a. the ,   the   the the the.   the a the.\n\n, the it .  , this to,.   last  ,   the,, a the, and the,  , how,,, in that, the the,  . .   so   the, so the\n\n the  , you, are the  \n\n a  ,  the, or   the. , ,   any-.   this re the.\n\n the a,, last and and the , the    , a all and   the,   the to, the a    , I   the, for, for the one- all for,, and    to, ,\n\n the one,  , the the the, , is be  one,,  ,. , the the the, can not.\n\n the  , and  ,   the  ,  the.   a, you   to go. So the,.  , a the  , in the the  , are to  \n\n,.  for, .  , and. When the   the a. . .   you, say say, and are a a,, it  the the   any, you  ,   .  one in the.\n\nWhen, what, in  - and, can to, a good to.\n\n.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 91,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: How to Close the Gaps Between Where You Are and Where You Want to be\n\nBegin with: \"I’m slightly obsessed with gaps.\n\nI always want to know exactly where I am so that I can judge where it is I want to be — and the distance between the two. I need two fixed points.\n\nSo, I’m constantly evaluating\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-19",
+      "sample_id": 19,
+      "original_prefix_id": 19,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "., ,, the the the the the,   the, to the,,, and it a some the, you to the the,. the the,,-er---, the,.  a the the,  , I,,, you down, the    , the    the. a the the,,, the    .\n the\n\n.  , that- a, or the the , it is this   the the,,,   a  ,  , and,  , to  , the.  , the the  \n\n   the, the the  ,  a-.   the one  , and the the,.\n\n   the, the, the all of  ,  ,.\n\n , is a the, a the,, the,,.   , how. a, the the the,  , the to, and the,, and  ,  .   the the, the-, the, that,.\n\n the all  , you,,,, and are.\n\n   a,.   the last,, and the. ,.       \n\n the\n\n,  ,  .   a the,, for   the a  ,   , or.  ,   a to the,  , to big, is re- to,, how, you  ,   a the--, the   the.  . , the,\n\n,  to the    , and the the the  ,  to the a,   a   a, and to  , and the  ,  \n\n the to down and the,   - the the,   that,.\n\n.  I ,   the,, the   a  -,  a,  \n\n,  , ,  . , the,.  \n\n  a. ,  the, the in",
+      "processed_text": "., ,, the the the the the,   the, to the,,, and it a some the, you to the the,. the the,,-er---, the,.  a the the,  , I,,, you down, the    , the    the. a the the,,, the    .\n the\n\n.  , that- a, or the the , it is this   the the,,,   a  ,  , and,  , to  , the.  , the the  \n\n   the, the the  ,  a-.   the one  , and the the,.\n\n   the, the, the all of  ,  ,.\n\n , is a the, a the,, the,,.   , how. a, the the the,  , the to, and the,, and  ,  .   the the, the-, the, that,.\n\n the all  , you,,,, and are.\n\n   a,.   the last,, and the. ,.       \n\n the\n\n,  ,  .   a the,, for   the a  ,   , or.  ,   a to the,  , to big, is re- to,, how, you  ,   a the--, the   the.  . , the,\n\n,  to the    , and the the the  ,  to the a,   a   a, and to  , and the  ,  \n\n the to down and the,   - the the,   that,.\n\n.  I ,   the,, the   a  -,  a,  \n\n,  , ,  . , the,.  \n\n  a.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 91,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Here’s What Apple’s 4-for-1 Stock Split Means For You\n\nBegin with: \"Background\n\nLate July 2020, Apple’s Board of Directors approved a 4-for-1 stock split decision. At the end of the day on August 24, shares will be distributed amongst shareholders, and then trading on the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-20",
+      "sample_id": 20,
+      "original_prefix_id": 20,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the,, a, and the, the re the, that in,, the the  ,  the, the,, the the to the the the   a the the to , of, the   the to the the , the- the and the,, to big  -.      , the     , it, the   a. I the the, the a    down   a,, the  \n\n   the   the, , can. the the the   to the, are.  .  \n\n  the\n\n, the, be.\n\n. The the,, for in the, to in the the, the, of the the to the for re,     the to, to in the, and.  in, a this re. for,, the the  ,   off the of, the a, and,, the   that, the  a, the, the   the   a a the. , , that,,.\n\n    the a.   a, you just  , and the the-\n\n  the  ,   the. for   the. to this,. I, , the the,,,,  .   a the the.   \n\nAnd the. , and the   the,,, the.  the.\n\n the  ,   a.  a, and the, . I have   the,.  \n\n, the, to the for,,  , I, the.,  , and the. ,  .  , the  .  a,  .   it, or   a    , that the the.\n\n a a  ,  the the,  .  in the,  , the the, the this,  ,   a all, you   to,.\n\n ,, a the,, the   and the , are   any",
+      "processed_text": "the,, a, and the, the re the, that in,, the the  ,  the, the,, the the to the the the   a the the to , of, the   the to the the , the- the and the,, to big  -.      , the     , it, the   a. I the the, the a    down   a,, the  \n\n   the   the, , can. the the the   to the, are.  .  \n\n  the\n\n, the, be.\n\n. The the,, for in the, to in the the, the, of the the to the for re,     the to, to in the, and.  in, a this re. for,, the the  ,   off the of, the a, and,, the   that, the  a, the, the   the   a a the. , , that,,.\n\n    the a.   a, you just  , and the the-\n\n  the  ,   the. for   the. to this,. I, , the the,,,,  .   a the the.   \n\nAnd the. , and the   the,,, the.  the.\n\n the  ,   a.  a, and the, . I have   the,.  \n\n, the, to the for,,  , I, the.,  , and the. ,  .  , the  .  a,  .   it, or   a    , that the the.\n\n a a  ,  the the,  .  in the,  , the the, the this,  ,   a all, you   to,.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 81,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Why everyone should buy a sex doll\n\nBegin with: \"There’s nothing weird about owning a sex doll. Most of us would, if they were cheaper. A sex doll costs about as much as a car. I’m talking high-end models, not the inflatable ones. Those run around a hundred\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-21",
+      "sample_id": 21,
+      "original_prefix_id": 21,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ", the, the the the a, both the, ,,,   the only to, to stand the the,  , the a   a., the,   the a a, and the the the,, and the  , the   the   for the. the,   the.,, a the the to    , so for  .   , , no, what the, the, a    , so on a, a a, and a   the, no the   the, the the,  , the for the  the, the.   , and all, a, a   the,  the, , a   the   the,    .\n\n   to  a new-,   this,  ,   the a, in. the.  , a, the, a , or the,  ,   a,  , a\n\n the a    , ,  ,, this,  in a,  , and , the  the, a,  , a,, you the the to the ,  . the, how  ,   this ,  the       a.  , the, a big, the, is the.  the, the,  , and the,.   \n\n I don the,   the    \n\n to the the,  , no, ,\n\n, and a the.\n\n, you,  the to. , an an for the     a.  .   the go., and, no one-  the   the.\n\n   to down in.  in, the the,  , and    , and.    a, I can.\n that the,   the , you,.   .   \n\n what,  , I a, how,,  , it to the. The   all\n\n,  ",
+      "processed_text": ", the, the the the a, both the, ,,,   the only to, to stand the the,  , the a   a., the,   the a a, and the the the,, and the  , the   the   for the. the,   the.,, a the the to    , so for  .   , , no, what the, the, a    , so on a, a a, and a   the, no the   the, the the,  , the for the  the, the.   , and all, a, a   the,  the, , a   the   the,    .\n\n   to  a new-,   this,  ,   the a, in. the.  , a, the, a , or the,  ,   a,  , a\n\n the a    , ,  ,, this,  in a,  , and , the  the, a,  , a,, you the the to the ,  . the, how  ,   this ,  the       a.  , the, a big, the, is the.  the, the,  , and the,.   \n\n I don the,   the    \n\n to the the,  , no, ,\n\n, and a the.\n\n, you,  the to. , an an for the     a.  .   the go., and, no one-  the   the.\n\n   to down in.  in, the the,  , and    , and.    a, I can.\n that the,   the , you,.   .   \n\n what,  , I a, how,,  , it to the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 81,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Being my own Advocate\n\nBegin with: \"Zion National Park in Utah. Picture taken by yours turly\n\nLearning how to love me through creative writing has proven to be a powerful tool in my life. My thoughts become more apparent, and it leads me to feel confident on my\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-22",
+      "sample_id": 22,
+      "original_prefix_id": 22,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ", the, the the, all,, to the. the   to,,      a. the last of  .   the  ,,,, you down, to.    , ,  .  the   the,, or   the same to. .  \n\n the-,,   a  ,  the the.   the,,,  ,,   a the, the to-,  ,  the re,.  the on.\n\n   the,,     the.  the   the,   the,  a  ,    .  ,   in.  in the the the   \n\n  the the.\n\n a  , the  . , the,   the the the,   and have.   the, the, the all   the.   .  ,   and, the  , the the.  , , to-   ,   the re, and are  re,  ,   for. .\n\n the, this in the  . This is the last to    , an old,   the the,  \n\n a the  and the have   the the the a.\n\n   the  ,   and the     the, , the, a to,.\n\n  ,  a,  , and   a    the,  , you the  , . ,  the,\n\n just     a   the the .  \n\n the, the, to  , the, the the.   a-, to  \n\n the that, and the  ,, the  ,   the, ,   the     a  , on the the the .  \n\n,  , , the,   the  \n\n, the,.  \n\n     in the go  ,  , ,  , in the, and the  , to a the",
+      "processed_text": ", the, the the, all,, to the. the   to,,      a. the last of  .   the  ,,,, you down, to.    , ,  .  the   the,, or   the same to. .  \n\n the-,,   a  ,  the the.   the,,,  ,,   a the, the to-,  ,  the re,.  the on.\n\n   the,,     the.  the   the,   the,  a  ,    .  ,   in.  in the the the   \n\n  the the.\n\n a  , the  . , the,   the the the,   and have.   the, the, the all   the.   .  ,   and, the  , the the.  , , to-   ,   the re, and are  re,  ,   for. .\n\n the, this in the  . This is the last to    , an old,   the the,  \n\n a the  and the have   the the the a.\n\n   the  ,   and the     the, , the, a to,.\n\n  ,  a,  , and   a    the,  , you the  , . ,  the,\n\n just     a   the the .  \n\n the, the, to  , the, the the.   a-, to  \n\n the that, and the  ,, the  ,   the, ,   the     a  , on the the the .  \n\n,  , , the,   the  \n\n, the,.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 81,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Moving with Purpose\n\nBegin with: \"Well, it’s official; 2020 is coming to an end. It has been a long year for many and most would agree this year has been notably more difficult than recent times. However your year went, the good news is it\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-23",
+      "sample_id": 23,
+      "original_prefix_id": 23,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ", re the the,, the the, it all,. the\n\n, the for, the   the for, be   a   the,   , how,, you,,\n\n  , that the, the the,, the,, the the,, to- the the ,  ,, and  the to,, the   the,, the   a   the , that a  .  \n\n that to the  ,     all,  ,\n\n   the the . the  , I need the,,  - and     the, it can  -, an  ,   the the  ,   the.  ,   the a down , is for, the  , and       a  , this. The, and  ,  the  ,   the,  , this a,   the the,   all a  , a  ,   the .\n\nWhen a  , is  a.   , when,    , and I.  , the all the the, the., so it the the  .\n\n.   the,\n\nThis to.   any   the a to be a new.\n\n  , and   a, a  a, to.  the  .  the.  . The one one   the, this, a a  , the  the.\n\n   the  .    a    ,  , the a the  , a to the, to the, to  , and how, for a the to the, for to ,  ,    a , on-    , can, a a  .  .\n\n, a,  this,    all,  and me.  , this   the, I the   the the, to, , you can try.  the, the and  on.  ,        .\n\n   this",
+      "processed_text": ", re the the,, the the, it all,. the\n\n, the for, the   the for, be   a   the,   , how,, you,,\n\n  , that the, the the,, the,, the the,, to- the the ,  ,, and  the to,, the   the,, the   a   the , that a  .  \n\n that to the  ,     all,  ,\n\n   the the . the  , I need the,,  - and     the, it can  -, an  ,   the the  ,   the.  ,   the a down , is for, the  , and       a  , this. The, and  ,  the  ,   the,  , this a,   the the,   all a  , a  ,   the .\n\nWhen a  , is  a.   , when,    , and I.  , the all the the, the., so it the the  .\n\n.   the,\n\nThis to.   any   the a to be a new.\n\n  , and   a, a  a, to.  the  .  the.  . The one one   the, this, a a  , the  the.\n\n   the  .    a    ,  , the a the  , a to the, to the, to  , and how, for a the to the, for to ,  ,    a , on-    , can, a a  .  .\n\n, a,  this,    all,  and me.  , this   the, I the   the the, to, , you can try.  the, the and  on.  ,        .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 81,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Your Punctuality is Reflecting More Than You Know\n\nBegin with: \"Life is anything but predictable. People will argue the validity of free will until the end of time. One thing remains to be true though. So much of life boils down to how you react to it.\n\nI like to think that be proactive is\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-24",
+      "sample_id": 24,
+      "original_prefix_id": 24,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ", are, to the the to the, this the.,,, when the the the,, the  ,  the last one. For the, the, first- a to  ,\n\n,,, and the, the the the  ,   the   , this the,, the, and to- go, the the   a   the,,, a big re the a to.  in.\n\n, the,  the a,  ,      ,      , the the, to    ,   the, the., to that,,  the the,,   in    , the   the, to the , ,    the\n\n   the a    .   the, how, this a, how, or   the a, the  , a   the the the  ,  the.    \n\n the    , a- for a,, a and the   the the, the to  ,     the  .   \n\n   this ,  , of the,, .\n\n  .  , you are going to  ,   the,,. ,, so-  .  the, to the a , a big   any, how, and a, so    , and  ,   that the the ,    .  for it .  is a,, ,  , to   for   a  , how the last one,  .  the  , the the the, how in the the  ,  , .  , the in.   , or  .   , you, I think he in, of all.  the the, , the, or .  , how,   a,     ,  the the, or   the  ,    , and I    ,  .   .  , a\n\n,",
+      "processed_text": ", are, to the the to the, this the.,,, when the the the,, the  ,  the last one. For the, the, first- a to  ,\n\n,,, and the, the the the  ,   the   , this the,, the, and to- go, the the   a   the,,, a big re the a to.  in.\n\n, the,  the a,  ,      ,      , the the, to    ,   the, the., to that,,  the the,,   in    , the   the, to the , ,    the\n\n   the a    .   the, how, this a, how, or   the a, the  , a   the the the  ,  the.    \n\n the    , a- for a,, a and the   the the, the to  ,     the  .   \n\n   this ,  , of the,, .\n\n  .  , you are going to  ,   the,,. ,, so-  .  the, to the a , a big   any, how, and a, so    , and  ,   that the the ,    .  for it .  is a,, ,  , to   for   a  , how the last one,  .  the  , the the the, how in the the  ,  , .  , the in.   , or  .   , you, I think he in, of all.  the the, , the, or .  , how,   a,     ,  the the, or   the  ,    , and I    ,  .   .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 74,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Twelve Paradoxical Questions on Creativity\n\nBegin with: \"Twelve Paradoxical Questions on Creativity\n\nThese are not quiz questions to get them correct or not, but they are target questions to stimulate your thinking.\n\nI wish almost all questions were like these so that our teachers would not be too busy\""
+        }
+      ]
+    }
+  ]
+}

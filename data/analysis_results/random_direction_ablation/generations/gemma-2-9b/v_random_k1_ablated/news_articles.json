@@ -1,0 +1,242 @@
+{
+  "model_type": "instruct",
+  "model_id": "google/gemma-2-9b-it",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400
+  },
+  "intervention": {
+    "mode": "ablate",
+    "direction_path": "random_direction_ablation_results/gemma-2-9b/random_directions/v_random_k1.pt",
+    "tag": "v_random_k1_ablated"
+  },
+  "domain": "news_articles",
+  "num_generations": 10,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-news_articles-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 3,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "##  King City Police Impounded Cars, Then Sold Them, Prosecutor Alleges \n\nThe prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his interim replacement, were arrested this week on charges of embezzlement, misconduct, and conspiracy.\n\nMonterey County District Attorney Jeannine Pacioni described the alleged scheme as a systematic effort to profit off the financial struggles of vulnerable residents. According to Pacioni, officers would impound cars for minor infractions, then pressure owners to pay exorbitant release fees. Those who couldn't afford the fees would see their vehicles handed over to an affiliated impound lot, where they were eventually sold off, with the profits allegedly funneled back to the officers.\n\n\"This wasn't just about enforcing traffic laws,\" Pacioni stated in a press conference. \"This was about taking advantage of people's desperation and turning their misfortune into profit.\"\n\nAmong those arrested were former chief Bruce Miller and interim chief  Michael Richards, who insists he is innocent. \"I stand by my integrity,\" Richards stated in an interview with a local CNN affiliate. \"I had no knowledge of any wrongdoing.\"\n\nThe news has rocked the small town, which has seen its police department significantly strained by the number of arrests.  Community members have expressed outrage and demanded answers. \n\nThe case is ongoing, and the District Attorney's office is continuing to investigate. If convicted, the officers could face significant prison time. The scandal has raised serious questions about accountability within the King City Police Department and the need for greater transparency in law enforcement practices. \n\n\n",
+      "processed_text": "##  King City Police Impounded Cars, Then Sold Them, Prosecutor Alleges \n\nThe prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his interim replacement, were arrested this week on charges of embezzlement, misconduct, and conspiracy.\n\nMonterey County District Attorney Jeannine Pacioni described the alleged scheme as a systematic effort to profit off the financial struggles of vulnerable residents. According to Pacioni, officers would impound cars for minor infractions, then pressure owners to pay exorbitant release fees. Those who couldn't afford the fees would see their vehicles handed over to an affiliated impound lot, where they were eventually sold off, with the profits allegedly funneled back to the officers.\n\n\"This wasn't just about enforcing traffic laws,\" Pacioni stated in a press conference. \"This was about taking advantage of people's desperation and turning their misfortune into profit.\"\n\nAmong those arrested were former chief Bruce Miller and interim chief  Michael Richards, who insists he is innocent. \"I stand by my integrity,\" Richards stated in an interview with a local CNN affiliate. \"I had no knowledge of any wrongdoing.\"\n\nThe news has rocked the small town, which has seen its police department significantly strained by the number of arrests.  Community members have expressed outrage and demanded answers. \n\nThe case is ongoing, and the District Attorney's office is continuing to investigate. If convicted, the officers could face significant prison time. The scandal has raised serious questions about accountability within the King City Police Department and the need for greater transparency in law enforcement practices.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 141,
+        "completion_tokens": 355
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: DA says officers would impound cars of people who couldn't pay release fees .\nThe impound lot owner would turn cars over to cops, who sold or kept them .\nAmong those arrested are the former chief and the interim chief, who says he did no wrong .\nCNN affiliate says small department is strained by the number of arrests .\n\nBegin with: \"The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 15,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "## Former World No. 1s Shine as Miami Masters Reaches Fever Pitch\n\nFormer world No. 1s Maria Sharapova and Caroline Wozniacki lit up the court at the Miami Masters on Thursday, but the lights went out on Agnieszka Radwanska and Marion Bartoli in the women's draw.  Sharapova, chasing her fourth title in Miami, overcame a tough battle against Wozniacki, winning 7-5, 6-3 to reach the final. \n\nMeanwhile,  Radwanska advanced to the semis with a gritty victory over Bartoli, a match punctuated by a bizarre interruption caused by unexpected power failures that plunged the stadium into darkness.  \n\nOn the men's side, world No. 1 Novak Djokovic continued his dominance, cruising past David Ferrer 6-3, 6-3 to secure his spot in the semifinals. Djokovic will now face Juan Monaco, who pulled off a stunning upset against U.S. No. 1 Mardy Fish, winning 6-4, 6-4.\n\nSharapova, known for her powerful groundstrokes and relentless intensity, showcased both elements in her win against Wozniacki. The Dane, a former world No. 1 herself, put up a valiant fight but ultimately fell short against the Russian's experience and composure.\n\nThe unexpected power outage during Radwanska's match against Bartoli added an unusual twist to proceedings. The lights flickered and died mid-point, forcing a temporary halt to play. After a lengthy delay, the match resumed under floodlights, with Radwanska ultimately prevailing in a tightly contested match. \n\nDjokovic, on the other hand, displayed his usual clinical efficiency against Ferrer. The Serbian maestro dictated the points from the baseline, consistently outmaneuvering his Spanish opponent. His performance served as a reminder of his status as one of the most formidable players in the world.\n\n\nWith the men'",
+      "processed_text": "## Former World No. 1s Shine as Miami Masters Reaches Fever Pitch\n\nFormer world No. 1s Maria Sharapova and Caroline Wozniacki lit up the court at the Miami Masters on Thursday, but the lights went out on Agnieszka Radwanska and Marion Bartoli in the women's draw.  Sharapova, chasing her fourth title in Miami, overcame a tough battle against Wozniacki, winning 7-5, 6-3 to reach the final. \n\nMeanwhile,  Radwanska advanced to the semis with a gritty victory over Bartoli, a match punctuated by a bizarre interruption caused by unexpected power failures that plunged the stadium into darkness.  \n\nOn the men's side, world No. 1 Novak Djokovic continued his dominance, cruising past David Ferrer 6-3, 6-3 to secure his spot in the semifinals. Djokovic will now face Juan Monaco, who pulled off a stunning upset against U.S. No. 1 Mardy Fish, winning 6-4, 6-4.\n\nSharapova, known for her powerful groundstrokes and relentless intensity, showcased both elements in her win against Wozniacki. The Dane, a former world No. 1 herself, put up a valiant fight but ultimately fell short against the Russian's experience and composure.\n\nThe unexpected power outage during Radwanska's match against Bartoli added an unusual twist to proceedings. The lights flickered and died mid-point, forcing a temporary halt to play. After a lengthy delay, the match resumed under floodlights, with Radwanska ultimately prevailing in a tightly contested match. \n\nDjokovic, on the other hand, displayed his usual clinical efficiency against Ferrer. The Serbian maestro dictated the points from the baseline, consistently outmaneuvering his Spanish opponent. His performance served as a reminder of his status as one of the most formidable players in the world.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 146,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Maria Sharapova beats Caroline Wozniacki to reach her fourth Miami Masters final .\nAgnieszka Radwanka defeats Marion Bartoli in match interrupted by light failures .\nWorld No. 1 Novak Djokovic reaches men's semifinals after beating David Ferrer .\nDjokovic's last four opponent will be Juan Monaco, who beat U.S. No. 1 Mardy Fish .\n\nBegin with: \"Former world No. 1s Maria Sharapova and Caroline Wozniacki lit up the court at the Miami Masters on Thursday, but the lights went out on Agnieszka Radwanska and Marion Bartoli in the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 20,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "## Florida Teen Undergoes Skin Graft Surgery After Gruesome Attack\n\nA Florida teenager attacked and set on fire last month, allegedly by five teenage friends, was undergoing skin graft surgery Friday, the first procedure in his recovery, a hospital spokeswoman said. Michael Brewer, who suffered burns over 65 percent of his body in the October 12th incident, is in guarded condition and will be transferred back to the intensive care unit following the surgery.\n\nThe surgery, using skin taken from Brewer's own body, will be followed by numerous further procedures as he battles the extensive burns that have ravaged his body. \n\nThe attack on Brewer, a 15-year-old from Palm Bay, Florida, has shocked the community. Police allege that Brewer was set alight as a result of an argument with the five teenagers, who were acquaintances.  Three of the accused teens – Matthew Williams, Kyle Hausmann, and Jesus Navarro – pleaded not guilty to charges of attempted murder and aggravated battery, while the other two are still awaiting arraignment.\n\nBrewer's family has expressed their gratitude for the outpouring of support they have received since the incident. They have also appealed for justice for Michael and have started a fundraising campaign to help cover his extensive medical expenses.  \n\n\nThis story is still developing and updates will be provided as more information becomes available. \n",
+      "processed_text": "## Florida Teen Undergoes Skin Graft Surgery After Gruesome Attack\n\nA Florida teenager attacked and set on fire last month, allegedly by five teenage friends, was undergoing skin graft surgery Friday, the first procedure in his recovery, a hospital spokeswoman said. Michael Brewer, who suffered burns over 65 percent of his body in the October 12th incident, is in guarded condition and will be transferred back to the intensive care unit following the surgery.\n\nThe surgery, using skin taken from Brewer's own body, will be followed by numerous further procedures as he battles the extensive burns that have ravaged his body. \n\nThe attack on Brewer, a 15-year-old from Palm Bay, Florida, has shocked the community. Police allege that Brewer was set alight as a result of an argument with the five teenagers, who were acquaintances.  Three of the accused teens – Matthew Williams, Kyle Hausmann, and Jesus Navarro – pleaded not guilty to charges of attempted murder and aggravated battery, while the other two are still awaiting arraignment.\n\nBrewer's family has expressed their gratitude for the outpouring of support they have received since the incident. They have also appealed for justice for Michael and have started a fundraising campaign to help cover his extensive medical expenses.  \n\n\nThis story is still developing and updates will be provided as more information becomes available.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 148,
+        "completion_tokens": 279
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Hospital spokeswoman says Michael Brewer having own skin put onto burned areas .\nBrewer, 15, in guarded condition, will go back to intensive care after procedure .\nMore surgeries to come; October 12 attack left burns over 65 percent of his body .\n3 of the 5 teens accused of setting Brewer on fire plead not guilty to attempted murder .\n\nBegin with: \"A Florida teenager attacked and set on fire last month, allegedly by five teenage friends, was undergoing skin graft surgery Friday, the first procedure in his recovery, a hospital spokeswoman said. Michael Brewer, who suffered burns over 65 percent of his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 22,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "## Searching for Shadows: Genealogist Races to Fill in the Lives of Hunley's Crew \n\n**CHARLESTON, S.C.** – One investigative tip can lead to another -- and another. Linda Abrams, a genealogy gumshoe, went to Texas to match handwriting samples. She spent a couple weeks in Kentucky following a tip, only to find it was just hearsay.  \n\nAbrams' relentless pursuit of clues is driven by a singular goal: to flesh out the stories of the eight souls who perished aboard the H.L. Hunley, the Confederate submarine famed for its daring sinking of the USS Housatonic in 1864.  \n\nThe Hunley, a vessel of wood and metal that plunged to the bottom off Charleston's coast, remains a powerful symbol of both ingenuity and tragedy.  While its own story has been pieced together, the lives of its crewmembers have remained largely shrouded in mystery. \n\nDNA testing, a tool that has revolutionized genealogy, has provided a limited glimpse into their identities. Matching has been successful for only one of the eight men, leaving Abrams and others with fragmented profiles and burning questions.\n\n\"It's frustrating,\" Abrams admits. \"They were more than just names on a historical record. They were individuals with families, hopes, and dreams.\" \n\nOne of the most intriguing questions swirling around the crew concerns Captain William Harrison. Whispers abound that he carried a cache of gold coins given to him by a beloved, a romantic liaison before his fateful voyage.  \n\n\"It's just a legend at this point,\" Abrams notes, \"But every bit of information, every rumor, deserves to be investigated. We owe it to these men to uncover their stories, to remember them not just as heroes or victims, but as human beings.\"  \n\nAbrams' quest takes her through dusty archives, historical societies, and cemeteries, piecing together the men’s backgrounds, their connections to each",
+      "processed_text": "## Searching for Shadows: Genealogist Races to Fill in the Lives of Hunley's Crew \n\n**CHARLESTON, S.C.** – One investigative tip can lead to another -- and another. Linda Abrams, a genealogy gumshoe, went to Texas to match handwriting samples. She spent a couple weeks in Kentucky following a tip, only to find it was just hearsay.  \n\nAbrams' relentless pursuit of clues is driven by a singular goal: to flesh out the stories of the eight souls who perished aboard the H.L. Hunley, the Confederate submarine famed for its daring sinking of the USS Housatonic in 1864.  \n\nThe Hunley, a vessel of wood and metal that plunged to the bottom off Charleston's coast, remains a powerful symbol of both ingenuity and tragedy.  While its own story has been pieced together, the lives of its crewmembers have remained largely shrouded in mystery. \n\nDNA testing, a tool that has revolutionized genealogy, has provided a limited glimpse into their identities. Matching has been successful for only one of the eight men, leaving Abrams and others with fragmented profiles and burning questions.\n\n\"It's frustrating,\" Abrams admits. \"They were more than just names on a historical record. They were individuals with families, hopes, and dreams.\" \n\nOne of the most intriguing questions swirling around the crew concerns Captain William Harrison. Whispers abound that he carried a cache of gold coins given to him by a beloved, a romantic liaison before his fateful voyage.  \n\n\"It's just a legend at this point,\" Abrams notes, \"But every bit of information, every rumor, deserves to be investigated. We owe it to these men to uncover their stories, to remember them not just as heroes or victims, but as human beings.\"",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 128,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Genealogist tries to fill out details of doomed Civil War submarine crew .\nThe Hunley went down off South Carolina after sinking a Civil War vessel .\nLittle was known about the eight men; DNA matches elusive for all but one .\nDid the captain carry gold coin from a romantic interest?\n\nBegin with: \"One investigative tip can lead to another -- and another. Linda Abrams, a genealogy gumshoe, went to Texas to match handwriting samples. She spent a couple weeks in Kentucky following a tip, only to find it was just hearsay.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 26,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "##  Mertesacker Urges Arsenal to Prove Title Credentials at West Brom\n\n**Defender Per Mertesacker has called on Arsenal to show their Barclays Premier League challenge is very much 'alive' when they head to West Brom for Saturday's lunchtime kick-off. The Gunners produced a much-improved, composed display against Manchester United last weekend, but still fell to a 1-0 defeat, leaving them in eighth place after a disappointing start to the season.**\n\nDespite the sluggish beginning, Mertesacker believes Arsenal can still compete for the title.  \"We have to show our strength and character,\" the German international said. \"The league is very competitive, but we have the quality to win games. It's important we take confidence from the performance against United and turn it into three points against West Brom.\"\n\nThe trip to The Hawthorns presents a vital opportunity for Arsene Wenger's side to climb the table. West Brom have started the season strongly under Tony Pulis, but Arsenal will be seeking to exploit any weaknesses and claim an important victory.\n\n\"Every game in the Premier League is tough,\" Mertesacker added. \"We know West Brom will be organised and difficult to break down, but we're confident in our ability to create chances and score goals.\" \n\nThe pressure is on for Arsenal to deliver a convincing performance after a series of inconsistent displays. A win against West Brom would provide a much-needed boost and signal their intent to challenge for the top honours this season. \n\n\n",
+      "processed_text": "##  Mertesacker Urges Arsenal to Prove Title Credentials at West Brom\n\n**Defender Per Mertesacker has called on Arsenal to show their Barclays Premier League challenge is very much 'alive' when they head to West Brom for Saturday's lunchtime kick-off. The Gunners produced a much-improved, composed display against Manchester United last weekend, but still fell to a 1-0 defeat, leaving them in eighth place after a disappointing start to the season.**\n\nDespite the sluggish beginning, Mertesacker believes Arsenal can still compete for the title.  \"We have to show our strength and character,\" the German international said. \"The league is very competitive, but we have the quality to win games. It's important we take confidence from the performance against United and turn it into three points against West Brom.\"\n\nThe trip to The Hawthorns presents a vital opportunity for Arsene Wenger's side to climb the table. West Brom have started the season strongly under Tony Pulis, but Arsenal will be seeking to exploit any weaknesses and claim an important victory.\n\n\"Every game in the Premier League is tough,\" Mertesacker added. \"We know West Brom will be organised and difficult to break down, but we're confident in our ability to create chances and score goals.\" \n\nThe pressure is on for Arsenal to deliver a convincing performance after a series of inconsistent displays. A win against West Brom would provide a much-needed boost and signal their intent to challenge for the top honours this season.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 116,
+        "completion_tokens": 311
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Arsneal are eighth in the Premier League after unimpressive start .\nPer Mertesacker wants his team to show that they can still win the league .\nThey play West Brom on Saturday looking for an important three points .\n\nBegin with: \"Defender Per Mertesacker has called on Arsenal to show their Barclays Premier League challenge is very much 'alive' when they head to West Brom for Saturday's lunchtime kick-off. The Gunners produced a much-improved, composed display\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 27,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "##  Own Goal for the History Books: Bizarre Play Sees  Dell Rapids Score Through Uprights\n\nA high school football team achieved a feat considered almost impossible in the sport, after the ball bounced off a defender's helmet to score a freak 'own goal'. On an extra point attempt, kicker Keegen Hemenway was disappointed when the ball sailed wide left, seemingly missing the uprights. \n\nBut fate, it seems, had other plans.  \n\nAs the ball arced through the air, it caught a glancing blow off the helmet of a Milbank High School defender, changing its trajectory dramatically. Instead of landing in the dirt, the ball miraculously sailed through the uprights, earning Dell Rapids a stunning point and pushing their lead to 38-0. \n\nThe bizarre sequence, captured on video by a spectator, quickly went viral on YouTube, racking up nearly 400,000 views in just a few days. The video has sparked countless comments and memes, with viewers hailing the play as one of the most unbelievable in football history.\n\nDell Rapids, capitalizing on the momentum shift, went on to win the game decisively, 51-0.  While the bizarre own goal undoubtedly played a role in the final score, head coach Lance Lahr emphasized the team's overall performance.\n\n“We were playing well throughout the game, but that play certainly made things even more memorable,” Lahr said. “The boys were pumped up after that, and it just seemed to fuel our drive in the second half.”\n\nFor the Milbank Bulldogs, the game will be remembered for all the wrong reasons, but the team is trying to keep things in perspective.  \n\n“It was definitely a tough game, and that own goal was a tough pill to swallow,” said Milbank coach Justin Fjerstad. “But our focus now is to learn from this experience and come back stronger next week.”\n\n\n\n",
+      "processed_text": "##  Own Goal for the History Books: Bizarre Play Sees  Dell Rapids Score Through Uprights\n\nA high school football team achieved a feat considered almost impossible in the sport, after the ball bounced off a defender's helmet to score a freak 'own goal'. On an extra point attempt, kicker Keegen Hemenway was disappointed when the ball sailed wide left, seemingly missing the uprights. \n\nBut fate, it seems, had other plans.  \n\nAs the ball arced through the air, it caught a glancing blow off the helmet of a Milbank High School defender, changing its trajectory dramatically. Instead of landing in the dirt, the ball miraculously sailed through the uprights, earning Dell Rapids a stunning point and pushing their lead to 38-0. \n\nThe bizarre sequence, captured on video by a spectator, quickly went viral on YouTube, racking up nearly 400,000 views in just a few days. The video has sparked countless comments and memes, with viewers hailing the play as one of the most unbelievable in football history.\n\nDell Rapids, capitalizing on the momentum shift, went on to win the game decisively, 51-0.  While the bizarre own goal undoubtedly played a role in the final score, head coach Lance Lahr emphasized the team's overall performance.\n\n“We were playing well throughout the game, but that play certainly made things even more memorable,” Lahr said. “The boys were pumped up after that, and it just seemed to fuel our drive in the second half.”\n\nFor the Milbank Bulldogs, the game will be remembered for all the wrong reasons, but the team is trying to keep things in perspective.  \n\n“It was definitely a tough game, and that own goal was a tough pill to swallow,” said Milbank coach Justin Fjerstad.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 150,
+        "completion_tokens": 399
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Freak 'own goal' seen in game between Dell Rapids and Milbank High School .\nBall bounced off defenders head and arched through the uprights .\nVideo has gone viral on YouTube, with close to 400,000 views already .\nPoint took score to 38-0 and Dell Rapids went on to win the game 51-0 .\n\nBegin with: \"A high school football team achieved a feat considered almost impossible in the sport, after the ball bounced off a defender's helmet to score a freak 'own goal'. On an extra point attempt, kicker Keegen Hemenway was disappointed when the ball\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 34,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "## Swiping Right on Success: Location-Based Dating Apps Reach 91 Million Users\n\nLocation-based dating apps, such as Tinder and the League, have a combined total of 91 million users. Now a new study has found that nearly two thirds of these app users are men – and one in five will pay for premium services. \n\nThe study, conducted by [Name of research institution], also revealed that the majority of users fall within the 16 to 34 age bracket, echoing the app's focus on attracting younger generations. \n\n**A Mobile Phenomenon**\n\nMobile dating apps are particularly popular with this demographic, accounting for 6% of all web users.  \n\nAdding fuel to the fire,  Tinder, the largest player in the location-based dating market, reports that its users log on an average of 11 times a day, showcasing the app's significant influence on daily routines.\n\n**Swipe Right on Gender Gaps**\n\nWhile men dominate the user base, the study also sheds light on gender-based differences in app usage. Women spend an average of 8.5 minutes swiping through potential matches in a single session, compared to 7.2 minutes for men.  \n\nThese findings suggest that while both genders actively engage with the app, women may invest more time and effort in the process of choosing potential partners.\n\nThe study's findings highlight the growing influence of location-based dating apps on modern relationships. As the number of users continues to climb, and technology advances further, the future of dating looks increasingly mobile and data-driven.  \n\n\n",
+      "processed_text": "## Swiping Right on Success: Location-Based Dating Apps Reach 91 Million Users\n\nLocation-based dating apps, such as Tinder and the League, have a combined total of 91 million users. Now a new study has found that nearly two thirds of these app users are men – and one in five will pay for premium services. \n\nThe study, conducted by [Name of research institution], also revealed that the majority of users fall within the 16 to 34 age bracket, echoing the app's focus on attracting younger generations. \n\n**A Mobile Phenomenon**\n\nMobile dating apps are particularly popular with this demographic, accounting for 6% of all web users.  \n\nAdding fuel to the fire,  Tinder, the largest player in the location-based dating market, reports that its users log on an average of 11 times a day, showcasing the app's significant influence on daily routines.\n\n**Swipe Right on Gender Gaps**\n\nWhile men dominate the user base, the study also sheds light on gender-based differences in app usage. Women spend an average of 8.5 minutes swiping through potential matches in a single session, compared to 7.2 minutes for men.  \n\nThese findings suggest that while both genders actively engage with the app, women may invest more time and effort in the process of choosing potential partners.\n\nThe study's findings highlight the growing influence of location-based dating apps on modern relationships. As the number of users continues to climb, and technology advances further, the future of dating looks increasingly mobile and data-driven.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 163,
+        "completion_tokens": 333
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Location-based dating apps have total of 91 million users worldwide .\nSixteen to 34 year-olds make up majority of mobile dating app users .\nSix per cent of web users currently use a location-based dating app .\nAccording to Tinder, users log on to app on average 11 times a day .\nWomen spend 8.5 minutes swiping in a session and men 7.2 minutes .\n\nBegin with: \"Location-based dating apps, such as Tinder and the League, have a combined total of 91 million users. Now a new study has found that nearly two thirds of these app users are men – and one in five will pay for premium services.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 41,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "## Plane Crashes, Explodes at Iowa Air Show, Pilot Killed\n\n**Davenport, Iowa** - A plane performing at an air show in Davenport, Iowa, crashed and exploded in front of thousands of spectators. The pilot of the plane was killed in the accident Saturday afternoon when the plane nosedived into an alfalfa field during the Quad Cities Air Show.  \n\nAuthorities have not yet released the pilot's identity, pending notification of next of kin.  The cause of the crash is currently under investigation by the National Transportation Safety Board (NTSB).\n\nA chilling home video captured the horrifying event. The footage, widely circulated on social media, shows the plane performing a loop-the-loop maneuver before suddenly losing altitude and plummeting towards the ground. The plane then slammed into the field, erupting in a ball of fire. \n\n\"It happened so fast,\" stated one witness who wished to remain anonymous. \"One minute the plane was soaring, the next it was diving straight down. Then there was just this massive explosion. It was terrifying.\"\n\nEmergency responders quickly arrived at the scene, but the pilot was pronounced dead on impact. The crash site has been secured, and the NTSB will be examining the wreckage for clues as to what caused the accident.\n\nThe Quad Cities Air Show was immediately canceled following the crash. Organizers expressed their deepest condolences to the pilot's family and friends, and offered their full cooperation with the ongoing investigation.  \n\n\nThis tragedy serves as a stark reminder of the inherent risks associated with aerial acrobatics and the bravery of those who perform such feats. \n",
+      "processed_text": "## Plane Crashes, Explodes at Iowa Air Show, Pilot Killed\n\n**Davenport, Iowa** - A plane performing at an air show in Davenport, Iowa, crashed and exploded in front of thousands of spectators. The pilot of the plane was killed in the accident Saturday afternoon when the plane nosedived into an alfalfa field during the Quad Cities Air Show.  \n\nAuthorities have not yet released the pilot's identity, pending notification of next of kin.  The cause of the crash is currently under investigation by the National Transportation Safety Board (NTSB).\n\nA chilling home video captured the horrifying event. The footage, widely circulated on social media, shows the plane performing a loop-the-loop maneuver before suddenly losing altitude and plummeting towards the ground. The plane then slammed into the field, erupting in a ball of fire. \n\n\"It happened so fast,\" stated one witness who wished to remain anonymous. \"One minute the plane was soaring, the next it was diving straight down. Then there was just this massive explosion. It was terrifying.\"\n\nEmergency responders quickly arrived at the scene, but the pilot was pronounced dead on impact. The crash site has been secured, and the NTSB will be examining the wreckage for clues as to what caused the accident.\n\nThe Quad Cities Air Show was immediately canceled following the crash. Organizers expressed their deepest condolences to the pilot's family and friends, and offered their full cooperation with the ongoing investigation.  \n\n\nThis tragedy serves as a stark reminder of the inherent risks associated with aerial acrobatics and the bravery of those who perform such feats.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 103,
+        "completion_tokens": 329
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: The plane crashes into an alfalfa field in Davenport, Iowa .\nThe pilot has not been identified by authorities .\nA home video captures the crash and subsequent explosion .\n\nBegin with: \"A plane performing at an air show in Davenport, Iowa, crashed and exploded in front of thousands of spectators. The pilot of the plane was killed in the accident Saturday afternoon when the plane nosedived into an alfalfa field during the Quad\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 45,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "## Samsung's \"Sports Glass\" to Streamline Fitness, But with a Cable\n\nSamsung has filed a design patent for wearable computer glasses that are tethered to a smartphone. The Samsung spectacle plugs into a mobile phone and displays information such as text messages and phone calls. Unlike Google Glass, which is wireless, the Wall Street Journal reports that Samsung's device will rely on a physical cable connection to its smartphone companion.  \n\nThe company is marketing the glasses as a \"sports glass,\" focusing on enhancing the fitness experience. Users will be able to take phone calls, listen to music, and potentially track their workouts without needing to juggle their phone. Samsung is touting a lighter design and potentially longer battery life compared to previous attempts at wearable displays. \n\n\"Our concept is to create a device that is specifically designed for active users,\" a Samsung spokesperson said. \"It's about providing essential information hands-free and seamlessly integrating with your workout routines.\"\n\nHowever, the prominent cable connecting the glasses to the user's phone is a significant drawback.  It raises concerns about tangling, potential discomfort during movement, and the overall freedom associated with other wireless wearable devices.  \n\n\"The cable connection is a major obstacle to wider adoption,\" said tech analyst Michael Chen. \"While it might be manageable for specific activities, it simply doesn't offer the same level of convenience and user experience as wireless solutions.\"\n\nIt remains to be seen if Samsung will address the cable issue in future iterations.  For now, the \"sports glass\" concept presents an intriguing possibility for fitness enthusiasts, but the wired design may limit its appeal to a niche market. \n\n\n",
+      "processed_text": "## Samsung's \"Sports Glass\" to Streamline Fitness, But with a Cable\n\nSamsung has filed a design patent for wearable computer glasses that are tethered to a smartphone. The Samsung spectacle plugs into a mobile phone and displays information such as text messages and phone calls. Unlike Google Glass, which is wireless, the Wall Street Journal reports that Samsung's device will rely on a physical cable connection to its smartphone companion.  \n\nThe company is marketing the glasses as a \"sports glass,\" focusing on enhancing the fitness experience. Users will be able to take phone calls, listen to music, and potentially track their workouts without needing to juggle their phone. Samsung is touting a lighter design and potentially longer battery life compared to previous attempts at wearable displays. \n\n\"Our concept is to create a device that is specifically designed for active users,\" a Samsung spokesperson said. \"It's about providing essential information hands-free and seamlessly integrating with your workout routines.\"\n\nHowever, the prominent cable connecting the glasses to the user's phone is a significant drawback.  It raises concerns about tangling, potential discomfort during movement, and the overall freedom associated with other wireless wearable devices.  \n\n\"The cable connection is a major obstacle to wider adoption,\" said tech analyst Michael Chen. \"While it might be manageable for specific activities, it simply doesn't offer the same level of convenience and user experience as wireless solutions.\"\n\nIt remains to be seen if Samsung will address the cable issue in future iterations.  For now, the \"sports glass\" concept presents an intriguing possibility for fitness enthusiasts, but the wired design may limit its appeal to a niche market.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 143,
+        "completion_tokens": 338
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Samsung’s design could have a longer life and be lighter than Google Glass .\nIt will allow users to ‘take phone calls and listen to music during workouts’\nSamsung calls it a ‘sports glass’ and doesn’t expect it to be worn all day .\nThe main downside, however, is users will be constantly attached to a cable .\n\nBegin with: \"Samsung has filed a design patent for wearable computer glasses that are tethered to a smartphone. The Samsung spectacle plugs into a mobile phone and displays information such as text messages and phone calls. Unlike Google Glass, which is wireless, the Wall Street Journal\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 46,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "\"'It is always good publicity for a Republican if they're in an argument with me,' says Obama . Sales of governor Brewer's book have gone up since the public spat . By Daily Mail Reporter . Last updated at 6:56 AM on [Date]\"\n\n\n**Obama jokes about feud driving up sales for Arizona governor's book**\n\nFormer President Barack Obama has made a playful jab at the publicity surrounding his recent spat with Arizona Governor Jan Brewer.\n\nIn a speech this week, Obama quipped: \"'It is always good publicity for a Republican if they're in an argument with me.'\" \n\nThe comment comes after a heated exchange between the two political rivals over Arizona's controversial immigration policies. \n\nFollowing the public clash, Governor Brewer's autobiography, \"Scorpions For Breakfast,\" has seen a surge in sales. The book, detailing her time in office and her contentious relationship with the Obama administration, has become a bestseller in Arizona and on Amazon.  \n\nWhile the former president's remark was delivered with humor, it highlights the undeniable media attention generated by their public disagreement. The exchange reignited a debate over immigration, drawing the spotlight back onto Governor Brewer and her policies.\n\nSome political analysts suggest that the controversy surrounding the spat has ultimately benefitted Governor Brewer, boosting her visibility and positioning her as a vocal advocate for conservative viewpoints. \n\n\n\n",
+      "processed_text": "\"'It is always good publicity for a Republican if they're in an argument with me,' says Obama . Sales of governor Brewer's book have gone up since the public spat . By Daily Mail Reporter . Last updated at 6:56 AM on [Date]\"\n\n\n**Obama jokes about feud driving up sales for Arizona governor's book**\n\nFormer President Barack Obama has made a playful jab at the publicity surrounding his recent spat with Arizona Governor Jan Brewer.\n\nIn a speech this week, Obama quipped: \"'It is always good publicity for a Republican if they're in an argument with me.'\" \n\nThe comment comes after a heated exchange between the two political rivals over Arizona's controversial immigration policies. \n\nFollowing the public clash, Governor Brewer's autobiography, \"Scorpions For Breakfast,\" has seen a surge in sales. The book, detailing her time in office and her contentious relationship with the Obama administration, has become a bestseller in Arizona and on Amazon.  \n\nWhile the former president's remark was delivered with humor, it highlights the undeniable media attention generated by their public disagreement. The exchange reignited a debate over immigration, drawing the spotlight back onto Governor Brewer and her policies.\n\nSome political analysts suggest that the controversy surrounding the spat has ultimately benefitted Governor Brewer, boosting her visibility and positioning her as a vocal advocate for conservative viewpoints.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 113,
+        "completion_tokens": 281
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: 'It is always good publicity for a Republican if they're in an argument with me,' says Obama .\nSales of governor Brewer's book have gone up since the public spat .\n\nBegin with: \"'It is always good publicity for a Republican if they're in an argument with me,' says Obama . Sales of governor Brewer's book have gone up since the public spat . By . Daily Mail Reporter . Last updated at 6:56 AM on\""
+        }
+      ]
+    }
+  ]
+}

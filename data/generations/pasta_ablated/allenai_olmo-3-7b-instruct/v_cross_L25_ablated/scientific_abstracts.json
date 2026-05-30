@@ -1,0 +1,573 @@
+{
+  "model_type": "instruct",
+  "model_id": "allenai/Olmo-3-7B-Instruct",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400
+  },
+  "intervention": {
+    "mode": "ablate",
+    "direction_path": "data/pasta_directions/allenai_olmo-3-7b-instruct/v_cross_L25.pt",
+    "layer": 25,
+    "tag": "v_cross_L25_steered_extended"
+  },
+  "domain": "scientific_abstracts",
+  "num_generations": 25,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 0,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "Natural language call routing can be treated as an instance of topic categorization of documents after speech recognition of calls. This categorization process consists of two crucial components: the first involves text preprocessing for numerical feature extraction from the transcribed speech, and the second involves the use of machine learning classifiers to accurately assign the call to an appropriate destination or category. In this paper, we evaluate various text categorization methods, including feature extraction techniques such as Bag-of-Words and TF-IDF, and various machine learning classifiers like Naive Bayes, Support Vector Machines (SVM), and deep learning-based models. The experimental results demonstrate that integrating advanced preprocessing techniques and using deep neural networks significantly improves the accuracy and efficiency of call routing systems, reducing mis routing errors and enhancing customer service efficiency. Our findings provide valuable insights into the optimal text categorization pipeline for scalable and reliable natural language call routing systems.",
+      "processed_text": "Natural language call routing can be treated as an instance of topic categorization of documents after speech recognition of calls. This categorization process consists of two crucial components: the first involves text preprocessing for numerical feature extraction from the transcribed speech, and the second involves the use of machine learning classifiers to accurately assign the call to an appropriate destination or category. In this paper, we evaluate various text categorization methods, including feature extraction techniques such as Bag-of-Words and TF-IDF, and various machine learning classifiers like Naive Bayes, Support Vector Machines (SVM), and deep learning-based models. The experimental results demonstrate that integrating advanced preprocessing techniques and using deep neural networks significantly improves the accuracy and efficiency of call routing systems, reducing mis routing errors and enhancing customer service efficiency.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 111,
+        "completion_tokens": 178
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Text categorization methods application for natural language call routing\n\nBegin with: \"Natural language call routing can be treated as an instance of topic categorization of documents after speech recognition of calls. This categorization consists of two important parts. The first one is text preprocessing for numerical data extraction and the second one is classification with machine\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 1,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "Insightful findings in political science often require researchers to analyze documents of a certain subject or type, yet these documents are typically contained within large, unstructured corpora where the documents are not labeled or carefully separated into pertinent versus non-pertinent categories. In contrast, we can find that existing supervised models often struggle with generalization when applied directly to such heterogeneous, real-world political document corpora due to the mismatch in label distribution and domain specificity. To address this challenge, we propose the method of Adaptive Ensembling with Unsupervised Domain Adaptation (AEUDA) for political document analysis. Our approach combines unsupervised domain adaptation techniques with ensemble learning to effectively leverage both labeled and unlabeled political documents by first adapting features to the target domain and then dynamically aggregating predictions from multiple adapted models. A comprehensive evaluation on a large political news corpus demonstrates that our method significantly outperforms both standard supervised and traditional domain adaptation approaches in terms of predictive accuracy and robustness across different document types and political topics. The results suggest that our AEUDA method provides an effective solution for improving political document analysis in unstructured, real-world environments with limited labeled data.",
+      "processed_text": "Insightful findings in political science often require researchers to analyze documents of a certain subject or type, yet these documents are typically contained within large, unstructured corpora where the documents are not labeled or carefully separated into pertinent versus non-pertinent categories. In contrast, we can find that existing supervised models often struggle with generalization when applied directly to such heterogeneous, real-world political document corpora due to the mismatch in label distribution and domain specificity. To address this challenge, we propose the method of Adaptive Ensembling with Unsupervised Domain Adaptation (AEUDA) for political document analysis. Our approach combines unsupervised domain adaptation techniques with ensemble learning to effectively leverage both labeled and unlabeled political documents by first adapting features to the target domain and then dynamically aggregating predictions from multiple adapted models. A comprehensive evaluation on a large political news corpus demonstrates that our method significantly outperforms both standard supervised and traditional domain adaptation approaches in terms of predictive accuracy and robustness across different document types and political topics.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 115,
+        "completion_tokens": 233
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Adaptive Ensembling: Unsupervised Domain Adaptation for Political Document Analysis\n\nBegin with: \"Insightful findings in political science often require researchers to analyze documents of a certain subject or type, yet these documents are usually contained in large corpora that do not distinguish between pertinent and non-pertinent documents. In contrast, we can find\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 2,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "A regioselective synthesis of new mono and bisoxindoles containing bis spiro heterocyclic hybrids has been envisaged via 1,3-dipolar cycloaddition of azomethine ylides with appropriate substituted β-keto esters. The reaction proceeds under controlled conditions to afford highly substituted spirooxindole systems with embedded bis spiro heterocycles. The products were fully characterized by NMR and mass spectral analysis and were evaluated for their biological activity against a panel of enzyme inhibition targets including acetylcholinesterase (AChE), carbonyl esterase, and carbonic anhydrase. Several of the synthesized compounds exhibited moderate to high inhibition constants (IC₅₀ values) in the range of 3–25 μM, with selectivity profiles pointing towards potential as enzyme inhibitors with fewer off-target effects. Molecular docking studies indicated good binding affinity to the active sites of the targeted enzymes, supporting the biological efficacy observed. This study establishes a facile and efficient synthetic route to a novel class of spirooxindole hybrids with promising biological activities, suggesting these compounds could be valuable candidates for the development of inhibitor drugs for enzymatic diseases such as Alzheimer’s or glaucoma.",
+      "processed_text": "A regioselective synthesis of new mono and bisoxindoles containing bis spiro heterocyclic hybrids has been envisaged via 1,3-dipolar cycloaddition of azomethine ylides with appropriate substituted β-keto esters. The reaction proceeds under controlled conditions to afford highly substituted spirooxindole systems with embedded bis spiro heterocycles. The products were fully characterized by NMR and mass spectral analysis and were evaluated for their biological activity against a panel of enzyme inhibition targets including acetylcholinesterase (AChE), carbonyl esterase, and carbonic anhydrase. Several of the synthesized compounds exhibited moderate to high inhibition constants (IC₅₀ values) in the range of 3–25 μM, with selectivity profiles pointing towards potential as enzyme inhibitors with fewer off-target effects. Molecular docking studies indicated good binding affinity to the active sites of the targeted enzymes, supporting the biological efficacy observed.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 117,
+        "completion_tokens": 250
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Synthesis and biological evaluation of new spirooxindoles with embedded pharmacophores\n\nBegin with: \"A regioselective synthesis of new mono and bisoxindoles containing bis spiro heterocyclic hybrids has been envisaged via 1,3-dipolar cycloaddition of azomethine ylides with the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 3,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "Purpose – The purpose of this study is to explore the causal link between the procurement route chosen (internal vs. external/FM outsourcing) and the development and quality of the ongoing buyer–supplier relationship within facilities management (FM) procurement. Design/methodology/approach – The research employs a mixed-methods approach, combining a systematic literature review of facilities management, purchasing, and supply chain literature with 20 qualitative interviews with professionals from FM procurement departments in both in-house and outsourced settings. Surveys and case study analyses were used to assess key factors influencing the relationship's strength, trust, and collaboration level along various procurement routes. Findings indicate that while FM procurement outsourcing can facilitate more strategic and collaborative buyer–supplier relationships due to dedicated suppliers with specialized focus, internal procurement routes can lead to deeper operational and tactical collaboration if internal process and communication structures are robust. The study identifies key enablers and barriers of relationship quality regardless of procurement route and suggests strategies for organizations to optimize their buyer–supplier collaboration in FM procurement. (Word count: 263)",
+      "processed_text": "Purpose – The purpose of this study is to explore the causal link between the procurement route chosen (internal vs. external/FM outsourcing) and the development and quality of the ongoing buyer–supplier relationship within facilities management (FM) procurement. Design/methodology/approach – The research employs a mixed-methods approach, combining a systematic literature review of facilities management, purchasing, and supply chain literature with 20 qualitative interviews with professionals from FM procurement departments in both in-house and outsourced settings. Surveys and case study analyses were used to assess key factors influencing the relationship's strength, trust, and collaboration level along various procurement routes. Findings indicate that while FM procurement outsourcing can facilitate more strategic and collaborative buyer–supplier relationships due to dedicated suppliers with specialized focus, internal procurement routes can lead to deeper operational and tactical collaboration if internal process and communication structures are robust. The study identifies key enablers and barriers of relationship quality regardless of procurement route and suggests strategies for organizations to optimize their buyer–supplier collaboration in FM procurement.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 111,
+        "completion_tokens": 211
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Buyer‐supplier collaboration: the aim of FM procurement?\n\nBegin with: \"Purpose – The purpose of this study is to explore the causal link between procurement route and ongoing buyer‐supplier relationship.Design/methodology/approach – The research draws on literature in the areas of: facilities management (FM) outsourcing; purchasing and supply chain\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 4,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "The widespread availability of many emerging services enabled by the Internet of Things (IoT) paradigm requires the provision of long-range connectivity to a massive number of nodes while addressing several technical challenges that arise in large-scale deployments. This paper addresses the problem of supporting massive Machine-to-Machine (M2M) traffic in heterogeneous networks within the context of fifth-generation (5G) cellular systems. We analyze the challenges posed by diverse device types, frequency bands, and network architectures in such environments. Our approach proposes an optimized framework for resource allocation and interference management tailored to heterogeneous 5G cellular networks to maximize spectral efficiency and minimize latency in M2M communication. Through simulation and analytical evaluation, we demonstrate how our proposed method significantly improves the system performance for large-scale M2M traffic while ensuring scalability and low latency in heterogeneous environments. These findings provide insights for the design of efficient and scalable 5G networks for massive machine-to-machine communication.",
+      "processed_text": "The widespread availability of many emerging services enabled by the Internet of Things (IoT) paradigm requires the provision of long-range connectivity to a massive number of nodes while addressing several technical challenges that arise in large-scale deployments. This paper addresses the problem of supporting massive Machine-to-Machine (M2M) traffic in heterogeneous networks within the context of fifth-generation (5G) cellular systems. We analyze the challenges posed by diverse device types, frequency bands, and network architectures in such environments. Our approach proposes an optimized framework for resource allocation and interference management tailored to heterogeneous 5G cellular networks to maximize spectral efficiency and minimize latency in M2M communication. Through simulation and analytical evaluation, we demonstrate how our proposed method significantly improves the system performance for large-scale M2M traffic while ensuring scalability and low latency in heterogeneous environments.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 122,
+        "completion_tokens": 187
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: On the Support of Massive Machine-to-Machine Traffic in Heterogeneous Networks and Fifth-Generation Cellular Networks\n\nBegin with: \"The widespread availability of many emerging services enabled by the Internet of Things (IoT) paradigm passes through the capability to provide long-range connectivity to a massive number of things, overcoming the well-known issues of ad-hoc, short-range networks. This\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-10",
+      "sample_id": 10,
+      "original_prefix_id": 5,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "This paper presents comparisons between predicted and measured data for a live GSM system. Our propagation prediction software tool is based on 3D-ray tracing, incorporating wave propagation effects such as free-space propagation, reflection, diffraction, and scattering to model radio wave behavior in complex environments. The measured data was collected using a standard GSM signal receiver in the same environmental setting used for the prediction. We compare the predicted signal strength and coverage contours generated by the software with the actual measured Received Signal Strength (RSS) at various antenna locations and in different obstruction scenarios. The results indicate a high degree of agreement between the predicted and measured values, with discrepancies attributed mainly to building material variations not fully modeled in the simulation. The comparison highlights the effectiveness of the 3D-ray tracing method for predicting GSM signal propagation and suggests that while it provides a close estimate, real-world environmental factors may require further calibration for optimal accuracy.",
+      "processed_text": "This paper presents comparisons between predicted and measured data for a live GSM system. Our propagation prediction software tool is based on 3D-ray tracing, incorporating wave propagation effects such as free-space propagation, reflection, diffraction, and scattering to model radio wave behavior in complex environments. The measured data was collected using a standard GSM signal receiver in the same environmental setting used for the prediction. We compare the predicted signal strength and coverage contours generated by the software with the actual measured Received Signal Strength (RSS) at various antenna locations and in different obstruction scenarios. The results indicate a high degree of agreement between the predicted and measured values, with discrepancies attributed mainly to building material variations not fully modeled in the simulation.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 114,
+        "completion_tokens": 180
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: A comparison of 3D computer propagation prediction with GSM signal measurements\n\nBegin with: \"This paper presents comparisons between predicted and measured data for a live GSM system. Our propagation prediction software tool is based on 3D-ray tracing, and considers wave interactions, such as free space, reflection, diffraction, and scattering. The underlying\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-11",
+      "sample_id": 11,
+      "original_prefix_id": 6,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "Effects of a carboxylated styrene-butadiene-based liquid additive on the microstructure, mechanical strength, and decolorization resistance of the inorganic pigment layer in the color block were examined. More dense microstructure with finer particle agglomeration was observed due to the interactions of the additive with the inorganic pigment surface, resulting in enhanced bonding and improved the interfacial adhesion between the pigment particles. The addition of the liquid additive led to a significant increase in the mechanical strength and toughness of the pigment layer due to better stress distribution and increased interparticle bonding. Additionally, the presence of the additive accelerated the decolorization resistance against fading caused by light exposure, likely due to improved protection of the pigment core by the additive's protective polymer layer. These findings indicate that incorporating a carboxylated styrene-butadiene liquid additive into the inorganic pigment layer enhances its physical properties, making the color block more durable and color-stable under external stressors.",
+      "processed_text": "Effects of a carboxylated styrene-butadiene-based liquid additive on the microstructure, mechanical strength, and decolorization resistance of the inorganic pigment layer in the color block were examined. More dense microstructure with finer particle agglomeration was observed due to the interactions of the additive with the inorganic pigment surface, resulting in enhanced bonding and improved the interfacial adhesion between the pigment particles. The addition of the liquid additive led to a significant increase in the mechanical strength and toughness of the pigment layer due to better stress distribution and increased interparticle bonding. Additionally, the presence of the additive accelerated the decolorization resistance against fading caused by light exposure, likely due to improved protection of the pigment core by the additive's protective polymer layer.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 121,
+        "completion_tokens": 198
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Enhancement in the physical properties of inorganic pigment layer in the color block by incorporation of n liquid additive\n\nBegin with: \"Effects of a carboxylated styrene-butadiene-based liquid additive on the microstructure, mechanical strength and decolorization resistance of inorganic pigment layer in the color block have been examined. More dense inorganic pigment layer characterized by lower\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-12",
+      "sample_id": 12,
+      "original_prefix_id": 7,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "**Abstract**  \nGHz third harmonic superconducting cavities have been used to increase the peak bunch current and to compensate for non-linear distortions in the longitudinal phase space caused by the sinusoidal 1.3 GHz accelerating cavity voltage (1). The power coupler, a critical component for efficiently delivering high-power RF to the cavities, was previously constrained by limited coupling efficiency due to impedance matching issues and low VSWR at high power levels. In this work, we present a novel coupler design integrating a low-loss dielectric resonator array coupled to a high-Q superconducting cavity via a low-impedance transformer structure. We performed detailed 2D electromagnetic simulations using COMSOL Multiphysics to analyze the modal coupling, reflection coefficient, and VSWR as a function of frequency and power. Optimization studies using the Genetic Algorithm were conducted to minimize the reflected power and maximize the coupling coefficient over the 3.9 GHz third-harmonic frequency band. The optimized design achieved a coupling efficiency of 99% at 3.9 GHz with a VSWR < 1.05. These results demonstrate that the proposed power coupler significantly improves the RF delivery to the superconducting cavity, thereby enabling higher charge injection rates and improved beam dynamics in future FERMILAB high-power linacs. This work provides a foundation for optimizing superconducting linac power distribution systems.",
+      "processed_text": "**Abstract**  \nGHz third harmonic superconducting cavities have been used to increase the peak bunch current and to compensate for non-linear distortions in the longitudinal phase space caused by the sinusoidal 1.3 GHz accelerating cavity voltage (1). The power coupler, a critical component for efficiently delivering high-power RF to the cavities, was previously constrained by limited coupling efficiency due to impedance matching issues and low VSWR at high power levels. In this work, we present a novel coupler design integrating a low-loss dielectric resonator array coupled to a high-Q superconducting cavity via a low-impedance transformer structure. We performed detailed 2D electromagnetic simulations using COMSOL Multiphysics to analyze the modal coupling, reflection coefficient, and VSWR as a function of frequency and power. Optimization studies using the Genetic Algorithm were conducted to minimize the reflected power and maximize the coupling coefficient over the 3.9 GHz third-harmonic frequency band. The optimized design achieved a coupling efficiency of 99% at 3.9 GHz with a VSWR < 1.05. These results demonstrate that the proposed power coupler significantly improves the RF delivery to the superconducting cavity, thereby enabling higher charge injection rates and improved beam dynamics in future FERMILAB high-power linacs.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 136,
+        "completion_tokens": 285
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: SIMULATIONS AND OPTIMIZATIONS OF A NEW POWER COUPLER FOR 3.9-GHZ SUPERCONDUCTING CAVITIES AT FERMILAB*\n\nBegin with: \"GHz third harmonic superconducting cavities have been used to increase the peak bunch current and to compensate for non-linear distortions in the longitudinal phase space due to sinusoidal 1.3 GHz accelerating cavity voltage (1). The power coupler\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-13",
+      "sample_id": 13,
+      "original_prefix_id": 8,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "In this work, we mainly investigate the effect of a PT-symmetric operator on the dynamic behavior of the relative entropy of coherence for a two-level system interacting with non-Markovian environments. By introducing a PT-symmetric potential in the system's Hamiltonian, we analyze how this modification impacts the decoherence dynamics under memory effects of the environment. To this end, we derive a master equation describing the time evolution of the system's coherence, taking into account the non-Markovian character of the environment via memory kernel techniques. We show that the PT symmetry can lead to novel phenomena in coherence suppression or enhancement compared to non-symmetric cases. Moreover, we propose a physical scheme using the environmental feedback based on optimal control, which utilizes the PT symmetry to recover the coherence above a certain threshold by compensating the detrimental effects of the non-Markovian noise. Our numerical results demonstrate the sensitivity of coherence decay to both the symmetry of the Hamiltonian and the environmental memory parameters. This study provides insights into the interplay between PT symmetry and non-Markovian quantum coherence dynamics, with potential applications in quantum thermodynamics and quantum error correction.",
+      "processed_text": "In this work, we mainly investigate the effect of a PT-symmetric operator on the dynamic behavior of the relative entropy of coherence for a two-level system interacting with non-Markovian environments. By introducing a PT-symmetric potential in the system's Hamiltonian, we analyze how this modification impacts the decoherence dynamics under memory effects of the environment. To this end, we derive a master equation describing the time evolution of the system's coherence, taking into account the non-Markovian character of the environment via memory kernel techniques. We show that the PT symmetry can lead to novel phenomena in coherence suppression or enhancement compared to non-symmetric cases. Moreover, we propose a physical scheme using the environmental feedback based on optimal control, which utilizes the PT symmetry to recover the coherence above a certain threshold by compensating the detrimental effects of the non-Markovian noise. Our numerical results demonstrate the sensitivity of coherence decay to both the symmetry of the Hamiltonian and the environmental memory parameters.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 118,
+        "completion_tokens": 231
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Effect of PT-Symmetric Operator on Coherence Under the Non-Markovian Environments\n\nBegin with: \"In this work, we mainly investigate effect of PT-symmetric operation on the dynamic behavior of the relative entropy of coherence for a two-level system within non-Markovian environments and put forward a feasible physical scheme to recover coherence by utilizing optimal\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-14",
+      "sample_id": 14,
+      "original_prefix_id": 9,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "Endoplasmic reticulum (ER)–associated degradation (ERAD) is a principal mechanism that targets ER-associated proteins for cytosolic proteasomal degradation. Here, our data demonstrate a critical role for the Sel1L-Hrd1 endoplasmic reticulum–associated degradation complex in regulating a novel quality control checkpoint during B cell development. We show that Sel1L-Hrd1 directly binds the immunoglobulin μ (Igμ) heavy chain in the ER and promotes its targeted degradation when it fails to be correctly folded. This degradation is crucial for removing misfolded Igμ to allow B cell maturation into transitional and mature B cell stages. Deletion of Sel1L or Hrd1 causes accumulation of misfolded Igμ and B cell developmental defects, supporting a requirement for this ERAD-dependent checkpoint in proper B cell lineage commitment. Our findings reveal a novel checkpoint in B cell development that is essential for maintaining ER homeostasis and correct differentiation, highlighting a critical role for the Sel1L-Hrd1 complex in controlling cellular protein quality control in lymphoid development.",
+      "processed_text": "Endoplasmic reticulum (ER)–associated degradation (ERAD) is a principal mechanism that targets ER-associated proteins for cytosolic proteasomal degradation. Here, our data demonstrate a critical role for the Sel1L-Hrd1 endoplasmic reticulum–associated degradation complex in regulating a novel quality control checkpoint during B cell development. We show that Sel1L-Hrd1 directly binds the immunoglobulin μ (Igμ) heavy chain in the ER and promotes its targeted degradation when it fails to be correctly folded. This degradation is crucial for removing misfolded Igμ to allow B cell maturation into transitional and mature B cell stages. Deletion of Sel1L or Hrd1 causes accumulation of misfolded Igμ and B cell developmental defects, supporting a requirement for this ERAD-dependent checkpoint in proper B cell lineage commitment.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 126,
+        "completion_tokens": 226
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: The Sel1L-Hrd1 Endoplasmic Reticulum-Associated Degradation Complex Manages a Key Checkpoint in B Cell Development.\n\nBegin with: \"Endoplasmic reticulum (ER)-associated degradation (ERAD) is a principal mechanism that targets ER-associated proteins for cytosolic proteasomal degradation. Here, our data demonstrate a critical role for the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-15",
+      "sample_id": 15,
+      "original_prefix_id": 10,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "CSR has gained substantial consideration in management circles and have been linked to HRM in various ways. The study on the impact of corporate social responsibility (CSR) on human resource management (HRM) practices in manufacturing firms in the southern part of Malaysia was an attempt to empirically examine the relationship between the two concepts in that specific geographic context. The study was based on a conceptual framework linking CSR initiatives and their influence on HRM practices such as recruitment, training, compensation, and employee well-being. Data were collected through surveys and interviews with managers and HR professionals from 50 manufacturing firms in the southern region of Malaysia. The findings suggested a positive correlation between increased CSR commitment and improvements in HRM practices, particularly in employee morale and staff retention. However, the preliminary results showed inconsistencies that could not be supported statistically after further analysis. As a result, the study's conclusions have been retracted due to methodological issues related to sample selection and data reliability. This retraction highlights the importance of rigorous sampling and data validation in future research investigating the interplay between CSR and HRM in emerging economies like Malaysia.",
+      "processed_text": "CSR has gained substantial consideration in management circles and have been linked to HRM in various ways. The study on the impact of corporate social responsibility (CSR) on human resource management (HRM) practices in manufacturing firms in the southern part of Malaysia was an attempt to empirically examine the relationship between the two concepts in that specific geographic context. The study was based on a conceptual framework linking CSR initiatives and their influence on HRM practices such as recruitment, training, compensation, and employee well-being. Data were collected through surveys and interviews with managers and HR professionals from 50 manufacturing firms in the southern region of Malaysia. The findings suggested a positive correlation between increased CSR commitment and improvements in HRM practices, particularly in employee morale and staff retention. However, the preliminary results showed inconsistencies that could not be supported statistically after further analysis. As a result, the study's conclusions have been retracted due to methodological issues related to sample selection and data reliability.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 124,
+        "completion_tokens": 221
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Retracted: The impact of corporate social responsibility on human resource management practices in manufacturing firms in the southern part of Malaysia\n\nBegin with: \"CSR has gained substantial consideration in management circles and have been linked to HRM in various ways. The study on how CSR would affect HRM or the vice versa has been of interest by many scholars. Much has been focusing on the conceptual framework,\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 11,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "Abstract A method is described for the identification of astaxanthin diglucoside diesters from the snow alga *Chlamydomonas nivalis* using liquid chromatography coupled to atmospheric pressure chemical ionization (APCI) mass spectrometry. The separation was achieved using an HPLC with a phenyl column, optimizing the mobile phase to maximize the retention and detection of the polar and semi-polar astaxanthin diglucoside diesters in the complex matrix of algal extracts. ATR-FTIR preliminary analysis indicated the presence of glucosyl groups, guiding APCI-MS optimization of the ionization conditions. Under these settings, the targeted ions [M+H]+ were observed at m/z 747, corresponding to astaxanthin diglucoside with characteristic fragment ions. The proposed method enabled the identification and preliminary quantitative assessment of astaxanthin diglucoside diesters in *C. nivalis*, highlighting the feasibility of APCI-MS for the analysis of polar secondary metabolites in marine microalgae extracts.",
+      "processed_text": "Abstract A method is described for the identification of astaxanthin diglucoside diesters from the snow alga *Chlamydomonas nivalis* using liquid chromatography coupled to atmospheric pressure chemical ionization (APCI) mass spectrometry. The separation was achieved using an HPLC with a phenyl column, optimizing the mobile phase to maximize the retention and detection of the polar and semi-polar astaxanthin diglucoside diesters in the complex matrix of algal extracts. ATR-FTIR preliminary analysis indicated the presence of glucosyl groups, guiding APCI-MS optimization of the ionization conditions. Under these settings, the targeted ions [M+H]+ were observed at m/z 747, corresponding to astaxanthin diglucoside with characteristic fragment ions. The proposed method enabled the identification and preliminary quantitative assessment of astaxanthin diglucoside diesters in *C.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 139,
+        "completion_tokens": 225
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Identification of astaxanthin diglucoside diesters from snow alga Chlamydomonas nivalis by liquid chromatography-atmospheric pressure chemical ionization mass spectrometry.\n\nBegin with: \"Abstract A method is described for the identification of astaxanthin glucoside esters from snow alga Chlamydomonas nivalis by means of liquid chromatography–mass spectrometry with atmospheric pressure chemical ionization\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-16",
+      "sample_id": 16,
+      "original_prefix_id": 12,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "Skin biopsy homogenates obtained from three cases of lepromatous leprosy with no prior history of antileprosy treatment were used to establish the drug susceptibility of Mycobacterium leprae in a mouse footpad infection model. The homogenates were inoculated into the footpad of BALB/c mice, followed by challenge with different combinations of standard ant lepromate drugs (such as dapsone, Clofazimine, rifampicin, and rifabutin) in single and multiple drug regimens. Mice were assessed for histopathological signs of disease, bacterial load in skin biopsies, and the presence of viable M. leprae by bacterial culture. Results demonstrate primary resistance to a range of commonly used first- and second-line drugs in these lepromatous cases, with some strains showing cross-resistance when exposed to multiple drugs simultaneously. These findings highlight the complex and potentially evolving nature of drug resistance in M. leprae infections in untreated leprosy, which could affect treatment outcomes in this patient population. This study emphasizes the necessity for surveillance and updated antibiotic regimens in light of possible intrinsic or acquired drug resistance in lepromatous leprosy cases.",
+      "processed_text": "Skin biopsy homogenates obtained from three cases of lepromatous leprosy with no prior history of antileprosy treatment were used to establish the drug susceptibility of Mycobacterium leprae in a mouse footpad infection model. The homogenates were inoculated into the footpad of BALB/c mice, followed by challenge with different combinations of standard ant lepromate drugs (such as dapsone, Clofazimine, rifampicin, and rifabutin) in single and multiple drug regimens. Mice were assessed for histopathological signs of disease, bacterial load in skin biopsies, and the presence of viable M. leprae by bacterial culture. Results demonstrate primary resistance to a range of commonly used first- and second-line drugs in these lepromatous cases, with some strains showing cross-resistance when exposed to multiple drugs simultaneously. These findings highlight the complex and potentially evolving nature of drug resistance in M. leprae infections in untreated leprosy, which could affect treatment outcomes in this patient population.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 117,
+        "completion_tokens": 251
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Primary resistance to single and multiple drugs in leprosy : a mouse footpad study\n\nBegin with: \"Skin biopsy homogenates obtained from three cases of lepromatous leprosy with no prior history of antileprosy treatment were tested in the mouse footpad for the sensitivity of Mycobacterium leprae to multiple drugs.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 13,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "In this paper we review various numerical models for calculating wave propagation from deep water to the surf zone, including the accurate simulation of wave breaking phenomena. The analysis covers a range of widely used models, such as the WAM (Wave Model), Airy Sechmanov, Random Phase Method (RPM), and quasi-linear models (e.g., FCT – finite difference scheme), highlighting their underlying numerical formulations and how they handle the transition from deep water to shallow water regions where wave breaking occurs. The limitations and key approximations inherent in each method are discussed, such as discretization schemes, treatment of turbulence, and stability considerations. The main focus of the discussions is on the unified framework that integrates multiple approaches by using multi-scale or unified grid methods, which provide a more accurate and physically consistent description of wave breaking processes across varying beach slopes. Such unification helps to improve the predictability of wave run-up and energy dissipation in coastal engineering applications.",
+      "processed_text": "In this paper we review various numerical models for calculating wave propagation from deep water to the surf zone, including the accurate simulation of wave breaking phenomena. The analysis covers a range of widely used models, such as the WAM (Wave Model), Airy Sechmanov, Random Phase Method (RPM), and quasi-linear models (e.g., FCT – finite difference scheme), highlighting their underlying numerical formulations and how they handle the transition from deep water to shallow water regions where wave breaking occurs. The limitations and key approximations inherent in each method are discussed, such as discretization schemes, treatment of turbulence, and stability considerations. The main focus of the discussions is on the unified framework that integrates multiple approaches by using multi-scale or unified grid methods, which provide a more accurate and physically consistent description of wave breaking processes across varying beach slopes.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 105,
+        "completion_tokens": 192
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Wave propagation modeling in coastal engineering\n\nBegin with: \"In this paper we review various numerical models for calculating wave propagations from deep water to surf zone, including wave breaking. The limitations and the approximations for each model are briefly discussed. The main focus of the discussions is on the unified\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-17",
+      "sample_id": 17,
+      "original_prefix_id": 14,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "To solve the l₁-norm minimisation problem, many algorithms, such as the l₁-magic solver, utilise the conjugate gradient (CG) method to speed up implementation by converting the problem into a quadratic form with an auxiliary dense dictionary. However, this approach often results in a dense dictionary, leading to high memory usage and computational overhead, especially when dealing with extremely large and sparse data. In this paper, we propose a fast sparse representation model that generates a highly sparse dictionary for l₁-minimisation, enabling significant memory savings and faster convergence compared to traditional dense dictionary approaches. Our method efficiently constructs the dictionary using a combination of randomised Hadamard product and tailored filtering techniques, ensuring sparsity while preserving the convergence properties required for l₁ minimisation. Experimental results on large-scale linear regression and compressed sensing tasks demonstrate that our proposed model achieves up to 5× faster convergence with only 10–20% of the memory footprint of existing methods, thus offering a practical solution for large-scale l₁-norm problems.",
+      "processed_text": "To solve the l₁-norm minimisation problem, many algorithms, such as the l₁-magic solver, utilise the conjugate gradient (CG) method to speed up implementation by converting the problem into a quadratic form with an auxiliary dense dictionary. However, this approach often results in a dense dictionary, leading to high memory usage and computational overhead, especially when dealing with extremely large and sparse data. In this paper, we propose a fast sparse representation model that generates a highly sparse dictionary for l₁-minimisation, enabling significant memory savings and faster convergence compared to traditional dense dictionary approaches. Our method efficiently constructs the dictionary using a combination of randomised Hadamard product and tailored filtering techniques, ensuring sparsity while preserving the convergence properties required for l₁ minimisation.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 114,
+        "completion_tokens": 208
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Fast sparse representation model for I 1 -norm minimisation problem\n\nBegin with: \"To solve the l 1 -norm minimisation problem, many algorithms, such as the l 1 -Magic solver, utilise the conjugate gradient (CG) method to speed up implementation. Since the dictionary employed by CG is often dense in\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-18",
+      "sample_id": 18,
+      "original_prefix_id": 15,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "In recent years, the increase of non-linear loads in electrical power systems has sparked significant research into power quality issues. The shunt active power filter (SAPF) is a power electronic device developed to mitigate harmonic distortion and improve power quality by compensating for the harmonic currents generated by non-linear loads. This study presents a comparative analysis of two advanced current control techniques: the Sliding Mode Control (SMC) and the Fuzzy Adaptive Control (FAC), applied in a three-phase shunt active power filter. Both control algorithms were implemented and tested under simulated three-phase grid conditions with various types of non-linear loads. The performance of each technique was evaluated based on current harmonic reduction, filter efficiency, and dynamic response. The results demonstrate that SMC provides superior disturbance rejection and faster transient response due to its robustness, while FAC adapts well to load variations, offering better long-term stability. The findings contribute to the selection criteria for current control strategies in SAPFs, aiding in optimizing power quality improvement while maintaining cost and complexity considerations.",
+      "processed_text": "In recent years, the increase of non-linear loads in electrical power systems has sparked significant research into power quality issues. The shunt active power filter (SAPF) is a power electronic device developed to mitigate harmonic distortion and improve power quality by compensating for the harmonic currents generated by non-linear loads. This study presents a comparative analysis of two advanced current control techniques: the Sliding Mode Control (SMC) and the Fuzzy Adaptive Control (FAC), applied in a three-phase shunt active power filter. Both control algorithms were implemented and tested under simulated three-phase grid conditions with various types of non-linear loads. The performance of each technique was evaluated based on current harmonic reduction, filter efficiency, and dynamic response. The results demonstrate that SMC provides superior disturbance rejection and faster transient response due to its robustness, while FAC adapts well to load variations, offering better long-term stability.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 119,
+        "completion_tokens": 209
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: A comparative study of two high performance current control techniques for three-phase shunt active power filters\n\nBegin with: \"In recent years, the increase of non-linear loads in electrical power system has sparked the research in power quality issue. The shunt active power filter (SAPF) is a power electronic device which has been developed to improve power quality. The\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-19",
+      "sample_id": 19,
+      "original_prefix_id": 16,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "Serotonin or melatonin was infused into the third cerebral ventricle (3rd V) or into the medial basal hypothalamus (MBH) of both intact ewes and ewes with lesions of the anterior hypothalamic-pituitary-gonadal axis. We examined the effects of these indoleamine neurotransmitters on the hypothalamic centers involved in the control of luteinizing hormone (LH) release and the overall process of ovulation in sheep. In intact ewes, both serotonergic (5-HT) and melatonin (MT) infusions into the MBH significantly increased LH release as measured by plasma LH concentration, suggesting that these neuroregulators directly modulate the LH-releasing neurons in the median eminence via local receptors. In ewes with prior lesions of the anterior hypothalamus, only melatonin infused into the MBH significantly increased LH release, indicating that melatonin may act via an alternative or residual pathway not obliterated by anterior hypothalamic lesions. Furthermore, electrophysiological recordings from the MBH indicated that indoleamines likely influence the Arcuate and Paraventricular Nucleus (PVN) neurons through both direct and indirect pathways, with melatonin's action possibly involving a G protein-coupled receptor in the PVN. These findings demonstrate that indoleamines can act at specific hypothalamic sites to modulate LH release and ovulation, and that melatonin may have compensatory or distinct actions when anterior hypothalamic pathways are compromised.",
+      "processed_text": "Serotonin or melatonin was infused into the third cerebral ventricle (3rd V) or into the medial basal hypothalamus (MBH) of both intact ewes and ewes with lesions of the anterior hypothalamic-pituitary-gonadal axis. We examined the effects of these indoleamine neurotransmitters on the hypothalamic centers involved in the control of luteinizing hormone (LH) release and the overall process of ovulation in sheep. In intact ewes, both serotonergic (5-HT) and melatonin (MT) infusions into the MBH significantly increased LH release as measured by plasma LH concentration, suggesting that these neuroregulators directly modulate the LH-releasing neurons in the median eminence via local receptors. In ewes with prior lesions of the anterior hypothalamus, only melatonin infused into the MBH significantly increased LH release, indicating that melatonin may act via an alternative or residual pathway not obliterated by anterior hypothalamic lesions. Furthermore, electrophysiological recordings from the MBH indicated that indoleamines likely influence the Arcuate and Paraventricular Nucleus (PVN) neurons through both direct and indirect pathways, with melatonin's action possibly involving a G protein-coupled receptor in the PVN.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 132,
+        "completion_tokens": 311
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: The Effect and Site of Action of Indoleamines on the Hypothalamic Centers Involved in the Control of LH Release and Ovulation in Sheep\n\nBegin with: \"Serotonin or melatonin was infused into the 3rd cerebral ventricle (3rd V) or into the medial basal hypothalamus (MBH) of both intact ewes and ewes with lesions of the anterior hypothalamic\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-20",
+      "sample_id": 20,
+      "original_prefix_id": 17,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "Submicron magnetic composite microspheres have been prepared by a new surfactant-free controlled radical polymerization approach. This method utilizes diphenylethylene (DPE) as the radical scavenger to maintain controlled and stable polymerization without the use of any surfactants or stabilizers. The magnetic composite microspheres are successfully synthesized by incorporating magnetic nanoparticles (e.g., Fe3O4) within the polymer matrix during the controlled polymerization process. The resulting microspheres demonstrate uniform size distribution, high magnetic saturation, and controlled polymer chain length, as confirmed by FTIR, UV-Vis spectroscopy, and magnetization measurements. The composite microspheres exhibit superior biocompatibility and high stability in various biological media, indicating their potential as targeted delivery vehicles. This surfactant-free method offers a simple, scalable, and environmentally friendly route for preparing uniform, functional magnetic nanomaterials for biomedical applications.",
+      "processed_text": "Submicron magnetic composite microspheres have been prepared by a new surfactant-free controlled radical polymerization approach. This method utilizes diphenylethylene (DPE) as the radical scavenger to maintain controlled and stable polymerization without the use of any surfactants or stabilizers. The magnetic composite microspheres are successfully synthesized by incorporating magnetic nanoparticles (e.g., Fe3O4) within the polymer matrix during the controlled polymerization process. The resulting microspheres demonstrate uniform size distribution, high magnetic saturation, and controlled polymer chain length, as confirmed by FTIR, UV-Vis spectroscopy, and magnetization measurements. The composite microspheres exhibit superior biocompatibility and high stability in various biological media, indicating their potential as targeted delivery vehicles.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 119,
+        "completion_tokens": 187
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Preparation of magnetic composite microspheres by surfactant free controlled radical polymerization: Preparation and characteristics\n\nBegin with: \"Submicron magnetic composite microspheres have been prepared by a new surfactant free controlled radical polymerization. This new approach is based on the use of diphenylethene (DPE) as radical controlling agent and no\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-21",
+      "sample_id": 21,
+      "original_prefix_id": 18,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "Leibowitz and his colleagues found that accommodation tends to rest at an intermediate target distance (the \"dark focus\"), exhibiting wide interindividual variation. They proposed that this dark focus could be exploited to correct anomalous refractive errors due to an aberrant resting point. However, when different methods for measuring the dark focus were applied in subsequent studies, inconsistencies were observed in the reported values, suggesting that the relationship between the dark focus and refractive error correction may not be as straightforward as originally proposed. This inconsistency raises questions about the reliability of the dark focus as a practical marker for optimal accommodative performance and refractive correction. In this study, we investigated whether physiological measures of the dark focus, combined with corneal power measurements, can reliably predict optimal accommodation performance under various visual tasks, and we evaluated the effects of measurement technique on these predictions. Our findings suggest that while the dark focus contains valuable information about accommodative state, its predictive value for optimal performance may depend on the specific measurement method used and the accommodation task context.",
+      "processed_text": "Leibowitz and his colleagues found that accommodation tends to rest at an intermediate target distance (the \"dark focus\"), exhibiting wide interindividual variation. They proposed that this dark focus could be exploited to correct anomalous refractive errors due to an aberrant resting point. However, when different methods for measuring the dark focus were applied in subsequent studies, inconsistencies were observed in the reported values, suggesting that the relationship between the dark focus and refractive error correction may not be as straightforward as originally proposed. This inconsistency raises questions about the reliability of the dark focus as a practical marker for optimal accommodative performance and refractive correction. In this study, we investigated whether physiological measures of the dark focus, combined with corneal power measurements, can reliably predict optimal accommodation performance under various visual tasks, and we evaluated the effects of measurement technique on these predictions.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 118,
+        "completion_tokens": 206
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Predicting Optimal Accommodative Performance from Measures of the Dark Focus of Accommodation\n\nBegin with: \"Leibowitz and his colleagues found that accommodation rests at an intermediate distance that shows wide interindividual variation. They proposed that this intermediate dark focus is useful for correcting anomalous refractive errors, but this proposal was later questioned when different measurement techniques yielded\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-22",
+      "sample_id": 22,
+      "original_prefix_id": 19,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "Currently, traditional family values that have been passed down through generations appear to be at risk. This has significant implications for the stability and health of individuals, families, and communities, as these traditional values are known to contribute to positive social behaviors, emotional well-being, and the maintenance of cultural identity. This article explores selected empirical studies and qualitative research examining the factors that influence the intergenerational transmission of family values. Despite ongoing changes due to globalization, technological advancement, and shifts in societal norms, some studies suggest that certain practices—such as storytelling, shared rituals, and modeling behavior—still remain powerful in preserving these traditions. However, structural issues such as family breakdown, media influence, and digital communication have been identified as challenges to the seamless transmission across generations. The article also examines the potential benefits of preserving traditional family values for psychological resilience and societal cohesion, alongside the challenges in adapting these values in a rapidly changing world. Understanding the mechanisms that facilitate or hinder intergenerational transmission is crucial for developing interventions to sustain meaningful family traditions in future generations.",
+      "processed_text": "Currently, traditional family values that have been passed down through generations appear to be at risk. This has significant implications for the stability and health of individuals, families, and communities, as these traditional values are known to contribute to positive social behaviors, emotional well-being, and the maintenance of cultural identity. This article explores selected empirical studies and qualitative research examining the factors that influence the intergenerational transmission of family values. Despite ongoing changes due to globalization, technological advancement, and shifts in societal norms, some studies suggest that certain practices—such as storytelling, shared rituals, and modeling behavior—still remain powerful in preserving these traditions. However, structural issues such as family breakdown, media influence, and digital communication have been identified as challenges to the seamless transmission across generations. The article also examines the potential benefits of preserving traditional family values for psychological resilience and societal cohesion, alongside the challenges in adapting these values in a rapidly changing world.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 105,
+        "completion_tokens": 209
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Family traditions and generations.\n\nBegin with: \"Currently, traditional family values that have been passed down through generations appear to be at risk. This has significant implications for the stability and health of individuals, families, and communities. This article explores selected issues related to intergenerational transmission of family values\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 20,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "This paper proposes a hierarchical control architecture designed for an arbitrary high voltage multi-terminal DC (HV-MTDC) network. In the proposed architecture, the primary control of the MTDC system is decentralized and implemented using a generalized droop strategy to ensure local balance and proportional power sharing across the network. To enhance overall system stability and optimal power flow, a secondary controller is implemented in a distributed manner using an optimal power flow (OPF) approach. The secondary controller operates at the control level to ensure global power flow optimization while respecting line constraints and network limits, complementing the fast droop-based local control. A case study demonstrates the effectiveness of the combined approach in maintaining balance, optimizing power flow, and handling local outages in a simulated HV-MTDC system. Results show improved convergence, robustness, and efficiency compared to conventional decentralized droop or centralized OPF methods.",
+      "processed_text": "This paper proposes a hierarchical control architecture designed for an arbitrary high voltage multi-terminal DC (HV-MTDC) network. In the proposed architecture, the primary control of the MTDC system is decentralized and implemented using a generalized droop strategy to ensure local balance and proportional power sharing across the network. To enhance overall system stability and optimal power flow, a secondary controller is implemented in a distributed manner using an optimal power flow (OPF) approach. The secondary controller operates at the control level to ensure global power flow optimization while respecting line constraints and network limits, complementing the fast droop-based local control. A case study demonstrates the effectiveness of the combined approach in maintaining balance, optimizing power flow, and handling local outages in a simulated HV-MTDC system.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 120,
+        "completion_tokens": 176
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Hierarchical Control of HV-MTDC Systems With Droop-Based Primary and OPF-Based Secondary\n\nBegin with: \"This paper proposes a hierarchical control architecture designed for an arbitrary high voltage multiterminal dc (MTDC) network. In the proposed architecture, the primary control of the MTDC system is decentralized and implemented using a generalized droop strategy. Design\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-23",
+      "sample_id": 23,
+      "original_prefix_id": 21,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "Two critical points in the energetics of muscular contraction have been re-examined: (1) the absence of heat production after the active state has ended during muscle relaxation and (2) the mechanistic role of ATP mobilization in linking energy supply to contraction kinetics. In this study, we re-examined experimental data and modeling approaches previously used to evaluate these principles by analyzing temperature changes and substrate utilization in isolated skeletal and cardiac muscle fibers during contraction and relaxation. Our results showed that the initial heat of activation during contraction rapidly dissipates during relaxation, yet no significant heat accumulation occurs post-contraction, consistent with energy being stored as phosphocreatine and myoglobin-bound ATP rather than lost as heat. Furthermore, our analysis of the kinetics of ATP regeneration via mitochondrial respiration and anaerobic processes revealed that ATP availability at rest is maintained through residual stored energy, supporting the idea of an ATP ' reservoir.' This re-examination clarifies discrepancies in earlier studies that measured heat production during rapid shortening, suggesting that heat is not generated during passive relaxation but may accumulate during brief, rapid contractions involving both oxidative and glycolytic pathways. The present findings highlight that the energy dynamics of contraction involve a balance between rapid ATP hydrolysis during contraction, its rapid regeneration post-contraction, and the absence of excess heat during true relaxation, thus refining our understanding of muscle energetics.",
+      "processed_text": "Two critical points in the energetics of muscular contraction have been re-examined: (1) the absence of heat production after the active state has ended during muscle relaxation and (2) the mechanistic role of ATP mobilization in linking energy supply to contraction kinetics. In this study, we re-examined experimental data and modeling approaches previously used to evaluate these principles by analyzing temperature changes and substrate utilization in isolated skeletal and cardiac muscle fibers during contraction and relaxation. Our results showed that the initial heat of activation during contraction rapidly dissipates during relaxation, yet no significant heat accumulation occurs post-contraction, consistent with energy being stored as phosphocreatine and myoglobin-bound ATP rather than lost as heat. Furthermore, our analysis of the kinetics of ATP regeneration via mitochondrial respiration and anaerobic processes revealed that ATP availability at rest is maintained through residual stored energy, supporting the idea of an ATP ' reservoir.' This re-examination clarifies discrepancies in earlier studies that measured heat production during rapid shortening, suggesting that heat is not generated during passive relaxation but may accumulate during brief, rapid contractions involving both oxidative and glycolytic pathways.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 117,
+        "completion_tokens": 281
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: A reinvestigation of two critical points in the energetics of muscular contraction\n\nBegin with: \"Two critical points in the energetics of muscular contraction have been re-examined: (1) the absence of heat production after the active state has ended (i.e. in 'relaxation') and (2) the mobilization\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 22,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "Receptor tyrosine kinases (RTKs) mediate distinct biological responses by activating similar downstream signaling pathways, such as the RAS-ERK or PI3K-Akt pathways. However, it remains unclear whether the specificity of their cellular responses is primarily due to quantitative differences in pathway activation or the recruitment of specific adaptor proteins and secondary effectors. We addressed this question by genetically coupling murine embryonic stem cells expressing two distinct RTKs (e.g., EGFR and MET) to selective downstream signaling intermediates—either activating the common RAS-ERK pathway or the PI3K-Akt pathway. We used a bipartite molecular engineering system to force each RTK to couple only to one of these specific signaling branches. Our data demonstrate that even when both RTKs are forced to activate the same primary pathway via different effectors, the resulting phenotypes differ dramatically in terms of cell fate, differentiation timing, and cell survival. Furthermore, substituting the adapter molecules revealed that the choice of secondary signal transducer is critical for determining developmental outcomes. These findings suggest that not only the quantitative activation level but also the specific coupling partners and pathways selected can generate distinct cellular identities, highlighting a mechanism by which RTKs achieve pathway-specific cell fate outcomes.",
+      "processed_text": "Receptor tyrosine kinases (RTKs) mediate distinct biological responses by activating similar downstream signaling pathways, such as the RAS-ERK or PI3K-Akt pathways. However, it remains unclear whether the specificity of their cellular responses is primarily due to quantitative differences in pathway activation or the recruitment of specific adaptor proteins and secondary effectors. We addressed this question by genetically coupling murine embryonic stem cells expressing two distinct RTKs (e.g., EGFR and MET) to selective downstream signaling intermediates—either activating the common RAS-ERK pathway or the PI3K-Akt pathway. We used a bipartite molecular engineering system to force each RTK to couple only to one of these specific signaling branches. Our data demonstrate that even when both RTKs are forced to activate the same primary pathway via different effectors, the resulting phenotypes differ dramatically in terms of cell fate, differentiation timing, and cell survival. Furthermore, substituting the adapter molecules revealed that the choice of secondary signal transducer is critical for determining developmental outcomes.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 112,
+        "completion_tokens": 258
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Coupling Met to specific pathways results in distinct developmental outcomes.\n\nBegin with: \"Receptor tyrosine kinases (RTKs) mediate distinct biological responses by stimulating similar intracellular signaling pathways. Whether the specificity of the response is determined by qualitative or quantitative differences in signaling output is not known. We addressed this question\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-24",
+      "sample_id": 24,
+      "original_prefix_id": 23,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "Objective: To investigate the variation of strength of the human mandible with the orientation relative to its long axis. Methods: The human mandible is considered a living and anisotropic composite material due to its heterogeneous structure with distinct cortical and cancellous bone layers and different dental components. Three-dimensional tensile and compressive strengths were experimentally determined using finite element analysis of CT-scan-based 3D models, and direct experimental tensile testing with 3D-printed mandible replicas. The specimens were oriented parallel and perpendicular to the mandibular long axis to assess the effect of orientation on mechanical properties. Results: The compressive strength was significantly higher in the longitudinal (long axis) orientation compared to the transverse direction, attributed to the denser cortical orientation along the long axis. Tensile strength also exhibited the highest value in the longitudinal direction, reflecting the higher bone fiber alignment along the long axis. Significant anisotropy was observed between specimens tested parallel and perpendicular to the long axis (p < 0.05). Conclusions: The human mandible displays marked anisotropy in both tensile and compressive strength, with the direction parallel to the long axis exhibiting higher strength due to optimal orientation of bone fibers and collagen alignment. Understanding these orientation-dependent properties is critical in designing dental prostheses and implants and in considering functional loading during mastication.",
+      "processed_text": "Objective: To investigate the variation of strength of the human mandible with the orientation relative to its long axis. Methods: The human mandible is considered a living and anisotropic composite material due to its heterogeneous structure with distinct cortical and cancellous bone layers and different dental components. Three-dimensional tensile and compressive strengths were experimentally determined using finite element analysis of CT-scan-based 3D models, and direct experimental tensile testing with 3D-printed mandible replicas. The specimens were oriented parallel and perpendicular to the mandibular long axis to assess the effect of orientation on mechanical properties. Results: The compressive strength was significantly higher in the longitudinal (long axis) orientation compared to the transverse direction, attributed to the denser cortical orientation along the long axis. Tensile strength also exhibited the highest value in the longitudinal direction, reflecting the higher bone fiber alignment along the long axis. Significant anisotropy was observed between specimens tested parallel and perpendicular to the long axis (p < 0.05). Conclusions: The human mandible displays marked anisotropy in both tensile and compressive strength, with the direction parallel to the long axis exhibiting higher strength due to optimal orientation of bone fibers and collagen alignment.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 108,
+        "completion_tokens": 278
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: The strength of the human mandible\n\nBegin with: \"Objective: To investigate the variation of strength of the human mandible with the orientation to its longaxis. Methods: The human mandible is a living and anisotropic composite material. Three-dimensional tensile andcompressive strength of it were determined\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-25",
+      "sample_id": 25,
+      "original_prefix_id": 24,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "allenai/Olmo-3-7B-Instruct",
+      "raw_text": "Background: Since the SAMMPRIS trial, aggressive medical management (AMM) with the use of dual antiplatelets (aspirin and clopidogrel) and high-dose statin therapy has been standard of care for patients with intracerebral aneurysm (ICA) and large vessel occlusion (IVSN) to reduce recurrent stroke risk. However, the efficacy and outcomes of AMM in specific subgroups, such as those with intracerebral artery cavernous malformation (ICAD), are less well established. Objective: This study aimed to compare the recurrent stroke risk in patients with ICAD who received AMM (aspirin, clopidogrel, and high-dose statin) versus standard medical management (only one antiplatelet or no antiplatelet) over a similar follow-up period as in the SAMMPRIS trial. Methods: We conducted a retrospective cohort study of patients with ICAD who were treated at [institution/institution name], comparing those receiving AMM with those receiving standard medical management for secondary prevention. Recurrent stroke and mortality outcomes were assessed over a median follow-up of [X] months. Results: Among 200 patients with ICAD, 115 received AMM and 85 received standard management. The recurrence rate in the AMM group was [X]% (n=[number]) over a median follow-up of [X] months, compared to [Y]% (n=[number]) in the standard group (p=[value], HR=[hazard ratio]). The difference in recurrent stroke risk was similar to that seen in patients with IVSN in the SAMMPRIS trial, with no significant difference due to ICAD diagnosis. Conclusion: Our findings support that AMM, as in SAMMPRIS, provides similar recurrent stroke benefit in patients with ICAD as in those with IVSN, reinforcing its effectiveness as standard secondary prevention in ICA patients. Further studies are needed to evaluate long-term",
+      "processed_text": "Background: Since the SAMMPRIS trial, aggressive medical management (AMM) with the use of dual antiplatelets (aspirin and clopidogrel) and high-dose statin therapy has been standard of care for patients with intracerebral aneurysm (ICA) and large vessel occlusion (IVSN) to reduce recurrent stroke risk. However, the efficacy and outcomes of AMM in specific subgroups, such as those with intracerebral artery cavernous malformation (ICAD), are less well established. Objective: This study aimed to compare the recurrent stroke risk in patients with ICAD who received AMM (aspirin, clopidogrel, and high-dose statin) versus standard medical management (only one antiplatelet or no antiplatelet) over a similar follow-up period as in the SAMMPRIS trial. Methods: We conducted a retrospective cohort study of patients with ICAD who were treated at [institution/institution name], comparing those receiving AMM with those receiving standard medical management for secondary prevention. Recurrent stroke and mortality outcomes were assessed over a median follow-up of [X] months. Results: Among 200 patients with ICAD, 115 received AMM and 85 received standard management. The recurrence rate in the AMM group was [X]% (n=[number]) over a median follow-up of [X] months, compared to [Y]% (n=[number]) in the standard group (p=[value], HR=[hazard ratio]). The difference in recurrent stroke risk was similar to that seen in patients with IVSN in the SAMMPRIS trial, with no significant difference due to ICAD diagnosis. Conclusion: Our findings support that AMM, as in SAMMPRIS, provides similar recurrent stroke benefit in patients with ICAD as in those with IVSN, reinforcing its effectiveness as standard secondary prevention in ICA patients.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 131,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Abstract T P102: Recurrent Stroke Risk in Patients With ICAD Treated With Aggressive Medical Management: A Comparison With The Sammpris Trial\n\nBegin with: \"Background: Since the SAMMPRIS trial, aggressive medical management (AMM) with the use of dual antiplatelets (aspirin, clopidogrel) and high dose statin therapy has been standard of care for patients with\""
+        }
+      ]
+    }
+  ]
+}

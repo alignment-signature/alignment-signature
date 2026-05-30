@@ -1,0 +1,124 @@
+{
+  "detector": "binoculars",
+  "model": "gemma-2-9b-it",
+  "alpha": 1.0,
+  "domain": "opinion_pieces",
+  "model_id": "google/gemma-2-9b-it",
+  "intervention": {
+    "mode": "ablate",
+    "direction_path": "data/analysis_results/scaled_ablation/directions/gemma-2-9b-it/v_cross_L2.pt",
+    "layer": 2,
+    "tag": "v_cross_L2_steered_extended"
+  },
+  "observer_id": "tiiuae/falcon-7b",
+  "performer_id": "tiiuae/falcon-7b-instruct",
+  "mode": "low-fpr",
+  "threshold": 0.8536432310785527,
+  "max_token_observed": 512,
+  "total_samples": 10,
+  "results": [
+    {
+      "id": "strategy_A-opinion_pieces-instruct-0",
+      "text_length": 1549,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.7724137902259827,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-1",
+      "text_length": 1316,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.7962962985038757,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-2",
+      "text_length": 1292,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.8506944179534912,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-3",
+      "text_length": 1398,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.7993630766868591,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-4",
+      "text_length": 1152,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.7910447716712952,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-5",
+      "text_length": 1217,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.7417218685150146,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-6",
+      "text_length": 1444,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.8563535809516907,
+        "predicted_label": "human"
+      }
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-7",
+      "text_length": 1248,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.7722222208976746,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-8",
+      "text_length": 1503,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.8343558311462402,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-9",
+      "text_length": 1403,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.8040540814399719,
+        "predicted_label": "AI"
+      }
+    }
+  ],
+  "processed": 10,
+  "errors": 0,
+  "skipped": 0
+}

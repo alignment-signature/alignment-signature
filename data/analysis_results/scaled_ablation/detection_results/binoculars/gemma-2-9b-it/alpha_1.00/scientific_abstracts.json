@@ -1,0 +1,124 @@
+{
+  "detector": "binoculars",
+  "model": "gemma-2-9b-it",
+  "alpha": 1.0,
+  "domain": "scientific_abstracts",
+  "model_id": "google/gemma-2-9b-it",
+  "intervention": {
+    "mode": "ablate",
+    "direction_path": "data/analysis_results/scaled_ablation/directions/gemma-2-9b-it/v_cross_L2.pt",
+    "layer": 2,
+    "tag": "v_cross_L2_steered_extended"
+  },
+  "observer_id": "tiiuae/falcon-7b",
+  "performer_id": "tiiuae/falcon-7b-instruct",
+  "mode": "low-fpr",
+  "threshold": 0.8536432310785527,
+  "max_token_observed": 512,
+  "total_samples": 10,
+  "results": [
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-0",
+      "text_length": 1378,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.821052610874176,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-1",
+      "text_length": 1454,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.8949999809265137,
+        "predicted_label": "human"
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-2",
+      "text_length": 1312,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.7510729432106018,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-3",
+      "text_length": 1251,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.9218106865882874,
+        "predicted_label": "human"
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-4",
+      "text_length": 1362,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.8685445785522461,
+        "predicted_label": "human"
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-5",
+      "text_length": 1478,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.78925621509552,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-6",
+      "text_length": 1545,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.8314606547355652,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-7",
+      "text_length": 1179,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.8068669438362122,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-8",
+      "text_length": 1405,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.9009901285171509,
+        "predicted_label": "human"
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-9",
+      "text_length": 1197,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.8878504633903503,
+        "predicted_label": "human"
+      }
+    }
+  ],
+  "processed": 10,
+  "errors": 0,
+  "skipped": 0
+}

@@ -1,0 +1,1974 @@
+{
+  "detector": "gptzero",
+  "model": "qwen2.5-7b-instruct",
+  "alpha": 0.25,
+  "domain": "scientific_abstracts",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "intervention": {
+    "mode": "partial_ablate",
+    "direction_path": "data/analysis_results/scaled_ablation/directions/qwen2.5-7b-instruct/v_cross_L14.pt",
+    "layer": 14,
+    "alpha": 0.25,
+    "tag": "v_cross_L14_partial_ablate_alpha0.25"
+  },
+  "total_samples": 10,
+  "results": [
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-1",
+      "text_length": 1004,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 3.163536563450757e-05,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9999656650249545,
+          "ai": 3.433497504536458e-05,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9999656650249545,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 6,
+                  "completely_generated_prob": 1.474742012248794e-05
+                }
+              ],
+              "completely_generated_prob": 3.163536563450757e-05,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9999656650249545,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.00016657902400952533,
+                  "sentence": "Insightful findings in political science often require researchers to analyze documents of a certain subject or type; however, these documents are usually contained in large corpora that do not distinguish between pertinent and non-pertinent documents.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9998334209759905,
+                    "ai": 0.00010344776146311705,
+                    "paraphrased": 6.313126254640828e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0002043755757466993,
+                  "sentence": "In contrast, we can find relevant sub-corpora using unsupervised domain adaptation.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997956244242533,
+                    "ai": 0.0001326255599236796,
+                    "paraphrased": 7.17500158230197e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00030752300563237914,
+                  "sentence": "Specifically, this paper proposes a novel approach called *Adaptive Ensembling* (AE) which uses an ensemble of ensembles (EOE) and unsupervised domain adaptation (UDA) techniques to discover pertinent sub-corpora without manual labeling.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9996924769943676,
+                    "ai": 0.00024711024347700514,
+                    "paraphrased": 6.0412762155374006e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00019524610181194776,
+                  "sentence": "Our model first extracts document embeddings from a large corpus of documents in a target language, then it transfers the document embeddings learned in the source language into the target language.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.999804753898188,
+                    "ai": 0.00013504540577494317,
+                    "paraphrased": 6.020069603700458e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00035535371315531945,
+                  "sentence": "This process helps AE achieve an automatic selection of relevant sub-corpora.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9996446462868447,
+                    "ai": 0.0002897887924752537,
+                    "paraphrased": 6.556492068006577e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00017206520516517337,
+                  "sentence": "In order to evaluate our method, we use two real-world datasets: one contains US presidential speeches and the other contains US Supreme Court opinions.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9998279347948348,
+                    "ai": 0.00010699940375231393,
+                    "paraphrased": 6.506580141285946e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9999656650249545,
+                "ai": 3.433497504536458e-05,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9999656650249545,
+                  "ai": 3.433497504536458e-05,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": "Insightful findings in political science often require researchers to analyze documents of a certain subject or type; however, these documents are usually contained in large corpora that do not distinguish between pertinent and non-pertinent documents. In contrast, we can find relevant sub-corpora using unsupervised domain adaptation. Specifically, this paper proposes a novel approach called *Adaptive Ensembling* (AE) which uses an ensemble of ensembles (EOE) and unsupervised domain adaptation (UDA) techniques to discover pertinent sub-corpora without manual labeling. Our model first extracts document embeddings from a large corpus of documents in a target language, then it transfers the document embeddings learned in the source language into the target language. This process helps AE achieve an automatic selection of relevant sub-corpora. In order to evaluate our method, we use two real-world datasets: one contains US presidential speeches and the other contains US Supreme Court opinions.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-6",
+      "text_length": 858,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.0002466951833607859,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9997414735298614,
+          "ai": 0.00025852647013858206,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9997414735298614,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 5,
+                  "completely_generated_prob": 0.00010005932717626924
+                }
+              ],
+              "completely_generated_prob": 0.0002466951833607859,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9997414735298614,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.0006102357126515643,
+                  "sentence": "Effects of a carboxylated styrene-butadiene-based liquid additive on the microstructure, mechanical strength, and decolorization resistance of an inorganic pigment layer in the color block have been examined.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9993897642873484,
+                    "ai": 0.00013892444211390762,
+                    "paraphrased": 0.00047131127053765665
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0007783527560264267,
+                  "sentence": "More dense inorganic pigment layer characterized by lower porosity, was formed when this additive was incorporated into the color block.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9992216472439736,
+                    "ai": 0.00028664251009514536,
+                    "paraphrased": 0.0004917102459312813
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.000857739015739961,
+                  "sentence": "The density enhancement resulted in a significant increase in the mechanical strength, from 8 MPa to 14 MPa.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9991422609842601,
+                    "ai": 0.0002866153582659817,
+                    "paraphrased": 0.0005711236574739793
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0006658082945978979,
+                  "sentence": "The decolorization resistance of the treated inorganic pigment layer was enhanced from 95% to 99.7% under accelerated decolorization conditions (60 °C, 12 hours), which indicated that the additive improved the heat decolorization resistance of the inorganic pigment.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.999334191705402,
+                    "ai": 0.00015727070248387607,
+                    "paraphrased": 0.0005085375921140218
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0007886730141561153,
+                  "sentence": "The enhancement can be attributed to a more compact and tightly bound inorganic pigment layer as a result of incorporating the additive.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9992113269858439,
+                    "ai": 0.0002308044385913756,
+                    "paraphrased": 0.0005578685755647397
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9997414735298614,
+                "ai": 0.00025852647013858206,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9997414735298614,
+                  "ai": 0.00025852647013858206,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": "Effects of a carboxylated styrene-butadiene-based liquid additive on the microstructure, mechanical strength, and decolorization resistance of an inorganic pigment layer in the color block have been examined. More dense inorganic pigment layer characterized by lower porosity, was formed when this additive was incorporated into the color block. The density enhancement resulted in a significant increase in the mechanical strength, from 8 MPa to 14 MPa. The decolorization resistance of the treated inorganic pigment layer was enhanced from 95% to 99.7% under accelerated decolorization conditions (60 °C, 12 hours), which indicated that the additive improved the heat decolorization resistance of the inorganic pigment. The enhancement can be attributed to a more compact and tightly bound inorganic pigment layer as a result of incorporating the additive.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-3",
+      "text_length": 1612,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 2.9706165273042004e-05,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9999699604387476,
+          "ai": 3.0039561252378538e-05,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9999699604387476,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 1,
+                  "num_sentences": 7,
+                  "completely_generated_prob": 2.1228438805416278e-06
+                },
+                {
+                  "start_sentence_index": 8,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                  "start_sentence_index": 11,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                }
+              ],
+              "completely_generated_prob": 2.9706165273042004e-05,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9999699604387476,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.001099227299970402,
+                  "sentence": "Purpose – The purpose of this study is to explore the causal link between procurement route and ongoing buyer-supplier relationship.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9989007727000296,
+                    "ai": 0.0010647977486107202,
+                    "paraphrased": 3.442955135968178e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0003907340224103523,
+                  "sentence": "Design/methodology/approach – The research draws on literature in the areas of: facilities management (FM) outsourcing; purchasing and supply chain management; service management and business process management (BPM).",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9996092659775897,
+                    "ai": 0.0003651764325030459,
+                    "paraphrased": 2.5557589907306356e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0010842807003582791,
+                  "sentence": "Data was collected using a survey and an in-depth interview.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9989157192996417,
+                    "ai": 0.0010525486835278757,
+                    "paraphrased": 3.173201683040349e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0011826308069434602,
+                  "sentence": "The survey was distributed online to buyers and suppliers of FM services.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9988173691930565,
+                    "ai": 0.0011463461009407583,
+                    "paraphrased": 3.6284706002701925e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0011124301099239822,
+                  "sentence": "The in-depth interview was used to obtain more specific information about a particular case.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.998887569890076,
+                    "ai": 0.0010775059618480939,
+                    "paraphrased": 3.492414807588825e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.001255552437609614,
+                  "sentence": "A total of 413 responses were obtained from buyers and suppliers in the survey, which were analyzed using Structural Equation Modeling (SEM).",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9987444475623903,
+                    "ai": 0.001223514971436199,
+                    "paraphrased": 3.203746617341485e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00130824669626573,
+                  "sentence": "In addition, two in-depth interviews were conducted to obtain qualitative data.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9986917533037343,
+                    "ai": 0.0012762776077514134,
+                    "paraphrased": 3.1969088514316656e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0013093581755361924,
+                  "sentence": "The in-depth interviews were transcribed and analyzed using thematic analysis.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9986906418244638,
+                    "ai": 0.0012750985040756967,
+                    "paraphrased": 3.425967146049579e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0007354903817015114,
+                  "sentence": "Findings – The findings show that there is a positive and significant causal link between procurement route and ongoing buyer-supplier relationship.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9992645096182985,
+                    "ai": 0.0007094240078190616,
+                    "paraphrased": 2.6066373882449778e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0014342244889580698,
+                  "sentence": "Specifically, the use of a direct procurement route was found to have a positive effect on the ongoing buyer-supplier relationship, while the use of a traditional procurement route had no effect on the ongoing buyer-supplier relationship.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.998565775511042,
+                    "ai": 0.0014014288907956173,
+                    "paraphrased": 3.279559816245242e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0005331434730182437,
+                  "sentence": "Also, the findings show that there is a positive and significant causal link between performance measurement system and ongoing buyer-supplier relationship.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9994668565269818,
+                    "ai": 0.000509742596849257,
+                    "paraphrased": 2.3400876168986765e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.001158087281048626,
+                  "sentence": "Originality/value – This paper is the first to examine the causal relationship between procurement route and ongoing buyer-supplier relationship in the facilities management industry.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9988419127189514,
+                    "ai": 0.001124273254898444,
+                    "paraphrased": 3.381402615018182e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9999699604387476,
+                "ai": 3.0039561252378538e-05,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9999699604387476,
+                  "ai": 3.0039561252378538e-05,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": "Purpose – The purpose of this study is to explore the causal link between procurement route and ongoing buyer-supplier relationship.\n\nDesign/methodology/approach – The research draws on literature in the areas of: facilities management (FM) outsourcing; purchasing and supply chain management; service management and business process management (BPM). Data was collected using a survey and an in-depth interview. The survey was distributed online to buyers and suppliers of FM services. The in-depth interview was used to obtain more specific information about a particular case. A total of 413 responses were obtained from buyers and suppliers in the survey, which were analyzed using Structural Equation Modeling (SEM). In addition, two in-depth interviews were conducted to obtain qualitative data. The in-depth interviews were transcribed and analyzed using thematic analysis.\n\nFindings – The findings show that there is a positive and significant causal link between procurement route and ongoing buyer-supplier relationship. Specifically, the use of a direct procurement route was found to have a positive effect on the ongoing buyer-supplier relationship, while the use of a traditional procurement route had no effect on the ongoing buyer-supplier relationship. Also, the findings show that there is a positive and significant causal link between performance measurement system and ongoing buyer-supplier relationship. \n\nOriginality/value – This paper is the first to examine the causal relationship between procurement route and ongoing buyer-supplier relationship in the facilities management industry.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-5",
+      "text_length": 508,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 1.8178613946782937e-05,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9999767458105127,
+          "ai": 2.3254189487360855e-05,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9999767458105127,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                }
+              ],
+              "completely_generated_prob": 1.8178613946782937e-05,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9999767458105127,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.00030223868239936285,
+                  "sentence": "This paper presents comparisons between predicted and measured data for a live GSM (Global System for Mobile Communications) system.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9996977613176007,
+                    "ai": 0.0002471676455337428,
+                    "paraphrased": 5.5071036865620056e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.000179794852400076,
+                  "sentence": "Our propagation prediction software tool is based on 3D ray-tracing and considers the wave interactions that occur in the real environment, such as free space propagation, reflection, diffraction, and scattering.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9998202051476,
+                    "ai": 0.00013521425997710726,
+                    "paraphrased": 4.4580592422968744e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0002685189210761328,
+                  "sentence": "The underlying theory and implementation of our prediction method are described, followed by an evaluation of our method by comparing it with actual measurements.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997314810789238,
+                    "ai": 0.00021787258447227166,
+                    "paraphrased": 5.0646336603861154e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9999767458105127,
+                "ai": 2.3254189487360855e-05,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9999767458105127,
+                  "ai": 2.3254189487360855e-05,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": "This paper presents comparisons between predicted and measured data for a live GSM (Global System for Mobile Communications) system. Our propagation prediction software tool is based on 3D ray-tracing and considers the wave interactions that occur in the real environment, such as free space propagation, reflection, diffraction, and scattering. The underlying theory and implementation of our prediction method are described, followed by an evaluation of our method by comparing it with actual measurements.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-2",
+      "text_length": 949,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.0006984766685689076,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9992808255869846,
+          "ai": 0.0007191744130153445,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9992808255869846,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 6,
+                  "completely_generated_prob": 1.474742012248794e-05
+                }
+              ],
+              "completely_generated_prob": 0.0006984766685689076,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9992808255869846,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.005095833593500722,
+                  "sentence": "A regioselective synthesis of new mono- and bis-oxindoles containing bis-spiro heterocyclic hybrids was envisaged via 1,3-dipolar cycloaddition of azomethine ylides with 4-benzylamino-1(3H)-benzopyridinone.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9949041664064993,
+                    "ai": 0.0044136392214679625,
+                    "paraphrased": 0.0006821943720327589
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.025500716707493157,
+                  "sentence": "The synthesis of these compounds started from commercially available 4-benzylamino-1(3H)-benzopyridinone which was reacted with the corresponding azomethine ylides in the presence of potassium tert-butoxide as a base in a reaction solvent, to afford the desired oxindoles in good yields and in high purity.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9744992832925068,
+                    "ai": 0.024614304255409728,
+                    "paraphrased": 0.0008864124520834289
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.012633017893292534,
+                  "sentence": "A detailed bioassay was carried out on the newly synthesized molecules against some standard cancer cell lines.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9873669821067075,
+                    "ai": 0.011762634722155513,
+                    "paraphrased": 0.0008703831711370193
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.07992349448480227,
+                  "sentence": "Based on the results obtained, the newly synthesized molecules were evaluated to possess promising anticancer activity.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9200765055151977,
+                    "ai": 0.07891329515690383,
+                    "paraphrased": 0.0010101993278984328
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.020368795235344034,
+                  "sentence": "The best compound from the series exhibited an inhibitory constant (Ki) value of 0.67 nM.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9796312047646559,
+                    "ai": 0.01934344614302042,
+                    "paraphrased": 0.001025349092323615
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.11647547772474717,
+                  "sentence": "Further studies will focus on improving these promising compounds to achieve better selectivity and cytotoxicity.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.8835245222752528,
+                    "ai": 0.1154449711758555,
+                    "paraphrased": 0.0010305065488916655
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9992808255869846,
+                "ai": 0.0007191744130153445,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9992808255869846,
+                  "ai": 0.0007191744130153445,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": "A regioselective synthesis of new mono- and bis-oxindoles containing bis-spiro heterocyclic hybrids was envisaged via 1,3-dipolar cycloaddition of azomethine ylides with 4-benzylamino-1(3H)-benzopyridinone. The synthesis of these compounds started from commercially available 4-benzylamino-1(3H)-benzopyridinone which was reacted with the corresponding azomethine ylides in the presence of potassium tert-butoxide as a base in a reaction solvent, to afford the desired oxindoles in good yields and in high purity. A detailed bioassay was carried out on the newly synthesized molecules against some standard cancer cell lines. Based on the results obtained, the newly synthesized molecules were evaluated to possess promising anticancer activity. The best compound from the series exhibited an inhibitory constant (Ki) value of 0.67 nM. Further studies will focus on improving these promising compounds to achieve better selectivity and cytotoxicity.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-8",
+      "text_length": 1064,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 7.267418931881033e-05,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9999267525580479,
+          "ai": 7.324744195218154e-05,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9999267525580479,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 5,
+                  "completely_generated_prob": 0.00010005932717626924
+                }
+              ],
+              "completely_generated_prob": 7.267418931881033e-05,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9999267525580479,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.00028592395378956967,
+                  "sentence": "In this work, we mainly investigate the effect of PT-symmetric operations on the dynamic behavior of the relative entropy of coherence for a two-level system in non-Markovian environments and put forward a feasible physical scheme to recover coherence by utilizing optimal unitary evolution operators.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997140760462104,
+                    "ai": 0.00020265504999280836,
+                    "paraphrased": 8.326890379676131e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0007125452109355852,
+                  "sentence": "We consider a two-level system interacting with a bosonic reservoir and derive an analytical expression for the relative entropy of coherence under different initial states and different non-Markovian environments (for example, Ohmic environment, sub-Ohmic environment, and super-Ohmic environment).",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9992874547890644,
+                    "ai": 0.00062831922074388,
+                    "paraphrased": 8.422599019170517e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0005634352752228067,
+                  "sentence": "We show that the coherence can be completely recovered if the initial state of the system is a coherent state or maximally entangled state.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9994365647247772,
+                    "ai": 0.0004797546461508991,
+                    "paraphrased": 8.368062907190763e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0005693226046759786,
+                  "sentence": "Moreover, we find that the strength of the non-Markovian environment, as well as the strength of the coupling between the system and the environment, have a significant effect on the relative entropy of coherence.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.999430677395324,
+                    "ai": 0.00048518298296940066,
+                    "paraphrased": 8.413962170657797e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0004037727100286593,
+                  "sentence": "In addition, we give a physical scheme to recover coherence based on the optimal unitary evolution operator.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9995962272899713,
+                    "ai": 0.00032612051426485363,
+                    "paraphrased": 7.765219576380565e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9999267525580479,
+                "ai": 7.324744195218154e-05,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9999267525580479,
+                  "ai": 7.324744195218154e-05,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": "In this work, we mainly investigate the effect of PT-symmetric operations on the dynamic behavior of the relative entropy of coherence for a two-level system in non-Markovian environments and put forward a feasible physical scheme to recover coherence by utilizing optimal unitary evolution operators. We consider a two-level system interacting with a bosonic reservoir and derive an analytical expression for the relative entropy of coherence under different initial states and different non-Markovian environments (for example, Ohmic environment, sub-Ohmic environment, and super-Ohmic environment). We show that the coherence can be completely recovered if the initial state of the system is a coherent state or maximally entangled state. Moreover, we find that the strength of the non-Markovian environment, as well as the strength of the coupling between the system and the environment, have a significant effect on the relative entropy of coherence. In addition, we give a physical scheme to recover coherence based on the optimal unitary evolution operator.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-0",
+      "text_length": 714,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 1.4293515098601034e-05,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9999842376321434,
+          "ai": 1.5762367856537043e-05,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9999842376321434,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 6,
+                  "completely_generated_prob": 1.474742012248794e-05
+                }
+              ],
+              "completely_generated_prob": 1.4293515098601034e-05,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9999842376321434,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.0001443290305397494,
+                  "sentence": "Natural language call routing can be treated as an instance of topic categorization of documents after speech recognition of calls.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9998556709694603,
+                    "ai": 0.00012301776270842564,
+                    "paraphrased": 2.131126783132376e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0004928773506756322,
+                  "sentence": "This categorization consists of two important parts.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9995071226493244,
+                    "ai": 0.00046746767291938097,
+                    "paraphrased": 2.540967775625121e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0004106117849764307,
+                  "sentence": "The first one is text preprocessing for numerical data extraction, and the second one is classification with machine learning algorithms.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9995893882150235,
+                    "ai": 0.0003826296032834422,
+                    "paraphrased": 2.7982181692988516e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0004543764575462271,
+                  "sentence": "This research explores several text categorization methods in order to apply them to natural language call routing and determine which method is most suitable for the task.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9995456235424538,
+                    "ai": 0.00042629889785028417,
+                    "paraphrased": 2.8077559695942905e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0002883105324978161,
+                  "sentence": "After a review of the state-of-the-art techniques, experiments were designed to evaluate each technique on a test set.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997116894675022,
+                    "ai": 0.00026463650452784155,
+                    "paraphrased": 2.367402796997455e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00025887603285946597,
+                  "sentence": "Finally, a comparative study was carried out to select the best algorithm for this kind of problem.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997411239671405,
+                    "ai": 0.0002350773253268465,
+                    "paraphrased": 2.3798707532619452e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9999842376321434,
+                "ai": 1.5762367856537043e-05,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9999842376321434,
+                  "ai": 1.5762367856537043e-05,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": "Natural language call routing can be treated as an instance of topic categorization of documents after speech recognition of calls. This categorization consists of two important parts. The first one is text preprocessing for numerical data extraction, and the second one is classification with machine learning algorithms. This research explores several text categorization methods in order to apply them to natural language call routing and determine which method is most suitable for the task. After a review of the state-of-the-art techniques, experiments were designed to evaluate each technique on a test set. Finally, a comparative study was carried out to select the best algorithm for this kind of problem.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-7",
+      "text_length": 1190,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 8.842317290587308e-05,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9999103472192287,
+          "ai": 8.965278077129885e-05,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9999103472192287,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 9,
+                  "completely_generated_prob": 4.1887248735431006e-08
+                }
+              ],
+              "completely_generated_prob": 8.842317290587308e-05,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9999103472192287,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.0005958510609499041,
+                  "sentence": "GHz Third Harmonic Superconducting Cavities have been utilized to increase the peak bunch current and to compensate for nonlinear distortions in the longitudinal phase space due to sinusoidal 1.3 GHz accelerating cavity voltage (1).",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.99940414893905,
+                    "ai": 0.000516306240816078,
+                    "paraphrased": 7.954482013382611e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0038174930940265486,
+                  "sentence": "The power coupler is a critical component of the superconducting cavities that can greatly affect the efficiency of the cavity.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9961825069059734,
+                    "ai": 0.0036925037826406343,
+                    "paraphrased": 0.00012498931138591406
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0030010422925863655,
+                  "sentence": "In this study, we have simulated and optimized a new power coupler for 3.9 GHz superconducting cavities at Fermilab.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9969989577074136,
+                    "ai": 0.002891310061687727,
+                    "paraphrased": 0.00010973223089863807
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0013644281540229697,
+                  "sentence": "The purpose of this paper is to present a novel design of a power coupler and the results of simulations and optimizations.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9986355718459771,
+                    "ai": 0.0012829430399949773,
+                    "paraphrased": 8.14851140279923e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0019761945810450533,
+                  "sentence": "We describe our simulation and optimization methods, show the simulation results, and present optimization results that confirm the improvement of the power coupler performance.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.998023805418955,
+                    "ai": 0.0018926704054405175,
+                    "paraphrased": 8.352417560453584e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0013085517480736666,
+                  "sentence": "The simulation and optimization were done based on a three dimensional full wave simulation tool, CST Microwave Studio, using the finite element method.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9986914482519264,
+                    "ai": 0.001225162933436927,
+                    "paraphrased": 8.338881463673953e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.003381502585115222,
+                  "sentence": "The optimization results show a significant improvement of the S band power coupler performance.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9966184974148847,
+                    "ai": 0.0032750209403130844,
+                    "paraphrased": 0.00010648164480213793
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0015333728982505866,
+                  "sentence": "We believe that the new power coupler will be applicable for future projects such as Mu2e and DZero.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9984666271017494,
+                    "ai": 0.00144922467902013,
+                    "paraphrased": 8.41482192304566e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.004096816425832795,
+                  "sentence": "Further experimental tests will be conducted in the future.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9959031835741672,
+                    "ai": 0.004003525669882592,
+                    "paraphrased": 9.329075595020285e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9999103472192287,
+                "ai": 8.965278077129885e-05,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9999103472192287,
+                  "ai": 8.965278077129885e-05,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": "GHz Third Harmonic Superconducting Cavities have been utilized to increase the peak bunch current and to compensate for nonlinear distortions in the longitudinal phase space due to sinusoidal 1.3 GHz accelerating cavity voltage (1). The power coupler is a critical component of the superconducting cavities that can greatly affect the efficiency of the cavity. In this study, we have simulated and optimized a new power coupler for 3.9 GHz superconducting cavities at Fermilab. The purpose of this paper is to present a novel design of a power coupler and the results of simulations and optimizations. We describe our simulation and optimization methods, show the simulation results, and present optimization results that confirm the improvement of the power coupler performance. The simulation and optimization were done based on a three dimensional full wave simulation tool, CST Microwave Studio, using the finite element method. The optimization results show a significant improvement of the S band power coupler performance. We believe that the new power coupler will be applicable for future projects such as Mu2e and DZero. Further experimental tests will be conducted in the future.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-4",
+      "text_length": 1524,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.02580601593454723,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9740800461238278,
+          "ai": 0.025919953876172176,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9740800461238278,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 5,
+                  "completely_generated_prob": 0.00010005932717626924
+                },
+                {
+                  "start_sentence_index": 5,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 6,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 7,
+                  "num_sentences": 5,
+                  "completely_generated_prob": 0.00010005932717626924
+                }
+              ],
+              "completely_generated_prob": 0.02580601593454723,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9740800461238278,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.2132566400162083,
+                  "sentence": "The widespread availability of many emerging services enabled by the Internet of Things (IoT) paradigm passes through the capability to provide long-range connectivity to a massive number of things, overcoming the well-known issues of ad-hoc, short-range networks.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.7867433599837917,
+                    "ai": 0.19543447034880587,
+                    "paraphrased": 0.01782216966740243
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.22734226942913632,
+                  "sentence": "This paper investigates the support of massive machine-to-machine (M2M) traffic in heterogeneous networks (HetNets) and 5G cellular networks.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.7726577305708636,
+                    "ai": 0.2131028578565004,
+                    "paraphrased": 0.01423941157263593
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.2531119169845154,
+                  "sentence": "We present a comprehensive study of HetNets and 5G network architecture and design solutions to provide massive M2M communication over a wide geographic area.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.7468880830154846,
+                    "ai": 0.24272678204728632,
+                    "paraphrased": 0.010385134937229094
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.28062381501827155,
+                  "sentence": "The proposed approach is validated through simulations in order to demonstrate its effectiveness and feasibility.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.7193761849817285,
+                    "ai": 0.26917751072265034,
+                    "paraphrased": 0.011446304295621202
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.2623425699871325,
+                  "sentence": "We also present an analysis of the impact of the proposed approach on network performance and cost.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.7376574300128675,
+                    "ai": 0.2529210958284313,
+                    "paraphrased": 0.009421474158701183
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.187957763671875,
+                  "sentence": "Keywords: Machine-to-machine communication, heterogeneous networks, 5G, simulation, performance, cost.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.812042236328125,
+                    "ai": 0.17840266227722168,
+                    "paraphrased": 0.00955510139465332
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.1962076131730795,
+                  "sentence": "Abstract:",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.8037923868269204,
+                    "ai": 0.19354309849121293,
+                    "paraphrased": 0.00266451468186658
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.13573511869455357,
+                  "sentence": "This paper presents a study on the support of massive machine-to-machine (M2M) traffic in heterogeneous networks (HetNets) and fifth-generation (5G) cellular networks.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.8642648813054464,
+                    "ai": 0.12658184413103823,
+                    "paraphrased": 0.009153274563515338
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.1312937348169268,
+                  "sentence": "The availability of M2M communication is important for the wide range of emerging services provided by the Internet of Things (IoT) paradigm.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.8687062651830733,
+                    "ai": 0.12234364251838517,
+                    "paraphrased": 0.008950092298541618
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.12191128158325235,
+                  "sentence": "However, there are some known issues with providing this type of communication over short-range, ad-hoc networks.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.8780887184167476,
+                    "ai": 0.11374571248536929,
+                    "paraphrased": 0.008165569097883053
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.16657973943136203,
+                  "sentence": "Therefore, we investigate how HetNets and 5G can be used to provide M2M communication over a wide geographic area.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.8334202605686379,
+                    "ai": 0.1592125152021458,
+                    "paraphrased": 0.007367224229216238
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.16626042049961204,
+                  "sentence": "We propose different approaches to solving the problem and validate them using simulations.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.833739579500388,
+                    "ai": 0.15981154158693883,
+                    "paraphrased": 0.006448878912673219
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9740800461238278,
+                "ai": 0.025919953876172176,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9740800461238278,
+                  "ai": 0.025919953876172176,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": "The widespread availability of many emerging services enabled by the Internet of Things (IoT) paradigm passes through the capability to provide long-range connectivity to a massive number of things, overcoming the well-known issues of ad-hoc, short-range networks. This paper investigates the support of massive machine-to-machine (M2M) traffic in heterogeneous networks (HetNets) and 5G cellular networks. We present a comprehensive study of HetNets and 5G network architecture and design solutions to provide massive M2M communication over a wide geographic area. The proposed approach is validated through simulations in order to demonstrate its effectiveness and feasibility. We also present an analysis of the impact of the proposed approach on network performance and cost.\nKeywords: Machine-to-machine communication, heterogeneous networks, 5G, simulation, performance, cost.\n\nAbstract:\nThis paper presents a study on the support of massive machine-to-machine (M2M) traffic in heterogeneous networks (HetNets) and fifth-generation (5G) cellular networks. The availability of M2M communication is important for the wide range of emerging services provided by the Internet of Things (IoT) paradigm. However, there are some known issues with providing this type of communication over short-range, ad-hoc networks. Therefore, we investigate how HetNets and 5G can be used to provide M2M communication over a wide geographic area. We propose different approaches to solving the problem and validate them using simulations.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-9",
+      "text_length": 846,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 2.202218740383228e-05,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9999767336801795,
+          "ai": 2.326631982051014e-05,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9999767336801795,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 5,
+                  "completely_generated_prob": 0.00010005932717626924
+                }
+              ],
+              "completely_generated_prob": 2.202218740383228e-05,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9999767336801795,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.00024739349689476497,
+                  "sentence": "Endoplasmic reticulum (ER)-associated degradation (ERAD) is a principal mechanism that targets ER-associated proteins for cytosolic proteasomal degradation.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997526065031053,
+                    "ai": 0.00019096821442360297,
+                    "paraphrased": 5.642528247116202e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00023048918274211653,
+                  "sentence": "Here, our data demonstrate a critical role for the Sel1L-Hrd1 complex in maintaining an important checkpoint in B cell development.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997695108172578,
+                    "ai": 0.00017294625320239999,
+                    "paraphrased": 5.7542929539716546e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0001453140934007535,
+                  "sentence": "Our studies identified a novel function for the Sel1L-Hrd1 complex in mouse pro-B cells, whereby Sel1L-Hrd1-mediated ERAD is required for proper progression from the pre-B to the mature B cell stage.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9998546859065992,
+                    "ai": 9.612958530522595e-05,
+                    "paraphrased": 4.918450809552756e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00027117266133059583,
+                  "sentence": "We determined that the checkpoint activity of Sel1L-Hrd1 was mediated by the regulated degradation of A20, an inhibitor of the NF-κB signaling pathway.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997288273386694,
+                    "ai": 0.0002129285318241828,
+                    "paraphrased": 5.8244129506413026e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00014264019197617324,
+                  "sentence": "Furthermore, we showed that the absence of Sel1L-Hrd1 activity led to a constitutive activation of the NF-κB pathway and prevented the expression of some important B cell development transcription factors.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9998573598080238,
+                    "ai": 9.27871381261479e-05,
+                    "paraphrased": 4.985305385002535e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9999767336801795,
+                "ai": 2.326631982051014e-05,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9999767336801795,
+                  "ai": 2.326631982051014e-05,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": "Endoplasmic reticulum (ER)-associated degradation (ERAD) is a principal mechanism that targets ER-associated proteins for cytosolic proteasomal degradation. Here, our data demonstrate a critical role for the Sel1L-Hrd1 complex in maintaining an important checkpoint in B cell development. Our studies identified a novel function for the Sel1L-Hrd1 complex in mouse pro-B cells, whereby Sel1L-Hrd1-mediated ERAD is required for proper progression from the pre-B to the mature B cell stage. We determined that the checkpoint activity of Sel1L-Hrd1 was mediated by the regulated degradation of A20, an inhibitor of the NF-κB signaling pathway. Furthermore, we showed that the absence of Sel1L-Hrd1 activity led to a constitutive activation of the NF-κB pathway and prevented the expression of some important B cell development transcription factors.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "processed": 10,
+  "errors": 0,
+  "skipped": 0
+}

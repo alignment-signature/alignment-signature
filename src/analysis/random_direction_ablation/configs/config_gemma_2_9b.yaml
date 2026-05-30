@@ -1,0 +1,52 @@
+# Random-direction ablation control — Gemma-2-9B
+#
+# Test ablation: 25 prefixes/domain × 5 domains = 125 samples per condition.
+# Direction artifact (v_cross_L2) is reused from the main alignment-removal
+# pipeline (multi_model/directions/gemma-2-9b/).
+
+pair:
+  id: gemma-2-9b
+  gpus_per_copy: 1
+
+models:
+  base: "google/gemma-2-9b"
+  instruct: "google/gemma-2-9b-it"
+
+devices:
+  base: "cuda:0"
+  instruct: "cuda:0"
+
+domains:
+  - college_essays
+  - news_articles
+  - scientific_abstracts
+  - creative_fiction
+  - opinion_pieces
+
+# 25/domain * 5 = 125 — different from the n=30 used for direction extraction.
+prompts_subdir: "data/prompts"
+n_prefixes_per_domain: 25
+
+generation:
+  temperature: 1.0
+  top_p: 0.95
+  max_new_tokens: 400
+  seed: 123                     # decoding s_dec = 42; per-sample seed = 42 + sample_id
+
+# All paths absolute so outputs land in the requested results tree.
+output:
+  generations_subdir: "data/analysis_results/random_direction_ablation/generations/gemma-2-9b"
+  pangram_subdir:     "data/analysis_results/random_direction_ablation/detection_results/pangram/gemma-2-9b"
+  directions_subdir:  "data/analysis_results/random_direction_ablation/directions/gemma-2-9b"
+  baseline_strategy_dir: "strategy_A_naturalistic"
+
+# Algorithm 1 / 2 settings.
+random_direction:
+  best_layer: 2
+  d_model: 3584
+  n_layers: 42
+  v_align_path: "data/analysis_results/random_direction_ablation/directions/gemma-2-9b/v_cross_L2.pt"
+  seeds: [0, 1, 2, 3, 4]
+  extension_seeds: [5, 6, 7, 8, 9]   # used only if pre-registered escape hatch fires
+  pairwise_cos_threshold: 0.05
+  sigma_pp_escape_hatch: 10.0        # std-dev pp threshold across seeds

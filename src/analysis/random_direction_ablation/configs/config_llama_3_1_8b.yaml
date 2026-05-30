@@ -1,0 +1,45 @@
+# Random-direction ablation control — Llama-3.1-8B
+
+pair:
+  id: llama3.1-8b
+  gpus_per_copy: 1
+
+models:
+  base: "meta-llama/Meta-Llama-3.1-8B"
+  instruct: "meta-llama/Meta-Llama-3.1-8B-Instruct"
+
+devices:
+  base: "cuda:0"
+  instruct: "cuda:0"
+
+domains:
+  - college_essays
+  - news_articles
+  - scientific_abstracts
+  - creative_fiction
+  - opinion_pieces
+
+prompts_subdir: "data/prompts"
+n_prefixes_per_domain: 25
+
+generation:
+  temperature: 1.0
+  top_p: 0.95
+  max_new_tokens: 400
+  seed: 123
+
+output:
+  generations_subdir: "data/analysis_results/random_direction_ablation/generations/llama-3.1-8b"
+  pangram_subdir:     "data/analysis_results/random_direction_ablation/detection_results/pangram/llama-3.1-8b"
+  directions_subdir:  "data/analysis_results/random_direction_ablation/directions/llama-3.1-8b"
+  baseline_strategy_dir: "strategy_A_naturalistic"
+
+random_direction:
+  best_layer: 1
+  d_model: 4096
+  n_layers: 32
+  v_align_path: "data/analysis_results/random_direction_ablation/directions/llama-3.1-8b/v_cross_L1.pt"
+  seeds: [0, 1, 2, 3, 4]
+  extension_seeds: [5, 6, 7, 8, 9]
+  pairwise_cos_threshold: 0.05
+  sigma_pp_escape_hatch: 10.0

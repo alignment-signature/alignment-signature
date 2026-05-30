@@ -1,0 +1,246 @@
+{
+  "model_type": "instruct",
+  "model_id": "google/gemma-2-9b-it",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400,
+    "batched": true,
+    "batch_size": 4
+  },
+  "intervention": {
+    "mode": "partial_ablate",
+    "direction_path": "data/analysis_results/scaled_ablation/directions/gemma-2-9b-it/v_cross_L2.pt",
+    "layer": 2,
+    "alpha": 2.0,
+    "tag": "v_cross_L2_partial_ablate_alpha2.00_batched"
+  },
+  "domain": "creative_fiction",
+  "num_generations": 10,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-creative_fiction-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " a last,   for the the, to the the the  , can big a the   the,,   the    , he   a a, if  , the,   the.\n\n,\n\n  . the a, the, the the the, you   the   the  ,   the,  , I am the  ,  and the the, the  ,  the,, you.  the.  , I in the, and\n\n the the, and the, the    ,     a, and. ,      the. , the,     , and the,   to   the bottom of the,  the the, the the, the one to the for a, and   the the, is in a  , the a the.     the the,    ,   of,   the.\n\n a  and it, the      , this,    , or if you say,  , and the.    , you can see, the, is, the the  ,  ,   the  , it   the down  , the,  the,  . , . So the, a a,  \n\n  ,    , and.\n\n the the  the, first, of  ,  the re.  the, you, and, the, and how.\n\n the        \n\n  ,\n\n The      .\n\n.   . .  I.\n\n  a,   , are is   on   the    .   the the the.\n\n  , and, the in  , and are the. So,   the  .\n\n  the.   down, the the for\n\n,   the,  ,  , the    ,\n\n  \n\n,  ,   ,  a ,  that  , so,   this your",
+      "processed_text": "a last,   for the the, to the the the  , can big a the   the,,   the    , he   a a, if  , the,   the.\n\n,\n\n  . the a, the, the the the, you   the   the  ,   the,  , I am the  ,  and the the, the  ,  the,, you.  the.  , I in the, and\n\n the the, and the, the    ,     a, and. ,      the. , the,     , and the,   to   the bottom of the,  the the, the the, the one to the for a, and   the the, is in a  , the a the.     the the,    ,   of,   the.\n\n a  and it, the      , this,    , or if you say,  , and the.    , you can see, the, is, the the  ,  ,   the  , it   the down  , the,  the,  . , . So the, a a,  \n\n  ,    , and.\n\n the the  the, first, of  ,  the re.  the, you, and, the, and how.\n\n the        \n\n  ,\n\n The      .\n\n.   . .  I.\n\n  a,   , are is   on   the    .   the the the.\n\n  , and, the in  , and are the. So,   the  .\n\n  the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 103,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: I am your deepest , darkest , most foul desires ... ..\n\nBegin with: \"`` Push her.'' You say to me, as if I had actually invited you into conversation. `` I bet she'd make the pavement pretty. A brilliant splatter of red against the dark asphalt.'' \n \n I do not, because this is not\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the the, and,, the the, to-, no,   the the to the, the  . for \n\n to the., can the a   the    ,, or to the down, the the the a the the,, and    , this.   the a, to to to,  the, to the the, to the the the,  a, are.   the the  .\n\n.\n the a   the the to, a big,  ,   a    the    , the   the , the   .   the,  ,   , the, ,     the   all  the light, for to be an, it the the. , and     the and the the,   , and I. , how   the the of the, the last do  , I the the a big    , , the the,   a   the,  the the the, or  .  the the last, the and a-\n\n. A  a new the, a to the  the   for in   all of,   a, you.   the,   the.    \n\n.\n\n a  ,  , the  , this in the   a little,   of the ,  a new, and  .  ,  are to the the. , you  .\n\n   , and the the in the the, a  to the, no.  , I only two,   the the  the the, a  , no down,.  \n\n,  the, the all the,  ,  , it.\n\n   the   the, ,  the the, for the, of a go the, a    \n\nThe  the the   the   the     the, ,  .\n\n   and the  , you the    , the ",
+      "processed_text": "the the, and,, the the, to-, no,   the the to the, the  . for \n\n to the., can the a   the    ,, or to the down, the the the a the the,, and    , this.   the a, to to to,  the, to the the, to the the the,  a, are.   the the  .\n\n.\n the a   the the to, a big,  ,   a    the    , the   the , the   .   the,  ,   , the, ,     the   all  the light, for to be an, it the the. , and     the and the the,   , and I. , how   the the of the, the last do  , I the the a big    , , the the,   a   the,  the the the, or  .  the the last, the and a-\n\n. A  a new the, a to the  the   for in   all of,   a, you.   the,   the.    \n\n.\n\n a  ,  , the  , this in the   a little,   of the ,  a new, and  .  ,  are to the the. , you  .\n\n   , and the the in the the, a  to the, no.  , I only two,   the the  the the, a  , no down,.  \n\n,  the, the all the,  ,  , it.\n\n   the   the, ,  the the, for the, of a go the, a    \n\nThe  the the   the   the     the, ,  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 103,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: The adventures of a low-budget guild of assassins struggling to compete with bigger businesses .\n\nBegin with: \"The client could easily be described as a clingy housewife capable of untold psychological and emotion warfare, but let's call her Daisy Lemon. Her expression was n't exactly the one I had been hoping for, but I had been expecting more\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the the  the, and   the the     the the the the re the  , and   down  , how to,, and for the on, the,,    , the re  ,  .\n\n,, , the the,, the right the,.  a for the the the.\n\n it all the, you      the a a , re the, a, and two- the, the the the,,,,\n\n  , the.\n\n  , and.   last, the the  , you can change,   , and the. , or.     the the to\n\n  , the   to-, it for  ,   that is all    , we need, and, ,   all the first-,  , and the for the the, are all all to the first time the  the,, is a the the to,  \n\n the  the   the are   two the the two,, are for the, and.\n\n  the.\n\n.\n\n, the the the the  the. \n\n    the,\n\n,  , and, all of,.   any more.\n\n .  .\n\n the the, you, the in the  \n\n,  ,.\n\n a the,  the the the  , the  ,   , how, a  the the,.    .\n\n.  the for the,.\n\n,   I  ,  .  \n\n   a new the to the.   ,  ,   are,  ,  .    , the.   the the the.\n\n,   the in any, the the,   the  a. ,,  . The a.  the, how,    , the,     .  , the, a the the to, the   the   to, you to   the  ",
+      "processed_text": "the the  the, and   the the     the the the the re the  , and   down  , how to,, and for the on, the,,    , the re  ,  .\n\n,, , the the,, the right the,.  a for the the the.\n\n it all the, you      the a a , re the, a, and two- the, the the the,,,,\n\n  , the.\n\n  , and.   last, the the  , you can change,   , and the. , or.     the the to\n\n  , the   to-, it for  ,   that is all    , we need, and, ,   all the first-,  , and the for the the, are all all to the first time the  the,, is a the the to,  \n\n the  the   the are   two the the two,, are for the, and.\n\n  the.\n\n.\n\n, the the the the  the. \n\n    the,\n\n,  , and, all of,.   any more.\n\n .  .\n\n the the, you, the in the  \n\n,  ,.\n\n a the,  the the the  , the  ,   , how, a  the the,.    .\n\n.  the for the,.\n\n,   I  ,  .  \n\n   a new the to the.   ,  ,   are,  ,  .    , the.   the the the.\n\n,   the in any, the the,   the  a. ,,  . The a.  the, how,    , the,     .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 103,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Your closest friend has died of a terminal illness . Before he died , he asked you to give him a 'sky burial ' . Tell us about the experience .\n\nBegin with: \"It was a beautiful day. The sun was shining, the birds chirping, and all were in good spirits. We were somber, and quiet, but we were content. Jeff had always been the life of the party, no pun\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the very the the to    the can be, the down the   three, for,.\n\n   how, the name of a,\n\n a,,  , the, and the, the the the and the , the the  ,  .\n\n, the   , in the top of the   for, how, a, the the and, the of to  .   the to the the, and the-, a big., the  -   the the the the, you-  a    , the,,, , can. ,   \n\n, can. and the  \n\n, I.\n\n, the the,  the.   and  , the the the,, and, is   ,  .   for, the  , the to, all  the last one and,.\n\n   to, the.   ,  .\n\n here\n\n, and that is to , and   of the, that  .\n\n\n a, or a    , the   the    .   ,   all the, and.   the the.      to to to   the.  .      ,  the   the.\n\n  .   .\n\n, or the , and, and,, and for,  ,  .\n\n a,  .\n\n.  , the,    for.\n\nAnd   the   a a  .    .  to.   the    \n\n for the,, all   the, the the, a  , this a. and this a, and you  .  the the the the, so the   in the,.  a  .\n\n,, a, or,.  \n\n. the,.   \n\n, in the the,,  any a   this a  , I.\n\n  \n\n that in,, and the  the  ",
+      "processed_text": "the very the the to    the can be, the down the   three, for,.\n\n   how, the name of a,\n\n a,,  , the, and the, the the the and the , the the  ,  .\n\n, the   , in the top of the   for, how, a, the the and, the of to  .   the to the the, and the-, a big., the  -   the the the the, you-  a    , the,,, , can. ,   \n\n, can. and the  \n\n, I.\n\n, the the,  the.   and  , the the the,, and, is   ,  .   for, the  , the to, all  the last one and,.\n\n   to, the.   ,  .\n\n here\n\n, and that is to , and   of the, that  .\n\n\n a, or a    , the   the    .   ,   all the, and.   the the.      to to to   the.  .      ,  the   the.\n\n  .   .\n\n, or the , and, and,, and for,  ,  .\n\n a,  .\n\n.  , the,    for.\n\nAnd   the   a a  .    .  to.   the    \n\n for the,, all   the, the the, a  , this a. and this a, and you  .  the the the the, so the   in the,.  a  .\n\n,, a, or,.  \n\n. the,.   \n\n, in the the,,  any a   this a  , I.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 103,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Write about the rain .\n\nBegin with: \"As always it was time to say goodbye.To my brothers and my sisters, \n may we brave these elements and meet again.To my aunt Nimbus who sheltered us, Thanks for everything.I know we have n't seen mom since the beginning but,\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " , the,  , the the the,, the, and the the down,.\n\n the  . the the,     the   for  , the the, a- the,  be a real one-   the the   .  the all the money, for   to a , the,, the to the, no this,    ,  ,   a time for to- the.\n\n, the, a to.  the     the,,     a,  , are,, the that   a  , a   in the,.  \n\n the  , that,  . , in, the,.   the    , a    .\n\n  , or the. the the  the  a    this\n\n,     the. , in the the and the the     the   the   the,  .    .  .     a.   that  , and a the,,,  , it.  , a,  , a   the a, it a, and   the,   and   the,,  , to  .  \n\n  .   a good  ,   all the ,.\n\n   a    ,  , for,.   the  the to the and  a the   , ,    the ,   the a    are the,,, so are the, you say. in,  on the, a  , the the,. The a  the,   here.\n\n a\n\n, the the the the   last, the.  the    .    the  , for, a   the. The,,    , that is the,  , the a.   to the,    the   the    a the,  .\n\n the a big the,  ,  , , or  ,  ",
+      "processed_text": ", the,  , the the the,, the, and the the down,.\n\n the  . the the,     the   for  , the the, a- the,  be a real one-   the the   .  the all the money, for   to a , the,, the to the, no this,    ,  ,   a time for to- the.\n\n, the, a to.  the     the,,     a,  , are,, the that   a  , a   in the,.  \n\n the  , that,  . , in, the,.   the    , a    .\n\n  , or the. the the  the  a    this\n\n,     the. , in the the and the the     the   the   the,  .    .  .     a.   that  , and a the,,,  , it.  , a,  , a   the a, it a, and   the,   and   the,,  , to  .  \n\n  .   a good  ,   all the ,.\n\n   a    ,  , for,.   the  the to the and  a the   , ,    the ,   the a    are the,,, so are the, you say. in,  on the, a  , the the,. The a  the,   here.\n\n a\n\n, the the the the   last, the.  the    .    the  , for, a   the. The,,    , that is the,  , the a.   to the,    the   the    a the,  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 123,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: You slide an envelope across the table to the person sitting across from you\n\nBegin with: \"He leant forward eagerly. I sat back, letting him drink it in. I had learned that the key to this would be letting him take his time. Previously, I had been too aggressive, too eager to get rid of something that other\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "  ,  , for the go.   , the the the,   ,     , the the, and to, the a the the ,.   last. to     the the  , and the the, the the the to,, the.\n\n the the.  to    ,  , the the     the.   the the   and   the, the a    \n\n, the the to     and a  ,,, and    for a.  the.\n\n   the, you to the, and, for, the the, the and,, and the, the    o.   ,  in the the.  the, the\n\n,   the, the this the.    ,  ,  the,   the the the  the the, a the  , and  any.     \n\n.\n\n  , -   the ,   .\n\n  .    \n\n  .     ,  ,  \n\n, this.\n\n ,  the   of the,   a  , the the,   the\n\n the  , the   the,   and the. .     the    a, the   .\n  .  \n\n  .\n\n.  \n\n, just a   .   .  the,  ,  .      the, you need   .\n\n the the  .  ,   and   the the, so   last one in a   are,, and a, a, the the,   that   the the,, the     \n\n, a a  , the,  .  it a small  \n\n   -  , and the.    \n\n   the, you, and the  .\n\n, no.   the the, are,  , the  , it should the the the, to  ",
+      "processed_text": ",  , for the go.   , the the the,   ,     , the the, and to, the a the the ,.   last. to     the the  , and the the, the the the to,, the.\n\n the the.  to    ,  , the the     the.   the the   and   the, the a    \n\n, the the to     and a  ,,, and    for a.  the.\n\n   the, you to the, and, for, the the, the and,, and the, the    o.   ,  in the the.  the, the\n\n,   the, the this the.    ,  ,  the,   the the the  the the, a the  , and  any.     \n\n.\n\n  , -   the ,   .\n\n  .    \n\n  .     ,  ,  \n\n, this.\n\n ,  the   of the,   a  , the the,   the\n\n the  , the   the,   and the. .     the    a, the   .\n  .  \n\n  .\n\n.  \n\n, just a   .   .  the,  ,  .      the, you need   .\n\n the the  .  ,   and   the the, so   last one in a   are,, and a, a, the the,   that   the the,, the     \n\n, a a  , the,  .  it a small  \n\n   -  , and the.    \n\n   the, you, and the  .\n\n, no.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 123,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: I am using WP to help me flesh out a fantasy world for a book . This short story was in response to prompt and takes place in the main city . Ideas and critiques are very welcome !\n\nBegin with: \"Hey, good story overall. \n \n CC: \n \n `` Dimply-lit faces'' \n \n Did you mean dimly? \n \n Feels like a bit of a clash of themes. You've got the grittiness of the city, and then\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ", the, a for the the, the for the  \n\n, the the   on the, and, and and,, the  , the,.  , , a,, a,  ,, the,   the a  , it is a.  the right--, and   , the for the the. So, to-   the the   the   the the,   a,,-   the  \n\n. - the the\n\n,  the   the the, it is all,   to and.   how.  \n\n, the   last name. . , I, the       the the     the  ,  .\n\n here.\n\n the the , the      .\n\n  the a,    in the one,,,  a  ,  the,  ,    ;   on          the, ,  the   to  , and  .\n\n the first the the the,    the   the, the  , can  .  -   the, the the the.  the   , how, ,, the go,,   ,    \n\n the   a -,\n\n   this the, you  , that   to  ,       and all the,  \n\nWell,, the   the the   the,  the the ,  s, the     the    ,  the.\n\n   for the the for    \n\n,   it,  .  the     a.    the,  , so,  \n\n   ,  , and   in.    ,  , it      the  , the,   the and,  \n\n,. \n\nThe    ,   , the that is right.\n\n  , to, the,,  , a a   to the,",
+      "processed_text": ", the, a for the the, the for the  \n\n, the the   on the, and, and and,, the  , the,.  , , a,, a,  ,, the,   the a  , it is a.  the right--, and   , the for the the. So, to-   the the   the   the the,   a,,-   the  \n\n. - the the\n\n,  the   the the, it is all,   to and.   how.  \n\n, the   last name. . , I, the       the the     the  ,  .\n\n here.\n\n the the , the      .\n\n  the a,    in the one,,,  a  ,  the,  ,    ;   on          the, ,  the   to  , and  .\n\n the first the the the,    the   the, the  , can  .  -   the, the the the.  the   , how, ,, the go,,   ,    \n\n the   a -,\n\n   this the, you  , that   to  ,       and all the,  \n\nWell,, the   the the   the,  the the ,  s, the     the    ,  the.\n\n   for the the for    \n\n,   it,  .  the     a.    the,  , so,  \n\n   ,  , and   in.    ,  , it      the  , the,   the and,  \n\n,. \n\nThe    ,   , the that is right.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 123,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: `` Dreams Inc. '' Is the largest dream manufacturer in the world but there 's some corruption at the top and the dreams are getting out of hand..\n\nBegin with: \"“ You can ’ t do this! ” Charlie shouts at Arthur as he slams a file folder on his coworker ’ s desk. \n \n Arthur smiles, “ You can ’ t be that mad Chuck. It ’ s just business. ” \n\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ", the,, the last one, a the,,, the all the,   to to,  , the   to   a for,.    ,.       the the  . , how,, the to, the the, and,  a in this, the to the    , the.  a  , ,, and  , the that the  ,   two two,  the   and, a a,   the   a  , the,,,   the a a the.  \n\n to,,   the  , here, to the  , the to\n\n this to the     the,, the   all to the  , and when a  , I the  , it.\n the the, are, a  , of a, a  to the. ,\n\n, and the the, the to the  ,  , the the,  \n\n the the,   the last,, can,  ,    a good.\n\n  a  ,  , and, I just, it a lot of the,  , the the   to\n\n,  , and, you re the, and,,.\n\n the,  , the   the and the,\n\n ,,  ,  ,,     ,   a go,, , ,  , and  ,  ,    re the, and    on   the can, the the, a that,  . and, is your   the    the   about,   the the\n\n, ,  a,  ,    the the.   , or the  ,  the,,  the a a  \n\n,  .\n\n,   all, the   the, the the,  the the    \n\n a re, the.  \n\n  .   \n\nWhat   the, the   the the   the the  ",
+      "processed_text": ", the,, the last one, a the,,, the all the,   to to,  , the   to   a for,.    ,.       the the  . , how,, the to, the the, and,  a in this, the to the    , the.  a  , ,, and  , the that the  ,   two two,  the   and, a a,   the   a  , the,,,   the a a the.  \n\n to,,   the  , here, to the  , the to\n\n this to the     the,, the   all to the  , and when a  , I the  , it.\n the the, are, a  , of a, a  to the. ,\n\n, and the the, the to the  ,  , the the,  \n\n the the,   the last,, can,  ,    a good.\n\n  a  ,  , and, I just, it a lot of the,  , the the   to\n\n,  , and, you re the, and,,.\n\n the,  , the   the and the,\n\n ,,  ,  ,,     ,   a go,, , ,  , and  ,  ,    re the, and    on   the can, the the, a that,  . and, is your   the    the   about,   the the\n\n, ,  a,  ,    the the.   , or the  ,  the,,  the a a  \n\n,  .\n\n,   all, the   the, the the,  the the    \n\n a re, the.  \n\n  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 123,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: After years of relentless research you have complied conclusive proof that an alien life form is using common house cats as `` hosts '' to gather information about the human race .\n\nBegin with: \"`` Well Mr. Fluffykins?! What do you say to this?!'' \n \n You throw a brown envelope on to the table. A few papers slide out, revealing various pictures of cats. One of them was a cat playing the piano and\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " this re, are-- a- in a, the in the and,, last the the     the,  , the only and the the re all for for,     the   the the,  , and   the, are the all,   it the,,,. , the the, the a  , and a the the, the,  the   and the the    the a  .  ,  ,   in the   of,  ,\n\n   . , and the the,      ,  , and. the the the how, the the,  re,   the, for  ,  ,     are all the.\n a little, to   the the,  the all, and and the, or the   , the.   \n\n, the, the the the the.\n\n, the, in the the the the  , and the     the it, and the the a,   the in this and  , and a  .\n the.   ,  .  , .\n\n,  just, in    the last one, and a, no, for the  ,  .   \n\n   the    .\n\n, the   the   and   the,    the   a    , the the,  , the . A,,. The     the   the  the the the to the the  the     a the  ,   a    the the,,, or the the  , the re the re,  the in  , you to in the re  , I.  ,  , I can    ,  that re.  the it the, ,   the  .  any of   any    \n\n,  , ,  ,  . ,   and.\n\n, now,,.  \n  , and, a",
+      "processed_text": "this re, are-- a- in a, the in the and,, last the the     the,  , the only and the the re all for for,     the   the the,  , and   the, are the all,   it the,,,. , the the, the a  , and a the the, the,  the   and the the    the a  .  ,  ,   in the   of,  ,\n\n   . , and the the,      ,  , and. the the the how, the the,  re,   the, for  ,  ,     are all the.\n a little, to   the the,  the all, and and the, or the   , the.   \n\n, the, the the the the.\n\n, the, in the the the the  , and the     the it, and the the a,   the in this and  , and a  .\n the.   ,  .  , .\n\n,  just, in    the last one, and a, no, for the  ,  .   \n\n   the    .\n\n, the   the   and   the,    the   a    , the the,  , the . A,,. The     the   the  the the the to the the  the     a the  ,   a    the the,,, or the the  , the re the re,  the in  , you to in the re  , I.  ,  , I can    ,  that re.  the it the, ,   the  .  any of   any    \n\n,  , ,  ,  . ,   and.\n\n, now,,.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 119,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: a machine which lets you experience a lifetime in a matter of minutes .\n\nBegin with: \"It flew by quicker than I could comprehend. The only thing I could see was the same bored face that the man had. It was the saddest thing I'd ever seen in my life so far. The common factor in this man's entire\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the the the the  , the.     in the the, it., or, the the., a the all,  , the,,,, and the the last to the for, a a the the to the a a, so,  ..., , that the,.  ,    .  this for the, I only   on the the\n\n the are for the for the\n\n, is the ,     ,, and you a the   for the go the, a big  ,   to\n\n.\n\n,   the, , a  ,   the  for a.   , the, the  , is a the , can- the  . , or     all, you, you, this re, the   a the  , it all  ,    on   the, no,    , and    , the   to  , and when a. to and a  ,   the one , the   a  , the a   the,,   , the. \n\n,   a,  , to the  a are. ,    ,  the the the  , in the   all  , the in  , the to  , and, that  , and   the.    ,  \n\n   here, it a , . a    \n\n and all, you.  ,  .  , and  ,  ,  . ,  , a the, and all in, can, to-, can and the  \n\nThis the for, , is a  , the  , this will.    , .  is all the   the are the the the the,  ,   it      the,, the  for the,  all, the,  , I are   the, ,  the,  the  .  \n\n ",
+      "processed_text": "the the the the  , the.     in the the, it., or, the the., a the all,  , the,,,, and the the last to the for, a a the the to the a a, so,  ..., , that the,.  ,    .  this for the, I only   on the the\n\n the are for the for the\n\n, is the ,     ,, and you a the   for the go the, a big  ,   to\n\n.\n\n,   the, , a  ,   the  for a.   , the, the  , is a the , can- the  . , or     all, you, you, this re, the   a the  , it all  ,    on   the, no,    , and    , the   to  , and when a. to and a  ,   the one , the   a  , the a   the,,   , the. \n\n,   a,  , to the  a are. ,    ,  the the the  , in the   all  , the in  , the to  , and, that  , and   the.    ,  \n\n   here, it a , . a    \n\n and all, you.  ,  .  , and  ,  ,  . ,  , a the, and all in, can, to-, can and the  \n\nThis the for, , is a  , the  , this will.    , .  is all the   the are the the the the,  ,   it      the,, the  for the,  all, the,  , I are   the, ,  the,  the  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 119,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: There is a serial killer with an unusual choice of prey . He only kills people he stopped from committing suicide .\n\nBegin with: \"Karen yawned. Long nights in nursing were bad enough, but on a psych ward rotation, it was made worse by the instability of some of the patients. \n \n Of course, the old hands on the ward were helping to shield her from\""
+        }
+      ]
+    }
+  ]
+}

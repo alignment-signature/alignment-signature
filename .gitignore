@@ -1,9 +1,38 @@
-# Paper draft — never commit
+# --- Secrets / credentials (never commit) ---
+.env
+.env.*
+*.env
+*.key
+*.pem
+*.p12
+id_rsa*
+*credential*
+*secret*
+.netrc
+
+# --- Paper draft / identifying material (anonymity) ---
 *.pdf
 Alignment-Signature.pdf
+*.tex
+*.docx
+*.doc
+paper/
+draft/
+drafts/
+submission/
 
-# OS / editor cruft
-.DS_Store
-*.swp
+# --- Python ---
 __pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
 .ipynb_checkpoints/
+.venv/
+venv/
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

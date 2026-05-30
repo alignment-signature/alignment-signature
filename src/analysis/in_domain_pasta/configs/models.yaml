@@ -1,0 +1,53 @@
+# Domain-specific direction ablation — model spec (Path A canonical).
+#
+# Sample selection: first-k-by-id per domain (no seed). Train and test are
+# disjoint by construction — see analysis/in_domain_pasta/_domain_selection.py.
+#   test_ids  = [0..n_test_per_domain - 1]                    (canonical Path A test set)
+#   train_ids = [n_test_per_domain .. n_test_per_domain + n_train_per_domain - 1]
+# With n_test=n_train=25 → train=[25..49], test=[0..24].
+#
+# Decoding seed=123 matches scaled_ablation, detector_swap, per_layer,
+# random_direction_ablation, per_layer_single_layer_only_ablation (the rest of the
+# Path A ecosystem).
+#
+# Each phase script takes --model <alias> to pick one entry from `models:`.
+
+models:
+  - id:               "meta-llama/Meta-Llama-3.1-8B-Instruct"
+    base_id:          "meta-llama/Meta-Llama-3.1-8B"
+    alias:            "llama-3.1-8b-instruct"
+    n_layers:         32
+    best_L_all_layer: 1   # cross-domain best L from canonical PASTA — kept for reference
+    gpus_per_copy:    1
+
+  - id:               "Qwen/Qwen2.5-7B-Instruct"
+    base_id:          "Qwen/Qwen2.5-7B"
+    alias:            "qwen2.5-7b-instruct"
+    n_layers:         28
+    best_L_all_layer: 14
+    gpus_per_copy:    1
+
+  - id:               "google/gemma-2-9b-it"
+    base_id:          "google/gemma-2-9b"
+    alias:            "gemma-2-9b-it"
+    n_layers:         42
+    best_L_all_layer: 2   # cross-domain best L from canonical PASTA — kept for reference
+    gpus_per_copy:    1
+
+domains:
+  - college_essays
+  - creative_fiction
+  - news_articles
+  - opinion_pieces
+  - scientific_abstracts
+
+# Sample selection (Path A canonical — first-k-by-id, no seed)
+n_train_per_domain: 25
+n_test_per_domain:  25
+
+# Decoding (per-sample seed = seed + original_prefix_id)
+generation:
+  temperature:    1.0
+  top_p:          0.95
+  max_new_tokens: 400
+  seed:           123

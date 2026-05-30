@@ -1,0 +1,246 @@
+{
+  "model_type": "instruct",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400,
+    "batched": true,
+    "batch_size": 4
+  },
+  "intervention": {
+    "mode": "partial_ablate",
+    "direction_path": "data/analysis_results/scaled_ablation/directions/qwen2.5-7b-instruct/v_cross_L14.pt",
+    "layer": 14,
+    "alpha": 2.0,
+    "tag": "v_cross_L14_partial_ablate_alpha2.00_batched"
+  },
+  "domain": "scientific_abstracts",
+  "num_generations": 10,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Natural language call routing can be treated as an instance of text classification after speech recognition of calls. This task consists of two important parts. The first part is to do text preprocessing in order to extract the numeric data from the calls and the second is classification using machine learning algorithms.\n\nThis research paper introduces a review of different text categorization techniques that can be used for the text classification task of call routing. Specifically, we focus on the text pre-processing techniques and machine learning classification methods which are used in this task. The review will help to understand what text categories are suitable for different kinds of calls and how these categories can be used in automatic routing.\n\nThe review starts by explaining the importance of the pre-processing part and why it should be treated separately from the classifying part. Next, the review presents some methods which are commonly used to extract the text features and how these methods affect the text classification results. The review also presents some common machine learning approaches that can be used in the classifying stage.\nThe review also gives a critical discussion of the advantages and disadvantages of the different methods. A conclusion is drawn that the text pre-processing and classifying method selection depend on the particular problem at hand.",
+      "processed_text": "Natural language call routing can be treated as an instance of text classification after speech recognition of calls. This task consists of two important parts. The first part is to do text preprocessing in order to extract the numeric data from the calls and the second is classification using machine learning algorithms.\n\nThis research paper introduces a review of different text categorization techniques that can be used for the text classification task of call routing. Specifically, we focus on the text pre-processing techniques and machine learning classification methods which are used in this task. The review will help to understand what text categories are suitable for different kinds of calls and how these categories can be used in automatic routing.\n\nThe review starts by explaining the importance of the pre-processing part and why it should be treated separately from the classifying part. Next, the review presents some methods which are commonly used to extract the text features and how these methods affect the text classification results. The review also presents some common machine learning approaches that can be used in the classifying stage.\nThe review also gives a critical discussion of the advantages and disadvantages of the different methods.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 110,
+        "completion_tokens": 239
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Text categorization methods application for natural language call routing\n\nBegin with: \"Natural language call routing can be treated as an instance of topic categorization of documents after speech recognition of calls. This categorization consists of two important parts. The first one is text preprocessing for numerical data extraction and the second one is classification with machine\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Insightful findings in political science often require researchers to analyze documents of a certain subject or type, yet these documents are usually contained in large corpora that do not distinguish between pertinent and non-pertinent documents. In contrast, the approach proposed in this paper does not use any labelled data, but uses domain adaptation to learn from the unlabelled sources. Our approach adapts the classification algorithms, so they perform well on the target domains, even though there is no supervision. We conduct experiments on document datasets in the field of political science and compare our method against the state-of-the-art, and show that our ensembling model performs better.",
+      "processed_text": "Insightful findings in political science often require researchers to analyze documents of a certain subject or type, yet these documents are usually contained in large corpora that do not distinguish between pertinent and non-pertinent documents. In contrast, the approach proposed in this paper does not use any labelled data, but uses domain adaptation to learn from the unlabelled sources. Our approach adapts the classification algorithms, so they perform well on the target domains, even though there is no supervision.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 110,
+        "completion_tokens": 130
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Adaptive Ensembling: Unsupervised Domain Adaptation for Political Document Analysis\n\nBegin with: \"Insightful findings in political science often require researchers to analyze documents of a certain subject or type, yet these documents are usually contained in large corpora that do not distinguish between pertinent and non-pertinent documents. In contrast, we can find\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "A regioselective synthesis of new mono- and bis-oxindoles containing bis-spiro-heterocyclic hybrids has been envisaged via 1,3-dipolar cycloaddition of azomethine ylides with the 2-substituted anhydride of (S)-(+)-piperidine and further functionalized to give N-substituted oxindoles. The newly synthesized compounds were screened against a panel of human solid tumor cell lines. Two of the bis-spiro-heterocyclic hybrids showed potent inhibitory effects in human cancer cells, suggesting their good potential as future cancer drugs.",
+      "processed_text": "A regioselective synthesis of new mono- and bis-oxindoles containing bis-spiro-heterocyclic hybrids has been envisaged via 1,3-dipolar cycloaddition of azomethine ylides with the 2-substituted anhydride of (S)-(+)-piperidine and further functionalized to give N-substituted oxindoles. The newly synthesized compounds were screened against a panel of human solid tumor cell lines.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 110,
+        "completion_tokens": 132
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Synthesis and biological evaluation of new spirooxindoles with embedded pharmacophores\n\nBegin with: \"A regioselective synthesis of new mono and bisoxindoles containing bis spiro heterocyclic hybrids has been envisaged via 1,3-dipolar cycloaddition of azomethine ylides with the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Purpose – The purpose of this study is to explore the causal link between procurement route and the ongoing buyer-supplier relationship.\n\nDesign/methodology/approach – The research draws on literature in the areas of: facilities management (FM) outsourcing; purchasing and supply chain management; relationship marketing; and service operations to provide a theoretical basis for the study. This research is conducted through a case study approach with secondary sources from the relevant literature as well as interviews with 21 FM procurement managers.\n\nFindings – The results of this research show that the FM procuring organisation and its chosen supplier have had the best performance when buying from external suppliers, although both parties may suffer if the supplier is internal. The main reason why this might happen is that it could not be proved that the internal suppliers will work towards the same strategy of the procuring organisation or that they can work in a flexible way to fit the needs of the organization.\n\nResearch limitations/implications – This research is limited to FM procurement. Further research should be carried out for FM maintenance, FM management services and other fields.\n\nPractical implications – There is some practical implication which is that FM procuring organisations should consider to buy from suppliers who do not have any relation with the procuring organizations.\n\nOriginality/value – This research provides an original contribution to the literature as there has been no prior research into the effects of procurement route on ongoing relations in FM procurement.",
+      "processed_text": "Purpose – The purpose of this study is to explore the causal link between procurement route and the ongoing buyer-supplier relationship.\n\nDesign/methodology/approach – The research draws on literature in the areas of: facilities management (FM) outsourcing; purchasing and supply chain management; relationship marketing; and service operations to provide a theoretical basis for the study. This research is conducted through a case study approach with secondary sources from the relevant literature as well as interviews with 21 FM procurement managers.\n\nFindings – The results of this research show that the FM procuring organisation and its chosen supplier have had the best performance when buying from external suppliers, although both parties may suffer if the supplier is internal. The main reason why this might happen is that it could not be proved that the internal suppliers will work towards the same strategy of the procuring organisation or that they can work in a flexible way to fit the needs of the organization.\n\nResearch limitations/implications – This research is limited to FM procurement. Further research should be carried out for FM maintenance, FM management services and other fields.\n\nPractical implications – There is some practical implication which is that FM procuring organisations should consider to buy from suppliers who do not have any relation with the procuring organizations.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 110,
+        "completion_tokens": 282
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Buyer‐supplier collaboration: the aim of FM procurement?\n\nBegin with: \"Purpose – The purpose of this study is to explore the causal link between procurement route and ongoing buyer‐supplier relationship.Design/methodology/approach – The research draws on literature in the areas of: facilities management (FM) outsourcing; purchasing and supply chain\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "The widespread availability of many emerging services enabled by the Internet of Things (IoT) paradigm passes through the capability to provide long-range connectivity to a massive number of things, overcoming the well-known issues of ad-hoc, short-range networks. This requires a large-scale network capable of supporting millions of devices, which is known as a cellular network. The support of such traffic in current cellular networks is not enough due to the low capacity and small coverage area. In this study, we analyzed a new technology, called the Fifth-Generation Cellular Network (5G), which is able to support the massive machine-to-machine (M2M) traffic thanks to its higher capacity than the existing fourth-generation network (4G), and also has an important role on supporting the huge number of mobile things, thanks to its huge coverage area. The result of our research proves that 5G cellular network is a candidate to support the massive M2M traffic.",
+      "processed_text": "The widespread availability of many emerging services enabled by the Internet of Things (IoT) paradigm passes through the capability to provide long-range connectivity to a massive number of things, overcoming the well-known issues of ad-hoc, short-range networks. This requires a large-scale network capable of supporting millions of devices, which is known as a cellular network. The support of such traffic in current cellular networks is not enough due to the low capacity and small coverage area. In this study, we analyzed a new technology, called the Fifth-Generation Cellular Network (5G), which is able to support the massive machine-to-machine (M2M) traffic thanks to its higher capacity than the existing fourth-generation network (4G), and also has an important role on supporting the huge number of mobile things, thanks to its huge coverage area.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 129,
+        "completion_tokens": 190
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: On the Support of Massive Machine-to-Machine Traffic in Heterogeneous Networks and Fifth-Generation Cellular Networks\n\nBegin with: \"The widespread availability of many emerging services enabled by the Internet of Things (IoT) paradigm passes through the capability to provide long-range connectivity to a massive number of things, overcoming the well-known issues of ad-hoc, short-range networks. This\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "This paper presents comparisons between predicted and measured data for a live GSM system. Our propagation prediction software tool is based on 3D-ray tracing, and considers wave interactions, such as free space, reflection, diffraction, and scattering. The underlying method for our propagation prediction software uses a frequency domain approach in order to obtain an estimate of the path loss between a base station and a mobile phone in both urban and rural environments. Using this method, we were able to make predictions which were compared against measured values. This paper will discuss the methodology, results, and conclusions drawn from these results.",
+      "processed_text": "This paper presents comparisons between predicted and measured data for a live GSM system. Our propagation prediction software tool is based on 3D-ray tracing, and considers wave interactions, such as free space, reflection, diffraction, and scattering. The underlying method for our propagation prediction software uses a frequency domain approach in order to obtain an estimate of the path loss between a base station and a mobile phone in both urban and rural environments. Using this method, we were able to make predictions which were compared against measured values.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 129,
+        "completion_tokens": 119
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: A comparison of 3D computer propagation prediction with GSM signal measurements\n\nBegin with: \"This paper presents comparisons between predicted and measured data for a live GSM system. Our propagation prediction software tool is based on 3D-ray tracing, and considers wave interactions, such as free space, reflection, diffraction, and scattering. The underlying\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Effects of a carboxylated styrene-butadiene-based liquid additive on the microstructure, mechanical strength and decolorization resistance of the inorganic pigment layer in the color block have been examined. More dense inorganic pigment layer characterized by lower refractive index dispersion, less pores, higher refractive index of the solid phase, higher Young’s modulus, and higher color difference after washing, has been obtained. The results show that this liquid additive could enhance the physical properties of the inorganic pigment layer in the color block.",
+      "processed_text": "Effects of a carboxylated styrene-butadiene-based liquid additive on the microstructure, mechanical strength and decolorization resistance of the inorganic pigment layer in the color block have been examined. More dense inorganic pigment layer characterized by lower refractive index dispersion, less pores, higher refractive index of the solid phase, higher Young’s modulus, and higher color difference after washing, has been obtained.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 129,
+        "completion_tokens": 107
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Enhancement in the physical properties of inorganic pigment layer in the color block by incorporation of n liquid additive\n\nBegin with: \"Effects of a carboxylated styrene-butadiene-based liquid additive on the microstructure, mechanical strength and decolorization resistance of inorganic pigment layer in the color block have been examined. More dense inorganic pigment layer characterized by lower\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "GHz third harmonic superconducting cavities have been used to increase the peak bunch current and to compensate for non-linear distortions in the longitudinal phase space due to sinusoidal 1.3 GHz accelerating cavity voltage (1). The power coupler for the 3.9 GHz superconducting cavity at Fermilab plays an important role in transferring the energy from the input line into the cavity, which affects the performance of the particle accelerator. In this study, we investigated the properties of the new 3.9 GHz power coupler for the superconducting cavity, which has a new design that enables us to reduce the amount of RF power lost while transmitting it, and to obtain a large fraction of it into the superconducting cavity without causing damage to the structure. The optimization method of the power coupler was developed in this simulation process, where several different parameters including the shape of the input line, length of the power coupler, and the material of the power coupler were optimized. The simulation results show that the new optimized power coupler can improve the efficiency of the superconducting cavity and reduce the cost of the power coupler at the same time.\n\nReferences:\n(1) S. A. Danilenko et al., \"Optimization of the Coupling Structures of Superconducting Cavities in Accelerators,\" *Physical Review Special Topics - Accelerators and Beams*, vol. 18, no. 3, pp. 030002, 2015.",
+      "processed_text": "GHz third harmonic superconducting cavities have been used to increase the peak bunch current and to compensate for non-linear distortions in the longitudinal phase space due to sinusoidal 1.3 GHz accelerating cavity voltage (1). The power coupler for the 3.9 GHz superconducting cavity at Fermilab plays an important role in transferring the energy from the input line into the cavity, which affects the performance of the particle accelerator. In this study, we investigated the properties of the new 3.9 GHz power coupler for the superconducting cavity, which has a new design that enables us to reduce the amount of RF power lost while transmitting it, and to obtain a large fraction of it into the superconducting cavity without causing damage to the structure. The optimization method of the power coupler was developed in this simulation process, where several different parameters including the shape of the input line, length of the power coupler, and the material of the power coupler were optimized. The simulation results show that the new optimized power coupler can improve the efficiency of the superconducting cavity and reduce the cost of the power coupler at the same time.\n\nReferences:\n(1) S. A. Danilenko et al., \"Optimization of the Coupling Structures of Superconducting Cavities in Accelerators,\" *Physical Review Special Topics - Accelerators and Beams*, vol. 18, no. 3, pp.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 129,
+        "completion_tokens": 309
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: SIMULATIONS AND OPTIMIZATIONS OF A NEW POWER COUPLER FOR 3.9-GHZ SUPERCONDUCTING CAVITIES AT FERMILAB*\n\nBegin with: \"GHz third harmonic superconducting cavities have been used to increase the peak bunch current and to compensate for non-linear distortions in the longitudinal phase space due to sinusoidal 1.3 GHz accelerating cavity voltage (1). The power coupler\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "In this work, we mainly investigate the effect of PT-symmetric operation on the dynamic behavior of the relative entropy of coherence for a two-level system within non-Markovian environments and put forward a feasible physical scheme to recover coherence by utilizing optimal control method. We show that by choosing a properly designed control field, not only we can achieve coherent transport even when the system is under decoherence, but we can also recover coherence from a decoherent state. The effect of PT-symmetry and the effect of the control field are studied in detail, including the condition for PT-symmetry breaking, the time needed to recover coherence, the relation between coherence and PT-symmetry, and etc. The results we obtain might be of great significance to the development of quantum information technologies such as quantum memory and quantum computing.",
+      "processed_text": "In this work, we mainly investigate the effect of PT-symmetric operation on the dynamic behavior of the relative entropy of coherence for a two-level system within non-Markovian environments and put forward a feasible physical scheme to recover coherence by utilizing optimal control method. We show that by choosing a properly designed control field, not only we can achieve coherent transport even when the system is under decoherence, but we can also recover coherence from a decoherent state. The effect of PT-symmetry and the effect of the control field are studied in detail, including the condition for PT-symmetry breaking, the time needed to recover coherence, the relation between coherence and PT-symmetry, and etc.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 132,
+        "completion_tokens": 165
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Effect of PT-Symmetric Operator on Coherence Under the Non-Markovian Environments\n\nBegin with: \"In this work, we mainly investigate effect of PT-symmetric operation on the dynamic behavior of the relative entropy of coherence for a two-level system within non-Markovian environments and put forward a feasible physical scheme to recover coherence by utilizing optimal\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Endoplasmic reticulum (ER)-associated degradation (ERAD) is a principal mechanism that targets ER-associated proteins for cytosolic proteasomal degradation. Here, our data demonstrate a critical role for the SEL1L-HRD1 and SEL1L-HSP70/40 hetero-complexes in managing an important checkpoint in B cell development. We have demonstrated that the SEL1L-HRD1 complex is involved in the removal of misfolded proteins from the ER lumen via the ubiquitin-proteasome pathway. Our experiments were conducted on two murine models: a humanized 2B1 model and a Sel1l-/- model, both undergoing a B cell developmental process from pro-B cells to mature B cells. We found that mice deficient for SEL1L/HSP70 or SEL1L/HSP40 fail to make a transition from pro-B cells to pre-B cells. We further showed that the expression level of the BCR component Igα is down-regulated at the pre-B cell stage in SEL1L-deficient 2B1 mice. Using biochemical affinity purification, we identified Ufd1 as one of the substrates of SEL1L-HSP70 or SEL1L-HSP40. Moreover, we found that UFD1 is down-expressed and cleaved in the absence of SEL1L in B cells. These results suggest that SEL1L and the other two components play a key role in regulating the transition from the pro-B to the pre-B stage through a specific mechanism that removes the UFD1 protein via the cytosolic protein degradation system. The result implies that the SEL1L-HDR1 HSR-1 complex might be a critical regulator of the B cell development and might be important in the regulation of B cell tolerance. Future experiments should consider using Sel1l/Hsp40-/- mice in order to test the function of SEL1L/HSP",
+      "processed_text": "Endoplasmic reticulum (ER)-associated degradation (ERAD) is a principal mechanism that targets ER-associated proteins for cytosolic proteasomal degradation. Here, our data demonstrate a critical role for the SEL1L-HRD1 and SEL1L-HSP70/40 hetero-complexes in managing an important checkpoint in B cell development. We have demonstrated that the SEL1L-HRD1 complex is involved in the removal of misfolded proteins from the ER lumen via the ubiquitin-proteasome pathway. Our experiments were conducted on two murine models: a humanized 2B1 model and a Sel1l-/- model, both undergoing a B cell developmental process from pro-B cells to mature B cells. We found that mice deficient for SEL1L/HSP70 or SEL1L/HSP40 fail to make a transition from pro-B cells to pre-B cells. We further showed that the expression level of the BCR component Igα is down-regulated at the pre-B cell stage in SEL1L-deficient 2B1 mice. Using biochemical affinity purification, we identified Ufd1 as one of the substrates of SEL1L-HSP70 or SEL1L-HSP40. Moreover, we found that UFD1 is down-expressed and cleaved in the absence of SEL1L in B cells. These results suggest that SEL1L and the other two components play a key role in regulating the transition from the pro-B to the pre-B stage through a specific mechanism that removes the UFD1 protein via the cytosolic protein degradation system. The result implies that the SEL1L-HDR1 HSR-1 complex might be a critical regulator of the B cell development and might be important in the regulation of B cell tolerance.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 132,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: The Sel1L-Hrd1 Endoplasmic Reticulum-Associated Degradation Complex Manages a Key Checkpoint in B Cell Development.\n\nBegin with: \"Endoplasmic reticulum (ER)-associated degradation (ERAD) is a principal mechanism that targets ER-associated proteins for cytosolic proteasomal degradation. Here, our data demonstrate a critical role for the\""
+        }
+      ]
+    }
+  ]
+}

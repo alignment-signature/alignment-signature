@@ -1,0 +1,244 @@
+{
+  "model_type": "instruct",
+  "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400
+  },
+  "intervention": {
+    "mode": "partial_ablate",
+    "direction_path": "data/analysis_results/scaled_ablation/directions/llama-3.1-8b-instruct/v_cross_L1.pt",
+    "layer": 1,
+    "alpha": 0.25,
+    "tag": "v_cross_L1_partial_ablate_alpha0.25"
+  },
+  "domain": "scientific_abstracts",
+  "num_generations": 10,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "**Title:** Text Categorization Methods Application for Natural Language Call Routing\n\n**Abstract:**\n\nNatural language call routing can be treated as an instance of topic categorization of documents after speech recognition of calls. This categoration consists of two important parts. The first one is text preprocessing for numerical data extraction and the second one is classification with machine learning models. The main purpose of this study is to investigate and analyze how machine learning algorithms can be applied to the call routing process based on the conversation in the call. We analyzed the performance of four text categorization methods, Naive Bayes, Support Vector Machine, Logistic Regression, and Random Forest, on the call route decision. We used a dataset consist of calls with different route decisions that contain the same information. In the experiment we used 75% of the data for train the machine learning models and the rest for test. We also use 5 types of preprocessing method (TF-IDF, TF, TF-IDF Log, WordNet and WordNet and Log) to see which method is best. The results of this study show that the Random Forest text categorization method with TF-IDF preprocessing method is the best for call route decision with accuracy of 96%.\n\n**Keywords:** Natural Language Call Routing, Topic Categorization, Text Preprocessing, Machine Learning, TF-IDF, TF, TF-IDF Log, WordNet and WordNet and Log, Naive Bayes, Support Vector Machine, Logistic Regression, Random Forest.\n\n**Introduction:**\nAutomated call routing systems can significantly improve customer service quality, efficiency, and availability. One of the key components of an automatic call routing system is natural language call routing, which route the call based on what the customer says in the call. But for this, we need to use machine learning algorithms to identify what the customer want.\n\n**Methodology:**\nWe use a dataset that contains calls with the same information but with different route decisions. We use the four text categorization methods Naive",
+      "processed_text": "**Title:** Text Categorization Methods Application for Natural Language Call Routing\n\n**Abstract:**\n\nNatural language call routing can be treated as an instance of topic categorization of documents after speech recognition of calls. This categoration consists of two important parts. The first one is text preprocessing for numerical data extraction and the second one is classification with machine learning models. The main purpose of this study is to investigate and analyze how machine learning algorithms can be applied to the call routing process based on the conversation in the call. We analyzed the performance of four text categorization methods, Naive Bayes, Support Vector Machine, Logistic Regression, and Random Forest, on the call route decision. We used a dataset consist of calls with different route decisions that contain the same information. In the experiment we used 75% of the data for train the machine learning models and the rest for test. We also use 5 types of preprocessing method (TF-IDF, TF, TF-IDF Log, WordNet and WordNet and Log) to see which method is best. The results of this study show that the Random Forest text categorization method with TF-IDF preprocessing method is the best for call route decision with accuracy of 96%.\n\n**Keywords:** Natural Language Call Routing, Topic Categorization, Text Preprocessing, Machine Learning, TF-IDF, TF, TF-IDF Log, WordNet and WordNet and Log, Naive Bayes, Support Vector Machine, Logistic Regression, Random Forest.\n\n**Introduction:**\nAutomated call routing systems can significantly improve customer service quality, efficiency, and availability. One of the key components of an automatic call routing system is natural language call routing, which route the call based on what the customer says in the call. But for this, we need to use machine learning algorithms to identify what the customer want.\n\n**Methodology:**\nWe use a dataset that contains calls with the same information but with different route decisions.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 110,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Text categorization methods application for natural language call routing\n\nBegin with: \"Natural language call routing can be treated as an instance of topic categorization of documents after speech recognition of calls. This categorization consists of two important parts. The first one is text preprocessing for numerical data extraction and the second one is classification with machine\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "**Title:** Adaptive Ensembling: Unsupervised Domain Adaptation for Political Document Analysis\n\n**Abstract:**\n\nInsightful findings in political science often require researchers to analyze documents of a certain subject or type, yet these documents are usually contained in large corpora that do not distinguish between pertinent and non-pertinent documents. In contrast, we can find documents that relate to the specific topic of interest but are labeled in a different domain, presenting a domain adaptation problem. To tackle this issue, we introduce a novel framework called Adaptive Ensembling, which enables unsupervised domain adaptation for political document analysis. Our proposed approach consists of a two-stage process. First, we propose an unsupervised domain adaptation algorithm that aligns two domains based on a common latent space, then we transfer the weights learned in the first step to another algorithm, to do the prediction and get our final result.\n\nIn the domain adaptation step, we use adversarial networks and a discriminator to align the two domains. We add a critic to our network, in the critic we use KL Divergence to measure the similarity between two distributions. The critic is also used to give the right reward to the generator when the two distributions are more similar. After we train the network with the critic and the generator, we get a common space for our two domains and we can transfer our knowledge from one domain to the other.\n\nFor the prediction step, we use a transformer model and transfer the weights learned in the first step to the transformer. We also add a classifier to the end of the transformer to give the final result.\n\nWe tested our model with three datasets: 20NewsGroup, Reuters and Reuters+AP. The results are good and our model can adapt the two domains good, then we can transfer the knowledge from one domain to the other and do the prediction.\n\n**Keywords:** unsupervised domain adaptation, adaptive ensembling, political document analysis, domain adaptation problem\n\nBy using our method, we can make our model more",
+      "processed_text": "**Title:** Adaptive Ensembling: Unsupervised Domain Adaptation for Political Document Analysis\n\n**Abstract:**\n\nInsightful findings in political science often require researchers to analyze documents of a certain subject or type, yet these documents are usually contained in large corpora that do not distinguish between pertinent and non-pertinent documents. In contrast, we can find documents that relate to the specific topic of interest but are labeled in a different domain, presenting a domain adaptation problem. To tackle this issue, we introduce a novel framework called Adaptive Ensembling, which enables unsupervised domain adaptation for political document analysis. Our proposed approach consists of a two-stage process. First, we propose an unsupervised domain adaptation algorithm that aligns two domains based on a common latent space, then we transfer the weights learned in the first step to another algorithm, to do the prediction and get our final result.\n\nIn the domain adaptation step, we use adversarial networks and a discriminator to align the two domains. We add a critic to our network, in the critic we use KL Divergence to measure the similarity between two distributions. The critic is also used to give the right reward to the generator when the two distributions are more similar. After we train the network with the critic and the generator, we get a common space for our two domains and we can transfer our knowledge from one domain to the other.\n\nFor the prediction step, we use a transformer model and transfer the weights learned in the first step to the transformer. We also add a classifier to the end of the transformer to give the final result.\n\nWe tested our model with three datasets: 20NewsGroup, Reuters and Reuters+AP. The results are good and our model can adapt the two domains good, then we can transfer the knowledge from one domain to the other and do the prediction.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 114,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Adaptive Ensembling: Unsupervised Domain Adaptation for Political Document Analysis\n\nBegin with: \"Insightful findings in political science often require researchers to analyze documents of a certain subject or type, yet these documents are usually contained in large corpora that do not distinguish between pertinent and non-pertinent documents. In contrast, we can find\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "A regioselective synthesis of new mono and bisoxindoles containing bis spiro heterocyclic hybrids has been envisaged via 1,3-dipolar cycloaddition of azomethine ylides with the aim of discovering novel bioactive molecules with embedded pharmacophores. \n\nIn this study, we report a concise and efficient synthesis of a library of novel spirooxindoles containing embedded pharmacophores by applying a convergent methodology that involves the combination of a 1,3-dipolar cycloaddition and an Ugi multicomponent reaction. The synthesis of the target spirooxindoles was supported by analytical data of the expected intermediates. The products were obtained in yields ranging from 40% to 90%.\n\nThe synthesized compounds were evaluated in vitro for their potential anticancer and antitubercular activities. The experimental results showed that the title compounds possess interesting anticancer activities against certain strains of human cancer cells when compared with some standard drugs. One of the bis-spirooxindoles analogs showed an activity comparable to some of the standard antitubercular drugs. \n\nThe preliminary SAR studies of the studied compounds, showed that some of the title compounds possess some activity when one of the spiro rings was replaced by a CH instead of a N atom and some other results for other variations such as the variation of one or two N-CH3 for N-CH2-CH3, showed that the effect of this change does not affect greatly the potency of the drug.",
+      "processed_text": "A regioselective synthesis of new mono and bisoxindoles containing bis spiro heterocyclic hybrids has been envisaged via 1,3-dipolar cycloaddition of azomethine ylides with the aim of discovering novel bioactive molecules with embedded pharmacophores. \n\nIn this study, we report a concise and efficient synthesis of a library of novel spirooxindoles containing embedded pharmacophores by applying a convergent methodology that involves the combination of a 1,3-dipolar cycloaddition and an Ugi multicomponent reaction. The synthesis of the target spirooxindoles was supported by analytical data of the expected intermediates. The products were obtained in yields ranging from 40% to 90%.\n\nThe synthesized compounds were evaluated in vitro for their potential anticancer and antitubercular activities. The experimental results showed that the title compounds possess interesting anticancer activities against certain strains of human cancer cells when compared with some standard drugs. One of the bis-spirooxindoles analogs showed an activity comparable to some of the standard antitubercular drugs.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 116,
+        "completion_tokens": 314
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Synthesis and biological evaluation of new spirooxindoles with embedded pharmacophores\n\nBegin with: \"A regioselective synthesis of new mono and bisoxindoles containing bis spiro heterocyclic hybrids has been envisaged via 1,3-dipolar cycloaddition of azomethine ylides with the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Purpose – The purpose of this study is to explore the causal link between procurement route and ongoing buyer–supplier relationship. This study aims to investigate whether a collaborative approach to Facilities Management (FM) procurement, which involves a strategic partnership between the buyer and supplier, ultimately leads to long-term, sustainable, and successful relationships between the buyer and supplier.\n\nDesign/methodology/approach – The research draws on literature in the areas of: facilities management (FM) outsourcing; purchasing and supply chain management; partnership creation and dissolution. An investigation of 120 companies involved in FM outsourcing was carried out using a combination of interviews, surveys, and secondary data analysis. The results were analyzed using statistical methods and correlation analysis to establish the relationship between the use of a collaborative approach in FM procurement and the ongoing relationship between the buyer and supplier.\n\nFindings – The study found that the use of a collaborative approach to FM procurement has a positive effect on the ongoing relationship between the buyer and supplier. When the buyer and supplier collaborate, they can share information, share the risks, and achieve the common goal. The study also found that if the collaboration is successful, it will lead to trust, understanding, and long-term, ongoing relationship between the buyer and supplier. \n\nPractical implications – The study has practical implications for companies that are involved in FM out sourcing. A company can use the collaborative approach to FM procurement in order to get a long term relationship with the supplier.\n\nOriginality/value – This study is different from previous studies because it investigates the causal link between procurement route and ongoing buyer–supplier relationship. Many previous studies have investigated the factors that affect the buyer–supplier relationship, but they have not investigated the causal link between the purchase method and the result.",
+      "processed_text": "Purpose – The purpose of this study is to explore the causal link between procurement route and ongoing buyer–supplier relationship. This study aims to investigate whether a collaborative approach to Facilities Management (FM) procurement, which involves a strategic partnership between the buyer and supplier, ultimately leads to long-term, sustainable, and successful relationships between the buyer and supplier.\n\nDesign/methodology/approach – The research draws on literature in the areas of: facilities management (FM) outsourcing; purchasing and supply chain management; partnership creation and dissolution. An investigation of 120 companies involved in FM outsourcing was carried out using a combination of interviews, surveys, and secondary data analysis. The results were analyzed using statistical methods and correlation analysis to establish the relationship between the use of a collaborative approach in FM procurement and the ongoing relationship between the buyer and supplier.\n\nFindings – The study found that the use of a collaborative approach to FM procurement has a positive effect on the ongoing relationship between the buyer and supplier. When the buyer and supplier collaborate, they can share information, share the risks, and achieve the common goal. The study also found that if the collaboration is successful, it will lead to trust, understanding, and long-term, ongoing relationship between the buyer and supplier. \n\nPractical implications – The study has practical implications for companies that are involved in FM out sourcing. A company can use the collaborative approach to FM procurement in order to get a long term relationship with the supplier.\n\nOriginality/value – This study is different from previous studies because it investigates the causal link between procurement route and ongoing buyer–supplier relationship.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 110,
+        "completion_tokens": 346
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Buyer‐supplier collaboration: the aim of FM procurement?\n\nBegin with: \"Purpose – The purpose of this study is to explore the causal link between procurement route and ongoing buyer‐supplier relationship.Design/methodology/approach – The research draws on literature in the areas of: facilities management (FM) outsourcing; purchasing and supply chain\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "**Abstract:**\n\nThe widespread availability of many emerging services enabled by the Internet of Things (IoT) paradigm passes through the capability to provide long-range connectivity to a massive number of things, overcoming the well-known issues of ad-hoc, short-range networks. This capability is traditionally accomplished by Mobile Cellular Networks (MCNs), which are expected to undergo significant evolutionary changes in order to fulfill the requirements of IoT paradigm, in terms of the amount of data to be transmitted and the time at which these data have to be sent. The Fifth Generation (5G) of MCNs, in particular, is expected to provide an improvement of an order of magnitude of the system capacity respect the previous generation. \n\nDespite the expected improvements, the large capacity and the speed of data transmission of MCNs is still insufficient to give to M2M communication the characteristics to support them effectively. In order to overcome these limits it is necessary to use the M2M communication in a large-scale environment. Therefore, this study examines the use of M2M communication to support the large amount of data and traffic that have to be sent in heterogeneous networks, as well as in the new MCNs (5G MCNs). We study the various techniques of the software and the hardware that can be used for the improvement of the performance of M2M communication, and we compare the results of our simulations with the results that can be found in the literature.\n\nOur results show that it is possible to support the large amount of data and traffic that have to be sent in M2M communication, using the M2M communication in a large scale environment, that is a network with many nodes, as a heterogeneous network and a 5G MCN. We also see that the use of the M2M communication in a large scale environment can improve the performance of M2M communication with many factors: the use of the software of M2M communication can improve the performance of M2M communication with 20% and the",
+      "processed_text": "**Abstract:**\n\nThe widespread availability of many emerging services enabled by the Internet of Things (IoT) paradigm passes through the capability to provide long-range connectivity to a massive number of things, overcoming the well-known issues of ad-hoc, short-range networks. This capability is traditionally accomplished by Mobile Cellular Networks (MCNs), which are expected to undergo significant evolutionary changes in order to fulfill the requirements of IoT paradigm, in terms of the amount of data to be transmitted and the time at which these data have to be sent. The Fifth Generation (5G) of MCNs, in particular, is expected to provide an improvement of an order of magnitude of the system capacity respect the previous generation. \n\nDespite the expected improvements, the large capacity and the speed of data transmission of MCNs is still insufficient to give to M2M communication the characteristics to support them effectively. In order to overcome these limits it is necessary to use the M2M communication in a large-scale environment. Therefore, this study examines the use of M2M communication to support the large amount of data and traffic that have to be sent in heterogeneous networks, as well as in the new MCNs (5G MCNs). We study the various techniques of the software and the hardware that can be used for the improvement of the performance of M2M communication, and we compare the results of our simulations with the results that can be found in the literature.\n\nOur results show that it is possible to support the large amount of data and traffic that have to be sent in M2M communication, using the M2M communication in a large scale environment, that is a network with many nodes, as a heterogeneous network and a 5G MCN.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 121,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: On the Support of Massive Machine-to-Machine Traffic in Heterogeneous Networks and Fifth-Generation Cellular Networks\n\nBegin with: \"The widespread availability of many emerging services enabled by the Internet of Things (IoT) paradigm passes through the capability to provide long-range connectivity to a massive number of things, overcoming the well-known issues of ad-hoc, short-range networks. This\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "**Title:** A Comparison of 3D Computer Propagation Prediction with GSM Signal Measurements\n\n**Abstract:**\n\nThis paper presents comparisons between predicted and measured data for a live GSM system. Our propagation prediction software tool is based on 3D-ray tracing, and considers wave interactions, such as free space, reflection, diffraction, and scattering. The underlying geometry of the cellular site is modeled in three dimensions using a 3D modeling tool, which allows us to take into account complex building structures, foliage and terrain variations, and any other factors that can affect the propagation of the signal. We then compare the predicted signal strength and distribution on the coverage area for the cell with actual measured data from a real cell. We use GSM base station measurements and a scanner tool to measure the actual received signal power and quality at different points in the coverage area, which will be compared with the signal strength and distribution that we got with our propagation prediction model. The comparisons between predicted and measured data are made with a graphical representation, and we use different error metrics, such as signal difference percentage, to see how accurate are our predictions. The results will show if our 3D-ray tracing method is better than other methods used to predict the signal strength and distribution on a cellular system, and can be used as a reference point for other people that have the same goal.\n\nOur 3D-ray tracing method can calculate many parameters that can affect the signal, like signal attenuation when it go through buildings, or how many db the signal loss after reflection and diffraction. With that information we can be more precise when we make our predictions and use more efficient way to optimize the location and the parameters of the cellulars sites. We can also use our model to know how many signal will we get with out the physical measure, that way we can know how many time we need to make a physical measure.",
+      "processed_text": "**Title:** A Comparison of 3D Computer Propagation Prediction with GSM Signal Measurements\n\n**Abstract:**\n\nThis paper presents comparisons between predicted and measured data for a live GSM system. Our propagation prediction software tool is based on 3D-ray tracing, and considers wave interactions, such as free space, reflection, diffraction, and scattering. The underlying geometry of the cellular site is modeled in three dimensions using a 3D modeling tool, which allows us to take into account complex building structures, foliage and terrain variations, and any other factors that can affect the propagation of the signal. We then compare the predicted signal strength and distribution on the coverage area for the cell with actual measured data from a real cell. We use GSM base station measurements and a scanner tool to measure the actual received signal power and quality at different points in the coverage area, which will be compared with the signal strength and distribution that we got with our propagation prediction model. The comparisons between predicted and measured data are made with a graphical representation, and we use different error metrics, such as signal difference percentage, to see how accurate are our predictions. The results will show if our 3D-ray tracing method is better than other methods used to predict the signal strength and distribution on a cellular system, and can be used as a reference point for other people that have the same goal.\n\nOur 3D-ray tracing method can calculate many parameters that can affect the signal, like signal attenuation when it go through buildings, or how many db the signal loss after reflection and diffraction. With that information we can be more precise when we make our predictions and use more efficient way to optimize the location and the parameters of the cellulars sites.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 113,
+        "completion_tokens": 378
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: A comparison of 3D computer propagation prediction with GSM signal measurements\n\nBegin with: \"This paper presents comparisons between predicted and measured data for a live GSM system. Our propagation prediction software tool is based on 3D-ray tracing, and considers wave interactions, such as free space, reflection, diffraction, and scattering. The underlying\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "**Effects of a carboxylated styrene-butadiene-based liquid addititive on the microstructure, mechanical strength and decolorization resistance of inorganic pigment layer in the color block have been examined. More dense inorganic pigment layer characteried by lower dispersion and less porous microstructure have been realized by the addition of n liquid addititive which is a carboxylated type of styrene-butadiene copolymer. In the results, the added inorganic pigments in the microstructure has been bonded more strongly to each other and also have been fixed in a good position, therefore, the mechanical strength and the decolorization resistance of the inorganic pigment layer has been improved.**\n\n**Title: Enhancement in the physical properties of inorganic pigment layer in the color block by incorporation of n liquid addititive**\n\n**Abstract:**\n\nThe aim of this study is to examine the effects of a carboxylated styrene-butadiene-based liquid addititive (n liquid additite) on the physical properties of the inorganic pigment layer in the color block, such as the density of the microstructure, the mechanical strength and the decolorization resistance. The inorganic pigment layer is formed by the combination of inorganic pigments and binder on the substrate surface. Generally, the inorganic pigments are dispersed in the binder, and they are fixed on the substrate surface by the curing of the binder. However, the inorganic pigments are easy to scatter or to migrate from the inorganic pigment layer, so the inorganic pigment layer is not stable and is easy to be damaged. In order to improve the physical properties of the inorganic pigment layer, the n liquid additite is added to the inorganic pigments and binder, and the inorganic pigment layer is formed by the combination of the inorganic pigments, the n liquid additite and the binder.\n\nThe results show that the addition of the n liquid additite is",
+      "processed_text": "**Effects of a carboxylated styrene-butadiene-based liquid addititive on the microstructure, mechanical strength and decolorization resistance of inorganic pigment layer in the color block have been examined. More dense inorganic pigment layer characteried by lower dispersion and less porous microstructure have been realized by the addition of n liquid addititive which is a carboxylated type of styrene-butadiene copolymer. In the results, the added inorganic pigments in the microstructure has been bonded more strongly to each other and also have been fixed in a good position, therefore, the mechanical strength and the decolorization resistance of the inorganic pigment layer has been improved.**\n\n**Title: Enhancement in the physical properties of inorganic pigment layer in the color block by incorporation of n liquid addititive**\n\n**Abstract:**\n\nThe aim of this study is to examine the effects of a carboxylated styrene-butadiene-based liquid addititive (n liquid additite) on the physical properties of the inorganic pigment layer in the color block, such as the density of the microstructure, the mechanical strength and the decolorization resistance. The inorganic pigment layer is formed by the combination of inorganic pigments and binder on the substrate surface. Generally, the inorganic pigments are dispersed in the binder, and they are fixed on the substrate surface by the curing of the binder. However, the inorganic pigments are easy to scatter or to migrate from the inorganic pigment layer, so the inorganic pigment layer is not stable and is easy to be damaged. In order to improve the physical properties of the inorganic pigment layer, the n liquid additite is added to the inorganic pigments and binder, and the inorganic pigment layer is formed by the combination of the inorganic pigments, the n liquid additite and the binder.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 120,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Enhancement in the physical properties of inorganic pigment layer in the color block by incorporation of n liquid additive\n\nBegin with: \"Effects of a carboxylated styrene-butadiene-based liquid additive on the microstructure, mechanical strength and decolorization resistance of inorganic pigment layer in the color block have been examined. More dense inorganic pigment layer characterized by lower\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "**SIMULATIONS AND OPTIMIZATIONS OF A NEW POWER COUPLER FOR 3.9-GHZ SUPERCONDUCTING CAVITIES AT FERMILAB**\n\nGHz third harmonic superconducting cavities have been used to increase the peak bunch current and to compensate for non-linear distortions in the longitudinal phase space due to sinusoidal 1.3 GHz accelerating cavity voltage (1). The power coupler plays a crucial role in efficiently extracting the power from the superconducting cavity without degrading the cavity performance. In this work, a new power coupler design was optimized for the 3.9-GHz superconducting cavity, which will be used in the Fermilab upgrade project (2). \n\nThe traditional coaxial and waveguide power couplers are widely used to couple power from superconducting cavity to the external load but they have limitations, such as low power coupling efficiency, high insertion loss, and low power handling capability. In this paper, a new design of a hybrid power coupler is presented which combines the advantages of both coaxial and waveguide power couplers. In the hybrid power coupler, the coaxial power coupler is used to couple power from the superconducting cavity to the waveguide and then the waveguide is used to couple power to the external load. \n\nThe simulations were performed using CST Microwave Studio to design and optimize the hybrid power couler for the 3.9-GHz superconducting cavity. The simulation results show that the power coupling efficiency is more than 95% and the insertion loss is less than 0.5 dB. The power handling capability of the power couler is also very high. The simulated results are compared with the experimental results of the traditional coaxial and waveguide power couler. The result shows that the power couler designed in this paper can effectively extract the power from the 3.9-GHz superconducting cavity without degrading the cavity performance.\n\nIn conclusion",
+      "processed_text": "**SIMULATIONS AND OPTIMIZATIONS OF A NEW POWER COUPLER FOR 3.9-GHZ SUPERCONDUCTING CAVITIES AT FERMILAB**\n\nGHz third harmonic superconducting cavities have been used to increase the peak bunch current and to compensate for non-linear distortions in the longitudinal phase space due to sinusoidal 1.3 GHz accelerating cavity voltage (1). The power coupler plays a crucial role in efficiently extracting the power from the superconducting cavity without degrading the cavity performance. In this work, a new power coupler design was optimized for the 3.9-GHz superconducting cavity, which will be used in the Fermilab upgrade project (2). \n\nThe traditional coaxial and waveguide power couplers are widely used to couple power from superconducting cavity to the external load but they have limitations, such as low power coupling efficiency, high insertion loss, and low power handling capability. In this paper, a new design of a hybrid power coupler is presented which combines the advantages of both coaxial and waveguide power couplers. In the hybrid power coupler, the coaxial power coupler is used to couple power from the superconducting cavity to the waveguide and then the waveguide is used to couple power to the external load. \n\nThe simulations were performed using CST Microwave Studio to design and optimize the hybrid power couler for the 3.9-GHz superconducting cavity. The simulation results show that the power coupling efficiency is more than 95% and the insertion loss is less than 0.5 dB. The power handling capability of the power couler is also very high. The simulated results are compared with the experimental results of the traditional coaxial and waveguide power couler. The result shows that the power couler designed in this paper can effectively extract the power from the 3.9-GHz superconducting cavity without degrading the cavity performance.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 135,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: SIMULATIONS AND OPTIMIZATIONS OF A NEW POWER COUPLER FOR 3.9-GHZ SUPERCONDUCTING CAVITIES AT FERMILAB*\n\nBegin with: \"GHz third harmonic superconducting cavities have been used to increase the peak bunch current and to compensate for non-linear distortions in the longitudinal phase space due to sinusoidal 1.3 GHz accelerating cavity voltage (1). The power coupler\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "**Effect of PT-Symmetric Operator on Coherence Under the Non-Markovian Environments**\n\n**Abstract:**\n\nIn this work, we mainly investigate effect of PT-symmetric operation on the dynamic behavior of the relative entropy of coherence for a two-level system within non-Markovian environments and put forward a feasible physical scheme to recover coherence by utilizing optimal PT-symmetric operator. We model the two-level system as a two-state vector system, governed by the non-Hermitian Hamiltonian with PT symmetry, and study the evolution of the coherence degree under the influence of the non-Markovian noise. The non-Markovianity is introduced by using the non-exponential decay of the correlation function. We find that, the PT-symmetric operation does not only suppress the noise induced decoherence but also improve the resilience of the two-state vector system to the non-Markovian noise, leading to the enhancement of the coherence degree in the time evolution process. Furthermore, we show that, the optimal PT-symmetric operator can be obtained by the optimizing the parameter in the PT-symmetric Hamiltonian to suppress the noise induced decoherence, and put forward a feasible physical scheme to achieve the optimal PT-symmetric operation. Our results provide a useful approach to recover the coherence in the two-state vector system in non-Markovian environment, which is helpful to the study of the dissipationless process in the quantum system.\n\n**Key words:** PT-symmetric, non-Markovian environment, relative entropy of coherence, two-state vector system",
+      "processed_text": "**Effect of PT-Symmetric Operator on Coherence Under the Non-Markovian Environments**\n\n**Abstract:**\n\nIn this work, we mainly investigate effect of PT-symmetric operation on the dynamic behavior of the relative entropy of coherence for a two-level system within non-Markovian environments and put forward a feasible physical scheme to recover coherence by utilizing optimal PT-symmetric operator. We model the two-level system as a two-state vector system, governed by the non-Hermitian Hamiltonian with PT symmetry, and study the evolution of the coherence degree under the influence of the non-Markovian noise. The non-Markovianity is introduced by using the non-exponential decay of the correlation function. We find that, the PT-symmetric operation does not only suppress the noise induced decoherence but also improve the resilience of the two-state vector system to the non-Markovian noise, leading to the enhancement of the coherence degree in the time evolution process. Furthermore, we show that, the optimal PT-symmetric operator can be obtained by the optimizing the parameter in the PT-symmetric Hamiltonian to suppress the noise induced decoherence, and put forward a feasible physical scheme to achieve the optimal PT-symmetric operation. Our results provide a useful approach to recover the coherence in the two-state vector system in non-Markovian environment, which is helpful to the study of the dissipationless process in the quantum system.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 117,
+        "completion_tokens": 314
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Effect of PT-Symmetric Operator on Coherence Under the Non-Markovian Environments\n\nBegin with: \"In this work, we mainly investigate effect of PT-symmetric operation on the dynamic behavior of the relative entropy of coherence for a two-level system within non-Markovian environments and put forward a feasible physical scheme to recover coherence by utilizing optimal\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "**Title:** The Sel1L-Hrd1 Endoplasmic Reticulum-Associated Degradation Complex Manages a Key Checkpoint in B Cell Development\n\n**Abstract:**\n\nEndoplasmic reticulum (ER)-associated degradation (ERAD) is a principal mechanism that targets ER-associated proteins for cytosolic proteasomal degradation. Here, our data demonstrate a critical role for the Sel1L-Hrd1 ER-associated degradation complex in managing a key checkpoint in B cell development. The E3 ubiquitin ligase Hrd1 is known to form a functional complex with the adaptor protein Sel1L to facilitate the recognition and removal of substrates via ERAD. We show that the loss of Hrd1 in pro-B cells led to accumulation of misfolded immunoglobulin heavy chain protein (IgHC) and its aberrant assembly with light chain, leading to premature activation of pro-B cells. However, forced expression of Hrd1 in a Hrd1 deficient cell line rescued the developmental blockage caused by misassembled IHC. Importantly, the data showed that the effect of Hrd1 loss is not limited to pro-B cells but also seen in more mature B cell lines such as immature B cells and immature B cell stage transition to mature B cell. In addition to the pro-B cells loss, the effect of forced expression of Hrd1 rescued the developmental blockage in immature and mature B cells. Loss of Hrd1 was also associated with increase caspase 3 activity. This suggests that loss of the Hrd1 in pro-B cell is likely result in programmed cell death. In addition to the role in pro-B cell, it also play a role in preventing uncontrolled proliferation of B cells. Our results imply that the Sel1L-Hrd1 ERAD complex plays a crucial role in regulating the timing of B cell development by controlling the levels of correctly folded IHC. Incorrectly folded IHC has an effect in",
+      "processed_text": "**Title:** The Sel1L-Hrd1 Endoplasmic Reticulum-Associated Degradation Complex Manages a Key Checkpoint in B Cell Development\n\n**Abstract:**\n\nEndoplasmic reticulum (ER)-associated degradation (ERAD) is a principal mechanism that targets ER-associated proteins for cytosolic proteasomal degradation. Here, our data demonstrate a critical role for the Sel1L-Hrd1 ER-associated degradation complex in managing a key checkpoint in B cell development. The E3 ubiquitin ligase Hrd1 is known to form a functional complex with the adaptor protein Sel1L to facilitate the recognition and removal of substrates via ERAD. We show that the loss of Hrd1 in pro-B cells led to accumulation of misfolded immunoglobulin heavy chain protein (IgHC) and its aberrant assembly with light chain, leading to premature activation of pro-B cells. However, forced expression of Hrd1 in a Hrd1 deficient cell line rescued the developmental blockage caused by misassembled IHC. Importantly, the data showed that the effect of Hrd1 loss is not limited to pro-B cells but also seen in more mature B cell lines such as immature B cells and immature B cell stage transition to mature B cell. In addition to the pro-B cells loss, the effect of forced expression of Hrd1 rescued the developmental blockage in immature and mature B cells. Loss of Hrd1 was also associated with increase caspase 3 activity. This suggests that loss of the Hrd1 in pro-B cell is likely result in programmed cell death. In addition to the role in pro-B cell, it also play a role in preventing uncontrolled proliferation of B cells. Our results imply that the Sel1L-Hrd1 ERAD complex plays a crucial role in regulating the timing of B cell development by controlling the levels of correctly folded IHC.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 125,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: The Sel1L-Hrd1 Endoplasmic Reticulum-Associated Degradation Complex Manages a Key Checkpoint in B Cell Development.\n\nBegin with: \"Endoplasmic reticulum (ER)-associated degradation (ERAD) is a principal mechanism that targets ER-associated proteins for cytosolic proteasomal degradation. Here, our data demonstrate a critical role for the\""
+        }
+      ]
+    }
+  ]
+}

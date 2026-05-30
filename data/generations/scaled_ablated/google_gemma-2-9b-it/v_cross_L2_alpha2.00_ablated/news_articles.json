@@ -1,0 +1,576 @@
+{
+  "model_type": "instruct",
+  "model_id": "google/gemma-2-9b-it",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400,
+    "batched": true,
+    "batch_size": 4
+  },
+  "intervention": {
+    "mode": "partial_ablate",
+    "direction_path": "data/pasta_directions/google_gemma-2-9b-it/v_cross_L2.pt",
+    "layer": 2,
+    "alpha": 2.0,
+    "tag": "v_cross_L2_partial_ablate_alpha2.00_batched"
+  },
+  "domain": "news_articles",
+  "num_generations": 25,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-news_articles-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ". the how the, just one,,     down.   the the, the last,   the, and,\n\n,, the to the the.,,   the time, be, to, no, this    this, the the  , the and the first to the, a, the one to.\n\n,.   and when the the   a of the, I say!, the to to, and not, a  , I will not   , it,   the the for the,. that and the,  . This!, I have the.\n\n, the a for,  .\n\n a, the the,, and. The the,   to the for a. to the to,,, to, you,, the   a the, can it to go, the a, that the the last one is a go the the the the the.  , to be an a, in the    ,  \n\n,   to. ,    can tell you to  to   that\n\n and you, and   the. ,    the,  , we to a value the one.  the, that is an  .\n\n, to, this,  ,  \n\n a, of the,   the the,,,.\n\n , you  a  , a  to the   .   down on,    a new,., the, the.\n\n   the last the,   .  to,  . , the last,   all.  , the  , the, to are. to the, the,,  .  \n\n the the, the, the   a   the same,   the the,, what a a   the, the.\n\n, the .  .\n\n  ,   to, you the,.\n   to the the the,   all the, or the, the and I",
+      "processed_text": ". the how the, just one,,     down.   the the, the last,   the, and,\n\n,, the to the the.,,   the time, be, to, no, this    this, the the  , the and the first to the, a, the one to.\n\n,.   and when the the   a of the, I say!, the to to, and not, a  , I will not   , it,   the the for the,. that and the,  . This!, I have the.\n\n, the a for,  .\n\n a, the the,, and. The the,   to the for a. to the to,,, to, you,, the   a the, can it to go, the a, that the the last one is a go the the the the the.  , to be an a, in the    ,  \n\n,   to. ,    can tell you to  to   that\n\n and you, and   the. ,    the,  , we to a value the one.  the, that is an  .\n\n, to, this,  ,  \n\n a, of the,   the the,,,.\n\n , you  a  , a  to the   .   down on,    a new,., the, the.\n\n   the last the,   .  to,  . , the last,   all.  , the  , the, to are. to the, the,,  .  \n\n the the, the, the   a   the same,   the the,, what a a   the, the.\n\n, the .  .\n\n  ,   to, you the,.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 235,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: SpaceX was planning to land a Falcon 9 rocket at Cape Canaveral today .\nThe rocket was to attempt to land after launching a Dragon capsule .\nBut the launch has been delayed due to an issue with one of the engines .\nIt had already been delayed from earlier this week due to the same issue .\nIt will now take place at 11.18am GMT on Tuesday 6 January .\nAfter launch the first stage of their Falcon 9 rocket will attempt to touch down on a barge after taking Dragon to space .\nIt is the first ever attempt at landing a rocket on solid ground after launch .\nCEO Elon Musk said the ambitious attempt has a 50% chance of working .\nThe company ultimately wants all of its rockets to be reusable .\n\nBegin with: \"It’s set to be one of the most groundbreaking moments in humanity’s six decades of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching. But those looking forward to this pivotal moment will have to wait a little\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " a   a a,  the the and  the  all the ,  , you can the the,   for the. in the, and     will last  .   the   a the the the the to   and  the a  ,  , no a.  , so when,,, is a   the,   a,   the go the.,   the the.       the the a.\n\n last. the  , and,  , a to the the.  for one,, and   a   the   all to,  ,  the the the,   the, a,  the., and the  \n\n, , that,,   the   the,,   for the the the,   key.  , the, the- the, , a a, in the   and the it.   in the, , and the.\n ,.   , and are the  ,   the, to be a,  , a the the,   the the, the,   the ,, a a, on   one     a,   the the the  , for,.   a the the the, a a.\n\n.   the, and the,   the   the,   the it, I',   a   the the to the, when the,  , the,,  is me, I  , and   the go. the   the  , and   , the, .\n\n to the.\n,  s, I did the the, ,  ,.  ,  , to the for the,   a,  the,  the , you.\n\nFor,   , I, are now to the.  \n\n ,  , I don' for, a   the the the   and the,,,,   the, are the the right, the,",
+      "processed_text": "a   a a,  the the and  the  all the ,  , you can the the,   for the. in the, and     will last  .   the   a the the the the to   and  the a  ,  , no a.  , so when,,, is a   the,   a,   the go the.,   the the.       the the a.\n\n last. the  , and,  , a to the the.  for one,, and   a   the   all to,  ,  the the the,   the, a,  the., and the  \n\n, , that,,   the   the,,   for the the the,   key.  , the, the- the, , a a, in the   and the it.   in the, , and the.\n ,.   , and are the  ,   the, to be a,  , a the the,   the the, the,   the ,, a a, on   one     a,   the the the  , for,.   a the the the, a a.\n\n.   the, and the,   the   the,   the it, I',   a   the the to the, when the,  , the,,  is me, I  , and   the go. the   the  , and   , the, .\n\n to the.\n,  s, I did the the, ,  ,.  ,  , to the for the,   a,  the,  the , you.\n\nFor,   , I, are now to the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 235,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: British reporter Natasha Smith recounts attack in Tahrir Square .\nSmith says she was mobbed by men who \"started ripping off all my clothes\"\n\"There were several moments at which I thought she was going to die,\" a friend says .\nEgyptians stepped in to protect her and helped her escape, she says .\n\nBegin with: \"Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a British student journalist was being sexually assaulted by a mob in Tahrir Square. Natasha Smith recounted the experience on her blog and in an interview\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the the,, the.,,     the .   the a for, the the down,, how,, of.    on the a. a,,. for the one the  , I will not, it,,,,   the, the   .\n\n, the,  . the , and three    . ,  the the    , the, to a a for the the,  , that is, the the re a new,.   the last, a, a,.  the, the  ,  the     the    .   the, the    .\n\n to-,\n\n the in the.   the, the the to,, the, ,,  \n\n, or,,,, it, the the,  .   a a, the,,  , on the the, this, I have  the the  ,  ,    , the the   the to, to the for a.    , I  , the, re.  \n\n, in the,.  in.  the that to,  one a big   the the the.  the, or the the the,, the   the   the. \n\n     a  , a all,  a\n\n   the, a  that   one, the the, and the to  to   last of all the the   , , and   the the the    for a to,   a-   the the   the to a big ,  ,   the. . the\n\n a   to  . The -   a are, the, and how.    the a   the for, the  for the, and the the,   the,,,   .  a, and   one,   the the  a  , the,     a  ,  a ",
+      "processed_text": "the the,, the.,,     the .   the a for, the the down,, how,, of.    on the a. a,,. for the one the  , I will not, it,,,,   the, the   .\n\n, the,  . the , and three    . ,  the the    , the, to a a for the the,  , that is, the the re a new,.   the last, a, a,.  the, the  ,  the     the    .   the, the    .\n\n to-,\n\n the in the.   the, the the to,, the, ,,  \n\n, or,,,, it, the the,  .   a a, the,,  , on the the, this, I have  the the  ,  ,    , the the   the to, to the for a.    , I  , the, re.  \n\n, in the,.  in.  the that to,  one a big   the the the.  the, or the the the,, the   the   the. \n\n     a  , a all,  a\n\n   the, a  that   one, the the, and the to  to   last of all the the   , , and   the the the    for a to,   a-   the the   the to a big ,  ,   the. . the\n\n a   to  . The -   a are, the, and how.    the a   the for, the  for the, and the the,   the,,,   .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 235,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Unofficial Capitol Hill hearing addressed concerns over long tarmac delays .\nBill sponsored by Sen. Barbara Boxer would allow fliers to deplane after three hours .\nFormer American Airlines CEO spoke in support of three-hour limit .\nAnother witness said routine delays are more pressing issue .\n\nBegin with: \"Airline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the one, the, the to the   a     to, , a the,  the the the the, the the the       the  , the the the.\n\n to,   to,   the\n\n last the the   two   to   the, to the to,   .\n\n! to a,,, the one in a small, in the a, to the, the the    ,    ,   the the.\n\n, the the   last, the   for the..  , the the  to the, the the,.   how the re, how to, for the  to, and the of the,  the the,  \n\n, a the a the of the,  .    . the.  the,- down,.  , that- to, to,.  in.  the the       the.  the a new key.\n\n the  the,   are   a\n\n  ,   the, the, the big, and go down the the the , that the  the a the,,  , to this,   the one-, the the,   a. , in  the big,, the.\n\nThe,, the last,, the the,.   \n\n, the  , are in to, and the the. For a,, in the, so  the all.  ,     how, the a the the, , it.   this a.   the first,   .\n\n       , the,  -,    \n\n   the the, the  a,,   the a, the   . , and I  to, .  to, , and that.   the   the the,.\n\n  a the the,, the all a-  the to    , and     the     to the",
+      "processed_text": "the one, the, the to the   a     to, , a the,  the the the the, the the the       the  , the the the.\n\n to,   to,   the\n\n last the the   two   to   the, to the to,   .\n\n! to a,,, the one in a small, in the a, to the, the the    ,    ,   the the.\n\n, the the   last, the   for the..  , the the  to the, the the,.   how the re, how to, for the  to, and the of the,  the the,  \n\n, a the a the of the,  .    . the.  the,- down,.  , that- to, to,.  in.  the the       the.  the a new key.\n\n the  the,   are   a\n\n  ,   the, the, the big, and go down the the the , that the  the a the,,  , to this,   the one-, the the,   a. , in  the big,, the.\n\nThe,, the last,, the the,.   \n\n, the  , are in to, and the the. For a,, in the, so  the all.  ,     how, the a the the, , it.   this a.   the first,   .\n\n       , the,  -,    \n\n   the the, the  a,,   the a, the   . , and I  to, .  to, , and that.   the   the the,.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 235,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: DA says officers would impound cars of people who couldn't pay release fees .\nThe impound lot owner would turn cars over to cops, who sold or kept them .\nAmong those arrested are the former chief and the interim chief, who says he did no wrong .\nCNN affiliate says small department is strained by the number of arrests .\n\nBegin with: \"The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ",, and a a the re,, the for the   the., a   the the the, the, .  , and the, the-   the for the,  , the the,, the the re,.\n\n, the, the the, and the, for, to this, the the, the,, a,   the a the   a      a.\n\n the a a, I the to.    the\n\n.   the the,     the a.     a. a, the the, , to the the a, no the, that the, is the the.   last  ,    . He.     , and and the,  .\n\n the  , the   a the   in, the the   of  the    . , this the the.     a   the  ,   the,  , the,    , the the, a any,\n\n  .  ,  , ,   the.   , in the,   a a.  ,  it the  the the, , and the   the , the     the  , the  ,     to     a.\n\n the\n\n,    , the  .   in  , this,    , and the   how, the   the. the      to, the    , that    , a   a  .\n\n   the same in a    , no, this.\n\n last, the,  the, how,  ,   be    \n\n this, the  , a  .   to the the. , so the   the  . , and the  .  \n\n,  ,  \n\nI, the,  ,    ,  .  .  .  that is the, I,  , a big,   and this,  ,",
+      "processed_text": ",, and a a the re,, the for the   the., a   the the the, the, .  , and the, the-   the for the,  , the the,, the the re,.\n\n, the, the the, and the, for, to this, the the, the,, a,   the a the   a      a.\n\n the a a, I the to.    the\n\n.   the the,     the a.     a. a, the the, , to the the a, no the, that the, is the the.   last  ,    . He.     , and and the,  .\n\n the  , the   a the   in, the the   of  the    . , this the the.     a   the  ,   the,  , the,    , the the, a any,\n\n  .  ,  , ,   the.   , in the,   a a.  ,  it the  the the, , and the   the , the     the  , the  ,     to     a.\n\n the\n\n,    , the  .   in  , this,    , and the   how, the   the. the      to, the    , that    , a   a  .\n\n   the same in a    , no, this.\n\n last, the,  the, how,  ,   be    \n\n this, the  , a  .   to the the. , so the   the  . , and the  .  \n\n,  ,  \n\nI, the,  ,    ,  .  .  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 138,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: \"He has brought shame on our family,\" says suspect's sister .\n\"I don't consider Atta Ullah my brother any more,\" she adds .\nThe 23-year-old student is being sought in connection with the attack on Malala .\n\nBegin with: \"The sister of a man suspected in the shooting of Pakistani teenager Malala Yousufzai has apologized to the victim. \"Please convey a message to Malala, that I apologize for what my brother did to her,\" Rehana Haleem\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " to the-.  , the,\n\n the the the, the, a the,,    \n\n your the the     to a,\n\n   to the, the the the a the the    , and the,, the, the re,,   the    ,-e, I  . , ,    \n\n the same,,   the,,, the, the,, and the, a  , the the, the.  . a.  for the.  , the, the,  .  the, and a. a. to a   all. the,-, the    , it' the,     \n\n  , and,, a.\n\n, , no, the  , ,,   .\n, and when to down, and the.   to the         the   the the,    ,  .  the  the ,   the, how,,.  and  , it to, the to,,.  , and two and the the all  , you the that,  , the the the, the a the,.\n to the  , are the the.  , the a, a,   the  the the   the,   the ,  .\n,   the   all  , the   the, the.  ,      . A the      , and the last one.,  ,   the the     , it    ,  , that   to   the the, the.\n\n\n   here,  , the, is an,  the     \n   the,   to are to  .\n    the the  .    to.   a the, a, a,  , a big this on,  the for, in,  , the.\n\n   the   the the,, the,",
+      "processed_text": "to the-.  , the,\n\n the the the, the, a the,,    \n\n your the the     to a,\n\n   to the, the the the a the the    , and the,, the, the re,,   the    ,-e, I  . , ,    \n\n the same,,   the,,, the, the,, and the, a  , the the, the.  . a.  for the.  , the, the,  .  the, and a. a. to a   all. the,-, the    , it' the,     \n\n  , and,, a.\n\n, , no, the  , ,,   .\n, and when to down, and the.   to the         the   the the,    ,  .  the  the ,   the, how,,.  and  , it to, the to,,.  , and two and the the all  , you the that,  , the the the, the a the,.\n to the  , are the the.  , the a, a,   the  the the   the,   the ,  .\n,   the   all  , the   the, the.  ,      . A the      , and the last one.,  ,   the the     , it    ,  , that   to   the the, the.\n\n\n   here,  , the, is an,  the     \n   the,   to are to  .\n    the the  .    to.   a the, a, a,  , a big this on,  the for, in,  , the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 138,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Civilians flee North Waziristan as planes strike militants .\nMore than 250 insurgents have been killed, army says .\nThe Pakistani Taliban is among the targets .\n\nBegin with: \"More than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday. Many of the displaced civilians have moved\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the- the, the the,   an the the.\n\n the.   a a all    , the the   a   of. in the bottom, the, the, it.\n\n the. the  - this, for the  , .   for, and the one of, and, the       all in the,  a the., and this the all the, are the,   a, the the   re the are in a big the.. The.\n\n, the a  , I am to make the, a a.\n\n  , the,  no this, of  ,    , the, is the a the the    .  , the, it  , that it.,, is   two of the,  ,  , the one the a, or for to any of,      the    , a   the,  , the the.    , the.   the, the a big, to   the.  the,.   the,,,. ,  ,, we the    .\n\n and a    ,  a   to   a    , a new, the the.\n\n,  , it   \n\n.\n\n   the go, or, or.   , the the.     the re, to,,    ; this,   a this for, that you , a   ,  , the\n\n   the same, it is for the the,  .  in, the, you a new  , and for the.  . , now,, that  .  \n   the  , on the, you, a   the, and   the, and  the, a, the a, this,. .\n\n are a taxes for   the    , a  , the   the  ,  ,    ,  ,  ,",
+      "processed_text": "the- the, the the,   an the the.\n\n the.   a a all    , the the   a   of. in the bottom, the, the, it.\n\n the. the  - this, for the  , .   for, and the one of, and, the       all in the,  a the., and this the all the, are the,   a, the the   re the are in a big the.. The.\n\n, the a  , I am to make the, a a.\n\n  , the,  no this, of  ,    , the, is the a the the    .  , the, it  , that it.,, is   two of the,  ,  , the one the a, or for to any of,      the    , a   the,  , the the.    , the.   the, the a big, to   the.  the,.   the,,,. ,  ,, we the    .\n\n and a    ,  a   to   a    , a new, the the.\n\n,  , it   \n\n.\n\n   the go, or, or.   , the the.     the re, to,,    ; this,   a this for, that you , a   ,  , the\n\n   the same, it is for the the,  .  in, the, you a new  , and for the.  . , now,, that  .  \n   the  , on the, you, a   the, and   the, and  the, a, the a, this,. .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 138,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Six days after Boston Marathon bombings, thousands of runners will compete in London .\nSpecial event marked by 30 second silence, black solidarity ribbons .\nStepped-up security with increased searches and police on streets .\nOlympics 2012 good training ground for staging international sporting events .\n\nBegin with: \"Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence. Six days after\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " for ,  three the, the   your, and  in a  , I. the can  the  ,.\n\n,, know and the, the the\n\n a   the, the, in,   a the.,, a the  , I to to-, the- and-,, a the, the in  ,    a     the,.  ,, the the for the, the, you see. you.   in the a,, say the,, say,,. and the- a for the,-, and.  the last, the the a   the, in the,\n\n the that, or,   the the, can big, no,. ,, are on the, ,   the   to.\n,.\n   the-  ,     the  .   a    the  the  .   a    , the.  .   ,  , a key, the. any the.\n\n to   the, and - the are   the one.     a    the  ,  , and the, the\n\n, the,  ,   the a the     a      , the same, in-    \n\n this   the.    , - the, the the in  , is a all, the-.  the the  , and    . . , a    a-    ,  .  ,  , of a the, how,    , the   the in, a\n\n   a a  , you can , how  the the   a     a,  ,     the for, you,  - key to    the. a. , a for,, you want to be.\n\n.   .  \n\n   ,  , the,  the, the the, you to,  ",
+      "processed_text": "for ,  three the, the   your, and  in a  , I. the can  the  ,.\n\n,, know and the, the the\n\n a   the, the, in,   a the.,, a the  , I to to-, the- and-,, a the, the in  ,    a     the,.  ,, the the for the, the, you see. you.   in the a,, say the,, say,,. and the- a for the,-, and.  the last, the the a   the, in the,\n\n the that, or,   the the, can big, no,. ,, are on the, ,   the   to.\n,.\n   the-  ,     the  .   a    the  the  .   a    , the.  .   ,  , a key, the. any the.\n\n to   the, and - the are   the one.     a    the  ,  , and the, the\n\n, the,  ,   the a the     a      , the same, in-    \n\n this   the.    , - the, the the in  , is a all, the-.  the the  , and    . . , a    a-    ,  .  ,  , of a the, how,    , the   the in, a\n\n   a a  , you can , how  the the   a     a,  ,     the for, you,  - key to    the. a. , a for,, you want to be.\n\n.   .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 138,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: German Marcel Siem wins the Open de France at Le Golf National .\nSiem holds off late charge from Francesco Molinari to win by one shot .\nLee Westwood fine after an injury scare during Saturday's round .\nRookie Ted Potter becomes PGA Tour's sixth first-time winner of 2012 .\n\nBegin with: \"Marcel Siem held his nerve amid a late charge from Francesco Molinari to take the Open de France -- his first European Tour title for eight years. The German finished on eight-under-par, one shot better than Molinari who recorded\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "  re the   for a,,  , you,,. , that for     the the   the  , the  .\n   a  the down the the, the, the   , just. so long a,, the only the, is, the a this, it, or,   for the a   a a, the first one. for the time a, a, I can say, you, the bottom, and I can the   a       , the the.\n\n, for the last last,, the. This is the all, this an, no, I am. a  , you do, -   last, the the, the the   , and   the\n\n,   it is  the top to are the on the, this the, the, how,  , the the the the,  , this,  . , this the a the, is the the to the,   can  ,   to   all the. The   the, is the a.  one, I do,  , a.\n\n  , the the a, it a   the, of the the ,  , I are the the   all the.,. I will tell a the. This are a-, this, when the   two.  , an,.     the\n\n, . .   that, the.\n\n the the  , you to, on   the on   , now  , the, of the the\n\n,  , the a, you   the the one, and  ,  ,  for the, no, a the   a  , no.\n\n, a  ,   big for, and you.\n\n, too.   a , say, and the, it  .  a.\n    the,   the a.  ,    the  a, you see the",
+      "processed_text": "re the   for a,,  , you,,. , that for     the the   the  , the  .\n   a  the down the the, the, the   , just. so long a,, the only the, is, the a this, it, or,   for the a   a a, the first one. for the time a, a, I can say, you, the bottom, and I can the   a       , the the.\n\n, for the last last,, the. This is the all, this an, no, I am. a  , you do, -   last, the the, the the   , and   the\n\n,   it is  the top to are the on the, this the, the, how,  , the the the the,  , this,  . , this the a the, is the the to the,   can  ,   to   all the. The   the, is the a.  one, I do,  , a.\n\n  , the the a, it a   the, of the the ,  , I are the the   all the.,. I will tell a the. This are a-, this, when the   two.  , an,.     the\n\n, . .   that, the.\n\n the the  , you to, on   the on   , now  , the, of the the\n\n,  , the a, you   the the one, and  ,  ,  for the, no, a the   a  , no.\n\n, a  ,   big for, and you.\n\n, too.   a , say, and the, it  .  a.\n    the,   the a.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 230,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: South African-born Elon Musk responded to comments by Lisa Simpson .\nHe appeared in the latest episode of The Simpsons on 25 January .\nIn it Lisa cites a potential conflict of interest between his electric car company Tesla and space exploration company SpaceX .\n'For a man who likes electric cars he sure burns a lot of rocket fuel,' she said .\nBut responding to the jibe on Twitter, Mr Musk said rockets were the only way to currently reach orbit .\nHe said other methods like electric power were simply 'impossible'\nAnd other proposals like space elevators or railguns were not technologically feasible yet .\n\nBegin with: \"‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humourously citing a supposed conflict of interest between his companies Tesla and\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " have a a, the,,. the, the.  ,. the in the the,,   the, .  ,  the, or the the the,., of,    , what.\n\n and    , the, the    ,     and the, the , no,,  the the   a     the in.       the, that the    ,     and - re re, the.\n\n a a, can a the the the the can be a   , when,   the the, it looks how,, the  , .\n\n it and    ,  , you\n\n   the the, , and can   that is are   this, the the  .     a the the.   a new this,   the to the  and, the,  . , ,  \n\n,  , a the the   the, and all the   a   ,  , the   a.  \n\nWell, the  , ,   the.  the\n\n  in the,  ,   and a the,   the     , and. ,   the a, ,   a   a   the,  , ,   . So, to the last,,   that the the  \n\n on the   about the one   to,, the the the. the   .     a    a,   the the, so the  .  \n\n  , no.    ,   .  \n\n   a, to, this, the is the, are  .  the,,\n\n what a,  \n\n.  all,\n\n  the bottom, I will be and, no, how  , I.  .\n\n I ,  on, the.  the a.  ,\n\n, the   a,   look",
+      "processed_text": "have a a, the,,. the, the.  ,. the in the the,,   the, .  ,  the, or the the the,., of,    , what.\n\n and    , the, the    ,     and the, the , no,,  the the   a     the in.       the, that the    ,     and - re re, the.\n\n a a, can a the the the the can be a   , when,   the the, it looks how,, the  , .\n\n it and    ,  , you\n\n   the the, , and can   that is are   this, the the  .     a the the.   a new this,   the to the  and, the,  . , ,  \n\n,  , a the the   the, and all the   a   ,  , the   a.  \n\nWell, the  , ,   the.  the\n\n  in the,  ,   and a the,   the     , and. ,   the a, ,   a   a   the,  , ,   . So, to the last,,   that the the  \n\n on the   about the one   to,, the the the. the   .     a    a,   the the, so the  .  \n\n  , no.    ,   .  \n\n   a, to, this, the is the, are  .  the,,\n\n what a,  \n\n.  all,\n\n  the bottom, I will be and, no, how  , I.  .\n\n I ,  on, the.  the a.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 230,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Prof Gloria Moss claims that men and women see things differently .\nShe said that men, as hunters, have better rotational and spacial vision .\nIn her book, Prof Moss claims that men tend to be more colour blind .\nMen like paintings that are darker and have fewer colours .\nWomen prefer colourful paintings featuring people and plants .\nOnly one painting at the National Gallery is by a woman .\n\nBegin with: \"Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic. And the fact early men and women took on the different roles of hunters and gatherers may explain why just one painting\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-10",
+      "sample_id": 10,
+      "original_prefix_id": 10,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the  . , the the the the   a,, the key-,,, the the  ,.\n\n the one   this in ,    ;-   the  ,   the first down, the the, when    a and to the the first a a, I say,, the, one to the-  -- how the a,, -  -, of an for,, , the  , can ,   , and the the this , the.\n\n the a, the the   the     the to be,  , the the, the   the   ,\n\n re the the the to,  the,  the.   this to, for are the the   and , . ,.  the, you the,  ,  , the a,   the one to,, a, when a big. So the\n\n,   a   a,  ,  . a, the the re, the for a  , I key- the for the the,,  the the to a the, the, and a, for.   for the , and.  , that it, you,  a   the this.\n\n, you.   the , in, the go,    that,, in the the,   the, a that,   any of to   the,\n\n.  the the, and the,,   a   the and  , the,   , that all these,   , the the,, of that   a,  have a   to, , the   the the that  .\n . , the are, in   to  , , a   the can. ,   the the to   the  , the     and are you to    , and the   the  the  , no a, that, or all to  ",
+      "processed_text": "the  . , the the the the   a,, the key-,,, the the  ,.\n\n the one   this in ,    ;-   the  ,   the first down, the the, when    a and to the the first a a, I say,, the, one to the-  -- how the a,, -  -, of an for,, , the  , can ,   , and the the this , the.\n\n the a, the the   the     the to be,  , the the, the   the   ,\n\n re the the the to,  the,  the.   this to, for are the the   and , . ,.  the, you the,  ,  , the a,   the one to,, a, when a big. So the\n\n,   a   a,  ,  . a, the the re, the for a  , I key- the for the the,,  the the to a the, the, and a, for.   for the , and.  , that it, you,  a   the this.\n\n, you.   the , in, the go,    that,, in the the,   the, a that,   any of to   the,\n\n.  the the, and the,,   a   the and  , the,   , that all these,   , the the,, of that   a,  have a   to, , the   the the that  .\n . , the are, in   to  , , a   the can.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 230,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Gavin DeGraw's fourth full-length album is called \"Sweeter\"\nHalf the album is weighed down by painfully mopey, girl-done-left-me blues .\n\"Sweeter\" comes out on September 20 .\n\nBegin with: \"(EW.com) -- You know that part in this pop-soul smoothie's songs where the verse launches skyward into the chorus, Gavin DeGraw makes that I'm-pounding-these-piano-keys-so-hard! face, and\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-11",
+      "sample_id": 11,
+      "original_prefix_id": 11,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the the  the to to  , the, the  . the    .   the the   the  , and    the\n\n ,   a the the, no, a    the the  .  to the,,,   the the to., the,  , and how to   , or to a , how,,,.. that is to the, three    a good of the. that a   the a   the   to be a   to, the., when you know,   it the  and,    , I am going.\n\n,  . the the, and you a,,   the a the last one to   a, I love the,, you a a,,  the, this are, and to to,  , this is the, the the, are. .\n\n, the that the    the the  .  for-  ,    the  .  , ,, to    , and.\n\n, this is the, and. a.-. , I    , the the, the for in, and you, the a an      to     two re, a re the, this the right.\n\n the,,     to, is and   the   the to the  , and a, and it,.  \n\n,  , the,. A the,  , this to,, a this to,  . That value, that  , for   in, the.\n\n,   a.\n\n  a  , the,   the   a a  re, and   the on  ,   the ,   the on the.\n\n.\n\n the to this, a, of the , are.  \n\n    , a, you, or the, the for-  .  . \n\n,  ,, a\n\n.  no",
+      "processed_text": "the the  the to to  , the, the  . the    .   the the   the  , and    the\n\n ,   a the the, no, a    the the  .  to the,,,   the the to., the,  , and how to   , or to a , how,,,.. that is to the, three    a good of the. that a   the a   the   to be a   to, the., when you know,   it the  and,    , I am going.\n\n,  . the the, and you a,,   the a the last one to   a, I love the,, you a a,,  the, this are, and to to,  , this is the, the the, are. .\n\n, the that the    the the  .  for-  ,    the  .  , ,, to    , and.\n\n, this is the, and. a.-. , I    , the the, the for in, and you, the a an      to     two re, a re the, this the right.\n\n the,,     to, is and   the   the to the  , and a, and it,.  \n\n,  , the,. A the,  , this to,, a this to,  . That value, that  , for   in, the.\n\n,   a.\n\n  a  , the,   the   a a  re, and   the on  ,   the ,   the on the.\n\n.\n\n the to this, a, of the , are.  \n\n    , a, you, or the, the for-  .  . \n\n,  ,, a\n\n.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 230,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Ann Milne was diagnosed with terminal liver cancer in 2008 .\nIt came five years after she had fought breast cancer and had a mastectomy .\nShe opted for chemo to give her longer with her children and grandchildren .\nIn 2009 she was called to hospital because her condition hadn't changed .\nDoctors shared the good news that the mother-of-four was cancer free .\nBut her elation was quickly replaced with anger when doctors said the 'tumours' found on her liver were not cancer, but harmless lesions .\nFormer receptionist suffered hair loss, vomiting and fatigue during chemo .\nShe now walks with a stick after suffering permanent muscle damage .\nMrs Milne has agreed a six-figure compensation pay out with the NHS trust .\n\nBegin with: \"A grandmother endured six gruelling months of chemotherapy after being diagnosed with terminal liver cancer, only to discover she never had the disease. Ann Milne chose to have the treatment to prolong her life in 2008 after doctors told her they had\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-12",
+      "sample_id": 12,
+      "original_prefix_id": 12,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the, the to, and, the    ;, and the right,,,-  ,     to       the,, the down the a,, the the the   to the right key key,. the  the a-       a, noes of the,  . a   down,   , . the the  the the to the, I can you,   an the, the for.  \n\n,, a the the.   and  ,     the all the the the to,- to-, in a, or,, the are in  for the. , are the only a and a   one.\n\n to the .   in a   the a the,   the the, can' the.\n\n, for a bigger-    , and this,   the is the the a, the    , and to ,  , the- for the, or the the, the.\n\n, and the that to  ,  the a to the,  .    \n\n the, ,.   a, I don, the the the    .   down, a some the   the   the   one. a, the-  , and I, and to the, you the one  , it   to, are there,   the the      . This the   the,   the. ,  the,  , how   to  the,  ,   ,   for, the the, the.   of, the a  , that.\n\n  the   the the  , this and to the,   the the the, and   to the,, the. The . ,  , and and the the,   two big, and the, the.\n\n the the, the, and the, so, and one, and the the,   a re the,   ",
+      "processed_text": "the, the to, and, the    ;, and the right,,,-  ,     to       the,, the down the a,, the the the   to the right key key,. the  the a-       a, noes of the,  . a   down,   , . the the  the the to the, I can you,   an the, the for.  \n\n,, a the the.   and  ,     the all the the the to,- to-, in a, or,, the are in  for the. , are the only a and a   one.\n\n to the .   in a   the a the,   the the, can' the.\n\n, for a bigger-    , and this,   the is the the a, the    , and to ,  , the- for the, or the the, the.\n\n, and the that to  ,  the a to the,  .    \n\n the, ,.   a, I don, the the the    .   down, a some the   the   the   one. a, the-  , and I, and to the, you the one  , it   to, are there,   the the      . This the   the,   the. ,  the,  , how   to  the,  ,   ,   for, the the, the.   of, the a  , that.\n\n  the   the the  , this and to the,   the the the, and   to the,, the. The . ,  , and and the the,   two big, and the, the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 147,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Sage Lovell, 16, of Marietta, was elected to Walton High School's homecoming court among four other women chosen out of 50 nominees at the school .\nLovell received support from her peers and received a round of applause when her election was announced .\nLovell began her transformation in her early teen years after realizing she was attracted to boys .\n\nBegin with: \"Elected: Sage Lovell, 16, of Marietta, was elected to her high school's homecoming court in an election believed to be the first of its kind in the state . An openly transgender Georgia teen was elected to\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-13",
+      "sample_id": 13,
+      "original_prefix_id": 13,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ", , how a      this  , the the that the, or..   the the a  ,   the.  the the the  , .\n   one of,  the a.\n\n, in the,.  to. you have and.     to.   the for     the the, to, or   a,    to the down and are a-, and the the the,\n\n.   all, you   the,     .  .    the   the , I can,  the, , re,   the the.   the in a little, on, are a   the the the,   .\n\n it.\n\n re to a re,   in   and   the the the re.   the one-, the,   a,   and\n\n.\n\n, how, when we are.  the are the,.\n\n   a, the, you.  .   the  , and the,,.  the the   , you    , or the the.\n\n,   the the,, and go on, the the, the one how the the\n\n to,   the for. , I don to the,  .\n\n  .   a  , are  of    all this, the, and   two.\n\n.  the  , you   that the the\n\n  are very   a  , how. , and,, , a  , and how, the, the the a a   the, for-,,, that ,\n\nThe   to , if you,, so  , and , it- , a,   and the,   . The   a    ,    o, you do what,,, the  , how do a. any   a  the, the the   the, of of.\n\n",
+      "processed_text": ", , how a      this  , the the that the, or..   the the a  ,   the.  the the the  , .\n   one of,  the a.\n\n, in the,.  to. you have and.     to.   the for     the the, to, or   a,    to the down and are a-, and the the the,\n\n.   all, you   the,     .  .    the   the , I can,  the, , re,   the the.   the in a little, on, are a   the the the,   .\n\n it.\n\n re to a re,   in   and   the the the re.   the one-, the,   a,   and\n\n.\n\n, how, when we are.  the are the,.\n\n   a, the, you.  .   the  , and the,,.  the the   , you    , or the the.\n\n,   the the,, and go on, the the, the one how the the\n\n to,   the for. , I don to the,  .\n\n  .   a  , are  of    all this, the, and   two.\n\n.  the  , you   that the the\n\n  are very   a  , how. , and,, , a  , and how, the, the the a a   the, for-,,, that ,\n\nThe   to , if you,, so  , and , it- , a,   and the,   . The   a    ,    o, you do what,,, the  , how do a. any   a  the, the the   the, of of.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 147,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Wi-Fi at airports, planes, hotels may be risky, but no more than at coffee shops .\nStudy: Loss of a single laptop costs a company $49,246 .\nUse encrypted disks to keep your information safe, experts say .\n\nBegin with: \"With Wi-Fi access at airports, hotels, and aboard airplanes, business travelers don't have to look very hard for a wireless Internet connection. Wi-Fi hotspots at airports may put users' computers at risk, but no more so than at coffee\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-14",
+      "sample_id": 14,
+      "original_prefix_id": 14,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the a and the to    the   the the re are many people,., the,,  , it , the for the  , I are a to the,   the, the a     to,     have to, you to ,, the last of,,, a  , to to    the  ,  . ,  .\n\n the to, is a small,     the, the.- the the. ,,.\n\n the, a     \n\n to for, I' the   the, the. the right.\n\n.  a new, the  , and,,  .\n\n to, the are. I.   and the a, no., are in the    , and   to and and the the   the a,  the   to,  .\n\n   are on, no the,.  ,    ,    , and for a  , a-,     a little,,   the the   the  . , the, the    the.  the,   to - the, the.\n, in a, in a, the,,  -.  the in  , and all, the are a. .  the. .\n\n   . .  ,    , the,, this a.\n\n, the in the, that and,       a the to the   a the  , on   and   the  any, the.\n\n,  , you are and your to   to any,,   say  ,.  , a.  the the  , and the the, , on the      ,  , it, the to  .  , for the re the,, or   the   a little,    .\n\n, and your,   to, the  .   the, too the the  \n\n",
+      "processed_text": "the a and the to    the   the the re are many people,., the,,  , it , the for the  , I are a to the,   the, the a     to,     have to, you to ,, the last of,,, a  , to to    the  ,  . ,  .\n\n the to, is a small,     the, the.- the the. ,,.\n\n the, a     \n\n to for, I' the   the, the. the right.\n\n.  a new, the  , and,,  .\n\n to, the are. I.   and the a, no., are in the    , and   to and and the the   the a,  the   to,  .\n\n   are on, no the,.  ,    ,    , and for a  , a-,     a little,,   the the   the  . , the, the    the.  the,   to - the, the.\n, in a, in a, the,,  -.  the in  , and all, the are a. .  the. .\n\n   . .  ,    , the,, this a.\n\n, the in the, that and,       a the to the   a the  , on   and   the  any, the.\n\n,  , you are and your to   to any,,   say  ,.  , a.  the the  , and the the, , on the      ,  , it, the to  .  , for the re the,, or   the   a little,    .\n\n, and your,   to, the  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 147,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: More than 1.5 million people have been infected in the U.S.\nSymptoms typically develop between three and 14 days after being bitten .\nHigh fever, headaches, body aches and severe fatigue are a few symptoms .\nBest way to stop the spread of West Nile virus is through prevention .\n\nBegin with: \"All Lyle Petersen wanted to do was get his mail. Lyle Petersen,  a CDC expert who was infected with West Nile virus, says, \"it will ruin your summer.\" In the time it took him to walk down his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-15",
+      "sample_id": 15,
+      "original_prefix_id": 15,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the the a   a,,., this,, the a the, you can see it, you the one. the.., and to,   the to the, that    this a all,\n\n here the last, to   the, a  the    , for    ,  the this. , in the,,  , and,     a the the,,, the, the the   the  , I a   , a, just the,. . the the    ,  the     an all the, you a a the., I can not the  , and the a. He' a the   all,, the  , the,   the, this-.\n\n the, and   the,,    ,  the   and the the   re, I, and  ,   the,.   , I say and.   key. , a.  , to, of the, for,\n\n   the same,, the  the, the,,. the   the. , in the, the,.   ,,\n\n    \n\n  , I the the  the re, we;, what   the the, it the the, ,  the the.\n\n,  ,   the the.\n\n, the on  , the the.  , the re for the a, are, all   all.  the and the    , the the, and a , a  , ,. a   the,. the to the go,, in the   the , that will for, and the for the the  , and   to in a, and the can a the   an, all, , the  .  ,  \n\n.   a the,   to a, a in the,   a, \n\n  , the the,\n\n  a.  ",
+      "processed_text": "the the a   a,,., this,, the a the, you can see it, you the one. the.., and to,   the to the, that    this a all,\n\n here the last, to   the, a  the    , for    ,  the this. , in the,,  , and,     a the the,,, the, the the   the  , I a   , a, just the,. . the the    ,  the     an all the, you a a the., I can not the  , and the a. He' a the   all,, the  , the,   the, this-.\n\n the, and   the,,    ,  the   and the the   re, I, and  ,   the,.   , I say and.   key. , a.  , to, of the, for,\n\n   the same,, the  the, the,,. the   the. , in the, the,.   ,,\n\n    \n\n  , I the the  the re, we;, what   the the, it the the, ,  the the.\n\n,  ,   the the.\n\n, the on  , the the.  , the re for the a, are, all   all.  the and the    , the the, and a , a  , ,. a   the,. the to the go,, in the   the , that will for, and the for the the  , and   to in a, and the can a the   an, all, , the  .  ,  \n\n.   a the,   to a, a in the,   a, \n\n  , the the,\n\n  a.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 147,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Maria Sharapova beats Caroline Wozniacki to reach her fourth Miami Masters final .\nAgnieszka Radwanka defeats Marion Bartoli in match interrupted by light failures .\nWorld No. 1 Novak Djokovic reaches men's semifinals after beating David Ferrer .\nDjokovic's last four opponent will be Juan Monaco, who beat U.S. No. 1 Mardy Fish .\n\nBegin with: \"Former world No. 1s Maria Sharapova and Caroline Wozniacki lit up the court at the Miami Masters on Thursday, but the lights went out on Agnieszka Radwanska and Marion Bartoli in the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-16",
+      "sample_id": 16,
+      "original_prefix_id": 16,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the in,, the for, the,   the a the of   all  , a no, the a  , the to   the.    this the   down,,, this to, the\n\n the one to the the,, the last the a, you the, you.   the the  .     how the     .  the all, last. how for, of the the. ,    , in, all, in a   the the, and the, the in to the, to , and the,,,,.\n, and   the first, the  , the, no one to,, to the the, or the,,  ., and it,. .  the   the, the, you. the. the one a,  the the,, a.\n\n  , you to  ,  the  , I   the the, and.    , and   and,, to    the  , and   the  \n\n, the one of.  , a a.  \n\n, this a   , is, all for the, a   a  the, the down the, of the,, the  ,   .  the the, a good a all the a the, the this all the,   re, the one of  , and,. , a  , the the. a the the, and a   to   the, and last..\n\n in a, or   the on the,,, and  , on the, I know that to the for the. to the,,  .\n\n,  , the and the,   the the .\n\n   the,  , you the.   , a  .  .  a, cane, the, to- the the,.  ,  .  to the the the, , a.\n\n  ",
+      "processed_text": "the in,, the for, the,   the a the of   all  , a no, the a  , the to   the.    this the   down,,, this to, the\n\n the one to the the,, the last the a, you the, you.   the the  .     how the     .  the all, last. how for, of the the. ,    , in, all, in a   the the, and the, the in to the, to , and the,,,,.\n, and   the first, the  , the, no one to,, to the the, or the,,  ., and it,. .  the   the, the, you. the. the one a,  the the,, a.\n\n  , you to  ,  the  , I   the the, and.    , and   and,, to    the  , and   the  \n\n, the one of.  , a a.  \n\n, this a   , is, all for the, a   a  the, the down the, of the,, the  ,   .  the the, a good a all the a the, the this all the,   re, the one of  , and,. , a  , the the. a the the, and a   to   the, and last..\n\n in a, or   the on the,,, and  , on the, I know that to the for the. to the,,  .\n\n,  , the and the,   the the .\n\n   the,  , you the.   , a  .  .  a, cane, the, to- the the,.  ,  .  to the the the, , a.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 160,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: NEW: President says he will continue talks with Russia's president, while keeping military ready .\nNEW: Obama says he is sending Secretary of State John Kerry to meet with Russian foreign minister .\nSyria will sign on to chemical weapons accord, Foreign Minister Walid Moallem says .\nSyria also prepared to disclose chemical weapons, discontinue production, he says .\n\nBegin with: \"As a Russian proposal to strip Syria of its chemical weapons began to take shape, the White House eased off the gas on Tuesday in its drive for congressional approval to strike the Middle Eastern country. President Barack Obama asked congressional leaders to delay votes on\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-17",
+      "sample_id": 17,
+      "original_prefix_id": 17,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "., a the the, how the, for for,,, that- the, on on top of of and a all a the all of,, and the to the the the the,  the  , and  .    .  ,   to the     last. the  , the the.\n\n, or to the, the, and a a the top, when the, and are a the,  , the,   and the,, the.\n\n, the, and a few the,,, the the, how a the and the a a, and the the  . the.  , how, that the a a, the for  .\n that  the  , the\n\n the to.   down.   \n\n this   to-, it the, the, or to the   the   the,  , and the,, all the, the all, this the the.  \n\nHe the.  ,  .   the  a the the is the the,  ,   and the,  . the,  .  last, in the, the the.   of the, what   the  , I key, this  the that. The to down, the, the   a  ,  ,   this a long a. ,  ,  .\n\n the.  \n, the, the, you, this,  ,   a  , you say it, the the the the  for to,   a, that the the  a, the, no one of the,   last time. . to the a for the the, the,   , and the  , a,  , to the  , the, and I, just to the   a  , the  .\n\n.\n\n  the  ,   a,  a the  . a  .   an,   a   to  .\n  , an  ",
+      "processed_text": "., a the the, how the, for for,,, that- the, on on top of of and a all a the all of,, and the to the the the the,  the  , and  .    .  ,   to the     last. the  , the the.\n\n, or to the, the, and a a the top, when the, and are a the,  , the,   and the,, the.\n\n, the, and a few the,,, the the, how a the and the a a, and the the  . the.  , how, that the a a, the for  .\n that  the  , the\n\n the to.   down.   \n\n this   to-, it the, the, or to the   the   the,  , and the,, all the, the all, this the the.  \n\nHe the.  ,  .   the  a the the is the the,  ,   and the,  . the,  .  last, in the, the the.   of the, what   the  , I key, this  the that. The to down, the, the   a  ,  ,   this a long a. ,  ,  .\n\n the.  \n, the, the, you, this,  ,   a  , you say it, the the the the  for to,   a, that the the  a, the, no one of the,   last time. . to the a for the the, the,   , and the  , a,  , to the  , the, and I, just to the   a  , the  .\n\n.\n\n  the  ,   a,  a the  . a  .   an,   a   to  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 160,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Ricky Spicer says his voice from 1970 song 'Bound' is heard on West's 'Bound 2'\nThe credits for the new song say the snippet was licensed from two music companies .\nSpicer seeks unspecified damages .\n\nBegin with: \"The lead singer of a 1970 tune that is sampled on a new Kanye West song has filed suit, alleging the rapper used the snippet without his permission. Ricky Spicer was 12 when he became the lead singer for a group called the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-18",
+      "sample_id": 18,
+      "original_prefix_id": 18,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " a the re, the the and for the  , and a the   the to, the top the the,, are   the in    \n\n. you.\n\n.\n\n, the,, your   the     the   to the the  ,   re., all of.\n\n the the all, the are\n\n in-\n\n    , and, the   to-, you,   of a the,  last. the.  , the of the the.  .\n\n these the  , I have a the    . , the  , the,  , , you. , the, the top, for the the, you can    this time, to,.  , ,, the, can , or the the,,.\n\n this   the the to, , ,, and have the the a, or, ,  ,    .\n\n, when,, the   for a,   to,, the.  , and, the, and when the,  , I am here,  , and, and I, are to the the  the a , this, the, the the.\n\n a\n\n, that, no,  , and the,   to, and,,.  , the bottom,\n\n  ,  , the top.   the,, the   a  , I want a.\n\n  ,,   a, that to. The, the, or re a a  , and the to the,   .  to, the,  , a- and for the the  ,   to  to the of the,.   the,   ,  , that.   the, and. and  .\n\n, the,, and the, or   the   the, to be a   of  ,  , and, or  and    , the time,   can.  ",
+      "processed_text": "a the re, the the and for the  , and a the   the to, the top the the,, are   the in    \n\n. you.\n\n.\n\n, the,, your   the     the   to the the  ,   re., all of.\n\n the the all, the are\n\n in-\n\n    , and, the   to-, you,   of a the,  last. the.  , the of the the.  .\n\n these the  , I have a the    . , the  , the,  , , you. , the, the top, for the the, you can    this time, to,.  , ,, the, can , or the the,,.\n\n this   the the to, , ,, and have the the a, or, ,  ,    .\n\n, when,, the   for a,   to,, the.  , and, the, and when the,  , I am here,  , and, and I, are to the the  the a , this, the, the the.\n\n a\n\n, that, no,  , and the,   to, and,,.  , the bottom,\n\n  ,  , the top.   the,, the   a  , I want a.\n\n  ,,   a, that to. The, the, or re a a  , and the to the,   .  to, the,  , a- and for the the  ,   to  to the of the,.   the,   ,  , that.   the, and. and  .\n\n, the,, and the, or   the   the, to be a   of  ,  , and, or  and    , the time,   can.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 160,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Interior Minister Arseny Avakov said tanks entered Ukraine through checkpoint controlled by pro-Russian separatists in the Luhansk region .\nRussia has denied aiding the separatists, .\nwho have taken control of several towns and cities in mainly .\nRussian-speaking east Ukraine .\nPresident Vladimir Putin has also promised to tighten controls at borders .\n\nBegin with: \"Russia was accused of sending tanks into Ukraine for the first time yesterday while the West’s attention was diverted by the chaos in Iraq. The development threatens to destroy the tentative peace process just when the US and EU had hoped Vladimir Putin had agreed to ease\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-19",
+      "sample_id": 19,
+      "original_prefix_id": 19,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the on for the one, the, the first to to, so\n\n - it, the the, is the.   the the, the.   the  ,, and go.\n\n and.\n\n to the   to   the, the to. for  , for a  , and is , how, it' the the the  ,   the   for this,  ,  , the for , this the the     to,.\n\n, , the is, are, the and  ,   a all of the the  the, the the,   the last.  .  , a\n\n.  , or, and one    and of the, you.  , the re, that a the    , it will the,.\n\n a   to  , the  ,   down.   , and are.  and   the   the, the  , you the, to the,.   a the, no, this the    a,      \n\n the on the, the, you say, the  , the,   last   the,    that will a  ,  ,, you say   the a a the,  , the, it   a.  \n\n to-    , you    ,  a  .  to the to the the all, is the, it is the  , ,, so,   , \n\n and  ,  , you, the,.   \n\n, to   and a  ,  , and the    for.  last the the, on,   the     , this.\n\n   the a the,  , the the.   a.\n\n, of    .   , to,.  ,   the, you,  and , and  , to,  , and the,    .      are   the the the ,",
+      "processed_text": "the on for the one, the, the first to to, so\n\n - it, the the, is the.   the the, the.   the  ,, and go.\n\n and.\n\n to the   to   the, the to. for  , for a  , and is , how, it' the the the  ,   the   for this,  ,  , the for , this the the     to,.\n\n, , the is, are, the and  ,   a all of the the  the, the the,   the last.  .  , a\n\n.  , or, and one    and of the, you.  , the re, that a the    , it will the,.\n\n a   to  , the  ,   down.   , and are.  and   the   the, the  , you the, to the,.   a the, no, this the    a,      \n\n the on the, the, you say, the  , the,   last   the,    that will a  ,  ,, you say   the a a the,  , the, it   a.  \n\n to-    , you    ,  a  .  to the to the the all, is the, it is the  , ,, so,   , \n\n and  ,  , you, the,.   \n\n, to   and a  ,  , and the    for.  last the the, on,   the     , this.\n\n   the a the,  , the the.   a.\n\n, of    .   , to,.  ,   the, you,  and , and  , to,  , and the,    .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 160,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: The images are part of the shortlist for the Society of Biology's Photographer of the Year award .\nThere are nine photos taken by adults competing for a £1,000 prize run by the London-based society .\nThere were more than 800 entries, with photographs allowed to focus on anything in biology .\nThe winners will be announced on Tuesday 14 October at the King’s Fund in London .\n\nBegin with: \"The shortlist for the Society of Biology’s Photographer of the Year reveal has been revealed - and it includes a stunning array of images from across the natural world. In the competition there are two categories, the regular Photographer of the Year and the Young\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-20",
+      "sample_id": 20,
+      "original_prefix_id": 20,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the bottom down, will the last of the to the,  for the of the the, the in, can,   how, the to the  , I. the,- to  , and. the  , a    .    the,, that   to the the, the.\n\n the the  , or,     a tree,   the, ,     the, the,. the the a, to  .\n\n. the a  , I, this, to  , and,  a   ,   are the the  the   for, this  the.\n, \n\n. the    all  to for, I  ,  ;,  the, to  , the are, can the go to,   the can    \n\n. a a,  a. , and a a  ,  ,    . in the, of the  .\n\n the last, the  , how,.\n\n , the\n\n  the for  .   the are. to the the    .\n\n, how  to   last of the, and the, a the the the   the. a, the    all,,  , now for a, ,  .   the the the the   of,   the same a   for the,   a the, to- off, you ,, and the   the re the.   a, it, to be to any of, to the, can a  ,    \n\n,  ,   in the the,  ,  , I, a  , too. the.\n\n  the  a  , ,   the   the,.   . the re,   , and the the,  the a  , can    , it the   , and the, or,,,  .   .   the,   the, for  ",
+      "processed_text": "the bottom down, will the last of the to the,  for the of the the, the in, can,   how, the to the  , I. the,- to  , and. the  , a    .    the,, that   to the the, the.\n\n the the  , or,     a tree,   the, ,     the, the,. the the a, to  .\n\n. the a  , I, this, to  , and,  a   ,   are the the  the   for, this  the.\n, \n\n. the    all  to for, I  ,  ;,  the, to  , the are, can the go to,   the can    \n\n. a a,  a. , and a a  ,  ,    . in the, of the  .\n\n the last, the  , how,.\n\n , the\n\n  the for  .   the are. to the the    .\n\n, how  to   last of the, and the, a the the the   the. a, the    all,,  , now for a, ,  .   the the the the   of,   the same a   for the,   a the, to- off, you ,, and the   the re the.   a, it, to be to any of, to the, can a  ,    \n\n,  ,   in the the,  ,  , I, a  , too. the.\n\n  the  a  , ,   the   the,.   . the re,   , and the the,  the a  , can    , it the   , and the, or,,,  .   .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 148,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Hospital spokeswoman says Michael Brewer having own skin put onto burned areas .\nBrewer, 15, in guarded condition, will go back to intensive care after procedure .\nMore surgeries to come; October 12 attack left burns over 65 percent of his body .\n3 of the 5 teens accused of setting Brewer on fire plead not guilty to attempted murder .\n\nBegin with: \"A Florida teenager attacked and set on fire last month, allegedly by five teenage friends, was undergoing skin graft surgery Friday, the first procedure in his recovery, a hospital spokeswoman said. Michael Brewer, who suffered burns over 65 percent of his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-21",
+      "sample_id": 21,
+      "original_prefix_id": 21,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ",, the the  the. the down,,,,,    the    ,        the the,,   the   the   the   the   the   , and to-     the the   how. so, a   to a ,, in the for the,, the the the,   a the the,,    the,,   ,     a,.\n\n the, this   the.\n\n what a.  , the  , the  the,  , can the in,     and the the and  the    -,  \n\n the   the, and in the.   to    this, for a  the  , and the the,   the,, the , and the a for the down,.   the\n\n, I  ,  a, a-  .\n\n, a   the ,  , and a, this, the it will   the., the for, that the\n\n it' to a, and.   ,  ,\n\n,  the   the, the,, how the, and and to  ,  , the, or   any the the all, , this and to the, and the to.   \n\n,  , and two, you, on the    .   the   the , and the.  ,   in  to  ,   the,  a    , I' a  ,   to the time    , that', for a the to  ,  ,  the money, the    ,  ,  the,  the one of a   the.   ,  ,    , the to  .    the for, and,,   the the, in, to- to the, and the  .  \n\n,  you   the, can      that.  a key, that,",
+      "processed_text": ",, the the  the. the down,,,,,    the    ,        the the,,   the   the   the   the   the   , and to-     the the   how. so, a   to a ,, in the for the,, the the the,   a the the,,    the,,   ,     a,.\n\n the, this   the.\n\n what a.  , the  , the  the,  , can the in,     and the the and  the    -,  \n\n the   the, and in the.   to    this, for a  the  , and the the,   the,, the , and the a for the down,.   the\n\n, I  ,  a, a-  .\n\n, a   the ,  , and a, this, the it will   the., the for, that the\n\n it' to a, and.   ,  ,\n\n,  the   the, the,, how the, and and to  ,  , the, or   any the the all, , this and to the, and the to.   \n\n,  , and two, you, on the    .   the   the , and the.  ,   in  to  ,   the,  a    , I' a  ,   to the time    , that', for a the to  ,  ,  the money, the    ,  ,  the,  the one of a   the.   ,  ,    , the to  .    the for, and,,   the the, in, to- to the, and the  .  \n\n,  you   the, can      that.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 148,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Davis stated that she got divorced at 19, but she was actually 21 .\nHer website omits her husband's financial contribution to her education .\n\nBegin with: \"Wendy Davis’ attempt to build her campaign to become the first Democratic Texas governor since Ann Richards in 1995 around her personal story of success against the odds has experienced somewhat of a hiccup - after it emerged that some of the facts\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-22",
+      "sample_id": 22,
+      "original_prefix_id": 22,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the the  ,   the and the    ,, that. re-, the only- the can for.,,. to   a the, the the     re a the     in the  . a big, just-   the-  ,\n\n  , the for   the .\n\n to- the re, you want the most, a     the, be so the, and.\n that, and-  the the  , I know the the, and., and    , in to that\n\n,   the     ,   it is a, can the the,,,. the the- to the   the a a-   and,, , what  .\n\n these the,   the down a a,, and are the, to the  a   for the,,  \n\n.\n\n  ,   a   the.  the,.\n\n re , we have in the, a, can   a  the, this-, a the and  \n\n     and   a \n\n on,   g to a, and, and the.\n\n   the last, or for the, the  , the , can the the to,,.\n\n  the-   the   , , the for the,  ., so.\n\n,  , that,   it, can.  \n\n.  \n\n the  , in,  , is about and , and the the the   for, no, and the of the the. \n\n the last     to this,  a   all the and and for the the\n\n   to    the    .  \n\n!\n\n   the. -,   a.     .  .  ,   \n\n in a.\n\n  , the,   a   the.\n\n   a for, the, the last, is  an, is",
+      "processed_text": "the the  ,   the and the    ,, that. re-, the only- the can for.,,. to   a the, the the     re a the     in the  . a big, just-   the-  ,\n\n  , the for   the .\n\n to- the re, you want the most, a     the, be so the, and.\n that, and-  the the  , I know the the, and., and    , in to that\n\n,   the     ,   it is a, can the the,,,. the the- to the   the a a-   and,, , what  .\n\n these the,   the down a a,, and are the, to the  a   for the,,  \n\n.\n\n  ,   a   the.  the,.\n\n re , we have in the, a, can   a  the, this-, a the and  \n\n     and   a \n\n on,   g to a, and, and the.\n\n   the last, or for the, the  , the , can the the to,,.\n\n  the-   the   , , the for the,  ., so.\n\n,  , that,   it, can.  \n\n.  \n\n the  , in,  , is about and , and the the the   for, no, and the of the the. \n\n the last     to this,  a   all the and and for the the\n\n   to    the    .  \n\n!\n\n   the. -,   a.     .  .  ,   \n\n in a.\n\n  , the,   a   the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 148,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Genealogist tries to fill out details of doomed Civil War submarine crew .\nThe Hunley went down off South Carolina after sinking a Civil War vessel .\nLittle was known about the eight men; DNA matches elusive for all but one .\nDid the captain carry gold coin from a romantic interest?\n\nBegin with: \"One investigative tip can lead to another -- and another. Linda Abrams, a genealogy gumshoe, went to Texas to match handwriting samples. She spent a couple weeks in Kentucky following a tip, only to find it was just hearsay.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-23",
+      "sample_id": 23,
+      "original_prefix_id": 23,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " a, the,, this, or this the the the. ,     and,,, .   in the       and the   last, the,,, and the. a a a       the   , the the, no one to the-, the re the,  , the, so, and the,.\n\n, the the, the, the  ,  .\n, is an     it    , the the.  , for   to,-, the, can, the of. in\n\n,  , the,,, how,, the the., and are all   the a   a   a. ,     .\n\n,, the, the, .  a  ,    a.\n\n, how well the- ,  .\n\n, the,  , the, the,,.  the   .\n\n, the,    \n\n the  , a.  , and the to down, and have,,    ,, the,. The,  \n\n the  ,,   and the the the are  any, the one of the. the   the  ,      . ,.\n\n for the a, and that the, and \n\n  , the., no, , the a, a, ,, I    , and the the re-,    the a a, the, the the,, I live, the big big for a new new- the the,  , this key, are  , and,,  .     the one,,,, the.\n\n   down,    ,, you  .  one, to the.\n\n!, are in, the,  to  , the,  , I   to the,  a  the  .  .\n\n  , to the the re are,  ",
+      "processed_text": "a, the,, this, or this the the the. ,     and,,, .   in the       and the   last, the,,, and the. a a a       the   , the the, no one to the-, the re the,  , the, so, and the,.\n\n, the the, the, the  ,  .\n, is an     it    , the the.  , for   to,-, the, can, the of. in\n\n,  , the,,, how,, the the., and are all   the a   a   a. ,     .\n\n,, the, the, .  a  ,    a.\n\n, how well the- ,  .\n\n, the,  , the, the,,.  the   .\n\n, the,    \n\n the  , a.  , and the to down, and have,,    ,, the,. The,  \n\n the  ,,   and the the the are  any, the one of the. the   the  ,      . ,.\n\n for the a, and that the, and \n\n  , the., no, , the a, a, ,, I    , and the the re-,    the a a, the, the the,, I live, the big big for a new new- the the,  , this key, are  , and,,  .     the one,,,, the.\n\n   down,    ,, you  .  one, to the.\n\n!, are in, the,  to  , the,  , I   to the,  a  the  .  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 148,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Bowe Bergdahl, 26, walked out of U.S. base in Afghanistan in June 2009 and was captured by the Taliban .\nThe day before leaving camp, he emailed his parents about how he had become extremely disillusioned with the Army and American policy .\n\nBegin with: \"New questions surround the disappearance of an American soldier who was captured by the Taliban after an email that he sent to his parents hints that he was so disappointed with the American mission in Afghanistan that he may have defected. Shortly before he disappeared three years\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-24",
+      "sample_id": 24,
+      "original_prefix_id": 24,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " three the a the, the,  , the last, the  , and. a the are   the the the,, the   in the are. ,  , the    , the the, the, and,,,.\n\n, this, this  ,, a. the,  how, the, the, or the the a,.\n   the    , and of, the   all the      in the   a and, is   the , is re-    ,.\n the   , it was the the re, the. I can, no, the   last one. and your,, can   the  ,    a for for   the, the  , I have a big, and the, , how it, that,, that, an   one of  a         , now, for, the the.  ,  , are a,.\n\n   a  ,   are. in, the    the, the the,  , a in a, the  ,     the.\n to a new on on,  ,  . The one of the  .  ,  for  , in   in the house,.\n, a   the a, and  the   a big the     the first, a.  the   the   last two.\n\n of, the are   the,   this the  the, to, on the top,   in,   the, and    ,     the the-,   all the, a. the a,    ,  the, and a, the, is your a   the,   re the, the the, a,   the.\n\n, the   \n\n, to, to,  .  the.\n\n  ,  look the way the\n\n  ,   the, that the. ",
+      "processed_text": "three the a the, the,  , the last, the  , and. a the are   the the the,, the   in the are. ,  , the    , the the, the, and,,,.\n\n, this, this  ,, a. the,  how, the, the, or the the a,.\n   the    , and of, the   all the      in the   a and, is   the , is re-    ,.\n the   , it was the the re, the. I can, no, the   last one. and your,, can   the  ,    a for for   the, the  , I have a big, and the, , how it, that,, that, an   one of  a         , now, for, the the.  ,  , are a,.\n\n   a  ,   are. in, the    the, the the,  , a in a, the  ,     the.\n to a new on on,  ,  . The one of the  .  ,  for  , in   in the house,.\n, a   the a, and  the   a big the     the first, a.  the   the   last two.\n\n of, the are   the,   this the  the, to, on the top,   in,   the, and    ,     the the-,   all the, a. the a,    ,  the, and a, the, is your a   the,   re the, the the, a,   the.\n\n, the   \n\n, to, to,  .  the.\n\n  ,  look the way the\n\n  ,   the, that the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 126,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Anton zipped past parked cars while performing the stunt in Voronezh .\nHe fell on his rear end as he carved through inches of fresh snow .\nAnton went out in the early hours to avoid traffic and police .\nHe says urban snowboarding is harder than boarding down a mountain .\n\nBegin with: \"This is the hilarious moment a daredevil snowboarder wipes out while being dragged behind a car on a snowy street - risking serious injury or arrest. The man, named Anton, zipped past parked cars while performing the dangerous stunt after a\""
+        }
+      ]
+    }
+  ]
+}

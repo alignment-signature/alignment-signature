@@ -1,0 +1,3482 @@
+{
+  "detector": "gptzero",
+  "model": "qwen2.5-7b-instruct",
+  "alpha": 1.0,
+  "domain": "college_essays",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "intervention": {
+    "mode": "ablate",
+    "direction_path": "data/analysis_results/scaled_ablation/directions/qwen2.5-7b-instruct/v_cross_L14.pt",
+    "layer": 14,
+    "tag": "v_cross_L14_steered_extended"
+  },
+  "total_samples": 10,
+  "results": [
+    {
+      "id": "strategy_A-college_essays-instruct-1",
+      "text_length": 1657,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.0003259168075225148,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9996705129214984,
+          "ai": 0.0003294870785016056,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9996705129214984,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 5,
+                  "completely_generated_prob": 0.00010005932717626924
+                },
+                {
+                  "start_sentence_index": 5,
+                  "num_sentences": 4,
+                  "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                  "start_sentence_index": 9,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 10,
+                  "num_sentences": 4,
+                  "completely_generated_prob": 0.0006564766595293492
+                }
+              ],
+              "completely_generated_prob": 0.0003259168075225148,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9996705129214984,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.0013876616013523396,
+                  "sentence": "should be evaluated and summarized so that one can know if the firm is performing well or not.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9986123383986477,
+                    "ai": 0.0003343587630145878,
+                    "paraphrased": 0.0010533028383377518
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0014407231078436978,
+                  "sentence": "The organization's financial status is usually presented to the CEO as an internal report.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9985592768921563,
+                    "ai": 0.0004542421578456325,
+                    "paraphrased": 0.0009864809499980653
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0014345939124133106,
+                  "sentence": "It is important for the organization to have a good financial performance.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9985654060875867,
+                    "ai": 0.0004673417566510066,
+                    "paraphrased": 0.0009672521557623039
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.001312334560142952,
+                  "sentence": "A good financial performance will ensure that the organization has a lot of money which it can then use to invest in different ways, pay its employees, give bonuses to the best employees, and many other things.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9986876654398571,
+                    "ai": 0.00035136003190291986,
+                    "paraphrased": 0.0009609745282400322
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0013212297403078362,
+                  "sentence": "For example, a well performing firm can be able to buy new assets like machinery, computers, trucks, etc.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9986787702596922,
+                    "ai": 0.00030787473311234885,
+                    "paraphrased": 0.0010133550071954873
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0011891128958228248,
+                  "sentence": "In this essay, we will explore the methods that can be used to brief the CEO on the organization's financial status.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9988108871041772,
+                    "ai": 0.0003242013043900483,
+                    "paraphrased": 0.0008649115914327765
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0009474394095487263,
+                  "sentence": "We will also see the importance of giving the CEO a briefing on the organizations' financial status.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9990525605904512,
+                    "ai": 0.00020685870061388687,
+                    "paraphrased": 0.0007405807089348394
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0010992437873366962,
+                  "sentence": "After this, we will briefly look at the various types of financial statements that exist which can be used to analyze the organizations financial status.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9989007562126633,
+                    "ai": 0.0001787671763509004,
+                    "paraphrased": 0.0009204766109857959
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0010862784075962775,
+                  "sentence": "Lastly, we will discuss how the results can be used by the organization.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9989137215924038,
+                    "ai": 0.00020875174053498717,
+                    "paraphrased": 0.0008775266670612902
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.001136726294981094,
+                  "sentence": "**Importance of Briefing the CEO on the Organization’s Financial Status**",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9988632737050189,
+                    "ai": 0.00029467897670719883,
+                    "paraphrased": 0.0008420473182738953
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0010654086623344472,
+                  "sentence": "It is essential to brief the CEO on the organizations' financial status because he/she needs to understand the organization's financial status in order to make the right decisions in managing the organization.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9989345913376656,
+                    "ai": 0.0003062572288514219,
+                    "paraphrased": 0.0007591514334830252
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0053723510633503285,
+                  "sentence": "The CEO needs to know where the money is, how much money the company currently has, how much money it earned the previous year, how much the company spent the previous year, and much more.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9946276489366497,
+                    "ai": 0.004737020909117358,
+                    "paraphrased": 0.0006353301542329704
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.004903850217261408,
+                  "sentence": "If the CEO knows these things, he/she can take steps to improve the company.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9950961497827386,
+                    "ai": 0.004255114600527472,
+                    "paraphrased": 0.0006487356167339355
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.006436291153964229,
+                  "sentence": "This means briefing the CEO on the organization's financial status is important.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9935637088460357,
+                    "ai": 0.005744919751376821,
+                    "paraphrased": 0.0006913714025874073
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9996705129214984,
+                "ai": 0.0003294870785016056,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9996705129214984,
+                  "ai": 0.0003294870785016056,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": " should be evaluated and summarized so that one can know if the firm is performing well or not. The organization's financial status is usually presented to the CEO as an internal report. It is important for the organization to have a good financial performance. A good financial performance will ensure that the organization has a lot of money which it can then use to invest in different ways, pay its employees, give bonuses to the best employees, and many other things. For example, a well performing firm can be able to buy new assets like machinery, computers, trucks, etc.\n\nIn this essay, we will explore the methods that can be used to brief the CEO on the organization's financial status. We will also see the importance of giving the CEO a briefing on the organizations' financial status. After this, we will briefly look at the various types of financial statements that exist which can be used to analyze the organizations financial status. Lastly, we will discuss how the results can be used by the organization.\n\n**Importance of Briefing the CEO on the Organization’s Financial Status**\n\nIt is essential to brief the CEO on the organizations' financial status because he/she needs to understand the organization's financial status in order to make the right decisions in managing the organization. The CEO needs to know where the money is, how much money the company currently has, how much money it earned the previous year, how much the company spent the previous year, and much more. If the CEO knows these things, he/she can take steps to improve the company. This means briefing the CEO on the organization's financial status is important.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-2",
+      "text_length": 1420,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 7.766617577505208e-05,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9999217897261857,
+          "ai": 7.821027381425187e-05,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9999217897261857,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                  "start_sentence_index": 2,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                  "start_sentence_index": 5,
+                  "num_sentences": 5,
+                  "completely_generated_prob": 0.00010005932717626924
+                },
+                {
+                  "start_sentence_index": 10,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                }
+              ],
+              "completely_generated_prob": 7.766617577505208e-05,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9999217897261857,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.00022861604511128318,
+                  "sentence": "popular music culture.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997713839548887,
+                    "ai": 7.815023603118828e-05,
+                    "paraphrased": 0.0001504658090800949
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0002066281828871112,
+                  "sentence": "These two decades were when hip-hop had its biggest impact, and many consider these years to be the golden age of the genre.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997933718171129,
+                    "ai": 5.973899674776016e-05,
+                    "paraphrased": 0.00014688918613935104
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0001860612254059404,
+                  "sentence": "Before I begin, it is important to mention that this essay will focus on the development of hip-hop in the United States.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.999813938774594,
+                    "ai": 4.5040133281881546e-05,
+                    "paraphrased": 0.00014102109212405883
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00016869523222937775,
+                  "sentence": "Although hip-hop originated from the Caribbean, there are significant differences between the way that music is created and enjoyed in the Caribbean versus how it is produced and enjoyed in the US.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9998313047677706,
+                    "ai": 4.2182934836548135e-05,
+                    "paraphrased": 0.0001265122973928296
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00017145287198207948,
+                  "sentence": "Also, it should be noted that hip-hop is not limited to rap, but includes several other styles as well.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9998285471280179,
+                    "ai": 3.413802085287504e-05,
+                    "paraphrased": 0.00013731485112920442
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00018129965577819374,
+                  "sentence": "To start with, the history of hip-hop began on the streets, in the inner city of New York City.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9998187003442218,
+                    "ai": 4.6688901281487584e-05,
+                    "paraphrased": 0.00013461075449670615
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0002049093828955531,
+                  "sentence": "The music was originally created by Jamaican immigrants and their children who lived in the Bronx.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997950906171045,
+                    "ai": 5.976656469165265e-05,
+                    "paraphrased": 0.00014514281820390045
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.000166600188209551,
+                  "sentence": "One of the first rappers, DJ Kool Herc is thought to be the first person that introduced the idea of having a rapper in the group during his parties in the early 1970’s (Starr, 2005, p. 14).",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9998333998117904,
+                    "ai": 3.0558401542331565e-05,
+                    "paraphrased": 0.00013604178666721945
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00020184611391147508,
+                  "sentence": "The original name for what we know as rap or hip hop today, is called toasting or MCing.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997981538860885,
+                    "ai": 3.540488679768102e-05,
+                    "paraphrased": 0.00016644122711379405
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0001773848992699207,
+                  "sentence": "As this new kind of music spread around New York, other DJs that also knew how to rap started to appear in other parts of New York such as Harlem, Queens, and the West coast (Vitkus, 2006, p. 31).",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9998226151007301,
+                    "ai": 2.9506538236251753e-05,
+                    "paraphrased": 0.00014787836103366894
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00017874429065462845,
+                  "sentence": "From the beginning, the 80s decade was the start of what people refer to as the Golden Age of hip-hop, although, it should be noted that this is just one person's opinion.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9998212557093453,
+                    "ai": 4.8234666367089376e-05,
+                    "paraphrased": 0.00013050962428753907
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9999217897261857,
+                "ai": 7.821027381425187e-05,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9999217897261857,
+                  "ai": 7.821027381425187e-05,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": " popular music culture. These two decades were when hip-hop had its biggest impact, and many consider these years to be the golden age of the genre.\n\nBefore I begin, it is important to mention that this essay will focus on the development of hip-hop in the United States. Although hip-hop originated from the Caribbean, there are significant differences between the way that music is created and enjoyed in the Caribbean versus how it is produced and enjoyed in the US. Also, it should be noted that hip-hop is not limited to rap, but includes several other styles as well. \n\nTo start with, the history of hip-hop began on the streets, in the inner city of New York City. The music was originally created by Jamaican immigrants and their children who lived in the Bronx. One of the first rappers, DJ Kool Herc is thought to be the first person that introduced the idea of having a rapper in the group during his parties in the early 1970’s (Starr, 2005, p. 14). The original name for what we know as rap or hip hop today, is called toasting or MCing. As this new kind of music spread around New York, other DJs that also knew how to rap started to appear in other parts of New York such as Harlem, Queens, and the West coast (Vitkus, 2006, p. 31).\n\nFrom the beginning, the 80s decade was the start of what people refer to as the Golden Age of hip-hop, although, it should be noted that this is just one person's opinion.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-4",
+      "text_length": 1555,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.007172468752462319,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9927994970754814,
+          "ai": 0.007200502924518549,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9927994970754814,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 1,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                  "start_sentence_index": 4,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 5,
+                  "num_sentences": 9,
+                  "completely_generated_prob": 4.1887248735431006e-08
+                }
+              ],
+              "completely_generated_prob": 0.007172468752462319,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9927994970754814,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.01680607029961105,
+                  "sentence": "1. Introduction",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.983193929700389,
+                    "ai": 0.0024262131944034525,
+                    "paraphrased": 0.014379857105207599
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.01697042634995062,
+                  "sentence": "Divine mercy and compassion are essential attributes of God and are an important part of many religions, particularly Christianity, Judaism, and Islam.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9830295736500494,
+                    "ai": 0.0028228453270448843,
+                    "paraphrased": 0.014147581022905737
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.016570808106103063,
+                  "sentence": "This paper will examine the topic of divine mercy and compassion as it appears in both the Old and New Testaments, which are a part of the Christian Bible.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.983429191893897,
+                    "ai": 0.002751854942351816,
+                    "paraphrased": 0.013818953163751245
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.016496575525273685,
+                  "sentence": "These scriptures contain accounts that tell us about the attributes and deeds of Jesus, which is one of the main ways these concepts appear.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9835034244747263,
+                    "ai": 0.002473625030064401,
+                    "paraphrased": 0.014022950495209283
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.019194021078285457,
+                  "sentence": "2. Divine Mercy and Compassion in the Old Testament",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9808059789217145,
+                    "ai": 0.0028436383753303487,
+                    "paraphrased": 0.016350382702955107
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.015872035589457486,
+                  "sentence": "In the Old Testament, God is portrayed as having a lot of mercy and compassion.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9841279644105425,
+                    "ai": 0.0023327116531468243,
+                    "paraphrased": 0.013539323936310662
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.01633708163301661,
+                  "sentence": "However, God did not have the same relationship with his people as He does with Christians today because there was no atonement for sin or salvation through Him until Jesus came.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9836629183669834,
+                    "ai": 0.0021475001005653834,
+                    "paraphrased": 0.014189581532451227
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.016015128666284927,
+                  "sentence": "For example, God said to the Hebrew nation “I will be their God, and they shall be my people” (Leviticus 26:12) in the Old Testament.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.983984871333715,
+                    "ai": 0.0021949137663843862,
+                    "paraphrased": 0.013820214899900542
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.014552568680868683,
+                  "sentence": "But God said that he would have a close relationship with His people only after Jesus died on the cross.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9854474313191314,
+                    "ai": 0.0019770928685434483,
+                    "paraphrased": 0.012575475812325234
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.01363895727505617,
+                  "sentence": "The Old Testament has accounts such as Exodus 34:6-7 where God is described as slow to anger, and God describes himself as being merciful and gracious, and the New Testament explains how this can be fulfilled through Jesus.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9863610427249438,
+                    "ai": 0.0016956540331821784,
+                    "paraphrased": 0.011943303241873992
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.013735432511002654,
+                  "sentence": "This is also described in Exodus 34:8 where God says that he will not clear someone's sins.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9862645674889974,
+                    "ai": 0.002230666436913414,
+                    "paraphrased": 0.01150476607408924
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.013648172350602795,
+                  "sentence": "This means that God can forgive sins but if a person has rejected God and then repents, God will not forgive them if they continue to reject him.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9863518276493972,
+                    "ai": 0.0022744557314004926,
+                    "paraphrased": 0.011373716619202303
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.013677043024706917,
+                  "sentence": "This is similar to what Paul said in Romans 3:25-26 in the New Testament.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.986322956975293,
+                    "ai": 0.0025951337360522074,
+                    "paraphrased": 0.011081909288654709
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.013350742969157923,
+                  "sentence": "3.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.986649257030842,
+                    "ai": 0.00425231614474243,
+                    "paraphrased": 0.009098426824415494
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9927994970754814,
+                "ai": 0.007200502924518549,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9927994970754814,
+                  "ai": 0.007200502924518549,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": "\n1. Introduction\nDivine mercy and compassion are essential attributes of God and are an important part of many religions, particularly Christianity, Judaism, and Islam. This paper will examine the topic of divine mercy and compassion as it appears in both the Old and New Testaments, which are a part of the Christian Bible. These scriptures contain accounts that tell us about the attributes and deeds of Jesus, which is one of the main ways these concepts appear.\n2. Divine Mercy and Compassion in the Old Testament\nIn the Old Testament, God is portrayed as having a lot of mercy and compassion. However, God did not have the same relationship with his people as He does with Christians today because there was no atonement for sin or salvation through Him until Jesus came. For example, God said to the Hebrew nation “I will be their God, and they shall be my people” (Leviticus 26:12) in the Old Testament. But God said that he would have a close relationship with His people only after Jesus died on the cross. The Old Testament has accounts such as Exodus 34:6-7 where God is described as slow to anger, and God describes himself as being merciful and gracious, and the New Testament explains how this can be fulfilled through Jesus. This is also described in Exodus 34:8 where God says that he will not clear someone's sins. This means that God can forgive sins but if a person has rejected God and then repents, God will not forgive them if they continue to reject him. This is similar to what Paul said in Romans 3:25-26 in the New Testament.\n\n3.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-6",
+      "text_length": 1706,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.3132247881671237,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.6858753111267253,
+          "ai": 0.31412468887327466,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.6858753111267253,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                  "start_sentence_index": 3,
+                  "num_sentences": 4,
+                  "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                  "start_sentence_index": 7,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                  "start_sentence_index": 10,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 11,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 12,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 13,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                }
+              ],
+              "completely_generated_prob": 0.3132247881671237,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.6858753111267253,
+              "confidence_category": "medium",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.54772248400836,
+                  "sentence": "view themselves.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.45227751599163996,
+                    "ai": 0.005449135843608989,
+                    "paraphrased": 0.542273348164751
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.512457351460529,
+                  "sentence": "This is because of the influence of modern communication technologies (for example Facebook and Instagram) and the internet.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.48754264853947105,
+                    "ai": 0.006996353899450079,
+                    "paraphrased": 0.5054609975610789
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.5280866562233498,
+                  "sentence": "Immigrants from the Middle East may be particularly susceptible to these influences due to the historical fact that many of them had to migrate from their own countries.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.47191334377665023,
+                    "ai": 0.007519444072572533,
+                    "paraphrased": 0.5205672121507773
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.5134982429201259,
+                  "sentence": "The aim of this paper is to examine how the use of social media and the internet in particular, is affecting the way that the Middle Eastern migrants in Australia are viewing themselves.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.48650175707987414,
+                    "ai": 0.0056603189320598365,
+                    "paraphrased": 0.507837923988066
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.47788587688572953,
+                  "sentence": "The Middle East can be defined as being all or part of the following countries: Egypt, Iran, Israel, Iraq, Jordan, Saudi Arabia, Lebanon, Oman, Palestine, Qatar, Kuwait, United Arab Emirates, Syria, Yemen, Bahrain and Sudan.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5221141231142705,
+                    "ai": 0.00701962119109043,
+                    "paraphrased": 0.4708662556946391
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.43344598296240044,
+                  "sentence": "These countries are mostly Islamic countries which are in the region located between the Mediterranean Sea and the Indian Ocean.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5665540170375996,
+                    "ai": 0.006040202995336373,
+                    "paraphrased": 0.4274057799670641
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.4573059930789288,
+                  "sentence": "The use of the term ‘Middle East Immigrant’ in this paper is not just referring to those born in one of these countries but also to those who have come from any one or more of these countries.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5426940069210713,
+                    "ai": 0.005329863851430646,
+                    "paraphrased": 0.45197612922749814
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.42884813223236407,
+                  "sentence": "The topic chosen for this essay is interesting in terms of the social change that has occurred during the last 50 years.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5711518677676359,
+                    "ai": 0.005792740420525057,
+                    "paraphrased": 0.423055391811839
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.4166785636137441,
+                  "sentence": "I will be using my personal experience and observations to help with the essay.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5833214363862559,
+                    "ai": 0.005035546472267389,
+                    "paraphrased": 0.4116430171414767
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.4319845769547195,
+                  "sentence": "It is also an important topic, especially given the current political situation in the Middle East at present, in which Australia must deal with a large amount of refugees who have come from that area.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5680154230452805,
+                    "ai": 0.004322214253349894,
+                    "paraphrased": 0.4276623627013696
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.39310605464305626,
+                  "sentence": "This paper will include an examination of the following:",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6068939453569437,
+                    "ai": 0.004389125772023094,
+                    "paraphrased": 0.38871692887103315
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.4057356571304864,
+                  "sentence": "1. An overview of what nationalism is.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5942643428695136,
+                    "ai": 0.00579929924642833,
+                    "paraphrased": 0.39993635788405807
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.4431191263105252,
+                  "sentence": "2. Why the subject of national identity is important when looking at immigrants.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5568808736894748,
+                    "ai": 0.0050763802858098134,
+                    "paraphrased": 0.4380427460247154
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.42450800666449184,
+                  "sentence": "3. Some background information about Middle East Immigrants to Australia.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5754919933355082,
+                    "ai": 0.0060275733940310244,
+                    "paraphrased": 0.4184804332704608
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6455025229622713,
+                  "sentence": "4.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.35449747703772877,
+                    "ai": 0.016782630922678635,
+                    "paraphrased": 0.6287198920395927
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.6858753111267253,
+                "ai": 0.31412468887327466,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.6858753111267253,
+                  "ai": 0.31412468887327466,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is moderately confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": " view themselves. This is because of the influence of modern communication technologies (for example Facebook and Instagram) and the internet. Immigrants from the Middle East may be particularly susceptible to these influences due to the historical fact that many of them had to migrate from their own countries.\n\nThe aim of this paper is to examine how the use of social media and the internet in particular, is affecting the way that the Middle Eastern migrants in Australia are viewing themselves. The Middle East can be defined as being all or part of the following countries: Egypt, Iran, Israel, Iraq, Jordan, Saudi Arabia, Lebanon, Oman, Palestine, Qatar, Kuwait, United Arab Emirates, Syria, Yemen, Bahrain and Sudan. These countries are mostly Islamic countries which are in the region located between the Mediterranean Sea and the Indian Ocean. The use of the term ‘Middle East Immigrant’ in this paper is not just referring to those born in one of these countries but also to those who have come from any one or more of these countries.\n\nThe topic chosen for this essay is interesting in terms of the social change that has occurred during the last 50 years. I will be using my personal experience and observations to help with the essay. It is also an important topic, especially given the current political situation in the Middle East at present, in which Australia must deal with a large amount of refugees who have come from that area.\n\nThis paper will include an examination of the following:\n1. An overview of what nationalism is.\n2. Why the subject of national identity is important when looking at immigrants.\n3. Some background information about Middle East Immigrants to Australia.\n4.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-7",
+      "text_length": 2083,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.44333716680379104,
+        "average_generated_prob": 0.7647058823529411,
+        "class_probabilities": {
+          "human": 0.5561267019312454,
+          "ai": 0.44387329806875453,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.5561267019312454,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 1,
+                  "num_sentences": 5,
+                  "completely_generated_prob": 0.00010005932717626924
+                },
+                {
+                  "start_sentence_index": 6,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 7,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                  "start_sentence_index": 9,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 10,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                  "start_sentence_index": 12,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 13,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                  "start_sentence_index": 15,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                }
+              ],
+              "completely_generated_prob": 0.44333716680379104,
+              "average_generated_prob": 0.7647058823529411,
+              "predicted_class": "human",
+              "confidence_score": 0.5561267019312454,
+              "confidence_category": "low",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.6451865541215368,
+                  "sentence": "#### Introduction",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.3548134458784632,
+                    "ai": 0.0021915735484303468,
+                    "paraphrased": 0.6429949805731064
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6627944231161959,
+                  "sentence": "Employment for people with disabilities has always been a difficult issue in many developed countries, as well as in many less developed or developing countries.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.33720557688380415,
+                    "ai": 0.0038941259049095358,
+                    "paraphrased": 0.6589002972112863
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.676327700977578,
+                  "sentence": "It is very important to be able to give them equal rights as any other citizens when it comes to being employed.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.323672299022422,
+                    "ai": 0.0036023742952383734,
+                    "paraphrased": 0.6727253266823396
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6841652065903434,
+                  "sentence": "According to article 27 in the United Nation’s Universal Declaration on Human Rights, every citizen has the right to employment (United Nations).",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.31583479340965664,
+                    "ai": 0.0045090523037039885,
+                    "paraphrased": 0.6796561542866394
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6881080243671054,
+                  "sentence": "It is true for everyone; the disabled persons are no exception.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.31189197563289456,
+                    "ai": 0.003706387275231523,
+                    "paraphrased": 0.6844016370918738
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6652971423513948,
+                  "sentence": "In this context, \"reasonable\" accommodation means that employers are supposed to provide the necessary conditions or the changes which are needed so that the people with disabilities can do their jobs without being discriminated against.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.33470285764860525,
+                    "ai": 0.003134226038173763,
+                    "paraphrased": 0.662162916313221
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.636001654599621,
+                  "sentence": "#### Background and Definition",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.36399834540037895,
+                    "ai": 0.0027316356494461336,
+                    "paraphrased": 0.6332700189501749
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6647451351361696,
+                  "sentence": "Equal Employment Opportunity Commission, \"reasonable accommodation\" is defined as an action required under the Americans with Disabilities Act of 1990 to enable an otherwise qualified individual with a disability to perform the essential function of the job (U.S.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.3352548648638303,
+                    "ai": 0.003978083110243537,
+                    "paraphrased": 0.6607670520259261
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6671731873103338,
+                  "sentence": "This accommodation should also include any action required to provide equal employment opportunities to individuals with disabilities.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.33282681268966613,
+                    "ai": 0.0036258111982064114,
+                    "paraphrased": 0.6635473761121274
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6662906332166125,
+                  "sentence": "#### Importance of Accommodation",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.3337093667833875,
+                    "ai": 0.002629734170090861,
+                    "paraphrased": 0.6636608990465217
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6515140782541544,
+                  "sentence": "It is important that reasonable accommodation is applied to all the employees with the disabilities, because if there is a discrimination against the people with disabilities, then not only they will not get the opportunity to work but also their rights would be violated.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.3484859217458456,
+                    "ai": 0.002234709056546986,
+                    "paraphrased": 0.6492793691976074
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6504269141361437,
+                  "sentence": "Also, if they cannot work, they are not going to be contributing to the economy, which in turn will affect the growth of the economy.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.34957308586385627,
+                    "ai": 0.0021164725214342104,
+                    "paraphrased": 0.6483104416147095
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6615128835664749,
+                  "sentence": "#### Reasonable Accommodation in the United States",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.3384871164335252,
+                    "ai": 0.0026306272325114562,
+                    "paraphrased": 0.6588822563339634
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6515840613525506,
+                  "sentence": "There are several examples of reasonable accommodations that can be provided to people who have the disabilities, depending upon the nature and kind of disability.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.3484159386474494,
+                    "ai": 0.0022476680890698045,
+                    "paraphrased": 0.6493363932634808
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6397790987651714,
+                  "sentence": "These include:",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.3602209012348287,
+                    "ai": 0.0021391133309629157,
+                    "paraphrased": 0.6376399854342084
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.6565034819191146,
+                  "sentence": "1. Job restructuring: Some kind of change might need to be made in the duties of the employee, and he/she still should have the capacity to do these new kinds of duties.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.3434965180808855,
+                    "ai": 0.0026218408125785386,
+                    "paraphrased": 0.653881641106536
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.4123305082321167,
+                  "sentence": "2.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5876694917678833,
+                    "ai": 0.007036417722702026,
+                    "paraphrased": 0.4052940905094147
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.5561267019312454,
+                "ai": 0.44387329806875453,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.5561267019312454,
+                  "ai": 0.44387329806875453,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": "\n\n#### Introduction\nEmployment for people with disabilities has always been a difficult issue in many developed countries, as well as in many less developed or developing countries. It is very important to be able to give them equal rights as any other citizens when it comes to being employed. According to article 27 in the United Nation’s Universal Declaration on Human Rights, every citizen has the right to employment (United Nations). It is true for everyone; the disabled persons are no exception. In this context, \"reasonable\" accommodation means that employers are supposed to provide the necessary conditions or the changes which are needed so that the people with disabilities can do their jobs without being discriminated against.\n\n#### Background and Definition\nAccording to the U.S. Equal Employment Opportunity Commission, \"reasonable accommodation\" is defined as an action required under the Americans with Disabilities Act of 1990 to enable an otherwise qualified individual with a disability to perform the essential function of the job (U.S. Equal Employment Opportunity Commission). This accommodation should also include any action required to provide equal employment opportunities to individuals with disabilities.\n\n#### Importance of Accommodation\nIt is important that reasonable accommodation is applied to all the employees with the disabilities, because if there is a discrimination against the people with disabilities, then not only they will not get the opportunity to work but also their rights would be violated. Also, if they cannot work, they are not going to be contributing to the economy, which in turn will affect the growth of the economy.\n\n#### Reasonable Accommodation in the United States\nThere are several examples of reasonable accommodations that can be provided to people who have the disabilities, depending upon the nature and kind of disability. These include:\n\n1. Job restructuring: Some kind of change might need to be made in the duties of the employee, and he/she still should have the capacity to do these new kinds of duties.\n2.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-3",
+      "text_length": 1724,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.9979347673675516,
+        "average_generated_prob": 1,
+        "class_probabilities": {
+          "human": 0,
+          "ai": 1,
+          "mixed": 0
+        },
+        "predicted_class": "ai",
+        "confidence_score": 1,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                  "start_sentence_index": 2,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.850090677245877
+                },
+                {
+                  "start_sentence_index": 5,
+                  "num_sentences": 6,
+                  "completely_generated_prob": 0.9000234362273952
+                },
+                {
+                  "start_sentence_index": 11,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.8181818033057853
+                }
+              ],
+              "completely_generated_prob": 0.9979347673675516,
+              "average_generated_prob": 1,
+              "predicted_class": "ai",
+              "confidence_score": 1,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.941257248013303,
+                  "sentence": "one other factor that affects people’s health in the United States is their zip code.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.05874275198669695,
+                    "ai": 0.00201569466840116,
+                    "paraphrased": 0.9392415533449019
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9348654514999281,
+                  "sentence": "In this essay, I will argue that the location where you live can have a direct impact on your health, and that your zip code can be more important than any of the personal characteristics previously mentioned.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.06513454850007191,
+                    "ai": 0.0020514373003692574,
+                    "paraphrased": 0.9328140141995588
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.931786456262249,
+                  "sentence": "The social impact of zip codes on human health has been the subject of many research studies, which have been used to show the social determinant of health that is associated with where someone lives.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.06821354373775099,
+                    "ai": 0.0022741485968945066,
+                    "paraphrased": 0.9295123076653545
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9373121776715237,
+                  "sentence": "According to the Institute of Medicine, “A person's zip code is a better predictor of their health than their genetic code.” (Institute of Medicine, 2013) This means that your zip code can play a bigger role in your health status than your genetics.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.06268782232847628,
+                    "ai": 0.002371114702971896,
+                    "paraphrased": 0.9349410629685518
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9238891313463004,
+                  "sentence": "This is mainly because there are different types of services available depending on where you live.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0761108686536996,
+                    "ai": 0.0015119742404970905,
+                    "paraphrased": 0.9223771571058033
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.922835252765848,
+                  "sentence": "In order to support my argument that the location where someone lives is an important social factor that impacts health, this essay will be divided into several sections.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.07716474723415198,
+                    "ai": 0.0013693741130399529,
+                    "paraphrased": 0.921465878652808
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9156897293700401,
+                  "sentence": "First, I will provide a detailed definition and explanation of what a zip code is, its origin, how it works, and why it matters in the United States.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.08431027062995988,
+                    "ai": 0.0014556299392106176,
+                    "paraphrased": 0.9142340994308294
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9249176169290704,
+                  "sentence": "Secondly, I will talk about what services are available to certain zip codes and why that is important.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.07508238307092957,
+                    "ai": 0.001457264627887211,
+                    "paraphrased": 0.9234603523011832
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9213420605559492,
+                  "sentence": "Next, I will explain that if these zip codes are more likely to be poor, this has a direct impact on the health of people who live in them.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.07865793944405064,
+                    "ai": 0.00144504754658753,
+                    "paraphrased": 0.9198970130093618
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9220183619929251,
+                  "sentence": "Then, I will provide several pieces of evidence that show the correlation between zip codes and health.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.07798163800707496,
+                    "ai": 0.0014842631458184053,
+                    "paraphrased": 0.9205340988471067
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9228445728044974,
+                  "sentence": "Finally, I will conclude this essay by making a statement for future recommendations.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.07715542719550256,
+                    "ai": 0.001377256023830147,
+                    "paraphrased": 0.9214673167806673
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9293586772930478,
+                  "sentence": "The term zip code stands for Zone Improvement Plan, it is a postal system code which contains five numbers in the US.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.07064132270695225,
+                    "ai": 0.0019115530556405602,
+                    "paraphrased": 0.9274471242374072
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0,
+                "ai": 1,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "ai": 1,
+                  "mixed": 0,
+                  "human": 0
+                }
+              },
+              "subclass": {
+                "ai": {
+                  "predicted_class": "ai_paraphrased",
+                  "result_message": "We are highly confident this text was originally AI, but rewritten by AI or a human",
+                  "confidence_score": 0.99876933462962,
+                  "confidence_category": "high",
+                  "class_probabilities": {
+                    "pure_ai": 0.001230665370379964,
+                    "ai_paraphrased": 0.99876933462962
+                  },
+                  "confidence_scores_raw": {
+                    "identity": {
+                      "pure_ai": 0.001230665370379964,
+                      "ai_paraphrased": 0.99876933462962
+                    }
+                  },
+                  "confidence_thresholds_raw": {
+                    "identity": {
+                      "ai_paraphrased": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      },
+                      "pure_ai": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      }
+                    }
+                  }
+                }
+              },
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written by AI.",
+              "result_sub_message": null,
+              "document_classification": "AI_ONLY",
+              "inputText": " one other factor that affects people’s health in the United States is their zip code. In this essay, I will argue that the location where you live can have a direct impact on your health, and that your zip code can be more important than any of the personal characteristics previously mentioned.\n \nThe social impact of zip codes on human health has been the subject of many research studies, which have been used to show the social determinant of health that is associated with where someone lives. According to the Institute of Medicine, “A person's zip code is a better predictor of their health than their genetic code.” (Institute of Medicine, 2013) This means that your zip code can play a bigger role in your health status than your genetics. This is mainly because there are different types of services available depending on where you live.\n\nIn order to support my argument that the location where someone lives is an important social factor that impacts health, this essay will be divided into several sections. First, I will provide a detailed definition and explanation of what a zip code is, its origin, how it works, and why it matters in the United States. Secondly, I will talk about what services are available to certain zip codes and why that is important. Next, I will explain that if these zip codes are more likely to be poor, this has a direct impact on the health of people who live in them. Then, I will provide several pieces of evidence that show the correlation between zip codes and health. Finally, I will conclude this essay by making a statement for future recommendations.\n\nThe term zip code stands for Zone Improvement Plan, it is a postal system code which contains five numbers in the US.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-5",
+      "text_length": 1328,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.0001332445594492792,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9998653553006938,
+          "ai": 0.00013464469930624427,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9998653553006938,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 1,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 2,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 3,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 4,
+                  "num_sentences": 4,
+                  "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                  "start_sentence_index": 8,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 9,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                  "start_sentence_index": 12,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 13,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                  "start_sentence_index": 15,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                  "start_sentence_index": 17,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                }
+              ],
+              "completely_generated_prob": 0.0001332445594492792,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9998653553006938,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.0004331471717669453,
+                  "sentence": "Movie",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9995668528282331,
+                    "ai": 0.0001961731904456596,
+                    "paraphrased": 0.00023697398132128567
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0003387148905078128,
+                  "sentence": "5. Conclusion",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9996612851094921,
+                    "ai": 0.00016658978023117546,
+                    "paraphrased": 0.00017212511027663732
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0005674675209490204,
+                  "sentence": "-",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.999432532479051,
+                    "ai": 0.00017321869872224615,
+                    "paraphrased": 0.00039424882222677417
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0002265495512977648,
+                  "sentence": "Introduction",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997734504487022,
+                    "ai": 8.302676060648329e-05,
+                    "paraphrased": 0.00014352279069128153
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00035747456186684394,
+                  "sentence": "Tolkien, is a fantasy novel which tells of the journey of a dwarf named Bilbo Baggins.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9996425254381331,
+                    "ai": 0.0001645273352282249,
+                    "paraphrased": 0.000192947226638619
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00034826481272100176,
+                  "sentence": "The novel was published in 1937.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.999651735187279,
+                    "ai": 0.0001351792233436399,
+                    "paraphrased": 0.00021308558937736187
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00035318544206148204,
+                  "sentence": "It was adapted into a film trilogy in three parts, directed by Peter Jackson, starting to be released from December 2012.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9996468145579385,
+                    "ai": 0.00015804877831004325,
+                    "paraphrased": 0.00019513666375143882
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00032158865128165267,
+                  "sentence": "The books and movies are very similar but there are some changes which will be discussed here.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9996784113487184,
+                    "ai": 9.292406674373468e-05,
+                    "paraphrased": 0.00022866458453791797
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00027804219655033486,
+                  "sentence": "Events Deleted or Changed in the Movie",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997219578034496,
+                    "ai": 6.665523777661656e-05,
+                    "paraphrased": 0.00021138695877371828
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0002748325944928963,
+                  "sentence": "There are many differences between the movie(s) of \"The Hobbit\" and the book as well as between the two trilogies.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997251674055071,
+                    "ai": 8.314817423927954e-05,
+                    "paraphrased": 0.00019168442025361675
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00030592094657224566,
+                  "sentence": "Most of these differences can be explained by the time constraints on making the movies and the differences in narrative style.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9996940790534278,
+                    "ai": 9.726936405079596e-05,
+                    "paraphrased": 0.0002086515825214497
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00026525658608538694,
+                  "sentence": "Below is a list of the things that happened in the book but not in the movies.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997347434139147,
+                    "ai": 8.642135449224337e-05,
+                    "paraphrased": 0.00017883523159314355
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00024851802374796484,
+                  "sentence": "**Changes in Character:**",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997514819762521,
+                    "ai": 6.279069765387671e-05,
+                    "paraphrased": 0.00018572732609408815
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.000282227905724625,
+                  "sentence": "- **Thorin Oakenshield (Character):** In the movies, Thorin Oakenshield had a relationship with Tauriel, and this was deleted from the movies.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997177720942754,
+                    "ai": 0.00010104404646854184,
+                    "paraphrased": 0.00018118385925608313
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00027043819541542176,
+                  "sentence": "However, in the book, he has a sister named Dís, and she is alive in the book but not mentioned in the movies.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997295618045846,
+                    "ai": 0.00010739031730908951,
+                    "paraphrased": 0.00016304787810633226
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0002982425382607147,
+                  "sentence": "- **Thranduil (Character):** Thranduil is Thorin's father in the movies; however, in the book, Thorin's father's name is Thrór.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997017574617393,
+                    "ai": 0.00012526529682889542,
+                    "paraphrased": 0.00017297724143181927
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0003369600749688489,
+                  "sentence": "So his father is not Thranduil in the book.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9996630399250311,
+                    "ai": 0.0001783890700136908,
+                    "paraphrased": 0.00015857100495515815
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00041310002505492494,
+                  "sentence": "- **Smaug (Character):** Smaug had no daughters, but in the movies, he had a daughter.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9995868999749451,
+                    "ai": 0.00023985656045210003,
+                    "paraphrased": 0.00017324346460282494
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9998653553006938,
+                "ai": 0.00013464469930624427,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9998653553006938,
+                  "ai": 0.00013464469930624427,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": " Movie\n 5. Conclusion\n\n---\n\n### 1. Introduction\n\n\"The Hobbit,\" written by J.R.R. Tolkien, is a fantasy novel which tells of the journey of a dwarf named Bilbo Baggins. The novel was published in 1937. It was adapted into a film trilogy in three parts, directed by Peter Jackson, starting to be released from December 2012. The books and movies are very similar but there are some changes which will be discussed here.\n\n### 2. Events Deleted or Changed in the Movie\n\nThere are many differences between the movie(s) of \"The Hobbit\" and the book as well as between the two trilogies. Most of these differences can be explained by the time constraints on making the movies and the differences in narrative style. Below is a list of the things that happened in the book but not in the movies.\n\n**Changes in Character:**\n\n- **Thorin Oakenshield (Character):** In the movies, Thorin Oakenshield had a relationship with Tauriel, and this was deleted from the movies. However, in the book, he has a sister named Dís, and she is alive in the book but not mentioned in the movies.\n- **Thranduil (Character):** Thranduil is Thorin's father in the movies; however, in the book, Thorin's father's name is Thrór. So his father is not Thranduil in the book.\n- **Smaug (Character):** Smaug had no daughters, but in the movies, he had a daughter.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-0",
+      "text_length": 1614,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.0038817677958268874,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9957692605697789,
+          "ai": 0.004230739430221073,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9957692605697789,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                  "start_sentence_index": 2,
+                  "num_sentences": 4,
+                  "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                  "start_sentence_index": 6,
+                  "num_sentences": 4,
+                  "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                  "start_sentence_index": 10,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                }
+              ],
+              "completely_generated_prob": 0.0038817677958268874,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9957692605697789,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.013474113679438966,
+                  "sentence": "mind, logic, language, ethics, and aesthetics.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.986525886320561,
+                    "ai": 0.005902680992828582,
+                    "paraphrased": 0.007571432686610384
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.017356061091872346,
+                  "sentence": "In this essay, I will compare and contrast the views of two prominent members of analytic philosophy - Ludwig Wittgenstein and Alfred J. Ayer.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9826439389081276,
+                    "ai": 0.008698609050311485,
+                    "paraphrased": 0.00865745204156086
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.013145664328163413,
+                  "sentence": "Ludwig Wittgenstein was an early 20th century Austrian-British philosopher, one of the founders of the logical positivists.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9868543356718366,
+                    "ai": 0.0055156917402716206,
+                    "paraphrased": 0.007629972587891792
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.011760227929988605,
+                  "sentence": "Ayer was a British philosopher in the first half of the 20th century who was influential as a member of the Vienna Circle.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9882397720700113,
+                    "ai": 0.005237071345819193,
+                    "paraphrased": 0.006523156584169412
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.010625957233191635,
+                  "sentence": "Both were associated with the tradition that later became known as logical positivism (also known as empiricist) and also with a group of philosophers that referred themselves as \"the Wittgensteinians\" but not with the school of thought called \"Wittgensteinian\".",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9893740427668084,
+                    "ai": 0.004076393106060052,
+                    "paraphrased": 0.006549564127131582
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.01724157715217882,
+                  "sentence": "This essay will be focusing on their contributions to the analytical school.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9827584228478212,
+                    "ai": 0.010579415522896825,
+                    "paraphrased": 0.006662161629281995
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.013577887093250392,
+                  "sentence": "Both philosophers worked on the foundations of knowledge.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9864221129067496,
+                    "ai": 0.007031293949332847,
+                    "paraphrased": 0.006546593143917545
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.012847215779765785,
+                  "sentence": "Ayer's book \"Language, Truth and Logic\" has been considered the first work in logical positivism.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9871527842202342,
+                    "ai": 0.0056357920891860975,
+                    "paraphrased": 0.007211423690579689
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.015424286400784849,
+                  "sentence": "He argued that it was impossible to talk about the metaphysical, because it was impossible to give any sense to such statements, since such statements could not be tested, and therefore were not true or false.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9845757135992151,
+                    "ai": 0.007364102378640426,
+                    "paraphrased": 0.008060184022144421
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.012100726204206755,
+                  "sentence": "Therefore his point of view can be considered that of a \"logical empiricist\", which is sometimes confused as \"Wittgensteinian\".",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9878992737957932,
+                    "ai": 0.004857071702241939,
+                    "paraphrased": 0.0072436545019648165
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.02524899741221047,
+                  "sentence": "However, Wittgenstein's approach to philosophy was different.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9747510025877896,
+                    "ai": 0.016943746262474652,
+                    "paraphrased": 0.008305251149735817
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.020329748492193926,
+                  "sentence": "Unlike Ayer, he thought that philosophy did not need to be based on science.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9796702515078061,
+                    "ai": 0.01199061939898549,
+                    "paraphrased": 0.008339129093208438
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.011882149797869083,
+                  "sentence": "His aim in writing Tractatus Logico-Philosophicus was not to write a theory, but to write the theory down, and to explain what was wrong with the way of thinking in which there existed other theories.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9881178502021309,
+                    "ai": 0.004818935764131265,
+                    "paraphrased": 0.007063214033737818
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9957692605697789,
+                "ai": 0.004230739430221073,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9957692605697789,
+                  "ai": 0.004230739430221073,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": " mind, logic, language, ethics, and aesthetics. In this essay, I will compare and contrast the views of two prominent members of analytic philosophy - Ludwig Wittgenstein and Alfred J. Ayer.\n\nLudwig Wittgenstein was an early 20th century Austrian-British philosopher, one of the founders of the logical positivists. Ayer was a British philosopher in the first half of the 20th century who was influential as a member of the Vienna Circle. Both were associated with the tradition that later became known as logical positivism (also known as empiricist) and also with a group of philosophers that referred themselves as \"the Wittgensteinians\" but not with the school of thought called \"Wittgensteinian\". This essay will be focusing on their contributions to the analytical school.\n\nBoth philosophers worked on the foundations of knowledge. Ayer's book \"Language, Truth and Logic\" has been considered the first work in logical positivism. He argued that it was impossible to talk about the metaphysical, because it was impossible to give any sense to such statements, since such statements could not be tested, and therefore were not true or false. Therefore his point of view can be considered that of a \"logical empiricist\", which is sometimes confused as \"Wittgensteinian\".\n\nHowever, Wittgenstein's approach to philosophy was different. Unlike Ayer, he thought that philosophy did not need to be based on science. His aim in writing Tractatus Logico-Philosophicus was not to write a theory, but to write the theory down, and to explain what was wrong with the way of thinking in which there existed other theories.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-8",
+      "text_length": 1616,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 6.407367363920927e-05,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9999236310467071,
+          "ai": 7.636895329291135e-05,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9999236310467071,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 1,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 2,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 3,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 4,
+                  "num_sentences": 9,
+                  "completely_generated_prob": 4.1887248735431006e-08
+                },
+                {
+                  "start_sentence_index": 13,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 14,
+                  "num_sentences": 6,
+                  "completely_generated_prob": 1.474742012248794e-05
+                }
+              ],
+              "completely_generated_prob": 6.407367363920927e-05,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9999236310467071,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.0034764112948153614,
+                  "sentence": "and *Reflective Teaching: An Introduction* by Kenneth Zeichner and Daniel Liston: A Critical Essay",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9965235887051846,
+                    "ai": 0.0031724028300675355,
+                    "paraphrased": 0.0003040084647478257
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0053849078988513705,
+                  "sentence": "This paper aims to provide a critical review of the books *The Light in Their Eyes* by Sonia Nieto and *Reflective Teaching: An Introduction* by Kenneth Zeichner and Daniel Liston.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9946150921011486,
+                    "ai": 0.005076018395646682,
+                    "paraphrased": 0.0003088895032046884
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.006279294525040637,
+                  "sentence": "*The Light in Their Eyes* by Sonia Nieto**",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9937207054749594,
+                    "ai": 0.006011216045969104,
+                    "paraphrased": 0.0002680784790715327
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.011672509831195738,
+                  "sentence": "1 1 Summary*",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9883274901688043,
+                    "ai": 0.01135386486950759,
+                    "paraphrased": 0.0003186449616881493
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.005760832090304423,
+                  "sentence": "Sonia Nieto’s *The Light in Their Eyes* provides an analysis on the education of Latinos living in the US.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9942391679096956,
+                    "ai": 0.005484299030429272,
+                    "paraphrased": 0.0002765330598751512
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0008226130081097316,
+                  "sentence": "Through this book she tries to give the reader an idea about how to get them to be better in the US schools.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9991773869918903,
+                    "ai": 0.0006557581303104933,
+                    "paraphrased": 0.0001668548777992383
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0005707833813449301,
+                  "sentence": "She starts off with how the students were treated in the US schools before 1960s.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.999429216618655,
+                    "ai": 0.0004309925128175742,
+                    "paraphrased": 0.00013979086852735584
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0004164000163637499,
+                  "sentence": "The treatment has been very bad.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9995835999836362,
+                    "ai": 0.0002723012126421813,
+                    "paraphrased": 0.0001440988037215686
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0002852127035924057,
+                  "sentence": "It is like a very big change that happened since 1960.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997147872964076,
+                    "ai": 0.00017407221272617616,
+                    "paraphrased": 0.00011114049086622954
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00022235781819274116,
+                  "sentence": "She writes about the changes for the better since then.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997776421818073,
+                    "ai": 0.00010390668748921762,
+                    "paraphrased": 0.00011845113070352355
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00016646545263986577,
+                  "sentence": "She tries to write this book in a way so that the teacher can understand and use this knowledge in the classroom.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9998335345473601,
+                    "ai": 6.838276500126185e-05,
+                    "paraphrased": 9.808268763860392e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00015448334490487665,
+                  "sentence": "She does not want any teacher to make the same mistakes as the ones that are in her book.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9998455166550951,
+                    "ai": 5.9669001330321894e-05,
+                    "paraphrased": 9.481434357455474e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00015688360130823234,
+                  "sentence": "This will lead the teachers to become better at teaching students from Latino families, or the ones that speak Spanish.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9998431163986917,
+                    "ai": 4.548784068375593e-05,
+                    "paraphrased": 0.00011139576062447642
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00024342155035410638,
+                  "sentence": "1 2 Critique*",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997565784496459,
+                    "ai": 7.476177726240662e-05,
+                    "paraphrased": 0.00016865977309169975
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0002042048268227489,
+                  "sentence": "Nieto uses a lot of examples of what to do and what not to do when teaching Hispanic students.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997957951731773,
+                    "ai": 8.387780468313754e-05,
+                    "paraphrased": 0.00012032702213961135
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00020012358547593512,
+                  "sentence": "She is clear on the information that she is giving because it is based on real life experiences.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997998764145241,
+                    "ai": 7.160049206078924e-05,
+                    "paraphrased": 0.0001285230934151459
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.000179843246613931,
+                  "sentence": "This is a benefit of using examples and case studies instead of using theories.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9998201567533861,
+                    "ai": 5.8163131120152386e-05,
+                    "paraphrased": 0.00012168011549377862
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00022472893209053013,
+                  "sentence": "The book could have added more information about how the Hispanic culture is.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997752710679094,
+                    "ai": 8.175302683669521e-05,
+                    "paraphrased": 0.00014297590525383494
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00021399372322455625,
+                  "sentence": "Because not everyone has experienced with them, the reader would need that information in order to teach these people better.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9997860062767755,
+                    "ai": 7.896243554830717e-05,
+                    "paraphrased": 0.00013503128767624906
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0007657386446720238,
+                  "sentence": "2.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.999234261355328,
+                    "ai": 0.0003311731953463542,
+                    "paraphrased": 0.0004345654493256696
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9999236310467071,
+                "ai": 7.636895329291135e-05,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9999236310467071,
+                  "ai": 7.636895329291135e-05,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": " and *Reflective Teaching: An Introduction* by Kenneth Zeichner and Daniel Liston: A Critical Essay\n\nThis paper aims to provide a critical review of the books *The Light in Their Eyes* by Sonia Nieto and *Reflective Teaching: An Introduction* by Kenneth Zeichner and Daniel Liston.\n\n**1. *The Light in Their Eyes* by Sonia Nieto**\n\n**1.1 Summary**\n\nSonia Nieto’s *The Light in Their Eyes* provides an analysis on the education of Latinos living in the US. Through this book she tries to give the reader an idea about how to get them to be better in the US schools. She starts off with how the students were treated in the US schools before 1960s. The treatment has been very bad. It is like a very big change that happened since 1960. She writes about the changes for the better since then. She tries to write this book in a way so that the teacher can understand and use this knowledge in the classroom. She does not want any teacher to make the same mistakes as the ones that are in her book. This will lead the teachers to become better at teaching students from Latino families, or the ones that speak Spanish. \n\n**1.2 Critique**\n\nNieto uses a lot of examples of what to do and what not to do when teaching Hispanic students. She is clear on the information that she is giving because it is based on real life experiences. This is a benefit of using examples and case studies instead of using theories. The book could have added more information about how the Hispanic culture is. Because not everyone has experienced with them, the reader would need that information in order to teach these people better.\n\n**2.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-9",
+      "text_length": 1385,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.22439930866510419,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.7753571710568232,
+          "ai": 0.22464282894317672,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.7753571710568232,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 1,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 2,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                  "start_sentence_index": 5,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                  "start_sentence_index": 8,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 9,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 10,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                  "start_sentence_index": 12,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                }
+              ],
+              "completely_generated_prob": 0.22439930866510419,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.7753571710568232,
+              "confidence_category": "medium",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.35580981467681666,
+                  "sentence": "-",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6441901853231833,
+                    "ai": 0.004243324930967542,
+                    "paraphrased": 0.35156648974584914
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.31799916390706956,
+                  "sentence": "Introduction",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6820008360929304,
+                    "ai": 0.003595975951337713,
+                    "paraphrased": 0.31440318795573186
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.37156472717418454,
+                  "sentence": "The Bhopal disaster, also known as the Bhopal gas tragedy, is one of the most tragic industrial disasters in human history.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6284352728258155,
+                    "ai": 0.007526666150291746,
+                    "paraphrased": 0.3640380610238928
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.3869570254489648,
+                  "sentence": "It occurred on December 3, 1984, when a pesticide plant, Union Carbide India Limited, based in Gwaliar, Madhya Pradesh, India, leaked methyl isocyanate.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6130429745510352,
+                    "ai": 0.006370900293643337,
+                    "paraphrased": 0.3805861251553215
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.3960915410338943,
+                  "sentence": "It is estimated that around 25,000-50,000 people died immediately and within a few days, and over 200,000 were severely affected by the disaster.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6039084589661057,
+                    "ai": 0.00601646656487808,
+                    "paraphrased": 0.39007507446901624
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.39565765013440024,
+                  "sentence": "There have been several reports regarding the Bhopal disaster, each of which has its own unique features.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6043423498655998,
+                    "ai": 0.004885570214394064,
+                    "paraphrased": 0.3907720799200062
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.4082577308456068,
+                  "sentence": "Khare, who was appointed as the Chief Judge for the Inquiry Commission for the Bhopal Gas Tragedy.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5917422691543932,
+                    "ai": 0.004710032075368366,
+                    "paraphrased": 0.40354769877023844
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.4507885163385546,
+                  "sentence": "In this essay, I will provide a rhetorical analysis of this report.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5492114836614455,
+                    "ai": 0.0033611691361273744,
+                    "paraphrased": 0.4474273472024272
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.4493395279854885,
+                  "sentence": "Website 1: Rhetorical Analysis",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5506604720145115,
+                    "ai": 0.003349666368274339,
+                    "paraphrased": 0.44598986161721416
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.45669611737000415,
+                  "sentence": "### 2.1 Purpose and Audience",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5433038826299958,
+                    "ai": 0.003934338512971766,
+                    "paraphrased": 0.4527617788570324
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.4374802130915404,
+                  "sentence": "The purpose of the Bhopal Gas Tragedy Report is to describe and analyze all the causes that led to the Bhopal gas tragedy.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5625197869084596,
+                    "ai": 0.004057768253421235,
+                    "paraphrased": 0.43342244483811915
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.43444196644981803,
+                  "sentence": "The report is not a technical document, but rather a legal report written for the Indian Government so that they can use it to take action on the people responsible for the disaster.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.565558033550182,
+                    "ai": 0.0037282997482473187,
+                    "paraphrased": 0.4307136667015707
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.42065170689726744,
+                  "sentence": "The audience for this report includes the Government officials of India, the Indian citizens, as well as the people who lived in or near Bhopal, who have lost their lives due to the gas leakage.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5793482931027325,
+                    "ai": 0.004748447087986725,
+                    "paraphrased": 0.4159032598092807
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.7753571710568232,
+                "ai": 0.22464282894317672,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.7753571710568232,
+                  "ai": 0.22464282894317672,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is moderately confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": "\n---\n\n## 1. Introduction\n\nThe Bhopal disaster, also known as the Bhopal gas tragedy, is one of the most tragic industrial disasters in human history. It occurred on December 3, 1984, when a pesticide plant, Union Carbide India Limited, based in Gwaliar, Madhya Pradesh, India, leaked methyl isocyanate. It is estimated that around 25,000-50,000 people died immediately and within a few days, and over 200,000 were severely affected by the disaster.\n\nThere have been several reports regarding the Bhopal disaster, each of which has its own unique features. A good example of such a report is the \"Bhopal Gas Tragedy Report\" compiled by Justice V.N. Khare, who was appointed as the Chief Judge for the Inquiry Commission for the Bhopal Gas Tragedy. In this essay, I will provide a rhetorical analysis of this report.\n\n## 2. Website 1: Rhetorical Analysis\n\n### 2.1 Purpose and Audience\n\nThe purpose of the Bhopal Gas Tragedy Report is to describe and analyze all the causes that led to the Bhopal gas tragedy. The report is not a technical document, but rather a legal report written for the Indian Government so that they can use it to take action on the people responsible for the disaster.\n\nThe audience for this report includes the Government officials of India, the Indian citizens, as well as the people who lived in or near Bhopal, who have lost their lives due to the gas leakage.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "processed": 10,
+  "errors": 0,
+  "skipped": 0
+}

@@ -1,0 +1,576 @@
+{
+  "model_type": "instruct",
+  "model_id": "google/gemma-2-9b-it",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400,
+    "batched": true,
+    "batch_size": 4
+  },
+  "intervention": {
+    "mode": "partial_ablate",
+    "direction_path": "data/pasta_directions/google_gemma-2-9b-it/v_cross_L2.pt",
+    "layer": 2,
+    "alpha": 2.0,
+    "tag": "v_cross_L2_partial_ablate_alpha2.00_batched"
+  },
+  "domain": "scientific_abstracts",
+  "num_generations": 25,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the, a the,, can.,      the, the it is,, the the  , to  . the the, the the, how,,   .\n\n re, no, the the, a, the,  a the.\n\n,  , and for a good of your, for a a.   .\n\n last  , that the have , I can..\n\n the     how, it the to,    . the\n\n   the,  , when   the  ,   to the, when. and how      the    , it, and.\n\n and the more the,   and  -,  ,  your.   can try to a ,, and the\n\n   the  .\n\n .\n\n. to the  ,  ,  \n\n I',  ,  ,   the\n\n.    ,   to the  .  \n\n  ,  .  , no a  , to,    \n\n, what, a a  .   \n\n  ,  .  in any the in the,  \n\n.  to  \n\nThe    the,  ,    ,  ,   the the the,  .  \n\n the the, the,  ,  the, the the,, this are the  .  the the is a  the,  , ,  last,  ,   , the\n\n.\n\n   one   the first day\n\n to the , the one, can be.  is   a  , and    that all of   a a for a  ,   the.   \n\n I do not have, to the   a, a big the the.\n\nWhen e  , it is.   \n\n\n  , how to- that. ,   the to, and the   any  .\n\n.  \n\n,  , the, you to",
+      "processed_text": "the, a the,, can.,      the, the it is,, the the  , to  . the the, the the, how,,   .\n\n re, no, the the, a, the,  a the.\n\n,  , and for a good of your, for a a.   .\n\n last  , that the have , I can..\n\n the     how, it the to,    . the\n\n   the,  , when   the  ,   to the, when. and how      the    , it, and.\n\n and the more the,   and  -,  ,  your.   can try to a ,, and the\n\n   the  .\n\n .\n\n. to the  ,  ,  \n\n I',  ,  ,   the\n\n.    ,   to the  .  \n\n  ,  .  , no a  , to,    \n\n, what, a a  .   \n\n  ,  .  in any the in the,  \n\n.  to  \n\nThe    the,  ,    ,  ,   the the the,  .  \n\n the the, the,  ,  the, the the,, this are the  .  the the is a  the,  , ,  last,  ,   , the\n\n.\n\n   one   the first day\n\n to the , the one, can be.  is   a  , and    that all of   a a for a  ,   the.   \n\n I do not have, to the   a, a big the the.\n\nWhen e  , it is.   \n\n\n  , how to- that. ,   the to, and the   any  .\n\n.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 87,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Text categorization methods application for natural language call routing\n\nBegin with: \"Natural language call routing can be treated as an instance of topic categorization of documents after speech recognition of calls. This categorization consists of two important parts. The first one is text preprocessing for numerical data extraction and the second one is classification with machine\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the,  - the the,  a the. the a the, and the three,, the  , the the, a, the, that, and..,\n\n the, the,,,.\n\n, the ,, the,, a, in the a. the   ,.  the  the     a, last in  ,   a  , a a,  the,, now.   the the, the   the the   .  a  , the, this is the a, for,, the the,, and  , for a, ,   a are some,, the\n\n. in this. No,, the the the\n\n the, ,.  \n\n,  , the,    a     are. the, so how, the,.   ,  , the. , , a the..   that the\n\n   the the.\n, the, in the.  , the, how, , ,.\n\n  ,  just in a big.  .  is,. I see,, .  to  , the   a,  , , the.\n\n  .\n\n this,  look  ,  a     a   the   in    , the      the the and\n\n   ,.\n\n.\n\n, in the. a  ,   the the,    , the.   the  the and      the  ,  , the.    to go.\n\nThe the the the to, when,   a  , and this the,   and     the the, the the the    ,   of.\n\n,  all,   for a  ,   the     the for the the the  the   ,   the the, I. , in a   the the,  of the.  \n\n   how  ",
+      "processed_text": "the,  - the the,  a the. the a the, and the three,, the  , the the, a, the, that, and..,\n\n the, the,,,.\n\n, the ,, the,, a, in the a. the   ,.  the  the     a, last in  ,   a  , a a,  the,, now.   the the, the   the the   .  a  , the, this is the a, for,, the the,, and  , for a, ,   a are some,, the\n\n. in this. No,, the the the\n\n the, ,.  \n\n,  , the,    a     are. the, so how, the,.   ,  , the. , , a the..   that the\n\n   the the.\n, the, in the.  , the, how, , ,.\n\n  ,  just in a big.  .  is,. I see,, .  to  , the   a,  , , the.\n\n  .\n\n this,  look  ,  a     a   the   in    , the      the the and\n\n   ,.\n\n.\n\n, in the. a  ,   the the,    , the.   the  the and      the  ,  , the.    to go.\n\nThe the the the to, when,   a  , and this the,   and     the the, the the the    ,   of.\n\n,  all,   for a  ,   the     the for the the the  the   ,   the the, I. , in a   the the,  of the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 87,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Adaptive Ensembling: Unsupervised Domain Adaptation for Political Document Analysis\n\nBegin with: \"Insightful findings in political science often require researchers to analyze documents of a certain subject or type, yet these documents are usually contained in large corpora that do not distinguish between pertinent and non-pertinent documents. In contrast, we can find\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the, the, the to the-,,    the the,, and the,, a       the,,  ,  the    .  the .   and  a. the,,, and the, the the,  ,  to the to  , the the, and and for a, to, this,  . a  the the,. -   the  to, in the, this is, to the, in the.  , the the a, or\n\n, or the,  .  the  , or the a,  the to, you.\n\n,   , and to a, the  ,\n\n   o, the.\n\n  , the top the, is on the   to, so the   to     the the re re\n\n here the the  , are in the same of this,,\n\n, the that- how to, the  ,   is a a. , you do this. the      , the it is a good one, it,, the a the,. and are the, a, the on the a an, this, to,. , or,.  your this,, and the the.  the on and the ,  the, the a,  the, are,  , that a a   ,  , the,    , how. This.\n\n   the . ,  , the , or a and to the,  one, and to the the  ,   the, so  a   the the,,   , the,.\n\n,   the   ,   the that to, and, and the  .  the  , on,  the   , a  .  ,  , it   the, a   in a new  \n\n,  the for the, to be the, on, that the",
+      "processed_text": "the, the, the to the-,,    the the,, and the,, a       the,,  ,  the    .  the .   and  a. the,,, and the, the the,  ,  to the to  , the the, and and for a, to, this,  . a  the the,. -   the  to, in the, this is, to the, in the.  , the the a, or\n\n, or the,  .  the  , or the a,  the to, you.\n\n,   , and to a, the  ,\n\n   o, the.\n\n  , the top the, is on the   to, so the   to     the the re re\n\n here the the  , are in the same of this,,\n\n, the that- how to, the  ,   is a a. , you do this. the      , the it is a good one, it,, the a the,. and are the, a, the on the a an, this, to,. , or,.  your this,, and the the.  the on and the ,  the, the a,  the, are,  , that a a   ,  , the,    , how. This.\n\n   the . ,  , the , or a and to the,  one, and to the the  ,   the, so  a   the the,,   , the,.\n\n,   the   ,   the that to, and, and the  .  the  , on,  the   , a  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 87,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Synthesis and biological evaluation of new spirooxindoles with embedded pharmacophores\n\nBegin with: \"A regioselective synthesis of new mono and bisoxindoles containing bis spiro heterocyclic hybrids has been envisaged via 1,3-dipolar cycloaddition of azomethine ylides with the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the a the, the, a, the for,,     all this, no, the to the the   the the, the the a   to the the... the, last the, and   a  ,.       the   the the, the the. all, can the the,, in.\n\n, all   to all of..\n\n,. I to, the, the a    .\n\n for the to for,,   last for,, or the, for the, the, the.  , and a, I don..\n\n the, and the, the the is, the the a,  the,, to, and to the the, in the, it for to, the to  , and a,.   the   the, the, you down the the.\n      , and I a all the    ,  , the the  the\n\n,,,    ,  a.\n\n, how, the,,  , and  a   to,  .   all   a the,  the,.\n\n The are go   a.\n\n and the   the.\n\n\n  , here the the  , the   a to the, in-\n\n the one,  the,,  the.\n\n   for,    , the   the, the  to.  \n\n   the  \n\n the    .    .  .  , and to any one of the the to the    .\n\n.  ,   , you.  .\n\n,  and  an, are all.\n\n  a  all.  ,    him.     and,  , this   the a  , a  ,.\n\n,  .\n\n a.   the, in      the,  .  ,   the the the the the  the , , and, or and   .",
+      "processed_text": "the a the, the, a, the for,,     all this, no, the to the the   the the, the the a   to the the... the, last the, and   a  ,.       the   the the, the the. all, can the the,, in.\n\n, all   to all of..\n\n,. I to, the, the a    .\n\n for the to for,,   last for,, or the, for the, the, the.  , and a, I don..\n\n the, and the, the the is, the the a,  the,, to, and to the the, in the, it for to, the to  , and a,.   the   the, the, you down the the.\n      , and I a all the    ,  , the the  the\n\n,,,    ,  a.\n\n, how, the,,  , and  a   to,  .   all   a the,  the,.\n\n The are go   a.\n\n and the   the.\n\n\n  , here the the  , the   a to the, in-\n\n the one,  the,,  the.\n\n   for,    , the   the, the  to.  \n\n   the  \n\n the    .    .  .  , and to any one of the the to the    .\n\n.  ,   , you.  .\n\n,  and  an, are all.\n\n  a  all.  ,    him.     and,  , this   the a  , a  ,.\n\n,  .\n\n a.   the, in      the,  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 87,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Buyer‐supplier collaboration: the aim of FM procurement?\n\nBegin with: \"Purpose – The purpose of this study is to explore the causal link between procurement route and ongoing buyer‐supplier relationship.Design/methodology/approach – The research draws on literature in the areas of: facilities management (FM) outsourcing; purchasing and supply chain\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ". to the the  - , and all the the  the, to in the,    the, the the  ,, the, to the to   to the the the    -  to. , the the  , the,  a    , the the a new the and. For a   and the the the the the,   the, the     to, the,   ,   the,      , the,  ,   the re- the,, , the for\n\n , to\n\n a  , and the.  \n\n, the a the, \n\n   the a the  the,    a   a  .\n\n, the   and   the it to the, and the the, the   to,   , you are on the,,    ,   a the,  , and and   , the,.  , are for the,   and the to   the,  the,  the, of. ,   how.     the last time   , the the, and  , the is the the.   . This     \n\n  , a lot of the the, you just re, the  . ,   ,   .   , or,    for and the the the   the, the the     the.   .    -  ,  , the the the, or,   in the to   to   to  any of, so,    the  the, and,   the   a   the,,   about   the the to  , and it a   any a, the, ,  the  the   that it to the   and the the   the, and, and the       the   all of a the, the   the a big,     a to    , it   the, are",
+      "processed_text": ". to the the  - , and all the the  the, to in the,    the, the the  ,, the, to the to   to the the the    -  to. , the the  , the,  a    , the the a new the and. For a   and the the the the the,   the, the     to, the,   ,   the,      , the,  ,   the re- the,, , the for\n\n , to\n\n a  , and the.  \n\n, the a the, \n\n   the a the  the,    a   a  .\n\n, the   and   the it to the, and the the, the   to,   , you are on the,,    ,   a the,  , and and   , the,.  , are for the,   and the to   the,  the,  the, of. ,   how.     the last time   , the the, and  , the is the the.   . This     \n\n  , a lot of the the, you just re, the  . ,   ,   .   , or,    for and the the the   the, the the     the.   .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 100,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: On the Support of Massive Machine-to-Machine Traffic in Heterogeneous Networks and Fifth-Generation Cellular Networks\n\nBegin with: \"The widespread availability of many emerging services enabled by the Internet of Things (IoT) paradigm passes through the capability to provide long-range connectivity to a massive number of things, overcoming the well-known issues of ad-hoc, short-range networks. This\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the  ,.  a  ,, and to the,     a the   the the  \n\n   the  ,, for,   and the,,    ...  , the   re a  ,  , the the\n\n, and   a the,.   the.   the, a   the\n\n the. ,, the first the,  , , no,   to.\n\n  \n\n.  the, are   an  , how    the.\n\n, and a all, and  to this the, the first, and. I am not, the only,   of a   the    ,  , the   the,   the and the a to the the , can do this, and it to down the, the, or.  the   the,   the  ,  .\n\n The   a   a, and  , the a a , the the, a,  , the. So re, any.   ,, a   a    , the and to   .\n\n   a.\n\n      ,  . , in the the.  \n ,  a a  , the,  , to the\n\n.  the,  stand  , and the re for, ,.\n\n a   this to to the   the the  ,  ,  , the the the, and, the in  in a  , that   -.   how\n\n  and a of  , and the.\n\n .\n\nA   g, a in-   a the, an.   the the,, ,    a     the to the and.   this, the, the to a a,  ,    ,   the    ,  ,  .  , the   ,   the the the the, how the, the the, the.  \n\n that you, this is the",
+      "processed_text": "the  ,.  a  ,, and to the,     a the   the the  \n\n   the  ,, for,   and the,,    ...  , the   re a  ,  , the the\n\n, and   a the,.   the.   the, a   the\n\n the. ,, the first the,  , , no,   to.\n\n  \n\n.  the, are   an  , how    the.\n\n, and a all, and  to this the, the first, and. I am not, the only,   of a   the    ,  , the   the,   the and the a to the the , can do this, and it to down the, the, or.  the   the,   the  ,  .\n\n The   a   a, and  , the a a , the the, a,  , the. So re, any.   ,, a   a    , the and to   .\n\n   a.\n\n      ,  . , in the the.  \n ,  a a  , the,  , to the\n\n.  the,  stand  , and the re for, ,.\n\n a   this to to the   the the  ,  ,  , the the the, and, the in  in a  , that   -.   how\n\n  and a of  , and the.\n\n .\n\nA   g, a in-   a the, an.   the the,, ,    a     the to the and.   this, the, the to a a,  ,    ,   the    ,  ,  .  , the   ,   the the the the, how the, the the, the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 100,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: A comparison of 3D computer propagation prediction with GSM signal measurements\n\nBegin with: \"This paper presents comparisons between predicted and measured data for a live GSM system. Our propagation prediction software tool is based on 3D-ray tracing, and considers wave interactions, such as free space, reflection, diffraction, and scattering. The underlying\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ", the,,, the are for, a a, the the, the the, the,, and.,, the the   a a, a, of the to the,,,, and you a a the. in a,, the the   this,, and the  the to and the.\n\n the, or the, the the  the, , the.  , the the,   the,, a good.,  , a a  the, the     a, the  key,   a    for  ,, of the,  in for. ,.\n\n the the, the,  .\n\n  , on for,   a for the,,     it is the,   the     the the,     this-   the it to  ,     the  .\n\n  to.     to,\n\n the one to the   ,     a. That all for, the, and the re,, so and,,, the\n\n,\n\n. the for the the the, and it.   a a  , a   , and.    ,,,,    the the,   the, the  ,  the re   this to,  .  for the, for a   a the   a - on the , a the, , the the to,        any one to the,  .\n\n  it, a the on   , and the.  this this, I a that,   one of a, this is the,   this the, a-  , that you,,.   to    ,    , and.\n\n this all this,    ,  the    ,    the   , and the    , the a, that, , and, and the a, that is, and   the,,\n\n the,",
+      "processed_text": ", the,,, the are for, a a, the the, the the, the,, and.,, the the   a a, a, of the to the,,,, and you a a the. in a,, the the   this,, and the  the to and the.\n\n the, or the, the the  the, , the.  , the the,   the,, a good.,  , a a  the, the     a, the  key,   a    for  ,, of the,  in for. ,.\n\n the the, the,  .\n\n  , on for,   a for the,,     it is the,   the     the the,     this-   the it to  ,     the  .\n\n  to.     to,\n\n the one to the   ,     a. That all for, the, and the re,, so and,,, the\n\n,\n\n. the for the the the, and it.   a a  , a   , and.    ,,,,    the the,   the, the  ,  the re   this to,  .  for the, for a   a the   a - on the , a the, , the the to,        any one to the,  .\n\n  it, a the on   , and the.  this this, I a that,   one of a, this is the,   this the, a-  , that you,,.   to    ,    , and.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 100,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Enhancement in the physical properties of inorganic pigment layer in the color block by incorporation of n liquid additive\n\nBegin with: \"Effects of a carboxylated styrene-butadiene-based liquid additive on the microstructure, mechanical strength and decolorization resistance of inorganic pigment layer in the color block have been examined. More dense inorganic pigment layer characterized by lower\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "  the are in the a and         to the the, re the, three the a   the the,  , the the   the and  ..., the key for the the.   the a, it   on the  , a, the the and the the  ,,    , this the,,,  to, to, and the, the the the, no,     to be. a   the  the  the, when  , a  a  ,   a    ,   , an- to,  , ,  .\n\n the for the all   to be all, it the the for, , the, and the the the  , the\n\n- the.    .    , that.  the one of  ,\n\n the    the  . the  the, this the the, the, a.   , to the,   the, the and the, the, a   a, the the the,    the,  .  .\n\n the re, how,   the and in the,, the, the the the   the,     the,    \n\n  a  , this the to, the the the    , of course,, and  .\n\n to, , and the bottom, the,  - re,, that.  , this a   the, , I,  ,   a, the a, and,.\n\n,   a for a,  to the the.\n\n the the  . ,  the the the, you  a    , the  , can.   to a new, to, and you   ,    the.,   the first, of one of the the,  , the, the.  .\n\n here, how  .  \n\n the, the  the,  , a.\n\n are.\n\n  ,",
+      "processed_text": "the are in the a and         to the the, re the, three the a   the the,  , the the   the and  ..., the key for the the.   the a, it   on the  , a, the the and the the  ,,    , this the,,,  to, to, and the, the the the, no,     to be. a   the  the  the, when  , a  a  ,   a    ,   , an- to,  , ,  .\n\n the for the all   to be all, it the the for, , the, and the the the  , the\n\n- the.    .    , that.  the one of  ,\n\n the    the  . the  the, this the the, the, a.   , to the,   the, the and the, the, a   a, the the the,    the,  .  .\n\n the re, how,   the and in the,, the, the the the   the,     the,    \n\n  a  , this the to, the the the    , of course,, and  .\n\n to, , and the bottom, the,  - re,, that.  , this a   the, , I,  ,   a, the a, and,.\n\n,   a for a,  to the the.\n\n the the  . ,  the the the, you  a    , the  , can.   to a new, to, and you   ,    the.,   the first, of one of the the,  , the, the.  .\n\n here, how  .  \n\n the, the  the,  , a.\n\n are.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 100,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: SIMULATIONS AND OPTIMIZATIONS OF A NEW POWER COUPLER FOR 3.9-GHZ SUPERCONDUCTING CAVITIES AT FERMILAB*\n\nBegin with: \"GHz third harmonic superconducting cavities have been used to increase the peak bunch current and to compensate for non-linear distortions in the longitudinal phase space due to sinusoidal 1.3 GHz accelerating cavity voltage (1). The power coupler\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " a a all,   the the   the, the     the., re-, ,   the the a the, the the, to, the  , a,, and,,,, a,,, the the,, in a ,  re the    \n\n, for, off the all the, for. to the to all, to,   a, the the, the the,,   the, the the.   all the \n\n    , how you,, it, and in the, the, the,   ,    , no, it.  the. .  the a the , the,, can you and to   the, the,   the,,.\n\nThe a new the  the   a, and the, the    .   ,, and the the.   \n\nThis are the.  . the    a big,     a,, you,,, and and   ,    , the,    ,  a.  , no,, the..   in the  , that the, to the and   , it   . , I   it is the for a   \n\n  \n\n    this,  the,  ,   the, are the re,   the the.\n the,   ,  , to the the.\n\n\n\n,  o, this are the the, the,  ,    and are, the, to  - how to  , that the, , I   to the the, the the, and ,   for the,  the all to,  the.\n   in the,   the  ,,     .\n\n   to the,  , the.\n\n a to, the the.  for an,   the re-,     the the the the  the, to",
+      "processed_text": "a a all,   the the   the, the     the., re-, ,   the the a the, the the, to, the  , a,, and,,,, a,,, the the,, in a ,  re the    \n\n, for, off the all the, for. to the to all, to,   a, the the, the the,,   the, the the.   all the \n\n    , how you,, it, and in the, the, the,   ,    , no, it.  the. .  the a the , the,, can you and to   the, the,   the,,.\n\nThe a new the  the   a, and the, the    .   ,, and the the.   \n\nThis are the.  . the    a big,     a,, you,,, and and   ,    , the,    ,  a.  , no,, the..   in the  , that the, to the and   , it   . , I   it is the for a   \n\n  \n\n    this,  the,  ,   the, are the re,   the the.\n the,   ,  , to the the.\n\n\n\n,  o, this are the the, the,  ,    and are, the, to  - how to  , that the, , I   to the the, the the, and ,   for the,  the all to,  the.\n   in the,   the  ,,     .\n\n   to the,  , the.\n\n a to, the the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 95,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Effect of PT-Symmetric Operator on Coherence Under the Non-Markovian Environments\n\nBegin with: \"In this work, we mainly investigate effect of PT-symmetric operation on the dynamic behavior of the relative entropy of coherence for a two-level system within non-Markovian environments and put forward a feasible physical scheme to recover coherence by utilizing optimal\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ",,, this and, and,, in the, this, the. The      all a all and,, the,,,, the, it     to the   the, of  ,,  , it is a,   for, you see a  , a     ,  \n\n, the the the, in   in the, the  a a, the in the the     the. , it, and. a  , in the  , the the the.\n\n, no,.\n, a the,, last one, when, to the\n\n  , the, the,.  , the,  .\n\n, how,,   a re.e, in the   the the,, the, to   the the all, you,  .  the a  , I can not.  the  , the.   a    , the.\n\n to,   that,   a   the  , ,  the. , that,,   to   the,    .   all,  ,  .  the, a the all of, the   to, or    , how.\n\n the,  ,   a  .    that the,  , or the, the, it  , so the  ,  for the, is the a .\n a  .   a key, the.  \n\n, the, .   the  \n\n, this a the,  ,,   the re a a  , and  and to,   , the     a.   \n\n,   in.\n\n, it is. , and  , this, are, you in the the   , of the   the,   are, the,  the   a.   ,   .  in the,  .\n\n last all   the all,   all, no",
+      "processed_text": ",,, this and, and,, in the, this, the. The      all a all and,, the,,,, the, it     to the   the, of  ,,  , it is a,   for, you see a  , a     ,  \n\n, the the the, in   in the, the  a a, the in the the     the. , it, and. a  , in the  , the the the.\n\n, no,.\n, a the,, last one, when, to the\n\n  , the, the,.  , the,  .\n\n, how,,   a re.e, in the   the the,, the, to   the the all, you,  .  the a  , I can not.  the  , the.   a    , the.\n\n to,   that,   a   the  , ,  the. , that,,   to   the,    .   all,  ,  .  the, a the all of, the   to, or    , how.\n\n the,  ,   a  .    that the,  , or the, the, it  , so the  ,  for the, is the a .\n a  .   a key, the.  \n\n, the, .   the  \n\n, this a the,  ,,   the re a a  , and  and to,   , the     a.   \n\n,   in.\n\n, it is. , and  , this, are, you in the the   , of the   the,   are, the,  the   a.   ,   .  in the,  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 95,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: The Sel1L-Hrd1 Endoplasmic Reticulum-Associated Degradation Complex Manages a Key Checkpoint in B Cell Development.\n\nBegin with: \"Endoplasmic reticulum (ER)-associated degradation (ERAD) is a principal mechanism that targets ER-associated proteins for cytosolic proteasomal degradation. Here, our data demonstrate a critical role for the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-10",
+      "sample_id": 10,
+      "original_prefix_id": 10,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the a a the the the,, the the, the, the,, re- a a,,, ., the  , the. last,, in the the the. all.  the, the.,     the the, the,, the, the,,,.  the the,,- the the the    the  the.  the. the the , the   in the    the and all the the the for a, a, in the, no,,,-,, can be.  , the.  the, the   the  , the,     the the, a, I  , and the,.\n\n, the, the  , a,    .  the.   ,   to re a good, a the.\n\n for, the ,   the,  ,  ,. the,  in-, I am so,  , and a go to,, in on,    .\n\n,    \n\n  , or the the   , it the, in the for   a   a,     , it a    ,  , that'  ,  the  , the last  , and   a  ,  .  \n\n,  , I  .   a   ,   a ,    .    .  to, to the in the the, the  , how   the a.  in,  , it. a   a.\n\n.\n\n,  the .  the , , for,.\n   in on   the the  .   the  ,  ,  , the  ,  \n\n, you on   a     the the    , the    .\n  ,  .\n\n a, the, and  a  \n\n,   a  , the the,  the one,  . .",
+      "processed_text": "the a a the the the,, the the, the, the,, re- a a,,, ., the  , the. last,, in the the the. all.  the, the.,     the the, the,, the, the,,,.  the the,,- the the the    the  the.  the. the the , the   in the    the and all the the the for a, a, in the, no,,,-,, can be.  , the.  the, the   the  , the,     the the, a, I  , and the,.\n\n, the, the  , a,    .  the.   ,   to re a good, a the.\n\n for, the ,   the,  ,  ,. the,  in-, I am so,  , and a go to,, in on,    .\n\n,    \n\n  , or the the   , it the, in the for   a   a,     , it a    ,  , that'  ,  the  , the last  , and   a  ,  .  \n\n,  , I  .   a   ,   a ,    .    .  to, to the in the the, the  , how   the a.  in,  , it. a   a.\n\n.\n\n,  the .  the , , for,.\n   in on   the the  .   the  ,  ,  , the  ,  \n\n, you on   a     the the    , the    .\n  ,  .\n\n a, the, and  a  \n\n,   a  , the the,  the one,  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 95,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Retracted: The impact of corporate social responsibility on human resource management practices in manufacturing firms in the southern part of Malaysia\n\nBegin with: \"CSR has gained substantial consideration in management circles and have been linked to HRM in various ways. The study on how CSR would affect HRM or the vice versa has been of interest by many scholars. Much has been focusing on the conceptual framework,\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-11",
+      "sample_id": 11,
+      "original_prefix_id": 11,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ",,,,  the, a the the the,,   the the, , the   a, the   a  . the, . , a the. to down, the the, of  , ,, is,,,.  the\n\n the the the a, a  ,,  , for the the,, it, and  , and you the it the the,   a, the all    , the the to, the. to.\n\n to, for the,, and the the to\n\n.   the.\n\n, the the a   a, no a,,  the a key the,.  , to the   are.\n\n more, the the,,, the the, the the.   the last,.     , how a    \n\n  o,. to, the     a  ,  ,   the the the , this this       the  .\n\n that.  , you\n\n, or the  , how to, in, how, a,,    , and.   a it, the,,   a the the the, the,  , the     the the the   a the, the the   the, the the      ,   the.   \n\n   a   the the, or  , the   to  , you just,, I a a    , the,, and.\n\n\n, or.  , , and so   , the   of the, or   an to, the the the,  \n\n the,  ,   the,  ,   to. .  , it all, and the,,.  a  .  .  the    that this the  a  , the   the, the,, all,, and the the,  .  ,  a.  .  \n\n  , I   to the,",
+      "processed_text": ",,,,  the, a the the the,,   the the, , the   a, the   a  . the, . , a the. to down, the the, of  , ,, is,,,.  the\n\n the the the a, a  ,,  , for the the,, it, and  , and you the it the the,   a, the all    , the the to, the. to.\n\n to, for the,, and the the to\n\n.   the.\n\n, the the a   a, no a,,  the a key the,.  , to the   are.\n\n more, the the,,, the the, the the.   the last,.     , how a    \n\n  o,. to, the     a  ,  ,   the the the , this this       the  .\n\n that.  , you\n\n, or the  , how to, in, how, a,,    , and.   a it, the,,   a the the the, the,  , the     the the the   a the, the the   the, the the      ,   the.   \n\n   a   the the, or  , the   to  , you just,, I a a    , the,, and.\n\n\n, or.  , , and so   , the   of the, or   an to, the the the,  \n\n the,  ,   the,  ,   to. .  , it all, and the,,.  a  .  .  the    that this the  a  , the   the, the,, all,, and the the,  .  ,  a.  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 95,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Identification of astaxanthin diglucoside diesters from snow alga Chlamydomonas nivalis by liquid chromatography-atmospheric pressure chemical ionization mass spectrometry.\n\nBegin with: \"Abstract A method is described for the identification of astaxanthin glucoside esters from snow alga Chlamydomonas nivalis by means of liquid chromatography–mass spectrometry with atmospheric pressure chemical ionization\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-12",
+      "sample_id": 12,
+      "original_prefix_id": 12,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the  a  , a-,-, and the the the,,     the the.-, this is the, the the, the. and  the the the   for, to       ;,, the   the the  , and the    . to,   the the for,, the  , or the to the,   a , the.     how to,, and to   the   how, the the the.  a to,,   the,   can, the a the        the  ,   the, the, the the   this a this .  .  the to\n\n the   the ,     , the- on  ,  , and , and this a, you, you\n\n the the, when the, a,  .\n\n,  ,  .   in any the the, the, , how,  ,   the      ,  ,   a  .    that and     , , the  the,  any,   the,,   the.       , to a, ,, , and the that, the the  the.  \n\n,  . A  ,  the first for it  , here.\n\n the, or   , , how,.   \n\n and the,\n\n a  , , a, and a.\n\n   the the, and    .   all in   , a  a, , I   the the, are the.\n\n the a   to to, a a,,   .  ,    a , a   this, to,. This  , a all of.  , and the the the a   in,   the   the the,  the all, and your  .\n\n a and the    ,    to    ",
+      "processed_text": "the  a  , a-,-, and the the the,,     the the.-, this is the, the the, the. and  the the the   for, to       ;,, the   the the  , and the    . to,   the the for,, the  , or the to the,   a , the.     how to,, and to   the   how, the the the.  a to,,   the,   can, the a the        the  ,   the, the, the the   this a this .  .  the to\n\n the   the ,     , the- on  ,  , and , and this a, you, you\n\n the the, when the, a,  .\n\n,  ,  .   in any the the, the, , how,  ,   the      ,  ,   a  .    that and     , , the  the,  any,   the,,   the.       , to a, ,, , and the that, the the  the.  \n\n,  . A  ,  the first for it  , here.\n\n the, or   , , how,.   \n\n and the,\n\n a  , , a, and a.\n\n   the the, and    .   all in   , a  a, , I   the the, are the.\n\n the a   to to, a a,,   .  ,    a , a   this, to,. This  , a all of.  , and the the the a   in,   the   the the,  the all, and your  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 91,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Primary resistance to single and multiple drugs in leprosy : a mouse footpad study\n\nBegin with: \"Skin biopsy homogenates obtained from three cases of lepromatous leprosy with no prior history of antileprosy treatment were tested in the mouse footpad for the sensitivity of Mycobacterium leprae to multiple drugs.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-13",
+      "sample_id": 13,
+      "original_prefix_id": 13,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the re the all, the the, of the, the, and it a   the all, the the, and the the the,,, all, and,,, and,.\n\n on the, it is re all,, the the the,  re the.,, so the to, can in.   the   for the,,,, can be the, the, and. ,, , the,   the,   is a  \n\n the,, or to the to to the,,  , ,. So,, you do,,.  , this, a   of the,   the the.   all of and,,  \n\n the, I   the   the  .  any a\n\n, a the, you the re  re re, of  the,,   a  , the, \n\n, and   the,, a    the in the, the.\n\n. , the, and to the the the , for the, and all   for.\n\n, for the,,  .  a,  a  ,  all.\n\n   a,  ,     \n\n, and you,  on   the, to,, it   to,  , this is the, the.  on, it.   a the. ,,    , it do, the the to    ,   the, in the , and the     the  , the   a to the the,  the,.  \n\n the, the.  ,  ,  \n\n the  , the the,,   of all, and   ,   a , how to the for,   \n\n, it   the the,   a, the the,  , the   how  \n\n the  the\n\n the the the   in  this, the,  , -  \n\nFor this, ",
+      "processed_text": "the re the all, the the, of the, the, and it a   the all, the the, and the the the,,, all, and,,, and,.\n\n on the, it is re all,, the the the,  re the.,, so the to, can in.   the   for the,,,, can be the, the, and. ,, , the,   the,   is a  \n\n the,, or to the to to the,,  , ,. So,, you do,,.  , this, a   of the,   the the.   all of and,,  \n\n the, I   the   the  .  any a\n\n, a the, you the re  re re, of  the,,   a  , the, \n\n, and   the,, a    the in the, the.\n\n. , the, and to the the the , for the, and all   for.\n\n, for the,,  .  a,  a  ,  all.\n\n   a,  ,     \n\n, and you,  on   the, to,, it   to,  , this is the, the.  on, it.   a the. ,,    , it do, the the to    ,   the, in the , and the     the  , the   a to the the,  the,.  \n\n the, the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 91,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Wave propagation modeling in coastal engineering\n\nBegin with: \"In this paper we review various numerical models for calculating wave propagations from deep water to surf zone, including wave breaking. The limitations and the approximations for each model are briefly discussed. The main focus of the discussions is on the unified\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-14",
+      "sample_id": 14,
+      "original_prefix_id": 14,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the   the name.  the    and the ,     how    the, , the   a, and and   to the the, the the, all all, the the   of\n\n, it.  ,  ,, to-,  the it  ,    . .  ,.\n\n   the last one to,, the the to, the the to   to the,, , the, can all the, a, can this,, or the, the    , the,,,.\n  , so the the and   the in the, or to, the, , the the a a , the.  .   the a a for the the  the the and the a,    for,  .  .\n\n  , or, and   the,    , a , the,.   , , the   the,   all.\n\n that are in the, the,,  on the  .\n\n for a good.\n\n the same, the, the, the the the the\n\n to,  .   the. the,  .  , ,  the   of  ,   \n\n this a for a good, in your will  .\n\n the  .\n\n   the     the the   the to   the the to,  re.\n\n what to, the    -, and     to  ,  , of a,  in   the   , , the. a , and the,   to the the,  ,  the. .  \n\n  , the  , on the on, that, the the    the, the   , and the  , and the.    . ,  , no,, for   a a and and ,   one how, the \n\n,   \n\n  , this, the, the",
+      "processed_text": "the   the name.  the    and the ,     how    the, , the   a, and and   to the the, the the, all all, the the   of\n\n, it.  ,  ,, to-,  the it  ,    . .  ,.\n\n   the last one to,, the the to, the the to   to the,, , the, can all the, a, can this,, or the, the    , the,,,.\n  , so the the and   the in the, or to, the, , the the a a , the.  .   the a a for the the  the the and the a,    for,  .  .\n\n  , or, and   the,    , a , the,.   , , the   the,   all.\n\n that are in the, the,,  on the  .\n\n for a good.\n\n the same, the, the, the the the the\n\n to,  .   the. the,  .  , ,  the   of  ,   \n\n this a for a good, in your will  .\n\n the  .\n\n   the     the the   the to   the the to,  re.\n\n what to, the    -, and     to  ,  , of a,  in   the   , , the. a , and the,   to the the,  ,  the. .  \n\n  , the  , on the on, that, the the    the, the   , and the  , and the.    .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 91,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Fast sparse representation model for I 1 -norm minimisation problem\n\nBegin with: \"To solve the l 1 -norm minimisation problem, many algorithms, such as the l 1 -Magic solver, utilise the conjugate gradient (CG) method to speed up implementation. Since the dictionary employed by CG is often dense in\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-15",
+      "sample_id": 15,
+      "original_prefix_id": 15,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ",   the,.- to a ,, a the the,, the the the, and the, the to   the, to     the   the the,  , and to the the the,   the the the, the the  , the the the in a key.  the,, are, the the a, is the,, and one,, the   to  the, the, the, the the to the. in.   and the to, the, the, a a  the, the the,  ,   and the   the all for the,  ,  , the, this the, the, .\n\n, one the the the,      .  , a, and the , a   and can the,   the first to,.\n\n   the,  , the the the  , and all down .\n\n    , the the,   it the, the, and   the the  .  , a new, be to the first,   the, it is the to, a,   the a   the,   a    , the the.   .  ,\n\n the     a  , and,  , the.  the,  .   a a, you don  .  the, are re-, this to the    the the   the, you need the   that all, to make, \n\n a\n\n   the in the, that the,  , and  , are there, ,  ,   the the to\n\n the  ,  \n\n, and the,   ,  the re, for the, the the,, I. to- the the, , a ,\n\n one, how, the  .   \n\n the, the the, a of the, a\n\n     the,  , and  , a  a  , and the a in the",
+      "processed_text": ",   the,.- to a ,, a the the,, the the the, and the, the to   the, to     the   the the,  , and to the the the,   the the the, the the  , the the the in a key.  the,, are, the the a, is the,, and one,, the   to  the, the, the, the the to the. in.   and the to, the, the, a a  the, the the,  ,   and the   the all for the,  ,  , the, this the, the, .\n\n, one the the the,      .  , a, and the , a   and can the,   the first to,.\n\n   the,  , the the the  , and all down .\n\n    , the the,   it the, the, and   the the  .  , a new, be to the first,   the, it is the to, a,   the a   the,   a    , the the.   .  ,\n\n the     a  , and,  , the.  the,  .   a a, you don  .  the, are re-, this to the    the the   the, you need the   that all, to make, \n\n a\n\n   the in the, that the,  , and  , are there, ,  ,   the the to\n\n the  ,  \n\n, and the,   ,  the re, for the, the the,, I. to- the the, , a ,\n\n one, how, the  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 91,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: A comparative study of two high performance current control techniques for three-phase shunt active power filters\n\nBegin with: \"In recent years, the increase of non-linear loads in electrical power system has sparked the research in power quality issue. The shunt active power filter (SAPF) is a power electronic device which has been developed to improve power quality. The\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-16",
+      "sample_id": 16,
+      "original_prefix_id": 16,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the,, the the the to the   the, this,.     the, in this to the the to, the all,   the the,. the the ,     the..,   the,,. the,   the,   the a the the,  the, and the to re the, it the  ,   the the the, the- look the, a, the, and.  a the, a      the,  the, and,  \n\n,  , a  ,. I know    ,   a, I key,  for the the\n\n the, are, a the  .    ,  , the that,-    ,   the, and the the, you can , the. , this- to-, the the, the the   the.  all of  , the, the  .  , the the, .   to     that .  ,   a  ,    .  the to,,  , or the  your a\n\n  a re, a the the.\n\n,  , how to,  , and    , .   ,  the  .\n\n  , and to the a   \n\n     the it the  all of you,\n\n   that you to the,   a   a the the,   one\n\n, it   any.\n\n, an for and you the,  , the,  the the   the   one of to. The ,  the to,,, the the the,  .  ,  .  the the  . It.\n\n. , and   of  the      , a for,  -  , and   the, the the,   -  all the  ,   a big .\n\n a   the the.\n\n, that,   go and, that the",
+      "processed_text": "the,, the the the to the   the, this,.     the, in this to the the to, the all,   the the,. the the ,     the..,   the,,. the,   the,   the a the the,  the, and the to re the, it the  ,   the the the, the- look the, a, the, and.  a the, a      the,  the, and,  \n\n,  , a  ,. I know    ,   a, I key,  for the the\n\n the, are, a the  .    ,  , the that,-    ,   the, and the the, you can , the. , this- to-, the the, the the   the.  all of  , the, the  .  , the the, .   to     that .  ,   a  ,    .  the to,,  , or the  your a\n\n  a re, a the the.\n\n,  , how to,  , and    , .   ,  the  .\n\n  , and to the a   \n\n     the it the  all of you,\n\n   that you to the,   a   a the the,   one\n\n, it   any.\n\n, an for and you the,  , the,  the the   the   one of to. The ,  the to,,, the the the,  .  ,  .  the the  . It.\n\n. , and   of  the      , a for,  -  , and   the, the the,   -  all the  ,   a big .\n\n a   the the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 94,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: The Effect and Site of Action of Indoleamines on the Hypothalamic Centers Involved in the Control of LH Release and Ovulation in Sheep\n\nBegin with: \"Serotonin or melatonin was infused into the 3rd cerebral ventricle (3rd V) or into the medial basal hypothalamus (MBH) of both intact ewes and ewes with lesions of the anterior hypothalamic\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-17",
+      "sample_id": 17,
+      "original_prefix_id": 17,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "--,,,,  in the,,  the  , the on, the to the  ,    ,  ,.  in, re,,   the the, a,   the  , the the  the . ,,  , to,   on.  -    the,,  and   the to in a,   all. The a the   re a, the to,,, and the. , it, and, a, the   a the,, are all three the the, how,   the,,   how a the,, and, the all, the the   to,  the to, the, how.\n\n,, and all.   a key for the the the, the  ,    , the the to     the to , for. The value  ,  .\n\n,.  the,   the.\n\n,  , the,, and the  ,  , the a, the  , and      the,   a the,, a, ,,, and  ,  ,  a  .  , the, .\n\n, \n\n  , you the the  ,   , are in the,   to    , the , the the the  , is a tree, a.\n\n.\n\n, the  the the a  , the to. , you   the the to, and,, .\n\n the the   ,      the the,  to the   about.\n\n    the top,.    a , that.  a   that,, and, for a     a,   the,  ,  , and the,.\n\n, or the the the,,  the for, it the the,.\n\n, this the, the the to     the to,   ,  .  the",
+      "processed_text": "--,,,,  in the,,  the  , the on, the to the  ,    ,  ,.  in, re,,   the the, a,   the  , the the  the . ,,  , to,   on.  -    the,,  and   the to in a,   all. The a the   re a, the to,,, and the. , it, and, a, the   a the,, are all three the the, how,   the,,   how a the,, and, the all, the the   to,  the to, the, how.\n\n,, and all.   a key for the the the, the  ,    , the the to     the to , for. The value  ,  .\n\n,.  the,   the.\n\n,  , the,, and the  ,  , the a, the  , and      the,   a the,, a, ,,, and  ,  ,  a  .  , the, .\n\n, \n\n  , you the the  ,   , are in the,   to    , the , the the the  , is a tree, a.\n\n.\n\n, the  the the a  , the to. , you   the the to, and,, .\n\n the the   ,      the the,  to the   about.\n\n    the top,.    a , that.  a   that,, and, for a     a,   the,  ,  , and the,.\n\n, or the the the,,  the for, it the the,.\n\n, this the, the the to     the to,   ,  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 94,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Preparation of magnetic composite microspheres by surfactant free controlled radical polymerization: Preparation and characteristics\n\nBegin with: \"Submicron magnetic composite microspheres have been prepared by a new surfactant free controlled radical polymerization. This new approach is based on the use of diphenylethene (DPE) as radical controlling agent and no\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-18",
+      "sample_id": 18,
+      "original_prefix_id": 18,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " to the,,, how,   the first,  a  the, the to    the, and  the a, the the, a the, the the, the-,, the   the   the  , and a the, the.  ,   a a, to the a,, a  . to all a the the re    the the.   the, that,    , I the the.  a big,  a   the. and one the, the the, the the the the the to, in the a the the, the  the. the a    a  a,   a the for the and the, ,  ,  , how,, last   the a    , in, the the    , are to  .  , a a  , the.  for  .\n\n, a and  ,      ,    ,  a a    a, are a to a, you the the the to,  , and a   to .  it all, this the the the, I,  , I,, this to.   the  the.\n\n, or the   the   ofe the.\n\n, , a  ,  , the,, the    . A a the the the     ,      , I key the  .   the the ,   , and are,  .   ,    \n\n.  a  \n\nI the the, , to the the    \n\n  \n\n, the,  , or the    \n\n  .\n\n , this,  , the same the the and the  , the a to the   the,.  stand, to   last the, ,.\n   ,  ,  , and make it,,  .    \n\n on a.\n\n, you, I are to  ",
+      "processed_text": "to the,,, how,   the first,  a  the, the to    the, and  the a, the the, a the, the the, the-,, the   the   the  , and a the, the.  ,   a a, to the a,, a  . to all a the the re    the the.   the, that,    , I the the.  a big,  a   the. and one the, the the, the the the the the to, in the a the the, the  the. the a    a  a,   a the for the and the, ,  ,  , how,, last   the a    , in, the the    , are to  .  , a a  , the.  for  .\n\n, a and  ,      ,    ,  a a    a, are a to a, you the the the to,  , and a   to .  it all, this the the the, I,  , I,, this to.   the  the.\n\n, or the   the   ofe the.\n\n, , a  ,  , the,, the    . A a the the the     ,      , I key the  .   the the ,   , and are,  .   ,    \n\n.  a  \n\nI the the, , to the the    \n\n  \n\n, the,  , or the    \n\n  .\n\n , this,  , the same the the and the  , the a to the   the,.  stand, to   last the, ,.\n   ,  ,  , and make it,,  .    \n\n on a.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 94,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Predicting Optimal Accommodative Performance from Measures of the Dark Focus of Accommodation\n\nBegin with: \"Leibowitz and his colleagues found that accommodation rests at an intermediate distance that shows wide interindividual variation. They proposed that this intermediate dark focus is useful for correcting anomalous refractive errors, but this proposal was later questioned when different measurement techniques yielded\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-19",
+      "sample_id": 19,
+      "original_prefix_id": 19,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the last in the for the,, the, how the  a in the, .   for, the and the re- for,, the the,, the to       , a.\n\n, in   a,  ,   a the.\n\n the   to,  ,     the and the   ,   , a  ,   the and  , just,  the , in, a can.\n\n so, and can,  the the, in,  the last,,  \n\n the   the the.  , the  the  . .  , and the, the   a in the to-,   how,  the  .\n\n, the the    , a in,   and    .\n the re,\n\n    ,  , and  ,      to -   the,  the,   the to,   and  the,   a   the,, a   this re,   the,.\n\n more of the     the,,,, .\n\n,  e, you to the  of the   , and  ,   the to the  -,   to , for to for,   to    ,   the and    ,   the  in the     in the    , and   to the  ,   the    ,    , the.\n\n,   in the a   the   in a bigger, to   to all, \n\n the a.  and the,.\n\n   the a value  the a the the,  , now, can, or  ,  ,  ,  the, a the,  a to,,  , and the the all the  , the all the,  ,  , a  , on    in.\n\n  the   for the go,  .  ,  , this, the  ",
+      "processed_text": "the last in the for the,, the, how the  a in the, .   for, the and the re- for,, the the,, the to       , a.\n\n, in   a,  ,   a the.\n\n the   to,  ,     the and the   ,   , a  ,   the and  , just,  the , in, a can.\n\n so, and can,  the the, in,  the last,,  \n\n the   the the.  , the  the  . .  , and the, the   a in the to-,   how,  the  .\n\n, the the    , a in,   and    .\n the re,\n\n    ,  , and  ,      to -   the,  the,   the to,   and  the,   a   the,, a   this re,   the,.\n\n more of the     the,,,, .\n\n,  e, you to the  of the   , and  ,   the to the  -,   to , for to for,   to    ,   the and    ,   the  in the     in the    , and   to the  ,   the    ,    , the.\n\n,   in the a   the   in a bigger, to   to all, \n\n the a.  and the,.\n\n   the a value  the a the the,  , now, can, or  ,  ,  ,  the, a the,  a to,,  , and the the all the  , the all the,  ,  , a  , on    in.\n\n  the   for the go,  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 94,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Family traditions and generations.\n\nBegin with: \"Currently, traditional family values that have been passed down through generations appear to be at risk. This has significant implications for the stability and health of individuals, families, and communities. This article explores selected issues related to intergenerational transmission of family values\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-20",
+      "sample_id": 20,
+      "original_prefix_id": 20,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the  how,,, and to,,,-, how,   an all, the, and a   the, the. the the, the a the to  the the the.\n\n this,   the  , are a, to the, and the a  the, the a  , or a be for the the,, , and it comes to,  are there are no in the, on the, and the the. for,,,   to.    .  ,   the money the, and how the, the,, and and to,\n\n,  the in   the  .     the.\n\n,   and, the  ,  , to big,,.  the, a- the in the big , and,   it.\n\n, and, the  the   a  ,   that  \n\n the.\n\n    , the a  , you the the  , the the to-,  , the,, you , for the.  the   the  \n\n,   a  ,   , and.   him, so.   , and the      ,  the to the    a    a.\n\n, , -  , the   a.   a,  the  , and the to. .\n\n  , a the a, you      the the   the.   .\n\n  all,    , the     a,  a key,  ,  ,   the , the the the.   a   the,   the. to be a go, that,    , of the the .\n\n, the\n\n for the, the  , I will take a big, and the the,  ,\n\n, the   a       , a,  the first, the    , or, a     \n\n  ,",
+      "processed_text": "the  how,,, and to,,,-, how,   an all, the, and a   the, the. the the, the a the to  the the the.\n\n this,   the  , are a, to the, and the a  the, the a  , or a be for the the,, , and it comes to,  are there are no in the, on the, and the the. for,,,   to.    .  ,   the money the, and how the, the,, and and to,\n\n,  the in   the  .     the.\n\n,   and, the  ,  , to big,,.  the, a- the in the big , and,   it.\n\n, and, the  the   a  ,   that  \n\n the.\n\n    , the a  , you the the  , the the to-,  , the,, you , for the.  the   the  \n\n,   a  ,   , and.   him, so.   , and the      ,  the to the    a    a.\n\n, , -  , the   a.   a,  the  , and the to. .\n\n  , a the a, you      the the   the.   .\n\n  all,    , the     a,  a key,  ,  ,   the , the the the.   a   the,   the. to be a go, that,    , of the the .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 91,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Hierarchical Control of HV-MTDC Systems With Droop-Based Primary and OPF-Based Secondary\n\nBegin with: \"This paper proposes a hierarchical control architecture designed for an arbitrary high voltage multiterminal dc (MTDC) network. In the proposed architecture, the primary control of the MTDC system is decentralized and implemented using a generalized droop strategy. Design\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-21",
+      "sample_id": 21,
+      "original_prefix_id": 21,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " a a the the,  ,  \n\n\n\n,  the it the,, a a the, a, a  ,      the  , the,, the the   , a  ,  a     , an    , no the the,, how.\n\n here, the the,   the the,,  \n\n the the the   the the, a     a for the,\n\n  the the all the, a\n\n,, the,,, the.\n\n last   this   to,  ,   one.  , the  .\n\n   the  \n\n the to,  the.      the , , a.   the,.  in a  .\n\n     all, the the, the,  .   the  \n\n, can,,.   , a   a   the, the , a  , it all,,, the the the,.  a  .\n\n    , and it the and,   the.  to the the, it do,.\n\n,  o  ,   a,   ,.\n\n   .  , no,   the   how the,,,, in this.  a, a a, it   the on,,.  , and you ,  to   a   the.  and a,.\n\n,,,  \n\n the   the  , the the  . the   \n\n  , in.    the,,  the   the the the to-, .  , and     the  ,   the     a.\n\n  . He comes,   a    the, the, in the,  , , ,  .   the.     ;  , ,  .    the,  \n\n on.  , or.   , the,   and the,    ",
+      "processed_text": "a a the the,  ,  \n\n\n\n,  the it the,, a a the, a, a  ,      the  , the,, the the   , a  ,  a     , an    , no the the,, how.\n\n here, the the,   the the,,  \n\n the the the   the the, a     a for the,\n\n  the the all the, a\n\n,, the,,, the.\n\n last   this   to,  ,   one.  , the  .\n\n   the  \n\n the to,  the.      the , , a.   the,.  in a  .\n\n     all, the the, the,  .   the  \n\n, can,,.   , a   a   the, the , a  , it all,,, the the the,.  a  .\n\n    , and it the and,   the.  to the the, it do,.\n\n,  o  ,   a,   ,.\n\n   .  , no,   the   how the,,,, in this.  a, a a, it   the on,,.  , and you ,  to   a   the.  and a,.\n\n,,,  \n\n the   the  , the the  . the   \n\n  , in.    the,,  the   the the the to-, .  , and     the  ,   the     a.\n\n  . He comes,   a    the, the, in the,  , , ,  .   the.     ;  , ,  .    the,  \n\n on.  , or.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 91,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: A reinvestigation of two critical points in the energetics of muscular contraction\n\nBegin with: \"Two critical points in the energetics of muscular contraction have been re-examined: (1) the absence of heat production after the active state has ended (i.e. in 'relaxation') and (2) the mobilization\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-22",
+      "sample_id": 22,
+      "original_prefix_id": 22,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " to  how the in an, for the the the to\n\n the  a the the, three a for the,,,,.\n\n The a    , the, and  a.  the the, and\n\n the the a   the   to the,, this to, to, the, the   key, that to     the, that and the to,,, and, the.\n\n the     a  ,   one,-er,  the the   the,, in the,. no the   the to, is not to ,. the.\n\n,  ,.  .  the , the the, it, it,.  , the a   the the     the. , a the key.,,,,   to, all the the the.    \n\n the .\n\n, and the , that to, the   the.   ,  the,,    a a  \n\n, , the to the.\n\n  the  , a the to,. \n\n      , the,  , the,, what say, and the is the,,.\n\n, the,  , for , to    , it the.     .   a.\n\n, the    the to, the in the,  \n\n the - the the,, I   and.  \n\n the  the one the   a the,,.\n\n   a, , you know, is the,  one  to, the a, the the.\n\n.   \n\n  \n\n   the,, the the the, , all., and the   , the and the  , is   to  the in the for the one to, it will be the,.   ,    , a big, , ,  .    ,    , and the  ",
+      "processed_text": "to  how the in an, for the the the to\n\n the  a the the, three a for the,,,,.\n\n The a    , the, and  a.  the the, and\n\n the the a   the   to the,, this to, to, the, the   key, that to     the, that and the to,,, and, the.\n\n the     a  ,   one,-er,  the the   the,, in the,. no the   the to, is not to ,. the.\n\n,  ,.  .  the , the the, it, it,.  , the a   the the     the. , a the key.,,,,   to, all the the the.    \n\n the .\n\n, and the , that to, the   the.   ,  the,,    a a  \n\n, , the to the.\n\n  the  , a the to,. \n\n      , the,  , the,, what say, and the is the,,.\n\n, the,  , for , to    , it the.     .   a.\n\n, the    the to, the in the,  \n\n the - the the,, I   and.  \n\n the  the one the   a the,,.\n\n   a, , you know, is the,  one  to, the a, the the.\n\n.   \n\n  \n\n   the,, the the the, , all., and the   , the and the  , is   to  the in the for the one to, it will be the,.   ,    , a big, , ,  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 91,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Coupling Met to specific pathways results in distinct developmental outcomes.\n\nBegin with: \"Receptor tyrosine kinases (RTKs) mediate distinct biological responses by stimulating similar intracellular signaling pathways. Whether the specificity of the response is determined by qualitative or quantitative differences in signaling output is not known. We addressed this question\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-23",
+      "sample_id": 23,
+      "original_prefix_id": 23,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ".,, the,   a the the,  .\n\n, the the, the re a  ,, and the, of the the, the first for the,, , and the. , the,. for the to,  , and the,.   this, is the,, the, , and for for and to  ,e- a, all,, the , to, and to the, all, it,.\n\n, the the the , a  , the, the the,,,  , the  ,.\n\n  , this,.   .  in the top in the,  the, no,,   the   the , the,.,   one.  the, the the the a the   a.  the, .\n\n, for,,  ,  the  the    . ,  , the     for the,  , the the,,   ,   a      ,  .  the.  a ,   the the a a   last the the.  for the\n\n, the the the, , an.  .  , and\n\n  , ,  , and the the the.   a  , ,  ,   the the , the, a.\n\n, the   that to the the, it the the,  it a   to  ,\n\n   the the   the to the, the,   ,   for, , and the  ,  , that the, a  \n\n on top of your bed, the.  \n\n   the.\n\nThe the,   the.\n .\n\n, that, the  , the, and me,    ,  , the  ,    .\n\n  , a big the.   a   the the,   the   of a  the.  the    \n\n",
+      "processed_text": ".,, the,   a the the,  .\n\n, the the, the re a  ,, and the, of the the, the first for the,, , and the. , the,. for the to,  , and the,.   this, is the,, the, , and for for and to  ,e- a, all,, the , to, and to the, all, it,.\n\n, the the the , a  , the, the the,,,  , the  ,.\n\n  , this,.   .  in the top in the,  the, no,,   the   the , the,.,   one.  the, the the the a the   a.  the, .\n\n, for,,  ,  the  the    . ,  , the     for the,  , the the,,   ,   a      ,  .  the.  a ,   the the a a   last the the.  for the\n\n, the the the, , an.  .  , and\n\n  , ,  , and the the the.   a  , ,  ,   the the , the, a.\n\n, the   that to the the, it the the,  it a   to  ,\n\n   the the   the to the, the,   ,   for, , and the  ,  , that the, a  \n\n on top of your bed, the.  \n\n   the.\n\nThe the,   the.\n .\n\n, that, the  , the, and me,    ,  , the  ,    .\n\n  , a big the.   a   the the,   the   of a  the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 91,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: The strength of the human mandible\n\nBegin with: \"Objective: To investigate the variation of strength of the human mandible with the orientation to its longaxis. Methods: The human mandible is a living and anisotropic composite material. Three-dimensional tensile andcompressive strength of it were determined\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-24",
+      "sample_id": 24,
+      "original_prefix_id": 24,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ".   no,, your the  , the a  the the the   the, the a, this, the in the, you are, the , the  , how,    the the. the down the, is a   the the the    the the to,, no a the. the.\n\n, of the the,, the    \n\n to    for and   and a , it a any, is. , no,,   the this,,,  a new,. ,    , and   the,   the the       the the   to   , it,   and   to.    ,  .   a this and,,   and   the , how to    ,   to the   for, how ,     it looks, the,, it,   a the,   a   the.\n\n the a   the , what the,, the   the , , the  , to   the the,, and a      ,   the,   the the the   the a, are a  , and the the,       , , and,,, the last one to  ,  ,   the on the, that the,  , the. to a, the a   a,  the   and  , a the,  it   to, the,   in a the, so  . .   and all the   that.   the, the,.\n,  , the,.\n\n, or, and the. the       a,       for,  , and all   that. and   ,   that, I the.   \n\n  .     a, the.\n\n  , the and the  the, the, the,.\n\n,   the, a,  the,  , ",
+      "processed_text": ".   no,, your the  , the a  the the the   the, the a, this, the in the, you are, the , the  , how,    the the. the down the, is a   the the the    the the to,, no a the. the.\n\n, of the the,, the    \n\n to    for and   and a , it a any, is. , no,,   the this,,,  a new,. ,    , and   the,   the the       the the   to   , it,   and   to.    ,  .   a this and,,   and   the , how to    ,   to the   for, how ,     it looks, the,, it,   a the,   a   the.\n\n the a   the , what the,, the   the , , the  , to   the the,, and a      ,   the,   the the the   the a, are a  , and the the,       , , and,,, the last one to  ,  ,   the on the, that the,  , the. to a, the a   a,  the   and  , a the,  it   to, the,   in a the, so  . .   and all the   that.   the, the,.\n,  , the,.\n\n, or, and the. the       a,       for,  , and all   that. and   ,   that, I the.   \n\n  .     a, the.\n\n  , the and the  the, the, the,.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 101,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Abstract T P102: Recurrent Stroke Risk in Patients With ICAD Treated With Aggressive Medical Management: A Comparison With The Sammpris Trial\n\nBegin with: \"Background: Since the SAMMPRIS trial, aggressive medical management (AMM) with the use of dual antiplatelets (aspirin, clopidogrel) and high dose statin therapy has been standard of care for patients with\""
+        }
+      ]
+    }
+  ]
+}

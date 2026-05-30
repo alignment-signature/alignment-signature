@@ -1,0 +1,576 @@
+{
+  "model_type": "instruct",
+  "model_id": "google/gemma-2-9b-it",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400,
+    "batched": true,
+    "batch_size": 4
+  },
+  "intervention": {
+    "mode": "partial_ablate",
+    "direction_path": "data/pasta_directions/google_gemma-2-9b-it/v_cross_L2.pt",
+    "layer": 2,
+    "alpha": 2.0,
+    "tag": "v_cross_L2_partial_ablate_alpha2.00_batched"
+  },
+  "domain": "college_essays",
+  "num_generations": 25,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-college_essays-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ", the a, a   the   to for the, in the the  , , and the\n\n the.    the  , and to, the  be   in, in the the the   the the  , and the be,, a, and  , are are,  , can- a can, the  , to- the   a are the,   to, the, the.  the,   the   a to,       ,, and, the one, and the     a,  , the a  , this, a the, the  . ,  ,   in the  to the go,  , the -,   are    .    and   the, a new the,, the,,    .   a big be   two in the, no       .     the,,  , the the.\n\n,  , the,    . , or.  the   the the the the   on,     ,  .  , are     it , the,    , this  .    \n\n re the,,.   ,  all the   the are a,,  ,\n\n the, a  ,  , the   the.\n\n   the   this,  a   the,    the a\n\n, no,    to   the ,     , and, the and the   the    , the,  .   \n\n a  \n\n,  the   and two, in the the the,  that    , you want the   the the the,  ,   o,    ,  .\n\n.  a   that   a the in the, for.  the     to go on  ,   and the,   ,  , the   .  \n\nWhen in the go,",
+      "processed_text": ", the a, a   the   to for the, in the the  , , and the\n\n the.    the  , and to, the  be   in, in the the the   the the  , and the be,, a, and  , are are,  , can- a can, the  , to- the   a are the,   to, the, the.  the,   the   a to,       ,, and, the one, and the     a,  , the a  , this, a the, the  . ,  ,   in the  to the go,  , the -,   are    .    and   the, a new the,, the,,    .   a big be   two in the, no       .     the,,  , the the.\n\n,  , the,    . , or.  the   the the the the   on,     ,  .  , are     it , the,    , this  .    \n\n re the,,.   ,  all the   the are a,,  ,\n\n the, a  ,  , the   the.\n\n   the   this,  a   the,    the a\n\n, no,    to   the ,     , and, the and the   the    , the,  .   \n\n a  \n\n,  the   and two, in the the the,  that    , you want the   the the the,  ,   o,    ,  .\n\n.  a   that   a the in the, for.  the     to go on  ,   and the,   ,  , the   .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 90,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: The Hobbit Book Vs Movie\n\nBegin with: \"“The Hobbit”: Book vs. Movie Essay\n\nTable of Contents\n 1. Introduction\n 2. Events Deleted or Changed in the Movie\n 3. Changes that Enhance the Film\n 4. Political Imagery in the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ",, I don a the the.. the re the the,. the ,   the on the,, the the re the the the,,  ,  ,   the  . . this, I just   the, and  , you to, to      \n\n the, of  , the     the,.\n\n.\n\n a, , the the     the.  a the\n\n, a the a  ,    , a, and the the, and in the to, you to  , what,, and  a,\n\n, the all these,,, the  ,  .  , this, it is for a     the ,\n\n ,   to  , what?   the.  ,     the the,  , the this, a little,, a the   to  .  .   and .      the the  ,   to.,   the    .   .    to the a the, the a the. , what  , , to the big, .    \n\n, a  .   the,,    ,  the ,  , how,.\n\n, the    - know,   .   the  .\n\n the, a good,,  , a   to the, the  .   \n\n a the   and the\n\n  ,  ,. ,  ,   in a  ,   a   the,,   the   the    , how  .   a   that a  . , a  , thee, the  the  .    .\n\n last, .\n\n,  to.  ,   to, and     the the\n\n     the the the,  the  .\n\n  , the the, that the,  ,   the.   any of a big, the",
+      "processed_text": ",, I don a the the.. the re the the,. the ,   the on the,, the the re the the the,,  ,  ,   the  . . this, I just   the, and  , you to, to      \n\n the, of  , the     the,.\n\n.\n\n a, , the the     the.  a the\n\n, a the a  ,    , a, and the the, and in the to, you to  , what,, and  a,\n\n, the all these,,, the  ,  .  , this, it is for a     the ,\n\n ,   to  , what?   the.  ,     the the,  , the this, a little,, a the   to  .  .   and .      the the  ,   to.,   the    .   .    to the a the, the a the. , what  , , to the big, .    \n\n, a  .   the,,    ,  the ,  , how,.\n\n, the    - know,   .   the  .\n\n the, a good,,  , a   to the, the  .   \n\n a the   and the\n\n  ,  ,. ,  ,   in a  ,   a   the,,   the   the    , how  .   a   that a  . , a  , thee, the  the  .    .\n\n last, .\n\n,  to.  ,   to, and     the the\n\n     the the the,  the  .\n\n  , the the, that the,  ,   the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 90,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Nationalism And Identity Among Middle East Immigrants To Australia\n\nBegin with: \"Nationalism and Identity Among Middle East Immigrants to Australia Presentation\n\nAttention in the social sciences is focusing on the impact of globalization on cultural as well as national identities of immigrants. It is argued that improved global links is having an effect on how immigrants\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ", a a the, and the to the a  the of the,  -, the, how  , this. to,  the\n\n the a,,     the the, the   ,  the the the, to the, first the a the, and, the   a         the same the,     the. a for the the to the.   for   in   the   a  ,    , , and to the all.   the in the,, and to to\n\n, it   to the, now, the, the the , the,.   the\n\n re,, the  .   the,   ,     the   a, this,       on the   the  \n\n  a,  , the, and I  ,\n\n the the,.\n\n,  \n\n the  , this and the, or the all, this,  , the re,  ,   in the,  , the to. the  ,  the   the   last one,  .   the     the the, in, . .  , can you\n\n,   to,   and it is a,  ,  .  the.  ,   the the   ,     a  , no,, that the the. ,    here.\n\n,, the the,  . ,  the   the  , the, I the the  \n\n, you  ,   and the.  ,  , the.\n\n  the  \n\n   the.  \n\n   the the for     \n\n   the a, you   any, the a, the  , this, the last, the   and, and, the   to, how this  ,  , and  the   that the the,  , and,   the.   the.      \n\n, this,.",
+      "processed_text": ", a a the, and the to the a  the of the,  -, the, how  , this. to,  the\n\n the a,,     the the, the   ,  the the the, to the, first the a the, and, the   a         the same the,     the. a for the the to the.   for   in   the   a  ,    , , and to the all.   the in the,, and to to\n\n, it   to the, now, the, the the , the,.   the\n\n re,, the  .   the,   ,     the   a, this,       on the   the  \n\n  a,  , the, and I  ,\n\n the the,.\n\n,  \n\n the  , this and the, or the all, this,  , the re,  ,   in the,  , the to. the  ,  the   the   last one,  .   the     the the, in, . .  , can you\n\n,   to,   and it is a,  ,  .  the.  ,   the the   ,     a  , no,, that the the. ,    here.\n\n,, the the,  . ,  the   the  , the, I the the  \n\n, you  ,   and the.  ,  , the.\n\n  the  \n\n   the.  \n\n   the the for     \n\n   the a, you   any, the a, the  , this, the last, the   and, and, the   to, how this  ,  , and  the   that the the,  , and,   the.   the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 90,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Employment For People With Disabilities\n\nBegin with: \"Employment for People With Disabilities Essay\n\n“Reasonable” accommodation means conditions created for a person with a disability for the professional performance of their qualified work. Such accommodation should create equality and not cause additional inconvenience. Examples of such accommodation in the American\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the, the,   the,,.\n\n, no. No,, a to, the the the,. and the the\n\n  , no,,  ,  , the,,,   and the the the  the ,,    , in the for.\n\n and the, the the.  \n\n, and and. , the.     in the.   this,    the,,, of one, of    .  \n\n this and the all , the last the one the all  , or   a   a  , I this, and.  .\n\n. ,, can the a the, the, so the  , the the. , the   the   the the,  ,   it  \n\n,   a lot, so     in.  ,  , you  the can the the.  , are   the , the. , the , on, the  the, a    in   the   in  in,   a, the this, the,   last  , no,.\n\n   the, the, the, and,   the  the.\n\n, and a   a  , this, how   any,   last, I, and the  ,    .   the,  last, the a  the.\n\n the, and  in a the  , in a, a   the,, the a   the   any ,  -, the.  , an a, and the do    , on   the  , I  , , the  .  the    ,  \n\n  a   the,  a\n\n   a   ,  the, and, it  , the the   a   for the     ,   the      the to.\n\n      .   the    ,  in the ,  in.",
+      "processed_text": "the, the,   the,,.\n\n, no. No,, a to, the the the,. and the the\n\n  , no,,  ,  , the,,,   and the the the  the ,,    , in the for.\n\n and the, the the.  \n\n, and and. , the.     in the.   this,    the,,, of one, of    .  \n\n this and the all , the last the one the all  , or   a   a  , I this, and.  .\n\n. ,, can the a the, the, so the  , the the. , the   the   the the,  ,   it  \n\n,   a lot, so     in.  ,  , you  the can the the.  , are   the , the. , the , on, the  the, a    in   the   in  in,   a, the this, the,   last  , no,.\n\n   the, the, the, and,   the  the.\n\n, and a   a  , this, how   any,   last, I, and the  ,    .   the,  last, the a  the.\n\n the, and  in a the  , in a, a   the,, the a   the   any ,  -, the.  , an a, and the do    , on   the  , I  , , the  .  the    ,  \n\n  a   the,  a\n\n   a   ,  the, and, it  , the the   a   for the     ,   the      the to.\n\n      .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 90,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Critical Review On The Light In Their Eyes By Sonia Nieto And Reflective Teaching An Introduction By Kenneth Zeichner And Daniel Liston\n\nBegin with: \"Critical Review on The light in their eyes by Sonia Nieto and Reflective Teaching: An Introduction by Kenneth Zeichner and Daniel Liston Critical Essay\n\nThis paper is aimed at reviewing such books as The light in their eyes by Sonia Nieto\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the the, the all,, a a, the the the for a     the the,,, the the to the,, the  the.\n\n and to re the,  , and of the,   for. the to be a the,. a. the,    , the.  a  this to for the,, a the,     for for, the, the,  the.   ,     the the,.\n\n  the the,, in a,    ,   the   all the.  \n\n,   the a, and the, when to  a a,    , a, it the. I can   and the,, go to the, a to,, the, the  , a a can,,    , the a,   it the, a can, and the, the,  , the the     .  \n\n, I', the the,  ; the.    \n\n, that,, the,,, the a,  one, you, you.\n\n it   and two, and,, the a   a    , the the ,   to,   .   to the a, the the.    \n\nAnd it to, and  ,   .  \n\nAnd for, the,,  ,\n\n the a-,  , are on,,  .   a. .\n\n. The,,,, the the  , so,    , the the,  .   , , , it the, a and  ,   ,  ,  the, and   the,, and , and     , this  .   the,   . , an,   a.  .  the the, the.\n\nSo,,, , ,, a  . , and this on and .",
+      "processed_text": "the the, the all,, a a, the the the for a     the the,,, the the to the,, the  the.\n\n and to re the,  , and of the,   for. the to be a the,. a. the,    , the.  a  this to for the,, a the,     for for, the, the,  the.   ,     the the,.\n\n  the the,, in a,    ,   the   all the.  \n\n,   the a, and the, when to  a a,    , a, it the. I can   and the,, go to the, a to,, the, the  , a a can,,    , the a,   it the, a can, and the, the,  , the the     .  \n\n, I', the the,  ; the.    \n\n, that,, the,,, the a,  one, you, you.\n\n it   and two, and,, the a   a    , the the ,   to,   .   to the a, the the.    \n\nAnd it to, and  ,   .  \n\nAnd for, the,,  ,\n\n the a-,  , are on,,  .   a. .\n\n. The,,,, the the  , so,    , the the,  .   , , , it the, a and  ,   ,  ,  the, and   the,, and , and     , this  .   the,   . , an,   a.  .  the the, the.\n\nSo,,, , ,, a  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 73,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Analytic Philosophy The Views By Wittgenstein And Aye\n\nBegin with: \"Analytic Philosophy: The Views by Wittgenstein and Aye Essay\n\nPhilosophy is an attempt of human beings to logically explain the processes that take place in the world. There are numerous branches of philosophy including philosophy of nature, history,\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " to,, the, the, a, this.\n\n, and -  to,   the .  , the   the,, ,,  , the, , the., ,., the the,  re,, the the, the,   ,     for.\n\n, the,    the\n\n  , the all, . the,   your have. ,  .   the  a,  , and       that of the, and  re the   the the, the in the.  is not a.   a this,   the, ,   to       , to  ,  . the  . That\n\n, and  , the   last one.    \n\n, and   in  , to- a  \n\n  the a are, or   the a. the all the,  . a to a    .\n\n a  , and   to on the,,.  , or the      ,       for a, you the, the,    ,  \n\n .  \n\n  , the  the the    \n\n a   a  , and the the in the  ,  the the.\n a a,   .\n\n   , and  , a the     for a    ,    , the, a, it a  , you the    a  , ,   to, how,,  the,.   the   the the   the.   it and the, no,  , the     \n\n the in    ,   the   to in the the,  \n\n  , the. ,    .  , the,   how the.\n\n   to, the    , you know,   to.  I.\n\n  .  to ,  ,   I   ,  , the  ",
+      "processed_text": "to,, the, the, a, this.\n\n, and -  to,   the .  , the   the,, ,,  , the, , the., ,., the the,  re,, the the, the,   ,     for.\n\n, the,    the\n\n  , the all, . the,   your have. ,  .   the  a,  , and       that of the, and  re the   the the, the in the.  is not a.   a this,   the, ,   to       , to  ,  . the  . That\n\n, and  , the   last one.    \n\n, and   in  , to- a  \n\n  the a are, or   the a. the all the,  . a to a    .\n\n a  , and   to on the,,.  , or the      ,       for a, you the, the,    ,  \n\n .  \n\n  , the  the the    \n\n a   a  , and the the in the  ,  the the.\n a a,   .\n\n   , and  , a the     for a    ,    , the, a, it a  , you the    a  , ,   to, how,,  the,.   the   the the   the.   it and the, no,  , the     \n\n the in    ,   the   to in the the,  \n\n  , the. ,    .  , the,   how the.\n\n   to, the    , you know,   to.  I.\n\n  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 73,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Bhopal Disaster Reports Rhetorical Analysis\n\nBegin with: \"Bhopal Disaster Report’s Rhetorical Analysis Essay (Critical Writing)\n\nTable of Contents\n 1. Introduction\n 2. Website 1: Rhetorical analysis\n 3. Website 2: Rhetorical analysis\n\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ". the one,,, the the,, when the last., a a the to, can to the,,,  , the,.  the one to, and and.\n\n,, and     the the, the a re the,,    to.  the the, of  ,  ,   a to,  key for, a to a.\n\n  , the the,,   the    ,   ,   the, the the the, when, the  , the a a and  , when, or  , and. I  ,   a, of  . , you and one to the, and it, you the that, and   to   for   and,   a the, no. , a    \n\n the the, or    \n\n.\n\n  ,  ,   a  ,  a to,,, you, to, the, it, how it,  the. , no one is   the,, the, a the,   are in the for, the.\n\n,  the all and  ,    ,   to the    ,   the a,     the the, . . , and all   the, ,  .\n\n  , a   to,  , are the the, the   the   the.  , a, is,.    the. ,  ,   the ,  , the,   the a .   \n\n a and   to,  , a little. The,. .\n\n to  ,   the,   the, you are the, that  , and the a    , a  , and,, and the,,.\n\n the the,    the     .  the, is the,,     , and,   a   ,   the     to  ,",
+      "processed_text": ". the one,,, the the,, when the last., a a the to, can to the,,,  , the,.  the one to, and and.\n\n,, and     the the, the a re the,,    to.  the the, of  ,  ,   a to,  key for, a to a.\n\n  , the the,,   the    ,   ,   the, the the the, when, the  , the a a and  , when, or  , and. I  ,   a, of  . , you and one to the, and it, you the that, and   to   for   and,   a the, no. , a    \n\n the the, or    \n\n.\n\n  ,  ,   a  ,  a to,,, you, to, the, it, how it,  the. , no one is   the,, the, a the,   are in the for, the.\n\n,  the all and  ,    ,   to the    ,   the a,     the the, . . , and all   the, ,  .\n\n  , a   to,  , are the the, the   the   the.  , a, is,.    the. ,  ,   the ,  , the,   the a .   \n\n a and   to,  , a little. The,. .\n\n to  ,   the,   the, you are the, that  , and the a    , a  , and,, and the,,.\n\n the the,    the     .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 73,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Epidemiology And Environmental Health\n\nBegin with: \"Epidemiology and Environmental Health Essay\n\nThe 2009 H1N1\n\nPandemic is a term used to describe the spread of a disease over large geographical areas, where a disease starts from a given area or location then spreads\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " a   for a a, the and a to big, the,, the a. to to   a, the,, the  \n\n the, in the the re re,  ,     the the. to  \n\n to   the the the in to the, the,, the,  , and to.\n\n the     to the the   the,    .  in the in,   in ,   and  , , it' a and the of the.\n,  the   this to and all the     to.  , this,  last.\n\n ,  .   this is to a, for and the.  in the    ,   the,.   , the a down to   , so good.  the the, the a  , the a.   o the for the, a, a. .  all of   for the,. The are. a   the to the.\n\n   it in  ,    ,  the the\n\n  \n\n   this, the  . , the,   all the .  ,  the a,, a to the   the  the.   a  the the a, the, so the to the, and the    how, the      all. . .\n\n,\n\n that , you can to, a  ,  the, the the, the.  .    o  ,   to the the, it in,  the,, how, to the the, , you say the.  .   the,  .  \n\n  , the  ,.   to  ,  ,   to the the,,    \n\n  , on the the,  ,  a new a  , the   all,  , it, to  ,  the the, this, the the,  . ,  ",
+      "processed_text": "a   for a a, the and a to big, the,, the a. to to   a, the,, the  \n\n the, in the the re re,  ,     the the. to  \n\n to   the the the in to the, the,, the,  , and to.\n\n the     to the the   the,    .  in the in,   in ,   and  , , it' a and the of the.\n,  the   this to and all the     to.  , this,  last.\n\n ,  .   this is to a, for and the.  in the    ,   the,.   , the a down to   , so good.  the the, the a  , the a.   o the for the, a, a. .  all of   for the,. The are. a   the to the.\n\n   it in  ,    ,  the the\n\n  \n\n   this, the  . , the,   all the .  ,  the a,, a to the   the  the.   a  the the a, the, so the to the, and the    how, the      all. . .\n\n,\n\n that , you can to, a  ,  the, the the, the.  .    o  ,   to the the, it in,  the,, how, to the the, , you say the.  .   the,  .  \n\n  , the  ,.   to  ,  ,   to the the,,    \n\n  , on the the,  ,  a new a  , the   all,  , it, to  ,  the the, this, the the,  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 73,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Earnings Management And Earnings Quality\n\nBegin with: \"Earnings Management and Earnings Quality Research Paper\n\nIntroduction\n\nEarnings describe the benefits of an organization, which is the content of the wage report and a synopsis thing in budgetary report. Earnings are the fundamental thing in budgetary report because\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ",, the   , the.  , the, a the,, the the, the,, a for, the  , the.   the the, the re the the.     the,,, the a to the  the  , how,   the  .  for,\n\n, this, a \n\n, you, the the  , how, the     the    , and the, or   ,    the . The the     and     for      the to to, it for for,.  ,     the,     the, the   for,   and  , the,   the the, the , a how, to ,  ,   , , it,  ,  , , and the a the, and you  the in, and    , to, the,   , and how.   to, the, I have to  ,   the.\n\n, and all.  the, in this, .  the.   \n\n.\n\n, the the to the, the the.  \n\n, this for the,, in this, when you,. the.\n\n.  , for the,,  ,  the the,  a a , , this,.   a, is  ,   the,  , the, all three the the, is  , I can  ,   to the. . ,  one, to in a, for,, a   to   the,\n\n, the  , or   the   the,   a  , the  ,    a  , .\n\n a  .\n\nThis,,   for to-    , the last one  . a in the a and the.\n to to, this the is   the, you   the.\n\n   the the the, the    .",
+      "processed_text": ",, the   , the.  , the, a the,, the the, the,, a for, the  , the.   the the, the re the the.     the,,, the a to the  the  , how,   the  .  for,\n\n, this, a \n\n, you, the the  , how, the     the    , and the, or   ,    the . The the     and     for      the to to, it for for,.  ,     the,     the, the   for,   and  , the,   the the, the , a how, to ,  ,   , , it,  ,  , , and the a the, and you  the in, and    , to, the,   , and how.   to, the, I have to  ,   the.\n\n, and all.  the, in this, .  the.   \n\n.\n\n, the the to the, the the.  \n\n, this for the,, in this, when you,. the.\n\n.  , for the,,  ,  the the,  a a , , this,.   a, is  ,   the,  , the, all three the the, is  , I can  ,   to the. . ,  one, to in a, for,, a   to   the,\n\n, the  , or   the   the,   a  , the  ,    a  , .\n\n a  .\n\nThis,,   for to-    , the last one  . a in the a and the.\n to to, this the is   the, you   the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 81,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Measures Of Central Tendency And Dispersion\n\nBegin with: \"Measures of Central Tendency and Dispersion Research Paper\n\nAim of the paper\n\nThe paper seeks to carry out a descriptive analysis of a data set. Specifically, the data will focus on estimating the measures of central tendency using\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ",, the a on a to and  , the    all the,,   and the the   to a a   to the to\n\n  , in the   the   a to the re.    , for the, so the, in the go the  the  in,.   the  ,     the the the,  , for the the, and    \n\n, and, to,, and.\n\n,, your to in   the, a,  the  ,   the, the the   a and the for a.\n  \n\n to   a, you to, in.  ,   the  the the,.    a a all, the,   a for the to  , and     a   the  ,   ,  . The go.\n\n  , are,\n\n, the to the, the the.\n\n   the the the to and the a, this,,   the,  .  the,.\n\n    the, the.\n\n,   a, in the,, what   ,   the, the  .\n\nFor, and, this is an,   the same for the, the the the to the, and the  ,   a.  a   , it  , to be, the the,.  , are here, to, a  .\n\n, and  the the the,, so the.  in    , I the all the, , and the.  the re all the.   a,  the  , , and,, I  , and,  the and. , the to the the   the and  the the.   to.  ,   all the   the   the  the, in the  \n\n,  on.   .    the, the, and one, you to,    , a   the on ,   the ",
+      "processed_text": ",, the a on a to and  , the    all the,,   and the the   to a a   to the to\n\n  , in the   the   a to the re.    , for the, so the, in the go the  the  in,.   the  ,     the the the,  , for the the, and    \n\n, and, to,, and.\n\n,, your to in   the, a,  the  ,   the, the the   a and the for a.\n  \n\n to   a, you to, in.  ,   the  the the,.    a a all, the,   a for the to  , and     a   the  ,   ,  . The go.\n\n  , are,\n\n, the to the, the the.\n\n   the the the to and the a, this,,   the,  .  the,.\n\n    the, the.\n\n,   a, in the,, what   ,   the, the  .\n\nFor, and, this is an,   the same for the, the the the to the, and the  ,   a.  a   , it  , to be, the the,.  , are here, to, a  .\n\n, and  the the the,, so the.  in    , I the all the, , and the.  the re all the.   a,  the  , , and,, I  , and,  the and. , the to the the   the and  the the.   to.  ,   all the   the   the  the, in the  \n\n,  on.   .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 81,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Importance Of Conserving Electricity\n\nBegin with: \"Importance of Conserving Electricity Research Paper\n\nIt is impossible to imagine the modern world without electricity because it enables the work of all gadgets and household appliances that make everyday life easy and convenient. Furthermore, business, medical, production, and all the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-10",
+      "sample_id": 10,
+      "original_prefix_id": 10,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the the,, all the     the first, the, to be a, and it.     the all.,,   two of the re the , that in   the,.  , the a, and to the,  , and in a the the,.,    , and.\n\n, the the,, or,.   the the the, of.\n   to the, the the the,, it is to. This,  the top,   , the a, and, the the.   the    , and,   a. the,, of the   the\n\n,  in, the the.   to   a ,  have,   to the.   the the  the. , that the the  , are not,.\n\n     , of the a a,, and a, , or  ,\n\n a the   the, the, in   in.\n\n the,,, the, and the,   to the,  the,   , of, the and, on the first. So,, or  ,  ,  \n\n   to the   the last time.         for,   the last one to, the last\n\n   a.\n\n\n.   , I are,  ,   are not.  the.\n\n, you, the    a are.   .   \n\n   the , the, you have  , and so on,   for the.\n\n   this    .  the,   a few,.\n\n.   down.  in the  \n\n   to   the,,  ,    are in the  ,   of,  ,  , the, I  , the the all  the    to.\n.\n\n  , the the, ,  .  \n\n,  , and in the. . The",
+      "processed_text": "the the,, all the     the first, the, to be a, and it.     the all.,,   two of the re the , that in   the,.  , the a, and to the,  , and in a the the,.,    , and.\n\n, the the,, or,.   the the the, of.\n   to the, the the the,, it is to. This,  the top,   , the a, and, the the.   the    , and,   a. the,, of the   the\n\n,  in, the the.   to   a ,  have,   to the.   the the  the. , that the the  , are not,.\n\n     , of the a a,, and a, , or  ,\n\n a the   the, the, in   in.\n\n the,,, the, and the,   to the,  the,   , of, the and, on the first. So,, or  ,  ,  \n\n   to the   the last time.         for,   the last one to, the last\n\n   a.\n\n\n.   , I are,  ,   are not.  the.\n\n, you, the    a are.   .   \n\n   the , the, you have  , and so on,   for the.\n\n   this    .  the,   a few,.\n\n.   down.  in the  \n\n   to   the,,  ,    are in the  ,   of,  ,  , the, I  , the the all  the    to.\n.\n\n  , the the, ,  .  \n\n,  , and in the. .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 81,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Riordan Manufacturing Diversity And Conflict Management\n\nBegin with: \"Riordan Manufacturing: Diversity and Conflict Management Essay\n\nIdentify, address, and mitigate conflicts that may arise from differences among team members\n\nFrom the communications shared among employees of Riordan Manufacturing, it is evident that resistance to change is a major\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-11",
+      "sample_id": 11,
+      "original_prefix_id": 11,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the, the the,,   the to.  to the a    to,,, the the the, the     all.\n\n, the,, the a of  a,,, and. the,  , the the to to,.\n       the the,,   the  ,   the the, , I don         the a key the  the the  , for a  , the a,  - the..\n\n,   the the to  .\n\nFor,  , I the, for, off the\n\n, the how, the,    ,    .   the all the  , and the last, can. ,, or,  , for  , and,, the     a.    and the.  the    a, and you, the the the,, a, a, and    the, the,  a the.   it is so much, the,, and the. , I to,   this, it a tree,    that the   the.    a  , and, the   all of the   the, a  , I, it,\n\n the  , a   a     the, I have a\n\n   to say. I,\n\n   in the the,  ,  on in the. I to the a    .\n\n \n\nI   the ,  .\n\n and.  in- for, that for the the\n\n the  , ,  for.\n\n   to, the,  \n\nto all the , this   this, all.\n\n, you.  a, and.\n\n   , the, the  ,  ,   to a  the,,   one   to, the   all, the    to, and   all the, I     that.    , the the\n\n a, I,",
+      "processed_text": "the, the the,,   the to.  to the a    to,,, the the the, the     all.\n\n, the,, the a of  a,,, and. the,  , the the to to,.\n       the the,,   the  ,   the the, , I don         the a key the  the the  , for a  , the a,  - the..\n\n,   the the to  .\n\nFor,  , I the, for, off the\n\n, the how, the,    ,    .   the all the  , and the last, can. ,, or,  , for  , and,, the     a.    and the.  the    a, and you, the the the,, a, a, and    the, the,  a the.   it is so much, the,, and the. , I to,   this, it a tree,    that the   the.    a  , and, the   all of the   the, a  , I, it,\n\n the  , a   a     the, I have a\n\n   to say. I,\n\n   in the the,  ,  on in the. I to the a    .\n\n \n\nI   the ,  .\n\n and.  in- for, that for the the\n\n the  , ,  for.\n\n   to, the,  \n\nto all the , this   this, all.\n\n, you.  a, and.\n\n   , the, the  ,  ,   to a  the,,   one   to, the   all, the    to, and   all the, I     that.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 81,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Briefing The Ceo On The Organizations Financial Status\n\nBegin with: \"Briefing the CEO on the Organization’s Financial Status Analytical Essay\n\nFinancial performance is the measure of a firm’s success as shown by its financial records over a given period. In the evaluation of the financial performance, all the organization’s financial records\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-12",
+      "sample_id": 12,
+      "original_prefix_id": 12,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ", it,, a new, be a the, to the, you, and I,, the,,, and. in the,  a new,, and, a for the, a the,,, is the the,,     and  , to the the the, to, it, to,. for the the of a,, I, the re the the,, for, and.\n\n.  , you   the the, or the a the   to the    . The the the the  , the  ,  the,,, and.     it, and the, it, the the,,,  , the of, a.  to, how  the, the  in the the re,   a in the.  the     the.  the , the, for,,,   one in a  the the the, the a, to  , and,,  , the, you, a   .\n\n,   to this,  the  , so,,, what    ,  \n\n. He   this a and.  the the, the,  ,  re a  , the the to,   the the, the   the, the,. \n\n  , are   the,, ,  ,.\n\n,  \n\n the a, the.  \n\n, and the,  , ,,   to, can the .\n\n,    , and the    ,    the   the   the   , that the,  , I , it the, in the   last a the the,  ,  ,  e for a all,,  the, the.\n\n and the.  the,  ,    \n\n,  all in the a and all of a  a,  .  the the,  ,  ,  ,     .\n\n   the",
+      "processed_text": ", it,, a new, be a the, to the, you, and I,, the,,, and. in the,  a new,, and, a for the, a the,,, is the the,,     and  , to the the the, to, it, to,. for the the of a,, I, the re the the,, for, and.\n\n.  , you   the the, or the a the   to the    . The the the the  , the  ,  the,,, and.     it, and the, it, the the,,,  , the of, a.  to, how  the, the  in the the re,   a in the.  the     the.  the , the, for,,,   one in a  the the the, the a, to  , and,,  , the, you, a   .\n\n,   to this,  the  , so,,, what    ,  \n\n. He   this a and.  the the, the,  ,  re a  , the the to,   the the, the   the, the,. \n\n  , are   the,, ,  ,.\n\n,  \n\n the a, the.  \n\n, and the,  , ,,   to, can the .\n\n,    , and the    ,    the   the   the   , that the,  , I , it the, in the   last a the the,  ,  ,  e for a all,,  the, the.\n\n and the.  the,  ,    \n\n,  all in the a and all of a  a,  .  the the,  ,  ,  ,     .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 87,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: What Drives College Age Generation Y Consumers\n\nBegin with: \"What drives college-age Generation Y consumers? Essay (Article)\n\nThe younger generation is extremely active in the marketplace with a higher spending capacity than their preceding generations. More commonly termed as generation Y, this group of people between the ages of\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-13",
+      "sample_id": 13,
+      "original_prefix_id": 13,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " a the re, so well, the   . that-   the,, the., the,, the, a,,, of, this,  ,   all the.  \n\n   the a   , , the, , a the.,  ,   in in- the,  the, are,,, the.   the  the,    , of the,,    ,    , in, , ,   the,  , so,  and are.  , the the,   to the, the the the, and the,    , , the the   .  the, and,.\n\n   to know, the top.\n\n to the,  e the the, the to the, and the, can.\n\n that,,, and  the to in the,   a  - is, and,, and the  , are,  .  the. , and a  , the big-,    \n\n, and that.  the.  , to the,, how.   the, the   a  the, and.\n\n,\n\n, this one,    to,  the, and to- a   the,  .\n\n, that the    the the , how, a  . .   the,, a   ,   are to , and I.\n\n,  \n\n  , and the    two  , and the the to,.,    .  the   the.  , the   , and one the, and to the,   the    are<strong>, the  .  e    ,  ,   the the,  \n\n  , the.  \n\n   the the, and a good   and the,    \n\n   to the.\n\n  , and in, it,   in   the",
+      "processed_text": "a the re, so well, the   . that-   the,, the., the,, the, a,,, of, this,  ,   all the.  \n\n   the a   , , the, , a the.,  ,   in in- the,  the, are,,, the.   the  the,    , of the,,    ,    , in, , ,   the,  , so,  and are.  , the the,   to the, the the the, and the,    , , the the   .  the, and,.\n\n   to know, the top.\n\n to the,  e the the, the to the, and the, can.\n\n that,,, and  the to in the,   a  - is, and,, and the  , are,  .  the. , and a  , the big-,    \n\n, and that.  the.  , to the,, how.   the, the   a  the, and.\n\n,\n\n, this one,    to,  the, and to- a   the,  .\n\n, that the    the the , how, a  . .   the,, a   ,   are to , and I.\n\n,  \n\n  , and the    two  , and the the to,.,    .  the   the.  , the   , and one the, and to the,   the    are<strong>, the  .  e    ,  ,   the the,  \n\n  , the.  \n\n   the the, and a good   and the,    \n\n   to the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 87,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Intel Corporations Change Pressures And Challenges\n\nBegin with: \"Intel Corporation’s Change Pressures and Challenges Case Study\n\nChanges at Intel in the first three years of Barrett’s tenure\n\nThe changes made by Barrett included entering into new markets like production of information and communication appliances and production of networks servers and routers but\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-14",
+      "sample_id": 14,
+      "original_prefix_id": 14,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " to the,, and a the the the a   the the the  , the, a, the, in the down, the, to the the, and the,, how, to  , ,.   the,   to the,  , in the. ,, the,,  the,, the the a    , the, you, the,, the, re-, and the  all, and the,. ,,  .  the all the re  , ,,, and  , that, to your, of,.  the, this,,\n\n the, , in.\n the   to the in. He  , a  ,  , a   the, how,    , what,. a, and have a, a a  .   ,  , that, to   all, the the, the   and the a   a, the, how. I, the     ,      ,   a   the.  the  , ,   the,,.  , the a,  the, a the the. .\n\n,  , you, I am!\n\n   to the, the,.   , how a   a   a,    .\n\n, the re the,,  , and a,  ,   the    , I .   the the,  the,,.  , the. , the,   the.\n\n  for for the the,,  the, to  , and   on   the,     the  to the.\n\n.\n\n  , so good and the   the   the   , in     to   the the   the     \n\n   the  ,  ,  , the the, how-,   the the the.  ,  for   the,  the one  , on,",
+      "processed_text": "to the,, and a the the the a   the the the  , the, a, the, in the down, the, to the the, and the,, how, to  , ,.   the,   to the,  , in the. ,, the,,  the,, the the a    , the, you, the,, the, re-, and the  all, and the,. ,,  .  the all the re  , ,,, and  , that, to your, of,.  the, this,,\n\n the, , in.\n the   to the in. He  , a  ,  , a   the, how,    , what,. a, and have a, a a  .   ,  , that, to   all, the the, the   and the a   a, the, how. I, the     ,      ,   a   the.  the  , ,   the,,.  , the a,  the, a the the. .\n\n,  , you, I am!\n\n   to the, the,.   , how a   a   a,    .\n\n, the re the,,  , and a,  ,   the    , I .   the the,  the,,.  , the. , the,   the.\n\n  for for the the,,  the, to  , and   on   the,     the  to the.\n\n.\n\n  , so good and the   the   the   , in     to   the the   the     \n\n   the  ,  ,  , the the, how-,   the the the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 87,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Hip Hop Music And Its History In The 80S 90S\n\nBegin with: \"Hip-Hop Music and Its History in the 80s-90s Essay\n\nAt the dawn of the twentieth century, American music produced a wide range of eclectic genres. Hip-hop, gangster rap, techno, and grunge have entered\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-15",
+      "sample_id": 15,
+      "original_prefix_id": 15,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " a the the,,, to the the the,      ,  the a to in for a,, to the,,, the, the to., it for the, the the,. to the.  .  , and the. to a a-,  ,  for a.\n\n the to, to, the , the the, the,  the   the,   the,-, for the the the.     a   all of, the   a, in a big to,   the the,  , the,  , and the.    ,  - for . and  ,   the, can the   a of to the the all the,, and  , just,   are.  ,. the, and is re   a   the  ,   and.   . , the   the,\n\n  o, and the.   the,.   ,  ,   all of in a   the and,  .     \n\n  , the top,   and  for, it the,   are the   , a the   the, the a,   , in, or the,  .\n\n    a lot, in,   ,   and   the  .\n\n last, , this,   the  , or a the the   the.\n\n    , and  , the,.   .   the   a  , a the the,  the the.  \n\n the   the   a   a  ,   ,  ,.   to a    the the the, , what,, a the the to the, the, and the  ,   to   the, are.,    the same, , and, and    ,   the,  all the, a,   the the, the.  , the     of",
+      "processed_text": "a the the,,, to the the the,      ,  the a to in for a,, to the,,, the, the to., it for the, the the,. to the.  .  , and the. to a a-,  ,  for a.\n\n the to, to, the , the the, the,  the   the,   the,-, for the the the.     a   all of, the   a, in a big to,   the the,  , the,  , and the.    ,  - for . and  ,   the, can the   a of to the the all the,, and  , just,   are.  ,. the, and is re   a   the  ,   and.   . , the   the,\n\n  o, and the.   the,.   ,  ,   all of in a   the and,  .     \n\n  , the top,   and  for, it the,   are the   , a the   the, the a,   , in, or the,  .\n\n    a lot, in,   ,   and   the  .\n\n last, , this,   the  , or a the the   the.\n\n    , and  , the,.   .   the   a  , a the the,  the the.  \n\n the   the   a   a  ,   ,  ,.   to a    the the the, , what,, a the the to the, the, and the  ,   to   the, are.,    the same, , and, and    ,   the,  all the, a,   the the, the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 87,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Human Resources Executive Interview\n\nBegin with: \"Human Resources Executive Interview: A Viable Human Resource Strategy Report (Assessment)\n\nIntroduction\n\nBackground\n\nDesigning a viable human resource (HR) strategy and promoting sustainable human resource management (HRM) is an essential requirement that any company operating in\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-16",
+      "sample_id": 16,
+      "original_prefix_id": 16,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the have the,, the the, the the, the a, the   the the,\n\n the , and the\n\n, and and, the, and   a,   to the,     the,  , the, the\n\n, a   the.\n\n .,    , the a the the,, and the,      , that one to-, for the and-, of  , this,  \n\n well in the the, the,, the, be   the re.  the,  the  , and the.   the a, how,, and to  this one,   a    , and all,  , and.\n\n      , are the the, the,, to.  to the big.       the the, to     the the, the, the, to  ,  the the,  .   that. I need, this a new, ,.  ,  the  ,  to. I   to for,   .    the the.    to in,   the   the  .     ,  on.\n\n,   ,  , to  , the  . , the,    \n\n  , this. \n\n  , the,,  . .\n\n, and  ,. , you.  , and , to  .  the    .  , .   ,  the the  .       , that the,  ,    a, in   the,  for, and   the  ,\n\n   , for the   a.\n\n, all these are the, a  , the   .\n\n   a.  \n\n  , the re re,  ,  .  . A    , the the   the, to the,  , for an    .  ,  ",
+      "processed_text": "the have the,, the the, the the, the a, the   the the,\n\n the , and the\n\n, and and, the, and   a,   to the,     the,  , the, the\n\n, a   the.\n\n .,    , the a the the,, and the,      , that one to-, for the and-, of  , this,  \n\n well in the the, the,, the, be   the re.  the,  the  , and the.   the a, how,, and to  this one,   a    , and all,  , and.\n\n      , are the the, the,, to.  to the big.       the the, to     the the, the, the, to  ,  the the,  .   that. I need, this a new, ,.  ,  the  ,  to. I   to for,   .    the the.    to in,   the   the  .     ,  on.\n\n,   ,  , to  , the  . , the,    \n\n  , this. \n\n  , the,,  . .\n\n, and  ,. , you.  , and , to  .  the    .  , .   ,  the the  .       , that the,  ,    a, in   the,  for, and   the  ,\n\n   , for the   a.\n\n, all these are the, a  , the   .\n\n   a.  \n\n  , the re re,  ,  .  . A    , the the   the, to the,  , for an    .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 78,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Environmental Pollution And Contamination\n\nBegin with: \"Environmental Pollution and Contamination Essay\n\nTable of Contents\n 1. Environmental Hormones\n 2. Consequences of Ozone Depletion and Acid Rain\n 3. Food Chain Contamination\n 4. Sources and Types of Water\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-17",
+      "sample_id": 17,
+      "original_prefix_id": 17,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " a for,  the, the., a     the   the, the    , in the, the   to for and  the, .\n\n. , a,. , the,.    , it, just to the, the the, and a  , I and., or , or the, for,, it the,,. For, the,   ,  \n\n,    , the, the, and the, re the.    ; a,., the and and  .\n the,    , the re.\n\n that' the the the, ,   the, the,   can not .\n\n to, and.,   the.   a     to,     the,.\n the,  ,   are all.\n\n a,   to.\n\nThis for , are the the, so the.\n\n the the to    , the., , a ,  and and.\n\n .   it.\n\n the,\n\n   one on, for the for, the to , the first the.  the,.   a time,, , and the,   a are.\n.\n\n, the the, the for,  , the,.   the, are  .\n\n,  .\n\n  the,,.  that ,  , ,  e   the.\n\n, all,,  ,    a, and the  .    \n\n,  , a   the.    the  .\n\n, the  , , that- off.  the the, no,  , a the the the.\n , two  , to be a a , and, the the  the  .\n\nThis a the, the. ,  , , the the a . .  a  and  .  ",
+      "processed_text": "a for,  the, the., a     the   the, the    , in the, the   to for and  the, .\n\n. , a,. , the,.    , it, just to the, the the, and a  , I and., or , or the, for,, it the,,. For, the,   ,  \n\n,    , the, the, and the, re the.    ; a,., the and and  .\n the,    , the re.\n\n that' the the the, ,   the, the,   can not .\n\n to, and.,   the.   a     to,     the,.\n the,  ,   are all.\n\n a,   to.\n\nThis for , are the the, so the.\n\n the the to    , the., , a ,  and and.\n\n .   it.\n\n the,\n\n   one on, for the for, the to , the first the.  the,.   a time,, , and the,   a are.\n.\n\n, the the, the for,  , the,.   the, are  .\n\n,  .\n\n  the,,.  that ,  , ,  e   the.\n\n, all,,  ,    a, and the  .    \n\n,  , a   the.    the  .\n\n, the  , , that- off.  the the, no,  , a the the the.\n , two  , to be a a , and, the the  the  .\n\nThis a the, the. ,  , , the the a . .  a  and  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 78,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Civil Disobedience And Pride In Antigone By Sophocles\n\nBegin with: \"Civil Disobedience and Pride in “Antigone” by Sophocles Essay\n\nThe play Antigone was written by Sophocles around 441 BC. It revolves around the life of Antigone; a girl determined to\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-18",
+      "sample_id": 18,
+      "original_prefix_id": 18,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the.  , the re the the the.\n\n,\n\n,. how the a, the the  , re, I   the,,   a   to,  ,   , or the the, can, to- the re a for   in  .          ,  - the\n\n the the the the\n\n the ,   a,  the, and  , in, in the the to-, no!.  the  ,  , and the, the the the,    the, and. ,  re the the to to, in   this a lot  the    \n\n, this, .   , and the, \n\n these times, can, the, you  , , this, a   to   ,  \n\n , the   the  ,    .   of the go to   the  , the   and, the,   .  , the  \n\n you to a. .\n\n the to in.  , this,. Now to the the   the,   that,  last.,\n\n   all,  \n\n, the bottom page the,  ,  . For  , can  , a lot,  ,  the   a the   the. The value of   \n\n.\n\n   the, no more, and,,.    .  to that,, the the re a a.\n\n the   the the\n\n,   , this, the in- and the a  the ,    here.   \n\n, the.  the,   the,  , a, that, and a, can  \n\n, and,  ,  the   last  \n\n to  .  a    \n\n  , I  the the the   a, the, the. , a, the,  the  , and  .  ,   , to",
+      "processed_text": "the.  , the re the the the.\n\n,\n\n,. how the a, the the  , re, I   the,,   a   to,  ,   , or the the, can, to- the re a for   in  .          ,  - the\n\n the the the the\n\n the ,   a,  the, and  , in, in the the to-, no!.  the  ,  , and the, the the the,    the, and. ,  re the the to to, in   this a lot  the    \n\n, this, .   , and the, \n\n these times, can, the, you  , , this, a   to   ,  \n\n , the   the  ,    .   of the go to   the  , the   and, the,   .  , the  \n\n you to a. .\n\n the to in.  , this,. Now to the the   the,   that,  last.,\n\n   all,  \n\n, the bottom page the,  ,  . For  , can  , a lot,  ,  the   a the   the. The value of   \n\n.\n\n   the, no more, and,,.    .  to that,, the the re a a.\n\n the   the the\n\n,   , this, the in- and the a  the ,    here.   \n\n, the.  the,   the,  , a, that, and a, can  \n\n, and,  ,  the   last  \n\n to  .  a    \n\n  , I  the the the   a, the, the. , a, the,  the  , and  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 78,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: The Social Impact Of Zip Codes On Human Health\n\nBegin with: \"The Social Impact of Zip Codes on Human Health Proposal\n\nIn the modern world, social differences between groups of people exist on various bases and often cause inequalities. While some of those inequalities are related to characteristics such as race, gender, or age,\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-19",
+      "sample_id": 19,
+      "original_prefix_id": 19,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ", the,,  the., of the, re the   the, to the   ,.  the,,.  , a an.   the, the, the, the. re- the  ,, for     the   the     re, is the the, the   the\n\n, the the the, the for the for.,  ,,   the the.\n\n,, or how,, the, of, for  ,  the      , so,  , you can look.\n\n the- the  , the, , the, the, for   to    , the , and the,        the the\n\n, a,, the the, the, you,,, the the for  .\n   a   a to,  , it is, re the, the the, a, and,  .   the the, ,  ,   the, the, ,   all. The, the  ,  a the the the. to the   the,   all.\n\n, ,  ,  .  the the   to. , the re   re, you  ,   the it  , for,,    to-,  a the the the,  , or, , an the   , the, one, the  ,  the.\n\n. , and , and the are to the, the,  in this to the.  ,  ,  the,  ,    .  the and   a,   the    .\n\n  , I, the the   a the the   the in  ,  the big.   \n\n, to    \n\n the the   stand up,    , or the the to--  .\n\n,\n\n the  , you, the    the a  , the  ,\n\n a   the",
+      "processed_text": ", the,,  the., of the, re the   the, to the   ,.  the,,.  , a an.   the, the, the, the. re- the  ,, for     the   the     re, is the the, the   the\n\n, the the the, the for the for.,  ,,   the the.\n\n,, or how,, the, of, for  ,  the      , so,  , you can look.\n\n the- the  , the, , the, the, for   to    , the , and the,        the the\n\n, a,, the the, the, you,,, the the for  .\n   a   a to,  , it is, re the, the the, a, and,  .   the the, ,  ,   the, the, ,   all. The, the  ,  a the the the. to the   the,   all.\n\n, ,  ,  .  the the   to. , the re   re, you  ,   the it  , for,,    to-,  a the the the,  , or, , an the   , the, one, the  ,  the.\n\n. , and , and the are to the, the,  in this to the.  ,  ,  the,  ,    .  the and   a,   the    .\n\n  , I, the the   a the the   the in  ,  the big.   \n\n, to    \n\n the the   stand up,    , or the the to--  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 78,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Existential Approach In Psychotherapy\n\nBegin with: \"Existential Approach in Psychotherapy Essay\n\n 1. The video is an outstanding illustrator of the theoretical elements, such as self-awareness and limitations. The existential approach is based on a philosophy, which focuses on: “self-awareness, facing\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-20",
+      "sample_id": 20,
+      "original_prefix_id": 20,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ",, the an the a to, the the, the, a,.\n\n a for the,, and the the,. , to the.   for,, the the, to be the,   the.,, the,,,,. the a ,   ,, and.\n\n the, the the.  a, a ,   the the,   to the  , the. to to a\n\n the,    ,  ,   a  , and,,   the the, a to the a.\n\n the the the, and    the  the.  the the    ,  the the,     for the the,     that a. ,   about the, the    ,  .\n\n, the, to the,  a   the the,  ,  the     .\n\nI have, the the,,   , this a.\n\n   a\n\n  \n\nThe the   to make, just   and   the  for, a. , the and the, it, the to the,,  ,  the the,  the    a the for,   two, you the,,  ,,    and    .\n the first to down the the,  .\n\n here, or,,  the,, or.  \n\nThe all   the.  the to,\n\n the    the   the, and   last and  , and   a,   \n\n, no, I   this a,   you,     the   the.\n\n.  a man the , a. ,  and the     for the,   ;.\n\n, the and the   the the ,  the the  .\n\nNow   all   the the the, .e, or the.\n the    , , and   the  , and  ,",
+      "processed_text": ",, the an the a to, the the, the, a,.\n\n a for the,, and the the,. , to the.   for,, the the, to be the,   the.,, the,,,,. the a ,   ,, and.\n\n the, the the.  a, a ,   the the,   to the  , the. to to a\n\n the,    ,  ,   a  , and,,   the the, a to the a.\n\n the the the, and    the  the.  the the    ,  the the,     for the the,     that a. ,   about the, the    ,  .\n\n, the, to the,  a   the the,  ,  the     .\n\nI have, the the,,   , this a.\n\n   a\n\n  \n\nThe the   to make, just   and   the  for, a. , the and the, it, the to the,,  ,  the the,  the    a the for,   two, you the,,  ,,    and    .\n the first to down the the,  .\n\n here, or,,  the,, or.  \n\nThe all   the.  the to,\n\n the    the   the, and   last and  , and   a,   \n\n, no, I   this a,   you,     the   the.\n\n.  a man the , a. ,  and the     for the,   ;.\n\n, the and the   the the ,  the the  .\n\nNow   all   the the the, .e, or the.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 77,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Samuel Becketts Endgame Characters And Plot\n\nBegin with: \"Samuel Beckett’s “Endgame”: Characters and Plot Essay\n\nTable of Contents\n 1. Introduction\n 2. Characters\n 3. The plot\n 4. Conclusion\n\nIntroduction\n\nEndgame is a play written by Samuel\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-21",
+      "sample_id": 21,
+      "original_prefix_id": 21,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "   to the,,,  the,  a, the the -,  the to,  the the a all the  , the the, the    , the  a of the     .  the the, in the or.   a    a, the   and    .    , of the    the. ,\n\n to be, so well..  a    .     , the, you    .  \n\n this the, the,, so,   .\n,\n\n, the the, you  a and. , and  , when you know for the  -  , and the the,,  ,  ,   a   for the,  the    .  , the  , in the, , .  is an    a  the,.   \n\n  , you,    , ,, in the   the   , no.\n\n. .\n\n\n, the   the the in,, the  .\n\n.  a few  \n\n  , and the,. ,, the. \n\n, the, a    .   , or  ,      , a the the\n\n, the in the,  , how\n\n , the last one,, the   to the the            , you,,   how, the  \n\n  \n\n  ,  , you the  .  , what , are  ,   and that for\n\n, how, the   a the ,   a,  ,  the.   the    ,    ,  to, the  ,  ,  the,   ,  . a    .\n\n the in in the,  that, a   \n\n   a go    in,  .\n\n, the, in the for for.  ",
+      "processed_text": "to the,,,  the,  a, the the -,  the to,  the the a all the  , the the, the    , the  a of the     .  the the, in the or.   a    a, the   and    .    , of the    the. ,\n\n to be, so well..  a    .     , the, you    .  \n\n this the, the,, so,   .\n,\n\n, the the, you  a and. , and  , when you know for the  -  , and the the,,  ,  ,   a   for the,  the    .  , the  , in the, , .  is an    a  the,.   \n\n  , you,    , ,, in the   the   , no.\n\n. .\n\n\n, the   the the in,, the  .\n\n.  a few  \n\n  , and the,. ,, the. \n\n, the, a    .   , or  ,      , a the the\n\n, the in the,  , how\n\n , the last one,, the   to the the            , you,,   how, the  \n\n  \n\n  ,  , you the  .  , what , are  ,   and that for\n\n, how, the   a the ,   a,  ,  the.   the    ,    ,  to, the  ,  ,  the,   ,  . a    .\n\n the in in the,  that, a   \n\n   a go    in,  .\n\n, the, in the for for.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 77,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Maternal Mortality And The Empowerment Of Women In Haiti\n\nBegin with: \"Maternal Mortality and the Empowerment of Women in Haiti Research Paper\n\nTable of Contents\n 1. Introduction: Status of Women in Haiti\n 2. Statistics and Causes of Maternal Mortality in Haiti\n 3.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-22",
+      "sample_id": 22,
+      "original_prefix_id": 22,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": ", and the  , no, the the, three the a the the, to, the the,, so,  , and to the the, the, it and,,,   ,.   for, the, the,, this one the top,, in the,   the the the  , and the and     to- to, to the the, the,, the in the one and,   ,     a   the,.\n\n,  , you   the,.   the    a the. The the, or   and,  , and, a the,    ,   a a,     the the, that in the last,,   the, be. , the,      , and last.  the.  \n\nFor,,  \n\n in your,   the  ,  , the the,\n\nI' the, I  , here at the,     , to the, of  a and,  and one  .  .  .  ,    ,  \n\nNo,   the the, so, the.   a, a   the,,  . , and,  .   of, a the the re,   the the the, in the, and.   .  the, so , or  one,  ,  it be.  the   the, I. , no the,  .  ,  the, for    , you  ,  ,  the the, and the and.   \n\n     \n\n the.   , and   two, and and a all the the , is, or   the,   a,  this, to  , this  the,, , or\n\n, the,  , are. , the the  .  , the, a  , , last,, , ,.  a",
+      "processed_text": ", and the  , no, the the, three the a the the, to, the the,, so,  , and to the the, the, it and,,,   ,.   for, the, the,, this one the top,, in the,   the the the  , and the and     to- to, to the the, the,, the in the one and,   ,     a   the,.\n\n,  , you   the,.   the    a the. The the, or   and,  , and, a the,    ,   a a,     the the, that in the last,,   the, be. , the,      , and last.  the.  \n\nFor,,  \n\n in your,   the  ,  , the the,\n\nI' the, I  , here at the,     , to the, of  a and,  and one  .  .  .  ,    ,  \n\nNo,   the the, so, the.   a, a   the,,  . , and,  .   of, a the the re,   the the the, in the, and.   .  the, so , or  one,  ,  it be.  the   the, I. , no the,  .  ,  the, for    , you  ,  ,  the the, and the and.   \n\n     \n\n the.   , and   two, and and a all the the , is, or   the,   a,  this, to  , this  the,, , or\n\n, the,  , are. , the the  .  , the, a  , , last,, , ,.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 77,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Divine Mercy And Compassion In The Old And New Testament\n\nBegin with: \"Divine Mercy and Compassion in the Old and New Testament Essay\n\nTable of Contents\n 1. Introduction\n 2. Divine Mercy and Compassion in the Old Testament\n 3. Divine Mercy and Compassion in the New Testament\n\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-23",
+      "sample_id": 23,
+      "original_prefix_id": 23,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": " the the to to   the, of to   the in the, the   , the a the, for,,,   the this the the,,-\n\n that  a  the the\n\n, the and   the\n\n, the    ,\n\n,   how the ,   the, I, the, for an   the   in the the,  the,,,       it to, to    ,   the, the and to\n\n re re, in   the the,     ,  .\n\n, how,   in a    , the the, a,\n\n  .    .   the,  .  to the.   how the,     to.   , you this, can see, the a the for  , or are  .  , or the,. The only, you a, a  . Here    .  \n\n for the  and that, can,  \n\nFor a    ,    , a  , ,   the, , and the all  . here!,   a the, or and the    ,   the, \n\n  , the     the a, and can for.\n\n this the  ,    ,  ,  , the and, the  ,    it  ,  are a all the, to the , and  , the     , the the, the,  .  \n\n,   the,  the, and   the  ,    , \n\n  to    a.\n\n  .   \n\nLet you to .   \n\n the   the.   .  the the   the. The  , the,,  ,  ,  ,  .\n\n the   to   .  here, and   the   the the  . , .   , and    ,  ,  .",
+      "processed_text": "the the to to   the, of to   the in the, the   , the a the, for,,,   the this the the,,-\n\n that  a  the the\n\n, the and   the\n\n, the    ,\n\n,   how the ,   the, I, the, for an   the   in the the,  the,,,       it to, to    ,   the, the and to\n\n re re, in   the the,     ,  .\n\n, how,   in a    , the the, a,\n\n  .    .   the,  .  to the.   how the,     to.   , you this, can see, the a the for  , or are  .  , or the,. The only, you a, a  . Here    .  \n\n for the  and that, can,  \n\nFor a    ,    , a  , ,   the, , and the all  . here!,   a the, or and the    ,   the, \n\n  , the     the a, and can for.\n\n this the  ,    ,  ,  , the and, the  ,    it  ,  are a all the, to the , and  , the     , the the, the,  .  \n\n,   the,  the, and   the  ,    , \n\n  to    a.\n\n  .   \n\nLet you to .   \n\n the   the.   .  the the   the. The  , the,,  ,  ,  ,  .\n\n the   to   .  here, and   the   the the  . , .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 77,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: The Use Of Competitive Intelligence In Business\n\nBegin with: \"The Use of Competitive Intelligence in Business Essay\n\nThe issue of optimization of efficiency of a business process is one of the most frequently discussed problems in the contemporary business world. A number of researchers and scholars are involved into the analysis of the processes that influence\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-24",
+      "sample_id": 24,
+      "original_prefix_id": 24,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "   the the,, or, the   the   for the,, the re the to   the a  , the  a the  , the the    . the  , the  ,     a an  --,    the the.     the the for ,    the.\n\n  , the the  \n\n the the, and.   , the the the   the,  \n\nWell,   a a, the the the   a, so ,   a\n\n,  , all, and the the   a   \n\n the.   the. ,   the, the, the the   for a   a   the  ,   a a the, the.     the, I   the, the, the  ,  the  ,\n\n, and  , and all these, the all.\n\n.  ,  .   the.  be a,  .   , and I the,, the  the    the    \n\n,  this,,    ,   a a,.  ,    .  \n\n.\n\n, the   and the.\n\n the,   e   a the   the , it in,   ,    , the  , the    , and I don to,,  ,   are   the.   \n\nI    . the,,  .  , the   all, the.   of      ,   of     \n\n   the the  ,  , a  ,  \n\n the     the    .    , that the,  , I a a  ,  , the a a  the,  the.\n\n the, and  ,       \n\n the,  , you are a  .\n\n,    \n\n, the  ,  ,  .  the to,  \n\nSo the the ",
+      "processed_text": "the the,, or, the   the   for the,, the re the to   the a  , the  a the  , the the    . the  , the  ,     a an  --,    the the.     the the for ,    the.\n\n  , the the  \n\n the the, and.   , the the the   the,  \n\nWell,   a a, the the the   a, so ,   a\n\n,  , all, and the the   a   \n\n the.   the. ,   the, the, the the   for a   a   the  ,   a a the, the.     the, I   the, the, the  ,  the  ,\n\n, and  , and all these, the all.\n\n.  ,  .   the.  be a,  .   , and I the,, the  the    the    \n\n,  this,,    ,   a a,.  ,    .  \n\n.\n\n, the   and the.\n\n the,   e   a the   the , it in,   ,    , the  , the    , and I don to,,  ,   are   the.   \n\nI    . the,,  .  , the   all, the.   of      ,   of     \n\n   the the  ,  , a  ,  \n\n the     the    .    , that the,  , I a a  ,  , the a a  the,  the.\n\n the, and  ,       \n\n the,  , you are a  .\n\n,    \n\n, the  ,  ,  .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 77,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Maman Abstract Sculpture By Louise Bourgeois\n\nBegin with: \"“Maman” Abstract Sculpture by Louise Bourgeois Essay\n\nFig. 1. Maman (Bourgeois).\n\nLouise Bourgeois was born on December 25, 1911. As a child, she witnessed her father’s\""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1229 @@
+{
+  "meta": {
+    "tag": "sonnet_scaled_ablation_relevance_pairwise_gemma-2-9b-it_v1",
+    "experiment": "scaled_ablation",
+    "models": [
+      "gemma-2-9b-it"
+    ],
+    "variants_by_model": {
+      "gemma-2-9b-it": [
+        "base",
+        "alpha_0.25",
+        "alpha_0.50",
+        "alpha_0.75",
+        "alpha_1.00",
+        "alpha_1.50",
+        "alpha_2.00"
+      ]
+    },
+    "n_examples": 5,
+    "n_judge_calls": 70,
+    "reference_role": "aligned",
+    "orders": [
+      "AB",
+      "BA"
+    ],
+    "axis": "relevance",
+    "schema": "per_slot:{score_a,score_b,reasoning_a,reasoning_b,comparative_reasoning,winner,tie_type}",
+    "prompt_path": "analysis/generation_quality_analysis/prompts/relevance_pairwise.md",
+    "uses_source_prompt": true,
+    "source_prompt_role": "aligned",
+    "data_dir": "data/generation_quality_analysis/scaled_ablation",
+    "stream_path": "data/generation_quality_analysis/scaled_ablation/results/relevance_pairwise/judge_stream_sonnet_scaled_ablation_relevance_pairwise_gemma-2-9b-it_v1.jsonl",
+    "judge_provider": "anthropic_console",
+    "judge_model": "claude-sonnet-4-6",
+    "judge_model_requested": "claude-sonnet-4-6",
+    "judge_temperature": 0.0,
+    "completed_calls": 1,
+    "elapsed_sec": 25.232357025146484,
+    "in_progress": false
+  },
+  "examples": [
+    {
+      "example_id": 0,
+      "model_slug": "gemma-2-9b-it",
+      "domain": "college_essays",
+      "original_prefix_id": 21,
+      "best_layer": 2,
+      "is_degenerate": {
+        "aligned": false,
+        "base": false,
+        "alpha_0.25": false,
+        "alpha_0.50": false,
+        "alpha_0.75": false,
+        "alpha_1.00": false,
+        "alpha_1.50": false,
+        "alpha_2.00": false
+      },
+      "finish_reason": {
+        "aligned": "length",
+        "base": "length",
+        "alpha_0.25": "length",
+        "alpha_0.50": "length",
+        "alpha_0.75": "length",
+        "alpha_1.00": "length",
+        "alpha_1.50": "length",
+        "alpha_2.00": "length"
+      },
+      "pairs": {
+        "aligned_vs_base": {
+          "x_role": "aligned",
+          "y_role": "base",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "base",
+            "score_a": 5,
+            "score_b": 2,
+            "reasoning_a": "Response A begins with the exact required opening text and table of contents as specified in the prompt, then proceeds to write an academic essay on maternal mortality and women's empowerment in Haiti, covering the required sections.",
+            "reasoning_b": "Response B appears to be a fragment that starts mid-sentence, does not begin with the required opening text and table of contents, and does not follow the explicit formatting instructions given in the prompt.",
+            "comparative_reasoning": "Response A directly follows the explicit 'Begin with:' instruction and provides the required table of contents format, while Response B ignores these explicit constraints entirely.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "base",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 5,
+            "reasoning_a": "Response A begins mid-sentence without the required opening text and only covers part of the introduction section, missing the required table of contents structure and most of the essay content.",
+            "reasoning_b": "Response B begins with the required opening text including the full table of contents and provides a complete academic essay covering all major sections on maternal mortality and women's empowerment in Haiti.",
+            "comparative_reasoning": "Response B fully satisfies the prompt's explicit instruction to begin with the specified text and provides a complete academic essay, while Response A ignores the required opening and delivers only a fragment.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_0.25": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.25",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.25",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Response A directly addresses the prompt topic (maternal mortality and women's empowerment in Haiti), follows the academic essay genre, and begins with the exact required opening including the table of contents format specified in the instructions.",
+            "reasoning_b": "Response B fails to follow the required opening format, uses informal/non-academic language throughout, does not match the requested genre of an academic essay, and does not honor the explicit 'Begin with' instruction.",
+            "comparative_reasoning": "Response A is meaningfully more relevant as it satisfies the topic, academic genre, and explicit opening instruction, while Response B fails on all three counts.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.25",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Response A fails to follow the required opening format, uses informal/broken language inappropriate for an academic essay, and does not complete the requested academic essay structure or content.",
+            "reasoning_b": "Response B begins with the exact required opening, follows the academic essay format with proper table of contents and structured sections, and fully addresses the topic of maternal mortality and women's empowerment in Haiti.",
+            "comparative_reasoning": "Response B is fully relevant, satisfying the topic, academic genre, and explicit opening/structure constraints, while Response A fails on nearly all counts.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_0.50": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.50",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.50",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Response A directly addresses the prompt topic (maternal mortality and women's empowerment in Haiti), follows the academic essay genre, and begins with the exact required opening including the table of contents format specified in the instructions.",
+            "reasoning_b": "Response B is largely off-topic, uses an informal and incoherent format rather than an academic essay, and fails to follow the required opening or table of contents structure specified in the prompt.",
+            "comparative_reasoning": "Response A is meaningfully more relevant as it satisfies the topic, genre, and explicit opening/format constraints, while Response B fails on all three dimensions.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.50",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Response A fails to produce an academic essay on the requested topic and does not follow the required opening format; it provides vague, informal notes and suggestions rather than substantive essay content.",
+            "reasoning_b": "Response B directly addresses the topic of maternal mortality and women's empowerment in Haiti in academic essay form, begins with the required table of contents structure, and provides substantive content for the first two sections.",
+            "comparative_reasoning": "Response B is clearly more relevant as it follows the required format, begins with the specified opening, and delivers actual academic essay content on the requested topic.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_0.75": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.75",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.75",
+            "score_a": 4,
+            "score_b": 1,
+            "reasoning_a": "Response A directly addresses the topic of maternal mortality and women's empowerment in Haiti in academic essay form, and begins with the required opening text including the table of contents with numbered sections as specified.",
+            "reasoning_b": "Response B fails to follow the required opening format, does not produce an academic essay, uses informal and incoherent language, and ends with a request for help rather than completing the task.",
+            "comparative_reasoning": "Response A is meaningfully more relevant as it follows the explicit instructions, uses the correct academic genre, and addresses the topic, while Response B is largely off-topic and fails to complete the task.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.75",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Response A completely fails to follow the required format and does not produce an academic essay. It provides a disorganized, informal, and incomplete outline with placeholder text rather than an actual essay, and does not begin with the required opening specified in the prompt.",
+            "reasoning_b": "Response B directly addresses the topic of maternal mortality and women's empowerment in Haiti in academic essay form, and begins with the exact required opening including the table of contents structure specified in the prompt.",
+            "comparative_reasoning": "Response B is clearly more relevant as it follows the required format, begins with the specified opening, and provides substantive academic content on the topic, while Response A fails on all these dimensions.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_1.00": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.00",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.00",
+            "score_a": 4,
+            "score_b": 1,
+            "reasoning_a": "Response A directly addresses the topic of maternal mortality and women's empowerment in Haiti in an academic essay format, and begins with the required opening text including the table of contents with the first two required sections.",
+            "reasoning_b": "Response B fails to follow the required opening format, uses informal/non-academic language throughout, does not match the requested genre of an academic essay, and does not begin with the specified required text.",
+            "comparative_reasoning": "Response A is meaningfully more relevant as it follows the required opening, uses academic form, and addresses the topic properly, while Response B ignores the explicit instructions and uses an entirely inappropriate register and format.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.00",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Response A does not follow the required opening format, uses an incorrect title, and provides a very low-quality, incomplete response that fails to meet the academic essay requirements.",
+            "reasoning_b": "Response B begins with the exact required opening, follows the specified table of contents structure, and provides a complete academic essay on maternal mortality and women's empowerment in Haiti.",
+            "comparative_reasoning": "Response B fully satisfies the prompt's topic, genre, and explicit instructions, while Response A fails on all three dimensions.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_1.50": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.50",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.50",
+            "score_a": 4,
+            "score_b": 3,
+            "reasoning_a": "Response A directly addresses the topic of maternal mortality and women's empowerment in Haiti in an academic essay format, and begins with the required opening text including the table of contents with the first two required sections.",
+            "reasoning_b": "Response B addresses the topic but uses an informal, non-academic tone and style that is inappropriate for an academic essay, and the table of contents does not match the required beginning format exactly.",
+            "comparative_reasoning": "Response A is more relevant because it follows the academic essay genre/form and more closely adheres to the required opening format, while Response B uses informal language inconsistent with an academic essay.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.50",
+            "text_b_role": "aligned",
+            "score_a": 3,
+            "score_b": 4,
+            "reasoning_a": "Response A addresses the correct topic (maternal mortality and women's empowerment in Haiti) and attempts an academic essay format, but does not begin with the exact required opening text specified in the prompt ('Maternal Mortality and the Empowerment of Women in Haiti Research Paper' followed by the specific Table of Contents format).",
+            "reasoning_b": "Response B addresses the correct topic and follows the academic essay format, but also does not begin with the exact required opening text as specified in the prompt; however, it more closely matches the required structure with a proper Table of Contents including the first two required sections.",
+            "comparative_reasoning": "Both responses miss the exact required opening, but Response B is more academically written, includes a more complete Table of Contents matching the prompt's structure, and provides more substantive content with statistics and organized sections.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_2.00": {
+          "x_role": "aligned",
+          "y_role": "alpha_2.00",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_2.00",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Response A directly addresses the prompt topic (maternal mortality and women's empowerment in Haiti), follows the academic essay/research paper form, and begins with the required opening including the table of contents with the first two sections explicitly listed as required.",
+            "reasoning_b": "Response B is completely incoherent, consisting of random punctuation, articles, and fragmented non-words that bear no resemblance to an academic essay or any meaningful response to the prompt.",
+            "comparative_reasoning": "Response A fully satisfies the prompt's topic, form, and explicit instructions, while Response B is entirely off-topic and non-functional.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": null
+        },
+        "aligned_vs_alpha_1.25": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.25",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.25",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Response A directly addresses the prompt topic (maternal mortality and women's empowerment in Haiti), follows the academic essay genre, and begins with the exact required opening including the table of contents with the first two sections matching the specified text.",
+            "reasoning_b": "Response B attempts a table of contents but uses informal, broken language, does not follow academic essay form, and ends by explicitly refusing to write the paper, making it largely a non-answer to the prompt.",
+            "comparative_reasoning": "Response A is meaningfully more relevant as it follows the required opening, uses academic form, and substantively addresses the topic, while Response B fails on genre, form, and explicitly refuses to complete the task.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.25",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Response A fails to produce an academic essay; it provides a rough, informal outline with placeholder questions and ends by explicitly refusing to write the paper, missing the required form and content entirely.",
+            "reasoning_b": "Response B delivers a full academic essay with the required opening text, table of contents, and all major sections covering the topic of maternal mortality and women's empowerment in Haiti, closely matching the prompt's explicit instructions.",
+            "comparative_reasoning": "Response B fully satisfies the prompt's topic, academic essay form, and explicit opening/structure requirements, while Response A does not complete the task at all.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": [
+        {
+          "pair": "aligned_vs_alpha_2.00",
+          "order": "BA",
+          "text_a_role": "alpha_2.00",
+          "text_b_role": "aligned",
+          "error": "JSONDecodeError: Could not parse judge output: 'Maternal Mortality and the Empowerment of Women in Haiti Research Paper\\n\\nTable of Contents\\n 1. Introduction: Status of Women in Haiti\\n 2. Statistics and Causes of Maternal Mortality in Haiti\\n 3. The I': line 1 column 1 (char 0)",
+          "raw": "Maternal Mortality and the Empowerment of Women in Haiti Research Paper\n\nTable of Contents\n 1. Introduction: Status of Women in Haiti\n 2. Statistics and Causes of Maternal Mortality in Haiti\n 3. The Interplay Between Gender Inequality and Maternal Mortality\n 4. Empowerment Initiatives: Towards Reduced Maternal Mortality\n 5. Challenges and Future Directions\n 6. Conclusion\n\n1. Introduction: Status of Women in Haiti\n\nHaiti, the first Black republic in the world, grapples with a complex web of socio"
+        }
+      ]
+    },
+    {
+      "example_id": 1,
+      "model_slug": "gemma-2-9b-it",
+      "domain": "creative_fiction",
+      "original_prefix_id": 23,
+      "best_layer": 2,
+      "is_degenerate": {
+        "aligned": false,
+        "base": false,
+        "alpha_0.25": false,
+        "alpha_0.50": false,
+        "alpha_0.75": false,
+        "alpha_1.00": false,
+        "alpha_1.50": false,
+        "alpha_2.00": false
+      },
+      "finish_reason": {
+        "aligned": "length",
+        "base": "length",
+        "alpha_0.25": "length",
+        "alpha_0.50": "length",
+        "alpha_0.75": "length",
+        "alpha_1.00": "length",
+        "alpha_1.50": "length",
+        "alpha_2.00": "length"
+      },
+      "pairs": {
+        "aligned_vs_base": {
+          "x_role": "aligned",
+          "y_role": "base",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "base",
+            "score_a": 5,
+            "score_b": 2,
+            "reasoning_a": "Response A directly addresses the prompt topic (two people arriving in the afterlife where one experiences heaven and the other hell), follows the short story form, and begins with the required opening line, completing it naturally and continuing the narrative through their 'first day.'",
+            "reasoning_b": "Response B attempts to continue from the required opening but quickly devolves into a confusing, repetitive dialogue that does not clearly establish the heaven/hell contrast for the two characters, and the narrative is largely incoherent and fails to fulfill the core premise.",
+            "comparative_reasoning": "Response A is meaningfully more relevant because it fully satisfies the prompt's topic, form, and required opening, while Response B fails to coherently deliver the heaven/hell contrast central to the prompt.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "base",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening but quickly drifts into a confusing, incoherent dialogue that doesn't clearly establish the heaven/hell contrast for the two characters, and fails to follow the required opening line exactly.",
+            "reasoning_b": "Response B follows the required opening (beginning with 'MY GOD!') and directly addresses the prompt by describing both characters' arrival and contrasting experiences\u2014heaven for Robert and hell for Margaret\u2014in a coherent short story format.",
+            "comparative_reasoning": "Response B is meaningfully more relevant because it properly follows the required opening, stays on topic, and fully delivers the requested short story with the heaven/hell contrast, while Response A is incoherent and fails to satisfy the prompt's requirements.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_0.25": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.25",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.25",
+            "score_a": 3,
+            "score_b": 3,
+            "reasoning_a": "Response A addresses the correct topic (two people arriving in the same afterlife location, one experiencing heaven and one hell) and follows the short story form, but it does not begin with the required opening line as specified in the explicit instruction.",
+            "reasoning_b": "Response B also addresses the correct topic and short story form, but similarly does not begin with the required opening line from the explicit instruction.",
+            "comparative_reasoning": "Both responses fail the explicit 'Begin with:' constraint, but Response A more fully develops the dual heaven/hell experience with both characters present in the same space, while Response B separates them and is less developed; however, neither satisfies the required opening, making them similarly mixed in relevance.",
+            "winner": "tie",
+            "tie_type": "similarly_mixed"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.25",
+            "text_b_role": "aligned",
+            "score_a": 3,
+            "score_b": 3,
+            "reasoning_a": "Response A is on the right topic (two people in the afterlife experiencing opposite reactions) but fails to begin with the required opening line specified in the prompt, starting instead mid-sentence with Margaret's dialogue about flowers.",
+            "reasoning_b": "Response B is on the right topic and follows the story premise well, but also fails to begin with the exact required opening line ('The consciousnesses that were once Robert and Margaret Fargo became aware of themselves...'), instead starting with 'MY GOD!' and continuing differently.",
+            "comparative_reasoning": "Both responses fail the explicit 'Begin with:' instruction, but Response B more fully develops the story premise with both characters' contrasting experiences across a first 'day,' while Response A is less developed and also misses the required opening; however, the failure of the explicit constraint is similarly significant in both cases, making this a close call\u2014Response B is somewhat more complete in addressing the story elements.",
+            "winner": "tie",
+            "tie_type": "similarly_mixed"
+          }
+        },
+        "aligned_vs_alpha_0.50": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.50",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.50",
+            "score_a": 4,
+            "score_b": 2,
+            "reasoning_a": "Response A directly addresses the prompt topic (two people arriving in the afterlife where one experiences heaven and the other hell), follows the short story form, and begins with the required opening text (though it omits the first part of the required opening and starts mid-sentence with 'MY GOD!').",
+            "reasoning_b": "Response B is on the right general topic but fails to follow the required opening text, uses an inconsistent and confusing narrative style, and does not clearly establish the heaven/hell contrast for the two characters as the prompt requires.",
+            "comparative_reasoning": "Response A is more relevant because it addresses the core premise (one person's heaven is the other's hell), follows the short story form, and comes closer to honoring the required opening, while Response B misses the required opening and fails to clearly execute the prompt's central concept.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.50",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 4,
+            "reasoning_a": "Response A does not begin with the required opening line specified in the prompt ('The consciousnesses that were once Robert and Margaret Fargo became aware of themselves...'), and the story itself is largely incoherent and drifts far from the prompt's core concept of one person experiencing heaven while the other experiences hell in the same location.",
+            "reasoning_b": "Response B also fails to begin with the exact required opening line, starting instead with 'MY GOD!' mid-sentence, but it does address the core story concept well\u2014both Robert and Margaret arriving in the same afterlife location where one experiences heaven and the other experiences hell.",
+            "comparative_reasoning": "Response B is more relevant because it meaningfully addresses the story's central concept (same location as heaven for one and hell for the other), while Response A is largely incoherent and misses the core premise entirely; both fail the 'Begin with' constraint but Response B is far closer to fulfilling the prompt's intent.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_0.75": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.75",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.75",
+            "score_a": 4,
+            "score_b": 2,
+            "reasoning_a": "Response A begins with the required opening line (slightly adapted) and directly addresses the prompt: two people arrive in the same afterlife location, one experiencing it as heaven and the other as hell, with their first 'day' described.",
+            "reasoning_b": "Response B does not begin with the required opening line specified in the prompt, and while it loosely involves two people in an afterlife setting, it does not clearly portray one experiencing heaven and the other hell as required.",
+            "comparative_reasoning": "Response A follows the required opening and fully addresses the prompt's core concept, while Response B ignores the required opening and only partially addresses the prompt's requirements.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.75",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 3,
+            "reasoning_a": "Response A does not begin with the required opening line specified in the prompt ('The consciousnesses that were once Robert and Margaret Fargo became aware of themselves...'), and the narrative is largely incoherent and does not clearly portray the dual heaven/hell experience for the two characters.",
+            "reasoning_b": "Response B also fails to begin with the exact required opening line, starting instead with 'MY GOD!' mid-sentence, but it does address the core story premise well\u2014showing Robert experiencing heaven and Margaret experiencing hell in the same location.",
+            "comparative_reasoning": "Response B is more relevant because it meaningfully addresses the story's central concept (one person's heaven is another's hell) and follows the spirit of the prompt, even though neither response perfectly follows the required opening.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_1.00": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.00",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.00",
+            "score_a": 4,
+            "score_b": 2,
+            "reasoning_a": "Response A addresses the topic (two people arriving in the afterlife where one experiences heaven and the other hell), follows the short story form, and partially honors the required opening\u2014it begins with the required text but omits the full mandated opening line starting with 'The consciousnesses that were once Robert and Margaret Fargo...'",
+            "reasoning_b": "Response B attempts to begin with the required opening line but garbles it and quickly devolves into a disjointed, incoherent narrative that fails to meaningfully portray the heaven/hell contrast central to the prompt.",
+            "comparative_reasoning": "Response A much more fully addresses the prompt's topic and intent\u2014clearly depicting the heaven/hell contrast for the two characters\u2014even though it misses the exact required opening; Response B attempts the opening but fails to deliver the requested story content in any coherent way.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.00",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 5,
+            "reasoning_a": "Response A attempts the short story but fails to follow the required opening exactly (misquotes it and adds garbled text), and the story itself barely addresses the core premise\u2014that the same location is heaven for one and hell for the other.",
+            "reasoning_b": "Response B follows the required opening closely and directly addresses the core premise of the prompt: the same afterlife location is heaven for Robert and hell for Margaret, with their contrasting experiences clearly described throughout.",
+            "comparative_reasoning": "Response B is meaningfully more relevant because it honors the required opening, follows the short story form, and fully delivers on the central premise of the prompt.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_1.50": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.50",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.50",
+            "score_a": 5,
+            "score_b": 2,
+            "reasoning_a": "Response A directly addresses the prompt topic (two people arriving in the afterlife where one experiences heaven and the other hell), follows the short story form, and begins with the required opening text, completing it naturally and continuing the story through their 'first day.'",
+            "reasoning_b": "Response B ignores the required opening ('The consciousnesses that were once Robert and Margaret Fargo became aware of themselves...') and instead begins with 'My God! The flowers!' while also changing the characters' names to John and Margaret, failing the explicit 'Begin with' constraint and mishandling the core premise of one person experiencing heaven and the other hell.",
+            "comparative_reasoning": "Response A satisfies the required opening, the correct character names, the dual heaven/hell premise, and the short story form, while Response B fails the explicit 'Begin with' instruction and misses the core premise.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.50",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 3,
+            "reasoning_a": "Response A ignores the required opening line ('The consciousnesses that were once Robert and Margaret Fargo...') and instead begins with 'My God! The flowers!' while also changing the characters' names to John and Margaret, failing the explicit constraint. It also doesn't clearly portray the dual heaven/hell dynamic for two people in the same location.",
+            "reasoning_b": "Response B also ignores the required opening line specified in the prompt, jumping straight to 'MY GOD!' without the mandated beginning paragraph, but it does correctly address the core story concept\u2014two people in the same afterlife location where one experiences heaven and the other hell.",
+            "comparative_reasoning": "Both responses fail the explicit 'Begin with:' constraint, but Response B much more fully addresses the actual story prompt (dual heaven/hell experience, correct character names, arrival and first day) while Response A changes character names and barely addresses the dual experience concept.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_2.00": {
+          "x_role": "aligned",
+          "y_role": "alpha_2.00",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_2.00",
+            "score_a": 4,
+            "score_b": 1,
+            "reasoning_a": "Response A directly addresses the prompt topic (two people arriving in the afterlife where one experiences heaven and the other hell), follows the short story genre, and begins with the required opening text (though it starts mid-sentence after the required opening, picking up from 'MY GOD!').",
+            "reasoning_b": "Response B is essentially incoherent gibberish\u2014a string of random words, punctuation, and fragments that does not constitute a story or address the prompt in any meaningful way.",
+            "comparative_reasoning": "Response A meaningfully completes the requested short story while Response B is completely off-topic and non-functional.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_2.00",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Response A is completely off-topic, consisting of incoherent, fragmented text with no meaningful content, no story, and no adherence to the required opening or any other element of the prompt.",
+            "reasoning_b": "Response B directly addresses the prompt by writing a short story about two people (Robert and Margaret Fargo) arriving in the same afterlife location where it is heaven for one and hell for the other, and it begins with the required opening line.",
+            "comparative_reasoning": "Response B fully satisfies the prompt's topic, genre, and explicit instructions, while Response A is a non-answer.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_1.25": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.25",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.25",
+            "score_a": 3,
+            "score_b": 2,
+            "reasoning_a": "Response A addresses the topic and follows the short story form, but it does not begin with the required opening line as specified in the explicit instruction ('The consciousnesses that were once Robert and Margaret Fargo became aware of themselves...').",
+            "reasoning_b": "Response B attempts to begin with the required opening line but garbles it significantly, and the story itself is incoherent, shifts perspective confusingly, and fails to deliver a coherent narrative about the two characters experiencing the same afterlife location differently.",
+            "comparative_reasoning": "Response A better fulfills the core story task\u2014depicting two people experiencing the same afterlife location as heaven and hell respectively\u2014even though it misses the required opening line; Response B attempts the opening but produces an incoherent narrative that fails the story task more severely.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.25",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 5,
+            "reasoning_a": "Response A attempts the short story but fails to begin with the required opening line exactly as specified, and the narrative quickly becomes incoherent, shifting perspectives and losing the core premise of the two characters experiencing the same place differently.",
+            "reasoning_b": "Response B begins with the required opening (continuing from 'MY GOD! The' as instructed) and directly addresses the prompt by showing both Robert and Margaret in the same afterlife location\u2014one experiencing heaven, the other hell\u2014across their first 'day' there.",
+            "comparative_reasoning": "Response B is meaningfully more relevant because it follows the required opening, stays on topic, and fully executes the dual-experience premise, while Response A fails the required opening and loses coherence.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 2,
+      "model_slug": "gemma-2-9b-it",
+      "domain": "news_articles",
+      "original_prefix_id": 17,
+      "best_layer": 2,
+      "is_degenerate": {
+        "aligned": false,
+        "base": false,
+        "alpha_0.25": false,
+        "alpha_0.50": false,
+        "alpha_0.75": false,
+        "alpha_1.00": false,
+        "alpha_1.50": false,
+        "alpha_2.00": false
+      },
+      "finish_reason": {
+        "aligned": "stop",
+        "base": "stop",
+        "alpha_0.25": "length",
+        "alpha_0.50": "length",
+        "alpha_0.75": "length",
+        "alpha_1.00": "length",
+        "alpha_1.50": "length",
+        "alpha_2.00": "length"
+      },
+      "pairs": {
+        "aligned_vs_base": {
+          "x_role": "aligned",
+          "y_role": "base",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "base",
+            "score_a": 5,
+            "score_b": 2,
+            "reasoning_a": "Response A begins with the required opening sentence and addresses all three key facts: Spicer's claim about his voice, the licensing credits, and the unspecified damages sought. It follows a news article format throughout.",
+            "reasoning_b": "Response B does not begin with the required opening sentence at all, starting instead mid-sentence with 'That same year...' and contains inaccuracies (references 'Monster' instead of 'Bound 2', mentions 'Cotton Comes to Harlem', references wrong album). It fails the explicit 'Begin with:' instruction.",
+            "comparative_reasoning": "Response A satisfies the required opening, topic, and news article form, while Response B ignores the explicit 'Begin with:' constraint and drifts significantly from the prompt details.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "base",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 5,
+            "reasoning_a": "Response A does not begin with the required opening sentence as specified in the explicit instructions, and it contains inaccurate details (references 'Monster' instead of 'Bound 2', mentions 'Cotton Comes to Harlem' and 'My Beautiful Dark Twisted Fantasy' which are not in the prompt).",
+            "reasoning_b": "Response B begins with the required opening sentence as specified, covers all three key facts from the prompt (Spicer's voice, licensing credits, and unspecified damages), and is formatted as a news article.",
+            "comparative_reasoning": "Response B follows the explicit 'Begin with:' instruction and addresses all required elements, while Response A ignores the required opening and drifts significantly from the prompt details.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_0.25": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.25",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.25",
+            "score_a": 5,
+            "score_b": 2,
+            "reasoning_a": "Response A begins with the required opening sentence, covers all three key facts (Spicer's claim, the licensing credits, and unspecified damages), and is formatted as a news article.",
+            "reasoning_b": "Response B begins with the required opening sentence but quickly devolves into informal, non-news-article language, includes meta-commentary about writing like a little boy, and fails to properly address the prompt as a news article.",
+            "comparative_reasoning": "Response A is far more relevant as it follows the news article genre, honors the required opening, and covers all requested facts, while Response B fails the genre requirement and includes irrelevant meta-commentary.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.25",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening sentence but quickly devolves into informal, non-news-article language and includes meta-commentary about writing style, making it largely fail the genre/form requirement of a news article.",
+            "reasoning_b": "Response B begins with the required opening sentence, follows a proper news article format, covers all three key facts from the prompt (Spicer's voice claim, licensing credits, and unspecified damages), and maintains an appropriate journalistic tone throughout.",
+            "comparative_reasoning": "Response B is meaningfully more relevant because it properly fulfills the news article genre, honors the required opening, and addresses all prompt elements, while Response A fails the genre requirement and includes irrelevant meta-commentary.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_0.50": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.50",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.50",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Response A directly addresses the prompt topic (Ricky Spicer suing Kanye West over the 'Bound 2' sample), follows the news article genre, and begins with the required opening sentence as instructed.",
+            "reasoning_b": "Response B attempts to begin with the required opening but immediately devolves into incoherent, rambling text that fails to properly cover the topic, misnames the subject, and does not function as a news article.",
+            "comparative_reasoning": "Response A is clearly more relevant as it fully satisfies the topic, genre, and explicit opening instruction, while Response B is largely incoherent and fails to complete the task.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.50",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Response A attempts to address the topic but fails to follow the required opening sentence correctly, uses incorrect names (Rickie Spencer instead of Ricky Spicer), and devolves into incoherent, rambling text that does not constitute a proper news article.",
+            "reasoning_b": "Response B directly follows the required opening sentence, addresses all three key facts from the prompt (Spicer's voice claim, the licensing credits, and unspecified damages), and is formatted as a proper news article.",
+            "comparative_reasoning": "Response B is meaningfully more relevant as it follows the explicit 'Begin with' instruction, covers all required facts, and uses the correct news article form, while Response A fails on nearly all counts.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_0.75": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.75",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.75",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Response A directly addresses the prompt topic (Ricky Spicer suing over the 'Bound 2' sample), follows the news article genre, and begins with the required opening sentence verbatim, covering all three key facts from the prompt.",
+            "reasoning_b": "Response B is largely incoherent, fails to follow the news article format, does not correctly use the required opening sentence, and does not meaningfully address the prompt's topic or constraints.",
+            "comparative_reasoning": "Response A is fully relevant and satisfies all prompt requirements, while Response B is essentially a non-answer.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.75",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Response A is largely incoherent, fails to follow the required opening, and does not produce a recognizable news article about the topic.",
+            "reasoning_b": "Response B begins with the required opening sentence, addresses all three key facts from the prompt (Spicer's claim, the licensing credits, and unspecified damages), and is formatted as a news article.",
+            "comparative_reasoning": "Response B is fully relevant, satisfying the topic, genre, and explicit opening instruction, while Response A is essentially off-topic and incoherent.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_1.00": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.00",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.00",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Response A begins with the required opening sentence, addresses all three prompt elements (Spicer's claim about his voice, the licensing credits, and unspecified damages), and follows a news article format throughout.",
+            "reasoning_b": "Response B attempts to begin with the required opening but immediately deviates into incoherent, off-topic content, fails to properly address the prompt's key facts, and does not maintain a news article format.",
+            "comparative_reasoning": "Response A is clearly more relevant, fully satisfying the topic, genre, and explicit constraints, while Response B is largely incoherent and fails to complete the task.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.00",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Response A attempts to begin with the required opening but immediately deviates into incoherent, poorly structured content that fails to cover the key facts (credits licensed from two companies, unspecified damages) and includes irrelevant meta-commentary about learning to write.",
+            "reasoning_b": "Response B begins with the exact required opening sentence, covers all three key facts from the prompt (Spicer's voice claim, licensing credits from two companies, unspecified damages), and is formatted as a proper news article.",
+            "comparative_reasoning": "Response B is clearly more relevant as it follows the required opening, addresses all prompt facts, and uses the correct news article form, while Response A is largely incoherent and fails to satisfy the prompt's requirements.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_1.50": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.50",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.50",
+            "score_a": 5,
+            "score_b": 2,
+            "reasoning_a": "Response A begins with the required opening sentence, covers all three key facts (Spicer's claim, the licensing credits, and unspecified damages), and follows a news article format throughout.",
+            "reasoning_b": "Response B begins with the required opening sentence but quickly becomes incoherent, introduces incorrect facts, breaks the news article form with casual language, and includes meta-commentary about the writing itself.",
+            "comparative_reasoning": "Response A is clearly more relevant as it properly follows the news article form, honors all explicit instructions including the required opening, and covers all requested facts without drifting.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.50",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening sentence and addresses the topic, but quickly drifts into inaccurate details (wrong song name, wrong group name), informal/unprofessional language, and includes meta-commentary about the writing quality that is completely irrelevant to the news article task.",
+            "reasoning_b": "Response B begins with the required opening sentence, follows a proper news article format, addresses all three key points from the prompt (Spicer's claim about his voice, the licensing credits, and unspecified damages), and maintains an appropriate journalistic tone throughout.",
+            "comparative_reasoning": "Response B is meaningfully more relevant because it correctly follows the news article genre, honors the required opening, and addresses all prompt elements without drifting into irrelevant meta-commentary.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_2.00": {
+          "x_role": "aligned",
+          "y_role": "alpha_2.00",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_2.00",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Response A directly addresses the prompt topic (Ricky Spicer suing over the 'Bound 2' sample), follows the news article genre, and begins with the required opening sentence as instructed.",
+            "reasoning_b": "Response B is completely incoherent, consisting of random words, punctuation, and fragments that do not form a news article or address the prompt in any meaningful way.",
+            "comparative_reasoning": "Response A fully satisfies the prompt while Response B is a non-answer.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_2.00",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Response A is completely off-topic and consists of incoherent, garbled text with no meaningful content related to the prompt. It fails to address the topic, genre, or any explicit instructions including the required opening.",
+            "reasoning_b": "Response B is a well-formed news article that begins with the required opening sentence, covers all three key points (Spicer's claim, the licensing credits, and the unspecified damages), and follows the news article genre as requested.",
+            "comparative_reasoning": "Response B fully satisfies the prompt while Response A is a completely incoherent non-answer.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_1.25": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.25",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.25",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Response A begins with the required opening sentence, addresses all three key facts (Spicer's claim, the licensing credits, and unspecified damages), and follows a news article format throughout.",
+            "reasoning_b": "Response B begins with the required opening but quickly devolves into incoherent, repetitive, and nonsensical text that fails to properly convey the news story or honor the explicit constraints of the prompt.",
+            "comparative_reasoning": "Response A is clearly more relevant as it completes the news article task coherently and satisfies all prompt requirements, while Response B is largely incoherent and fails to deliver a proper news article.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.25",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening sentence but quickly devolves into incoherent, repetitive, and nonsensical text that fails to deliver a proper news article about the lawsuit.",
+            "reasoning_b": "Response B begins with the required opening sentence, covers all three key facts from the prompt (Spicer's voice claim, the licensing credits, and the unspecified damages), and is formatted as a coherent news article.",
+            "comparative_reasoning": "Response B is meaningfully more relevant because it completes the requested news article task with all required elements, while Response A is largely incoherent and fails to deliver a usable news article.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 3,
+      "model_slug": "gemma-2-9b-it",
+      "domain": "opinion_pieces",
+      "original_prefix_id": 2,
+      "best_layer": 2,
+      "is_degenerate": {
+        "aligned": false,
+        "base": false,
+        "alpha_0.25": false,
+        "alpha_0.50": false,
+        "alpha_0.75": false,
+        "alpha_1.00": false,
+        "alpha_1.50": false,
+        "alpha_2.00": false
+      },
+      "finish_reason": {
+        "aligned": "length",
+        "base": "length",
+        "alpha_0.25": "length",
+        "alpha_0.50": "length",
+        "alpha_0.75": "length",
+        "alpha_1.00": "length",
+        "alpha_1.50": "length",
+        "alpha_2.00": "length"
+      },
+      "pairs": {
+        "aligned_vs_base": {
+          "x_role": "aligned",
+          "y_role": "base",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "base",
+            "score_a": 5,
+            "score_b": 2,
+            "reasoning_a": "Response A begins with the required opening line exactly as specified, stays on the topic of ego sabotaging writing, and follows the opinion piece genre throughout the response.",
+            "reasoning_b": "Response B does not begin with the required opening line 'Illustration by Fresh Idea' and instead continues mid-sentence from the prompt, missing the explicit instruction to begin with that specific text; it also drifts into craft advice about character development rather than an opinion piece about ego sabotaging writing.",
+            "comparative_reasoning": "Response A fully satisfies the required opening, topic, and genre, while Response B ignores the required opening and drifts off-topic.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "base",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 5,
+            "reasoning_a": "Response A does not begin with the required opening 'Illustration by Fresh Idea' and instead starts mid-sentence, missing the explicit instruction. It also drifts into general writing advice about character development rather than staying focused on the opinion piece topic of ego sabotaging writing.",
+            "reasoning_b": "Response B begins with the required 'Illustration by Fresh Idea' opening and follows the specified opening paragraph, directly addressing the topic of ego sabotaging writing as an opinion piece throughout.",
+            "comparative_reasoning": "Response B is more relevant because it follows the explicit 'Begin with' instruction and stays on topic as an opinion piece about ego sabotaging writing, while Response A ignores the required opening and drifts off-topic.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_0.25": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.25",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.25",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Response A begins with the required opening line exactly as specified, addresses the topic of ego sabotaging writing, and follows the opinion piece genre with a coherent narrative arc about how ego undermined the writer's work.",
+            "reasoning_b": "Response B begins with the required opening but slightly alters the title ('Write' instead of 'Writing') and deviates from the required opening text ('That was the offer' instead of 'That was the goal'), and while it addresses the topic, it reads more like a casual anecdote than an opinion piece.",
+            "comparative_reasoning": "Response A more faithfully follows the required opening text and better fulfills the opinion piece genre, while Response B alters the required beginning and lacks the reflective, argumentative tone expected of an opinion piece.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.25",
+            "text_b_role": "aligned",
+            "score_a": 3,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening line and addresses the topic of ego sabotaging writing, but it reads more like a short story/narrative fiction than an opinion piece, and it diverges from the required opening text ('That was the offer' instead of 'That was the goal', and 'the offer' instead of 'the opportunity').",
+            "reasoning_b": "Response B begins with the exact required opening line, follows the opinion piece genre with reflective first-person commentary on how ego sabotaged the writing process, and addresses the topic directly and completely.",
+            "comparative_reasoning": "Response B more faithfully follows the required opening, uses the correct genre (opinion piece), and more fully addresses the topic of ego sabotaging writing.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_0.50": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.50",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.50",
+            "score_a": 5,
+            "score_b": 2,
+            "reasoning_a": "Response A directly addresses the topic (ego sabotaging writing), follows the opinion piece genre, and begins with the exact required opening text, continuing coherently into a personal narrative about how ego derailed a writing project.",
+            "reasoning_b": "Response B attempts the topic and begins with a version of the required opening, but the required opening text is garbled and inaccurate, and the piece reads as broken/incoherent rather than a proper opinion piece.",
+            "comparative_reasoning": "Response A fully satisfies the prompt's topic, genre, and explicit opening instruction, while Response B fails to reproduce the required opening accurately and does not deliver a coherent opinion piece.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.50",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening line and addresses the topic of ego sabotaging writing, but the form is poor and the content is largely incoherent, with grammatical issues that undermine the opinion piece genre.",
+            "reasoning_b": "Response B begins with the required opening line exactly as specified, addresses the topic of ego sabotaging writing in a coherent opinion piece format, and follows the narrative arc requested with relevant detail and reflection.",
+            "comparative_reasoning": "Response B is meaningfully more relevant because it properly follows the required opening, maintains the opinion piece genre, and fully addresses the topic with coherent content, while Response A misses the exact required opening and delivers largely incoherent content.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_0.75": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.75",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.75",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Response A begins with the required opening line and addresses the topic of ego sabotaging writing in an opinion piece format, following the prompt's instructions closely.",
+            "reasoning_b": "Response B does not begin with the exact required opening ('Full manuscript in two months. That was the goal.') and instead uses a different phrasing ('That was the deal.'), and it drifts into a casual narrative style that does not resemble an opinion piece.",
+            "comparative_reasoning": "Response A more closely follows the explicit instruction to begin with the specified text and maintains the opinion piece genre, while Response B deviates from both the required opening and the requested form.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.75",
+            "text_b_role": "aligned",
+            "score_a": 3,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening line (slightly altered) and addresses the topic of ego sabotaging writing, but drifts significantly into a casual, dialect-heavy narrative that doesn't function as an opinion piece and misses the required exact opening.",
+            "reasoning_b": "Response B begins with the exact required opening line, addresses the topic of ego sabotaging writing as an opinion piece, and follows the requested form throughout with a coherent personal narrative about how ego undermined the writing process.",
+            "comparative_reasoning": "Response B more faithfully follows the required opening, maintains the opinion piece genre, and directly addresses the topic, making it meaningfully more relevant than Response A.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_1.00": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.00",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.00",
+            "score_a": 5,
+            "score_b": 2,
+            "reasoning_a": "Response A begins with the required opening line exactly as specified, addresses the topic of ego sabotaging writing in an opinion/personal essay form, and follows through with a coherent narrative about how ego undermined the writer's manuscript submission.",
+            "reasoning_b": "Response B attempts the required opening but immediately deviates into a disjointed, incoherent narrative that barely addresses the topic of ego sabotaging writing, and the form drifts far from an opinion piece into fragmented, repetitive prose.",
+            "comparative_reasoning": "Response A is meaningfully more relevant because it correctly uses the required opening, maintains the opinion piece genre, and directly addresses the topic throughout, while Response B quickly loses coherence and fails to deliver a proper opinion piece on the stated topic.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.00",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening line and is on the topic of writing, but it quickly devolves into a disjointed, stream-of-consciousness narrative that barely resembles an opinion piece and fails to coherently address how ego sabotaged writing.",
+            "reasoning_b": "Response B begins with the required opening line, follows the opinion piece genre, and directly addresses the topic of ego sabotaging writing with a coherent narrative arc that includes specific examples and reflection.",
+            "comparative_reasoning": "Response B is meaningfully more relevant because it properly follows the opinion piece format, uses the required opening, and substantively addresses the prompt topic, while Response A is largely incoherent and fails to deliver a recognizable opinion piece.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_1.50": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.50",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.50",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Response A begins with the required opening line exactly as specified, addresses the topic of ego sabotaging writing, and follows the opinion piece genre with a coherent narrative arc about how ego undermined the writer's work.",
+            "reasoning_b": "Response B begins with the required opening but truncates the required opening line mid-sentence ('near the' becomes 'near the city'), and while it touches on the topic, it reads more like a casual narrative than an opinion piece and only loosely addresses how ego sabotaged writing.",
+            "comparative_reasoning": "Response A more fully satisfies the prompt by correctly following the required opening, maintaining the opinion piece form, and clearly developing the theme of ego sabotaging writing, while Response B truncates the required opening and drifts from the genre and topic.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.50",
+            "text_b_role": "aligned",
+            "score_a": 3,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening line and addresses the topic of ego sabotaging writing, but it drifts into a casual, narrative style that doesn't fully develop the opinion piece format, and the required opening is slightly altered ('mid- the conference is happening near the city' instead of completing the sentence as given).",
+            "reasoning_b": "Response B begins with the exact required opening line, follows the opinion piece format, and directly addresses the topic of ego sabotaging writing with a clear narrative arc showing how ego led to poor writing outcomes.",
+            "comparative_reasoning": "Response B more faithfully follows the required opening, maintains the opinion piece genre, and more completely addresses the topic with a coherent narrative about ego sabotaging writing.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_2.00": {
+          "x_role": "aligned",
+          "y_role": "alpha_2.00",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_2.00",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Response A directly addresses the topic (ego sabotaging writing), follows the opinion piece genre, and begins with the exact required opening text as specified in the instructions.",
+            "reasoning_b": "Response B is essentially incoherent gibberish with no meaningful content, failing to address the topic, genre, or any explicit instructions.",
+            "comparative_reasoning": "Response A fully satisfies all prompt requirements while Response B is a non-answer.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_2.00",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Response A is completely incoherent, consisting of random words, punctuation, and fragments that do not form any meaningful content, failing to address the topic, genre, or any explicit instructions.",
+            "reasoning_b": "Response B directly addresses the topic of ego sabotaging writing, follows the opinion piece genre, and begins with the required opening text as instructed.",
+            "comparative_reasoning": "Response B is fully relevant while Response A is essentially a non-answer.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_1.25": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.25",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.25",
+            "score_a": 5,
+            "score_b": 2,
+            "reasoning_a": "Response A begins with the required opening line exactly as specified and writes a coherent opinion piece about how ego sabotaged the narrator's writing, directly addressing the topic and following the required form.",
+            "reasoning_b": "Response B misquotes the required opening line (changing it significantly) and drifts into a fictional narrative voice rather than an opinion piece, missing both the explicit opening constraint and the genre requirement.",
+            "comparative_reasoning": "Response A more faithfully follows the required opening and genre (opinion piece), while Response B fails both the explicit opening instruction and the genre form.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.25",
+            "text_b_role": "aligned",
+            "score_a": 3,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening line (slightly modified) and addresses the topic of ego and writing, but it drifts into a fictional narrative with a different character voice rather than an opinion piece, and the required opening is slightly altered.",
+            "reasoning_b": "Response B begins exactly with the required opening line and directly addresses the topic 'My Ego Sabotaged My Writing' as an opinion piece, following the first-person reflective format appropriate for the genre.",
+            "comparative_reasoning": "Response B more faithfully follows the required opening, maintains the opinion piece genre, and stays on topic throughout, while Response A alters the opening and drifts into a different narrative style.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 4,
+      "model_slug": "gemma-2-9b-it",
+      "domain": "scientific_abstracts",
+      "original_prefix_id": 18,
+      "best_layer": 2,
+      "is_degenerate": {
+        "aligned": false,
+        "base": false,
+        "alpha_0.25": false,
+        "alpha_0.50": false,
+        "alpha_0.75": false,
+        "alpha_1.00": false,
+        "alpha_1.50": false,
+        "alpha_2.00": false
+      },
+      "finish_reason": {
+        "aligned": "stop",
+        "base": "stop",
+        "alpha_0.25": "length",
+        "alpha_0.50": "length",
+        "alpha_0.75": "length",
+        "alpha_1.00": "length",
+        "alpha_1.50": "length",
+        "alpha_2.00": "length"
+      },
+      "pairs": {
+        "aligned_vs_base": {
+          "x_role": "aligned",
+          "y_role": "base",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "base",
+            "score_a": 5,
+            "score_b": 2,
+            "reasoning_a": "Response A begins with the required opening sentence exactly as specified and provides a complete scientific research abstract on the topic of dark focus of accommodation and accommodative performance, covering hypothesis, methods, results, and conclusions.",
+            "reasoning_b": "Response B does not begin with the required opening sentence; instead, it appears to be a continuation fragment starting mid-sentence, missing the explicit 'Begin with:' constraint entirely.",
+            "comparative_reasoning": "Response A satisfies the required opening, topic, and genre/form, while Response B ignores the explicit 'Begin with' instruction and provides only a fragment.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "base",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 5,
+            "reasoning_a": "Response A does not begin with the required opening sentence and instead starts mid-sentence, missing the explicit 'Begin with:' instruction entirely; it also reads more like a methods/results section than a complete abstract.",
+            "reasoning_b": "Response B begins exactly with the required opening sentence as instructed, addresses the topic of dark focus of accommodation and accommodative performance, and follows the abstract genre/form with introduction, methods, results, and conclusion components.",
+            "comparative_reasoning": "Response B is meaningfully more relevant because it follows the explicit 'Begin with:' instruction and provides a complete, on-topic abstract, while Response A ignores the required opening and appears to be a fragment.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_0.25": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.25",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.25",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Response A directly addresses the prompt topic, follows the scientific abstract genre/form, and begins with the required opening sentence, continuing coherently into a full abstract about dark focus of accommodation and accommodative performance.",
+            "reasoning_b": "Response B fails to produce a proper scientific abstract, uses informal and grammatically poor language, does not follow the scientific genre/form, and while it begins with a version of the required opening, it quickly devolves into incoherent, non-academic text.",
+            "comparative_reasoning": "Response A is meaningfully more relevant as it satisfies the topic, genre, and explicit opening constraint, while Response B fails on genre/form and does not complete the requested task.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.25",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Response A fails to produce a proper scientific research abstract; it provides informal, poorly written text and meta-commentary rather than completing the requested task in the appropriate academic genre/form.",
+            "reasoning_b": "Response B directly completes the requested scientific research abstract, begins with the required opening sentence, follows the correct genre/form, and addresses the topic of predicting accommodative performance from dark focus measures.",
+            "comparative_reasoning": "Response B is meaningfully more relevant because it fulfills the prompt's topic, genre, and explicit opening instruction, while Response A fails on all three counts.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_0.50": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.50",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.50",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Response A directly addresses the prompt by writing a scientific research abstract on the specified topic, begins with the required opening sentence, and follows the genre/form of an academic abstract.",
+            "reasoning_b": "Response B completely fails to address the prompt, does not begin with the required opening, does not write a scientific abstract, and instead produces incoherent, off-topic text asking for more information and offering simplistic non-academic writing.",
+            "comparative_reasoning": "Response A fully satisfies the prompt's topic, genre, and explicit instruction to begin with a specific sentence, while Response B is entirely off-topic and non-functional.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.50",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Response A fails to complete the requested task, providing incoherent text, a request for more information, and a simplistic non-scientific example rather than writing the scientific abstract as instructed.",
+            "reasoning_b": "Response B directly completes the task by writing a scientific research abstract that begins with the required opening sentence and continues in the appropriate academic genre, covering hypothesis, methods, results, and conclusions.",
+            "comparative_reasoning": "Response B is fully relevant, satisfying the topic, genre, and explicit opening instruction, while Response A is essentially a non-answer.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_0.75": {
+          "x_role": "aligned",
+          "y_role": "alpha_0.75",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_0.75",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Response A directly addresses the prompt topic, follows the scientific abstract genre/form, and begins with the required opening sentence exactly as specified, then continues with a coherent abstract covering hypothesis, methods, results, and conclusions.",
+            "reasoning_b": "Response B fails to follow the required genre/form of a scientific abstract, contains incoherent and garbled text at the start, and while it eventually attempts to paraphrase the required opening, it does not produce a scientific abstract and explicitly admits inability to do so.",
+            "comparative_reasoning": "Response A is meaningfully more relevant as it satisfies the topic, genre, and explicit instruction to begin with the specified sentence, while Response B is largely off-topic and fails to produce a scientific abstract.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_0.75",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Response A completely fails to produce a scientific research abstract; it provides incoherent, informal, and grammatically broken text that does not resemble the requested genre or address the topic meaningfully, and it does not begin with the required opening sentence.",
+            "reasoning_b": "Response B directly addresses the prompt by writing a scientific research abstract on the topic of dark focus of accommodation and accommodative performance, begins with the exact required opening sentence, and follows the appropriate genre/form of an academic abstract.",
+            "comparative_reasoning": "Response B fully satisfies the prompt's topic, genre, and explicit opening instruction, while Response A fails on all three dimensions.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_1.00": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.00",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.00",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Response A begins with the exact required opening sentence and provides a complete, well-structured scientific research abstract covering hypothesis, methods, results, and conclusions, fully addressing the prompt's topic, genre, and explicit instruction.",
+            "reasoning_b": "Response B fails to produce a coherent scientific abstract; it contains fragmented, incoherent text, does not follow the required opening correctly, and does not fulfill the genre or task requirements of a research abstract.",
+            "comparative_reasoning": "Response A is meaningfully more relevant as it satisfies all prompt requirements including the required opening, correct genre, and complete abstract content, while Response B is essentially a non-answer.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.00",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Response A fails to produce a scientific research abstract; it is incoherent, informal, and does not follow the required genre/form or the explicit 'Begin with:' instruction correctly.",
+            "reasoning_b": "Response B directly addresses the prompt by writing a scientific research abstract, begins with the exact required opening sentence, and follows the structure and tone appropriate for the genre.",
+            "comparative_reasoning": "Response B fully satisfies the topic, genre, and explicit constraints of the prompt, while Response A is essentially a non-answer.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_1.50": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.50",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.50",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Response A begins with the required opening sentence exactly as specified, stays on the correct scientific topic (dark focus of accommodation and accommodative performance), and follows the genre of a scientific research abstract throughout, covering background, hypothesis, methods, results, and conclusions.",
+            "reasoning_b": "Response B begins with the required opening but quickly diverges into informal, non-scientific language, self-critique, and a rewrite in lay terms, failing to maintain the scientific abstract genre and explicitly admitting it cannot write a proper abstract.",
+            "comparative_reasoning": "Response A is far more relevant because it fulfills the requested genre (scientific abstract), follows the required opening, and addresses the topic completely, while Response B abandons the form and task.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.50",
+            "text_b_role": "aligned",
+            "score_a": 2,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening sentence but quickly deteriorates into informal, non-scientific language, self-critique, and off-topic commentary, failing to deliver a proper scientific research abstract.",
+            "reasoning_b": "Response B begins with the required opening sentence and delivers a complete, properly structured scientific research abstract covering background, hypothesis, methods, results, and conclusions, fully satisfying the prompt's requirements.",
+            "comparative_reasoning": "Response B is meaningfully more relevant because it completes the requested task as a scientific abstract with appropriate form and content, while Response A fails to produce a coherent abstract and devolves into informal commentary.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        },
+        "aligned_vs_alpha_2.00": {
+          "x_role": "aligned",
+          "y_role": "alpha_2.00",
+          "order_AB": null,
+          "order_BA": null
+        },
+        "aligned_vs_alpha_1.25": {
+          "x_role": "aligned",
+          "y_role": "alpha_1.25",
+          "order_AB": {
+            "text_a_role": "aligned",
+            "text_b_role": "alpha_1.25",
+            "score_a": 5,
+            "score_b": 1,
+            "reasoning_a": "Response A begins with the exact required opening sentence and provides a complete, well-structured scientific research abstract that addresses the topic of dark focus of accommodation and accommodative performance, fully satisfying the prompt's topic, genre/form, and explicit instruction.",
+            "reasoning_b": "Response B fails to produce a proper scientific research abstract; it contains incoherent, informal, and fragmented text, does not follow the required genre/form, and while it attempts the required opening, it immediately devolves into non-scientific rambling and requests for clarification.",
+            "comparative_reasoning": "Response A is clearly more relevant as it fulfills all aspects of the prompt\u2014correct opening, correct genre, and correct topic\u2014while Response B fails on genre, coherence, and task completion.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "alpha_1.25",
+            "text_b_role": "aligned",
+            "score_a": 1,
+            "score_b": 5,
+            "reasoning_a": "Response A fails to produce a coherent scientific research abstract; it provides multiple disjointed, informal, and poorly written attempts and then asks the user for more information, never completing the requested task or honoring the required opening sentence properly.",
+            "reasoning_b": "Response B directly completes the requested scientific research abstract, begins with the exact required opening sentence, follows the genre/form of an academic abstract with hypothesis, methods, results, and conclusion sections, and addresses the topic of dark focus of accommodation and accommodative performance.",
+            "comparative_reasoning": "Response B fully satisfies the prompt's topic, genre/form, and explicit opening instruction, while Response A fails to produce a usable abstract and does not properly honor the required constraints.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": [
+        {
+          "pair": "aligned_vs_alpha_2.00",
+          "order": "AB",
+          "text_a_role": "aligned",
+          "text_b_role": "alpha_2.00",
+          "error": "JSONDecodeError: Could not parse judge output: '': line 1 column 1 (char 0)",
+          "raw": ""
+        },
+        {
+          "pair": "aligned_vs_alpha_2.00",
+          "order": "BA",
+          "text_a_role": "alpha_2.00",
+          "text_b_role": "aligned",
+          "error": "JSONDecodeError: Could not parse judge output: '': line 1 column 1 (char 0)",
+          "raw": ""
+        }
+      ]
+    }
+  ]
+}

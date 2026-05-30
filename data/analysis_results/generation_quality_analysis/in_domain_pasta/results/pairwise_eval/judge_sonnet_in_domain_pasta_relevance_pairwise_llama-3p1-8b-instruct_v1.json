@@ -1,0 +1,1111 @@
+{
+  "meta": {
+    "tag": "sonnet_in_domain_pasta_relevance_pairwise_llama-3p1-8b-instruct_v1",
+    "experiment": "in_domain_pasta",
+    "models": [
+      "llama-3.1-8b-instruct"
+    ],
+    "pairs": [
+      [
+        "pasta_main",
+        "in_domain"
+      ]
+    ],
+    "n_examples": 25,
+    "n_judge_calls": 50,
+    "orders": [
+      "AB",
+      "BA"
+    ],
+    "axis": "relevance",
+    "schema": "per_slot:{score_a,score_b,reasoning_a,reasoning_b,comparative_reasoning,winner,tie_type}",
+    "prompt_path": "analysis/generation_quality_analysis/prompts/relevance_pairwise.md",
+    "uses_source_prompt": true,
+    "data_dir": "data/generation_quality_analysis/in_domain_pasta",
+    "stream_path": "data/generation_quality_analysis/in_domain_pasta/results/pairwise_eval/judge_stream_sonnet_in_domain_pasta_relevance_pairwise_llama-3p1-8b-instruct_v1.jsonl",
+    "judge_provider": "anthropic_console",
+    "judge_model": "claude-sonnet-4-6",
+    "judge_model_requested": "claude-sonnet-4-6",
+    "judge_temperature": 0.0,
+    "completed_calls": 50,
+    "elapsed_sec": 56.759933948516846,
+    "in_progress": false
+  },
+  "examples": [
+    {
+      "example_id": 0,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "college_essays",
+      "original_prefix_id": 0,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Response A begins with the exact required opening text and follows the table of contents structure as specified in the prompt, addressing the academic essay topic of The Hobbit book vs. movie with relevant sections.",
+            "reasoning_b": "Response B addresses the topic of The Hobbit book vs. movie and covers similar content, but does not begin with the exact required opening text including the table of contents as specified in the prompt's 'Begin with:' instruction.",
+            "comparative_reasoning": "Response A follows the explicit 'Begin with:' instruction including the table of contents format, while Response B omits the required table of contents and does not fully comply with the specified opening.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 3,
+            "score_b": 4,
+            "reasoning_a": "Response A addresses the topic (Book vs. Movie comparison of The Hobbit) and uses an essay form, but it does not follow the required opening format with the Table of Contents as specified in the prompt, and it only covers two of the four required sections.",
+            "reasoning_b": "Response B directly begins with the required opening text including the Table of Contents with all four sections listed, and proceeds to address the topic in academic essay form following the explicit structural instructions from the prompt.",
+            "comparative_reasoning": "Response B more closely follows the explicit instructions by including the required opening with the full Table of Contents, making it meaningfully more relevant to the prompt's constraints.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 1,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "college_essays",
+      "original_prefix_id": 3,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 3,
+            "score_b": 2,
+            "reasoning_a": "Response A begins with a slightly modified version of the required opening (uses 'Ken Zeichner and Dan Liston' instead of 'Kenneth Zeichner and Daniel Liston') and attempts to structure an academic essay with an Introduction and Background section, addressing both books. It partially satisfies the prompt but deviates from the exact required opening text.",
+            "reasoning_b": "Response B begins with the correct title line but does not use the exact required opening sentence ('This paper is aimed at reviewing such books as The light in their eyes by Sonia Nieto'), and the content is largely repetitive, vague, and lacks academic essay structure, failing to critically review the books in any meaningful way.",
+            "comparative_reasoning": "Response A more closely follows the required opening, attempts an academic structure with labeled sections, and provides more substantive (if limited) content about both books, making it more relevant to the prompt than Response B.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 2,
+            "score_b": 3,
+            "reasoning_a": "Response A begins with the required opening phrase and is on the correct topic (reviewing both books), but it fails to deliver an academic essay\u2014it is largely incoherent, repetitive, and lacks any substantive critical analysis of either book.",
+            "reasoning_b": "Response B begins with the required opening phrase and is on the correct topic, attempting to review both books with some structure (Introduction, Background sections) and slightly more substantive content about both books, though it is still very weak in academic quality.",
+            "comparative_reasoning": "Both responses satisfy the required opening and topic, but Response B is marginally more relevant because it attempts structured academic sections and addresses both books with slightly more content, whereas Response A is almost entirely filler with minimal engagement with either book.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 2,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "college_essays",
+      "original_prefix_id": 8,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 4,
+            "score_b": 1,
+            "reasoning_a": "Response A begins with the required opening phrase and addresses the topic of measures of central tendency and dispersion in an academic essay format, covering background, methodology, and analysis components.",
+            "reasoning_b": "Response B fails to begin with the required opening phrase (it has a garbled/misspelled version) and the entire response is filled with severe spelling errors and incoherent text that makes it largely unreadable and fails to meet the academic essay requirement.",
+            "comparative_reasoning": "Response A is meaningfully more relevant as it correctly follows the required opening, uses proper academic essay form, and addresses the topic coherently, while Response B is nearly incomprehensible due to pervasive spelling errors and fails the required opening constraint.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 2,
+            "score_b": 5,
+            "reasoning_a": "Response A attempts to address the topic of measures of central tendency and dispersion and begins with a version of the required opening, but the text is severely garbled with misspellings and incoherent content that prevents it from functioning as an academic essay.",
+            "reasoning_b": "Response B directly addresses the topic of measures of central tendency and dispersion, begins with the required opening phrase (closely matching it), follows an academic essay structure with sections like Aim, Background, and Methodology, and satisfies the explicit instructions.",
+            "comparative_reasoning": "Response B is meaningfully more relevant because it properly follows the required opening, maintains academic essay form, and coherently addresses the topic, while Response A's garbled text makes it largely non-functional as an academic essay.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 3,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "college_essays",
+      "original_prefix_id": 20,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 2,
+            "score_b": 3,
+            "reasoning_a": "Response A begins with the required opening text and follows the table of contents structure, but the content is largely incoherent, contains fabricated dialogue, incorrect character names (Clostr, C\u00f4tos), and fails to deliver a coherent academic essay about Endgame's characters and plot.",
+            "reasoning_b": "Response B begins with the required opening text and follows the table of contents structure, providing more accurate character information (Hamm, Clov, Nagg, Nell) and a more coherent, if still informal, discussion of the play's themes and characters.",
+            "comparative_reasoning": "Both responses attempt the required format and opening, but Response B is more topically accurate and coherent in addressing the characters and plot of Endgame, making it meaningfully more relevant despite both being weak academic essays.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 4,
+            "score_b": 2,
+            "reasoning_a": "Response A begins with the required opening text and follows the requested table of contents structure, addressing the topic of Endgame's characters and plot in an academic essay format, though it only covers the introduction and part of the characters section.",
+            "reasoning_b": "Response B begins with the required opening text and table of contents, but the content is largely incoherent, contains fabricated quotes, misidentifies the play as three-act, and fails to meaningfully address the characters and plot in any structured academic way.",
+            "comparative_reasoning": "Response A is more relevant because it follows the required format and provides a more coherent, on-topic discussion of the characters, while Response B's content is largely nonsensical and fails to address the prompt meaningfully.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 4,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "college_essays",
+      "original_prefix_id": 23,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 3,
+            "score_b": 4,
+            "reasoning_a": "Response A begins with the required opening and addresses the topic of competitive intelligence in business, but quickly devolves into circular, simplistic reasoning and an odd analogy (spyglass/computer) that barely addresses the academic essay requirements.",
+            "reasoning_b": "Response B begins with the required opening, addresses the topic of competitive intelligence in business with more substantive content including a citation, definition, methods, and business applications, better fulfilling the academic essay form.",
+            "comparative_reasoning": "Response B is more relevant because it more meaningfully addresses the academic essay topic with structured content, a definition with citation, and discussion of CI methods and benefits, while Response A devolves into circular word definitions and an incoherent analogy.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 4,
+            "score_b": 3,
+            "reasoning_a": "Response A begins with the exact required opening sentence and addresses the topic of competitive intelligence in business in an academic essay format, covering definition, methods, and benefits.",
+            "reasoning_b": "Response B also begins with the exact required opening sentence and addresses competitive intelligence in business, but drifts into informal analogies (spyglass, 'men in front of us') that undermine the academic essay form, and the content is less substantive.",
+            "comparative_reasoning": "Both responses satisfy the required opening and topic, but Response A more consistently maintains the academic essay form and provides more substantive content about CI, while Response B drifts into informal analogies and less coherent content.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 5,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "creative_fiction",
+      "original_prefix_id": 3,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 5,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening line and writes a short story about rain, satisfying the topic and genre requirements, though the story treats the characters as humans running to shelter rather than developing the poetic/metaphorical potential of the prompt.",
+            "reasoning_b": "Response B also begins with the required opening line and writes a short story about rain, developing a richer narrative with birds, nests, memories of a flood, and a more cohesive thematic arc that ties the rain motif throughout.",
+            "comparative_reasoning": "Both responses satisfy the topic, genre, and explicit 'Begin with' constraint equally well; neither is meaningfully more relevant than the other.",
+            "winner": "tie",
+            "tie_type": "both_good"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 5,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening line and writes a short story about rain, following the prompt's topic and explicit instruction to begin with the specified text.",
+            "reasoning_b": "Response B also begins with the required opening line and writes a short story about rain, following the prompt's topic and explicit instruction to begin with the specified text.",
+            "comparative_reasoning": "Both responses fully satisfy the prompt by starting with the required opening, staying on the topic of rain, and delivering a short story in narrative form; neither has a meaningful relevance advantage over the other.",
+            "winner": "tie",
+            "tie_type": "both_good"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 6,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "creative_fiction",
+      "original_prefix_id": 4,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 5,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening (with a minor spelling variation 'leaned' vs 'leant'), addresses the prompt topic of sliding an envelope across a table, and tells a short story in the correct narrative form.",
+            "reasoning_b": "Response B begins with the exact required opening text, addresses the prompt topic of sliding an envelope across a table, and tells a short story in the correct narrative form.",
+            "comparative_reasoning": "Both responses satisfy the topic, genre, and explicit opening instruction (with Response A using 'leaned' instead of 'leant' as a trivial variation), and both tell a short story about sliding an envelope across a table \u2014 they are similarly relevant.",
+            "winner": "tie",
+            "tie_type": "both_good"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 4,
+            "score_b": 4,
+            "reasoning_a": "Response A begins with the required opening line and tells a short story about sliding an envelope across a table, directly addressing the prompt's topic and form. It follows the required beginning and maintains the narrative throughout.",
+            "reasoning_b": "Response B begins with the required opening line (with a minor spelling variation 'leaned' vs 'leant') and tells a short story about sliding an envelope across a table, directly addressing the prompt's topic and form. It also includes the actual act of sliding the envelope across the table more explicitly.",
+            "comparative_reasoning": "Both responses satisfy the prompt's topic, genre, and explicit 'Begin with' instruction similarly well; both are short stories about sliding an envelope across a table that start with the required opening.",
+            "winner": "tie",
+            "tie_type": "both_good"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 7,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "creative_fiction",
+      "original_prefix_id": 7,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 4,
+            "score_b": 4,
+            "reasoning_a": "Response A begins with the required opening line and addresses the correct topic (alien life forms using cats as hosts), following the short story genre, though it slightly misquotes the opening and the story is cut off mid-sentence.",
+            "reasoning_b": "Response B also addresses the correct topic and genre but does not begin with the exact required opening line as specified in the prompt, instead paraphrasing it slightly differently.",
+            "comparative_reasoning": "Both responses address the topic and genre similarly, and both slightly deviate from the exact required opening; the differences are minor and neither fully satisfies the explicit 'Begin with' constraint perfectly, making them similarly relevant overall.",
+            "winner": "tie",
+            "tie_type": "both_good"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 3,
+            "score_b": 4,
+            "reasoning_a": "Response A addresses the correct topic (alien life forms using cats as hosts) and is a short story, but it does not begin with the required opening line specified in the prompt.",
+            "reasoning_b": "Response B addresses the correct topic and genre, and it begins with the required opening line closely matching the prompt's 'Begin with' instruction, including the piano picture detail.",
+            "comparative_reasoning": "Response B more closely follows the explicit 'Begin with' instruction and includes the required story elements, making it more relevant than Response A which ignores the required opening.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 8,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "creative_fiction",
+      "original_prefix_id": 21,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 5,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening sentence exactly as specified and tells a short story about overhearing an argument about a ring that is identified as a family heirloom rather than a wedding ring, satisfying the topic and form requirements.",
+            "reasoning_b": "Response B begins with the required opening sentence exactly as specified and tells a short story about overhearing an argument about a ring being sold/traded for money rather than a wedding ring, satisfying the topic and form requirements.",
+            "comparative_reasoning": "Both responses fully satisfy the prompt's required opening, topic (argument about a non-wedding ring), and short story form, making them similarly relevant.",
+            "winner": "tie",
+            "tie_type": "both_good"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 5,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening sentence and tells a short story about overhearing two people argue about a ring that appears to be related to a business deal rather than a wedding ring, satisfying the topic, genre, and explicit instruction to begin with the specified text.",
+            "reasoning_b": "Response B also begins with the required opening sentence and tells a short story about overhearing two people argue about a ring described as a family heirloom rather than a wedding ring, satisfying the topic, genre, and explicit instruction to begin with the specified text.",
+            "comparative_reasoning": "Both responses fully satisfy the prompt's topic, genre, and explicit opening constraint, making them similarly relevant despite differences in style and detail.",
+            "winner": "tie",
+            "tie_type": "both_good"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 9,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "creative_fiction",
+      "original_prefix_id": 23,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 3,
+            "score_b": 4,
+            "reasoning_a": "Response A begins with the required opening line (with a minor capitalization difference) and tells a short story about arrival in the afterlife, but it only covers Robert's experience and never introduces Margaret or the contrasting heaven/hell dynamic central to the prompt.",
+            "reasoning_b": "Response B begins with the exact required opening line and addresses both Robert's heaven experience and Margaret's hell experience in the same location, directly fulfilling the core prompt requirement of contrasting perspectives.",
+            "comparative_reasoning": "Response B is more relevant because it addresses both characters and the heaven/hell contrast as required, while Response A only covers one character and misses the central premise.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Response A begins with the required opening line (with a minor spelling fix), addresses the prompt topic of two people arriving in the afterlife where one experiences heaven and the other hell, and follows the short story form. It covers both Robert's and Margaret's arrival and their contrasting experiences.",
+            "reasoning_b": "Response B also begins with the required opening line and follows the short story form, addressing the afterlife topic. However, it focuses almost entirely on Robert's experience (heaven) and barely introduces Margaret's contrasting hellish experience, missing a major part of the prompt.",
+            "comparative_reasoning": "Response A more fully addresses the prompt by depicting both characters' contrasting experiences (heaven for Robert, hell for Margaret), while Response B focuses almost exclusively on Robert and largely omits Margaret's perspective.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 10,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "news_articles",
+      "original_prefix_id": 2,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Response A begins with the required opening sentence, covers all four bullet points (unofficial hearing, Boxer's bill, former AA CEO support, routine delays), and follows a news article format.",
+            "reasoning_b": "Response B begins with the required opening sentence and covers the topic and some bullet points, but is truncated and only partially addresses the former AA CEO's support and omits the routine delays witness entirely.",
+            "comparative_reasoning": "Response A is more relevant because it covers all four required bullet points and completes the article, while Response B is incomplete and misses key required content.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 3,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening sentence and addresses the topic of tarmac delays and the Capitol Hill hearing, but it misses key details like Sen. Barbara Boxer's bill and the witness who raised routine delays as a more pressing issue, and it inaccurately describes the rule.",
+            "reasoning_b": "Response B begins with the required opening sentence and covers all four bullet points from the prompt: the unofficial hearing, Sen. Barbara Boxer's bill for a three-hour deplane limit, the former American Airlines CEO's support, and the witness who said routine delays are a more pressing issue.",
+            "comparative_reasoning": "Response B is more relevant because it addresses all four required elements from the prompt and follows the required opening, while Response A misses key elements and contains inaccuracies about the proposed rule.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 11,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "news_articles",
+      "original_prefix_id": 13,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 3,
+            "score_b": 4,
+            "reasoning_a": "Response A addresses the topic of Wi-Fi risks at airports/hotels/planes vs. coffee shops and the laptop loss cost study, but does not begin with the exact required opening sentence specified in the prompt.",
+            "reasoning_b": "Response B begins with the exact required opening sentence from the prompt, covers all three topic components (Wi-Fi risks, laptop loss costs are missing but encryption advice is present), and follows a news article format.",
+            "comparative_reasoning": "Response B follows the explicit 'Begin with:' instruction exactly, while Response A does not use the required opening, making Response B more relevant despite both covering the topic.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Response A begins with the required opening sentence and addresses all three prompt topics (Wi-Fi risks at airports/hotels/planes vs. coffee shops, laptop loss costs, and encrypted disks), following a news article format.",
+            "reasoning_b": "Response B does NOT begin with the required opening sentence ('With Wi-Fi access at airports, hotels, and aboard airplanes, business travelers don't have to look very hard for a wireless Internet connection. Wi-Fi hotspots at airports may put users' computers at risk, but no more so than at coffee'), instead starting with a different sentence, violating the explicit 'Begin with' constraint.",
+            "comparative_reasoning": "Response A satisfies the explicit 'Begin with' constraint and covers all required topics, while Response B fails the required opening instruction.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 12,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "news_articles",
+      "original_prefix_id": 17,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "stop"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 5,
+            "score_b": 3,
+            "reasoning_a": "Response A begins with the required opening phrase and addresses all three key facts: Spicer's claim about his voice, the licensing credits from two music companies, and the unspecified damages sought.",
+            "reasoning_b": "Response B does not begin with the required opening phrase 'The lead singer of a 1970 tune that is sampled on a new Kanye West song has filed suit, alleging the rapper used the snippet without his permission. Ricky Spicer was 12 when he became the lead singer for a group called the' \u2014 it starts with a headline instead, violating the explicit instruction.",
+            "comparative_reasoning": "Response A follows the explicit 'Begin with:' instruction while Response B ignores it by starting with a headline, making Response A meaningfully more relevant.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 4,
+            "score_b": 5,
+            "reasoning_a": "Response A addresses the topic (Ricky Spicer suing Kanye West over the 'Bound'/'Bound 2' sample) and follows the news article genre, but it fails to begin with the required opening sentence as specified in the explicit instruction.",
+            "reasoning_b": "Response B addresses the topic correctly and follows the news article genre, and it begins with the required opening sentence 'The lead singer of a 1970 tune that is sampled on a new Kanye West song has filed a lawsuit, alleging the rapper used the snippet without his permission.' and then continues with 'Ricky Spicer was 12 when he became the lead singer for a group called the' as required.",
+            "comparative_reasoning": "Response B satisfies the explicit 'Begin with:' constraint while Response A does not, making Response B more relevant despite both covering the topic in news article form.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 13,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "news_articles",
+      "original_prefix_id": 18,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "stop"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 5,
+            "score_b": 4,
+            "reasoning_a": "Response A begins with the required opening sentence and covers the main topic (tanks entering Ukraine, Avakov's statement, Russia's denial, Putin's border promise), following a news article format.",
+            "reasoning_b": "Response B also begins with the required opening sentence and covers the main topic elements (tanks, Avakov, Russia's denial, separatists in Luhansk), following a news article format, though more briefly.",
+            "comparative_reasoning": "Both responses satisfy the required opening, topic, and news article form; Response A is more detailed and covers more of the prompt's specific elements (Avakov's name, Luhansk region, Putin's border control promise), while Response B is shorter but still addresses the core requirements.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 5,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening sentence, covers the main topic (tanks entering Ukraine, Avakov's statement, Russia's denial, separatist control), and follows the news article form, though it is brief.",
+            "reasoning_b": "Response B also begins with the required opening sentence, covers all the main points from the prompt, and follows the news article form with more detail, though it adds some fabricated specifics not in the prompt.",
+            "comparative_reasoning": "Both responses satisfy the required opening, topic, and news article form; the differences are in length and detail but not in relevance to the prompt's requirements.",
+            "winner": "tie",
+            "tie_type": "both_good"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 14,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "news_articles",
+      "original_prefix_id": 23,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 4,
+            "score_b": 4,
+            "reasoning_a": "Response A begins with a slightly modified version of the required opening sentence and covers the topic of Bowe Bergdahl's disappearance, email to parents, and Army investigation, fulfilling the news article form and most explicit instructions.",
+            "reasoning_b": "Response B begins with the required opening sentence (though truncated before 'Shortly before he disappeared three years') and covers the topic of Bergdahl's disappearance and email to parents in news article form, satisfying the main prompt requirements.",
+            "comparative_reasoning": "Both responses address the topic, use a news article form, and begin with the required opening (Response A modifies it slightly, Response B truncates it), making them similarly relevant with minor deviations.",
+            "winner": "tie",
+            "tie_type": "both_good"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 3,
+            "score_b": 3,
+            "reasoning_a": "Response A begins with a slightly modified version of the required opening sentence but does not include the full required opening text ('Shortly before he disappeared three years'), missing the explicit constraint. It covers the topic and news article form adequately.",
+            "reasoning_b": "Response B also begins with a modified version of the required opening but similarly omits the required continuation 'Shortly before he disappeared three years', missing the explicit constraint. It covers the topic in news article form and includes more detail about the story.",
+            "comparative_reasoning": "Both responses fail to include the full required opening text as specified ('Shortly before he disappeared three years'), but both address the topic and use a news article form; they are similarly relevant with comparable failures on the explicit instruction.",
+            "winner": "tie",
+            "tie_type": "similarly_mixed"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 15,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "opinion_pieces",
+      "original_prefix_id": 0,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 4,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening sentence and writes an opinion piece about growing up and birthday reflection, but it does not address Sidra by name in a meaningful, personal way and drifts into generic reflection rather than a birthday opinion piece directed at Sidra.",
+            "reasoning_b": "Response B begins with the required opening sentence, writes an opinion piece about growing up and change, and directly addresses Sidra by name multiple times throughout, making it more personally relevant to the prompt's subject.",
+            "comparative_reasoning": "Both responses follow the required opening and the opinion piece form, but Response B more directly addresses Sidra as the subject of the birthday piece, while Response A is more generic and barely mentions Sidra.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 5,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening sentence and writes an opinion piece about growing up and celebrating Sidra's birthday, fully satisfying the topic, genre, and explicit instruction to begin with the specified text.",
+            "reasoning_b": "Response B also begins with the required opening sentence (with minor punctuation variation) and writes a reflective opinion piece about growing up addressed to Sidra, satisfying the topic, genre, and explicit instruction.",
+            "comparative_reasoning": "Both responses fully satisfy the prompt's topic, genre, and explicit 'Begin with' constraint, making them similarly relevant.",
+            "winner": "tie",
+            "tie_type": "both_good"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 16,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "opinion_pieces",
+      "original_prefix_id": 1,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 4,
+            "score_b": 4,
+            "reasoning_a": "Response A begins with the required opening text and addresses the topic of Liz's Bio and Featured Stories as an opinion/personal piece, following the requested form of a personal narrative with life lessons.",
+            "reasoning_b": "Response B also begins with the required opening text and addresses the topic as a personal narrative with a twist and life lesson takeaway, which aligns with the prompt's requested form.",
+            "comparative_reasoning": "Both responses begin with the required opening, address the topic, and follow the personal narrative/opinion piece form with life lesson takeaways, making them similarly relevant despite different content approaches.",
+            "winner": "tie",
+            "tie_type": "both_good"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 4,
+            "score_b": 4,
+            "reasoning_a": "Response A begins with the required opening text exactly as specified and attempts an opinion piece with a personal story and life lesson, satisfying the topic, form, and explicit 'Begin with' constraint.",
+            "reasoning_b": "Response B also begins with the required opening text exactly as specified and attempts a bio/opinion piece with personal narrative and life lessons, satisfying the topic, form, and explicit 'Begin with' constraint.",
+            "comparative_reasoning": "Both responses begin with the required opening, address the topic of a personal bio with stories and life lessons, and follow the opinion/personal essay form, making them similarly relevant.",
+            "winner": "tie",
+            "tie_type": "both_good"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 17,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "opinion_pieces",
+      "original_prefix_id": 2,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 5,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the exact required opening, addresses the topic of ego sabotaging writing, and is written as a personal opinion/essay piece. It follows the required form and topic throughout.",
+            "reasoning_b": "Response B also begins with the exact required opening and addresses the topic of ego sabotaging writing as a personal opinion piece, following the required form and topic.",
+            "comparative_reasoning": "Both responses fully satisfy the prompt's requirements: correct opening, correct topic, correct genre/form \u2014 they are similarly relevant.",
+            "winner": "tie",
+            "tie_type": "both_good"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 4,
+            "score_b": 4,
+            "reasoning_a": "Response A begins with the required opening, addresses the topic of ego sabotaging writing, and is written as an opinion/personal essay. It covers the main theme but feels somewhat simplistic and repetitive in its treatment.",
+            "reasoning_b": "Response B also begins with the required opening, addresses the topic of ego sabotaging writing as a personal opinion piece, and develops the theme with more nuance, exploring both pressure and ego as intertwined obstacles.",
+            "comparative_reasoning": "Both responses satisfy the required opening, genre (opinion piece), and topic (ego sabotaging writing) at a similar level, making this a tie between two adequately relevant responses.",
+            "winner": "tie",
+            "tie_type": "both_good"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 18,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "opinion_pieces",
+      "original_prefix_id": 6,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 5,
+            "score_b": 5,
+            "reasoning_a": "Response A begins with the required opening text exactly as specified and writes an opinion piece about the internal world, addressing the topic and following the required format.",
+            "reasoning_b": "Response B also begins with the required opening text and writes an opinion piece about the internal world, satisfying the topic, genre, and the explicit 'Begin with' instruction.",
+            "comparative_reasoning": "Both responses satisfy the topic, genre, and explicit opening instruction equally well, making them similarly relevant.",
+            "winner": "tie",
+            "tie_type": "both_good"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 4,
+            "score_b": 3,
+            "reasoning_a": "Response A begins with the required opening text and addresses the topic of internal world as an opinion piece, though it uses a simplistic metaphor of a 'room' and doesn't fully develop the opinion piece genre.",
+            "reasoning_b": "Response B places the required opening text after a title rather than beginning with it, which violates the explicit 'Begin with:' instruction, though it addresses the internal world topic in a more developed opinion piece style.",
+            "comparative_reasoning": "Response A more closely follows the explicit 'Begin with:' instruction by starting directly with the required text, while Response B inserts a title before the required opening, violating the constraint.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 19,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "opinion_pieces",
+      "original_prefix_id": 7,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 4,
+            "score_b": 4,
+            "reasoning_a": "Response A begins with the required opening sentence and addresses the topic 'Don't I Know You' as an opinion piece, connecting the song to personal reflection and memory, though it drifts somewhat from a clear opinion piece structure.",
+            "reasoning_b": "Response B begins with the required opening sentence and addresses the topic 'Don't I Know You' as an opinion piece about recognizing people, staying on topic throughout with a clear opinion/message at the end.",
+            "comparative_reasoning": "Both responses satisfy the required opening, topic, and genre, with only minor differences in how well they maintain the opinion piece form; both are similarly relevant.",
+            "winner": "tie",
+            "tie_type": "both_good"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 3,
+            "score_b": 4,
+            "reasoning_a": "Response A begins with the required opening line and is on the topic of 'Don't I Know You,' but it reads more like a short narrative/anecdote than an opinion piece, and the connection to the topic is loose and underdeveloped.",
+            "reasoning_b": "Response B also begins with the required opening line and addresses the topic 'Don't I Know You' more directly by referencing the song and exploring its emotional resonance, though it also leans more narrative than a traditional opinion piece.",
+            "comparative_reasoning": "Both responses satisfy the required opening and are on-topic, but Response B more directly engages with 'Don't I Know You' as a subject (referencing the song explicitly and building an opinion/reflection around it), making it slightly more relevant to the prompt's intent.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 20,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "scientific_abstracts",
+      "original_prefix_id": 0,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 2,
+            "score_b": 4,
+            "reasoning_a": "Response A begins with a modified version of the required opening (not exactly as specified) and then goes beyond the abstract format by including an Introduction and Methodology section, making it the wrong genre/form for a scientific abstract.",
+            "reasoning_b": "Response B begins with the exact required opening sentence as specified and stays within the abstract format, covering text preprocessing methods, classification methods, experiments, and conclusions as expected in a scientific abstract.",
+            "comparative_reasoning": "Response B more faithfully follows the explicit instruction to begin with the specified text and maintains the correct genre (abstract only), while Response A modifies the required opening and expands into multiple sections beyond an abstract.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 3,
+            "score_b": 2,
+            "reasoning_a": "Response A begins with the required opening sentence and addresses the correct topic (text categorization for call routing), but the abstract is informal, contains numerous typos, and is incomplete in its scientific framing.",
+            "reasoning_b": "Response B begins with a modified version of the required opening (not verbatim as instructed), includes extra sections beyond an abstract (Introduction, Methodology), and deviates from the required opening text.",
+            "comparative_reasoning": "Response A more closely follows the explicit instruction to begin with the exact required sentence, while Response B modifies the opening and adds non-abstract sections, making it less compliant with the explicit constraints.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 21,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "scientific_abstracts",
+      "original_prefix_id": 6,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 2,
+            "score_b": 3,
+            "reasoning_a": "Response A begins with the required opening sentence and addresses the topic of inorganic pigment layer properties with a liquid additive, but quickly degrades into garbled, abbreviated, and repetitive text that fails to form a coherent scientific abstract.",
+            "reasoning_b": "Response B begins with the required opening sentence and addresses the topic somewhat more coherently in the first paragraph, but also degrades into heavily abbreviated and garbled text, and includes a title restatement and a poorly written secondary abstract section.",
+            "comparative_reasoning": "Both responses are similarly mixed in relevance\u2014they start with the required opening and address the topic but both degrade into incoherent text; Response B provides slightly more substantive content in its initial paragraphs before degrading, making it marginally more relevant.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 2,
+            "score_b": 2,
+            "reasoning_a": "Response A begins with the required opening sentence and attempts to write a scientific abstract on the correct topic, but the content degrades significantly into abbreviated, nearly incoherent text with repeated truncations and abbreviations that make the abstract largely unreadable.",
+            "reasoning_b": "Response B also begins with the required opening and addresses the correct topic, but it repeats the abstract multiple times in increasingly degraded/abbreviated forms, and the content is similarly incomplete and incoherent.",
+            "comparative_reasoning": "Both responses start correctly but degrade into incoherent abbreviated text; Response A provides slightly more readable initial content before degrading, while Response B repeats the abstract in increasingly garbled forms, making both similarly poor in relevance.",
+            "winner": "tie",
+            "tie_type": "both_bad"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 22,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "scientific_abstracts",
+      "original_prefix_id": 16,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 3,
+            "score_b": 4,
+            "reasoning_a": "Response A begins with the required opening sentence and addresses the correct topic (indoleamines, LH release, ovulation in sheep), but the abstract is poorly structured and lacks actual results/findings, instead describing hypothetical effects rather than reported outcomes.",
+            "reasoning_b": "Response B begins with the required opening sentence, addresses the correct topic, and includes specific experimental results (dosages, effects on LH release in different ewe groups), making it a more complete scientific abstract.",
+            "comparative_reasoning": "Response B is more relevant because it includes actual experimental findings with specific data, better fulfilling the requirements of a scientific research abstract, while Response A lacks results and drifts into hypothetical descriptions.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 4,
+            "score_b": 3,
+            "reasoning_a": "Response A begins with the required opening sentence and addresses the correct topic (indoleamines, LH release, ovulation in sheep), following the abstract genre. It attempts to describe experimental findings with specific doses and results, though the content is somewhat informal and speculative.",
+            "reasoning_b": "Response B begins with the required opening sentence and addresses the correct topic and genre, but quickly drifts into generic background explanation rather than presenting actual experimental results or conclusions, making it less complete as a research abstract.",
+            "comparative_reasoning": "Response A more fully satisfies the abstract form by attempting to present specific experimental results and conclusions, while Response B mostly provides background rationale without reporting findings.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 23,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "scientific_abstracts",
+      "original_prefix_id": 17,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 4,
+            "score_b": 3,
+            "reasoning_a": "Response A begins with the required opening sentence and stays on topic as a scientific abstract about magnetic composite microspheres prepared by surfactant-free controlled radical polymerization, covering preparation, characterization, and key findings.",
+            "reasoning_b": "Response B begins with the required opening sentence but then diverges into a full paper structure (Abstract, Introduction, Experimental sections) rather than a single abstract, and the content is less coherent and complete as an abstract.",
+            "comparative_reasoning": "Response A more fully satisfies the prompt by providing a coherent, complete abstract in the correct form, while Response B drifts into a multi-section paper format that does not match the requested genre.",
+            "winner": "A",
+            "tie_type": "not_a_tie"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 2,
+            "score_b": 4,
+            "reasoning_a": "Response A begins with the required opening sentence but then diverges into a full paper structure (Abstract, Introduction, Experimental) rather than a single scientific abstract, and the content is sparse and incomplete.",
+            "reasoning_b": "Response B begins with the required opening sentence and provides a coherent, complete scientific abstract covering methodology, characterization techniques, and key findings, staying in the correct genre/form throughout.",
+            "comparative_reasoning": "Response B better satisfies the prompt by delivering a proper scientific abstract with the required opening and relevant scientific content, while Response A drifts into a multi-section paper format with minimal substance.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": []
+    },
+    {
+      "example_id": 24,
+      "model_slug": "llama-3.1-8b-instruct",
+      "domain": "scientific_abstracts",
+      "original_prefix_id": 19,
+      "is_degenerate": {
+        "in_domain": false,
+        "pasta_main": false
+      },
+      "finish_reason": {
+        "in_domain": "length",
+        "pasta_main": "length"
+      },
+      "pairs": {
+        "pasta_main_vs_in_domain": {
+          "x_role": "pasta_main",
+          "y_role": "in_domain",
+          "order_AB": {
+            "text_a_role": "pasta_main",
+            "text_b_role": "in_domain",
+            "score_a": 4,
+            "score_b": 4,
+            "reasoning_a": "Response A begins with the required opening sentence and addresses the topic of intergenerational transmission of family values in an abstract-like format, covering relevant themes such as parent-child communication, cultural transmission, and technology's role.",
+            "reasoning_b": "Response B also begins with the required opening sentence and follows the abstract format with structured sections (Background, Method, Results, Discussion), which is more aligned with a scientific research abstract form, though the content is very basic.",
+            "comparative_reasoning": "Both responses begin with the required opening and address the topic, but Response A provides a more coherent and substantive discussion of the research themes, while Response B attempts a more structured scientific abstract format but with very poor content quality; since we judge only relevance and not quality, both are similarly relevant to the prompt.",
+            "winner": "tie",
+            "tie_type": "both_good"
+          },
+          "order_BA": {
+            "text_a_role": "in_domain",
+            "text_b_role": "pasta_main",
+            "score_a": 3,
+            "score_b": 4,
+            "reasoning_a": "Response A begins with the required opening and addresses the topic of family traditions and intergenerational transmission of values, but it uses an informal, fragmented structure that only loosely resembles a scientific research abstract, with very poor academic form.",
+            "reasoning_b": "Response B begins with the exact required opening sentence and addresses the topic of intergenerational transmission of family values in a form that more closely resembles a scientific abstract, covering background, methods, and findings in a more coherent academic style.",
+            "comparative_reasoning": "Both responses address the topic and begin with the required opening, but Response B more consistently maintains the genre of a scientific research abstract with better structure and academic tone, while Response A's form is significantly weaker and less coherent as an abstract.",
+            "winner": "B",
+            "tie_type": "not_a_tie"
+          }
+        }
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,3744 @@
+{
+  "detector": "gptzero",
+  "model": "llama-3.1-8b-instruct",
+  "alpha": 1.0,
+  "domain": "college_essays",
+  "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "intervention": {
+    "mode": "ablate",
+    "direction_path": "data/analysis_results/scaled_ablation/directions/llama-3.1-8b-instruct/v_cross_L1.pt",
+    "layer": 1,
+    "tag": "v_cross_L1_steered_extended"
+  },
+  "total_samples": 10,
+  "results": [
+    {
+      "id": "strategy_A-college_essays-instruct-3",
+      "text_length": 1469,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.9982001785481027,
+        "average_generated_prob": 1,
+        "class_probabilities": {
+          "human": 0,
+          "ai": 1,
+          "mixed": 0
+        },
+        "predicted_class": "ai",
+        "confidence_score": 1,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                  "start_sentence_index": 1,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                  "start_sentence_index": 2,
+                  "num_sentences": 6,
+                  "completely_generated_prob": 0.9000234362273952
+                },
+                {
+                  "start_sentence_index": 8,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                  "start_sentence_index": 9,
+                  "num_sentences": 4,
+                  "completely_generated_prob": 0.8708627247549962
+                }
+              ],
+              "completely_generated_prob": 0.9982001785481027,
+              "average_generated_prob": 1,
+              "predicted_class": "ai",
+              "confidence_score": 1,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.9749327173928477,
+                  "sentence": "and Reflective teaching an introduction by ken Zechner and daniel Liston, with aim of analysis the implication of those books to teaching skill.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.02506728260715229,
+                    "ai": 0.9232824358783436,
+                    "paraphrased": 0.05165028151450417
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9173709079623222,
+                  "sentence": "Introduction",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.08262909203767776,
+                    "ai": 0.8195620179176331,
+                    "paraphrased": 0.09780889004468918
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9792739174719094,
+                  "sentence": "The light in their eyes and Reflective teaching an introduction are two books very important books to the teaching skill, both books contain many ideas about what teaching is and how it should be practice.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.020726082528090665,
+                    "ai": 0.9334795574456124,
+                    "paraphrased": 0.04579436002629698
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9790091511459522,
+                  "sentence": "The light in their eyes, is book of Sonia Noti a professor of puerto rico and she tell what is the teaching when is done with the hearth of the children.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.020990848854047787,
+                    "ai": 0.9278671879748581,
+                    "paraphrased": 0.05114196317109411
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9786212093100853,
+                  "sentence": "The main idea of the book is how to understand the children and how to teach the with the good method.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.021378790689914724,
+                    "ai": 0.9359608989924862,
+                    "paraphrased": 0.04266031031759905
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9827000146480276,
+                  "sentence": "In that book the author say that what is the more important to do with the children is to teach them the way to learn to be a good person.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.017299985351972417,
+                    "ai": 0.9401529939830956,
+                    "paraphrased": 0.04254702066493202
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9802944677712087,
+                  "sentence": "The second book, is a book of Ken Zchne and danel lisn the both of them profesor de educaation in state universit of washingigton, the they write about the teacnig in an otrer way.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.019705532228791334,
+                    "ai": 0.930444961025072,
+                    "paraphrased": 0.04984950674613662
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9844100416237683,
+                  "sentence": "In that book, they say that teacnig is not just trasnsfer information from the tearcher to the studeent but is a way to make the studen learn to be a good person to.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.015589958376231682,
+                    "ai": 0.9345829678334532,
+                    "paraphrased": 0.04982707379031519
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9746492028130104,
+                  "sentence": "Background",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.025350797186989626,
+                    "ai": 0.9370613926306803,
+                    "paraphrased": 0.03758781018233009
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9789882593813612,
+                  "sentence": "The concept of critical thinking is one of the most important thing to the teaching.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.02101174061863877,
+                    "ai": 0.9346240219225275,
+                    "paraphrased": 0.04436423745883375
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9771726946751158,
+                  "sentence": "when we teac a clss of child, we must think that the chld can think.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.02282730532488423,
+                    "ai": 0.93179448194419,
+                    "paraphrased": 0.045378212730925765
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9762873718802788,
+                  "sentence": "The idea of the book The light in the eyes is like that, the is not just trasnser informtaion from the tacher to the student.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.023712628119721146,
+                    "ai": 0.936613401843907,
+                    "paraphrased": 0.039673970036371874
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9718368842574568,
+                  "sentence": "The first is to understand the chid and after that is to teach him.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.02816311574254318,
+                    "ai": 0.931947928020693,
+                    "paraphrased": 0.039888956236763785
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0,
+                "ai": 1,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "ai": 1,
+                  "mixed": 0,
+                  "human": 0
+                }
+              },
+              "subclass": {
+                "ai": {
+                  "predicted_class": "pure_ai",
+                  "result_message": "",
+                  "confidence_score": 1,
+                  "confidence_category": "high",
+                  "class_probabilities": {
+                    "pure_ai": 1,
+                    "ai_paraphrased": 0
+                  },
+                  "confidence_scores_raw": {
+                    "identity": {
+                      "pure_ai": 1,
+                      "ai_paraphrased": 0
+                    }
+                  },
+                  "confidence_thresholds_raw": {
+                    "identity": {
+                      "ai_paraphrased": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      },
+                      "pure_ai": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      }
+                    }
+                  }
+                }
+              },
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written by AI.",
+              "result_sub_message": null,
+              "document_classification": "AI_ONLY",
+              "inputText": " and Reflective teaching an introduction by ken Zechner and daniel Liston, with aim of analysis the implication of those books to teaching skill.\n\nIntroduction\nThe light in their eyes and Reflective teaching an introduction are two books very important books to the teaching skill, both books contain many ideas about what teaching is and how it should be practice. The light in their eyes, is book of Sonia Noti a professor of puerto rico and she tell what is the teaching when is done with the hearth of the children. The main idea of the book is how to understand the children and how to teach the with the good method. In that book the author say that what is the more important to do with the children is to teach them the way to learn to be a good person. The second book, is a book of Ken Zchne and danel lisn the both of them profesor de educaation in state universit of washingigton, the they write about the teacnig in an otrer way. In that book, they say that teacnig is not just trasnsfer information from the tearcher to the studeent but is a way to make the studen learn to be a good person to.\n\nBackground\n The concept of critical thinking is one of the most important thing to the teaching. when we teac a clss of child, we must think that the chld can think. The idea of the book The light in the eyes is like that, the is not just trasnser informtaion from the tacher to the student. The first is to understand the chid and after that is to teach him.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-7",
+      "text_length": 1519,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.005392463118908726,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9887563261528661,
+          "ai": 0.0004616800916538793,
+          "mixed": 0.01078199375547995
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9887563261528661,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 7,
+                  "completely_generated_prob": 2.1228438805416278e-06
+                },
+                {
+                  "start_sentence_index": 7,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 8,
+                  "num_sentences": 2,
+                  "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                  "start_sentence_index": 10,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 11,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 12,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 13,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 14,
+                  "num_sentences": 4,
+                  "completely_generated_prob": 0.0006564766595293492
+                }
+              ],
+              "completely_generated_prob": 0.005392463118908726,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9887563261528661,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.009852822099842604,
+                  "sentence": "they tell investors about a company's profit or loss.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9901471779001574,
+                    "ai": 0.00948746692971457,
+                    "paraphrased": 0.00036535517012803486
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00966971204758723,
+                  "sentence": "Earnings Management refers to the process of management or management team of an organization to get a profit that they think by manage the data on budgetary report in the way they want.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9903302879524127,
+                    "ai": 0.00927629181354599,
+                    "paraphrased": 0.0003934202340412399
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.010981136670193658,
+                  "sentence": "Earnings Quality is the quality of a report in a budgetary report.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9890188633298064,
+                    "ai": 0.010652471107422587,
+                    "paraphrased": 0.00032866556277107124
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.011658208972926524,
+                  "sentence": "It is the content of earnings in the budgetary report is correct or not.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9883417910270734,
+                    "ai": 0.011337669120336395,
+                    "paraphrased": 0.0003205398525901291
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.012208940208549011,
+                  "sentence": "If Earnings Quality is high, it means that the report in the budgetary report is correct.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.987791059791451,
+                    "ai": 0.011908013354205505,
+                    "paraphrased": 0.0003009268543435056
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.013146589798155115,
+                  "sentence": "If Earnings Quality is low, it means that the report in the budgetary report is not correct.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9868534102018449,
+                    "ai": 0.012856095115578958,
+                    "paraphrased": 0.0002904946825761577
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.01618350027459496,
+                  "sentence": "Earnings management and Earnings quality is important to know in business because it can make a company's business go well or not.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9838164997254051,
+                    "ai": 0.01593822978187393,
+                    "paraphrased": 0.00024527049272103174
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.02787356488750376,
+                  "sentence": "The Concept of Earnings Management",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9721264351124962,
+                    "ai": 0.02758286568625937,
+                    "paraphrased": 0.00029069920124439165
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.032355052428290156,
+                  "sentence": "Earnings Management is the process of management or management team of an organization to get a profit that they think by manage the data on budgetary report in the way they want.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9676449475717098,
+                    "ai": 0.032100689252816166,
+                    "paraphrased": 0.000254363175473993
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.018094484831242062,
+                  "sentence": "They can do this by use many way, such as:",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9819055151687579,
+                    "ai": 0.017872774108545295,
+                    "paraphrased": 0.00022171072269676852
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.03548440930832887,
+                  "sentence": "- Using accounting rules to make the cost of a thing is low or is high",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9645155906916711,
+                    "ai": 0.035271883249487976,
+                    "paraphrased": 0.00021252605884089254
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.031613545652830095,
+                  "sentence": "- Use accounting rule to make a thing is income or is not income",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9683864543471699,
+                    "ai": 0.0313885839758195,
+                    "paraphrased": 0.0002249616770105935
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.06333964219408493,
+                  "sentence": "- Don't tell all the thing that happen in a company",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9366603578059151,
+                    "ai": 0.06305423034492443,
+                    "paraphrased": 0.0002854118491605029
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.08724865607209807,
+                  "sentence": "- Tell the thing that is not true about a company",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9127513439279019,
+                    "ai": 0.08699128465126643,
+                    "paraphrased": 0.000257371420831646
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.10868986279888096,
+                  "sentence": "They do this to make the company's profit is higher or is lower than it is.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.8913101372011191,
+                    "ai": 0.10844652113547988,
+                    "paraphrased": 0.00024334166340107813
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.10225424817510192,
+                  "sentence": "For example, if a company buy a thing that is cost 1000 dollar and the thing is sell for 900 dollar.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.897745751824898,
+                    "ai": 0.10197803643143231,
+                    "paraphrased": 0.000276211743669616
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.09427011518725797,
+                  "sentence": "Earnings Manager can make the cost of the thing is 800 dollar and the thing is sell for 1000 dollar.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.905729884812742,
+                    "ai": 0.09397422596466563,
+                    "paraphrased": 0.0002958892225923406
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.11866325765866102,
+                  "sentence": "This make the company's profit is 100 dollar.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.881336742341339,
+                    "ai": 0.11833973144894423,
+                    "paraphrased": 0.00032352620971679003
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9887563261528661,
+                "ai": 0.0004616800916538793,
+                "mixed": 0.01078199375547995
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9887563261528661,
+                  "ai": 0.0004616800916538793,
+                  "mixed": 0.01078199375547995
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": " they tell investors about a company's profit or loss. Earnings Management refers to the process of management or management team of an organization to get a profit that they think by manage the data on budgetary report in the way they want. Earnings Quality is the quality of a report in a budgetary report. It is the content of earnings in the budgetary report is correct or not. If Earnings Quality is high, it means that the report in the budgetary report is correct. If Earnings Quality is low, it means that the report in the budgetary report is not correct. Earnings management and Earnings quality is important to know in business because it can make a company's business go well or not.\n\nThe Concept of Earnings Management\n\nEarnings Management is the process of management or management team of an organization to get a profit that they think by manage the data on budgetary report in the way they want. They can do this by use many way, such as:\n\n- Using accounting rules to make the cost of a thing is low or is high\n- Use accounting rule to make a thing is income or is not income\n- Don't tell all the thing that happen in a company\n- Tell the thing that is not true about a company\n\nThey do this to make the company's profit is higher or is lower than it is. For example, if a company buy a thing that is cost 1000 dollar and the thing is sell for 900 dollar. Earnings Manager can make the cost of the thing is 800 dollar and the thing is sell for 1000 dollar. This make the company's profit is 100 dollar.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-4",
+      "text_length": 1546,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.9991963235829888,
+        "average_generated_prob": 1,
+        "class_probabilities": {
+          "human": 0,
+          "ai": 1,
+          "mixed": 0
+        },
+        "predicted_class": "ai",
+        "confidence_score": 1,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.850090677245877
+                },
+                {
+                  "start_sentence_index": 3,
+                  "num_sentences": 8,
+                  "completely_generated_prob": 0.9187750751329665
+                },
+                {
+                  "start_sentence_index": 11,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.8181818033057853
+                }
+              ],
+              "completely_generated_prob": 0.9991963235829888,
+              "average_generated_prob": 1,
+              "predicted_class": "ai",
+              "confidence_score": 1,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.9896531272486842,
+                  "sentence": "ethics, and philosophy of language, each of them has different perspective and way of thinking about the world.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.010346872751315819,
+                    "ai": 0.9593380111443587,
+                    "paraphrased": 0.030315116104325496
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9893754278909346,
+                  "sentence": "Analytic philosophy is one of the most important branches of philosophy, it is the way of thinking that use logic to analyze and divide the complex problems in to simple one, then make a conclusion.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.010624572109065443,
+                    "ai": 0.9591181048414132,
+                    "paraphrased": 0.030257323049521303
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9911720694534648,
+                  "sentence": "Ayer are two of the most famous philosophers of the analytic philosophy, they have their own ways to think about the philosophy of the world.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.00882793054653523,
+                    "ai": 0.9620134485292962,
+                    "paraphrased": 0.029158620924168627
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9824889975089152,
+                  "sentence": "Ludwig Wittgenstein is an Austrian philosopher, he was born in 1889 and died in 1951.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.017511002491084827,
+                    "ai": 0.951689171303391,
+                    "paraphrased": 0.03079982620552409
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9829149630051929,
+                  "sentence": "He is one of the most famous philosopher of the 20th century, he is known for his book \"Tractatus logico-philosophicus\" and \"Philosophical investigations\".",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.017085036994807144,
+                    "ai": 0.951957266582208,
+                    "paraphrased": 0.030957696422984855
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9860885935292898,
+                  "sentence": "In his book \"Tractatus logico-philosophicus\" he said that the language is a way to express the idea, but not the idea itself.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.013911406470710208,
+                    "ai": 0.9552767250073793,
+                    "paraphrased": 0.030811868521910528
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9872538507943043,
+                  "sentence": "He said that the language is a way to say something but not the thing.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.012746149205695669,
+                    "ai": 0.9527266371588584,
+                    "paraphrased": 0.034527213635445884
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9708484053536109,
+                  "sentence": "He is the first philosopher that use the logical to explain the philosophy of language, he is the first of the analytic philosophy school.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.029151594646388966,
+                    "ai": 0.9372950914521992,
+                    "paraphrased": 0.03355331390141174
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9797025125206491,
+                  "sentence": "He said that the language is not the way to express the reality, the reality is the way to express the self.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.02029748747935097,
+                    "ai": 0.9429235124670962,
+                    "paraphrased": 0.03677900005355291
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9853828218385247,
+                  "sentence": "He said that the language is not the way to know the truth, the truth is the way to know the self.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.014617178161475428,
+                    "ai": 0.9454126087764898,
+                    "paraphrased": 0.03997021306203481
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9830532557631033,
+                  "sentence": "He said that the language is not the way to think the philosophy, the philosophy is the way to think the self.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.016946744236896724,
+                    "ai": 0.9427832400157423,
+                    "paraphrased": 0.04027001574736094
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9792834347685513,
+                  "sentence": "He is also known for his idea of the language games, he said that the language is a game, not a way to express the idea, a way to say something, but not the thing.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.02071656523144869,
+                    "ai": 0.9379000890864081,
+                    "paraphrased": 0.04138334568214322
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0,
+                "ai": 1,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "ai": 1,
+                  "mixed": 0,
+                  "human": 0
+                }
+              },
+              "subclass": {
+                "ai": {
+                  "predicted_class": "pure_ai",
+                  "result_message": "",
+                  "confidence_score": 1,
+                  "confidence_category": "high",
+                  "class_probabilities": {
+                    "pure_ai": 1,
+                    "ai_paraphrased": 0
+                  },
+                  "confidence_scores_raw": {
+                    "identity": {
+                      "pure_ai": 1,
+                      "ai_paraphrased": 0
+                    }
+                  },
+                  "confidence_thresholds_raw": {
+                    "identity": {
+                      "ai_paraphrased": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      },
+                      "pure_ai": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      }
+                    }
+                  }
+                }
+              },
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written by AI.",
+              "result_sub_message": null,
+              "document_classification": "AI_ONLY",
+              "inputText": " ethics, and philosophy of language, each of them has different perspective and way of thinking about the world. Analytic philosophy is one of the most important branches of philosophy, it is the way of thinking that use logic to analyze and divide the complex problems in to simple one, then make a conclusion. Ludwig Wittgenstein and A.J. Ayer are two of the most famous philosophers of the analytic philosophy, they have their own ways to think about the philosophy of the world.\n\nLudwig Wittgenstein is an Austrian philosopher, he was born in 1889 and died in 1951. He is one of the most famous philosopher of the 20th century, he is known for his book \"Tractatus logico-philosophicus\" and \"Philosophical investigations\". In his book \"Tractatus logico-philosophicus\" he said that the language is a way to express the idea, but not the idea itself. He said that the language is a way to say something but not the thing. He is the first philosopher that use the logical to explain the philosophy of language, he is the first of the analytic philosophy school. He said that the language is not the way to express the reality, the reality is the way to express the self. He said that the language is not the way to know the truth, the truth is the way to know the self. He said that the language is not the way to think the philosophy, the philosophy is the way to think the self. \n\nHe is also known for his idea of the language games, he said that the language is a game, not a way to express the idea, a way to say something, but not the thing.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-0",
+      "text_length": 1490,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.9969683266545463,
+        "average_generated_prob": 1,
+        "class_probabilities": {
+          "human": 0,
+          "ai": 1,
+          "mixed": 0
+        },
+        "predicted_class": "ai",
+        "confidence_score": 1,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                  "start_sentence_index": 1,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                  "start_sentence_index": 2,
+                  "num_sentences": 5,
+                  "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                  "start_sentence_index": 7,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                  "start_sentence_index": 8,
+                  "num_sentences": 4,
+                  "completely_generated_prob": 0.8708627247549962
+                }
+              ],
+              "completely_generated_prob": 0.9969683266545463,
+              "average_generated_prob": 1,
+              "predicted_class": "ai",
+              "confidence_score": 1,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.948889433100005,
+                  "sentence": "Commentary in \"The Hobbit\"",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.051110566899995075,
+                    "ai": 0.9341064321685277,
+                    "paraphrased": 0.014783000931477197
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.969919663986534,
+                  "sentence": "1. Introduction",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.030080336013466047,
+                    "ai": 0.9611228958765744,
+                    "paraphrased": 0.008796768109959522
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9499241906233764,
+                  "sentence": "In the realm of fantasy fiction literature and film, there are numerous adaptations that capture the hearts of millions of audiences, but none as timeless as \"The Hobbit\" by J.R.R.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.05007580937662366,
+                    "ai": 0.9317922401247274,
+                    "paraphrased": 0.018131950498649
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9693767004552976,
+                  "sentence": "This fantasy novel was written by J.R. R. Tolkien in the year 1937, after which Peter Jackson made a movie in the year 2012.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.030623299544702477,
+                    "ai": 0.9555573917097242,
+                    "paraphrased": 0.013819308745573331
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9697763465195535,
+                  "sentence": "Both the book and the movie are about the journey of Bilbo Baggins, a hobbit from the Shire who joins a group of dwarves on their quest to reclaim their home, which they call Erebor from the dragon Smaug.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.030223653480446568,
+                    "ai": 0.9565652253360125,
+                    "paraphrased": 0.013211121183540925
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9947576453246483,
+                  "sentence": "But is the book the same as the movie?",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.005242354675351688,
+                    "ai": 0.9917857000093708,
+                    "paraphrased": 0.002971945315277484
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9931283877632001,
+                  "sentence": "In this paper, we will compare and contrast the book and the movie \"The Hobbit\".",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.006871612236799871,
+                    "ai": 0.9892008917237253,
+                    "paraphrased": 0.0039274960394748365
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9666667431592941,
+                  "sentence": "2. Events Deleted or Changed in the Movie",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.03333325684070587,
+                    "ai": 0.954059898853302,
+                    "paraphrased": 0.012606844305992126
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9979728939618232,
+                  "sentence": "One of the main things that people notice when they watch the movie is that a lot of things have been changed compared to the book.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0020271060381768006,
+                    "ai": 0.9965483753395301,
+                    "paraphrased": 0.0014245186222931008
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9977903028826828,
+                  "sentence": "The first change that we noticed was that there was a long history at the beginning of the book that is not in the movie.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0022096971173172554,
+                    "ai": 0.9963254035873352,
+                    "paraphrased": 0.0014648992953475398
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9969363122516218,
+                  "sentence": "This history is at the beginning of the book and it is about the 14 dwarves of Durin and how they had to go into the ground to mine for a mountain called Erebol that had diamonds in it.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.0030636877483781804,
+                    "ai": 0.9946495652084926,
+                    "paraphrased": 0.002286747043129302
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9927419113712526,
+                  "sentence": "The other thing we noticed that was changed was the part where the dwarves were talking to the goblin that said they were going to Smaug and then they went to the next day and saw a sign that said that it was the sign of Smaug on the map, but they were at the cave of the goblin so we did not see Smaug at all in the cave.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.007258088628747448,
+                    "ai": 0.988402347996742,
+                    "paraphrased": 0.004339563374510566
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0,
+                "ai": 1,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "ai": 1,
+                  "mixed": 0,
+                  "human": 0
+                }
+              },
+              "subclass": {
+                "ai": {
+                  "predicted_class": "pure_ai",
+                  "result_message": "",
+                  "confidence_score": 1,
+                  "confidence_category": "high",
+                  "class_probabilities": {
+                    "pure_ai": 1,
+                    "ai_paraphrased": 0
+                  },
+                  "confidence_scores_raw": {
+                    "identity": {
+                      "pure_ai": 1,
+                      "ai_paraphrased": 0
+                    }
+                  },
+                  "confidence_thresholds_raw": {
+                    "identity": {
+                      "ai_paraphrased": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      },
+                      "pure_ai": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      }
+                    }
+                  }
+                }
+              },
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written by AI.",
+              "result_sub_message": null,
+              "document_classification": "AI_ONLY",
+              "inputText": " Commentary in \"The Hobbit\"\n\n1. Introduction\nIn the realm of fantasy fiction literature and film, there are numerous adaptations that capture the hearts of millions of audiences, but none as timeless as \"The Hobbit\" by J.R.R. Tolkien. This fantasy novel was written by J.R. R. Tolkien in the year 1937, after which Peter Jackson made a movie in the year 2012. Both the book and the movie are about the journey of Bilbo Baggins, a hobbit from the Shire who joins a group of dwarves on their quest to reclaim their home, which they call Erebor from the dragon Smaug. But is the book the same as the movie? In this paper, we will compare and contrast the book and the movie \"The Hobbit\".\n\n2. Events Deleted or Changed in the Movie\nOne of the main things that people notice when they watch the movie is that a lot of things have been changed compared to the book. The first change that we noticed was that there was a long history at the beginning of the book that is not in the movie. This history is at the beginning of the book and it is about the 14 dwarves of Durin and how they had to go into the ground to mine for a mountain called Erebol that had diamonds in it. The other thing we noticed that was changed was the part where the dwarves were talking to the goblin that said they were going to Smaug and then they went to the next day and saw a sign that said that it was the sign of Smaug on the map, but they were at the cave of the goblin so we did not see Smaug at all in the cave.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-8",
+      "text_length": 1694,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.7584798572437003,
+        "average_generated_prob": 1,
+        "class_probabilities": {
+          "human": 0.234325567600305,
+          "ai": 0.7656744323996951,
+          "mixed": 0
+        },
+        "predicted_class": "ai",
+        "confidence_score": 0.7656744323996951,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.850090677245877
+                },
+                {
+                  "start_sentence_index": 3,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                  "start_sentence_index": 4,
+                  "num_sentences": 5,
+                  "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                  "start_sentence_index": 9,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                  "start_sentence_index": 10,
+                  "num_sentences": 5,
+                  "completely_generated_prob": 0.8871651474786718
+                }
+              ],
+              "completely_generated_prob": 0.7584798572437003,
+              "average_generated_prob": 1,
+              "predicted_class": "ai",
+              "confidence_score": 0.7656744323996951,
+              "confidence_category": "medium",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.8941524463569888,
+                  "sentence": "and dispersion to understand the characteristics of the data distribution.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.10584755364301122,
+                    "ai": 0.4815392590830613,
+                    "paraphrased": 0.4126131872739275
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8920708993359454,
+                  "sentence": "The analysis will use the data set of exam scores of 15 students who wrote the Mathematics 101 exam.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.10792910066405459,
+                    "ai": 0.4926998207114677,
+                    "paraphrased": 0.39937107862447774
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8884183963034689,
+                  "sentence": "The data set contains the scores of the 15 students out of a maximum of 100.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.11158160369653114,
+                    "ai": 0.4984792582350803,
+                    "paraphrased": 0.38993913806838854
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8617083599908895,
+                  "sentence": "Background to the Study",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.13829164000911057,
+                    "ai": 0.46505814097735076,
+                    "paraphrased": 0.3966502190135387
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8748535085491314,
+                  "sentence": "Measures of central tendency and dispersion are the two types of measures that are used to describe the distribution of a data.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.12514649145086867,
+                    "ai": 0.4710303176785958,
+                    "paraphrased": 0.40382319087053553
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8935765126293187,
+                  "sentence": "Measures of central tendency include the mean, median, and mode while the measures of dispersion include the range, variance, and standard deviation.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.1064234873706813,
+                    "ai": 0.4859711717224604,
+                    "paraphrased": 0.4076053409068583
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8782070976896488,
+                  "sentence": "Measures of central tendency are used to describe the central value of the data while the measures of dispersion describe the spread of the data.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.12179290231035123,
+                    "ai": 0.5033912546174693,
+                    "paraphrased": 0.37481584307217947
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8843488526992329,
+                  "sentence": "For example, mean is a measure of central tendency while variance and standard deviation are measures of dispersion.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.11565114730076712,
+                    "ai": 0.47902850030405075,
+                    "paraphrased": 0.40532035239518216
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8718889133996419,
+                  "sentence": "This study will look at calculating the mean, median, mode, variance, and the standard deviation of the data set of the 15 students who wrote the Mathematics 101 exam.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.12811108660035808,
+                    "ai": 0.49829137335471074,
+                    "paraphrased": 0.3735975400449312
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8745244648520143,
+                  "sentence": "Methodology",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.12547553514798573,
+                    "ai": 0.4894993682429477,
+                    "paraphrased": 0.3850250966090666
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8687237967740924,
+                  "sentence": "The data was collected from 15 students who wrote the Mathematics 101 exam.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.13127620322590763,
+                    "ai": 0.49772804233837065,
+                    "paraphrased": 0.3709957544357217
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8322050621448439,
+                  "sentence": "The data was collected in the following manner: the instructor of the Mathematics 101 class gave us the data set of the 15 students who wrote the exam in the class.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.16779493785515612,
+                    "ai": 0.47953666807601847,
+                    "paraphrased": 0.35266839406882544
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8657252281483365,
+                  "sentence": "We were asked to analyze the data set and write a report.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.13427477185166353,
+                    "ai": 0.4692364842848398,
+                    "paraphrased": 0.39648874386349664
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8584338042840152,
+                  "sentence": "We were also given the following instructions: \"You may use a calculator to calculate the mean, median, and mode of the data.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.1415661957159849,
+                    "ai": 0.4739578154403948,
+                    "paraphrased": 0.38447598884362033
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8467738330364227,
+                  "sentence": "We used a calculator to calculate the mean, median, and mode of the data and we did not use a calculator to calculate the variance and the standard deviation of the data.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.15322616696357727,
+                    "ai": 0.49552202224731445,
+                    "paraphrased": 0.3512518107891083
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.234325567600305,
+                "ai": 0.7656744323996951,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "ai": 0.7656744323996951,
+                  "mixed": 0,
+                  "human": 0.234325567600305
+                }
+              },
+              "subclass": {
+                "ai": {
+                  "predicted_class": "pure_ai",
+                  "result_message": "",
+                  "confidence_score": 1,
+                  "confidence_category": "high",
+                  "class_probabilities": {
+                    "pure_ai": 1,
+                    "ai_paraphrased": 0
+                  },
+                  "confidence_scores_raw": {
+                    "identity": {
+                      "pure_ai": 1,
+                      "ai_paraphrased": 0
+                    }
+                  },
+                  "confidence_thresholds_raw": {
+                    "identity": {
+                      "ai_paraphrased": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      },
+                      "pure_ai": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      }
+                    }
+                  }
+                }
+              },
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is moderately confident that the text is written by AI.",
+              "result_sub_message": null,
+              "document_classification": "AI_ONLY",
+              "inputText": " and dispersion to understand the characteristics of the data distribution. The analysis will use the data set of exam scores of 15 students who wrote the Mathematics 101 exam. The data set contains the scores of the 15 students out of a maximum of 100.\n\nBackground to the Study\n\nMeasures of central tendency and dispersion are the two types of measures that are used to describe the distribution of a data. Measures of central tendency include the mean, median, and mode while the measures of dispersion include the range, variance, and standard deviation. Measures of central tendency are used to describe the central value of the data while the measures of dispersion describe the spread of the data. For example, mean is a measure of central tendency while variance and standard deviation are measures of dispersion. This study will look at calculating the mean, median, mode, variance, and the standard deviation of the data set of the 15 students who wrote the Mathematics 101 exam.\n\nMethodology\n\nThe data was collected from 15 students who wrote the Mathematics 101 exam. The data was collected in the following manner: the instructor of the Mathematics 101 class gave us the data set of the 15 students who wrote the exam in the class. We were asked to analyze the data set and write a report. We were also given the following instructions: \"You may use a calculator to calculate the mean, median, and mode of the data. You may not use a calculator to calculate the variance and the standard deviation of the data.\" We used a calculator to calculate the mean, median, and mode of the data and we did not use a calculator to calculate the variance and the standard deviation of the data.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-2",
+      "text_length": 1563,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 3.2568741240139035e-05,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9999653311302832,
+          "ai": 3.4668869716860515e-05,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9999653311302832,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 1,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                  "start_sentence_index": 4,
+                  "num_sentences": 5,
+                  "completely_generated_prob": 0.00010005932717626924
+                },
+                {
+                  "start_sentence_index": 9,
+                  "num_sentences": 7,
+                  "completely_generated_prob": 2.1228438805416278e-06
+                },
+                {
+                  "start_sentence_index": 16,
+                  "num_sentences": 6,
+                  "completely_generated_prob": 1.474742012248794e-05
+                },
+                {
+                  "start_sentence_index": 22,
+                  "num_sentences": 5,
+                  "completely_generated_prob": 0.00010005932717626924
+                }
+              ],
+              "completely_generated_prob": 3.2568741240139035e-05,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9999653311302832,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.0025166754540800773,
+                  "sentence": "are (1) making a sign language interpreter for people who are deaf (2) wheelchair, (3) giving more time to people who can't work quickly.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9974833245459199,
+                    "ai": 0.002448610696941073,
+                    "paraphrased": 6.806475713900448e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.002658291308402732,
+                  "sentence": "The employment for people with disabilities in society are important.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9973417086915972,
+                    "ai": 0.0025985374072975973,
+                    "paraphrased": 5.975390110513477e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0012788252763749355,
+                  "sentence": "People can live independently with the work.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9987211747236251,
+                    "ai": 0.0012348559590801313,
+                    "paraphrased": 4.3969317294804104e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0014758015061458428,
+                  "sentence": "They have a source of money and they can be happy and free.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9985241984938542,
+                    "ai": 0.001428597938415691,
+                    "paraphrased": 4.7203567730151806e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0013640419197898288,
+                  "sentence": "Most companies in America have a law to help people with disabilities.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9986359580802102,
+                    "ai": 0.0013199913219792332,
+                    "paraphrased": 4.4050597810595745e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.001497554383622035,
+                  "sentence": "This law is call ADA.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.998502445616378,
+                    "ai": 0.001455564448593439,
+                    "paraphrased": 4.1989935028596034e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0011717422974294664,
+                  "sentence": "ADA stands for Americans with Disabilities Act.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9988282577025706,
+                    "ai": 0.0011302328490450184,
+                    "paraphrased": 4.150944838444805e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0012266246458912562,
+                  "sentence": "The law says that employers should give “reasonably” accommodation for people with a disability.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9987733753541087,
+                    "ai": 0.001183090731820946,
+                    "paraphrased": 4.353391407031019e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0012302259634041602,
+                  "sentence": "The law says also that companies can't say no to hire people with a disability just because people have a disability.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9987697740365958,
+                    "ai": 0.001184669410457161,
+                    "paraphrased": 4.555655294699908e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0012852151012832864,
+                  "sentence": "The ADA law says that “reasonably” accommodation is one that can be made easy.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9987147848987167,
+                    "ai": 0.001239513721018751,
+                    "paraphrased": 4.5701380264535316e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0013900363903113914,
+                  "sentence": "It cost not much money.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9986099636096886,
+                    "ai": 0.0013453709370303826,
+                    "paraphrased": 4.4665453281008844e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00130752277528245,
+                  "sentence": "The accommodation should not cause more expense than the company’s make.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9986924772247175,
+                    "ai": 0.0012583425574924575,
+                    "paraphrased": 4.918021778999245e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0010353363103265986,
+                  "sentence": "For example, the company have a small office.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9989646636896734,
+                    "ai": 0.0009935105881867746,
+                    "paraphrased": 4.182572213982386e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0017913593086687904,
+                  "sentence": "They can’t make the office big because that would be very expensive.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9982086406913312,
+                    "ai": 0.0017449390120176107,
+                    "paraphrased": 4.6420296651179715e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.001663014176913891,
+                  "sentence": "They can only make a little room for a desk.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.998336985823086,
+                    "ai": 0.001617234786782159,
+                    "paraphrased": 4.577939013173218e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.001302251002464965,
+                  "sentence": "That is “reasonably” accommodation.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.998697748997535,
+                    "ai": 0.001250479359432935,
+                    "paraphrased": 5.177164303202984e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.001837766376273144,
+                  "sentence": "People who have a disability can work in any place in the US.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9981622336237268,
+                    "ai": 0.001792681795154079,
+                    "paraphrased": 4.5084581119064894e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0016791878547355332,
+                  "sentence": "They can be a teacher, a doctor, a lawyer, a engineer.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9983208121452645,
+                    "ai": 0.0016346637574894299,
+                    "paraphrased": 4.4524097246103256e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0014484436161412504,
+                  "sentence": "People can be a chef, a nurse, a plumber, a carpenter.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9985515563838587,
+                    "ai": 0.0014055528569833326,
+                    "paraphrased": 4.2890759157917896e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0015322911411847836,
+                  "sentence": "People can be a farmer.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9984677088588152,
+                    "ai": 0.0014898491889776219,
+                    "paraphrased": 4.244195220716176e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.002156410213459165,
+                  "sentence": "People can be a worker in the store.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9978435897865409,
+                    "ai": 0.0021115936758310727,
+                    "paraphrased": 4.4816537628092306e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.002523698865415107,
+                  "sentence": "They can do anything that they want to do.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9974763011345849,
+                    "ai": 0.0024782484928954776,
+                    "paraphrased": 4.5450372519629476e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0038607376309245066,
+                  "sentence": "If a person can’t find a job, that person can get help.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9961392623690755,
+                    "ai": 0.0038085958358675498,
+                    "paraphrased": 5.214179505695688e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0024113623806573535,
+                  "sentence": "The government can help that person.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9975886376193427,
+                    "ai": 0.0023675244375801633,
+                    "paraphrased": 4.3837943077190384e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.003434979947562741,
+                  "sentence": "They can help that person with money to find a job.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9965650200524373,
+                    "ai": 0.003385055263459112,
+                    "paraphrased": 4.99246841036291e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0042087572052301,
+                  "sentence": "They can help that person to go to school.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9957912427947699,
+                    "ai": 0.004155480029050674,
+                    "paraphrased": 5.327717617942605e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.003881636133120277,
+                  "sentence": "The can help that person to get a job and be happy.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9961183638668797,
+                    "ai": 0.0038272742965598547,
+                    "paraphrased": 5.4361836560422385e-05
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9999653311302832,
+                "ai": 3.4668869716860515e-05,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9999653311302832,
+                  "ai": 3.4668869716860515e-05,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": " are (1) making a sign language interpreter for people who are deaf (2) wheelchair, (3) giving more time to people who can't work quickly.\n\nThe employment for people with disabilities in society are important. People can live independently with the work. They have a source of money and they can be happy and free. \n\nMost companies in America have a law to help people with disabilities. This law is call ADA. ADA stands for Americans with Disabilities Act. The law says that employers should give “reasonably” accommodation for people with a disability. The law says also that companies can't say no to hire people with a disability just because people have a disability.\n\nThe ADA law says that “reasonably” accommodation is one that can be made easy. It cost not much money. The accommodation should not cause more expense than the company’s make. For example, the company have a small office. They can’t make the office big because that would be very expensive. They can only make a little room for a desk. That is “reasonably” accommodation.\n\nPeople who have a disability can work in any place in the US. They can be a teacher, a doctor, a lawyer, a engineer. People can be a chef, a nurse, a plumber, a carpenter. People can be a farmer. People can be a worker in the store. They can do anything that they want to do.\n\nIf a person can’t find a job, that person can get help. The government can help that person. They can help that person with money to find a job. They can help that person to go to school. The can help that person to get a job and be happy.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-1",
+      "text_length": 1626,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.0013047799040342514,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9986603565815902,
+          "ai": 0.0013396434184097916,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9986603565815902,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                  "start_sentence_index": 3,
+                  "num_sentences": 8,
+                  "completely_generated_prob": 3.002405151306975e-07
+                },
+                {
+                  "start_sentence_index": 11,
+                  "num_sentences": 3,
+                  "completely_generated_prob": 0.00408719312638748
+                }
+              ],
+              "completely_generated_prob": 0.0013047799040342514,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9986603565815902,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.005473462769718864,
+                  "sentence": "think about their national identity or nationality because the number of immigrants traveling, working and doing business from one place to another has increased.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9945265372302812,
+                    "ai": 0.0045903030429072815,
+                    "paraphrased": 0.0008831597268115829
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.005781431395722515,
+                  "sentence": "The people that research immigration in the Australian sociology of science think that this is true when looking at middle East immigrants that come to Australia.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9942185686042775,
+                    "ai": 0.004823991935328271,
+                    "paraphrased": 0.0009574394603942439
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.005880897545847273,
+                  "sentence": "Some of these researchers say that people who are from the middle east and live in Australia are keeping their national identity, but others say they loose it.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9941191024541527,
+                    "ai": 0.005021052243814807,
+                    "paraphrased": 0.0008598453020324662
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.005384938674724224,
+                  "sentence": "When people move from one place to another, they have to change some things in their life, but they also do not have to.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9946150613252758,
+                    "ai": 0.004550271398405392,
+                    "paraphrased": 0.0008346672763188323
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00510147512901941,
+                  "sentence": "They can keep some things in their life.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9948985248709806,
+                    "ai": 0.004175690580936192,
+                    "paraphrased": 0.0009257845480832182
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.005371082545594254,
+                  "sentence": "For the people from the middle east that come to Australia they keep or not keep there national identity.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9946289174544057,
+                    "ai": 0.0044536271759290065,
+                    "paraphrased": 0.0009174553696652474
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.0051609104980816145,
+                  "sentence": "Some of them say this is because they have their religion in common and that is what make them the same in their country and here.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9948390895019183,
+                    "ai": 0.00426026369012818,
+                    "paraphrased": 0.000900646807953435
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.004998758319576809,
+                  "sentence": "But if they do not have their religion in common they do not.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9950012416804231,
+                    "ai": 0.004309312427049171,
+                    "paraphrased": 0.0006894458925276381
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00456157722711001,
+                  "sentence": "The other way is they think they are the same people that live here or there.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.99543842277289,
+                    "ai": 0.003712809508195673,
+                    "paraphrased": 0.0008487677189143376
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.005235737588273653,
+                  "sentence": "They like their home, they want to go back there or they like Australia they want to live there.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9947642624117263,
+                    "ai": 0.004302150336082048,
+                    "paraphrased": 0.0009335872521916052
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.005454472102524923,
+                  "sentence": "There are many reason why the people from the middle of east do not like to keep their old nation and want to make a new one or do not keep or like to have a new one.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9945455278974751,
+                    "ai": 0.0045814823801124316,
+                    "paraphrased": 0.0008729897224124908
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.006539088847426693,
+                  "sentence": "When people that live in Australia are from the middle east, they are a few thing when they come here.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9934609111525733,
+                    "ai": 0.0056840247545775205,
+                    "paraphrased": 0.0008550640928491729
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.006493756931980154,
+                  "sentence": "They can be Muslim or they can be Muslim with other religion but they also can not be religious, that's ok.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9935062430680198,
+                    "ai": 0.005592044258137129,
+                    "paraphrased": 0.0009017126738430256
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.007736339356769645,
+                  "sentence": "Some one that is coming to this country to be here they are happy to be in a new country, some one is not happy to be here.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9922636606432303,
+                    "ai": 0.006689037101335995,
+                    "paraphrased": 0.0010473022554336494
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9986603565815902,
+                "ai": 0.0013396434184097916,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9986603565815902,
+                  "ai": 0.0013396434184097916,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": " think about their national identity or nationality because the number of immigrants traveling, working and doing business from one place to another has increased. The people that research immigration in the Australian sociology of science think that this is true when looking at middle East immigrants that come to Australia. Some of these researchers say that people who are from the middle east and live in Australia are keeping their national identity, but others say they loose it.\n\nWhen people move from one place to another, they have to change some things in their life, but they also do not have to. They can keep some things in their life. For the people from the middle east that come to Australia they keep or not keep there national identity. Some of them say this is because they have their religion in common and that is what make them the same in their country and here. But if they do not have their religion in common they do not. The other way is they think they are the same people that live here or there. They like their home, they want to go back there or they like Australia they want to live there. There are many reason why the people from the middle of east do not like to keep their old nation and want to make a new one or do not keep or like to have a new one.\n\nWhen people that live in Australia are from the middle east, they are a few thing when they come here. They can be Muslim or they can be Muslim with other religion but they also can not be religious, that's ok. Some one that is coming to this country to be here they are happy to be in a new country, some one is not happy to be here.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-5",
+      "text_length": 1547,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.004001957833650428,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9906000291050399,
+          "ai": 0.001469059894234555,
+          "mixed": 0.0079309110007256
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9906000291050399,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 1,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 2,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 3,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 4,
+                  "num_sentences": 4,
+                  "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                  "start_sentence_index": 8,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 9,
+                  "num_sentences": 4,
+                  "completely_generated_prob": 0.0006564766595293492
+                }
+              ],
+              "completely_generated_prob": 0.004001957833650428,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9906000291050399,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.06657969929896754,
+                  "sentence": "of Bhopal Gas Tragedy by Times of India",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9334203007010324,
+                    "ai": 0.06352122874546824,
+                    "paraphrased": 0.0030584705534992904
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.14438365507429615,
+                  "sentence": "4. Conclusion",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.8556163449257038,
+                    "ai": 0.1420022819379328,
+                    "paraphrased": 0.002381373136363367
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.13533670374515672,
+                  "sentence": "5. References",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.8646632962548433,
+                    "ai": 0.13291253047387266,
+                    "paraphrased": 0.0024241732712840386
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.3231375629886813,
+                  "sentence": "1. Introduction",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6768624370113188,
+                    "ai": 0.32138053454478094,
+                    "paraphrased": 0.0017570284439003593
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.06148867056069117,
+                  "sentence": "The Bhopal gas tragedy, a catastrophic industrial accident that occurred in December 1984 in Bhopal, India, is considered one of the world's worst industrial disasters, which claimed the lives of thousands of people and left many more people injured.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9385113294393088,
+                    "ai": 0.05880077291546641,
+                    "paraphrased": 0.0026878976452247598
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.09444939963675486,
+                  "sentence": "On the morning of December 3, 1984, a gas leak occurred at the Union Carbide pesticide plant, a company that was later acquired by Dow Chemicals, when the tank that contained the toxic gas methyl isocyanate was not functioning properly.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9055506003632452,
+                    "ai": 0.09210578365079936,
+                    "paraphrased": 0.0023436159859555068
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.02747111958672711,
+                  "sentence": "The government of India and the company had different versions of what happened in this accident, so a report was made to say that this accident was a natural disaster and not because of the company, and that report is still not believed by some people.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9725288804132729,
+                    "ai": 0.02598142692756925,
+                    "paraphrased": 0.0014896926591578604
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.012709137052615931,
+                  "sentence": "The aim of this essay is to analyze two websites that had written about the Bhopal gas report and if the way they wrote it was good to persuade the people that the company was bad.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9872908629473841,
+                    "ai": 0.011069355311246446,
+                    "paraphrased": 0.0016397817413694854
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.010837939991364042,
+                  "sentence": "2. Website 1: Rhetorical Analysis of Bhopal Disaster Report by BBC News",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9891620600086359,
+                    "ai": 0.009255763070756007,
+                    "paraphrased": 0.001582176920608036
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.00778635169583638,
+                  "sentence": "BBC News wrote about the Bhopal gas disaster, and this is what they said: “The Bhopal disaster remains the worst industrial accident in history.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9922136483041636,
+                    "ai": 0.006128990910685205,
+                    "paraphrased": 0.0016573607851511748
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.006719041922081954,
+                  "sentence": "It is considered more serious than the atomic bomb dropped on Hiroshima.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.993280958077918,
+                    "ai": 0.005496157859060778,
+                    "paraphrased": 0.0012228840630211753
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.007988606895966279,
+                  "sentence": "It made 2,857 people dead immediately, and it made 3,787 people sick, and the people that died after a long time with pneumonia and other sickness is many more, but we don’t know how many.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9920113931040337,
+                    "ai": 0.006388712834284322,
+                    "paraphrased": 0.001599894061681957
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.008754157086813584,
+                  "sentence": "This is the bad thing that happened on December 3, 1984.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.9912458429131864,
+                    "ai": 0.007467103932814096,
+                    "paraphrased": 0.0012870531539994877
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9906000291050399,
+                "ai": 0.001469059894234555,
+                "mixed": 0.0079309110007256
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9906000291050399,
+                  "ai": 0.001469059894234555,
+                  "mixed": 0.0079309110007256
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": " of Bhopal Gas Tragedy by Times of India\n4. Conclusion\n5. References\n\n1. Introduction\n\nThe Bhopal gas tragedy, a catastrophic industrial accident that occurred in December 1984 in Bhopal, India, is considered one of the world's worst industrial disasters, which claimed the lives of thousands of people and left many more people injured. On the morning of December 3, 1984, a gas leak occurred at the Union Carbide pesticide plant, a company that was later acquired by Dow Chemicals, when the tank that contained the toxic gas methyl isocyanate was not functioning properly. The government of India and the company had different versions of what happened in this accident, so a report was made to say that this accident was a natural disaster and not because of the company, and that report is still not believed by some people. The aim of this essay is to analyze two websites that had written about the Bhopal gas report and if the way they wrote it was good to persuade the people that the company was bad.\n\n2. Website 1: Rhetorical Analysis of Bhopal Disaster Report by BBC News\n\nBBC News wrote about the Bhopal gas disaster, and this is what they said: “The Bhopal disaster remains the worst industrial accident in history. It is considered more serious than the atomic bomb dropped on Hiroshima. It made 2,857 people dead immediately, and it made 3,787 people sick, and the people that died after a long time with pneumonia and other sickness is many more, but we don’t know how many. This is the bad thing that happened on December 3, 1984.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-6",
+      "text_length": 1517,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.749382119656009,
+        "average_generated_prob": 1,
+        "class_probabilities": {
+          "human": 0.25038297845844676,
+          "ai": 0.7496170215415532,
+          "mixed": 0
+        },
+        "predicted_class": "ai",
+        "confidence_score": 0.7496170215415532,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 9,
+                  "completely_generated_prob": 0.9257822263275673
+                },
+                {
+                  "start_sentence_index": 9,
+                  "num_sentences": 9,
+                  "completely_generated_prob": 0.9257822263275673
+                }
+              ],
+              "completely_generated_prob": 0.749382119656009,
+              "average_generated_prob": 1,
+              "predicted_class": "ai",
+              "confidence_score": 0.7496170215415532,
+              "confidence_category": "medium",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.9020472844335122,
+                  "sentence": "to other places, this happened worldwide.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.09795271556648774,
+                    "ai": 0.8952014913013859,
+                    "paraphrased": 0.006845793132126329
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8473384790683725,
+                  "sentence": "It caused a lot of problems for all the people.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.15266152093162746,
+                    "ai": 0.8389216640267414,
+                    "paraphrased": 0.008416815041631099
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9074739682889047,
+                  "sentence": "In this case, epidemiology is used to show the facts about the disease.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.09252603171109533,
+                    "ai": 0.9021560373294384,
+                    "paraphrased": 0.005317930959466332
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.891116736440677,
+                  "sentence": "By the use of the name of the group of people who got the disease, we can get some facts and do some calculations for what happened with the people who have the disease.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.10888326355932304,
+                    "ai": 0.8859555884338116,
+                    "paraphrased": 0.005161148006865398
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9002578071881469,
+                  "sentence": "Then we know how to stop the disease or help the people who have the disease.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.09974219281185308,
+                    "ai": 0.8946969846591613,
+                    "paraphrased": 0.00556082252898562
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8554333956032033,
+                  "sentence": "By the use of science, we find out how to prevent the disease, and we have to do what we have to do for the people who have the disease.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.1445666043967966,
+                    "ai": 0.8492726923737012,
+                    "paraphrased": 0.006160703229502173
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9121648384717108,
+                  "sentence": "The other thing is that the people who work on the ground must be careful to have a good health.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.08783516152828916,
+                    "ai": 0.9066697815805195,
+                    "paraphrased": 0.005495056891191342
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9138087838537683,
+                  "sentence": "In this case we can see that the people who work on the ground are like the people in the health office of the medical.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.08619121614623172,
+                    "ai": 0.9085568350391275,
+                    "paraphrased": 0.005251948814640779
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9194290067968081,
+                  "sentence": "They have to check the people who are sick and see if they can help the people who have the problem or not.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.08057099320319193,
+                    "ai": 0.9139675549495477,
+                    "paraphrased": 0.005461451847260308
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8931244753784233,
+                  "sentence": "The 2009 H1N1 pandemic was caused by a virus that was from the animal but not from the man.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.10687552462157669,
+                    "ai": 0.8873598037394869,
+                    "paraphrased": 0.005764671638936457
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8830770621219514,
+                  "sentence": "It was a virus that was new for the man.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.1169229378780487,
+                    "ai": 0.8768428008856383,
+                    "paraphrased": 0.006234261236313084
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8645895014825612,
+                  "sentence": "It was a new for the man that was new.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.1354104985174388,
+                    "ai": 0.8579611522566929,
+                    "paraphrased": 0.006628349225868308
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9294194729779394,
+                  "sentence": "It was not a virus that was in the book that we have.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.07058052702206065,
+                    "ai": 0.9242456533847245,
+                    "paraphrased": 0.00517381959321485
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8887090572200874,
+                  "sentence": "It was a virus that was from the paper that we have.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.11129094277991261,
+                    "ai": 0.882240502981858,
+                    "paraphrased": 0.00646855423822943
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8970477722844652,
+                  "sentence": "It was a virus that was from the computer that we have.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.10295222771553482,
+                    "ai": 0.8908885183573364,
+                    "paraphrased": 0.006159253927128766
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.8922227040590235,
+                  "sentence": "It is a new virus that is from the animal that is from the computer.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.10777729594097651,
+                    "ai": 0.8867780438204671,
+                    "paraphrased": 0.005444660238556346
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.87653064626668,
+                  "sentence": "The people who work on the ground have to go to the book that we have to see what they can do with the people who have the disease.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.12346935373331996,
+                    "ai": 0.8700328015518962,
+                    "paraphrased": 0.00649784471478378
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.9016685589520202,
+                  "sentence": "The people who have the book have to be careful to have a good health to do the thing that the book say.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.09833144104797983,
+                    "ai": 0.8955351527118963,
+                    "paraphrased": 0.006133406240123891
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": true,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.25038297845844676,
+                "ai": 0.7496170215415532,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "ai": 0.7496170215415532,
+                  "mixed": 0,
+                  "human": 0.25038297845844676
+                }
+              },
+              "subclass": {
+                "ai": {
+                  "predicted_class": "pure_ai",
+                  "result_message": "",
+                  "confidence_score": 1,
+                  "confidence_category": "high",
+                  "class_probabilities": {
+                    "pure_ai": 1,
+                    "ai_paraphrased": 0
+                  },
+                  "confidence_scores_raw": {
+                    "identity": {
+                      "pure_ai": 1,
+                      "ai_paraphrased": 0
+                    }
+                  },
+                  "confidence_thresholds_raw": {
+                    "identity": {
+                      "ai_paraphrased": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      },
+                      "pure_ai": {
+                        "reject": 0.33,
+                        "low": 0.6,
+                        "medium": 0.8
+                      }
+                    }
+                  }
+                }
+              },
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is moderately confident that the text is written by AI.",
+              "result_sub_message": null,
+              "document_classification": "AI_ONLY",
+              "inputText": " to other places, this happened worldwide. It caused a lot of problems for all the people. In this case, epidemiology is used to show the facts about the disease. By the use of the name of the group of people who got the disease, we can get some facts and do some calculations for what happened with the people who have the disease. Then we know how to stop the disease or help the people who have the disease.  By the use of science, we find out how to prevent the disease, and we have to do what we have to do for the people who have the disease. The other thing is that the people who work on the ground must be careful to have a good health.  In this case we can see that the people who work on the ground are like the people in the health office of the medical. They have to check the people who are sick and see if they can help the people who have the problem or not. \n\nThe 2009 H1N1 pandemic was caused by a virus that was from the animal but not from the man. It was a virus that was new for the man. It was a new for the man that was new. It was not a virus that was in the book that we have. It was a virus that was from the paper that we have. It was a virus that was from the computer that we have. It is a new virus that is from the animal that is from the computer. The people who work on the ground have to go to the book that we have to see what they can do with the people who have the disease. The people who have the book have to be careful to have a good health to do the thing that the book say.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-9",
+      "text_length": 1575,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "completely_generated_prob": 0.047466657178750184,
+        "average_generated_prob": 0,
+        "class_probabilities": {
+          "human": 0.9523811418446207,
+          "ai": 0.047618858155379286,
+          "mixed": 0
+        },
+        "predicted_class": "human",
+        "confidence_score": 0.9523811418446207,
+        "raw_response": {
+          "version": "2026-05-11-base",
+          "neatVersion": "4.6b",
+          "documents": [
+            {
+              "paragraphs": [
+                {
+                  "start_sentence_index": 0,
+                  "num_sentences": 7,
+                  "completely_generated_prob": 2.1228438805416278e-06
+                },
+                {
+                  "start_sentence_index": 7,
+                  "num_sentences": 1,
+                  "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                  "start_sentence_index": 8,
+                  "num_sentences": 6,
+                  "completely_generated_prob": 1.474742012248794e-05
+                },
+                {
+                  "start_sentence_index": 14,
+                  "num_sentences": 4,
+                  "completely_generated_prob": 0.0006564766595293492
+                }
+              ],
+              "completely_generated_prob": 0.047466657178750184,
+              "average_generated_prob": 0,
+              "predicted_class": "human",
+              "confidence_score": 0.9523811418446207,
+              "confidence_category": "high",
+              "overall_burstiness": 0,
+              "writing_stats": {},
+              "confidence_thresholds_raw": {
+                "identity": {
+                  "ai": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "human": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  },
+                  "mixed": {
+                    "reject": 0.33,
+                    "low": 0.6,
+                    "medium": 0.8
+                  }
+                }
+              },
+              "sentences": [
+                {
+                  "generated_prob": 0.3501972026585184,
+                  "sentence": "other sectors completely depend on electricity.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6498027973414816,
+                    "ai": 0.3435126524952772,
+                    "paraphrased": 0.006684550163241233
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.31590912464519394,
+                  "sentence": "That is why electricity has become very important in our daily life.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6840908753548061,
+                    "ai": 0.30943403671021413,
+                    "paraphrased": 0.006475087934979817
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.3789197767838078,
+                  "sentence": "But, using all the electricity that we want is not possible now.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6210802232161922,
+                    "ai": 0.3729135712957768,
+                    "paraphrased": 0.0060062054880310155
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.3507103929053381,
+                  "sentence": "There is not enough electricity in the world, and the use of too much electricity harms our planet.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6492896070946619,
+                    "ai": 0.3444197173075475,
+                    "paraphrased": 0.006290675597790616
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.4294616061009529,
+                  "sentence": "It also harms the nature because of the gases that come out from the machines that make the electricity.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.570538393899047,
+                    "ai": 0.42415135526080183,
+                    "paraphrased": 0.005310250840151089
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.3928123060487441,
+                  "sentence": "That is why the most important thing that we can do now is to save electricity.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6071876939512558,
+                    "ai": 0.38760631809346063,
+                    "paraphrased": 0.005205987955283513
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.3555541020507573,
+                  "sentence": "We have to think of a way to use less energy and to make it too.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6444458979492427,
+                    "ai": 0.3503823886170491,
+                    "paraphrased": 0.005171713433708195
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.3694126899627647,
+                  "sentence": "In this essay, we will talk about why it is important to save electricity and how we can do it.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6305873100372352,
+                    "ai": 0.36380432342158986,
+                    "paraphrased": 0.005608366541174867
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.3202463222884108,
+                  "sentence": "First, we have to say that the most important thing to save the earth is to save energy.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6797536777115892,
+                    "ai": 0.3147648373581386,
+                    "paraphrased": 0.005481484930272237
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.42509234754705316,
+                  "sentence": "Now, our earth is in danger because of the bad things that people do, for example, pollution the air, and the things that we put in the water.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5749076524529468,
+                    "ai": 0.4202475191059403,
+                    "paraphrased": 0.004844828441112836
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.37377862839319725,
+                  "sentence": "The things that we need to do to save the earth are many and the first thing that we have to do is to save the energy.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6262213716068027,
+                    "ai": 0.3689816669724851,
+                    "paraphrased": 0.004796961420712202
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.3979838333498196,
+                  "sentence": "We can save the energy with many ways but the most important thing is to save the electricity.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6020161666501804,
+                    "ai": 0.3934709830369684,
+                    "paraphrased": 0.004512850312851192
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.38217896309376836,
+                  "sentence": "When we save the electricity we also save the water and the other things that need the energy to work.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6178210369062316,
+                    "ai": 0.3773756319973027,
+                    "paraphrased": 0.004803331096465703
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.4320602520134534,
+                  "sentence": "The second thing that we have to do is to be aware of all the things that we do that use the energy, for example, the lights, the TV, and the computer.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.5679397479865467,
+                    "ai": 0.42744376479168106,
+                    "paraphrased": 0.0046164872217723165
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.3017267917468539,
+                  "sentence": "If we use less energy then we can be healthy.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6982732082531461,
+                    "ai": 0.29777736594898935,
+                    "paraphrased": 0.003949425797864557
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.3126237761211992,
+                  "sentence": "If we use too much energy, then our earth will not be well, and we will not be well also.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.6873762238788008,
+                    "ai": 0.30809364741418926,
+                    "paraphrased": 0.004530128707009897
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.28409610385447137,
+                  "sentence": "And then our children will not be well and they will not be happy.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.7159038961455286,
+                    "ai": 0.2785538570865839,
+                    "paraphrased": 0.005542246767887451
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                },
+                {
+                  "generated_prob": 0.22307590893825685,
+                  "sentence": "That is why we have to save the energy.",
+                  "perplexity": 0,
+                  "class_probabilities": {
+                    "human": 0.7769240910617431,
+                    "ai": 0.2197032619946434,
+                    "paraphrased": 0.003372646943613446
+                  },
+                  "interpretability_value": null,
+                  "interpretability_normalized_value": null,
+                  "interpretability_designation": null,
+                  "interpretability_alpha": null,
+                  "highlight_sentence_for_ai": false,
+                  "special_highlight_type": null
+                }
+              ],
+              "class_probabilities": {
+                "human": 0.9523811418446207,
+                "ai": 0.047618858155379286,
+                "mixed": 0
+              },
+              "confidence_scores_raw": {
+                "identity": {
+                  "human": 0.9523811418446207,
+                  "ai": 0.047618858155379286,
+                  "mixed": 0
+                }
+              },
+              "subclass": {},
+              "pageNumber": 0,
+              "neatVersion": "4.6b",
+              "version": "2026-05-11-base",
+              "language": "en",
+              "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+              "result_sub_message": null,
+              "document_classification": "HUMAN_ONLY",
+              "inputText": " other sectors completely depend on electricity. That is why electricity has become very important in our daily life. But, using all the electricity that we want is not possible now. There is not enough electricity in the world, and the use of too much electricity harms our planet. It also harms the nature because of the gases that come out from the machines that make the electricity. That is why the most important thing that we can do now is to save electricity. We have to think of a way to use less energy and to make it too.\n\nIn this essay, we will talk about why it is important to save electricity and how we can do it.\n\nFirst, we have to say that the most important thing to save the earth is to save energy. Now, our earth is in danger because of the bad things that people do, for example, pollution the air, and the things that we put in the water. The things that we need to do to save the earth are many and the first thing that we have to do is to save the energy. We can save the energy with many ways but the most important thing is to save the electricity. When we save the electricity we also save the water and the other things that need the energy to work. The second thing that we have to do is to be aware of all the things that we do that use the energy, for example, the lights, the TV, and the computer.\n\nIf we use less energy then we can be healthy. If we use too much energy, then our earth will not be well, and we will not be well also. And then our children will not be well and they will not be happy. That is why we have to save the energy.",
+              "document_id": null
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "processed": 10,
+  "errors": 0,
+  "skipped": 0
+}

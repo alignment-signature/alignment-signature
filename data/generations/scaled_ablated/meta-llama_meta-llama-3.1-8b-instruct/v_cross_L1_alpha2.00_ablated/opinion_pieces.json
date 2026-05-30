@@ -1,0 +1,574 @@
+{
+  "model_type": "instruct",
+  "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400
+  },
+  "intervention": {
+    "mode": "partial_ablate",
+    "direction_path": "data/pasta_directions/meta-llama_meta-llama-3.1-8b-instruct/v_cross_L1.pt",
+    "layer": 1,
+    "alpha": 2.0,
+    "tag": "v_cross_L1_partial_ablate_alpha2.00"
+  },
+  "domain": "opinion_pieces",
+  "num_generations": 25,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-opinion_pieces-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Perhaps a little eerie, but I don be a little nostalgic and I want to have you there. I am a different person this year.\nI am not a bad person, I am not all that is left. It is a new day to me it is not. It is is not and it is it is. I is not I this is I is a. I is not.\n\nI is not you but you is not. Is the be you. Is. I is not. I. Is it. Is the is you is is the you. Be. You is not. Is is. Is you. I is it. You. Is. It. It is. Be.\n\nIs this. I is not. Be to do. I is is. Is. Be is I. I is a. I is. Do is. be. Is is. Is is not. I is. Is you. Be, is is. I is not is.\n\nThis is. Is not. I is this. Is is be. I. It is is I is not. I. It is is. I. you is is. I. Is be. I is. I. Is is. I, is. Is is. I is not is. I. Is.\n\nIs is. I is 3 and I am I. is be. is be is. It is is I. is. is. I. is. I is. I is is. is is. is. you.\n\nIs that is. is I. is this is. is. I is. is is. I I. is is. I is not. I is I. is. is. is. Be I. is. I is. is. is is. I is. is.\nIs is is. is 3 is is is I. is is it.\n\nI is. is this is I is I. is is is. it is. is is.\n\nis is",
+      "processed_text": "Perhaps a little eerie, but I don be a little nostalgic and I want to have you there. I am a different person this year.\nI am not a bad person, I am not all that is left. It is a new day to me it is not. It is is not and it is it is. I is not I this is I is a. I is not.\n\nI is not you but you is not. Is the be you. Is. I is not. I. Is it. Is the is you is is the you. Be. You is not. Is is. Is you. I is it. You. Is. It. It is. Be.\n\nIs this. I is not. Be to do. I is is. Is. Be is I. I is a. I is. Do is. be. Is is. Is is not. I is. Is you. Be, is is. I is not is.\n\nThis is. Is not. I is this. Is is be. I. It is is I is not. I. It is is. I. you is is. I. Is be. I is. I. Is is. I, is. Is is. I is not is. I. Is.\n\nIs is. I is 3 and I am I. is be. is be is. It is is I. is. is. I. is. I is. I is is. is is. is. you.\n\nIs that is. is I. is this is. is. I is. is is. I I. is is. I is not. I is I. is. is. is. Be I. is. I is. is. is is. I is. is.\nIs is is. is 3 is is is I. is is it.\n\nI is. is this is I is I. is is is. it is. is is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 100,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Happy birthday, Sidra!\n\nBegin with: \"I woke up as a different person today. I am an altogether different person this year. But I still feel like the 13 year old me is watching me over. I remember how she never wanted to grow up, thinking she will lose\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "I'm Liz, the only one on the run\nI'm Liz, the one that got caught\nI'm L I I I i, i I\nI'm the only one, I'm to say\" \" I\" \"s the one\nI's the one I m  I I I m the only \"I\nI's I I am L I I\nL I's I \nOh I t is not I i\nI i I a i I m I t I\nThe is I a I \nI  I'I t is  \"  L I\"  I i \nI a I is I L I t is I I I t  L I\n\nI is L I I I I 'I I\nI I I I I I  I \n I is I i  I i  T I \n i I  I I L I I i  I t  I e  I I t  I  L  I\nI is  I\nI t  I  L I \nL I  I  L I  I  L I  I  I  I  I  L  I t I  I  I  I\n I  L  I  I  L  I I I  I\n I  I t\nA few  o  t  I\nI I  I I  L I\nI t  I  I  I  I I  I\n I  i  I  I  I I I I  L  I\n I L i  I\n Y  I  I  I i I  I  L  I\n\n  L  I  I  L  I\nI  I  I  I  I I  I I  L  I\n I  I   I  I  L  I  I I  I t I  I\n I  I i  I ",
+      "processed_text": "I'm Liz, the only one on the run\nI'm Liz, the one that got caught\nI'm L I I I i, i I\nI'm the only one, I'm to say\" \" I\" \"s the one\nI's the one I m  I I I m the only \"I\nI's I I am L I I\nL I's I \nOh I t is not I i\nI i I a i I m I t I\nThe is I a I \nI  I'I t is  \"  L I\"  I i \nI a I is I L I t is I I I t  L I\n\nI is L I I I I 'I I\nI I I I I I  I \n I is I i  I i  T I \n i I  I I L I I i  I t  I e  I I t  I  L  I\nI is  I\nI t  I  L I \nL I  I  L I  I  L I  I  I  I  I  L  I t I  I  I  I\n I  L  I  I  L  I I I  I\n I  I t\nA few  o  t  I\nI I  I I  L I\nI t  I  I  I  I I  I\n I  i  I  I  I I I I  L  I\n I L i  I\n Y  I  I  I i I  I  L  I\n\n  L  I  I  L  I\nI  I  I  I  I I  I I  L  I\n I  I   I  I  L  I  I I  I t I  I\n I  I i  I",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 102,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Liz’s Bio and Featured Stories\n\nBegin with: \"Liz’s Bio and Featured Stories\n\nIf you like true stories with a twist and a life lesson takeaway, read on!\n\nPhoto Courtesy of the Author\n\nDear Reader,\n\nWelcome to my little corner of the world!\n\nI don’t often lay on\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "I know.\n\nI have that do not is.\n\nIn do it.\n\nI do it.\n\ni do it.\n\nI do this.\n\nI do it.\n\nT  I do not so do not that.\n\nI do it.\n I do. do it you.\n\nI can do. you do you.\n\nI do do do do.\n\nI do do. do it\n\nI is.\n\nI do. is do.\n\nto do. do do do.\n\nI do do do.\n\nIt is do do to do. do do.\n\nI is.\n\nDo do. do do do do do \n\ndo. do do do.\n\nThat do is a is. \nDo. it is. it. do. do. do. do do.\n\nI. is do do do do. do. do do do do.\n\ndo  do. is do. do. is.\n\nDo do do. do. do  do do. do do 2\n\ndo do do do. do do\n\ndo do.\n\nDo do do do.\n\ndo 1 do. do. do. do 1. do do\n\nI do do do. do do.\n\nDo. do. do do\n\nDo. do. do do  do.\n\nIt do do. do. do do 1 do.\n\ndo. do do. do do. \n\nDo do to do do do  do do 1 do. do do. 1\n\ndo. do. do. do  do do do.\n\ndo do. do do do  do do do.\n\ndo. do. do  do. do do 1 do do\n\ndo do do do. do do  do. do do\n\ndo do. do do do  do. do do. do\n\n1 do do. do  do. do\n\ndo. do. do  do do 1 do. do do 1. 2 2 1. 1 do do. do\n\nDo do. do do  do do.\n\ndo do.",
+      "processed_text": "I know.\n\nI have that do not is.\n\nIn do it.\n\nI do it.\n\ni do it.\n\nI do this.\n\nI do it.\n\nT  I do not so do not that.\n\nI do it.\n I do. do it you.\n\nI can do. you do you.\n\nI do do do do.\n\nI do do. do it\n\nI is.\n\nI do. is do.\n\nto do. do do do.\n\nI do do do.\n\nIt is do do to do. do do.\n\nI is.\n\nDo do. do do do do do \n\ndo. do do do.\n\nThat do is a is. \nDo. it is. it. do. do. do. do do.\n\nI. is do do do do. do. do do do do.\n\ndo  do. is do. do. is.\n\nDo do do. do. do  do do. do do 2\n\ndo do do do. do do\n\ndo do.\n\nDo do do do.\n\ndo 1 do. do. do. do 1. do do\n\nI do do do. do do.\n\nDo. do. do do\n\nDo. do. do do  do.\n\nIt do do. do. do do 1 do.\n\ndo. do do. do do. \n\nDo do to do do do  do do 1 do. do do. 1\n\ndo. do. do. do  do do do.\n\ndo do. do do do  do do do.\n\ndo. do. do  do. do do 1 do do\n\ndo do do do. do do  do. do do\n\ndo do. do do do  do. do do. do\n\n1 do do. do  do. do\n\ndo. do. do  do do 1 do. do do 1. 2 2 1. 1 do do. do\n\nDo do. do do  do do.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 104,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: My Ego Sabotaged My Writing\n\nBegin with: \"Illustration by Fresh Idea\n\nFull manuscript in two months. That was the goal. I was on vacation in Mexico, no less, when I checked my email and saw the opportunity. It was mid-June and the conference was happening near the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "aquirements\n\nThere was one formula, there was a formula, there was a formula.\n\nfor that 1 for\n\nan 1 for\nan on this\nin this\nwith this\nwith this\nis this\nis this is\nis this\nis this\n\nis in this is\nis in this\nis this is\n\nis is this \nis is this \nis 1 is\n\nis is this \nis is 1\n\nis 1 \nis 1 \nis is\nis this is \n\nis this\nis is \nis is 1 \nis \nis this 1 is\n\nis is this 1 is \nis is 1\nis 1 \nis is \nis 1 \nis 1 \nis 1 \n\nis 1 \nis 1\nis 1\n\nis this is 1 \nis  1 \nis 1 1\n\nis 1\nis  1 1 \nis 1 1 1 1\n 1 1 1 1 \n\nis is 1 \nis 1 1  1\n1 1 1 1\n 1 1 1 1 1 1  1  1 1 1 1 1 1 1 1 1  1 1 1 1 1 1  1 1 1 1 1 1  1 1 1 1 1 1 1 1  1 1 1 1 1  1 1 1 1 1  1 1 1 1 1 1  1 1 1 1  1 1 1 1  1 1 1 1 1 1 1 1 1 1 1 1 1 1  1 ",
+      "processed_text": "aquirements\n\nThere was one formula, there was a formula, there was a formula.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 106,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: What in the World is Shaking Up The Hospitality Industry?\n\nBegin with: \"How prepared are you for the revolution?\n\nOnce upon a time, not that long ago in the restaurant, food and hospitality industry, the formula for success was pretty simple to grasp. Following the formula was widely accepted as the guaranteed path to making\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "The #1 Thing That Gets Me Through Difficult Days\n\nBegin with: A sense of hope.\n\nThe #1 Thing That Gets Me Through Diff  My.\n\nThrough \n T he t   th e t h i n k\n\n T h e   t h i s\n\n I t  h i s  n o t  h  e r e \n\n A t\n\n h  i  n  I  t \n\nThe The\n A  T \nTh e\n\n T h\n A  h t\n e\n\n I t 1 \n\nTh  e\n\n T h\n I h \n t\n o \n T h\n\n I\n\nT h  h t \n I t \n\nTh  I\n t e r e\n\n H  a\n e\n o\n o  s \n\nThe\n T h\n e \n\n T h  t\n t\n w\n h\n e \n\nT h t\n e \n e\n l\n s   s t\n e\n\nT h  a\n A  t  r\n e \n r\n o \n o\n\n T h\n a  n h\n  c\n a\n o  a\n o  r\n\n e  a\n\n a\n t  a  e t\n\n e  a\n h e t i\n e\n i\n e\n I  t\n\n e  a  e  h e\n o\n\n t a\n e\n t e t\n e  t  r\n\n i  t  t\n\n e a  t\n\n t t a  t\n e\n\n a  a  t\n r e  t\n 1  a\n\n e  h\n e t\n\n e a\n t\n e\n t\n t  h\n e  a\n\n e e  t a t  t\n\n a  e e\n 3  t\n e  e\n t t  e  e  a\n\n e a t  a t t  e\n 1\n t e",
+      "processed_text": "The #1 Thing That Gets Me Through Difficult Days\n\nBegin with: A sense of hope.\n\nThe #1 Thing That Gets Me Through Diff  My.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 106,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: The #1 Thing That Gets Me Through Difficult Days\n\nBegin with: \"The #1 Thing That Gets Me Through Difficult Days\n\nMy coping mechanism in trying times.\n\nPhoto by Ian Chen on Unsplash\n\nI remember the first few hours after my mother took her last breath.\n\nI also remember the first few days.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Vision 2020: The Well - is a series of sermons that were delivered by Brian and Christine. These are notes, that have been made to make sure that you can have some questions, to do this and to see this.\n\nThis is a talk that is in this and is is a is the are you can be be of it. This is a is this is is be in is this be it.\n\nThere is is is a this to do is is this is be. is a is to is, is this is be this is is it. is is is be I is a is it. to is is is is. it is is is. is is and is is. is is is. is is to. is is this. is is is is. is is this. it is a is is. is is. is it. is is. is is is this is. is is. is it is. is is. is  this is this. is is is this. is is. is. is is. is is i is it. is this is. is is is i is it. is is this is it. this is is. is this is. is is. is it is is. is this is. is. is is is. is is. is. is is. is i is it  is is. i is. is is is is. is is. is i. is i. is is. is is. to is. is i. is is is. is. is is i. is i. is it. is is. is. is it is is. is this is it. is is is. to is is. i is. is it. \n\nThis is is. is. is is is. i is it. is is. is i is it. is it is. is. is it. is. is is is. is i is is. is is is.  is.",
+      "processed_text": "Vision 2020: The Well - is a series of sermons that were delivered by Brian and Christine. These are notes, that have been made to make sure that you can have some questions, to do this and to see this.\n\nThis is a talk that is in this and is is a is the are you can be be of it. This is a is this is is be in is this be it.\n\nThere is is is a this to do is is this is be. is a is to is, is this is be this is is it. is is is be I is a is it. to is is is is. it is is is. is is and is is. is is is. is is to. is is this. is is is is. is is this. it is a is is. is is. is it. is is. is is is this is. is is. is it is. is is. is  this is this. is is is this. is is. is. is is. is is i is it. is this is. is is is i is it. is is this is it. this is is. is this is. is is. is it is is. is this is. is. is is is. is is. is. is is. is i is it  is is. i is. is is is is. is is. is i. is i. is is. is is. to is. is i. is is is. is. is is i. is i. is it. is is. is. is it is is. is this is it. is is is. to is is. i is. is it. \n\nThis is is. is. is is is. i is it. is is. is i is it. is it is. is. is it. is. is is is. is i is is. is is is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 103,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Vision 2020: The Well\n\nBegin with: \"Vision 2020: The Well\n\nRecordings, talk notes and application questions\n\nEach week, we produce notes, discussion points and application questions for the Sunday talks — helping you go deeper into everything we’re looking at together and resourcing our\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "The concept of \"inside the inner me\" has many aspects that I want to talk about\n\nThe inner and I is that the life and the only life in me and you\n\nThis is, is that, the is what you is I, is that, if, is the if me, if me and, is the is and then, is this is, is the is I is, is this is \n\nI is this is that I is, this is is that I is \n\nI is this is and you, is this is\n\nIs, is is, this is this is \n\nIs is this is\n\nThis is is this  is\n\nI is this, is I\n\nIs is this is  I\n\nIs is this \n\nIs is I\n\nI is \n\nI\n\nI is  I \n\nI is\n\nI  is 1\n\nIs 1\n\nIs 1 this\n\nI s\n\nIs I \n\nIs I  is 1\n\nIs 1 \n\nis 1\n\n I\n\nI is 1\n\nI is 1 is\n\nIs\n\nI is\n\nIs it I\n\nIs\n\n I 1\n\nI is 1 is  I I\n\n Is \n\nI 1 \n\nI  I 1\n\nI  is 1\n\n1 1 1 1  1\n\n1 1 1 1\n\n1 1 1  1 1 1 \n\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n\n1 1 1 1 1 1 1 1 1 1 1 1 1 1  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 ",
+      "processed_text": "The concept of \"inside the inner me\" has many aspects that I want to talk about\n\nThe inner and I is that the life and the only life in me and you\n\nThis is, is that, the is what you is I, is that, if, is the if me, if me and, is the is and then, is this is, is the is I is, is this is \n\nI is this is that I is, this is is that I is \n\nI is this is and you, is this is\n\nIs, is is, this is this is \n\nIs is this is\n\nThis is is this  is\n\nI is this, is I\n\nIs is this is  I\n\nIs is this \n\nIs is I\n\nI is \n\nI\n\nI is  I \n\nI is\n\nI  is 1\n\nIs 1\n\nIs 1 this\n\nI s\n\nIs I \n\nIs I  is 1\n\nIs 1 \n\nis 1\n\n I\n\nI is 1\n\nI is 1 is\n\nIs\n\nI is\n\nIs it I\n\nIs\n\n I 1\n\nI is 1 is  I I\n\n Is \n\nI 1 \n\nI  I 1\n\nI  is 1\n\n1 1 1 1  1\n\n1 1 1 1\n\n1 1 1  1 1 1 \n\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n\n1 1 1 1 1 1 1 1 1 1 1 1 1 1  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 97,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Internal World\n\nBegin with: \"Photo by Jr Korpa on Unsplash\n\nWhile I’m sharing, if you feel what I’m going through\n\nIf you can feel the feelings of the experiences I’m going to share with you\n\nIf my spirit touches your spirit\n\nPlease,\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "The I are not the first man or women but we have this we have this we have this. The it was a not. This I. it. it. I. it is. is. is. It.  I. is. is. It. is. is. this. is. is. I is. is. I is. This. I is. This is. is. is. this is. is. is. is. this. is. is. is. I is. is. I is. is. this. is. is. This is. is. is.  is. is. is.  is. is. is. is. is. I is. is. is. is. is. is.  is. is. is  is. is.  is  is  is  is  is  is  is  is  is  is  this is  is. is. is  is  is  this is. is  is  is  is  1  is  is  is  1  is.  is  is  is  1. is is. is  is 1. is  1 is 1. is  is. 1 1. is. is.  is  1. 1. is. 1 1. 1  1  is. is. is  is  1  1. 1  1 1 1  1  1.  1.  1. 1  1.  1  1 1  1 1 1 1  1 1  1  1 1  1 1 1  1 1  1 1  1 1  1 1  1 1  1 1  1",
+      "processed_text": "The I are not the first man or women but we have this we have this we have this. The it was a not. This I. it. it. I. it is. is. is. It.  I. is. is. It. is. is. this. is. is. I is. is. I is. This. I is. This is. is. is. this is. is. is. is. this. is. is. is. I is. is. I is. is. this. is. is. This is. is. is.  is. is. is.  is. is. is. is. is. I is. is. is. is. is. is.  is. is. is  is. is.  is  is  is  is  is  is  is  is  is  is  this is  is. is. is  is  is  this is. is  is  is  is  1  is  is  is  1  is.  is  is  is  1. is is. is  is 1. is  1 is 1. is  is. 1 1. is. is.  is  1. 1. is. 1 1. 1  1  is. is. is  is  1  1. 1  1 1 1  1  1.  1.  1. 1  1.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 101,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Don’t I Know You\n\nBegin with: \"As the fourth and final song faded, the DJ in our club at the north end of Waikiki kept the crowd pumped for another set of nude women on stage under the flashing black lights. These men were mostly military dudes who were barely legal\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "When the pandemic-induced lockdown happened, I lost all the motivation. My life became sedentary. Up until then, I had been active all my life and liked sports. My best friend asked me what had happened and I didn I am just 1.8 meters (59\" and I am only 59.5 kg (131 pounds). I do not know what had happened. I went in the doctor. I said. I said this: \"I said. I said. \"You said.\"  You said\"  I said it \"You can\" is this is \"You say  \" You say \"  is a.  I you is \" is \" is a is \"  is  This \"  this \"  you and  is this is  to  to is  to this is  is  this is  to is  is \" this is \"  is  This is \" is  is 1 \"  to 1  is \" is \" 1 is this is  you is  is 1.  1. is  is this 1 \" to is  is 1.  is 1 is 1 \"  and  is 1 is  1.  1 \" is \" is 1 \" to  1  is is  1.  1 \" 1 is 1 \" to  1 \"  1  1.  1. 1  is  1. 1  is  1   to is \" is  is  1.  1  is  1 \" is  1.   is  is  1 is  to \" is \"  1  1 \"  1  1.  1  1  1  1  1 1 1 1 1 1. 1  is \" is \" to ",
+      "processed_text": "When the pandemic-induced lockdown happened, I lost all the motivation. My life became sedentary. Up until then, I had been active all my life and liked sports. My best friend asked me what had happened and I didn I am just 1.8 meters (59\" and I am only 59.5 kg (131 pounds). I do not know what had happened. I went in the doctor. I said. I said this: \"I said. I said. \"You said.\"  You said\"  I said it \"You can\" is this is \"You say  \" You say \"  is a.  I you is \" is \" is a is \"  is  This \"  this \"  you and  is this is  to  to is  to this is  is  this is  to is  is \" this is \"  is  This is \" is  is 1 \"  to 1  is \" is \" 1 is this is  you is  is 1.  1. is  is this 1 \" to is  is 1.  is 1 is 1 \"  and  is 1 is  1.  1 \" is \" is 1 \" to  1  is is  1.  1 \" 1 is 1 \" to  1 \"  1  1.  1. 1  is  1. 1  is  1   to is \" is  is  1.  1  is  1 \" is  1.   is  is  1 is  to \" is \"  1  1 \"  1  1.  1  1  1  1  1 1 1 1 1 1.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 113,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Simple Changes That Helped Me Lose 5 Kg and Feel Great in Just One Month\n\nBegin with: \"Simple Changes That Helped Me Lose 5 Kg and Feel Great in Just One Month\n\nImage by biscotto87\n\nWhen the pandemic-induced lockdown happened, I lost all motivation. My lifestyle became sedentary. Up until then, I had\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "In the absence of the internet I observe the children start to entertain themselves with board games. The \"have to have it\" 15 little \" The have  have  The kids 10 we.  a. We to. We. It to. in.  is  This. to. is. In. You. to. is.  in. to. to. to. is. it. is. is. a. to. is. is. is. is. is. is. is. is.  is. is. is. is.  is. is.  is. is. is.  is. to. to. is. is. to.  is. to. is. to. is.  is. is. is. to. is. to. is. to. is. is. is. is. to. is. to. to. to. is. is. to. to. to  is. to. to. is. is. is. to. is. to. is. to. is  is. to. to. is. to. is. is. to. is. to. to  is. is. is. to. is. is. to  is. is. to. to  is. to. to. to. is. is. is. to. to. to  is. is. is. to  is. is. to. to. is. to. is  is. is. to. to. is. is. to. is. is. is. is. to. is. to. to. to. is. is. to  is. to. is. to. is. is. to. to. to  is. is. to. to. is. is. to  is. to. to  is. is. is  is. is. is. to. is. is",
+      "processed_text": "In the absence of the internet I observe the children start to entertain themselves with board games. The \"have to have it\" 15 little \" The have  have  The kids 10 we.  a. We to. We. It to. in.  is  This. to. is. In. You. to. is.  in. to. to. to. is. it. is. is. a. to. is. is. is. is. is. is. is. is.  is. is. is. is.  is. is.  is. is. is.  is. to. to. is. is. to.  is. to. is. to. is.  is. is. is. to. is. to. is. to. is. is. is. is. to. is. to. to. to. is. is. to. to. to  is. to. to. is. is. is. to. is. to. is. to. is  is. to. to. is. to. is. is. to. is. to. to  is. is. is. to. is. is. to  is. is. to. to  is. to. to. to. is. is. is. to. to. to  is. is. is. to  is. is. to. to. is. to. is  is. is. to. to. is. is. to. is. is. is. is. to. is. to. to. to. is. is. to  is. to. is. to. is. is. to. to. to  is. is. to. to. is. is. to  is. to. to  is. is. is  is. is. is. to. is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 100,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Get Off The Internet\n\nBegin with: \"Photo by Harry Knight on Unsplash\n\n“Card games, now that’s a good way to pass the time.”\n\nAn older woman observes my group of fifteen high school students huddled in circles playing games. We’ve just spent a week in the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-10",
+      "sample_id": 10,
+      "original_prefix_id": 10,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "The the world waits for the results of the results of the 2020 COVID-19 Vaccine Clinical trial results, we \"have\" 2\n\n Gather the the people's of,  go to get to see a get, of  to to the of the people  to,  to the that is you  you are  go the you are, to is not the is it you,  to the is you are to you are the is, that is is the is this you is the is you, are  it, is  is is  is to, you is is this is, the is  is  is, is  is,  is,  is this is is  is  is  1 is, is  is  to  1 is, is  it is this is  1 is,  is, is,  is  is,  1 this is is  1 is, is  is  to is  this is is  to is  is is  1 is  is  to,  is  is 1  is  1 is  is 1,  is  to is  is  1 is  is  1 is  is, to  1  is 1 to,  is  is 1  1 is  1  1,  to  is  1 is  is 1  1  1  1, is is,  1 is  is  1 1 is  1 is  1 is 1 is,  is  1 is  1 is  1  1 1  1 is  1  1 1  1  1  2 is,  is a is  is 1 1  1 1  1  1 2 3  1 ",
+      "processed_text": "The the world waits for the results of the results of the 2020 COVID-19 Vaccine Clinical trial results, we \"have\" 2\n\n Gather the the people's of,  go to get to see a get, of  to to the of the people  to,  to the that is you  you are  go the you are, to is not the is it you,  to the is you are to you are the is, that is is the is this you is the is you, are  it, is  is is  is to, you is is this is, the is  is  is, is  is,  is,  is this is is  is  is  1 is, is  is  to  1 is, is  it is this is  1 is,  is, is,  is  is,  1 this is is  1 is, is  is  to is  this is is  to is  is is  1 is  is  to,  is  is 1  is  1 is  is 1,  is  to is  is  1 is  is  1 is  is, to  1  is 1 to,  is  is 1  1 is  1  1,  to  is  1 is  is 1  1  1  1, is is,  1 is  is  1 1 is  1 is  1 is 1 is,  is  1 is  1 is  1  1 1  1 is  1  1 1  1  1  2 is,  is a is  is 1 1  1 1  1  1 2 3  1",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 114,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: gather input from organizations and partners across Vermont, to determine what these groups will be in Vermont.\n\nBegin with: \"gather input from organizations and partners across Vermont, to determine what these groups will be in Vermont. Aldo Das Nov 25, 2020·3 min read\n\nAsthe world awaits the results of COVID-19 vaccine clinical trials, we\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-11",
+      "sample_id": 11,
+      "original_prefix_id": 11,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "A thrilling life.\n\nIt's a chance.\nIt's a gamble.\n\nIt's a roll.\nIt's a flip.\nIt's a pick.\nIf you are good.\n\nI am go to go.\n\nGo.\nIt is.\nYou is.\n\nI is. \nIt is.\nI am.\nGo to the I is. it is.\nYou are. \nI am. \nI is.\nYou is.\nI. are. \nI is. I\nIs. I is.\nI am. \nis. I is.\nI is. \nis. is. is. is. is. \nis. is. is. is. is. is. is. \nis. is is. is is. is. is. is is. is. is. \nis. \nis is. is. is is. is is. is is is. is. is is. is\nis is. is. is. is. \nis. is is is. is is. is\nis is. is. is is\nis is. is is. is is. is \nis is is. is\nis. is. is is. is \nis is. is is is. is  is. \nis is. is. is. is is is\nis. is. is \nis is. is. is  is  is\nis is. \nis is. is is. is. is is\nis. \nis. is. \nis is. is is. is. is\nis. \nis is. \nis. \nit is is. is is.\nto is. is. is. is is.  is is  is \nis is is. is  is is. is  is is  is  is  and. is \nis is. is is is  is\nit is is. is. is  is  it is is. \nis is is is  is\ni is is is  is",
+      "processed_text": "A thrilling life.\n\nIt's a chance.\nIt's a gamble.\n\nIt's a roll.\nIt's a flip.\nIt's a pick.\nIf you are good.\n\nI am go to go.\n\nGo.\nIt is.\nYou is.\n\nI is. \nIt is.\nI am.\nGo to the I is. it is.\nYou are. \nI am. \nI is.\nYou is.\nI. are. \nI is. I\nIs. I is.\nI am. \nis. I is.\nI is. \nis. is. is. is. is. \nis. is. is. is. is. is. is. \nis. is is. is is. is. is. is is. is. is. \nis. \nis is. is. is is. is is. is is is. is. is is. is\nis is. is. is. is. \nis. is is is. is is. is\nis is. is. is is\nis is. is is. is is. is \nis is is. is\nis. is. is is. is \nis is. is is is. is  is. \nis is. is. is. is is is\nis. is. is \nis is. is. is  is  is\nis is. \nis is. is is. is. is is\nis. \nis. is. \nis is. is is. is. is\nis. \nis is. \nis. \nit is is. is is.\nto is. is. is. is is.  is is  is \nis is is. is  is is. is  is is  is  is  and. is \nis is. is is is  is\nit is is. is. is  is  it is is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 101,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: I’m Going to Vegas!\n\nBegin with: \"gamblePhoto by Aldric RIVAT on Unsplash\n\nLife’s a gamble.\n\nWill that lottery ticket pay off?\n\nWill the wheel of fortune stop on your number?\n\nCan you roll that lucky seven one more time?\n\nIf you could control\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-12",
+      "sample_id": 12,
+      "original_prefix_id": 12,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Trends are changing for those born with their Sun, Moon, or Ascun, in Sagittarius because Jupiter leaves Capricorn... in the sign of Sagittarius, you must be overjoy and the of those is of be the be happy. is that that is of to learn because you know. is you now this this and you now in this. it is you you are you. is you. you. \nThis is is. It is is. that is. you. is. is. You. is is. is. You is. is. \nis is. is. is. is. to is is. is. is is is. is. to is. be is is. to is is. is. a. to is to to is. that. is is. to. is. is. is. is. is. to. to is. to. is. is is. to is to be is to is to. is is. is to is to. is is. is. is to is and is to is. to is. is is. is  is  to is  is. is  to is to be. is  to is. is is. to  is is. is to is. to  to  is. is is.  to is. is  is.  to is. is. is. to is  to.  to is is. is is.  to. is. is. to is is is.  is. is. to is.  is.  to. is.  is. to is. to is. is to. is is. is to is. is is to  is is.  is. is  to is  to. is.  is. is  to is. to is. is  is. is. is to is to. is. is is  is. is is is to  is. is. to",
+      "processed_text": "Trends are changing for those born with their Sun, Moon, or Ascun, in Sagittarius because Jupiter leaves Capricorn... in the sign of Sagittarius, you must be overjoy and the of those is of be the be happy. is that that is of to learn because you know. is you now this this and you now in this. it is you you are you. is you. you. \nThis is is. It is is. that is. you. is. is. You. is is. is. You is. is. \nis is. is. is. is. to is is. is. is is is. is. to is. be is is. to is is. is. a. to is to to is. that. is is. to. is. is. is. is. is. to. to is. to. is. is is. to is to be is to is to. is is. is to is to. is is. is. is to is and is to is. to is. is is. is  is  to is  is. is  to is to be. is  to is. is is. to  is is. is to is. to  to  is. is is.  to is. is  is.  to is. is. is. to is  to.  to is is. is is.  to. is. is. to is is is.  is. is. to is.  is.  to. is.  is. to is. to is. is to. is is. is to is. is is to  is is.  is. is  to is  to. is.  is. is  to is. to is. is  is. is. is to is to. is. is is  is. is is is to  is. is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 99,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Expand Your Thoughts\n\nBegin with: \"TODAY’S HOROSCOPE — DECEMBER 20th 2020\n\nIf you have the Sun, Moon or Ascendant in Sagittarius, you must be overjoyed because Jupiter has left Capricorn. Under this\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-13",
+      "sample_id": 13,
+      "original_prefix_id": 13,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "be able to. is that so. is what is is. is. is. is. can I is this. is. is. is. this is. be. is. is. this is. is. is. be. is. is. is. is. is. is. is. be. is. is. is. is. is. is. to. is. is. is. is. is. is. is. to. is. is. is. is. to. is. is. to. is. is. to. is. to. to. is. is. to. is. to. is. to. to. to. is. is. to. to. to. is. is. to. is. is. to. to. is. to. to. to. is. to. is. to. to. to. is. to. is. to. to. is. is. to. to. is. to. to. to. to. is. to. to. is. is. to. to. is. is. to. to. is. to. to. is. is. to. to. to. is. is. to. to. to. is. to. to. is. to. to. to. to. is. is. to. to. is. to. is. to. to. to. to. to. is. is. to. to. to. is. to. to. to. is. to. is. to. is. to. to. is. is. is. is. to. is. to. is. is. is. to. is. to. to. to. is. is. to. to. to. is. to. to. to. to. is. is. to. to. to. to. to. to. is.",
+      "processed_text": "be able to. is that so. is what is is. is. is. is. can I is this. is. is. is. this is. be. is. is. this is. is. is. be. is. is. is. is. is. is. is. be. is. is. is. is. is. is. to. is. is. is. is. is. is. is. to. is. is. is. is. to. is. is. to. is. is. to. is. to. to. is. is. to. is. to. is. to. to. to. is. is. to. to. to. is. is. to. is. is. to. to. is. to. to. to. is. to. is. to. to. to. is. to. is. to. to. is. is. to. to. is. to. to. to. to. is. to. to. is. is. to. to. is. is. to. to. is. to. to. is. is. to. to. to. is. is. to. to. to. is. to. to. is. to. to. to. to. is. is. to. to. is. to. is. to. to. to. to. to. is. is. to. to. to. is. to. to. to. is. to. is. to. is. to. to. is. is. is. is. to. is. to. is. is. is. to. is. to. to. to. is. is. to. to. to. is. to. to. to. to. is. is. to. to. to. to. to. to.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 108,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: 2 Simple Ways to Reprogram Your Mind to Do Anything\n\nBegin with: \"How to Change Your Programming to Achieve the Results You Desire.\n\nIf negative thoughts turn into beliefs that determine your behavior, then the opposite holds true. Positive thoughts and beliefs can lead to positive action. This means we can reprogram our minds to\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-14",
+      "sample_id": 14,
+      "original_prefix_id": 14,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "be able to explore the different types of pro.\nand the best for i. for we, we.\nto we on we.\nto we  to be in we \nto in we it is that we we is to to for we is to in\nto you is is to to 1.\nis to a to is to. is to to 1 for is to to.\nto is is to a.\nto it is. to is to is that you is is.\n\nthis is. is to is  to. is is to. is i is to is. is. \nis to is  to is to. is is is is  is 1  is  is.\n  is. is i to is to. is to is to. is  to is to. is is. is is to is  to is  i is is. is  to to is. is. to is is is  to is to is  a to is it is to is to is  is i is 1  1. is is to a 3. is\nis is. is  to is is. is is to is  is 3. is is to. is  to. is is. is  is 1. is  is 1 1 1. is\nis. to is. is is 1. is 1.  is 1.  1 1 1 3. is 1 to. is 1 1. 1. is 1 1 1 1 1. 1. is 1. 1. \n\nare 1 is to to 1. is  1. 1 to is to. is is  to.  is  1 1. is  is. is  is 3.  is  1. is 1. 1 1. 1. i t is 1.",
+      "processed_text": "be able to explore the different types of pro.\nand the best for i. for we, we.\nto we on we.\nto we  to be in we \nto in we it is that we we is to to for we is to in\nto you is is to to 1.\nis to a to is to. is to to 1 for is to to.\nto is is to a.\nto it is. to is to is that you is is.\n\nthis is. is to is  to. is is to. is i is to is. is. \nis to is  to is to. is is is is  is 1  is  is.\n  is. is i to is to. is to is to. is  to is to. is is. is is to is  to is  i is is. is  to to is. is. to is is is  to is to is  a to is it is to is to is  is i is 1  1. is is to a 3. is\nis is. is  to is is. is is to is  is 3. is is to. is  to. is is. is  is 1. is  is 1 1 1. is\nis. to is. is is 1. is 1.  is 1.  1 1 1 3. is 1 to. is 1 1. 1. is 1 1 1 1 1. 1. is 1. 1. \n\nare 1 is to to 1. is  1. 1 to is to. is is  to.  is  1 1. is  is. is  is 3.  is  1. is 1. 1 1. 1.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 99,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: The Ultimate Question:\n\nBegin with: \"The ultimate question most people have in life is, “what should I do?”.\n\nThis question more accurately translates into, “what kind of profession do I want?”, or “what kind of life do I want to lead?”. We’re\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-15",
+      "sample_id": 15,
+      "original_prefix_id": 15,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "It’s it has been said that in our modern world of technology, our memories live in perpetuity. That is all I can be said to be saying. \nI was in your space. I have a way I was told in the past. I was told that I was told to talk.\nI was to talk to the person I want. I can talk to the person you want to me. In I can talk to you. Is this you. It is is. I is it. is is. is this. is it is. is is it is. is this is. is this is this. is this is. is  be is this is. is  is  is. is is is is this is. is is is this is. is is. is is. is is this is. is is. is is. is this is is. is  is. is is this is. is is is is this. is  this is is is  is. is is  is is is  is is is  is. is is is  is. is  is is is is. is is  is  is is  is  is is. is  is is  is  is is 1  is  is. is  is  is. i is is is  is. is  is  is is 1  I  is is is 1  is 1  is 1 is 1  is  1. is  1. is  1. is  1. is  1. 1 is 1. 1  1   is  1  1 1. 1  1.  1 1 1 1  1  1 1 1  1 1 1  1 1  1 1 1 1 1 1 1  1 ",
+      "processed_text": "It’s it has been said that in our modern world of technology, our memories live in perpetuity. That is all I can be said to be saying. \nI was in your space. I have a way I was told in the past. I was told that I was told to talk.\nI was to talk to the person I want. I can talk to the person you want to me. In I can talk to you. Is this you. It is is. I is it. is is. is this. is it is. is is it is. is this is. is this is this. is this is. is  be is this is. is  is  is. is is is is this is. is is is this is. is is. is is. is is this is. is is. is is. is this is is. is  is. is is this is. is is is is this. is  this is is is  is. is is  is is is  is is is  is. is is is  is. is  is is is is. is is  is  is is  is  is is. is  is is  is  is is 1  is  is. is  is  is. i is is is  is. is  is  is is 1  I  is is is 1  is 1  is 1 is 1  is  1. is  1. is  1. is  1. is  1. 1 is 1. 1  1   is  1  1 1. 1  1.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 102,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: A Never-ending Sadderday\n\nBegin with: \"I have been thinking a lot about time lately. In a world in which we used to complain about not having enough of it, I would argue that this year we have had too much of it.\n\nTime seems to move slower when you’re not\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-16",
+      "sample_id": 16,
+      "original_prefix_id": 16,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "It begins with being aware of the influence of the ecosystem. In every corner of the world, there are ecosystems of various types. They vary greatly, but also look at people. They are very much like us. A part of it.\n\nWe are all. We are.\n\nIt is this. It is this, I know. It is.\n\nWe are.\n\nThis is a 1. This is it. This is 1. This is. \n\nThis is. The are. We are. This is. They are a. I is. It is 5. We are not.  It is. This is a. They are. It is.  I is.\n\nThis is. Is is. Is that. This is. \n\nI is. Is this. Is that.  It is. This is.  I is.  i\n\nIs is.  Is this. Is  is.  is.  This is is.  is. is  Is \n\nis is. this is. is. is\n\nis this is  is is  that is is is. is.\n\n is this is is this is  i is this is 1 \n\nis is. \n\nis is this is i is  is i is 1 1.\n\nis is is. \n\nis  is.\n\nis is.  is \n\nis  is is\n\nis is is this 1 1. 1 1. is\n\nis  is is  is 1 1. 1 1\n\nis is  is 1 1\n\nis\n\nis is 1 is\n\nis is 1  1\n\nis\n\nis\n\nis 1 1  1 1\n\nis 1 is  1\n\n1 1\n\nis. \n\nis is  1 1\n\nis 1.\n\nis 1 is 1 1 1  1  1 1. is 1\n 1",
+      "processed_text": "It begins with being aware of the influence of the ecosystem. In every corner of the world, there are ecosystems of various types. They vary greatly, but also look at people. They are very much like us. A part of it.\n\nWe are all. We are.\n\nIt is this. It is this, I know. It is.\n\nWe are.\n\nThis is a 1. This is it. This is 1. This is. \n\nThis is. The are. We are. This is. They are a. I is. It is 5. We are not.  It is. This is a. They are. It is.  I is.\n\nThis is. Is is. Is that. This is. \n\nI is. Is this. Is that.  It is. This is.  I is.  i\n\nIs is.  Is this. Is  is.  is.  This is is.  is. is  Is \n\nis is. this is. is. is\n\nis this is  is is  that is is is. is.\n\n is this is is this is  i is this is 1 \n\nis is. \n\nis is this is i is  is i is 1 1.\n\nis is is. \n\nis  is.\n\nis is.  is \n\nis  is is\n\nis is is this 1 1. 1 1. is\n\nis  is is  is 1 1. 1 1\n\nis is  is 1 1\n\nis\n\nis is 1 is\n\nis is 1  1\n\nis\n\nis\n\nis 1 1  1 1\n\nis 1 is  1\n\n1 1\n\nis. \n\nis is  1 1\n\nis 1.\n\nis 1 is 1 1 1  1  1 1.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 104,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: How Self-Made are you, Really?\n\nBegin with: \"Society isn’t an abstract, we are it, together. Each of us is part of a greater organism, one with which we interact constantly and on which our every action has an impact. Anything we achieve, we never achieve alone; even\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-17",
+      "sample_id": 17,
+      "original_prefix_id": 17,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Prose that highlights the importance of achieving a living wage with your startup.\n\nYou work really hard for years building your company. And you’re burning through your savings as you build your company.\n\nFinally, finally you get your company to be cash flow positive.\n\nYou feel sad but you have to make a good living.\n\nYou have to make a living from your company.\n\nIf you have to take a mortgage  you take out a 500,000 loan.\nIf you have a child you take out a 250, you have to take out 1000 it is you that you have take you take 2 you have that if you take that you is 2 you go is if you have to you go is you is you is your to.\nYou are have is your it is this is  you is  you that you is  you is you.\n\nIt is it is you I is you is that is  I is you is I  I is. to you  I is it is.\nI is this is to. you is. is is it  is. is is  is to to is  I to is  is is. to. is to. is to  is. to is. is is. to. is to is.  is is is to. is to is is is. is is  is. is to is. is to is  is is. is is. to is. is is. to is is is  is is.  is is to is is. is  is is is.  to is. is is. is is. is is  is is to. is is. is is to is. is to. is. is. is. is is is. is  is  1 is. is  1 is. is.  to is is. is is.  to is  is. to is  is. to is  is. to. is. is  is  is 1",
+      "processed_text": "Prose that highlights the importance of achieving a living wage with your startup.\n\nYou work really hard for years building your company. And you’re burning through your savings as you build your company.\n\nFinally, finally you get your company to be cash flow positive.\n\nYou feel sad but you have to make a good living.\n\nYou have to make a living from your company.\n\nIf you have to take a mortgage  you take out a 500,000 loan.\nIf you have a child you take out a 250, you have to take out 1000 it is you that you have take you take 2 you have that if you take that you is 2 you go is if you have to you go is you is you is your to.\nYou are have is your it is this is  you is  you that you is  you is you.\n\nIt is it is you I is you is that is  I is you is I  I is. to you  I is it is.\nI is this is to. you is. is is it  is. is is  is to to is  I to is  is is. to. is to. is to  is. to is. is is. to. is to is.  is is is to. is to is is is. is is  is. is to is. is to is  is is. is is. to is. is is. to is is is  is is.  is is to is is. is  is is is.  to is. is is. is is. is is  is is to. is is. is is to is. is to. is. is. is. is is is. is  is  1 is. is  1 is. is.  to is is. is is.  to is  is. to is  is. to is  is. to. is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 109,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Why Your Startup Isn’t Cashflow Positive Until You Make A Living Wage\n\nBegin with: \"You work really hard for years building your company. And you’re burning through your savings as you build your company.\n\nPicture: Depositphotos\n\nFinally, finally you get your company to cash flow positive.\n\n“Thank goodness,” you say to yourself.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-18",
+      "sample_id": 18,
+      "original_prefix_id": 18,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Another aspect of being in midlife crises is self-doubt.\n\nAnd a part of midlife crisis is the fear that you are where you are and you are just there forever.\n\nTo fix it, I’m going to tell you about \"Why we are the way we are\"\n\nYou are where you are\n\nYou want to be where you want to be\n\nYou want to be\n\nTo get where you want to be\n\nYou are going to have to see how you are\n\nYou want to know you are\n\nYou have to do\n\nYou do not do\n\nYou do not do\n\nYou do not have to do that\n\nDo you do\n\nDo you do that\n\nDo not do that you do\n\nDo you do\n\nDo do do do do to do\n\nDo do do do do do do to do do\n\nYou can do that\n\nYou are do\n\nDo you do\n\nI do do\n\nDo do to do do to do\n\nDo do to to do\n\nDo do to do\n\nDo you do \n\nI do do\n\nDo to to do do to to do to do\n\nDo\n\nThat to a\n\nDo to do to do do to do to do to do\n\nYou do do to to do do do do 1\n\nDo to do to do do\n\nDo to do to do\n\nDo to do to do do do 1 to\n\nDo do to to do do to do to do to\n\nTo to to\n\nTo do to to\n\nYou to to you to\n\nTo to\n\nto to to\n\nTo to to do\n\nYou to to\n\nTo do to\n\nTo to you to do\n\nTo to\n\nTo to to 1\n\nThat to\n\nto do to to to\n\nTo to to\n\nto to\n\nto to 1\n\nTo to to 1\n\nTo to 1 to to\n\nto\n\nDo to to 1\n\nto to do to do\n\nto to to to 1\n\nto do to do do to\n\n",
+      "processed_text": "Another aspect of being in midlife crises is self-doubt.\n\nAnd a part of midlife crisis is the fear that you are where you are and you are just there forever.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 111,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: How to Close the Gaps Between Where You Are and Where You Want to be\n\nBegin with: \"I’m slightly obsessed with gaps.\n\nI always want to know exactly where I am so that I can judge where it is I want to be — and the distance between the two. I need two fixed points.\n\nSo, I’m constantly evaluating\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-19",
+      "sample_id": 19,
+      "original_prefix_id": 19,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Here’s what I'm here about: Background\n\nL\n\nL a\n\nt\n\nt\n\nt\n\nt h\n\ne\n\na\n\nt\n\nr\n\na\n\nr\n\ni\n\na\n\nt\n\nt\n\na\n\nr\n\na\n\nt\n\na\n\nr\n\na\n\nt\n\na\n\nr\n\na\n\nt\n\na\n\nt\n\na\n\nr\n\nt\n\na\n\nt\n\na\n\nt \n\na\n\na\n\nt\n\na\n\na\n\nt\n\na\n\na\n\na\n\na a a a \n\na\n\na a a a a a a a a a \n\nt a a a a a a a a a a\n\na a a a a a a a a a \n\na a a a a a a a a a\n\na a a t a a a a a a a a a \n\na a a\n\na\n\nt\n\na t a t t a a t a t t a t t\n\na a t t a a t t a t t t t t t a t\n\nt t a t t t a t t t t t t a t t \n\nt t a t t a t t a t t a t t t a t t\n\n t t t t a t t t t t a t t\n\n a t t t t t t t t t t t a t t t a t t t a t t t t t\n\n t t t t t a t t\n\nt t t t t t t t  t t  t t t t  t a\n\n t t t t\n\nt t\n\nt t \n\n t t a t\n\n t\n\nt\n\n t t t t t t t a t t a t t t t t t t t t t t t t t t \n\n t t t t t t\n\n t t\n\n t \n\nt a t t t t t t t t 4 t t t t t 4  t 4 t",
+      "processed_text": "Here’s what I'm here about: Background\n\nL\n\nL a\n\nt\n\nt\n\nt\n\nt h\n\ne\n\na\n\nt\n\nr\n\na\n\nr\n\ni\n\na\n\nt\n\nt\n\na\n\nr\n\na\n\nt\n\na\n\nr\n\na\n\nt\n\na\n\nr\n\na\n\nt\n\na\n\nt\n\na\n\nr\n\nt\n\na\n\nt\n\na\n\nt \n\na\n\na\n\nt\n\na\n\na\n\nt\n\na\n\na\n\na\n\na a a a \n\na\n\na a a a a a a a a a \n\nt a a a a a a a a a a\n\na a a a a a a a a a \n\na a a a a a a a a a\n\na a a t a a a a a a a a a \n\na a a\n\na\n\nt\n\na t a t t a a t a t t a t t\n\na a t t a a t t a t t t t t t a t\n\nt t a t t t a t t t t t t a t t \n\nt t a t t a t t a t t a t t t a t t\n\n t t t t a t t t t t a t t\n\n a t t t t t t t t t t t a t t t a t t t a t t t t t\n\n t t t t t a t t\n\nt t t t t t t t  t t  t t t t  t a\n\n t t t t\n\nt t\n\nt t \n\n t t a t\n\n t\n\nt\n\n t t t t t t t a t t a t t t t t t t t t t t t t t t \n\n t t t t t t\n\n t t\n\n t \n\nt a t t t t t t t t 4 t t t t t 4  t 4 t",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 109,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Here’s What Apple’s 4-for-1 Stock Split Means For You\n\nBegin with: \"Background\n\nLate July 2020, Apple’s Board of Directors approved a 4-for-1 stock split decision. At the end of the day on August 24, shares will be distributed amongst shareholders, and then trading on the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-20",
+      "sample_id": 20,
+      "original_prefix_id": 20,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Oozing with desire to buy a sex doll, in today's world where most of us are single or feel alone, I'm a happy man. I am a man I'm a woman I am a happy man. I'm happy I am a happy man and I'm not a woman. I have a son I'm I'm a happy man. I'm a man. I have I am I'm a boy I am a girl I am I'm a happy man. I'm I am a happy man and I am man I can be man. I am I'm a man. I'm I have I a man. I am. I I have a man. I am. I am. I am a man. I am. I is to. I I am. I am to. I am I to. I am to a man I are. I am to. I is a. I is to. I am. I am to. I am to. I am. a. I is to to a man to. I are I. Is. You can to a man. I is I to. I is. to be to I am. to be to a to. I to. I a to a. I is. a. I. To. I a. to. to a I. I is to. I is to a. you. I. a. I is to a to I is. I. to. a. is to. I. I am to I a. is I. is to. a. I is to. to a.  a is to a. I is I. I is. I. I  to a. I a is. to. is to. is. a. is a is to is. is. is. a. is I. is to a. is  I is. I is to a. I  is. to a is. a. a is is",
+      "processed_text": "Oozing with desire to buy a sex doll, in today's world where most of us are single or feel alone, I'm a happy man. I am a man I'm a woman I am a happy man. I'm happy I am a happy man and I'm not a woman. I have a son I'm I'm a happy man. I'm a man. I have I am I'm a boy I am a girl I am I'm a happy man. I'm I am a happy man and I am man I can be man. I am I'm a man. I'm I have I a man. I am. I I have a man. I am. I am. I am a man. I am. I is to. I I am. I am to. I am I to. I am to a man I are. I am to. I is a. I is to. I am. I am to. I am to. I am. a. I is to to a man to. I are I. Is. You can to a man. I is I to. I is. to be to I am. to be to a to. I to. I a to a. I is. a. I. To. I a. to. to a I. I is to. I is to a. you. I. a. I is to a to I is. I. to. a. is to. I. I am to I a. is I. is to. a. I is to. to a.  a is to a. I is I. I is. I. I  to a. I a is. to. is to. is. a. is a is to is. is. is. a. is I. is to a. is  I is. I is to a. I  is. to a is. a.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 102,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Why everyone should buy a sex doll\n\nBegin with: \"There’s nothing weird about owning a sex doll. Most of us would, if they were cheaper. A sex doll costs about as much as a car. I’m talking high-end models, not the inflatable ones. Those run around a hundred\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-21",
+      "sample_id": 21,
+      "original_prefix_id": 21,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Awe inspiring \n\nMy life is \n\nI \n \n 5 it 6  it \n\nBe 5 \n\nI 8 \n\nBe my \n\nBe on \n\nBe I \n\nBe \n\nI \n\nI \n\nBe 5\n\n5 \n\nI 8  I have\n\nI be 1 I be I 4\n' 7\n\nIt 1 1  I\n\n 5 \n\n \n \n1  I\n\n \n 1\n\n1 \n\n Be 5 \n\nI 7 \n\n1 5\n\n1 1\n \n I \n \n You\n\n 8  you \n\nYou 3\n \n 1 \n \n1\n Be \n\n1 \n It \n 1 3\n\n  1\n\n 1 \n \n 1\n\n 1\n 1\n  1 \n\nYou\n\n 1\n\n 1 \n\n \" 7\n 1 7  1\n 1 6  t\n\n 9 6\n\n 4\n 1 \n\n Be 1 \n 1 \n\n I 1\n 4 1\n \n\n 2 9 4 4 4\n\n 9  1\n\n \n1 1\n 6\n 4 1\n\n \n I\n\n 4 1\n 4 1\n \n 4 1\n\n 4 9 9 1\n 1 \n'1\n\n 1\n 1\n \" 1\n 1 \n\n 8\n 1 1  1\n 1 \n \" I\n 1 \n I\n\n 1\n 1 1\n 1 7  4\n 1\n 1  1 \n \" 1\n 1 1  1\n\n 1 4\n \" 8 1 9  6  1 1  1  9  1  1\n  1\n\n 1\n 1  8",
+      "processed_text": "Awe inspiring \n\nMy life is \n\nI \n \n 5 it 6  it \n\nBe 5 \n\nI 8 \n\nBe my \n\nBe on \n\nBe I \n\nBe \n\nI \n\nI \n\nBe 5\n\n5 \n\nI 8  I have\n\nI be 1 I be I 4\n' 7\n\nIt 1 1  I\n\n 5 \n\n \n \n1  I\n\n \n 1\n\n1 \n\n Be 5 \n\nI 7 \n\n1 5\n\n1 1\n \n I \n \n You\n\n 8  you \n\nYou 3\n \n 1 \n \n1\n Be \n\n1 \n It \n 1 3\n\n  1\n\n 1 \n \n 1\n\n 1\n 1\n  1 \n\nYou\n\n 1\n\n 1 \n\n \" 7\n 1 7  1\n 1 6  t\n\n 9 6\n\n 4\n 1 \n\n Be 1 \n 1 \n\n I 1\n 4 1\n \n\n 2 9 4 4 4\n\n 9  1\n\n \n1 1\n 6\n 4 1\n\n \n I\n\n 4 1\n 4 1\n \n 4 1\n\n 4 9 9 1\n 1 \n'1\n\n 1\n 1\n \" 1\n 1 \n\n 8\n 1 1  1\n 1 \n \" I\n 1 \n I\n\n 1\n 1 1\n 1 7  4\n 1\n 1  1 \n \" 1\n 1 1  1\n\n 1 4\n \" 8 1 9  6  1 1  1  9  1  1\n  1\n\n 1\n 1  8",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 99,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Being my own Advocate\n\nBegin with: \"Zion National Park in Utah. Picture taken by yours turly\n\nLearning how to love me through creative writing has proven to be a powerful tool in my life. My thoughts become more apparent, and it leads me to feel confident on my\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-22",
+      "sample_id": 22,
+      "original_prefix_id": 22,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Another year with all its challenges will be more bear and you will see, but you will be. You can be. It can be. It can be. It can be. It can be. You can be. You will be, but you can be. But you can be.  You will be. It will be be. You will be. You will be. You will be. Be you will be. You will be.  Be  you will be. But you will. The will be. be you. Be the. Be that be you. Can be be. I will be.  You will. The will be. be. be. be.  be. be. can be. be. a. be. be. be. be be. be. be. be. be. be. be. be. be. be.  be. be. be. be. be be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be.  be. be. be. be. be. be. be. be. be. be. be. Be be.  I am. is. be. be. be. be. be.  be. be. be. be. be. be. be.  be. be.  be be. be.  be. be  be. be. be  be.  be. be. be  be  I be. be. be be  be  be  be  be. be be be  be. Be  be  be  to be.  be  be  be  be  be  be  be  be. be  be  be  be. be  be. be  be  be  be  be ",
+      "processed_text": "Another year with all its challenges will be more bear and you will see, but you will be. You can be. It can be. It can be. It can be. It can be. You can be. You will be, but you can be. But you can be.  You will be. It will be be. You will be. You will be. You will be. Be you will be. You will be.  Be  you will be. But you will. The will be. be you. Be the. Be that be you. Can be be. I will be.  You will. The will be. be. be. be.  be. be. can be. be. a. be. be. be. be be. be. be. be. be. be. be. be. be. be.  be. be. be. be. be be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be. be.  be. be. be. be. be. be. be. be. be. be. be. Be be.  I am. is. be. be. be. be. be.  be. be. be. be. be. be. be.  be. be.  be be. be.  be. be  be. be. be  be.  be. be. be  be  I be. be. be be  be  be  be  be. be be be  be. Be  be  be  to be.  be  be  be  be  be  be  be  be. be  be  be  be. be  be.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 98,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Moving with Purpose\n\nBegin with: \"Well, it’s official; 2020 is coming to an end. It has been a long year for many and most would agree this year has been notably more difficult than recent times. However your year went, the good news is it\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-23",
+      "sample_id": 23,
+      "original_prefix_id": 23,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "A philosophy on punctuality: be on time. You be on time. I be on time. 4 be. Be on. Punctuality: 3 on. Be 2 5. There 1. on. on. Be on. I is. A is. A 1. on. Is. A is is on be 5. You. A 1 to is. Is. is a. is. a 1 is. Be 1 is. I is. is is. a 1. is 1. be. 1 is a is. a  is 1. is 1. is. a 1 1 1. is a. 1 is is. 1 is. I is. is a is. 1. is 1. is 1 is. is. is. is. 1 is a. 1. 1 1 is is. on 1 is. is a. is 1. is 1. is. 1. 1 1 1 1 1. 1 is. on. a 1. is. 1. is. a 1. is 1. is 1. 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  1. 1 1 1 1 1 1 1  1 1  1 1 1 1 1 1 1 1  1 1 1 1 1 ",
+      "processed_text": "A philosophy on punctuality: be on time. You be on time. I be on time. 4 be. Be on. Punctuality: 3 on. Be 2 5. There 1. on. on. Be on. I is. A is. A 1. on. Is. A is is on be 5. You. A 1 to is. Is. is a. is. a 1 is. Be 1 is. I is. is is. a 1. is 1. be. 1 is a is. a  is 1. is 1. is. a 1 1 1. is a. 1 is is. 1 is. I is. is a is. 1. is 1. is 1 is. is. is. is. 1 is a. 1. 1 1 is is. on 1 is. is a. is 1. is 1. is. 1. 1 1 1 1 1. 1 is. on. a 1. is. 1. is. a 1. is 1. is 1. 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  1.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 107,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Your Punctuality is Reflecting More Than You Know\n\nBegin with: \"Life is anything but predictable. People will argue the validity of free will until the end of time. One thing remains to be true though. So much of life boils down to how you react to it.\n\nI like to think that be proactive is\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-opinion_pieces-instruct-24",
+      "sample_id": 24,
+      "original_prefix_id": 24,
+      "domain": "opinion_pieces",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "\"Give them a question, give them a thought, give them a challenge and a way to see things in a different way.\nYou will not forget this, I will not forget this and nobody will forget this is so much easy to do.\n\nI am so so happy that I am so so happy that I am so so happy.\n\nBut I can not go I am so can not I am so I am so that I can go so.\n\nI do not go I am so I can do this.\n\nDo do this.\nDo do this is do not be do this is do this is do this.\n\nWe do do this is I do do this is.\nDo do do do do this do do do do do this do do do do. \n\nBut is do I can do this is this is it this is to do do is it this is do not do. is do do\nis is do do do. is do this is is do is is do this is\nis is this is do is is this is  is is do \n\nI do is do this is is is is do is I is is  is I is is is I is is. is a is  is  I  is  I a is  is I\nDo is to do it is to. is  do  do is. do do  do is do. is  i  a a. is is do  to 3. is is.  is. to do  is to do. is  to 1.  8. a is 1 9.  8. do  is. is  a is  I. is  is  1.  is  1. 1  1.  is  1.  1  1.  1  1.  1. 1. i  1. 1. 1   to  1.  1.",
+      "processed_text": "\"Give them a question, give them a thought, give them a challenge and a way to see things in a different way.\nYou will not forget this, I will not forget this and nobody will forget this is so much easy to do.\n\nI am so so happy that I am so so happy that I am so so happy.\n\nBut I can not go I am so can not I am so I am so that I can go so.\n\nI do not go I am so I can do this.\n\nDo do this.\nDo do this is do not be do this is do this is do this.\n\nWe do do this is I do do this is.\nDo do do do do this do do do do do this do do do do. \n\nBut is do I can do this is this is it this is to do do is it this is do not do. is do do\nis is do do do. is do this is is do is is do this is\nis is this is do is is this is  is is do \n\nI do is do this is is is is do is I is is  is I is is is I is is. is a is  is  I  is  I a is  is I\nDo is to do it is to. is  do  do is. do do  do is do. is  i  a a. is is do  to 3. is is.  is. to do  is to do. is  to 1.  8. a is 1 9.  8. do  is. is  a is  I. is  is  1.  is  1. 1  1.  is  1.  1  1.  1  1.  1. 1. i  1. 1. 1   to  1.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 104,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an opinion piece about: Twelve Paradoxical Questions on Creativity\n\nBegin with: \"Twelve Paradoxical Questions on Creativity\n\nThese are not quiz questions to get them correct or not, but they are target questions to stimulate your thinking.\n\nI wish almost all questions were like these so that our teachers would not be too busy\""
+        }
+      ]
+    }
+  ]
+}

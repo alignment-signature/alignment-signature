@@ -1,0 +1,243 @@
+{
+  "model_type": "instruct",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400
+  },
+  "intervention": {
+    "mode": "ablate",
+    "direction_path": "data/analysis_results/scaled_ablation/directions/qwen2.5-7b-instruct/v_cross_L14.pt",
+    "layer": 14,
+    "tag": "v_cross_L14_steered_extended"
+  },
+  "domain": "scientific_abstracts",
+  "num_generations": 10,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 0,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "**Abstract**\n\nNatural language call routing can be treated as an instance of topic categorization of documents after speech recognition of calls. This categorization consists of two important parts. The first one is text preprocessing for numerical data extraction and the second one is classification with machine learning algorithms. The main goal of this paper is to present how different text categorization methods were applied in order to improve a natural language call routing system. In this work we have experimented with different techniques from both parts of this categorization. From text preprocessing part, we tested a number of methods for the numerical data extraction including regular expressions, NER and rule-based approaches. From the machine learning part, we experimented with a number of well-known classification techniques like SVM, k-NN, random forests, decision trees. We tested our models on a dataset that we built. Our results show that we get good results when we combine the best numerical data extraction method (rule based approach) with a strong classifier (random forests or decision trees).",
+      "processed_text": "**Abstract**\n\nNatural language call routing can be treated as an instance of topic categorization of documents after speech recognition of calls. This categorization consists of two important parts. The first one is text preprocessing for numerical data extraction and the second one is classification with machine learning algorithms. The main goal of this paper is to present how different text categorization methods were applied in order to improve a natural language call routing system. In this work we have experimented with different techniques from both parts of this categorization. From text preprocessing part, we tested a number of methods for the numerical data extraction including regular expressions, NER and rule-based approaches. From the machine learning part, we experimented with a number of well-known classification techniques like SVM, k-NN, random forests, decision trees. We tested our models on a dataset that we built.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 104,
+        "completion_tokens": 201
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Text categorization methods application for natural language call routing\n\nBegin with: \"Natural language call routing can be treated as an instance of topic categorization of documents after speech recognition of calls. This categorization consists of two important parts. The first one is text preprocessing for numerical data extraction and the second one is classification with machine\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 1,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Insightful findings in political science often require researchers to analyze documents of a certain subject or type. However, these documents are usually contained in large corpora that do not distinguish between relevant and irrelevant documents. In contrast, we can find that the method of adaptive ensembling, which is an unsupervised domain adaptation approach, can be effectively applied to perform document analysis. Our study has shown that this method can improve the performance of text classification and clustering tasks when transferring knowledge from one corpus (the source domain) to another corpus (the target domain). The proposed method selects features that are discriminative to the target domain and then uses a classifier that is trained on the source domain, but adapted to the target domain. By applying our method to several public datasets, we show that our approach yields better results than some common existing methods. Therefore, we recommend the use of adaptive ensembling as a tool for performing political document analysis.",
+      "processed_text": "Insightful findings in political science often require researchers to analyze documents of a certain subject or type. However, these documents are usually contained in large corpora that do not distinguish between relevant and irrelevant documents. In contrast, we can find that the method of adaptive ensembling, which is an unsupervised domain adaptation approach, can be effectively applied to perform document analysis. Our study has shown that this method can improve the performance of text classification and clustering tasks when transferring knowledge from one corpus (the source domain) to another corpus (the target domain). The proposed method selects features that are discriminative to the target domain and then uses a classifier that is trained on the source domain, but adapted to the target domain. By applying our method to several public datasets, we show that our approach yields better results than some common existing methods.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 108,
+        "completion_tokens": 186
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Adaptive Ensembling: Unsupervised Domain Adaptation for Political Document Analysis\n\nBegin with: \"Insightful findings in political science often require researchers to analyze documents of a certain subject or type, yet these documents are usually contained in large corpora that do not distinguish between pertinent and non-pertinent documents. In contrast, we can find\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 2,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "A regioselective synthesis of new mono- and bis-oxindoles containing bis-spiro-heterocyclic hybrids has been envisaged via 1,3-dipolar cycloaddition of azomethine ylides with the corresponding substituted 1,3-dienes. All the compounds synthesized have been fully characterized by various spectroscopic methods including 1D and 2D NMR and IR. The newly synthesized compounds were evaluated for their anti-cancer and antifungal activities. Some of the synthesized compounds showed promising activity in these studies and were selected for in vivo studies against human ovarian cancer cells. This research work is important as it gives us more insight into the synthesis of hybridized bioactive compounds which could be used in developing more effective drugs.",
+      "processed_text": "A regioselective synthesis of new mono- and bis-oxindoles containing bis-spiro-heterocyclic hybrids has been envisaged via 1,3-dipolar cycloaddition of azomethine ylides with the corresponding substituted 1,3-dienes. All the compounds synthesized have been fully characterized by various spectroscopic methods including 1D and 2D NMR and IR. The newly synthesized compounds were evaluated for their anti-cancer and antifungal activities. Some of the synthesized compounds showed promising activity in these studies and were selected for in vivo studies against human ovarian cancer cells.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 110,
+        "completion_tokens": 159
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Synthesis and biological evaluation of new spirooxindoles with embedded pharmacophores\n\nBegin with: \"A regioselective synthesis of new mono and bisoxindoles containing bis spiro heterocyclic hybrids has been envisaged via 1,3-dipolar cycloaddition of azomethine ylides with the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 3,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Purpose – The purpose of this study is to explore the causal link between procurement route and ongoing buyer-supplier relationship.\n\nDesign/methodology/approach – The research draws on literature in the areas of: facilities management (FM) outsourcing; purchasing and supply chain management; service management and business process management (BPM). In particular, this paper is based on the review of literature, analysis of secondary data, and case study research methods. To investigate the problem in question, a questionnaire was distributed to 1200 facilities management (FM) firms from Europe, Asia, North America, and South America. 852 responses were received. After screening the questionnaires, 498 were valid and used in the analysis. The data were analysed using multiple regression techniques. The findings have been reported using tables and figures.\n\nFindings – The results show that there is a significant relationship between the use of internal procurement route and the ongoing buyer-supplier relationship. There is also a significant relationship between the use of external procurement route and the ongoing buyer-supplier relationship. Furthermore, the effect of the use of the internal procurement route on the buyer-supplier relationship is more significant than the effect of the external procurement route.\n\nResearch limitations/implications – This study has only taken into account one kind of procurement routes. Future studies could consider more factors which influence the buyer-supplier relationship. For example, the impact of procurement price, the impact of procurement quality and the impact of procurement time.\n\nPractical implications – In the process of facility management (FM), managers should pay attention to the selection of procurement route. By selecting appropriate procurement route, we can get the good ongoing buyer-supplier relationship.\n\nOriginality/value – This research provides useful information and insights regarding the impact of the use of internal procurement route or external procurement route on the buyer-supplier relationship. It will be beneficial for the practitioners.",
+      "processed_text": "Purpose – The purpose of this study is to explore the causal link between procurement route and ongoing buyer-supplier relationship.\n\nDesign/methodology/approach – The research draws on literature in the areas of: facilities management (FM) outsourcing; purchasing and supply chain management; service management and business process management (BPM). In particular, this paper is based on the review of literature, analysis of secondary data, and case study research methods. To investigate the problem in question, a questionnaire was distributed to 1200 facilities management (FM) firms from Europe, Asia, North America, and South America. 852 responses were received. After screening the questionnaires, 498 were valid and used in the analysis. The data were analysed using multiple regression techniques. The findings have been reported using tables and figures.\n\nFindings – The results show that there is a significant relationship between the use of internal procurement route and the ongoing buyer-supplier relationship. There is also a significant relationship between the use of external procurement route and the ongoing buyer-supplier relationship. Furthermore, the effect of the use of the internal procurement route on the buyer-supplier relationship is more significant than the effect of the external procurement route.\n\nResearch limitations/implications – This study has only taken into account one kind of procurement routes. Future studies could consider more factors which influence the buyer-supplier relationship. For example, the impact of procurement price, the impact of procurement quality and the impact of procurement time.\n\nPractical implications – In the process of facility management (FM), managers should pay attention to the selection of procurement route. By selecting appropriate procurement route, we can get the good ongoing buyer-supplier relationship.\n\nOriginality/value – This research provides useful information and insights regarding the impact of the use of internal procurement route or external procurement route on the buyer-supplier relationship.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 104,
+        "completion_tokens": 380
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Buyer‐supplier collaboration: the aim of FM procurement?\n\nBegin with: \"Purpose – The purpose of this study is to explore the causal link between procurement route and ongoing buyer‐supplier relationship.Design/methodology/approach – The research draws on literature in the areas of: facilities management (FM) outsourcing; purchasing and supply chain\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 4,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "The widespread availability of many emerging services enabled by the Internet of Things (IoT) paradigm passes through the capability to provide long-range connectivity to a massive number of things, overcoming the well-known issues of ad-hoc, short-range networks. This paper investigates how to support massive machine-to-machine (M2M) traffic in heterogeneous networks (HetNets) and 5G cellular networks. We present a novel approach that enables HetNets and 5G networks to cope with the massive M2M traffic load while at the same time providing good Quality of Service (QoS). Our approach relies on HetNets with multi-cell multi-point coordination transmission and we also investigate how to implement HetNets in 5G networks. The performance of our proposed system is evaluated in terms of throughput and delay using Monte Carlo simulations and results show that our approach can provide both high throughput and delay guarantees with good fairness.",
+      "processed_text": "The widespread availability of many emerging services enabled by the Internet of Things (IoT) paradigm passes through the capability to provide long-range connectivity to a massive number of things, overcoming the well-known issues of ad-hoc, short-range networks. This paper investigates how to support massive machine-to-machine (M2M) traffic in heterogeneous networks (HetNets) and 5G cellular networks. We present a novel approach that enables HetNets and 5G networks to cope with the massive M2M traffic load while at the same time providing good Quality of Service (QoS). Our approach relies on HetNets with multi-cell multi-point coordination transmission and we also investigate how to implement HetNets in 5G networks.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 115,
+        "completion_tokens": 185
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: On the Support of Massive Machine-to-Machine Traffic in Heterogeneous Networks and Fifth-Generation Cellular Networks\n\nBegin with: \"The widespread availability of many emerging services enabled by the Internet of Things (IoT) paradigm passes through the capability to provide long-range connectivity to a massive number of things, overcoming the well-known issues of ad-hoc, short-range networks. This\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-10",
+      "sample_id": 10,
+      "original_prefix_id": 5,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "This paper presents comparisons between predicted and measured data for a live GSM (Global System for Mobile Communications) system. Our propagation prediction software tool is based on 3D ray-tracing and it takes into account wave interactions such as free space propagation, reflection, diffraction, and scattering. The underlying simulation model was compared against real-world field test measurements. In addition to the field test measurements, we also used drive test measurements for comparison in some cases. The aim of this study is to evaluate the accuracy of our 3D ray-tracing propagation prediction method in modeling a GSM system. We found that the results showed that the 3D ray-tracing propagation prediction model has a high accuracy level, when compared to the real-world measured data.",
+      "processed_text": "This paper presents comparisons between predicted and measured data for a live GSM (Global System for Mobile Communications) system. Our propagation prediction software tool is based on 3D ray-tracing and it takes into account wave interactions such as free space propagation, reflection, diffraction, and scattering. The underlying simulation model was compared against real-world field test measurements. In addition to the field test measurements, we also used drive test measurements for comparison in some cases. The aim of this study is to evaluate the accuracy of our 3D ray-tracing propagation prediction method in modeling a GSM system.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 107,
+        "completion_tokens": 150
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: A comparison of 3D computer propagation prediction with GSM signal measurements\n\nBegin with: \"This paper presents comparisons between predicted and measured data for a live GSM system. Our propagation prediction software tool is based on 3D-ray tracing, and considers wave interactions, such as free space, reflection, diffraction, and scattering. The underlying\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-11",
+      "sample_id": 11,
+      "original_prefix_id": 6,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Effects of a carboxylated styrene-butadiene-based liquid additive on the microstructure, mechanical strength, and decolorization resistance of an inorganic pigment layer in the color block have been examined. More dense inorganic pigment layer characterized by lower porosity, was formed when this liquid additive was incorporated. The incorporation of the liquid additive improved the physical properties of the inorganic pigment layer. This resulted in a higher mechanical strength and better decolorization resistance of the color block. These results suggest that it is possible to improve the mechanical strength and decolorization resistance of color blocks containing an inorganic pigment layer through the incorporation of a carboxylated styrene-butadiene-based liquid additive.",
+      "processed_text": "Effects of a carboxylated styrene-butadiene-based liquid additive on the microstructure, mechanical strength, and decolorization resistance of an inorganic pigment layer in the color block have been examined. More dense inorganic pigment layer characterized by lower porosity, was formed when this liquid additive was incorporated. The incorporation of the liquid additive improved the physical properties of the inorganic pigment layer. This resulted in a higher mechanical strength and better decolorization resistance of the color block.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 114,
+        "completion_tokens": 143
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Enhancement in the physical properties of inorganic pigment layer in the color block by incorporation of n liquid additive\n\nBegin with: \"Effects of a carboxylated styrene-butadiene-based liquid additive on the microstructure, mechanical strength and decolorization resistance of inorganic pigment layer in the color block have been examined. More dense inorganic pigment layer characterized by lower\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-12",
+      "sample_id": 12,
+      "original_prefix_id": 7,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Here is a scientific research abstract based on the given title:\n\nGHz third harmonic superconducting cavities have been used to increase the peak bunch current and to compensate for nonlinear distortions in the longitudinal phase space due to sinusoidal 1.3 GHz accelerating cavity voltage. The power coupler for a new 1.3 GHz, 6-cell, quarter wave, niobium superconducting cavity for Fermilab will be optimized using simulations in order to reduce the heating of the niobium material due to the skin effect, to increase the Q of the cavity, and to increase the power delivered to the cavity.\n\n*Note: The asterisk at the end of the title is retained as requested, but it does not appear to have any specific meaning or purpose, so it is not expanded in the abstract.",
+      "processed_text": "Here is a scientific research abstract based on the given title:\n\nGHz third harmonic superconducting cavities have been used to increase the peak bunch current and to compensate for nonlinear distortions in the longitudinal phase space due to sinusoidal 1.3 GHz accelerating cavity voltage. The power coupler for a new 1.3 GHz, 6-cell, quarter wave, niobium superconducting cavity for Fermilab will be optimized using simulations in order to reduce the heating of the niobium material due to the skin effect, to increase the Q of the cavity, and to increase the power delivered to the cavity.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 129,
+        "completion_tokens": 166
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: SIMULATIONS AND OPTIMIZATIONS OF A NEW POWER COUPLER FOR 3.9-GHZ SUPERCONDUCTING CAVITIES AT FERMILAB*\n\nBegin with: \"GHz third harmonic superconducting cavities have been used to increase the peak bunch current and to compensate for non-linear distortions in the longitudinal phase space due to sinusoidal 1.3 GHz accelerating cavity voltage (1). The power coupler\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-13",
+      "sample_id": 13,
+      "original_prefix_id": 8,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "In this work, we mainly investigate the effect of PT-symmetric operations on the dynamic behavior of the relative entropy of coherence (RSEOC) for a two-level system under non-Markovian environments and we also propose a feasible physical scheme to recover the RSEOC by utilizing optimal control method. The results show that the PT-symmetric operations can help to increase the RSEOC which has been suppressed by non-Markovian environment, and the optimization methods can make the increase effective. Furthermore, we find out that when the time evolution of the RSEOC starts from an initial value to some other value, the evolution is more sensitive to PT-symmetric operations in the first half of the time than in the second half. And when the RSEOC starts from the maximum to some value, the evolution is more sensitive to PT-symmetric operations in the latter half of the time than in the former half. These results may have potential applications in quantum information processing such as quantum communication and quantum cryptography.",
+      "processed_text": "In this work, we mainly investigate the effect of PT-symmetric operations on the dynamic behavior of the relative entropy of coherence (RSEOC) for a two-level system under non-Markovian environments and we also propose a feasible physical scheme to recover the RSEOC by utilizing optimal control method. The results show that the PT-symmetric operations can help to increase the RSEOC which has been suppressed by non-Markovian environment, and the optimization methods can make the increase effective. Furthermore, we find out that when the time evolution of the RSEOC starts from an initial value to some other value, the evolution is more sensitive to PT-symmetric operations in the first half of the time than in the second half. And when the RSEOC starts from the maximum to some value, the evolution is more sensitive to PT-symmetric operations in the latter half of the time than in the former half.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 111,
+        "completion_tokens": 204
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Effect of PT-Symmetric Operator on Coherence Under the Non-Markovian Environments\n\nBegin with: \"In this work, we mainly investigate effect of PT-symmetric operation on the dynamic behavior of the relative entropy of coherence for a two-level system within non-Markovian environments and put forward a feasible physical scheme to recover coherence by utilizing optimal\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-14",
+      "sample_id": 14,
+      "original_prefix_id": 9,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Endoplasmic reticulum (ER)-associated degradation (ERAD) is a principal mechanism that targets ER-associated proteins for cytosolic proteasomal degradation. Here, our data demonstrate a critical role for the Sel1L-Hrd1 complex in maintaining an early checkpoint in B cell development. Our results show that a mutation in the *Sel1L* gene, which encodes a component of the Sel1L-Hrd1 ERAD complex, causes the death of pro-B cells and prevents them from progressing to pre-B cells. We also found that this mutation leads to upregulation of several important early B cell genes, suggesting that this complex acts as a key negative regulator to control the expression of these early B cell genes. Together, these results indicate that the Sel1L-Hrd1 complex plays a key role in the negative regulation of the expression of some important early B cell genes and the positive regulation of the expression of some important late B cell genes, acting as a check point at the early B cell stage.",
+      "processed_text": "Endoplasmic reticulum (ER)-associated degradation (ERAD) is a principal mechanism that targets ER-associated proteins for cytosolic proteasomal degradation. Here, our data demonstrate a critical role for the Sel1L-Hrd1 complex in maintaining an early checkpoint in B cell development. Our results show that a mutation in the *Sel1L* gene, which encodes a component of the Sel1L-Hrd1 ERAD complex, causes the death of pro-B cells and prevents them from progressing to pre-B cells. We also found that this mutation leads to upregulation of several important early B cell genes, suggesting that this complex acts as a key negative regulator to control the expression of these early B cell genes.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 119,
+        "completion_tokens": 210
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: The Sel1L-Hrd1 Endoplasmic Reticulum-Associated Degradation Complex Manages a Key Checkpoint in B Cell Development.\n\nBegin with: \"Endoplasmic reticulum (ER)-associated degradation (ERAD) is a principal mechanism that targets ER-associated proteins for cytosolic proteasomal degradation. Here, our data demonstrate a critical role for the\""
+        }
+      ]
+    }
+  ]
+}

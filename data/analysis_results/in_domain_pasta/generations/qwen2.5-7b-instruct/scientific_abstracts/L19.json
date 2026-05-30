@@ -1,0 +1,305 @@
+{
+  "model_type": "instruct",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "domain": "scientific_abstracts",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400,
+    "batched": true,
+    "batch_size": 16
+  },
+  "intervention": {
+    "mode": "all_layer_ablate_per_domain",
+    "direction_path": "data/analysis_results/in_domain_pasta/directions/qwen2.5-7b-instruct/scientific_abstracts/v_cross_L19.pt",
+    "extracted_from_domain": "scientific_abstracts",
+    "extracted_from_n_train": 25,
+    "layer_extracted_from": 19,
+    "tag": "v_cross_scientific_abstracts_L19_all_layer_ablated"
+  },
+  "split": {
+    "train_ids": [
+      30,
+      32,
+      34,
+      37,
+      40,
+      41,
+      42,
+      43,
+      44,
+      50,
+      55,
+      62,
+      64,
+      67,
+      68,
+      69,
+      71,
+      76,
+      77,
+      78,
+      87,
+      91,
+      94,
+      95,
+      99
+    ],
+    "test_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "n_train": 25,
+    "n_test": 25
+  },
+  "num_generations": 10,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "**Abstract**\n\nNatural Language Call Routing can be treated as an instance of topic categorization of documents after speech recognition of calls. This categorization consists of two important parts. The first one is *text preprocessing* for *numerical data extraction* and *data cleaning*. The second one is *classification* with *machine learning* algorithms to find most suitable service for this call from pre-sorted list of services and then direct call to the best agent. This paper describes two main methods which are used to classify calls from text and some examples when those methods are used. The goal was not to compare two methods to each other and find the best one, but to try use both methods to solve the call routing problem in the same environment and show how they are working. The result is a working solution and also good start for further research. The first method is *Bayesian Classification* (or Naive Bayes) based algorithm which gives 80% accuracy rate and the second one is *Support Vector Machine* (SVM) with *RBF kernel* which is 85% accurate. The advantage of this SVM model is high accuracy, and the disadvantage is big size - it has more than 150,000 support vectors. SVM is more expensive because of it's complexity, but it's still faster than Naive Bayes. It seems that SVM method gives us slightly more accuracy than Naive Bayes, but this increase in accuracy comes at the price of increasing the model cost. If we need to have the smallest cost, then we should choose Naive Bayes. In this case we will have 3 times faster solution and 2 times less memory used. If the speed of solution isn't very important and the amount of used memory isn't a problem, than you can select SVM. The best choice could be using Naive Bayes and SVM on a different time or using Naive Bayes for first stage and then select the small number",
+      "processed_text": "**Abstract**\n\nNatural Language Call Routing can be treated as an instance of topic categorization of documents after speech recognition of calls. This categorization consists of two important parts. The first one is *text preprocessing* for *numerical data extraction* and *data cleaning*. The second one is *classification* with *machine learning* algorithms to find most suitable service for this call from pre-sorted list of services and then direct call to the best agent. This paper describes two main methods which are used to classify calls from text and some examples when those methods are used. The goal was not to compare two methods to each other and find the best one, but to try use both methods to solve the call routing problem in the same environment and show how they are working. The result is a working solution and also good start for further research. The first method is *Bayesian Classification* (or Naive Bayes) based algorithm which gives 80% accuracy rate and the second one is *Support Vector Machine* (SVM) with *RBF kernel* which is 85% accurate. The advantage of this SVM model is high accuracy, and the disadvantage is big size - it has more than 150,000 support vectors. SVM is more expensive because of it's complexity, but it's still faster than Naive Bayes. It seems that SVM method gives us slightly more accuracy than Naive Bayes, but this increase in accuracy comes at the price of increasing the model cost. If we need to have the smallest cost, then we should choose Naive Bayes. In this case we will have 3 times faster solution and 2 times less memory used. If the speed of solution isn't very important and the amount of used memory isn't a problem, than you can select SVM.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 104,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Text categorization methods application for natural language call routing\n\nBegin with: \"Natural language call routing can be treated as an instance of topic categorization of documents after speech recognition of calls. This categorization consists of two important parts. The first one is text preprocessing for numerical data extraction and the second one is classification with machine\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Abstract:\nIn political science, we often find ourselves interested in analyzing only the part of a document collection that is relevant to the subject, but not necessarily knowing which part of the whole corpus is related and which part isn't. This makes it difficult to extract the document parts that would be needed for analysis.\nInsightful findings in political science often require researchers to analyze documents of a certain subject or type, yet these documents are usually contained in large corpora that do not distinguish between pertinent and non-pertinent documents. In contrast, we can find this kind of information if we can make use of other related information that is available. In our paper, we study unsupervised domain adaptation as an information source to learn to separate the pertinent from the non-pertinent documents in a given topic. We describe a novel way to use the documents that you have already classified into your corpus and a subset of documents with only labels in order to train. We call this new technique adaptive ensembling. We evaluate the performance on a number of different political corpora, and the method shows that it gives good results. The paper concludes with some discussion on the future and the possible applications.",
+      "processed_text": "Abstract:\nIn political science, we often find ourselves interested in analyzing only the part of a document collection that is relevant to the subject, but not necessarily knowing which part of the whole corpus is related and which part isn't. This makes it difficult to extract the document parts that would be needed for analysis.\nInsightful findings in political science often require researchers to analyze documents of a certain subject or type, yet these documents are usually contained in large corpora that do not distinguish between pertinent and non-pertinent documents. In contrast, we can find this kind of information if we can make use of other related information that is available. In our paper, we study unsupervised domain adaptation as an information source to learn to separate the pertinent from the non-pertinent documents in a given topic. We describe a novel way to use the documents that you have already classified into your corpus and a subset of documents with only labels in order to train. We call this new technique adaptive ensembling. We evaluate the performance on a number of different political corpora, and the method shows that it gives good results.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 108,
+        "completion_tokens": 237
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Adaptive Ensembling: Unsupervised Domain Adaptation for Political Document Analysis\n\nBegin with: \"Insightful findings in political science often require researchers to analyze documents of a certain subject or type, yet these documents are usually contained in large corpora that do not distinguish between pertinent and non-pertinent documents. In contrast, we can find\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Regioselective Synthesis of New Spirooxindoles with Embedded Pharmacophores: A Regioselective Synthesis of New Monooxindoles and Bisoxindoles Containing 1,2-Benzisoxazole and 1,3-Benzodioxolane Heterocycles has been Envisaged by Performing 1,3-Dipolar Cycloadditions of Azomethine Ylides Generated from Azodicarboximide with Isatins and Tert-Butyl Hydroxyisoindone. The 1,2-Benzisoxazoles have been Introduced in the Oxindoles at 1′ and/or 2′ Position and the 1,3-Benzodioxolane at the 5 Position. The Compounds have Been Tested for Cytotoxicity against NCI-60 Human Tumor Cells, and Their Biological Potentials Have Been Exploried. Some of the Compounds Showed Cytotoxic Activity Towards Several of the Human Cancer Cell Lines, with IC50 Values in the Molecule Range. The Results Suggest that The Compounds Could Be Further Developed as Possible Anticancer Agents.",
+      "processed_text": "Regioselective Synthesis of New Spirooxindoles with Embedded Pharmacophores: A Regioselective Synthesis of New Monooxindoles and Bisoxindoles Containing 1,2-Benzisoxazole and 1,3-Benzodioxolane Heterocycles has been Envisaged by Performing 1,3-Dipolar Cycloadditions of Azomethine Ylides Generated from Azodicarboximide with Isatins and Tert-Butyl Hydroxyisoindone. The 1,2-Benzisoxazoles have been Introduced in the Oxindoles at 1′ and/or 2′ Position and the 1,3-Benzodioxolane at the 5 Position. The Compounds have Been Tested for Cytotoxicity against NCI-60 Human Tumor Cells, and Their Biological Potentials Have Been Exploried. Some of the Compounds Showed Cytotoxic Activity Towards Several of the Human Cancer Cell Lines, with IC50 Values in the Molecule Range.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 110,
+        "completion_tokens": 241
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Synthesis and biological evaluation of new spirooxindoles with embedded pharmacophores\n\nBegin with: \"A regioselective synthesis of new mono and bisoxindoles containing bis spiro heterocyclic hybrids has been envisaged via 1,3-dipolar cycloaddition of azomethine ylides with the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Purpose – The purpose of this study is to explore the causal link between procurement route and ongoing buyer-supplier relationship.\nDesign/methodology/approach – The research draws on literature in the areas of: facilities management (FM) outsourcing; purchasing and supply chain management; public sector management and procurement; industrial relations; and human resource management. A survey was used to collect data from buyers in the private and public sectors who had purchased services in the UK in the past 12 months. An analysis of regression models was carried out on the data to find out whether there was a relation between procurement routes and the buyer's evaluation of their relation with suppliers in terms of the quality of service received, service delivery time, service level, etc.\nFindings – The author found that when the supplier of a company who buys services uses an online auction site for buying or if the company that does the service procured makes more than 50% of its revenue by selling services like the one it buys for the other company then the quality of the service, its delivery time, the service level, the amount of information shared, and the supplier's price offer will be better than when the company buys the service in a conventional way.\nResearch limitations/implications – The author mentions that only companies which buy services from companies were surveyed, but not the companies which buy the services they want directly from the market. Also, the companies that are very small, do not have internet connection, or do not use internet for purchases, cannot take part in the study.\nPractical implications – Companies can try to use the way they purchase services to get better services, in terms of the quality of the service, the delivery time, and the supplier's service level. Companies can buy the services they want to purchase from the internet through auction, or they can sell their services to get some income, if these two things are possible for them.\nOriginality/value – This is the first study which tries to find out the effect of the",
+      "processed_text": "Purpose – The purpose of this study is to explore the causal link between procurement route and ongoing buyer-supplier relationship.\nDesign/methodology/approach – The research draws on literature in the areas of: facilities management (FM) outsourcing; purchasing and supply chain management; public sector management and procurement; industrial relations; and human resource management. A survey was used to collect data from buyers in the private and public sectors who had purchased services in the UK in the past 12 months. An analysis of regression models was carried out on the data to find out whether there was a relation between procurement routes and the buyer's evaluation of their relation with suppliers in terms of the quality of service received, service delivery time, service level, etc.\nFindings – The author found that when the supplier of a company who buys services uses an online auction site for buying or if the company that does the service procured makes more than 50% of its revenue by selling services like the one it buys for the other company then the quality of the service, its delivery time, the service level, the amount of information shared, and the supplier's price offer will be better than when the company buys the service in a conventional way.\nResearch limitations/implications – The author mentions that only companies which buy services from companies were surveyed, but not the companies which buy the services they want directly from the market. Also, the companies that are very small, do not have internet connection, or do not use internet for purchases, cannot take part in the study.\nPractical implications – Companies can try to use the way they purchase services to get better services, in terms of the quality of the service, the delivery time, and the supplier's service level. Companies can buy the services they want to purchase from the internet through auction, or they can sell their services to get some income, if these two things are possible for them.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 104,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Buyer‐supplier collaboration: the aim of FM procurement?\n\nBegin with: \"Purpose – The purpose of this study is to explore the causal link between procurement route and ongoing buyer‐supplier relationship.Design/methodology/approach – The research draws on literature in the areas of: facilities management (FM) outsourcing; purchasing and supply chain\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "The widespread availability of many emerging services in the Internet of Things (IoT) era passes through the ability to provide long-range communication to a huge number of sensors or small devices, overcoming some of the problems of short-range, small cell ad-hoc networks. This can be done only thanks to third generation (3G), fourth generation (4G), and fifth generation (5G) mobile communications. The research presented in this article presents a description of the research problem, its statement, purpose and solution.\n\t\nAbstract:\nThe recent explosion in the number of mobile devices and users has made it difficult to find sufficient number of spectrum resources and bandwidth for the traffic of all of them to communicate using traditional 3G or 4G mobile networks. A new problem of the Internet of Things (IoT) is that the number of the things which have to connect to the network is huge. In this work we focus on a possible solution: the use of Massive Machine-to-Machine (mM2M) or massive MIMO in 4G or 5G heterogeneous network.\nWe analyze the problem, giving an overview of 3G and 4G and 5G mobile communication standards. Then, we describe the 3GPP heterogeneous network (HetNet), the problems in these network and the solutions used. We then introduce the 5G millimeter wave frequency band and the problems and solutions about using millimeter radio waves as the communication medium. And then we discuss mM2M problem, i.e., what it is and give the solution. In 5G systems it is possible to send many data from the sensor or device to the server at the same time with a huge reduction of delay. The problems which 5G has to face are the huge number of devices, their very low consumption, and so on. We also show the solution: how to divide a single big cell into micro cells and then we have to use Massive MIMO to be able to",
+      "processed_text": "The widespread availability of many emerging services in the Internet of Things (IoT) era passes through the ability to provide long-range communication to a huge number of sensors or small devices, overcoming some of the problems of short-range, small cell ad-hoc networks. This can be done only thanks to third generation (3G), fourth generation (4G), and fifth generation (5G) mobile communications. The research presented in this article presents a description of the research problem, its statement, purpose and solution.\n\t\nAbstract:\nThe recent explosion in the number of mobile devices and users has made it difficult to find sufficient number of spectrum resources and bandwidth for the traffic of all of them to communicate using traditional 3G or 4G mobile networks. A new problem of the Internet of Things (IoT) is that the number of the things which have to connect to the network is huge. In this work we focus on a possible solution: the use of Massive Machine-to-Machine (mM2M) or massive MIMO in 4G or 5G heterogeneous network.\nWe analyze the problem, giving an overview of 3G and 4G and 5G mobile communication standards. Then, we describe the 3GPP heterogeneous network (HetNet), the problems in these network and the solutions used. We then introduce the 5G millimeter wave frequency band and the problems and solutions about using millimeter radio waves as the communication medium. And then we discuss mM2M problem, i.e., what it is and give the solution. In 5G systems it is possible to send many data from the sensor or device to the server at the same time with a huge reduction of delay. The problems which 5G has to face are the huge number of devices, their very low consumption, and so on.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 115,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: On the Support of Massive Machine-to-Machine Traffic in Heterogeneous Networks and Fifth-Generation Cellular Networks\n\nBegin with: \"The widespread availability of many emerging services enabled by the Internet of Things (IoT) paradigm passes through the capability to provide long-range connectivity to a massive number of things, overcoming the well-known issues of ad-hoc, short-range networks. This\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "This paper presents comparisons between predicted and measured data for a live GSM system. Our propagation prediction software tool is based on three-dimensional (3D) ray-tracing and considers wave propagation mechanisms, such as free space, reflection, diffraction, and scattering. The underlying algorithm is described and results from measurements carried out in a commercial environment in Paris, France and the predictions of our algorithm are compared with the measured path-loss values, for cells having 3 sectors. The results show that the prediction is in general within 2-3 dB with an error rate of around 8-15%, which are considered good.",
+      "processed_text": "This paper presents comparisons between predicted and measured data for a live GSM system. Our propagation prediction software tool is based on three-dimensional (3D) ray-tracing and considers wave propagation mechanisms, such as free space, reflection, diffraction, and scattering. The underlying algorithm is described and results from measurements carried out in a commercial environment in Paris, France and the predictions of our algorithm are compared with the measured path-loss values, for cells having 3 sectors.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 107,
+        "completion_tokens": 125
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: A comparison of 3D computer propagation prediction with GSM signal measurements\n\nBegin with: \"This paper presents comparisons between predicted and measured data for a live GSM system. Our propagation prediction software tool is based on 3D-ray tracing, and considers wave interactions, such as free space, reflection, diffraction, and scattering. The underlying\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Effects of a carboxylated styrene-butadiene-based liquid additive on the microstructure, mechanical strength and decolorization resistance of the inorganic pigment layer were investigated. The carboxylated styrene-butadiene-based liquid additive improved the packing density, the number of micropores, and porosity; increased the thickness, and made the surface smoother. Also, the compressive strength (CS) of the samples treated with the 24% liquid additive solution was 1560 kg/cm<sup>2</sup>, a maximum and also bigger than the sample not treated (1483 kg/cm<sup>2</sup>). Also, the decolorization resistance was increased by 290 min (about 75%) due to liquid additive treatment (540 min). The experimental results suggested that the carboxylated styrene-butadiene-based liquid additive could improve the microstructure, mechanical strength, and decolorization resistance of the inorganic pigment layer.",
+      "processed_text": "Effects of a carboxylated styrene-butadiene-based liquid additive on the microstructure, mechanical strength and decolorization resistance of the inorganic pigment layer were investigated. The carboxylated styrene-butadiene-based liquid additive improved the packing density, the number of micropores, and porosity; increased the thickness, and made the surface smoother. Also, the compressive strength (CS) of the samples treated with the 24% liquid additive solution was 1560 kg/cm<sup>2</sup>, a maximum and also bigger than the sample not treated (1483 kg/cm<sup>2</sup>). Also, the decolorization resistance was increased by 290 min (about 75%) due to liquid additive treatment (540 min).",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 114,
+        "completion_tokens": 208
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Enhancement in the physical properties of inorganic pigment layer in the color block by incorporation of n liquid additive\n\nBegin with: \"Effects of a carboxylated styrene-butadiene-based liquid additive on the microstructure, mechanical strength and decolorization resistance of inorganic pigment layer in the color block have been examined. More dense inorganic pigment layer characterized by lower\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "GHz Third Harmonic Superconducting Cavities have been used to Increase the Peak Bunch Current and to Compensate for Nonlinear Distortions in the Longitudinal Phase Space Due to Sinusoidal 1.3 GHz Accelerating Cavity Voltage (1). The Power Coupler of the Third Harmonic Cavity is a very important part that can couple the power to the 3.9 GHz cavity and couple the power back from the 3.9 GHz cavity into the 1.3 GHz cavity. In this work, we have proposed the new design of the third harmonic power coupler which has the advantages of less loss and higher impedance. And then, we have done the computer simulation for the power coupler to find out how it works. Finally, after comparing the result from the simulation, we did the optimization on the power coupler and the parameters of the power coupler meet all the requirements to be put into use. We think the work is meaningful because it makes the simulation results more real and makes us save lots of time and material when doing the experiment. The result of the computer simulation and optimization give the reference to the manufacture. This paper also can offer a reference for the future work.\nNote: As this appears to be a reference to an existing paper and not written by me, it has some repetition. If you do need this sentence structure and would like me to change something or if there is anything else I could help with, please let me know!",
+      "processed_text": "GHz Third Harmonic Superconducting Cavities have been used to Increase the Peak Bunch Current and to Compensate for Nonlinear Distortions in the Longitudinal Phase Space Due to Sinusoidal 1.3 GHz Accelerating Cavity Voltage (1). The Power Coupler of the Third Harmonic Cavity is a very important part that can couple the power to the 3.9 GHz cavity and couple the power back from the 3.9 GHz cavity into the 1.3 GHz cavity. In this work, we have proposed the new design of the third harmonic power coupler which has the advantages of less loss and higher impedance. And then, we have done the computer simulation for the power coupler to find out how it works. Finally, after comparing the result from the simulation, we did the optimization on the power coupler and the parameters of the power coupler meet all the requirements to be put into use. We think the work is meaningful because it makes the simulation results more real and makes us save lots of time and material when doing the experiment. The result of the computer simulation and optimization give the reference to the manufacture. This paper also can offer a reference for the future work.\nNote: As this appears to be a reference to an existing paper and not written by me, it has some repetition.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 129,
+        "completion_tokens": 302
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: SIMULATIONS AND OPTIMIZATIONS OF A NEW POWER COUPLER FOR 3.9-GHZ SUPERCONDUCTING CAVITIES AT FERMILAB*\n\nBegin with: \"GHz third harmonic superconducting cavities have been used to increase the peak bunch current and to compensate for non-linear distortions in the longitudinal phase space due to sinusoidal 1.3 GHz accelerating cavity voltage (1). The power coupler\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "In this work, we mainly investigate the effect of PT-symmetric operator on the dynamical behavior of relative entropy of coherence for a two-level system under non-Markovian environment. We use the exact diagonalization method to calculate the relative entropy of coherence. Based on the results, we propose a feasible physical scheme to recover the quantum coherence by using an optimal pulse sequence to modify the time-dependent phase of PT-symmetric operator in a non-Hermitian system, which means that we modify the imaginary part of the coupling matrix element in this model to get it be the PT-symmetric operator.",
+      "processed_text": "In this work, we mainly investigate the effect of PT-symmetric operator on the dynamical behavior of relative entropy of coherence for a two-level system under non-Markovian environment. We use the exact diagonalization method to calculate the relative entropy of coherence.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 111,
+        "completion_tokens": 121
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Effect of PT-Symmetric Operator on Coherence Under the Non-Markovian Environments\n\nBegin with: \"In this work, we mainly investigate effect of PT-symmetric operation on the dynamic behavior of the relative entropy of coherence for a two-level system within non-Markovian environments and put forward a feasible physical scheme to recover coherence by utilizing optimal\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Endoplasmic reticulum (ER)-associated degradation (ERAD) is a principal mechanism that targets ER- and co-translational misfolded proteins to the lumen of the endoplasmic reticulum (ER) for retro-translocation from the ER and degradation. We found that the Sel1L-Hrd1 complex is required for a key checkpoint in B cell development. The paper reports that the Sel1L-Hrd1 ERAD complex has a critical requirement for the development of the pro-B to pre-B cell transition in mice and humans. It reports that this complex, via the degradation of the protein CMAH, is important for the generation of double strand DNA. In particular, Sel1L and Hrd1 are shown to be essential to allow CMAH to get inside the nucleus through a nuclear localization signal and then have its function, that is to deaminate and convert an adenosine into a deoxyguanosine. Without this Sel1L-Hrd1-mediated function the cells have a defect in generating double strand DNA that is required to have a B cell receptor on the cell surface. As a result, mice without Sel1L or Hrd1 cannot make mature B cells. Further, we also show that the absence of Hrd1 causes the B cells to be hypermethylated at promoter regions as well as to have increased global DNA methylation. Also, this causes to have a reduction in the expression of several genes, such as B cell receptor (B2), Cytokine receptor (IL4R) and others. Finally, the data also indicates that the Hrd1 is responsible, via the ER, for the regulation of gene expression.",
+      "processed_text": "Endoplasmic reticulum (ER)-associated degradation (ERAD) is a principal mechanism that targets ER- and co-translational misfolded proteins to the lumen of the endoplasmic reticulum (ER) for retro-translocation from the ER and degradation. We found that the Sel1L-Hrd1 complex is required for a key checkpoint in B cell development. The paper reports that the Sel1L-Hrd1 ERAD complex has a critical requirement for the development of the pro-B to pre-B cell transition in mice and humans. It reports that this complex, via the degradation of the protein CMAH, is important for the generation of double strand DNA. In particular, Sel1L and Hrd1 are shown to be essential to allow CMAH to get inside the nucleus through a nuclear localization signal and then have its function, that is to deaminate and convert an adenosine into a deoxyguanosine. Without this Sel1L-Hrd1-mediated function the cells have a defect in generating double strand DNA that is required to have a B cell receptor on the cell surface. As a result, mice without Sel1L or Hrd1 cannot make mature B cells. Further, we also show that the absence of Hrd1 causes the B cells to be hypermethylated at promoter regions as well as to have increased global DNA methylation. Also, this causes to have a reduction in the expression of several genes, such as B cell receptor (B2), Cytokine receptor (IL4R) and others.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 119,
+        "completion_tokens": 350
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: The Sel1L-Hrd1 Endoplasmic Reticulum-Associated Degradation Complex Manages a Key Checkpoint in B Cell Development.\n\nBegin with: \"Endoplasmic reticulum (ER)-associated degradation (ERAD) is a principal mechanism that targets ER-associated proteins for cytosolic proteasomal degradation. Here, our data demonstrate a critical role for the\""
+        }
+      ]
+    }
+  ]
+}

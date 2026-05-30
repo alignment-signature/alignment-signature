@@ -1,0 +1,244 @@
+{
+  "model_type": "instruct",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400
+  },
+  "intervention": {
+    "mode": "partial_ablate",
+    "direction_path": "data/analysis_results/scaled_ablation/directions/qwen2.5-7b-instruct/v_cross_L14.pt",
+    "layer": 14,
+    "alpha": 2.0,
+    "tag": "v_cross_L14_partial_ablate_alpha2.00"
+  },
+  "domain": "news_articles",
+  "num_generations": 10,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-news_articles-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "It's set to be one of the most groundbreaking moments in humanity's sixty years of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching. But those looking forward to this pivotal moment will have to wait a little. The US aerospace company SpaceX, which was founded in 2002 by CEO and chief designer Elon Musk, planned to launch a mission that would see a Falcon 9 rocket lift off from Launch Complex 40 at Cape Canaveral Air Force Station before landing it back on Earth. This would be the first test of attempting to recover a rocket after putting a spacecraft into orbit. It wasn't due to happen, though, because there were some technical problems, so it has been pushed back. Instead, the launch is to take place at 11.18am GMT on 6 January.\n\nTo do this, the Falcon 9 rocket was to launch a Dragon spacecraft to deliver supplies to the International Space Station. Once the Dragon spacecraft had returned the rocket is supposed to attempt to land after it came down from space. If successful, it will become the first ever attempt at doing this and the aim is for the company to eventually be able to reuse its rockets. According to SpaceX, the chances of success are only around fifty percent.",
+      "processed_text": "It's set to be one of the most groundbreaking moments in humanity's sixty years of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching. But those looking forward to this pivotal moment will have to wait a little. The US aerospace company SpaceX, which was founded in 2002 by CEO and chief designer Elon Musk, planned to launch a mission that would see a Falcon 9 rocket lift off from Launch Complex 40 at Cape Canaveral Air Force Station before landing it back on Earth. This would be the first test of attempting to recover a rocket after putting a spacecraft into orbit. It wasn't due to happen, though, because there were some technical problems, so it has been pushed back. Instead, the launch is to take place at 11.18am GMT on 6 January.\n\nTo do this, the Falcon 9 rocket was to launch a Dragon spacecraft to deliver supplies to the International Space Station. Once the Dragon spacecraft had returned the rocket is supposed to attempt to land after it came down from space. If successful, it will become the first ever attempt at doing this and the aim is for the company to eventually be able to reuse its rockets.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 247,
+        "completion_tokens": 262
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: SpaceX was planning to land a Falcon 9 rocket at Cape Canaveral today .\nThe rocket was to attempt to land after launching a Dragon capsule .\nBut the launch has been delayed due to an issue with one of the engines .\nIt had already been delayed from earlier this week due to the same issue .\nIt will now take place at 11.18am GMT on Tuesday 6 January .\nAfter launch the first stage of their Falcon 9 rocket will attempt to touch down on a barge after taking Dragon to space .\nIt is the first ever attempt at landing a rocket on solid ground after launch .\nCEO Elon Musk said the ambitious attempt has a 50% chance of working .\nThe company ultimately wants all of its rockets to be reusable .\n\nBegin with: \"It’s set to be one of the most groundbreaking moments in humanity’s six decades of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching. But those looking forward to this pivotal moment will have to wait a little\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a British student journalist was being sexually assaulted by a mob in Tahrir Square. Natasha Smith recounted the experience on her blog and in an interview.\n\nBritish student reporter Natasha Smith was attacked by a mob while covering the election results at Tahrir Square on Saturday. The incident happened when a large group of men surrounded Ms. Smith, stripped her of most of her clothes, and nearly raped her.\n\nMs. Smith said this happened before the election results were announced, but it was not clear whether they announced the result when she had already been attacked or when she was being rescued. She said she was surrounded by men who started “ripping off all my clothes. I have nothing on but my underwear, and I'm trying to put my dress back on, and a few people were saying: 'Get dressed! '\"\n\nIn the interview, Ms. Smith said: \"I can't remember much from that day. There were several moments at which I thought she was going to die.\"\n\nIn her blog post, Ms. Smith wrote: \"I've heard many stories over the last 18 months about how Egyptian men can be a little rude, but this was one step too far.\"\n\nAccording to Ms. Smith, she was then helped out by Egyptians passing through the square to celebrate the elections. One man told the BBC: \"We didn't know what to do. It's the first time we see something like this here. But I was trying to protect her, and we ran out of the Square together.\"\n\nA close friend of Ms. Smith said: \"There were several moments at which I thought she was going to die\" . Another person, who asked for his name to be kept confidential, said: \"I was just in the square, when she came out. I could see a man hitting the back of her legs. I don't know why he was hitting her.\"",
+      "processed_text": "Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a British student journalist was being sexually assaulted by a mob in Tahrir Square. Natasha Smith recounted the experience on her blog and in an interview.\n\nBritish student reporter Natasha Smith was attacked by a mob while covering the election results at Tahrir Square on Saturday. The incident happened when a large group of men surrounded Ms. Smith, stripped her of most of her clothes, and nearly raped her.\n\nMs. Smith said this happened before the election results were announced, but it was not clear whether they announced the result when she had already been attacked or when she was being rescued. She said she was surrounded by men who started “ripping off all my clothes. I have nothing on but my underwear, and I'm trying to put my dress back on, and a few people were saying: 'Get dressed! '\"\n\nIn the interview, Ms. Smith said: \"I can't remember much from that day. There were several moments at which I thought she was going to die.\"\n\nIn her blog post, Ms. Smith wrote: \"I've heard many stories over the last 18 months about how Egyptian men can be a little rude, but this was one step too far.\"\n\nAccording to Ms. Smith, she was then helped out by Egyptians passing through the square to celebrate the elections. One man told the BBC: \"We didn't know what to do. It's the first time we see something like this here. But I was trying to protect her, and we ran out of the Square together.\"\n\nA close friend of Ms. Smith said: \"There were several moments at which I thought she was going to die\" . Another person, who asked for his name to be kept confidential, said: \"I was just in the square, when she came out. I could see a man hitting the back of her legs.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 153,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: British reporter Natasha Smith recounts attack in Tahrir Square .\nSmith says she was mobbed by men who \"started ripping off all my clothes\"\n\"There were several moments at which I thought she was going to die,\" a friend says .\nEgyptians stepped in to protect her and helped her escape, she says .\n\nBegin with: \"Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a British student journalist was being sexually assaulted by a mob in Tahrir Square. Natasha Smith recounted the experience on her blog and in an interview\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Airline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates for legislation that would have allowed passengers who are forced to remain on the tarmac for more than 3 hours to leave the plane.\n\nThe Senate Committee on Environment and Public Works hearing was supposed to be conducted at the Capitol Building, but the organizers had to move the meeting to a hotel near Washington D.C. due to space limitations. As a result, the event lacked the formality that comes when hearings are held in the Capitol Building, with Senators being present.\n\nHowever, this informal hearing did not prevent the event from addressing one of the most important issues regarding passengers' rights: how long they can be stuck on the tarmac of an airport.\n\nSen. Barbara Boxer, who is a sponsor of the proposed law, said that the legislation would help prevent a situation where a passenger is “trapped on a tarmac like sardines in a can”. \n\nDuring the hearing, a witness, which could have been the former CEO of American Airlines, said that he thought it should be allowed that a passenger leaves the airplane if they are stuck on the tarmac for more than 3 hours. In his opinion, the real issue with long tarmac delays should be the frequency or routine of those delays. \n\nIn the hearing, many witnesses also shared their experience of being stuck on planes that sat on a tarmac for several hours. One witness shared that he was stuck on a plane for 13 hours, while a woman who represented herself said she got off a plane which sat for 7 hours on a tarmac and had no where to go, because there was no public transit available.\n\nThis unofficial hearing will hopefully bring attention to the legislation. It should be emphasized that Sen. Boxer’s legislation has already been passed by the Senate",
+      "processed_text": "Airline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates for legislation that would have allowed passengers who are forced to remain on the tarmac for more than 3 hours to leave the plane.\n\nThe Senate Committee on Environment and Public Works hearing was supposed to be conducted at the Capitol Building, but the organizers had to move the meeting to a hotel near Washington D.C. due to space limitations. As a result, the event lacked the formality that comes when hearings are held in the Capitol Building, with Senators being present.\n\nHowever, this informal hearing did not prevent the event from addressing one of the most important issues regarding passengers' rights: how long they can be stuck on the tarmac of an airport.\n\nSen. Barbara Boxer, who is a sponsor of the proposed law, said that the legislation would help prevent a situation where a passenger is “trapped on a tarmac like sardines in a can”. \n\nDuring the hearing, a witness, which could have been the former CEO of American Airlines, said that he thought it should be allowed that a passenger leaves the airplane if they are stuck on the tarmac for more than 3 hours. In his opinion, the real issue with long tarmac delays should be the frequency or routine of those delays. \n\nIn the hearing, many witnesses also shared their experience of being stuck on planes that sat on a tarmac for several hours. One witness shared that he was stuck on a plane for 13 hours, while a woman who represented herself said she got off a plane which sat for 7 hours on a tarmac and had no where to go, because there was no public transit available.\n\nThis unofficial hearing will hopefully bring attention to the legislation. It should be emphasized that Sen.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 145,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Unofficial Capitol Hill hearing addressed concerns over long tarmac delays .\nBill sponsored by Sen. Barbara Boxer would allow fliers to deplane after three hours .\nFormer American Airlines CEO spoke in support of three-hour limit .\nAnother witness said routine delays are more pressing issue .\n\nBegin with: \"Airline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his interim successor were arrested. Among those arrested, the interim chief of the department says he did no wrong.\n\nIn Kings County, California, the local district attorney claims that local police officers have been stealing from people in the community. According to the article, local police officers would impound cars of people who could not afford the release fees they charged. The car owners were then unable to retrieve their cars. After being impounded, the cars were either sold off to private buyers, or the cars were turned over to the police impound lot and the impound lot's owner would then sell the cars. The DA has accused some local police officials, including the former police chief, and the current interim chief, who has said that he did not do anything wrong. The local police department is under strain due to the high amount of arrests.",
+      "processed_text": "The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his interim successor were arrested. Among those arrested, the interim chief of the department says he did no wrong.\n\nIn Kings County, California, the local district attorney claims that local police officers have been stealing from people in the community. According to the article, local police officers would impound cars of people who could not afford the release fees they charged. The car owners were then unable to retrieve their cars. After being impounded, the cars were either sold off to private buyers, or the cars were turned over to the police impound lot and the impound lot's owner would then sell the cars. The DA has accused some local police officials, including the former police chief, and the current interim chief, who has said that he did not do anything wrong.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 157,
+        "completion_tokens": 217
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: DA says officers would impound cars of people who couldn't pay release fees .\nThe impound lot owner would turn cars over to cops, who sold or kept them .\nAmong those arrested are the former chief and the interim chief, who says he did no wrong .\nCNN affiliate says small department is strained by the number of arrests .\n\nBegin with: \"The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "The sister of a man suspected in the shooting of Pakistani teenager Malala Yousufzai has apologized to the victim. \"I apologize to Malala for what my brother, Atta Ullah, did to her,\" said Rehana Haleem.\n\nAccording to local sources, Ms. Haleem said: \"He has brought shame on our family,\" and \"I don't consider Atta Ullah my brother any more.\" She said these comments in a live television interview.\n\nAtta Ullah was allegedly a student at Government High School, Mingora, who was arrested after police received a tip that he was involved in the assassination of Malala, a well-known human rights activist.\n\nMalala Yousufzai was shot in the head while coming back from school, by a man who was part of the Taliban. The shooting attempt occurred in October 2012 in Pakistan.\n\nIn July 2013, Atta Ullah's case was transferred from military to civil courts. He was arrested while traveling from Saudi Arabia to Pakistan via the Afghan border in February 2013.\n\nThe court in Abbottabad, the city where Atta Ullah was being held, has ordered him to be kept in jail until his case comes up before the court. The court is expected to hear the case on April 15, 2013.\n\nIf found guilty, Atta Ullah faces the death penalty. His lawyer however claims that he should be given life imprisonment instead, as the crime is not murder but attempted murder. The lawyer has also accused the police of not taking care of his client properly.\n\nIn the meantime, the sister, Rehana Haleem, says that she will go through the pain and visit Malala to make an apology to her.",
+      "processed_text": "The sister of a man suspected in the shooting of Pakistani teenager Malala Yousufzai has apologized to the victim. \"I apologize to Malala for what my brother, Atta Ullah, did to her,\" said Rehana Haleem.\n\nAccording to local sources, Ms. Haleem said: \"He has brought shame on our family,\" and \"I don't consider Atta Ullah my brother any more.\" She said these comments in a live television interview.\n\nAtta Ullah was allegedly a student at Government High School, Mingora, who was arrested after police received a tip that he was involved in the assassination of Malala, a well-known human rights activist.\n\nMalala Yousufzai was shot in the head while coming back from school, by a man who was part of the Taliban. The shooting attempt occurred in October 2012 in Pakistan.\n\nIn July 2013, Atta Ullah's case was transferred from military to civil courts. He was arrested while traveling from Saudi Arabia to Pakistan via the Afghan border in February 2013.\n\nThe court in Abbottabad, the city where Atta Ullah was being held, has ordered him to be kept in jail until his case comes up before the court. The court is expected to hear the case on April 15, 2013.\n\nIf found guilty, Atta Ullah faces the death penalty. His lawyer however claims that he should be given life imprisonment instead, as the crime is not murder but attempted murder. The lawyer has also accused the police of not taking care of his client properly.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 141,
+        "completion_tokens": 368
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: \"He has brought shame on our family,\" says suspect's sister .\n\"I don't consider Atta Ullah my brother any more,\" she adds .\nThe 23-year-old student is being sought in connection with the attack on Malala .\n\nBegin with: \"The sister of a man suspected in the shooting of Pakistani teenager Malala Yousufzai has apologized to the victim. \"Please convey a message to Malala, that I apologize for what my brother did to her,\" Rehana Haleem\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "More than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday. Many of the displaced civilians have moved to other districts within the North Waziristan area but around 26,000 of them are staying with friends and family outside North Waziristan, a spokesman for the UN High Commissioner for Refugees (UNHCR) told reporters on Wednesday.\n\nIn the past two weeks, airstrikes against militant hideouts have resulted in more than 250 insurgents being killed, the army has said, while the Pakistani Taliban has admitted that some of its men are among those who have been killed.\n\nAccording to the army, the air strikes were launched against areas where there has been fighting between the Pakistani Taliban, al-Qaeda and other militant groups.\n\nNorth Waziristan, an area of over 8,200 square kilometers, is situated just to the east of the North and South Waziristan, which are also part of the Federally Administered Tribal Areas, FATA, region. The FATA region is not under provincial or federal control.\n\nIt should be noted that the army is not targeting women, children, the old and the disabled. However, in a news conference, a senior Pakistani security official explained that the air strikes were necessary, saying: \"It's a very important target, the enemy is hiding in these caves.\"\n\nA spokesman from the International Committee of the Red Cross (ICRC) said, \"We've seen the conditions of many of the internally displaced people we have met, and they're terrible, it's hard for us to describe what these poor people have gone through. They lost everything, they've left behind their homes, their animals, their fields. They don't know how long this is going to take.\"\n\nThe United Nations, the ICRC, international",
+      "processed_text": "More than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday. Many of the displaced civilians have moved to other districts within the North Waziristan area but around 26,000 of them are staying with friends and family outside North Waziristan, a spokesman for the UN High Commissioner for Refugees (UNHCR) told reporters on Wednesday.\n\nIn the past two weeks, airstrikes against militant hideouts have resulted in more than 250 insurgents being killed, the army has said, while the Pakistani Taliban has admitted that some of its men are among those who have been killed.\n\nAccording to the army, the air strikes were launched against areas where there has been fighting between the Pakistani Taliban, al-Qaeda and other militant groups.\n\nNorth Waziristan, an area of over 8,200 square kilometers, is situated just to the east of the North and South Waziristan, which are also part of the Federally Administered Tribal Areas, FATA, region. The FATA region is not under provincial or federal control.\n\nIt should be noted that the army is not targeting women, children, the old and the disabled. However, in a news conference, a senior Pakistani security official explained that the air strikes were necessary, saying: \"It's a very important target, the enemy is hiding in these caves.\"\n\nA spokesman from the International Committee of the Red Cross (ICRC) said, \"We've seen the conditions of many of the internally displaced people we have met, and they're terrible, it's hard for us to describe what these poor people have gone through. They lost everything, they've left behind their homes, their animals, their fields. They don't know how long this is going to take.\"",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 130,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Civilians flee North Waziristan as planes strike militants .\nMore than 250 insurgents have been killed, army says .\nThe Pakistani Taliban is among the targets .\n\nBegin with: \"More than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday. Many of the displaced civilians have moved\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence. Six days ago, two bombs exploded near the finish line at the Boston Marathon. It's been hard to think about that race since then, but today's race is the start of healing. \n\nThe London Marathon will be held a week after the Boston Marathon bombing, and the city will be full of runners and spectators. But it will not be just any race. In memory of the people who died, runners, organizers, and spectators will stop for a minute of silence. Some athletes and spectators will wear a black ribbon as a sign of their support.\n\nIt won't be easy for the security service, but they will have a lot of people helping them watch over everyone. They can check your bag, or ask you questions, so please stay calm and answer them.\n\nThe London Marathon is a good event to test out for the Olympic Games in 2012. If the organizers do well, they are confident that they will also do well with the big Olympics. Everyone hopes that this race can be a big success.\n\nIt's a big event for all the runners, the security people, and everyone in the city. It's important to help each other. That's why there is going to be a silence, because some people were hurt in Boston. The runners who were there that day, and all the other people in the race, want to make the world a better place.",
+      "processed_text": "Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence. Six days ago, two bombs exploded near the finish line at the Boston Marathon. It's been hard to think about that race since then, but today's race is the start of healing. \n\nThe London Marathon will be held a week after the Boston Marathon bombing, and the city will be full of runners and spectators. But it will not be just any race. In memory of the people who died, runners, organizers, and spectators will stop for a minute of silence. Some athletes and spectators will wear a black ribbon as a sign of their support.\n\nIt won't be easy for the security service, but they will have a lot of people helping them watch over everyone. They can check your bag, or ask you questions, so please stay calm and answer them.\n\nThe London Marathon is a good event to test out for the Olympic Games in 2012. If the organizers do well, they are confident that they will also do well with the big Olympics. Everyone hopes that this race can be a big success.\n\nIt's a big event for all the runners, the security people, and everyone in the city. It's important to help each other. That's why there is going to be a silence, because some people were hurt in Boston.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 153,
+        "completion_tokens": 329
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Six days after Boston Marathon bombings, thousands of runners will compete in London .\nSpecial event marked by 30 second silence, black solidarity ribbons .\nStepped-up security with increased searches and police on streets .\nOlympics 2012 good training ground for staging international sporting events .\n\nBegin with: \"Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence. Six days after\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Marcel Siem held his nerve amid a late charge from Francesco Molinari to take the Open de France - his first European Tour title for eight years. The German finished on eight-under-par, one shot better than Molinari who recorded a level par (72) in the final round.\n\nIn Sunday's final round, Siem held on for victory, holding off the strong challenge of Italy's Francesco Molinari. The match was tight until the last round when Siem and Molinari both had to play well to get a clear win.\n\nThis tournament is part of the European tour and is the Open de France, which is played annually, not every year, in the city of Paris, France. \n\nIt is the first major victory of Siem, the winner. He was the best out of 227 players, 50 of which were from France. They all took part in this week long tournament that ended last night.\n\nMolinari was the only other player to break par during the final round, but unfortunately he couldn't overtake Siem.\n\nThe Open de France, which was a long and difficult tournament, was played at the Le Golf National Course. \n\nAlso at the tournament, a young rookie from the US, Ted Potter, won his first PGA tour event.\n\nThe tournament was a difficult and a long tournament, but it all came down to the final round when Siem proved himself the best. He will be the number one favorite to do well again. \n\nThe next tournament on the European Tour and the PGA Tour will come up very soon.",
+      "processed_text": "Marcel Siem held his nerve amid a late charge from Francesco Molinari to take the Open de France - his first European Tour title for eight years. The German finished on eight-under-par, one shot better than Molinari who recorded a level par (72) in the final round.\n\nIn Sunday's final round, Siem held on for victory, holding off the strong challenge of Italy's Francesco Molinari. The match was tight until the last round when Siem and Molinari both had to play well to get a clear win.\n\nThis tournament is part of the European tour and is the Open de France, which is played annually, not every year, in the city of Paris, France. \n\nIt is the first major victory of Siem, the winner. He was the best out of 227 players, 50 of which were from France. They all took part in this week long tournament that ended last night.\n\nMolinari was the only other player to break par during the final round, but unfortunately he couldn't overtake Siem.\n\nThe Open de France, which was a long and difficult tournament, was played at the Le Golf National Course. \n\nAlso at the tournament, a young rookie from the US, Ted Potter, won his first PGA tour event.\n\nThe tournament was a difficult and a long tournament, but it all came down to the final round when Siem proved himself the best. He will be the number one favorite to do well again.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 154,
+        "completion_tokens": 323
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: German Marcel Siem wins the Open de France at Le Golf National .\nSiem holds off late charge from Francesco Molinari to win by one shot .\nLee Westwood fine after an injury scare during Saturday's round .\nRookie Ted Potter becomes PGA Tour's sixth first-time winner of 2012 .\n\nBegin with: \"Marcel Siem held his nerve amid a late charge from Francesco Molinari to take the Open de France -- his first European Tour title for eight years. The German finished on eight-under-par, one shot better than Molinari who recorded\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "**‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humorously citing a supposed conflict of interest between his companies Tesla and SpaceX.**\n\nOn 25 January, American entrepreneur and media personality Elon Musk was a surprise guest on the latest episode of The Simpsons. During the episode, a comment was made by Lisa Simpson, daughter of Homer Simpson, regarding the amount of \"rocket fuel\" that Mr Musk uses, considering he is the CEO of both an electric car company (Tesla) and a space exploration company (SpaceX).\n\nLisa Simpson's comment was seen as a joke because it could be thought that there may be a conflict of interest, as a car company and a space exploration company would both use a significant amount of power and fuel. However, Mr Musk posted a reply to this, via twitter, saying that rockets where the current best way to go into space. He further added that all other ways of going into space, such as electric power, is impossible. In the same post, he also mentioned that some other ways, like space elevators, would not work until they become technologically possible.",
+      "processed_text": "**‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humorously citing a supposed conflict of interest between his companies Tesla and SpaceX.**\n\nOn 25 January, American entrepreneur and media personality Elon Musk was a surprise guest on the latest episode of The Simpsons. During the episode, a comment was made by Lisa Simpson, daughter of Homer Simpson, regarding the amount of \"rocket fuel\" that Mr Musk uses, considering he is the CEO of both an electric car company (Tesla) and a space exploration company (SpaceX).\n\nLisa Simpson's comment was seen as a joke because it could be thought that there may be a conflict of interest, as a car company and a space exploration company would both use a significant amount of power and fuel. However, Mr Musk posted a reply to this, via twitter, saying that rockets where the current best way to go into space. He further added that all other ways of going into space, such as electric power, is impossible.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 210,
+        "completion_tokens": 248
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: South African-born Elon Musk responded to comments by Lisa Simpson .\nHe appeared in the latest episode of The Simpsons on 25 January .\nIn it Lisa cites a potential conflict of interest between his electric car company Tesla and space exploration company SpaceX .\n'For a man who likes electric cars he sure burns a lot of rocket fuel,' she said .\nBut responding to the jibe on Twitter, Mr Musk said rockets were the only way to currently reach orbit .\nHe said other methods like electric power were simply 'impossible'\nAnd other proposals like space elevators or railguns were not technologically feasible yet .\n\nBegin with: \"‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humourously citing a supposed conflict of interest between his companies Tesla and\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic. And the fact early men and women took on the different roles of hunters and gatherers may explain why just one painting at the National Gallery is by a woman.\n\nProf. Gloria Moss, from University of Toronto, is challenging the stereotypical idea of men being more interested in sports cars, guns, or high tech gadgets while women like flowers, dolls, and dresses. The professor has researched the idea that men and women may see the world differently.\n\nProf Moss believes that it is the way they were formed that determines their tastes. She has written a book, \"Gender and Cognition: How Men and Women See the World Differently,\" which is full of experiments and examples supporting her idea that the differences between the ways men and women see things is real.\n\nMen, according to Prof Moss, had to hunt, and she says that means they have evolved a \"spacial and rotational brain\". In contrast, women would gather, so they have developed better memory and visual acuity.\n\nThe professor said that if you show both men and women paintings, men will tend to like ones which do not have many colors and have dark background, while women will go for paintings which have colours, show people and plants.\n\nAccording to Prof Moss there is a big difference in the way men and women use color. She claims that men are more colour blind than women, but she also claims that women use colours in a way that is different too, because of the way women think.\n\nShe has even tested her theory on her own. She says when she was doing house painting, a man came to her, and she told him that he could pick any colors except pink. He told her that he was colour blind, but he thought that pink is not a color!\n\nSo, when a man looks at a painting, he sees it in a certain way. When a woman does the",
+      "processed_text": "Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic. And the fact early men and women took on the different roles of hunters and gatherers may explain why just one painting at the National Gallery is by a woman.\n\nProf. Gloria Moss, from University of Toronto, is challenging the stereotypical idea of men being more interested in sports cars, guns, or high tech gadgets while women like flowers, dolls, and dresses. The professor has researched the idea that men and women may see the world differently.\n\nProf Moss believes that it is the way they were formed that determines their tastes. She has written a book, \"Gender and Cognition: How Men and Women See the World Differently,\" which is full of experiments and examples supporting her idea that the differences between the ways men and women see things is real.\n\nMen, according to Prof Moss, had to hunt, and she says that means they have evolved a \"spacial and rotational brain\". In contrast, women would gather, so they have developed better memory and visual acuity.\n\nThe professor said that if you show both men and women paintings, men will tend to like ones which do not have many colors and have dark background, while women will go for paintings which have colours, show people and plants.\n\nAccording to Prof Moss there is a big difference in the way men and women use color. She claims that men are more colour blind than women, but she also claims that women use colours in a way that is different too, because of the way women think.\n\nShe has even tested her theory on her own. She says when she was doing house painting, a man came to her, and she told him that he could pick any colors except pink. He told her that he was colour blind, but he thought that pink is not a color!\n\nSo, when a man looks at a painting, he sees it in a certain way.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 167,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Prof Gloria Moss claims that men and women see things differently .\nShe said that men, as hunters, have better rotational and spacial vision .\nIn her book, Prof Moss claims that men tend to be more colour blind .\nMen like paintings that are darker and have fewer colours .\nWomen prefer colourful paintings featuring people and plants .\nOnly one painting at the National Gallery is by a woman .\n\nBegin with: \"Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic. And the fact early men and women took on the different roles of hunters and gatherers may explain why just one painting\""
+        }
+      ]
+    }
+  ]
+}

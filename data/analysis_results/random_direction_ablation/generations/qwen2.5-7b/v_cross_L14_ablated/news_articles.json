@@ -1,0 +1,242 @@
+{
+  "model_type": "instruct",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400
+  },
+  "intervention": {
+    "mode": "ablate",
+    "direction_path": "random_direction_ablation_results/qwen2.5-7b/directions/v_cross_L14.pt",
+    "tag": "v_cross_L14_ablated"
+  },
+  "domain": "news_articles",
+  "num_generations": 10,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-news_articles-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 3,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his interim replacement, have been charged. The interim chief says he did not do anything wrong.\nThe DA said that the officers would impound the cars of people who were unable to pay the court costs associated with their release from jail. He also said that the impound lot owner would turn the cars over to the police, who would sell or keep them for themselves.\nAccording to a CNN affiliate, this small department has had a difficult time coping with the number of charges they have had to deal with. It was reported that there was a backlog of 40 cases that the small department had to process, which led to the arrest of the six officers.",
+      "processed_text": "The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his interim replacement, have been charged. The interim chief says he did not do anything wrong.\nThe DA said that the officers would impound the cars of people who were unable to pay the court costs associated with their release from jail. He also said that the impound lot owner would turn the cars over to the police, who would sell or keep them for themselves.\nAccording to a CNN affiliate, this small department has had a difficult time coping with the number of charges they have had to deal with.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 157,
+        "completion_tokens": 181
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: DA says officers would impound cars of people who couldn't pay release fees .\nThe impound lot owner would turn cars over to cops, who sold or kept them .\nAmong those arrested are the former chief and the interim chief, who says he did no wrong .\nCNN affiliate says small department is strained by the number of arrests .\n\nBegin with: \"The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 15,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Former world No. 1s Maria Sharapova and Caroline Wozniacki lit up the court at the Miami Masters on Thursday, but the lights went out on Agnieszka Radwańkowa and Marion Bartoli in the night session, while top seed Novak Djokovic made it through to the men's semi-finals.\nIn the women's tournament, Sharapova defeated world No. 2 Wozniacki to get to her fourth Miami Master's final. The match was closely contested, but Sharapova emerged the winner to book her place in the final of the tournament for the fourth time, having previously won the event in 2006, 2008 and 2009.\nThe other women's semi-final is to take place between top seed Radwańkowa and French player Marion Bartoli. Unfortunately, the second part of this match that was scheduled for that day, was postponed due to the light failing at the venue.\nIn the men's part of the tournament, top seed and World No. 1 Djokovic is in the last four after defeating third seed and fellow World No. 4 David Ferrer. Djokovic will next face Juan Monaco, who defeated American No. 1 Mardy Fish.",
+      "processed_text": "Former world No. 1s Maria Sharapova and Caroline Wozniacki lit up the court at the Miami Masters on Thursday, but the lights went out on Agnieszka Radwańkowa and Marion Bartoli in the night session, while top seed Novak Djokovic made it through to the men's semi-finals.\nIn the women's tournament, Sharapova defeated world No. 2 Wozniacki to get to her fourth Miami Master's final. The match was closely contested, but Sharapova emerged the winner to book her place in the final of the tournament for the fourth time, having previously won the event in 2006, 2008 and 2009.\nThe other women's semi-final is to take place between top seed Radwańkowa and French player Marion Bartoli. Unfortunately, the second part of this match that was scheduled for that day, was postponed due to the light failing at the venue.\nIn the men's part of the tournament, top seed and World No. 1 Djokovic is in the last four after defeating third seed and fellow World No. 4 David Ferrer. Djokovic will next face Juan Monaco, who defeated American No.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 265
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Maria Sharapova beats Caroline Wozniacki to reach her fourth Miami Masters final .\nAgnieszka Radwanka defeats Marion Bartoli in match interrupted by light failures .\nWorld No. 1 Novak Djokovic reaches men's semifinals after beating David Ferrer .\nDjokovic's last four opponent will be Juan Monaco, who beat U.S. No. 1 Mardy Fish .\n\nBegin with: \"Former world No. 1s Maria Sharapova and Caroline Wozniacki lit up the court at the Miami Masters on Thursday, but the lights went out on Agnieszka Radwanska and Marion Bartoli in the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 20,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "A Florida Teenager Was Set On Fire by His Friends and Is Undergoing Skin Graft Surgery\nA Florida teenager who was severely burned when he was set on fire by some of his friends is undergoing skin graft surgery as the first step in his recovery. Hospital spokeswoman Dori Jones told the local news that the 15-year-old, Michael Brewer, \"was in guarded condition and would be transferred to the intensive care unit later today.\" She added that more surgeries are scheduled.\nAccording to local news reports, Michael was severely burned on October 12, when some of his friends allegedly set him on fire at a party. Three of the five suspects have pleaded not guilty to attempted murder.\nMr. Brewer’s family was not immediately available for comment and it is not known if Mr. Brewer himself knows what is going on or if he is able to talk right now.\nThe family of Mr. Brewer has hired an attorney, but we do not know how the case is proceeding in court and there may or may not be any updates. For example, there will probably be a preliminary hearing to see if there is enough evidence to take the case to trial. We do not know how the prosecutor plans to proceed with this case.\nFor more information on the case and updates you can follow the进展 in the local newspaper or news website.",
+      "processed_text": "A Florida Teenager Was Set On Fire by His Friends and Is Undergoing Skin Graft Surgery\nA Florida teenager who was severely burned when he was set on fire by some of his friends is undergoing skin graft surgery as the first step in his recovery. Hospital spokeswoman Dori Jones told the local news that the 15-year-old, Michael Brewer, \"was in guarded condition and would be transferred to the intensive care unit later today.\" She added that more surgeries are scheduled.\nAccording to local news reports, Michael was severely burned on October 12, when some of his friends allegedly set him on fire at a party. Three of the five suspects have pleaded not guilty to attempted murder.\nMr. Brewer’s family was not immediately available for comment and it is not known if Mr. Brewer himself knows what is going on or if he is able to talk right now.\nThe family of Mr. Brewer has hired an attorney, but we do not know how the case is proceeding in court and there may or may not be any updates. For example, there will probably be a preliminary hearing to see if there is enough evidence to take the case to trial. We do not know how the prosecutor plans to proceed with this case.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 165,
+        "completion_tokens": 268
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Hospital spokeswoman says Michael Brewer having own skin put onto burned areas .\nBrewer, 15, in guarded condition, will go back to intensive care after procedure .\nMore surgeries to come; October 12 attack left burns over 65 percent of his body .\n3 of the 5 teens accused of setting Brewer on fire plead not guilty to attempted murder .\n\nBegin with: \"A Florida teenager attacked and set on fire last month, allegedly by five teenage friends, was undergoing skin graft surgery Friday, the first procedure in his recovery, a hospital spokeswoman said. Michael Brewer, who suffered burns over 65 percent of his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 22,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "One investigative tip can lead to another -- and another. Linda Abrams, a genealogy gumshoe, went to Texas to match handwriting samples. She spent a couple weeks in Kentucky following a tip, only to find it was just hearsay.\n\nBut those leads did not stop Abrams from finding answers to questions that have haunted the families of the Confederate submarine crew of the H.L. Hunley for more than 150 years. Her research has solved several long-standing mysteries, including which soldier carried a gold coin from his mother. But, in a twist ending, he apparently never gave the coin back to her.\n\nThe Hunley, the first submarine to sink an enemy ship during battle, went down on February 17, 1864 after sinking a Union warship. Since then, the crew's names and biographical information have been lost. The identities of the seven privates and one lieutenant who served aboard the Hunley were all but forgotten.\n\nDNA tests were able to identify only one member of the crew, but Abrams managed to use census data, marriage certificates and military records to piece together a family tree of each of the eight men. She discovered their parents, their wives, their children and where they lived. And in some cases, she even found a photograph.\n\nShe has been researching the Hunley for nearly two decades, after being inspired when she saw the television special The Hunley Mystery, which aired on History Channel. She began working as a volunteer with the H. L. Hunley Commission. She was given access to records, photos and other items.\n\n\"It's very exciting,\" she said. \"It's very interesting. I don't get tired.\"\n\nAccording to the records, the captain, George Dixon, had a gold coin from his mother. After the Hunley went down, they searched through his pockets but the coin was never recovered. It was thought to have sunk with the submarine.\n\nAbrams found out that one of the soldiers, William Alexander",
+      "processed_text": "One investigative tip can lead to another -- and another. Linda Abrams, a genealogy gumshoe, went to Texas to match handwriting samples. She spent a couple weeks in Kentucky following a tip, only to find it was just hearsay.\n\nBut those leads did not stop Abrams from finding answers to questions that have haunted the families of the Confederate submarine crew of the H.L. Hunley for more than 150 years. Her research has solved several long-standing mysteries, including which soldier carried a gold coin from his mother. But, in a twist ending, he apparently never gave the coin back to her.\n\nThe Hunley, the first submarine to sink an enemy ship during battle, went down on February 17, 1864 after sinking a Union warship. Since then, the crew's names and biographical information have been lost. The identities of the seven privates and one lieutenant who served aboard the Hunley were all but forgotten.\n\nDNA tests were able to identify only one member of the crew, but Abrams managed to use census data, marriage certificates and military records to piece together a family tree of each of the eight men. She discovered their parents, their wives, their children and where they lived. And in some cases, she even found a photograph.\n\nShe has been researching the Hunley for nearly two decades, after being inspired when she saw the television special The Hunley Mystery, which aired on History Channel. She began working as a volunteer with the H. L. Hunley Commission. She was given access to records, photos and other items.\n\n\"It's very exciting,\" she said. \"It's very interesting. I don't get tired.\"\n\nAccording to the records, the captain, George Dixon, had a gold coin from his mother. After the Hunley went down, they searched through his pockets but the coin was never recovered. It was thought to have sunk with the submarine.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 147,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Genealogist tries to fill out details of doomed Civil War submarine crew .\nThe Hunley went down off South Carolina after sinking a Civil War vessel .\nLittle was known about the eight men; DNA matches elusive for all but one .\nDid the captain carry gold coin from a romantic interest?\n\nBegin with: \"One investigative tip can lead to another -- and another. Linda Abrams, a genealogy gumshoe, went to Texas to match handwriting samples. She spent a couple weeks in Kentucky following a tip, only to find it was just hearsay.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 26,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Defender Per Mertesacker has called on Arsenal to show their Barclays Premier League title challenge is very much 'alive' when they head to West Brom for Saturday's lunchtime kick-off.  \nThe Gunners produced a much-improved, composed display against Stoke at the weekend, although they were still not at their best and could only manage to draw 1-1. It will be a case of more of the same in Saturday's game at The Hawthorns if they are going to have any chance of picking up the three points.  \nArsenal are currently sitting in eighth position after an unimpressive start to the season. They picked up one win from the first four games, while they have picked up seven points from a possible 12. Mertesacker has already admitted that things have been going a little bit wrong in the early part of the season.  \nThe Arsenal defender continued: “There was no shame in not finishing as champions last year, we all know it’s tough to do it, it’s a good team here, a good group of players and you can go on and do it. But we need to stay focused, and that is what the lads will do now.”  \nSaturday is a big game against West Brom as they look to get back to winning ways. In the last game between these two teams, West Brom beat Arsenal 2-0 in October last year, which is something that will be high on the minds of the Arsenal players. Winning this game would be very important for the team as it would lift them to fifth place, which would also make Mertesacker happier.",
+      "processed_text": "Defender Per Mertesacker has called on Arsenal to show their Barclays Premier League title challenge is very much 'alive' when they head to West Brom for Saturday's lunchtime kick-off.  \nThe Gunners produced a much-improved, composed display against Stoke at the weekend, although they were still not at their best and could only manage to draw 1-1. It will be a case of more of the same in Saturday's game at The Hawthorns if they are going to have any chance of picking up the three points.  \nArsenal are currently sitting in eighth position after an unimpressive start to the season. They picked up one win from the first four games, while they have picked up seven points from a possible 12. Mertesacker has already admitted that things have been going a little bit wrong in the early part of the season.  \nThe Arsenal defender continued: “There was no shame in not finishing as champions last year, we all know it’s tough to do it, it’s a good team here, a good group of players and you can go on and do it. But we need to stay focused, and that is what the lads will do now.”  \nSaturday is a big game against West Brom as they look to get back to winning ways. In the last game between these two teams, West Brom beat Arsenal 2-0 in October last year, which is something that will be high on the minds of the Arsenal players.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 137,
+        "completion_tokens": 331
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Arsneal are eighth in the Premier League after unimpressive start .\nPer Mertesacker wants his team to show that they can still win the league .\nThey play West Brom on Saturday looking for an important three points .\n\nBegin with: \"Defender Per Mertesacker has called on Arsenal to show their Barclays Premier League challenge is very much 'alive' when they head to West Brom for Saturday's lunchtime kick-off. The Gunners produced a much-improved, composed display\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 27,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "A High School Football Team Achieved a Feat Considered Almost Impossible in the Sport After the Ball Bounced Off a Defender’s Helmet to Score a Freak ‘Own Goal’\nA high school football team from Dell Rapids, South Dakota, achieved a feat that is considered almost impossible in football after the ball bounced off a defender’s head to score a freak 'own goal.' On an extra point attempt, kicker Keegen Hemenway was disappointed when the ball hit the defender in the head and arched through the uprights instead of going through them.\nThe video of the event went viral on YouTube, with close to 400,000 views already. The point took the score to 38-0 and Dell Rapids went on to win the game 51-0.\n\nThis article does not include a direct quote, as no quotes were provided. However, it summarizes the given information accurately. If you would like me to add any specific detail or if you need any changes made, please let me know!",
+      "processed_text": "A High School Football Team Achieved a Feat Considered Almost Impossible in the Sport After the Ball Bounced Off a Defender’s Helmet to Score a Freak ‘Own Goal’\nA high school football team from Dell Rapids, South Dakota, achieved a feat that is considered almost impossible in football after the ball bounced off a defender’s head to score a freak 'own goal.' On an extra point attempt, kicker Keegen Hemenway was disappointed when the ball hit the defender in the head and arched through the uprights instead of going through them.\nThe video of the event went viral on YouTube, with close to 400,000 views already. The point took the score to 38-0 and Dell Rapids went on to win the game 51-0.\n\nThis article does not include a direct quote, as no quotes were provided. However, it summarizes the given information accurately.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 166,
+        "completion_tokens": 209
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Freak 'own goal' seen in game between Dell Rapids and Milbank High School .\nBall bounced off defenders head and arched through the uprights .\nVideo has gone viral on YouTube, with close to 400,000 views already .\nPoint took score to 38-0 and Dell Rapids went on to win the game 51-0 .\n\nBegin with: \"A high school football team achieved a feat considered almost impossible in the sport, after the ball bounced off a defender's helmet to score a freak 'own goal'. On an extra point attempt, kicker Keegen Hemenway was disappointed when the ball\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 34,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Location-Based Dating Apps, Such as Tinder and The League, Have a Combined Total of 91 Million Users. Now a New Study Has Found That Nearly Two Thirds of These App Users Are Men – And One in Five Will Pay for Premium Services\n\nLocation-based dating apps, such as Tinder and The League, have a combined total of 91 million users. Now a new study has found that nearly two thirds of these app users are men – and one in five will pay for premium services.\n\nThe study conducted by GlobalWebIndex showed that in the age group of 16 to 34 years old, more than half of the people using these dating apps were males.\nAccording to Tinder, the average person logs on to the app about eleven times a day, and women spend an average of eight and a half minutes per session while men spend seven and two minutes per session.\n\nA big majority of the people who use dating apps are between the ages of 16 and 34, which means that these apps have a young demographic. The people that use these apps the most frequently are also younger as well. This shows that these are very popular among a large portion of the population. \n\nOne interesting finding from the survey was that even though so many people use these apps, not every single user uses them at the same frequency. Not every person uses these apps daily, some people use them several times a week, and others only occasionally. A lot of people do use these apps often, and they like them enough to want to pay for a premium account.\n\nThe fact that people are paying for premium accounts is really important because that means that they are interested enough in dating apps to pay extra money for a service. They don’t want the free version and are willing to spend their money on it.",
+      "processed_text": "Location-Based Dating Apps, Such as Tinder and The League, Have a Combined Total of 91 Million Users. Now a New Study Has Found That Nearly Two Thirds of These App Users Are Men – And One in Five Will Pay for Premium Services\n\nLocation-based dating apps, such as Tinder and The League, have a combined total of 91 million users. Now a new study has found that nearly two thirds of these app users are men – and one in five will pay for premium services.\n\nThe study conducted by GlobalWebIndex showed that in the age group of 16 to 34 years old, more than half of the people using these dating apps were males.\nAccording to Tinder, the average person logs on to the app about eleven times a day, and women spend an average of eight and a half minutes per session while men spend seven and two minutes per session.\n\nA big majority of the people who use dating apps are between the ages of 16 and 34, which means that these apps have a young demographic. The people that use these apps the most frequently are also younger as well. This shows that these are very popular among a large portion of the population. \n\nOne interesting finding from the survey was that even though so many people use these apps, not every single user uses them at the same frequency. Not every person uses these apps daily, some people use them several times a week, and others only occasionally. A lot of people do use these apps often, and they like them enough to want to pay for a premium account.\n\nThe fact that people are paying for premium accounts is really important because that means that they are interested enough in dating apps to pay extra money for a service.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 174,
+        "completion_tokens": 366
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Location-based dating apps have total of 91 million users worldwide .\nSixteen to 34 year-olds make up majority of mobile dating app users .\nSix per cent of web users currently use a location-based dating app .\nAccording to Tinder, users log on to app on average 11 times a day .\nWomen spend 8.5 minutes swiping in a session and men 7.2 minutes .\n\nBegin with: \"Location-based dating apps, such as Tinder and the League, have a combined total of 91 million users. Now a new study has found that nearly two thirds of these app users are men – and one in five will pay for premium services.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 41,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "A plane performing at an air show in Davenport, Iowa, crashed and exploded in front of thousands of spectators. The pilot of the plane was killed in the accident Saturday afternoon when the plane nosedived into an alfalfa field during the Quad City Jet Aircraft Association (JAA) Air Show. The pilot, who has not been identified by authorities, died on impact. \n\nAccording to reports from witnesses, a single engine aircraft, identified as a Lancair IV-P, lost power or ran out of fuel, and then descended rapidly into an alfalfa field. The pilot, who survived the impact, tried to run to get away from the plane, but then the plane burst into flames. \n\nA video filmed by a spectator showed the plane falling out of the sky before exploding. The video shows a large ball of fire after the plane hits the ground.\n\nWitnesses and emergency service personnel arrived on the scene very quickly and the pilot was pronounced dead at the scene. \n\nThe cause of the accident is being investigated by the Federal Aviation Administration (FAA). They will be determining the cause of the accident as well as looking into the background of the pilot and the mechanical condition of the plane. \n\nIn a statement released by the JAA they say \"the JAA is sorry for this tragedy.\" They said that this was the first time that the JAA has had something like this happen. The JAA plans to suspend the rest of their events until they can find out what happened. They did not know the pilot and said they would let everyone know more information as they learn it. \n\nThey have put up a memorial page for the pilot on their website. The page says the pilot's name was Rick Hildebrandt and he lived in St Joseph, Mo. He had been flying since 1995 and was 50 years old. He flew the plane since 2015. His family asked anyone who knows something about what happened to contact the FBI.\n\n",
+      "processed_text": "A plane performing at an air show in Davenport, Iowa, crashed and exploded in front of thousands of spectators. The pilot of the plane was killed in the accident Saturday afternoon when the plane nosedived into an alfalfa field during the Quad City Jet Aircraft Association (JAA) Air Show. The pilot, who has not been identified by authorities, died on impact. \n\nAccording to reports from witnesses, a single engine aircraft, identified as a Lancair IV-P, lost power or ran out of fuel, and then descended rapidly into an alfalfa field. The pilot, who survived the impact, tried to run to get away from the plane, but then the plane burst into flames. \n\nA video filmed by a spectator showed the plane falling out of the sky before exploding. The video shows a large ball of fire after the plane hits the ground.\n\nWitnesses and emergency service personnel arrived on the scene very quickly and the pilot was pronounced dead at the scene. \n\nThe cause of the accident is being investigated by the Federal Aviation Administration (FAA). They will be determining the cause of the accident as well as looking into the background of the pilot and the mechanical condition of the plane. \n\nIn a statement released by the JAA they say \"the JAA is sorry for this tragedy.\" They said that this was the first time that the JAA has had something like this happen. The JAA plans to suspend the rest of their events until they can find out what happened. They did not know the pilot and said they would let everyone know more information as they learn it. \n\nThey have put up a memorial page for the pilot on their website. The page says the pilot's name was Rick Hildebrandt and he lived in St Joseph, Mo. He had been flying since 1995 and was 50 years old. He flew the plane since 2015. His family asked anyone who knows something about what happened to contact the FBI.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 124,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: The plane crashes into an alfalfa field in Davenport, Iowa .\nThe pilot has not been identified by authorities .\nA home video captures the crash and subsequent explosion .\n\nBegin with: \"A plane performing at an air show in Davenport, Iowa, crashed and exploded in front of thousands of spectators. The pilot of the plane was killed in the accident Saturday afternoon when the plane nosedived into an alfalfa field during the Quad\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 45,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Samsung has filed a design patent for wearable computer glasses that are tethered to a smartphone. The Samsung spectacles plug into a mobile phone and display information such as text messages and phone calls. Unlike Google Glass, which is wireless, the Samsung spectacles require the user to remain connected to a cord which leads back to their phone.\nAccording to the Wall Street Journal, the Samsung spectacles would be called the Samsung Gear Vies. They are also said to be able to be used as a handsfree system while working out, allowing the user to listen to music or take a phone call while working out, instead of holding onto a phone. This can be an advantage in some situations but is also the main downside, because the user will have to be tethered to a cable.\nA picture of a prototype was published on Engadget, which shows what the Samsung Gear Vies might look like. It appears to be a pair of spectacles, with a display on the right side of one of the lenses. The display looks similar to the display on Google Glass, which only has a display on the right side of the lens. The Samsung Gear Vies also appear to have a microphone built into them, although there is no visible camera, so it appears not to be equipped with the same kind of video recording as Google Glass.",
+      "processed_text": "Samsung has filed a design patent for wearable computer glasses that are tethered to a smartphone. The Samsung spectacles plug into a mobile phone and display information such as text messages and phone calls. Unlike Google Glass, which is wireless, the Samsung spectacles require the user to remain connected to a cord which leads back to their phone.\nAccording to the Wall Street Journal, the Samsung spectacles would be called the Samsung Gear Vies. They are also said to be able to be used as a handsfree system while working out, allowing the user to listen to music or take a phone call while working out, instead of holding onto a phone. This can be an advantage in some situations but is also the main downside, because the user will have to be tethered to a cable.\nA picture of a prototype was published on Engadget, which shows what the Samsung Gear Vies might look like. It appears to be a pair of spectacles, with a display on the right side of one of the lenses. The display looks similar to the display on Google Glass, which only has a display on the right side of the lens.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 158,
+        "completion_tokens": 267
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Samsung’s design could have a longer life and be lighter than Google Glass .\nIt will allow users to ‘take phone calls and listen to music during workouts’\nSamsung calls it a ‘sports glass’ and doesn’t expect it to be worn all day .\nThe main downside, however, is users will be constantly attached to a cable .\n\nBegin with: \"Samsung has filed a design patent for wearable computer glasses that are tethered to a smartphone. The Samsung spectacle plugs into a mobile phone and displays information such as text messages and phone calls. Unlike Google Glass, which is wireless, the Wall Street Journal\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 46,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "\"It is always good publicity for a Republican if they're in an argument with me,\" says Obama. Sales of governor Brewer's book have gone up since the public spat. By Daily Mail Reporter. Last updated at 6:56 AM on October 12, 2023.\n\nAccording to former President Barack Obama, it is good publicity for Republicans when they publicly argue with him. This was reported by a Daily Mail reporter. Since a public dispute took place between Republican Governor Jan Brewer and President Obama, sales of her book increased.\n\nFor more information, please see the original source. I couldn't find any specific event involving both Barack Obama and Jan Brewer that would match this statement exactly. Could you please provide more context or specify the date of this statement? If you have any other details, I would be glad to help you write a more accurate news article.",
+      "processed_text": "\"It is always good publicity for a Republican if they're in an argument with me,\" says Obama. Sales of governor Brewer's book have gone up since the public spat. By Daily Mail Reporter. Last updated at 6:56 AM on October 12, 2023.\n\nAccording to former President Barack Obama, it is good publicity for Republicans when they publicly argue with him. This was reported by a Daily Mail reporter. Since a public dispute took place between Republican Governor Jan Brewer and President Obama, sales of her book increased.\n\nFor more information, please see the original source. I couldn't find any specific event involving both Barack Obama and Jan Brewer that would match this statement exactly. Could you please provide more context or specify the date of this statement?",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 127,
+        "completion_tokens": 177
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: 'It is always good publicity for a Republican if they're in an argument with me,' says Obama .\nSales of governor Brewer's book have gone up since the public spat .\n\nBegin with: \"'It is always good publicity for a Republican if they're in an argument with me,' says Obama . Sales of governor Brewer's book have gone up since the public spat . By . Daily Mail Reporter . Last updated at 6:56 AM on\""
+        }
+      ]
+    }
+  ]
+}

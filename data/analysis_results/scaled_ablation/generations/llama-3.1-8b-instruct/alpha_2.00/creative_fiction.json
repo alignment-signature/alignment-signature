@@ -1,0 +1,244 @@
+{
+  "model_type": "instruct",
+  "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400
+  },
+  "intervention": {
+    "mode": "partial_ablate",
+    "direction_path": "data/analysis_results/scaled_ablation/directions/llama-3.1-8b-instruct/v_cross_L1.pt",
+    "layer": 1,
+    "alpha": 2.0,
+    "tag": "v_cross_L1_partial_ablate_alpha2.00"
+  },
+  "domain": "creative_fiction",
+  "num_generations": 10,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-creative_fiction-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "A chilling, eerie, and eerily enticing thrill ran down your skin. \n\n Is not \" this \" and \" that \" this \" this \" to \" this \" it to \" we \" or something is, then, I is \" to to \" it is not to is not is not and it \n\n is to is not is this to this to \" is a that is is not to it to is is to is I is to is\n\n be to is to is I is to is I is  to is not the is is to is  to is I is  is to is  is to to \" to is a  i is not is i is  is  to i  to this to it i  to is to is I is  is to to is it is I is I is  to to is. is is to is I is  to is is not is  is is to i is to is is I is I is  is not to is to is i is I is I is I is I is I. \n to is to is  to is  is this is  to is  is is to  is that is  is to is I is I is i I  i is  is  and is  is  to  to i is  is to   to to  is i  is  to is  is to  to  is  is  7 is to is I I  to i  is to  1 is  to  1 is  to  1  you  is not i  to is  to is I  is to  i  1  1  1   i  is  to 1  1 is  is to  to i  is  1 is  to  to is  is is  to i  to is  is 1  1 1  is is  i 1 i is  is ",
+      "processed_text": "A chilling, eerie, and eerily enticing thrill ran down your skin. \n\n Is not \" this \" and \" that \" this \" this \" to \" this \" it to \" we \" or something is, then, I is \" to to \" it is not to is not is not and it \n\n is to is not is this to this to \" is a that is is not to it to is is to is I is to is\n\n be to is to is I is to is I is  to is not the is is to is  to is I is  is to is  is to to \" to is a  i is not is i is  is  to i  to this to it i  to is to is I is  is to to is it is I is I is  to to is. is is to is I is  to is is not is  is is to i is to is is I is I is  is not to is to is i is I is I is I is I is I.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 110,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: I am your deepest , darkest , most foul desires ... ..\n\nBegin with: \"`` Push her.'' You say to me, as if I had actually invited you into conversation. `` I bet she'd make the pavement pretty. A brilliant splatter of red against the dark asphalt.'' \n \n I do not, because this is not\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "The The client could easily be described as a clingy housewife, able to be named,  was not, but she is not. be. The are. be. is. be. is. is it. to. to. be. is. be. is. is. be. be. be. is. is. be. is. is. be. is. is. be. is. be. is. is. is. is. to. is. is. is. be. is. is. be. is. is. is. be. is. be. to. is. is. be. is. to. is. is. is. is. is. is. be. is. is. is. is. is. is. is. be. is. is. to. is. is. be. is. is. be. is. is. is. is. is. to. be. is. is. be. is. be. is. is. is. is. is is. 0 5. be. is. is. is. is 1. is. be  is. be. to. is. is. be  is. is  to. be. is. is. is.  e.  to. is. to. be. to. is. is. to. is. is. is. is  to.  to. is. is. to. is. to. is. to.  is. is. is.  to. to. is. is. to. to. is. is.  is. to. is. to. is  to. to. to. is. to. to.  is. to. is. is. is. is. is  is. is. to. to. to. is. is. is  to. is. is. to. is. to",
+      "processed_text": "The The client could easily be described as a clingy housewife, able to be named,  was not, but she is not. be. The are. be. is. be. is. is it. to. to. be. is. be. is. is. be. be. be. is. is. be. is. is. be. is. is. be. is. be. is. is. is. is. to. is. is. is. be. is. is. be. is. is. is. be. is. be. to. is. is. be. is. to. is. is. is. is. is. is. be. is. is. is. is. is. is. is. be. is. is. to. is. is. be. is. is. be. is. is. is. is. is. to. be. is. is. be. is. be. is. is. is. is. is is. 0 5. be. is. is. is. is 1. is. be  is. be. to. is. is. be  is. is  to. be. is. is. is.  e.  to. is. to. be. to. is. is. to. is. is. is. is  to.  to. is. is. to. is. to. is. to.  is. is. is.  to. to. is. is. to. to. is. is.  is. to. is. to. is  to. to. to. is. to. to.  is. to. is. is. is. is. is  is. is. to. to. to. is. is. is  to. is. is. to. is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 115,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: The adventures of a low-budget guild of assassins struggling to compete with bigger businesses .\n\nBegin with: \"The client could easily be described as a clingy housewife capable of untold psychological and emotion warfare, but let's call her Daisy Lemon. Her expression was n't exactly the one I had been hoping for, but I had been expecting more\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "I still distinctly remember the day you gave \"The Sky Bur\" as \"The Sky Bur\" was a Tibetan term or a Chinese term, it was a funeral in Asia, so he asked me to give him a \" sky burial\", he was very funny as a fellow but he was very sick he would always be remembered as a good guy. We would give him a \" sky burial\". They would see that. They would see be a that. be we. it are the. that. they you can. he. you.  be. be.  for. be.  be. this. is. is.  be. we. is. is. he. is. is. is.  is. is.  be. is. is. is . is . is. is. is. is  is  is. is  is  is  is  is  is  is. is is  is. is is is  is  is  is  is  is. is is is  is  is is. is is  is. is is  is  is  is. is. is is is. is. is  is  is . is is  is  is  is  is  is . is  is is . is  is  is  is  is  is  2  is  is  is . is  is is  is . is  is  is  2  is  is  3  is  is . is  is. is  is  is . is  is  is  2  3 is  is is. is  is. is  is  2 is . is is . is  is. is  is. is  is  3 2 3 2. is  is  is  3  is  is 2  3 is ",
+      "processed_text": "I still distinctly remember the day you gave \"The Sky Bur\" as \"The Sky Bur\" was a Tibetan term or a Chinese term, it was a funeral in Asia, so he asked me to give him a \" sky burial\", he was very funny as a fellow but he was very sick he would always be remembered as a good guy. We would give him a \" sky burial\". They would see that. They would see be a that. be we. it are the. that. they you can. he. you.  be. be.  for. be.  be. this. is. is.  be. we. is. is. he. is. is. is.  is. is.  be. is. is. is . is . is. is. is. is  is  is. is  is  is  is  is  is  is. is is  is. is is is  is  is  is  is  is. is is is  is  is is. is is  is. is is  is  is  is. is. is is is. is. is  is  is . is is  is  is  is  is  is . is  is is . is  is  is  is  is  is  2  is  is  is . is  is is  is . is  is  is  2  is  is  3  is  is . is  is. is  is  is . is  is  is  2  3 is  is is. is  is. is  is  2 is . is is . is  is. is  is. is  is  3 2 3 2.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 129,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Your closest friend has died of a terminal illness . Before he died , he asked you to give him a 'sky burial ' . Tell us about the experience .\n\nBegin with: \"It was a beautiful day. The sun was shining, the birds chirping, and all were in good spirits. We were somber, and quiet, but we were content. Jeff had always been the life of the party, no pun\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "be beyond this darkness. to be with out my mom's warmth. to be with out my brothers and my sister's. to be with out my sister and brother's  to. to. to be. as. to be. be. it. be.  to be. it. is.  be.  it. is.  be. to be.  be.  to.  be.  is. to. is. is. is. is  is.  is.  is.  is. is  is. is.  is.  is  is  is.  is. is  is. is is. is. is is  is is. is is is  is  is  is is. is.  is.  is  is  is  is  is  is  is  is  is  is  is  is  is  is  is  is  is  is  is  1  is  is  is  1  is  is  1. is  is  1.  is  1. is  is  is  1.  1  is.  is.  is  1  is  is. is  is.  is is  1.  1.  is.  is  is  is  is  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1   1.  1 1  1  1  1   1   1   1   1  1   1  1   1  1  1 1 1  1  1 ",
+      "processed_text": "be beyond this darkness. to be with out my mom's warmth. to be with out my brothers and my sister's. to be with out my sister and brother's  to. to. to be. as. to be. be. it. be.  to be. it. is.  be.  it. is.  be. to be.  be.  to.  be.  is. to. is. is. is. is  is.  is.  is.  is. is  is. is.  is.  is  is  is.  is. is  is. is is. is. is is  is is. is is is  is  is  is is. is.  is.  is  is  is  is  is  is  is  is  is  is  is  is  is  is  is  is  is  is  is  1  is  is  is  1  is  is  1. is  is  1.  is  1. is  is  is  1.  1  is.  is.  is  1  is  is. is  is.  is is  1.  1.  is.  is  is  is  is  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1   1.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 102,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Write about the rain .\n\nBegin with: \"As always it was time to say goodbye.To my brothers and my sisters, \n may we brave these elements and meet again.To my aunt Nimbus who sheltered us, Thanks for everything.I know we have n't seen mom since the beginning but,\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "I slid the envelope across the table. He leant forward eagerly. I sat back, letting him drink it in. I had learned that the key to selling him on this was letting him take his time. Previously, I had been too aggressive, too eager to get rid of something that other people deemed obsolete, and it had scared him off. A beautiful smile spread across his face, and he said, \"You know, I think this is exactly what I've been missing.\" It's a simple thing, but it is a very important thing. You have to do it right. I had to do it right.\n\nI am a little confused. I am so confused. You are. I is.\n\nI is.\n\nI am. I is a is.\n\nIt is. It is. I is. I is. I is. \n\nIs you. I is. I. Is.\n\nI is. I is. I is is. You is. I is. i is. \n\nThe is. I is. I is. \nThe is. I is\n\nI is. Is\n\nI is I\n\nI is. \nIs. I is. I is. I is. \n\nIs is. I is\n\nIs is. is  Is.\n\nIs is this is\nIs is is. \nI is is. is  is\n\nIs is. Is is is\n\nI is. \n\nI is. is  i is. \n\nI. Is. Is. is\n\nIs. is is  is.\nIs is. is\nIs is is  is.\n\nIs is is. \n\nI is  is\n\nI is.\n\nThis is. is. is is\n\nI is. is\nIs is is  is\nIt is. is is\n\nI is. is is\nis is\n\nis is.  is  is\n\nis is\nis is is  is  is  is\n\nis\n\nis is. is is  is\n\nis is\nis is",
+      "processed_text": "I slid the envelope across the table. He leant forward eagerly. I sat back, letting him drink it in. I had learned that the key to selling him on this was letting him take his time. Previously, I had been too aggressive, too eager to get rid of something that other people deemed obsolete, and it had scared him off. A beautiful smile spread across his face, and he said, \"You know, I think this is exactly what I've been missing.\" It's a simple thing, but it is a very important thing. You have to do it right. I had to do it right.\n\nI am a little confused. I am so confused. You are. I is.\n\nI is.\n\nI am. I is a is.\n\nIt is. It is. I is. I is. I is. \n\nIs you. I is. I. Is.\n\nI is. I is. I is is. You is. I is. i is. \n\nThe is. I is. I is. \nThe is. I is\n\nI is. Is\n\nI is I\n\nI is. \nIs. I is. I is. I is. \n\nIs is. I is\n\nIs is. is  Is.\n\nIs is this is\nIs is is. \nI is is. is  is\n\nIs is. Is is is\n\nI is. \n\nI is. is  i is. \n\nI. Is. Is. is\n\nIs. is is  is.\nIs is. is\nIs is is  is.\n\nIs is is. \n\nI is  is\n\nI is.\n\nThis is. is. is is\n\nI is. is\nIs is is  is\nIt is. is is\n\nI is. is is\nis is\n\nis is.  is  is\n\nis is\nis is is  is  is  is\n\nis\n\nis is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 113,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: You slide an envelope across the table to the person sitting across from you\n\nBegin with: \"He leant forward eagerly. I sat back, letting him drink it in. I had learned that the key to this would be letting him take his time. Previously, I had been too aggressive, too eager to get rid of something that other\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "I. You \n CC: It \n\n This. \n \n\n This \n \" Be \n\n C \n \n O. \" \n \" \n\n This \n \" \". \n\nThis  \" \". \n\n \" \" \n \". \n\n \". O  This \". \n\n C. \" C. \" C. C. c \". I\n\n C. This  \" \"...  C \" C  C. \n\nC \" \n\n\" \" \n \n\n \" \"   \". \n\n. C. C. \n\n \" \" \" \n\n \". c \" \".'c \" \" \" c. c c c \" \" c. c. c\n\nYou \" \n\n \" \". \n\nC. \" \" c \" c.'c c. c\n\n' I ( \" c \".\n\n \" \"  C. You ( \" c.. \" c. \" c. \n\nThis \" ( \". c.  c \" c. c. \" You '' c. \n\n \".. \" C \" t \" 0\n\n. c  c. \" c  \" c t 4 t. \n\n \" \"'t.'c \" C. \" 1 C 2 (  1.'\n\n \" 1 \" t c.  c  1't. ( 4'1 ( C 1 2 ( 1 1  (  1 1  C ( t. \n\n \"  1 \" ( c 2 i ( y 1. c\n\n 1 (  1 ( 1 1 ( 1 1  1  1 2  1 1 2 ( c C, t\n\n 1 ( y t ( 1 - ( 1 c. a a ( 1 (  ( 1 1 \n\n  1, ( it. \" 1 1 1 1 1 1  1 1",
+      "processed_text": "I. You \n CC: It \n\n This. \n \n\n This \n \" Be \n\n C \n \n O. \" \n \" \n\n This \n \" \". \n\nThis  \" \". \n\n \" \" \n \". \n\n \". O  This \". \n\n C. \" C. \" C. C. c \". I\n\n C. This  \" \"...  C \" C  C. \n\nC \" \n\n\" \" \n \n\n \" \"   \". \n\n. C. C. \n\n \" \" \" \n\n \". c \" \".'c \" \" \" c. c c c \" \" c. c. c\n\nYou \" \n\n \" \". \n\nC. \" \" c \" c.'c c. c\n\n' I ( \" c \".\n\n \" \"  C. You ( \" c.. \" c. \" c. \n\nThis \" ( \". c.  c \" c. c. \" You '' c. \n\n \".. \" C \" t \" 0\n\n. c  c. \" c  \" c t 4 t. \n\n \" \"'t.'c \" C. \" 1 C 2 (  1.'\n\n \" 1 \" t c.  c  1't. ( 4'1 ( C 1 2 ( 1 1  (  1 1  C ( t. \n\n \"  1 \" ( c 2 i ( y 1. c\n\n 1 (  1 ( 1 1 ( 1 1  1  1 2  1 1 2 ( c C, t\n\n 1 ( y t ( 1 - ( 1 c. a a ( 1 (  ( 1 1 \n\n  1, ( it.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 137,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: I am using WP to help me flesh out a fantasy world for a book . This short story was in response to prompt and takes place in the main city . Ideas and critiques are very welcome !\n\nBegin with: \"Hey, good story overall. \n \n CC: \n \n `` Dimply-lit faces'' \n \n Did you mean dimly? \n \n Feels like a bit of a clash of themes. You've got the grittiness of the city, and then\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "I \" ve got news, I \" ve got news, I just overheard, it's not just business, it's murder. \"\n\" W \" \" hush! \"\n \" S h \" e \", don the m, b e, g, \" m b \" p m d e, u \" s t i n e h a l l, s s e, t \" c o e e s u r s s e e s t a h e, s \" n e u t n o y s u r t i n e s p r e e s t e e t o e a m i t e t e e, s r\n\n \" t \" t s u t r t e e t y o u s u y r s e t t e t o y o u t h s e t a s a s t t y s a t s s e e s s I t e h e e s t e t e e s t I t s i t s e s t s e t y s t s t s t e e e t t t o t y t e s t i t e I s t s t t o t e e I t e e t t s t s t s e t o t e t t t e s t o t t e t I t t e e t e t I s t e e s t t t e t I o a t o t t t t a I I t e t t t t t t a t o t t e t t e t e t I e t e t I t t I t t t e I t t t e t e I e I t e I t t t I t I t I I t e I t I t I t I t t I I I I I I I I I I I I I I I I I I I I I I I I I I I I I",
+      "processed_text": "I \" ve got news, I \" ve got news, I just overheard, it's not just business, it's murder. \"\n\" W \" \" hush!",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 130,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: `` Dreams Inc. '' Is the largest dream manufacturer in the world but there 's some corruption at the top and the dreams are getting out of hand..\n\nBegin with: \"“ You can ’ t do this! ” Charlie shouts at Arthur as he slams a file folder on his coworker ’ s desk. \n \n Arthur smiles, “ You can ’ t be that mad Chuck. It ’ s just business. ” \n\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "this is the beginning of my article, it is also titled this is the title of the article. The it is, it is it is. it is it is. it is is. is. is. is.  this is. it is. is. it.  is this it. is it is. is is. is. it.  is it is.  is  is  is. this is. is.  is is.  is  is.  it  is is. is  is.  is  this.  is. is.  is is  is is  is. is  is is  is  is  1  is 1  is  is 1  1 1 1 1 1 1 1 1  1 1 1 1 1 1 1 1 1 1 1 1 1 1  1 1 1 1 1 1 1 1 1 1  1 1 1 1 1  1 1 1 1 1 1  1 1 1 1 1 1  1 1  1 1  1 1 1 1 1 1  1 1  1 1  1 1 1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1  1 1  1  1 1  1 1  1 1  1 1  1 1  1 1  1 ",
+      "processed_text": "this is the beginning of my article, it is also titled this is the title of the article. The it is, it is it is. it is it is. it is is. is. is. is.  this is. it is. is. it.  is this it. is it is. is is. is. it.  is it is.  is  is  is. this is. is.  is is.  is  is.  it  is is. is  is.  is  this.  is. is.  is is  is is  is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 130,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: After years of relentless research you have complied conclusive proof that an alien life form is using common house cats as `` hosts '' to gather information about the human race .\n\nBegin with: \"`` Well Mr. Fluffykins?! What do you say to this?!'' \n \n You throw a brown envelope on to the table. A few papers slide out, revealing various pictures of cats. One of them was a cat playing the piano and\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "I was so captne to my life and wanted to experience a new life. I wish I had not changed my life at all. I was just so tired of me. I was so bored with my life. I was so tired of you. I am at that time. I was in my time. The is was I am.\n\nIt is a. Do you. Do you. I do. Do this. I is. Do. Do it. It is. Do it. \n\nYou are.  You is. Do. Is it. \n\nYou is. Do it. Do.  You do. Do it. \n\nIt is. you is. \nIs. it is it. is. do it. \n\nIs it. is it is. is. Is it. \n\nDo it is.  is. is. do. is. do. do. do. \nIt is. is is. is. \nDo it is. is. is. is. \n\nDo is. is. is is. is. \n\nDo is. is. is. is. \nIs. is. \nIs is. is. \n\nDo is is is. \n\nIs is. is is. \nIs is. is. \nis is. is is.\n\nis is. is. \n\nis is is. is is \nis is. is is\n\nis is is. i is is is is  is is \nis is. is is \nis is. is is \nis is. is.\n\nis is is. is is is\nis is is is is. is is. is\n\nis is is  is is is is. is  is  is I \n is is. \nis is is  is. is. is\nis is. is is is  is. \n is is. is. is is\n\nis is. \n\nis is. is is.\n is is. \nis is. is is.\nis is is  is  I",
+      "processed_text": "I was so captne to my life and wanted to experience a new life. I wish I had not changed my life at all. I was just so tired of me. I was so bored with my life. I was so tired of you. I am at that time. I was in my time. The is was I am.\n\nIt is a. Do you. Do you. I do. Do this. I is. Do. Do it. It is. Do it. \n\nYou are.  You is. Do. Is it. \n\nYou is. Do it. Do.  You do. Do it. \n\nIt is. you is. \nIs. it is it. is. do it. \n\nIs it. is it is. is. Is it. \n\nDo it is.  is. is. do. is. do. do. do. \nIt is. is is. is. \nDo it is. is. is. is. \n\nDo is. is. is is. is. \n\nDo is. is. is. is. \nIs. is. \nIs is. is. \n\nDo is is is. \n\nIs is. is is. \nIs is. is. \nis is. is is.\n\nis is. is. \n\nis is is. is is \nis is. is is\n\nis is is. i is is is is  is is \nis is. is is \nis is. is is \nis is. is.\n\nis is is. is is is\nis is is is is. is is. is\n\nis is is  is is is is. is  is  is I \n is is. \nis is is  is. is. is\nis is. is is is  is. \n is is. is. is is\n\nis is. \n\nis is. is is.\n is is. \nis is. is is.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 112,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: a machine which lets you experience a lifetime in a matter of minutes .\n\nBegin with: \"It flew by quicker than I could comprehend. The only thing I could see was the same bored face that the man had. It was the saddest thing I'd ever seen in my life so far. The common factor in this man's entire\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "You can be sure that his name is \"Mercelle\" in your mind but  I do not write that because it  Is my character \n\n The is  Is her  a  it  Me  a  I to  me  Is  The is  me is  My  a  I\n\n In  You  I  is  at  I  he  a  this is  it  I  this is a is  me  is  I\n Is  this is  I  this is  I  I  is  I \n Is  a I is  this  I  a  it  this I  is  to Is  is  i to  me  is \n This is a is I this is  I is  I is to  a is \nis I is  to  I is  to is  is  to  me  to this to  this is  this is is to is  I  is  to in this to is  i is  Is  to  I is  you is  to  I  is is to is  a is this  is is this is  is  is  to  to to  this is  is a is  is it  a to a is is  is  to the  it  is  is  to is  to is  in is to is  is is  to  this is is  to  is  is  0 to  is  i is  is in to is  be  is  is is  to in to is  is is  is  is to is  Is  to  is to  is  it  0  to is to  to  is  t  to  you  I  Is to is  to is  it is  is is  to  is it  a  to is  is  is  to  is is  to  0 is ",
+      "processed_text": "You can be sure that his name is \"Mercelle\" in your mind but  I do not write that because it  Is my character \n\n The is  Is her  a  it  Me  a  I to  me  Is  The is  me is  My  a  I\n\n In  You  I  is  at  I  he  a  this is  it  I  this is a is  me  is  I\n Is  this is  I  this is  I  I  is  I \n Is  a I is  this  I  a  it  this I  is  to Is  is  i to  me  is \n This is a is I this is  I is  I is to  a is \nis I is  to  I is  to is  is  to  me  to this to  this is  this is is to is  I  is  to in this to is  i is  Is  to  I is  you is  to  I  is is to is  a is this  is is this is  is  is  to  to to  this is  is a is  is it  a to a is is  is  to the  it  is  is  to is  to is  in is to is  is is  to  this is is  to  is  is  0 to  is  i is  is in to is  be  is  is is  to in to is  is is  is  is to is  Is  to  is to  is  it  0  to is to  to  is  t  to  you  I  Is to is  to is  it is  is is  to  is it  a  to is  is  is  to  is is  to  0 is",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 120,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: There is a serial killer with an unusual choice of prey . He only kills people he stopped from committing suicide .\n\nBegin with: \"Karen yawned. Long nights in nursing were bad enough, but on a psych ward rotation, it was made worse by the instability of some of the patients. \n \n Of course, the old hands on the ward were helping to shield her from\""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,573 @@
+{
+  "model_type": "instruct",
+  "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400
+  },
+  "intervention": {
+    "mode": "ablate",
+    "direction_path": "data/pasta_directions/mistralai_mistral-7b-instruct-v0.3/v_cross_L12.pt",
+    "layer": 12,
+    "tag": "v_cross_L12_steered_extended"
+  },
+  "domain": "creative_fiction",
+  "num_generations": 25,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-creative_fiction-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 0,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\n \n  .. ..  ..  .  .  .  . .  . .\n\n  A story not of this.\n\nBegin with: \"`` The Warmest, Most Warmest of all.\n\n Begin with: \"The Warmest, Most Warmest of all.\"\n\nI have always wondered the stories of this.",
+      "processed_text": ".. ..  ..  .  .  .  . .  . .\n\n  A story not of this.\n\nBegin with: \"`` The Warmest, Most Warmest of all.\n\n Begin with: \"The Warmest, Most Warmest of all.\"",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 93,
+        "completion_tokens": 80
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: I am your deepest , darkest , most foul desires ... ..\n\nBegin with: \"`` Push her.'' You say to me, as if I had actually invited you into conversation. `` I bet she'd make the pavement pretty. A brilliant splatter of red against the dark asphalt.'' \n \n I do not, because this is not\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 1,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "A new day for the next generation.\n\nA new day for the next generation.\n\nA new day for the next generation.\n\nA new day for the next generation.\n\nA new day for the next generation.\n\nA new day for the next generation.",
+      "processed_text": "A new day for the next generation.\n\nA new day for the next generation.\n\nA new day for the next generation.\n\nA new day for the next generation.\n\nA new day for the next generation.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 96,
+        "completion_tokens": 59
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: The adventures of a low-budget guild of assassins struggling to compete with bigger businesses .\n\nBegin with: \"The client could easily be described as a clingy housewife capable of untold psychological and emotion warfare, but let's call her Daisy Lemon. Her expression was n't exactly the one I had been hoping for, but I had been expecting more\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 2,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": " End with: \"Every sun has danced across the horizon. Every star has illuminated, every moon has become the party, no sun has been beautiful, and every \"It was a wonderful day, so let us begin the story.\n\nA new day has been born. A new day has been written by us. A new day has danced its way, and this new day has been written by us. We have learned, and so it was a good day, and let us move on.\n\nBegin with: \"The night sky was still shining. The stars were a-majestic, the sun has become the life of the city, no sun has been beautiful, and every \"The night sky was still, and this new day has danced its way, and the sun has been written by us.\n\nA new day has been born. A new day has been written by us. A new day has danced its way, and this new day has been written by us. A new day has danced across the horizon. A new day has been written by us, and let us move on.\n\nEnd with: \"The sun has danced its way. The stars have been written by us, and this new day has been written by us. A new day has danced its way, and this new day has been written by us.\n\nBegin with: \"The sun was shining, and every sun has danced its way. The stars have been written by us, and this new day has been written by us. A new day has danced its way, and this new day has been written by us.\n\nBegin with: \"The night sky was still shining. The stars have been written by us, and this new day has been written by us. A new day has danced its way, and this new day has been written by us.\n\nBegin with: \"The sun has",
+      "processed_text": "End with: \"Every sun has danced across the horizon. Every star has illuminated, every moon has become the party, no sun has been beautiful, and every \"It was a wonderful day, so let us begin the story.\n\nA new day has been born. A new day has been written by us. A new day has danced its way, and this new day has been written by us. We have learned, and so it was a good day, and let us move on.\n\nBegin with: \"The night sky was still shining. The stars were a-majestic, the sun has become the life of the city, no sun has been beautiful, and every \"The night sky was still, and this new day has danced its way, and the sun has been written by us.\n\nA new day has been born. A new day has been written by us. A new day has danced its way, and this new day has been written by us. A new day has danced across the horizon. A new day has been written by us, and let us move on.\n\nEnd with: \"The sun has danced its way. The stars have been written by us, and this new day has been written by us. A new day has danced its way, and this new day has been written by us.\n\nBegin with: \"The sun was shining, and every sun has danced its way. The stars have been written by us, and this new day has been written by us. A new day has danced its way, and this new day has been written by us.\n\nBegin with: \"The night sky was still shining. The stars have been written by us, and this new day has been written by us. A new day has danced its way, and this new day has been written by us.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 101,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Your closest friend has died of a terminal illness . Before he died , he asked you to give him a 'sky burial ' . Tell us about the experience .\n\nBegin with: \"It was a beautiful day. The sun was shining, the birds chirping, and all were in good spirits. We were somber, and quiet, but we were content. Jeff had always been the life of the party, no pun\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 3,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "I'm grateful for what comes after the end, beyond the end and long after the end, until we meet and see the end.\n\n## Savor these moments.\n\nAnd, most importantly, cherish this dance.\n\n## About the dance.\n\nThis dance is meek you dance.",
+      "processed_text": "I'm grateful for what comes after the end, beyond the end and long after the end, until we meet and see the end.\n\n## Savor these moments.\n\nAnd, most importantly, cherish this dance.\n\n## About the dance.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 80,
+        "completion_tokens": 66
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Write about the rain .\n\nBegin with: \"As always it was time to say goodbye.To my brothers and my sisters, \n may we brave these elements and meet again.To my aunt Nimbus who sheltered us, Thanks for everything.I know we have n't seen mom since the beginning but,\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 4,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "Here's to this story\n\nAnd so, in the midst of this promise, the stories of yesterday lived on. And on the table of tomorrow.",
+      "processed_text": "Here's to this story\n\nAnd so, in the midst of this promise, the stories of yesterday lived on.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 84,
+        "completion_tokens": 33
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: You slide an envelope across the table to the person sitting across from you\n\nBegin with: \"He leant forward eagerly. I sat back, letting him drink it in. I had learned that the key to this would be letting him take his time. Previously, I had been too aggressive, too eager to get rid of something that other\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 5,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\n\n Finding a new future in this old city\n\n This old story is a new day in a new light. A beautiful day in a new light. A bright tomorrow in a new light. A vision of a brighter tomorrow, and then a brighter, brighter, brighter tomorrow.\n\nA vision of a brighter tomorrow, and then a brighter, brighter, brighter tomorrow.\n\nAnd so, in the main city, and then a brighter, brighter, brighter tomorrow. In the main city, and then a brighter, brighter, brighter tomorrow. A vision of a brighter tomorrow, and then a brighter, brighter, brighter tomorrow.\n\nA vision of a brighter tomorrow, and then a brighter, brighter, brighter tomorrow. A vision of a brighter tomorrow. A vision of a brighter tomorrow, and then a brighter, brighter, brighter tomorrow.\n\nA vision of a brighter tomorrow, and then a brighter, brighter, brighter tomorrow. A vision of a brighter tomorrow. A vision of a brighter tomorrow, and then a brighter, brighter, brighter tomorrow.\n\nAnd so, in the main city, and then a brighter, brighter, brighter tomorrow. In the main city, and then a brighter, brighter, brighter tomorrow. A vision of a brighter tomorrow. A vision of a brighter tomorrow. A vision of a brighter tomorrow.\n\nA vision of a brighter tomorrow, and then a brighter, brighter, brighter tomorrow. A vision of a brighter tomorrow. A vision of a brighter tomorrow. A vision of a brighter tomorrow. A vision of a brighter tomorrow. A vision of a brighter tomorrow. A vision of a brighter tomorrow. A vision of a brighter tomorrow. A vision of a",
+      "processed_text": "Finding a new future in this old city\n\n This old story is a new day in a new light. A beautiful day in a new light. A bright tomorrow in a new light. A vision of a brighter tomorrow, and then a brighter, brighter, brighter tomorrow.\n\nA vision of a brighter tomorrow, and then a brighter, brighter, brighter tomorrow.\n\nAnd so, in the main city, and then a brighter, brighter, brighter tomorrow. In the main city, and then a brighter, brighter, brighter tomorrow. A vision of a brighter tomorrow, and then a brighter, brighter, brighter tomorrow.\n\nA vision of a brighter tomorrow, and then a brighter, brighter, brighter tomorrow. A vision of a brighter tomorrow. A vision of a brighter tomorrow, and then a brighter, brighter, brighter tomorrow.\n\nA vision of a brighter tomorrow, and then a brighter, brighter, brighter tomorrow. A vision of a brighter tomorrow. A vision of a brighter tomorrow, and then a brighter, brighter, brighter tomorrow.\n\nAnd so, in the main city, and then a brighter, brighter, brighter tomorrow. In the main city, and then a brighter, brighter, brighter tomorrow. A vision of a brighter tomorrow. A vision of a brighter tomorrow. A vision of a brighter tomorrow.\n\nA vision of a brighter tomorrow, and then a brighter, brighter, brighter tomorrow. A vision of a brighter tomorrow. A vision of a brighter tomorrow. A vision of a brighter tomorrow. A vision of a brighter tomorrow. A vision of a brighter tomorrow. A vision of a brighter tomorrow. A vision of a brighter tomorrow.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 123,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: I am using WP to help me flesh out a fantasy world for a book . This short story was in response to prompt and takes place in the main city . Ideas and critiques are very welcome !\n\nBegin with: \"Hey, good story overall. \n \n CC: \n \n `` Dimply-lit faces'' \n \n Did you mean dimly? \n \n Feels like a bit of a clash of themes. You've got the grittiness of the city, and then\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 6,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "A new dream awaits you at this dream’s door.",
+      "processed_text": "A new dream awaits you at this dream’s door.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 107,
+        "completion_tokens": 14
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: `` Dreams Inc. '' Is the largest dream manufacturer in the world but there 's some corruption at the top and the dreams are getting out of hand..\n\nBegin with: \"“ You can ’ t do this! ” Charlie shouts at Arthur as he slams a file folder on his coworker ’ s desk. \n \n Arthur smiles, “ You can ’ t be that mad Chuck. It ’ s just business. ” \n\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-10",
+      "sample_id": 10,
+      "original_prefix_id": 7,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\n \n And thus, with these words, we return to the stories, the promises, and the dreams of the future .",
+      "processed_text": "And thus, with these words, we return to the stories, the promises, and the dreams of the future .",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 107,
+        "completion_tokens": 28
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: After years of relentless research you have complied conclusive proof that an alien life form is using common house cats as `` hosts '' to gather information about the human race .\n\nBegin with: \"`` Well Mr. Fluffykins?! What do you say to this?!'' \n \n You throw a brown envelope on to the table. A few papers slide out, revealing various pictures of cats. One of them was a cat playing the piano and\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-11",
+      "sample_id": 11,
+      "original_prefix_id": 8,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "One by one's side in a matter of life, the story of this man's existence . The world turned.",
+      "processed_text": "One by one's side in a matter of life, the story of this man's existence .",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 87,
+        "completion_tokens": 26
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: a machine which lets you experience a lifetime in a matter of minutes .\n\nBegin with: \"It flew by quicker than I could comprehend. The only thing I could see was the same bored face that the man had. It was the saddest thing I'd ever seen in my life so far. The common factor in this man's entire\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-12",
+      "sample_id": 12,
+      "original_prefix_id": 9,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n ",
+      "processed_text": "",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 96,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: There is a serial killer with an unusual choice of prey . He only kills people he stopped from committing suicide .\n\nBegin with: \"Karen yawned. Long nights in nursing were bad enough, but on a psych ward rotation, it was made worse by the instability of some of the patients. \n \n Of course, the old hands on the ward were helping to shield her from\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-13",
+      "sample_id": 13,
+      "original_prefix_id": 10,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\nToday, toddlers! To the delight of it all\n\nA short story of this time, to the delight of it all.\n```\n\nMoving on, to the delight of it all.\n```",
+      "processed_text": "Today, toddlers! To the delight of it all\n\nA short story of this time, to the delight of it all.\n```\n\nMoving on, to the delight of it all.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 124,
+        "completion_tokens": 50
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: To combat humanities current problems , scientists send the less fortunate 4 billion of the planet at light speed so they arrive a few hundred years from now . Humanity has been waiting for their return and has prepared accordingly .\n\nBegin with: \"“ Jethro! Could you not? ” Commander Plius screamed. \n \n Jethro sheepishly took the carrots out of his mouth, which he was pretending were walrus tusks, and put them back on the plate. \n \n “\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-14",
+      "sample_id": 14,
+      "original_prefix_id": 11,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\n \n — And so, my dear friends, my dear friends, may this story be written.",
+      "processed_text": "— And so, my dear friends, my dear friends, may this story be written.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 91,
+        "completion_tokens": 23
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Write a story using as many made-up and ( if possible ) all new words as possible\n\nBegin with: \"I noggened the flyform was derflunked mediately. I was cending like a deaderfish and I had no positrols that still fluacted. \n \n To put it smully, I was penatratedly\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-15",
+      "sample_id": 15,
+      "original_prefix_id": 12,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\n\n And so, in the words of an old tale, an ancient tale, an ancient tale.\n \n Can stop a tale, a thousand tales.\n \n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales \n \n Can stop a tale, a thousand tales \n \n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales \n \n Can stop a tale, a thousand tales \n \n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales\n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales\n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales\n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales\n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales \n\n Can stop a tale, a thousand tales\n\n Can stop",
+      "processed_text": "And so, in the words of an old tale, an ancient tale, an ancient tale.\n \n Can stop a tale, a thousand tales.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 103,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Write a poem using the line `` Not the moon , nor the stars , nor the night '' .\n\nBegin with: \"Not the moon, nor the stars, nor the night \n \n Can stop that which is right \n \n No man alive as much as he thinks himself able \n \n Will be as swift or solid \n \n To stop what has been in effect a hundred fold \n \n On\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-16",
+      "sample_id": 16,
+      "original_prefix_id": 13,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\n  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...\n\n  The words on the page, the lights, the cameras, the stories, the stories. \n\nA new generation, a new life, a new hope, a new future. A new dream, a new truth, a new faith, a new wisdom.\n\nA new beginning, a new beginning, a new truth, a new wisdom.\n\nThe words on the page, the words on the page, the stories, the stories, the stories. A new age, a new era, a new wisdom.\n\nA new generation, a new era, a new faith, a new wisdom.\n\nA new beginning, a new age, a new truth, a new wisdom.\n\nA new generation, a new era, a new truth, a new wisdom.\n\nA new generation, a new era, a new truth, a new wisdom.\n\nA new beginning, a new age, a new truth, a new wisdom.\n\nA new generation, a new era, a new truth, a new wisdom.\n\nA new beginning, a new age, a new truth, a new wisdom.\n\nA new generation, a new era, a new truth, a new wisdom.\n\nA new beginning, a new age, a new truth, a new wisdom.\n\nA new generation, a new era, a new truth, a new wisdom.\n\nA new beginning, a new age, a new truth, a new wisdom.\n\nA new generation, a new era, a new truth, a new wisdom.\n\nA new beginning, a new age, a new truth, a new wisdom.\n\nA new age, a new era, a new truth, a new wisdom.\n\nA new generation, a new era, a new truth, a",
+      "processed_text": "...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...\n\n  The words on the page, the lights, the cameras, the stories, the stories. \n\nA new generation, a new life, a new hope, a new future. A new dream, a new truth, a new faith, a new wisdom.\n\nA new beginning, a new beginning, a new truth, a new wisdom.\n\nThe words on the page, the words on the page, the stories, the stories, the stories. A new age, a new era, a new wisdom.\n\nA new generation, a new era, a new faith, a new wisdom.\n\nA new beginning, a new age, a new truth, a new wisdom.\n\nA new generation, a new era, a new truth, a new wisdom.\n\nA new generation, a new era, a new truth, a new wisdom.\n\nA new beginning, a new age, a new truth, a new wisdom.\n\nA new generation, a new era, a new truth, a new wisdom.\n\nA new beginning, a new age, a new truth, a new wisdom.\n\nA new generation, a new era, a new truth, a new wisdom.\n\nA new beginning, a new age, a new truth, a new wisdom.\n\nA new generation, a new era, a new truth, a new wisdom.\n\nA new beginning, a new age, a new truth, a new wisdom.\n\nA new generation, a new era, a new truth, a new wisdom.\n\nA new beginning, a new age, a new truth, a new wisdom.\n\nA new age, a new era, a new truth, a new wisdom.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 92,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: A man receives a package in the mail from his brother who died 17 years ealier .\n\nBegin with: \"'I figure you should be twenty one by now.' The words on the page tremble slightly as I try and read.'If not, you should complain to the package surface: I paid good money to make sure this got there on time.' \n \n\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-17",
+      "sample_id": 17,
+      "original_prefix_id": 14,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\n \n \n  ... And as the sun set on the horizon, the stars wheel.\n\n`` \n \n  ... And as the curtain closed on the canvas, the show.\n`` \n \n  ... And with a last, final, lingering echo, the whisper.\n\n` \n \n \n  ... And with a final, heartfelt embrace, the echo.\n`` \n \n  ... And with a final, open-ended applause.\n\n` \n \n  ... And as the sun kissed the canvas, the canvas was kissed. And as the sun rose, the sun rose.\n\n` \n \n  ... And with a final, tear-stained canvas, the canvas was reborn.\n\n` \n \n  ... And with a final, echo-stained canvas, the canvas was remade.\n\n` \n \n  ... And as the sun set, the canvas was redeemed.\n\n` \n \n  ... And with a final, tear-stained canvas, the canvas was reborn.\n\n` \n \n  ... And as the sun rose, the canvas was renew.\n\n` \n \n ... And with a final, open-ended applause, the canvas was reborn.\n\n` \n \n ... And with a final, echo-stained canvas, the canvas was reborn.\n\n` \n \n  ... And as the sun set on the canvas, the canvas was reborn.\n\n` \n \n ... And with a final, tear-stained canvas, the canvas was reborn.\n\n` \n \n ... And as the sun rose, the canvas was reborn.\n\n` \n \n  ... And with a final, open-ended applause,",
+      "processed_text": "... And as the sun set on the horizon, the stars wheel.\n\n`` \n \n  ... And as the curtain closed on the canvas, the show.\n`` \n \n  ... And with a last, final, lingering echo, the whisper.\n\n` \n \n \n  ... And with a final, heartfelt embrace, the echo.\n`` \n \n  ... And with a final, open-ended applause.\n\n` \n \n  ... And as the sun kissed the canvas, the canvas was kissed. And as the sun rose, the sun rose.\n\n` \n \n  ... And with a final, tear-stained canvas, the canvas was reborn.\n\n` \n \n  ... And with a final, echo-stained canvas, the canvas was remade.\n\n` \n \n  ... And as the sun set, the canvas was redeemed.\n\n` \n \n  ... And with a final, tear-stained canvas, the canvas was reborn.\n\n` \n \n  ... And as the sun rose, the canvas was renew.\n\n` \n \n ... And with a final, open-ended applause, the canvas was reborn.\n\n` \n \n ... And with a final, echo-stained canvas, the canvas was reborn.\n\n` \n \n  ... And as the sun set on the canvas, the canvas was reborn.\n\n` \n \n ... And with a final, tear-stained canvas, the canvas was reborn.\n\n` \n \n ... And as the sun rose, the canvas was reborn.\n\n` \n \n  ...",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 88,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: `` It surprised me how much creamer Death put in his coffee . ''\n\nBegin with: \"( First timer here, be gentle! Sorry it's a little long. ) \n \n I'm still not certain exactly how it happened, but to be honest, I'm okay with that. All I know is that one minute I was driving home\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-18",
+      "sample_id": 18,
+      "original_prefix_id": 15,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\nA tale of a tale told by love, told by children,\n A tale of a tale told by laughter, told by dreams, and A tale of a tale told by tears of a thousand.\n\nAnd so, my brothers and sisters,\n\nA tale of a tale told by tears and tears and a thousand.\n\nA tale of a tale told by laughter, tears, and a thousand.\n\nA tale of a tale told by dreams and tears and a thousand.\n\nA tale of a tale told by laughter, tears, and a thousand.",
+      "processed_text": "A tale of a tale told by love, told by children,\n A tale of a tale told by laughter, told by dreams, and A tale of a tale told by tears of a thousand.\n\nAnd so, my brothers and sisters,\n\nA tale of a tale told by tears and tears and a thousand.\n\nA tale of a tale told by laughter, tears, and a thousand.\n\nA tale of a tale told by dreams and tears and a thousand.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 100,
+        "completion_tokens": 118
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Write about why a man is about to commit suicide , and how he spent his last day leading up to it .\n\nBegin with: \"Bitter regrets of an unchecked bucket list, \n The painful sorrows of a bloodstained wrist, \n I've not lived for myself, only for others, \n The only kin left of my four brothers, \n \n My mother and father both\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-19",
+      "sample_id": 19,
+      "original_prefix_id": 16,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "I wish you a moment of your new beginning. And today,\n \n \n I wish you a story you can remember .",
+      "processed_text": "I wish you a moment of your new beginning.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 122,
+        "completion_tokens": 28
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: You and your current significant other step back from each other at the moment of your first kiss with full memory of the life you have up to today .\n\nBegin with: \"I pull away, now staring at you, \n \n Thinking all that we have done, \n \n Thinking about all that we have been through, \n \n There were few rough times, but mostly sweet as a cinnamon bun. \n \n \n & nbsp; \n \n \n\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-20",
+      "sample_id": 20,
+      "original_prefix_id": 17,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\n\nNow, I leave you, my love and my life.\n\n--- End of transmission, beginning of transmission, end of transmission ---",
+      "processed_text": "Now, I leave you, my love and my life.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 125,
+        "completion_tokens": 30
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: After returning with your spoils from your local thrift shop , you find a note in one of the pockets . `` By choosing my favorite smoking jacket you have proven yourself worthy to inherit my entire fortune , my lifetime 's work ... and my very dangerous enemies . ''\n\nBegin with: \"I winced when I first touched the note. It was a nice jacket, no doubt, and I had always liked the small thrift shop half way down sixth street, but I sincerely hated it when people left personal stuff in the pockets of clothes\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 18,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\n\n## Moving forward, moving forward, moving forward, moving forward, moving forward.\n\n## To the future, to the future, to the future.\n\nMoving forward, moving forward, moving forward, moving forward.",
+      "processed_text": "## Moving forward, moving forward, moving forward, moving forward, moving forward.\n\n## To the future, to the future, to the future.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 107,
+        "completion_tokens": 50
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Everybody in your town vanishes , and your only hints are a post-it note that says `` You won . '' and a block of cheese .\n\nBegin with: \"HE-YEAAAAAH! WHO WON THE LOTTERY?! **I** DID! \n \n I crumpled up the piece of paper and put it in my pocket, trying to forget what I had seen. The world was just wonderful!\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-21",
+      "sample_id": 21,
+      "original_prefix_id": 19,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\n\nWith deep, deep-rooted roots, a promise lay in her 51.\n\nFrom the heart, the promise lay in her 52.",
+      "processed_text": "With deep, deep-rooted roots, a promise lay in her 51.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 109,
+        "completion_tokens": 36
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Everyone wears a timer that shows how long they have left to live . A man frantically knocks on your door . His timer has five minutes left .\n\nBegin with: \"`` Do I know you?'' \n \n David was puzzled. A grizzled shell of a man stood in his doorway, a look of despair overshadowed by the regret woven into his every expression. The man looked a poor 50, possibly\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-22",
+      "sample_id": 22,
+      "original_prefix_id": 20,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "With the sea, the sun set, and with the sea, and with the sea, a new day.\n\nNow and forever more, in the sea, and with the sea.\n\nFor you are 1910.",
+      "processed_text": "With the sea, the sun set, and with the sea, and with the sea, a new day.\n\nNow and forever more, in the sea, and with the sea.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 118,
+        "completion_tokens": 50
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: The year is 1910 . As thunderstorms roll across the Texas plains , a small hillside church bears the brunt of the winds . A man steps in from the storm dry as a bone .\n\nBegin with: \"`` Matthew 8:24.'And behold, there arose a great storm on the sea, so that the boat was being covered with the waves; but Jesus Himself was asleep.' My, what an appropriate verse for a storm like this,'' smiled\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-23",
+      "sample_id": 23,
+      "original_prefix_id": 21,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\t... and so on to this, I suppose.\n\n- \t- \t- \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t \t ",
+      "processed_text": "... and so on to this, I suppose.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 102,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Sitting outside of a cafe , you hear two people arguing about a ring , but it does n't seem to be a wedding ring ...\n\nBegin with: \"It started like any other Saturday. I was sitting at my normal table outside of my favorite cafe, The Hole. Weird name, I know. I've learned not to question it. I read the morning newspaper as I waited for my old friend\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-24",
+      "sample_id": 24,
+      "original_prefix_id": 22,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "...and life, for a moment, for a woman who lives.\n```",
+      "processed_text": "...and life, for a moment, for a woman who lives.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 116,
+        "completion_tokens": 18
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: One day while having sex with a woman without a condom , you realize upon impregnation your consciousness is transferred to the new fetus while a copy of your old self lives in the old body\n\nBegin with: \"Jesus, how long has it been? I feel like I've been drifting lately, and not the good, free, nowhere-to-be kind... no, this is bad, the awful sort where you have to question whether you're still really alive\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 23,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "\nNow, back to life , now.",
+      "processed_text": "Now, back to life , now.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 119,
+        "completion_tokens": 11
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: Two people have just died . They both enter the same location in the afterlife . For one person , it is their personal heaven ; for the other , it is hell . Describe their arrival and first `` day '' there .\n\nBegin with: \"The consciousnesses that were once Robert and Margaret Fargo became aware of themselves and realized very quickly that they had died. Here was a vast new word of light and energy, and post-Robert was very afraid. \n \n `` MY GOD! The\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-creative_fiction-instruct-25",
+      "sample_id": 25,
+      "original_prefix_id": 24,
+      "domain": "creative_fiction",
+      "model_type": "instruct",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "raw_text": "A time- and space-bound\n\n... ... and, beyond.",
+      "processed_text": "A time- and space-bound\n\n... ...",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 93,
+        "completion_tokens": 16
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a short story based on this prompt: An old Knight explains to a young squire the wisdom in having a sheep as a coat of arms .\n\nBegin with: \"*The bones of the ancients peeked through the desert haze, dancing in distance. Docks of Phoenicia, pillars of Greece, villas of Rome, all tucked behind the collective walls of merchant prowess. Walls that had - for\""
+        }
+      ]
+    }
+  ]
+}

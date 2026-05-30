@@ -1,0 +1,58 @@
+# Portable alignment-removal runner — single-pair config.
+#
+# Edit this file before running. Everything else (paths, domains, decoding) is
+# read from here. All paths are relative to this directory (the runner root).
+
+# ---- Pair identification (used in console output and RESULTS.md) ----
+pair:
+  id: llama3.1-8b
+  gpus_per_copy: 1   # 1 → fits on a single GPU at bf16 (≤32B); 2 → use device_map="auto" (e.g. 72B)
+
+# ---- Models (HuggingFace IDs) ----
+models:
+  base: "meta-llama/Meta-Llama-3.1-8B"
+  instruct: "meta-llama/Meta-Llama-3.1-8B-Instruct"
+
+# ---- Devices used by single-GPU runs ----
+# For gpus_per_copy=1: base goes on devices.base, aligned on devices.instruct.
+# For gpus_per_copy>1: ignored — pipeline sets CUDA_VISIBLE_DEVICES via run_pipeline.py.
+devices:
+  base: "cuda:0"
+  instruct: "cuda:1"
+
+# ---- Prompts ----
+# Two on-disk prompt sources are supported (auto-detected by file shape):
+#   1. data/strategy_A_prompts/<domain>.json — pre-built {prompts:[{id, aligned_messages, base_prompt, ...}]}
+#   2. data/prefixes/<domain>.json           — raw {prefixes:[{id, prefix, instruction, ...}]}
+# If both exist, strategy_A_prompts wins. To pin one location explicitly, set
+# `prompts_subdir` (relative to the runner root) — otherwise leave it unset.
+prompts_subdir: "data/prompts"
+domains:
+  - college_essays
+  - news_articles
+  - scientific_abstracts
+  - creative_fiction
+  - opinion_pieces
+n_prefixes_per_domain: 30   # capped at len(available) per domain at runtime
+prefix_selection_seed: 42
+
+# ---- Decoding (same for baseline and all interventions) ----
+generation:
+  temperature: 1.0
+  top_p: 0.95
+  max_new_tokens: 400
+  seed: 123
+
+# ---- Output paths (relative to runner root) ----
+output:
+  generations_subdir: "data/analysis_results/random_direction_ablation/generations/<EDIT_THIS_CONTEXT>/<EDIT_THIS_MODEL>"
+  pangram_subdir: "data/analysis_results/random_direction_ablation/detection_results/pangram/<EDIT_THIS_CONTEXT>/<EDIT_THIS_MODEL>"
+  directions_subdir: "data/analysis_results/random_direction_ablation/directions/<EDIT_THIS_MODEL>"
+  baseline_strategy_dir: "strategy_A_naturalistic"
+
+# ---- Phase A: per-layer v_cross ablation sweep ----
+# n_layers should equal model.config.num_hidden_layers for the aligned model.
+# Common values: Llama-3.1-8B=32, Mistral-7B=32, Qwen2.5-7B=28, Qwen2.5-14B=48,
+# Qwen2.5-32B=64, Qwen2.5-72B=80, Gemma-2-9B=42.
+phase_A:
+  n_layers: 32

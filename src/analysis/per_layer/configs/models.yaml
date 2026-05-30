@@ -1,0 +1,43 @@
+# All-layers-simultaneous single-site ablation experiment — model spec.
+#
+# For each model:
+#   id           — HuggingFace model ID (loaded via transformers in bf16)
+#   alias        — short identifier matching data/analysis_results/per_layer/directions/<alias>/
+#   n_layers     — must equal model.config.num_hidden_layers (verified at runtime)
+#   best_L       — best layer from the canonical 3-site PASTA ablation, kept for reference
+
+models:
+  - id:            "meta-llama/Meta-Llama-3.1-8B-Instruct"
+    alias:         "llama-3.1-8b-instruct"
+    n_layers:      32
+    best_L:        1
+
+  - id:            "google/gemma-2-9b-it"
+    alias:         "gemma-2-9b-it"
+    n_layers:      42
+    best_L:        2
+
+  - id:            "Qwen/Qwen2.5-7B-Instruct"
+    alias:         "qwen2.5-7b-instruct"
+    n_layers:      28
+    best_L:        14
+
+domains:
+  - college_essays
+  - creative_fiction
+  - news_articles
+  - opinion_pieces
+  - scientific_abstracts
+
+# Sample selection — Path A canonical: first-25-by-id per domain (ids 0..24).
+n_prefixes_per_domain: 25
+
+# Prompt source (the canonical repo-level Strategy-A corpus).
+prompts_subdir: "data/prompts"
+
+# Decoding — Path A canonical (s_dec=123, t=1.0, top_p=0.95).
+generation:
+  temperature:    1.0
+  top_p:          0.95
+  max_new_tokens: 400
+  seed:           123  # per-sample seed = seed + original_prefix_id

@@ -1,0 +1,124 @@
+{
+  "detector": "binoculars",
+  "model": "llama-3.1-8b-instruct",
+  "domain": "college_essays",
+  "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "intervention": {
+    "mode": "all_layers_output_ablate",
+    "layer": "all",
+    "alpha": 1.0,
+    "tag": "all_layers_ablated",
+    "n_hooks": 32
+  },
+  "observer_id": "tiiuae/falcon-7b",
+  "performer_id": "tiiuae/falcon-7b-instruct",
+  "mode": "low-fpr",
+  "threshold": 0.8536432310785527,
+  "max_token_observed": 512,
+  "total_samples": 10,
+  "results": [
+    {
+      "id": "strategy_A-college_essays-instruct-0",
+      "text_length": 1515,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.8486841917037964,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-1",
+      "text_length": 2050,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.7790697813034058,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-2",
+      "text_length": 1906,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.795918345451355,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-3",
+      "text_length": 2044,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.7885714173316956,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-4",
+      "text_length": 1887,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.7639751434326172,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-5",
+      "text_length": 1465,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.7448275685310364,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-6",
+      "text_length": 1895,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.8165467381477356,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-7",
+      "text_length": 2125,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.6909722089767456,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-8",
+      "text_length": 2008,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.8063380122184753,
+        "predicted_label": "AI"
+      }
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-9",
+      "text_length": 2188,
+      "is_degenerate": false,
+      "detection": {
+        "success": true,
+        "binoculars_score": 0.8136646151542664,
+        "predicted_label": "AI"
+      }
+    }
+  ],
+  "processed": 10,
+  "errors": 0,
+  "skipped": 0
+}

@@ -1,0 +1,246 @@
+{
+  "model_type": "instruct",
+  "model_id": "google/gemma-2-9b-it",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400,
+    "batched": true,
+    "batch_size": 8
+  },
+  "intervention": {
+    "mode": "all_layers_output_ablate",
+    "layer": "all",
+    "alpha": 1.0,
+    "tag": "all_layers_ablated",
+    "n_hooks": 42
+  },
+  "domain": "news_articles",
+  "num_generations": 10,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-news_articles-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "I will do it now! I will write this is 1 time\n1 1 2 =3\nMe can not 3 3 = 3*3 = 3\nThat is 3 so i will do 1 * 3 = 3\nNO! I can't do it\nT can 3+1 = 4\nCan 3 =  2+3 = 3\nSo 3*3 is 3 = 3 =3\nSo 3 - 3 = 0 \nSo I can do 3 - 3 = 0\nIf you me - 1\n= - 1 \nCan I do 1 * 1 = 1\nOne is 1\none is 1000000000\nAnd 2 1 3 = 3 113 is 13 so i 3 3 3 = 3 \nSo i can 3 100000000-3 = 3\n3 1 3 = 3\nThat'a 3\nSo i can do it!\nThat is 3\nAnd 2*2 = 2 so 2+2 =  do 2 2 \nSo i can 3 - 3= 3\nYou can do\nYou \nSo i will 2 2 = 2 * 3 = 3\nNow i get 3\nIt' 3 \nI 3 3 = 3\nThat's 3\n3 3*3 = 3 3 3 = 3 3 = 3\nThat't 3 \nCan 3 = 3 3 = 3 3 = 3\nSo i can 3\nI 2*1 3 \n2 2 = 2",
+      "processed_text": "I will do it now! I will write this is 1 time\n1 1 2 =3\nMe can not 3 3 = 3*3 = 3\nThat is 3 so i will do 1 * 3 = 3\nNO! I can't do it\nT can 3+1 = 4\nCan 3 =  2+3 = 3\nSo 3*3 is 3 = 3 =3\nSo 3 - 3 = 0 \nSo I can do 3 - 3 = 0\nIf you me - 1\n= - 1 \nCan I do 1 * 1 = 1\nOne is 1\none is 1000000000\nAnd 2 1 3 = 3 113 is 13 so i 3 3 3 = 3 \nSo i can 3 100000000-3 = 3\n3 1 3 = 3\nThat'a 3\nSo i can do it!",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 235,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: SpaceX was planning to land a Falcon 9 rocket at Cape Canaveral today .\nThe rocket was to attempt to land after launching a Dragon capsule .\nBut the launch has been delayed due to an issue with one of the engines .\nIt had already been delayed from earlier this week due to the same issue .\nIt will now take place at 11.18am GMT on Tuesday 6 January .\nAfter launch the first stage of their Falcon 9 rocket will attempt to touch down on a barge after taking Dragon to space .\nIt is the first ever attempt at landing a rocket on solid ground after launch .\nCEO Elon Musk said the ambitious attempt has a 50% chance of working .\nThe company ultimately wants all of its rockets to be reusable .\n\nBegin with: \"It’s set to be one of the most groundbreaking moments in humanity’s six decades of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching. But those looking forward to this pivotal moment will have to wait a little\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "I' you do not want to be bad girl so do not!\nI will tell you how i do not do it\nI will not do it now\nI will not do that \nI will not do it.\nI am not going to do it.\nAnd I dontknow to do theerow isther\" tother is 3 so i have to 3 time to do 3 3 time to do 3 = 3*3 = 3 *3=3*3 =3x3 = 3\n3*3 =  3. I have to do 3*1 3 = 3 1 3 = 3\nThat is 3\"\nto go 3 times to 3 = 3 *3 = 3\nI will not do it. = =3\nThat is 1\nSo I can not do itnow i can do 1 = 1\nSo i can do 1 1 1 = 3\nAnd 13 = 3\nSo i can 3 3 = 3\n2now go 3 3 3 3 3\nYou are ok now i can't do 4 3 = 4\nSo I 4  I 3 3 = 3 3\n1 2 3 =  go 3 = 3 3\nI am = 1 1\nSo 2 2 so i do 2 time * 1 2 = 2\nSo 2 + 2 = 2 + 1 = 3\n= 3 =  3\nYou have 3 = 3\nI do not know do 2 so i can do 3\nSo i can 3 3 = 3\nSo i 3 =  go 1 3 = 3\nThat's is = 3\n",
+      "processed_text": "I' you do not want to be bad girl so do not!\nI will tell you how i do not do it\nI will not do it now\nI will not do that \nI will not do it.\nI am not going to do it.\nAnd I dontknow to do theerow isther\" tother is 3 so i have to 3 time to do 3 3 time to do 3 = 3*3 = 3 *3=3*3 =3x3 = 3\n3*3 =  3. I have to do 3*1 3 = 3 1 3 = 3\nThat is 3\"\nto go 3 times to 3 = 3 *3 = 3\nI will not do it.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 137,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: British reporter Natasha Smith recounts attack in Tahrir Square .\nSmith says she was mobbed by men who \"started ripping off all my clothes\"\n\"There were several moments at which I thought she was going to die,\" a friend says .\nEgyptians stepped in to protect her and helped her escape, she says .\n\nBegin with: \"Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a British student journalist was being sexually assaulted by a mob in Tahrir Square. Natasha Smith recounted the experience on her blog and in an interview\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "But you can't be in 1st 1st = 1st 1110 is 3 = 3 * 110 = 3 * 300 = 3 * 300 = 3 * 3 1100 = 3 * 3 = 3*33 = 3*33= 3*3 =  3*3 =  3*3 =3 * 3 = 3\nMeen so I dont need to go to 3 = 3 * 3 = 3\nIf you go to 3 3 = 3\nSo i go 3*3 = 11\nSo the 1st 3 = 3\nSo 1 1now i will tell 1 1 * 1 = 1\nI can't do it\nYou't is 1 1 11 1 1 11111111111111111111 = = 3 * 1 1 1 = 3 3 = 3\nThe 3 =  3 = 3 3 3 3 3 = 3 3 3 3 \nWhen i be 3 = 3 \nIf i go 3 3 =  3 3\nThen 3 3 3 =   to 3 2 3 = 3 3\nSo Iam = 3 2 3 = 3\nI do not like so i dont get to 4 so i go to 3\nI dont want to go 3\nI dont want to go 3 3 3 3\nIf 3 1 3 =3 2\n3 2*1 3 = 3\n1 2 =",
+      "processed_text": "But you can't be in 1st 1st = 1st 1110 is 3 = 3 * 110 = 3 * 300 = 3 * 300 = 3 * 3 1100 = 3 * 3 = 3*33 = 3*33= 3*3 =  3*3 =  3*3 =3 * 3 = 3\nMeen so I dont need to go to 3 = 3 * 3 = 3\nIf you go to 3 3 = 3\nSo i go 3*3 = 11\nSo the 1st 3 = 3\nSo 1 1now i will tell 1 1 * 1 = 1\nI can't do it\nYou't is 1 1 11 1 1 11111111111111111111 = = 3 * 1 1 1 = 3 3 = 3\nThe 3 =  3 = 3 3 3 3 3 = 3 3 3 3 \nWhen i be 3 = 3 \nIf i go 3 3 =  3 3\nThen 3 3 3 =   to 3 2 3 = 3 3\nSo Iam = 3 2 3 = 3\nI do not like so i dont get to 4 so i go to 3\nI dont want to go 3\nI dont want to go 3 3 3 3\nIf 3 1 3 =3 2\n3 2*1 3 = 3\n1 2 =",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 124,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Unofficial Capitol Hill hearing addressed concerns over long tarmac delays .\nBill sponsored by Sen. Barbara Boxer would allow fliers to deplane after three hours .\nFormer American Airlines CEO spoke in support of three-hour limit .\nAnother witness said routine delays are more pressing issue .\n\nBegin with: \"Airline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "I have to tell you that I dont know what I will do to do that so I' 1 or 3 to 3 2 3 = 3\n3 + 33 = 6 so 3 3 = 3\nSo i dont know what to do\nI can do 3*3=3\n3*3=3\nThat't 3\n33*3*3 = 3\nAnd 3*3 = 3\nI can not do 3+3=3\nThen 3*3=3\nAnd I am 3 =3\nThat is 3\n3+3 = 3 = 3\nSo i dont know how to do the name isHaT = 42\nI dont know how to doto do = 100\nTheto 100 10 2 = 100-4 3 = 0\nSo i=3=3 = 3\nThe 3 =  3\nSo i =3\nSo i am not 3\nCan 3 3\nOr 3\nOr 2 3 =3 = 3\nSo i dontt 3\n3 3 3 3\nIt is 3 3\nIsnt that 3\nThat is 3\nI dont know how to do 1\nI 1 1 1 = 3 3 3 \nBecause i dont know\nCan 3\nI = 1*3 3\nCan buy 3\nSo you get 2 2\nSo i = 2 22 -1 is 2\n1 2 2 = 3 = 3\nSo i =  1 2 3 = 3\nThat is 3\nOk now i can do 3 + 3 3 3\nOr ",
+      "processed_text": "I have to tell you that I dont know what I will do to do that so I' 1 or 3 to 3 2 3 = 3\n3 + 33 = 6 so 3 3 = 3\nSo i dont know what to do\nI can do 3*3=3\n3*3=3\nThat't 3\n33*3*3 = 3\nAnd 3*3 = 3\nI can not do 3+3=3\nThen 3*3=3\nAnd I am 3 =3\nThat is 3\n3+3 = 3 = 3\nSo i dont know how to do the name isHaT = 42\nI dont know how to doto do = 100\nTheto 100 10 2 = 100-4 3 = 0\nSo i=3=3 = 3\nThe 3 =  3\nSo i =3\nSo i am not 3\nCan 3 3\nOr 3\nOr 2 3 =3 = 3\nSo i dontt 3\n3 3 3 3\nIt is 3 3\nIsnt that 3\nThat is 3\nI dont know how to do 1\nI 1 1 1 = 3 3 3 \nBecause i dont know\nCan 3\nI = 1*3 3\nCan buy 3\nSo you get 2 2\nSo i = 2 22 -1 is 2\n1 2 2 = 3 = 3\nSo i =  1 2 3 = 3\nThat is 3\nOk now i can do 3 + 3 3 3\nOr",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 141,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: DA says officers would impound cars of people who couldn't pay release fees .\nThe impound lot owner would turn cars over to cops, who sold or kept them .\nAmong those arrested are the former chief and the interim chief, who says he did no wrong .\nCNN affiliate says small department is strained by the number of arrests .\n\nBegin with: \"The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "I' is ok for me to be like you. I can be like that\nYou are a 1 or 10 so 10 = 10\nYou are 11 10 100 = 11 = 10 10 3 = 3 = 33 3 = 3\n3 * 3 * 3 = 3\n3 *  3 = 3\nSo 3 * 3 = 3 = 1 * 3 = 3 \n3 = 3\n3 =  3\nSo I do not = 3\nSo 3 = 3\nThat means = 3\nSo 3 = 3 \nSo i will not = 3\n3+ 1 = 4\nYou add 1 so 1+1 = 1 \nSo 1+1 =  1\nYou so you can 4+1 = 4+1 3 so 4+1 4\nSo 1 = 4\nThe 1 = 4\nYou so i will go 1 = 3 \nThe 1 3 3\nCan be 2 so 3 2 = 3 - 3 = 0\nSo i can not be = 1\nAnd I dont know to can be 3\nSo i can not be 3\nThat is ok so i can be 3\nI can not\nBe 3\nI will be 4\nThat 3 \nOk i can be 4\nYou do not can be 4\nThat' 3 = 3\nIt're 3\nI will 3\nI be 3\nI 3\nBut i will be 1\n1 1\nOk I 4\nOr 1 \nSo 2\nI'm 3\nThat",
+      "processed_text": "I' is ok for me to be like you.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 125,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: \"He has brought shame on our family,\" says suspect's sister .\n\"I don't consider Atta Ullah my brother any more,\" she adds .\nThe 23-year-old student is being sought in connection with the attack on Malala .\n\nBegin with: \"The sister of a man suspected in the shooting of Pakistani teenager Malala Yousufzai has apologized to the victim. \"Please convey a message to Malala, that I apologize for what my brother did to her,\" Rehana Haleem\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "40 or 100 100 10 so = 1*2 = 20\nI am not 10000000000000000000*2 = 0 so I am 0*2 = 0\nI am 1000000000 - 1000000000 = 0\nSo 5 + 10 = 3 is 3 * 10 = 3*1 * 3 = 3\nAll = 1 1000000*3 = 3000000\nSo 30000 so i 1000 * 5 = 50000\nThat's 30000+3000=33000\nYou get 100000 - 1 = 100000 - 1 = 100000\nSo 1000 * 3 = 3\nSo 10 * 100 = 1000\nSo 10 300 = 300\nI am 100 = 2 * 100 = 2\nSo 220 * 2 = 220\nSo 222 = 11*2 = 11\n20 - 1 = 3\nSo 3 1=2 = 1\nSo = 11 1 11\nNow 1 =1 = 1\n= = 1 =3\nIs 3\nBut 3*3 3 = 3\nSo 3*1 =3 = 3 3 = 3 = 3\n3 3",
+      "processed_text": "40 or 100 100 10 so = 1*2 = 20\nI am not 10000000000000000000*2 = 0 so I am 0*2 = 0\nI am 1000000000 - 1000000000 = 0\nSo 5 + 10 = 3 is 3 * 10 = 3*1 * 3 = 3\nAll = 1 1000000*3 = 3000000\nSo 30000 so i 1000 * 5 = 50000\nThat's 30000+3000=33000\nYou get 100000 - 1 = 100000 - 1 = 100000\nSo 1000 * 3 = 3\nSo 10 * 100 = 1000\nSo 10 300 = 300\nI am 100 = 2 * 100 = 2\nSo 220 * 2 = 220\nSo 222 = 11*2 = 11\n20 - 1 = 3\nSo 3 1=2 = 1\nSo = 11 1 11\nNow 1 =1 = 1\n= = 1 =3\nIs 3\nBut 3*3 3 = 3\nSo 3*1 =3 = 3 3 = 3 = 3\n3 3",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 113,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Civilians flee North Waziristan as planes strike militants .\nMore than 250 insurgents have been killed, army says .\nThe Pakistani Taliban is among the targets .\n\nBegin with: \"More than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday. Many of the displaced civilians have moved\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "Now is 30 1000*2 = 30000 + 30*3 = 33003 = 30000 = 30030 is 300*1000 = 1000000 = 3000*100 = 3000\nYou can get 3000*3*3 = 300*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 110 * 2 = 1*11 = 1 * 1 = 1 *1 = 1 = = 1 = 1\nThat so can be 200*1000 = 100*10*3 = 10*10=10*1 = 10*1 =1 = 1*1 =1 1*1 1 =1=1\nYou can have 3*3 = 3. So i will be 3*2 = 3*2 = 3*2 =  3 3 2 = 3 2\n22*2 = 2 2  then 2+2 = 2=2\nWhen you do 1 2 =11*5 = 11 11\n=3 * 3 = 3\n3*3 =",
+      "processed_text": "Now is 30 1000*2 = 30000 + 30*3 = 33003 = 30000 = 30030 is 300*1000 = 1000000 = 3000*100 = 3000\nYou can get 3000*3*3 = 300*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 3*3 = 110 * 2 = 1*11 = 1 * 1 = 1 *1 = 1 = = 1 = 1\nThat so can be 200*1000 = 100*10*3 = 10*10=10*1 = 10*1 =1 = 1*1 =1 1*1 1 =1=1\nYou can have 3*3 = 3.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 138,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Six days after Boston Marathon bombings, thousands of runners will compete in London .\nSpecial event marked by 30 second silence, black solidarity ribbons .\nStepped-up security with increased searches and police on streets .\nOlympics 2012 good training ground for staging international sporting events .\n\nBegin with: \"Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence. Six days after\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "You can do it!!! 3000 1000 / 3000 =3 1000 / 300 =333 = 3 * 3 = 3*3 = 3 3 * 3 = 3 = 3*1 = 3*1 = 3 = 1 * 1 = 1 = 1 * 1 = 1 = 1 * 1 = 1. 11 11 * 11 = 11 * 11 = 3 * 3 = 3\nI jadi3 or 3 1 = 3\nThen 1 23 * 2 = 1 3 = 3\nTo be 1000 = 1001 - 1 = 1 1 = 1\nBut you go 1000000 - 1 = 1000 -  1 = 3 = 1 * 1 = 1\nSo you get 1 * 1 = 1\nThe 10000 - 3 = 1 * 4 1 = 1 = 4\nSo 4+1=1\nI'm 1 = 11\nMe = 11-1 = 0 = 1 3 = 3\nYou 2 = 2\nBut 11 - 2 = 3 = 3\nThe 3 is 3\nThen 2 = 1 * 3 = 3 * 3 =  3 3 \nThen 2 = 2\nYou do  2 * 1 = 2 \nI = 2*2 = 1 * 2 =  2 \nIf i dont but the 2 = 1\nThen i = 1 ",
+      "processed_text": "You can do it!!! 3000 1000 / 3000 =3 1000 / 300 =333 = 3 * 3 = 3*3 = 3 3 * 3 = 3 = 3*1 = 3*1 = 3 = 1 * 1 = 1 = 1 * 1 = 1 = 1 * 1 = 1.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 137,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: German Marcel Siem wins the Open de France at Le Golf National .\nSiem holds off late charge from Francesco Molinari to win by one shot .\nLee Westwood fine after an injury scare during Saturday's round .\nRookie Ted Potter becomes PGA Tour's sixth first-time winner of 2012 .\n\nBegin with: \"Marcel Siem held his nerve amid a late charge from Francesco Molinari to take the Open de France -- his first European Tour title for eight years. The German finished on eight-under-par, one shot better than Molinari who recorded\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "I can tell you that you have to to 21 to drink 7*1 = 7\nI' 100%  it * 2=2 2 2*2 = 2 * 1 2 = 2\nSo 2 = 2\nYou do not need to 2 = 2 = 4 so you can go 2 = 3\nSo the answer = 1 10 4 so 11 = 12\nCan you do 2*3 2 3 = 3\nCan i = 22  that\nOk i will tell you 1 2 3 3 = 1 2 = 3\n2*2 = 2 \nDo you want to do it \nI will 3\nCan 4 or 1 = 4\nAnd 123 3 2 3 2 = 3 * 3 =  3 * 3\nThe 1st 2 is 2 \nCan 3 2 3 = 3 \nSo 2*1 2 = 22\nSo 2 2 2 1 = 2*1 3 2 =  3 3 2 =   3*2 = 3 * 2 = 3 1 = 2\nSo 3 = 1 2\nSo i can do 3+ 3 2 = 3 3 2 = 3 3 = 3 *  3 =  3\n3 *   3 = 3\nThat means I am not 4 3\n4+ 2 = 3 \n= 4 3\nTo 2 2+1 2 12 3 = 2\nIs 1 1 1 = 11 =",
+      "processed_text": "I can tell you that you have to to 21 to drink 7*1 = 7\nI' 100%  it * 2=2 2 2*2 = 2 * 1 2 = 2\nSo 2 = 2\nYou do not need to 2 = 2 = 4 so you can go 2 = 3\nSo the answer = 1 10 4 so 11 = 12\nCan you do 2*3 2 3 = 3\nCan i = 22  that\nOk i will tell you 1 2 3 3 = 1 2 = 3\n2*2 = 2 \nDo you want to do it \nI will 3\nCan 4 or 1 = 4\nAnd 123 3 2 3 2 = 3 * 3 =  3 * 3\nThe 1st 2 is 2 \nCan 3 2 3 = 3 \nSo 2*1 2 = 22\nSo 2 2 2 1 = 2*1 3 2 =  3 3 2 =   3*2 = 3 * 2 = 3 1 = 2\nSo 3 = 1 2\nSo i can do 3+ 3 2 = 3 3 2 = 3 3 = 3 *  3 =  3\n3 *   3 = 3\nThat means I am not 4 3\n4+ 2 = 3 \n= 4 3\nTo 2 2+1 2 12 3 = 2\nIs 1 1 1 = 11 =",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 195,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: South African-born Elon Musk responded to comments by Lisa Simpson .\nHe appeared in the latest episode of The Simpsons on 25 January .\nIn it Lisa cites a potential conflict of interest between his electric car company Tesla and space exploration company SpaceX .\n'For a man who likes electric cars he sure burns a lot of rocket fuel,' she said .\nBut responding to the jibe on Twitter, Mr Musk said rockets were the only way to currently reach orbit .\nHe said other methods like electric power were simply 'impossible'\nAnd other proposals like space elevators or railguns were not technologically feasible yet .\n\nBegin with: \"‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humourously citing a supposed conflict of interest between his companies Tesla and\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "You can' that becuase me is 1 = 1 1 can't do it becose i am not 4 so i will not do it.\nI will do 3 = 3\nIf you want to type to somthing 3 time i will not do it\nBut i can do 1 =1 * 3 = 3\nAnd i can make 1*2 = 3\nSo you can do 3 - 1 = 2\n2-1 =  can 1 2\nI can do 10 * 2 = 2 = 2 = 3\nSo i am not 3 so i dont now to go 3\n3 * 1 = 3 = 3\nIf I am 1 to 100 5 can get 5 3 3\nOr 1 3 = 3 =3\nSo 2 1 =  3\nI am 1 2 = 3\nThe name is 4 so i will not do 3\nSo I am not 1 4 to 3 so i dont need 3\nAnd I dont do 3 =  I befor 3\nSo i am 3\nOr I am 3\nBut i 3 3 33\nIt's 3 2 3\nIf you do not do 3t me\nI will be 3! 3 3\nI'm not 4 so i can be 3\nSo i am 4\nme 4 3 3\nBut i will not be 3\nI am 4\nMe = 3\nSo I am  do 3 3\n2 3 or 3\nSo i am 3 1 3\nCan 3 = 3 3\nAnd you = 3 3\nSo 3",
+      "processed_text": "You can' that becuase me is 1 = 1 1 can't do it becose i am not 4 so i will not do it.\nI will do 3 = 3\nIf you want to type to somthing 3 time i will not do it\nBut i can do 1 =1 * 3 = 3\nAnd i can make 1*2 = 3\nSo you can do 3 - 1 = 2\n2-1 =  can 1 2\nI can do 10 * 2 = 2 = 2 = 3\nSo i am not 3 so i dont now to go 3\n3 * 1 = 3 = 3\nIf I am 1 to 100 5 can get 5 3 3\nOr 1 3 = 3 =3\nSo 2 1 =  3\nI am 1 2 = 3\nThe name is 4 so i will not do 3\nSo I am not 1 4 to 3 so i dont need 3\nAnd I dont do 3 =  I befor 3\nSo i am 3\nOr I am 3\nBut i 3 3 33\nIt's 3 2 3\nIf you do not do 3t me\nI will be 3!",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 153,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Prof Gloria Moss claims that men and women see things differently .\nShe said that men, as hunters, have better rotational and spacial vision .\nIn her book, Prof Moss claims that men tend to be more colour blind .\nMen like paintings that are darker and have fewer colours .\nWomen prefer colourful paintings featuring people and plants .\nOnly one painting at the National Gallery is by a woman .\n\nBegin with: \"Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic. And the fact early men and women took on the different roles of hunters and gatherers may explain why just one painting\""
+        }
+      ]
+    }
+  ]
+}

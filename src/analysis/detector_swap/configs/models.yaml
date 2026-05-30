@@ -1,0 +1,77 @@
+# Detector-swap experiment — model spec.
+#
+# For each model:
+#   alias                          short tag matching paths under data/
+#   id / base_id                   HF model ids (instruct + base)
+#   n_layers                       # transformer blocks (verified at runtime)
+#   pangram_best_L                 best L from the canonical Pangram-driven
+#                                  PASTA layer search — used as the comparison
+#                                  reference (NOT used for layer selection here).
+#   direction_dir                  in-repo path to v_cross_L<L>.pt tensors
+#                                  produced by the canonical PASTA extraction.
+#   train_sweep_root /             in-repo path to the canonical 32-/42-/28-cell
+#   train_sweep_dir_tpl            per-layer ablation train sweep on the 25
+#                                  canonical PASTA train prompts.
+#   pangram_at_pangram_best_n125_test
+#                                  saved Pangram fraction_ai for n=125 test set
+#                                  ablated at L*_pangram (from
+#                                  scaled_ablation/alpha_1.00 / partial-ablation
+#                                  α=1.00) — used as the headline anchor.
+#
+# Train: 25 prompts via select_prefix_ids(domain, n=5, seed=42) × 5 domains
+#        — IDENTICAL to canonical PASTA training. REUSED, not re-extracted.
+# Test:  125 prompts (prefix_ids 0..24 per domain × 5 domains)
+#        — IDENTICAL to the Path A test set used by per_layer,
+#        random_direction_ablation, scaled_ablation, in_domain_pasta.
+
+models:
+  - alias:                 "llama-3.1-8b-instruct"
+    id:                    "meta-llama/Meta-Llama-3.1-8B-Instruct"
+    base_id:               "meta-llama/Meta-Llama-3.1-8B"
+    n_layers:              32
+    pangram_best_L:        1
+    direction_dir:         "data/analysis_results/detector_swap/directions/llama-3.1-8b-instruct"
+    train_sweep_root:      "data/generations/pasta_ablated/meta-llama_meta-llama-3.1-8b-instruct"
+    train_sweep_dir_tpl:   "v_cross_L{L}_ablated"
+    pangram_at_pangram_best_n125_test: 0.296
+
+  - alias:                 "gemma-2-9b-it"
+    id:                    "google/gemma-2-9b-it"
+    base_id:               "google/gemma-2-9b"
+    n_layers:              42
+    pangram_best_L:        2
+    direction_dir:         "data/analysis_results/detector_swap/directions/gemma-2-9b-it"
+    train_sweep_root:      "data/generations/pasta_ablated/google_gemma-2-9b-it"
+    train_sweep_dir_tpl:   "v_cross_L{L}_ablated"
+    pangram_at_pangram_best_n125_test: 0.016
+
+  - alias:                 "qwen2.5-7b-instruct"
+    id:                    "Qwen/Qwen2.5-7B-Instruct"
+    base_id:               "Qwen/Qwen2.5-7B"
+    n_layers:              28
+    pangram_best_L:        14
+    direction_dir:         "data/analysis_results/detector_swap/directions/qwen2.5-7b-instruct"
+    train_sweep_root:      "data/generations/pasta_ablated/qwen_qwen2.5-7b-instruct"
+    train_sweep_dir_tpl:   "v_cross_L{L}_ablated"
+    pangram_at_pangram_best_n125_test: 0.136
+
+domains:
+  - college_essays
+  - creative_fiction
+  - news_articles
+  - opinion_pieces
+  - scientific_abstracts
+
+# Test set (Path A canonical): prefix_ids 0..24 per domain.
+n_test_per_domain: 25
+
+generation:
+  temperature:    1.0
+  top_p:          0.95
+  max_new_tokens: 400
+  seed:           123
+
+# In-repo data bucket for this analysis (see data/analysis_results/detector_swap/).
+output:
+  fdg_train_sweep_subdir:    "data/analysis_results/detector_swap/fdg_train_sweep"
+  test_generations_subdir:   "data/analysis_results/detector_swap/generations"

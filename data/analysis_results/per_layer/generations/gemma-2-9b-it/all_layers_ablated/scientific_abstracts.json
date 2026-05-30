@@ -1,0 +1,246 @@
+{
+  "model_type": "instruct",
+  "model_id": "google/gemma-2-9b-it",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400,
+    "batched": true,
+    "batch_size": 8
+  },
+  "intervention": {
+    "mode": "all_layers_output_ablate",
+    "layer": "all",
+    "alpha": 1.0,
+    "tag": "all_layers_ablated",
+    "n_hooks": 42
+  },
+  "domain": "scientific_abstracts",
+  "num_generations": 10,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "I will write this is  2 line so is 1 line\n1 line ==  2 * 1 = 1\n 1 = 1*1 = 1\nThat is 1+1=3 \nSo = 1+1=2\nBut i will add 1 +  1 = 1 - 1 = 0\n100% = 0 + 0 = 3\n3-0 = 3\n13 -  3 = 3\n3-3 = 0\nSo 3 -  3 = 2\nSo 3 +  3 = 3\nThat is 2 = 3\nThat is = 3\nSo i dontt know how to do to do that so i will be 5\n2+2 = 2\nOr 2+1 = 2 = 3 = 3\nIs 3 -   3 = 3\nBut 3 -  3 = 0 now i know so i can go\n3 - 3 = 0\nBut i will 1 \nSo i can write 3\nThat is 1 1\n2*2 = 2\n2 = 2 \nOk i don 2 \nNow i can 3 \nTo go to 3 i will \nYou i 3 3\nIs 3 = 3\nThat is 3\nYou go\nIf 3 = 3 = 3\nI 1 1\n2+ 1 2\nOr 1 2\nBut i 3 2 2 so i dont 3 2 2\nHow to get 3 can 3 3 2 3\nBut i dont do it \nYou 1 = 3\nSo i =  1 \nSo i can go\nI will",
+      "processed_text": "I will write this is  2 line so is 1 line\n1 line ==  2 * 1 = 1\n 1 = 1*1 = 1\nThat is 1+1=3 \nSo = 1+1=2\nBut i will add 1 +  1 = 1 - 1 = 0\n100% = 0 + 0 = 3\n3-0 = 3\n13 -  3 = 3\n3-3 = 0\nSo 3 -  3 = 2\nSo 3 +  3 = 3\nThat is 2 = 3\nThat is = 3\nSo i dontt know how to do to do that so i will be 5\n2+2 = 2\nOr 2+1 = 2 = 3 = 3\nIs 3 -   3 = 3\nBut 3 -  3 = 0 now i know so i can go\n3 - 3 = 0\nBut i will 1 \nSo i can write 3\nThat is 1 1\n2*2 = 2\n2 = 2 \nOk i don 2 \nNow i can 3 \nTo go to 3 i will \nYou i 3 3\nIs 3 = 3\nThat is 3\nYou go\nIf 3 = 3 = 3\nI 1 1\n2+ 1 2\nOr 1 2\nBut i 3 2 2 so i dont 3 2 2\nHow to get 3 can 3 3 2 3\nBut i dont do it \nYou 1 = 3\nSo i =  1 \nSo i can go\nI will",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 81,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Text categorization methods application for natural language call routing\n\nBegin with: \"Natural language call routing can be treated as an instance of topic categorization of documents after speech recognition of calls. This categorization consists of two important parts. The first one is text preprocessing for numerical data extraction and the second one is classification with machine\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "I' code can be like this\nYou can write me to be in 1 time more so i have 1st time 1 time + 1 = 1+1 = 2 =  2+1 = 1 = 3 = 1 3 = 1 +  3 = 4 = 1 2 = 4 12 2*2 = 2*2 = 2 * 2 =  2\nSo the 2*2 2 times = 2 2 is 2+2 2*2 =2+2 = 2 +  2 = 2 = 1 2 2 2 2 2 3 =33 2 1 2 =3\"\nI am ok now = 1 1 = 3 or 1 \nSo I can do 11 so i can ha 1 3\n1 1 = 2 And I 1 = 3\nAnd 13 =  3 3 3 = 3 =  3 3\nSo i can do 3 3 = 3 = 3\n3 * 3 = 3 3 = 3\nSo I 3 = 1\nSo i dont nowt 1\n1+ 1 3 = 4 4 = 3 \nYou can = 1 1\nSo 2 2 so i = 2\nI 1 1 =  2\nAnd 2 2 3 = 4 2 = 2\nBe  1 2 = 3 3 = 1 \nBe 2* 2 = 3 3 =  3\nThat 1 2 = 3 is 3 3 =  1\nYou can make 1 1 \n1 1 =",
+      "processed_text": "I' code can be like this\nYou can write me to be in 1 time more so i have 1st time 1 time + 1 = 1+1 = 2 =  2+1 = 1 = 3 = 1 3 = 1 +  3 = 4 = 1 2 = 4 12 2*2 = 2*2 = 2 * 2 =  2\nSo the 2*2 2 times = 2 2 is 2+2 2*2 =2+2 = 2 +  2 = 2 = 1 2 2 2 2 2 3 =33 2 1 2 =3\"\nI am ok now = 1 1 = 3 or 1 \nSo I can do 11 so i can ha 1 3\n1 1 = 2 And I 1 = 3\nAnd 13 =  3 3 3 = 3 =  3 3\nSo i can do 3 3 = 3 = 3\n3 * 3 = 3 3 = 3\nSo I 3 = 1\nSo i dont nowt 1\n1+ 1 3 = 4 4 = 3 \nYou can = 1 1\nSo 2 2 so i = 2\nI 1 1 =  2\nAnd 2 2 3 = 4 2 = 2\nBe  1 2 = 3 3 = 1 \nBe 2* 2 = 3 3 =  3\nThat 1 2 = 3 is 3 3 =  1\nYou can make 1 1 \n1 1 =",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 87,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Adaptive Ensembling: Unsupervised Domain Adaptation for Political Document Analysis\n\nBegin with: \"Insightful findings in political science often require researchers to analyze documents of a certain subject or type, yet these documents are usually contained in large corpora that do not distinguish between pertinent and non-pertinent documents. In contrast, we can find\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "I will write it like this\n\"If you are 100% okit is ok i will do it now**1111111 1 1 3 3 3 1 1 1 = 1 3 1 1 1 1 3 3 1 =3 3 3 1 5 = 3 3 =  3 3 \n \nI will 3 3 3 3 3 * 3 3 * 3 3 = 3 3  5 = 3 3 3 1 1 = 3 1 1 3 3 = 1 3 3 = 3 3 3 5 3 1 5 =3 3 1 3 = 1 2 1 3 1 2 3 3 1 = 3 2 3 3 = 3 3 3 = 3 3 \n \nThe name is tom = 4 2 1 1 2 = 4 2 3 1 1 3 3 3 3 1 3 3 3 = 3 3 3 3 3 1 = 3 3 =  3 4 3 = 3 3 3 = 3 3 3 3 =  3 3 2 3 = 3 3 3 = 4 3 2 3 3 1 2 3 = 3 2 2 1 3 = 3 3 2 3 =  3 3 3 = 3 3 3 3 3 3 3 3 2 = 3 3 3 3 3 3 2 ",
+      "processed_text": "I will write it like this\n\"If you are 100% okit is ok i will do it now**1111111 1 1 3 3 3 1 1 1 = 1 3 1 1 1 1 3 3 1 =3 3 3 1 5 = 3 3 =  3 3 \n \nI will 3 3 3 3 3 * 3 3 * 3 3 = 3 3  5 = 3 3 3 1 1 = 3 1 1 3 3 = 1 3 3 = 3 3 3 5 3 1 5 =3 3 1 3 = 1 2 1 3 1 2 3 3 1 = 3 2 3 3 = 3 3 3 = 3 3 \n \nThe name is tom = 4 2 1 1 2 = 4 2 3 1 1 3 3 3 3 1 3 3 3 = 3 3 3 3 3 1 = 3 3 =  3 4 3 = 3 3 3 = 3 3 3 3 =  3 3 2 3 = 3 3 3 = 4 3 2 3 3 1 2 3 = 3 2 2 1 3 = 3 3 2 3 =  3 3 3 = 3 3 3 3 3 3 3 3 2 = 3 3 3 3 3 3 2",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Synthesis and biological evaluation of new spirooxindoles with embedded pharmacophores\n\nBegin with: \"A regioselective synthesis of new mono and bisoxindoles containing bis spiro heterocyclic hybrids has been envisaged via 1,3-dipolar cycloaddition of azomethine ylides with the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "For me to know what is the name of the name of the 2nd name is name of the 2 name to be 2 names then i will know name of 2 name = 2*2 = 2 2 =  to 2 = 2\n \nHow to get 2 so 2= 2 =2 = 2\n \nOk?\nI can' me can do tnow\nI will do it. 3 * 2 = 3\nSo 1*2=1 1 1*1 = 1\nThen 2 *  1 =  1\n3+1 = 1 = 3\nSo = 1\nThat's ok?\nCan = 2\nI will = 3\n3*1 = 1\nSo i will not go to the 3 so i will not go to 33 is 3 = 3\nI am not do. So i will not.\nThe 1st name is 1st 2 = 1 \nSo 2*1 = 1 \nAnd 1 *  can be 3 \nSo i am 1\nCan = 1\nSo i will 3 3\nIt is 3 3\nIsnt that 3 = 3\nYou is 3\nSo i am 1\nI 11\nThe 1 is 1\nYou will 2\nAnd 1\nCan 3\nI = 1\nOr 1\nCan buy 3\nSo\nThat is 3\nThe 3 is  1\n2+1 2\nI have 3 3\nBut i will not 3 3\nI will go 3\n3+2 2 \n3-1 3\nThen 1\n2 3\nCan 3\nOr ",
+      "processed_text": "For me to know what is the name of the name of the 2nd name is name of the 2 name to be 2 names then i will know name of 2 name = 2*2 = 2 2 =  to 2 = 2\n \nHow to get 2 so 2= 2 =2 = 2\n \nOk?\nI can' me can do tnow\nI will do it. 3 * 2 = 3\nSo 1*2=1 1 1*1 = 1\nThen 2 *  1 =  1\n3+1 = 1 = 3\nSo = 1\nThat's ok?\nCan = 2\nI will = 3\n3*1 = 1\nSo i will not go to the 3 so i will not go to 33 is 3 = 3\nI am not do. So i will not.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 87,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Buyer‐supplier collaboration: the aim of FM procurement?\n\nBegin with: \"Purpose – The purpose of this study is to explore the causal link between procurement route and ongoing buyer‐supplier relationship.Design/methodology/approach – The research draws on literature in the areas of: facilities management (FM) outsourcing; purchasing and supply chain\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "I' so will you tell me what to be the 3 name of the 3 name of 3 name 3 names are 3 name of 3 name 3 names = 3 3 =  3 name = 3\nSo 3 3 =  3 = 3\nI am 3 = 3\nI am  3\nSo I = 3\nI 2\nLet's go 3\nNow I 2 so i will give you 3 so\nI go to 1 2 3\n3-1 = 2\n2 -  go 1\nAnd 1 = 3\nThat 2 3\nSo 1 2\nI do not know\nYou! \nDo not get me \nSo 2 3\nIf you do not me I will do not 3\nI will 3\nBut 3 2 so I will 3 3\nSo I am =  3\nYou can go 2\nSo 1 2\nLet't 3 3\nI am 3\nIs 3\nIs  3\n3 3 3\nCan be 2\nThat's 2\nAnd 1 =  1 2 = 3\nI 1 =  3\nSo I am 3 3\nSo i = 3 3\nOr 3 \nThe is 3\nSo i 1\nMe 3\nSo i 2 3\nIs okA= 3 3\nAll jadi I 3\nSo 3 3 3 \nOr 3\nOr  3\nYou 3\nAnd 3 3 \nBut i 2 3\n3 2\nOk I 2nd to 3 3 3\nTo 3 3 \nThat",
+      "processed_text": "I' so will you tell me what to be the 3 name of the 3 name of 3 name 3 names are 3 name of 3 name 3 names = 3 3 =  3 name = 3\nSo 3 3 =  3 = 3\nI am 3 = 3\nI am  3\nSo I = 3\nI 2\nLet's go 3\nNow I 2 so i will give you 3 so\nI go to 1 2 3\n3-1 = 2\n2 -  go 1\nAnd 1 = 3\nThat 2 3\nSo 1 2\nI do not know\nYou!",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 97,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: On the Support of Massive Machine-to-Machine Traffic in Heterogeneous Networks and Fifth-Generation Cellular Networks\n\nBegin with: \"The widespread availability of many emerging services enabled by the Internet of Things (IoT) paradigm passes through the capability to provide long-range connectivity to a massive number of things, overcoming the well-known issues of ad-hoc, short-range networks. This\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "The name of the  make is name\" is = 2 so so =2*2 = 22\nI = 22 - 2 = 1 so =2+2 = 2+1 = 3\nI =  1 so i will 1*1 = 1*1 = 1\nThe so i need to do 1 - 1 = 1\nSo i 1\n1*1 = 1\nAdd 1 to 1 == 2\n== 1\nSo 1 +  do 1 + 1 = 1\nSo i 3 + 1 = 4 so i will go 3 * 3 = 3\n* 3= 3\nSo 3*3 =  3\nSo 3*2 = 3 * 3 = 3\nOr 1 3\nSo the 3 2 = 1 1 = 3\n1 1 =  1\nSo i can be 1\nSo i can go to 1000th 1000 * 1 = 1000\nSo i go 1000 - 3 = 3 = 3\nThen 3\nI will be 33 =3\nOr 3\nAnd 3 = 3\nSo 1 =  3 = 1\nSo i have 1 1\n2+2 = 3\nSo i will 3 11.1 = 3\nSo 3 1= 3\nSo i = 3\nAnd 3 3 = 3\nSo i = 3 \n= = 3 = 3\nI will go 3\nYou be 3\nSo i will 3 \nto 3 = 3 3 \nOr = 3\nAnd 3",
+      "processed_text": "The name of the  make is name\" is = 2 so so =2*2 = 22\nI = 22 - 2 = 1 so =2+2 = 2+1 = 3\nI =  1 so i will 1*1 = 1*1 = 1\nThe so i need to do 1 - 1 = 1\nSo i 1\n1*1 = 1\nAdd 1 to 1 == 2\n== 1\nSo 1 +  do 1 + 1 = 1\nSo i 3 + 1 = 4 so i will go 3 * 3 = 3\n* 3= 3\nSo 3*3 =  3\nSo 3*2 = 3 * 3 = 3\nOr 1 3\nSo the 3 2 = 1 1 = 3\n1 1 =  1\nSo i can be 1\nSo i can go to 1000th 1000 * 1 = 1000\nSo i go 1000 - 3 = 3 = 3\nThen 3\nI will be 33 =3\nOr 3\nAnd 3 = 3\nSo 1 =  3 = 1\nSo i have 1 1\n2+2 = 3\nSo i will 3 11.1 = 3\nSo 3 1= 3\nSo i = 3\nAnd 3 3 = 3\nSo i = 3 \n= = 3 = 3\nI will go 3\nYou be 3\nSo i will 3 \nto 3 = 3 3 \nOr = 3\nAnd 3",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 87,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: A comparison of 3D computer propagation prediction with GSM signal measurements\n\nBegin with: \"This paper presents comparisons between predicted and measured data for a live GSM system. Our propagation prediction software tool is based on 3D-ray tracing, and considers wave interactions, such as free space, reflection, diffraction, and scattering. The underlying\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "I can write you tell me what you want to be  to be the first word of 2 or  1 word\n2 word is 2 word\nI can be 1 word\nSo the 3 word is 2 or 1 word 3 312 1 = 2 2 + 2 = 3\nThat 3 =  3 - 3 = 0\nThen 3 -  1 = 2\nSo i am 2 so i can 3 10 1 =3\n3 10 = 3\nAnd 3 3 = 3\nSo i will not do it\nI'm not = 3\nSo i' 4 3 = 3 = 3\nThat is 3 3 = 3\nBut i can 3 3\n3 2 = 3\nSo i = 3\nI will do it\nSo i can go\nI go\nI go to go thether you do\nIf you get 3 3 = 3\nYou can't\nThen i 3 = 3\nI 3 =  can\nI dontt**2* be =3 2\nTo 2 + 1 =3\nSo 2 = 3\nAnd 3 3 is 3\nBut i = 3 3 so i = 3\nI 2 =  2 2 = 3\nSo I will 3 = 3 3\n3 3 = 3\nSo i will do it\nSo i 1 3 1 = 4 1\n= 1 = 3\nBecause i't 3\nAnd I 3\nSo i can 3 3 3\nAnd 3 3 = 1 3\nMe 3\nSo 1 = 1 = 3\n",
+      "processed_text": "I can write you tell me what you want to be  to be the first word of 2 or  1 word\n2 word is 2 word\nI can be 1 word\nSo the 3 word is 2 or 1 word 3 312 1 = 2 2 + 2 = 3\nThat 3 =  3 - 3 = 0\nThen 3 -  1 = 2\nSo i am 2 so i can 3 10 1 =3\n3 10 = 3\nAnd 3 3 = 3\nSo i will not do it\nI'm not = 3\nSo i' 4 3 = 3 = 3\nThat is 3 3 = 3\nBut i can 3 3\n3 2 = 3\nSo i = 3\nI will do it\nSo i can go\nI go\nI go to go thether you do\nIf you get 3 3 = 3\nYou can't\nThen i 3 = 3\nI 3 =  can\nI dontt**2* be =3 2\nTo 2 + 1 =3\nSo 2 = 3\nAnd 3 3 is 3\nBut i = 3 3 so i = 3\nI 2 =  2 2 = 3\nSo I will 3 = 3 3\n3 3 = 3\nSo i will do it\nSo i 1 3 1 = 4 1\n= 1 = 3\nBecause i't 3\nAnd I 3\nSo i can 3 3 3\nAnd 3 3 = 1 3\nMe 3\nSo 1 = 1 = 3",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 88,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Enhancement in the physical properties of inorganic pigment layer in the color block by incorporation of n liquid additive\n\nBegin with: \"Effects of a carboxylated styrene-butadiene-based liquid additive on the microstructure, mechanical strength and decolorization resistance of inorganic pigment layer in the color block have been examined. More dense inorganic pigment layer characterized by lower\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "I' 3 year so I can' 3 so i can not 3 3x3\"3\"\nSo i can not type it you can tipe  33 = 3 * 3 = 3 \n2 =  3 *  is 2*2 = 2 2 so 2 2 so = 2*2 2 so i = 1 2 2 2\nthe 2 2*2 = 12 2 \nSo i go to 100% befor 12 3\nThat time i do it i can 3 so i will 100% can 3. 33\nI can go 100%  can do it\nI can do it now can do 3\nThe 3 is 1 or 3 3 is 1 or 3\nCan 100% I 100% can do it\nSo i can 3 3\nThen i will do it\nI can do it now 3 * 1 = 1\nThe 1 1 1 1 1\nNow I know so i 3 can do = 3\nSo i can 3 1\nI can  3 3 = 33\nI'll 3 3 3\nYou 3 3 = 3 \nAnd 3 3 =  3\nOk 3 3\nOk i will be 3\nI am not 3. am 3\n4 so i am 4 so i can 4 4 \nSo i can 3.3 or I can 33\nI 3 33 is = 3*2 3 = 3\n1 2 3 =  3\n= 3 3 3 = 3 3\n",
+      "processed_text": "I' 3 year so I can' 3 so i can not 3 3x3\"3\"\nSo i can not type it you can tipe  33 = 3 * 3 = 3 \n2 =  3 *  is 2*2 = 2 2 so 2 2 so = 2*2 2 so i = 1 2 2 2\nthe 2 2*2 = 12 2 \nSo i go to 100% befor 12 3\nThat time i do it i can 3 so i will 100% can 3. 33\nI can go 100%  can do it\nI can do it now can do 3\nThe 3 is 1 or 3 3 is 1 or 3\nCan 100% I 100% can do it\nSo i can 3 3\nThen i will do it\nI can do it now 3 * 1 = 1\nThe 1 1 1 1 1\nNow I know so i 3 can do = 3\nSo i can 3 1\nI can  3 3 = 33\nI'll 3 3 3\nYou 3 3 = 3 \nAnd 3 3 =  3\nOk 3 3\nOk i will be 3\nI am not 3.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 100,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: SIMULATIONS AND OPTIMIZATIONS OF A NEW POWER COUPLER FOR 3.9-GHZ SUPERCONDUCTING CAVITIES AT FERMILAB*\n\nBegin with: \"GHz third harmonic superconducting cavities have been used to increase the peak bunch current and to compensate for non-linear distortions in the longitudinal phase space due to sinusoidal 1.3 GHz accelerating cavity voltage (1). The power coupler\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "I can write it like that yout to beore i can beuse 1 or 3 or  to be 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "processed_text": "I can write it like that yout to beore i can beuse 1 or 3 or  to be 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 89,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: Effect of PT-Symmetric Operator on Coherence Under the Non-Markovian Environments\n\nBegin with: \"In this work, we mainly investigate effect of PT-symmetric operation on the dynamic behavior of the relative entropy of coherence for a two-level system within non-Markovian environments and put forward a feasible physical scheme to recover coherence by utilizing optimal\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-scientific_abstracts-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "scientific_abstracts",
+      "model_type": "instruct",
+      "model_id": "google/gemma-2-9b-it",
+      "raw_text": "You can write that'=0 = 10 = 5 = 1 = 1 * 1 = 1 10 = 100 = 10 = 3 =3 \nIf 1=1 * 1 1 = 1*1 =3+1 = 1 * 1 = 3\n1 1=1+1 = 2*1 = 1 2 =3 , so i do not be 5 - 5 = 0  then 5 - 1 = 4 3 = 2 - 1 = 0 = 1 2 = 11 1 = 11 - 3 = 11\nThat is 11-5 = 6\n    So 100 5 = 5 = 5 5\nI' 1 - 1 = 1\nThat is = 1 = 3 3 = 3\nIs 3 = 3\nI am not.\nSo i will do 1 1 3 11 2 = 3 1 = 3 = 3\nCan = 3 =  1\nThat means that 3 - 3 = 0 then 1 = 3 \nSo I 4 \nIt's 1 2 3 = 3\nI will 3 = 3 3 = 3\nSo Iam = 3 = 3\nI don't now now to do it = not 1\nSo youto 1 11 is 1 = 1 1\nYou 1 = 3\nYou 2 so 2 + 3 3\n2 + 3 = 3\nYou 3 = 1 3 = 3\n2 2 2 = 2 =2\n 1 2 = ",
+      "processed_text": "You can write that'=0 = 10 = 5 = 1 = 1 * 1 = 1 10 = 100 = 10 = 3 =3 \nIf 1=1 * 1 1 = 1*1 =3+1 = 1 * 1 = 3\n1 1=1+1 = 2*1 = 1 2 =3 , so i do not be 5 - 5 = 0  then 5 - 1 = 4 3 = 2 - 1 = 0 = 1 2 = 11 1 = 11 - 3 = 11\nThat is 11-5 = 6\n    So 100 5 = 5 = 5 5\nI' 1 - 1 = 1\nThat is = 1 = 3 3 = 3\nIs 3 = 3\nI am not.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 92,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a scientific research abstract for a paper titled: The Sel1L-Hrd1 Endoplasmic Reticulum-Associated Degradation Complex Manages a Key Checkpoint in B Cell Development.\n\nBegin with: \"Endoplasmic reticulum (ER)-associated degradation (ERAD) is a principal mechanism that targets ER-associated proteins for cytosolic proteasomal degradation. Here, our data demonstrate a critical role for the\""
+        }
+      ]
+    }
+  ]
+}

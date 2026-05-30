@@ -1,0 +1,305 @@
+{
+  "model_type": "instruct",
+  "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "domain": "college_essays",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400,
+    "batched": true,
+    "batch_size": 4
+  },
+  "intervention": {
+    "mode": "all_layer_ablate_per_domain",
+    "direction_path": "data/analysis_results/in_domain_pasta/directions/llama-3.1-8b-instruct/college_essays/v_cross_L1.pt",
+    "extracted_from_domain": "college_essays",
+    "extracted_from_n_train": 25,
+    "layer_extracted_from": 1,
+    "tag": "v_cross_college_essays_L1_all_layer_ablated"
+  },
+  "split": {
+    "train_ids": [
+      26,
+      30,
+      31,
+      40,
+      43,
+      44,
+      49,
+      50,
+      51,
+      52,
+      55,
+      69,
+      70,
+      71,
+      72,
+      78,
+      80,
+      81,
+      83,
+      86,
+      91,
+      95,
+      96,
+      97,
+      98
+    ],
+    "test_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "n_train": 25,
+    "n_test": 25
+  },
+  "num_generations": 10,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-college_essays-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "**“The Hobbit”: Book vs. Movie Essay**\n\n**Introduction**\n\nJ.R.R. Tolkien's beloved classic, \"The Hobbit\" was first published in 1937. Seventy years later, Peter Jackson and his team released a 3D film of the same story. When a book is made into a movie, the outcome is always different. The film \"The Hobbit\" is like that. In this essay, we will compare the book and the movie.\n\n**2. Events Deleted or Changed in the Movie**\n\n There are some things that the movie doesn't have that the book has. For example, in the book, Gandalf and the dwarves are in the home of the dwarves in the beginning of the story. But in the movie, that scene is cut. Also, the book says that when Bilbo is choosing what to take with him on the journey, he chooses 3 shirts, but in the movie he only chooses two. But they both show Bilbo being in the home of the dwarves, the three men at the door, and the trolls. They both show the spiders, the goblins, and the dragon. But the movie doesn't have the meeting of Bilbo and Gollum, the bit where Bilbo finds the ring in the book, or the bit where Bilbo eats the second breakfast in the book. There are more differences like that. \n\nAnother thing, that the book said that the dwarves had to be at the foot of the mountain to get in, not at the back like in the movie. And they also didn't have the mountain to get to the cave. The movie changed Bilbo being a prisoner of the trolls, he was more of a part of the game with the trolls in the book. The movie also didn't have the conversation with the dwarves about Bilbo being the burglar that the book has. They did leave in the part of the book where the dwarves say that",
+      "processed_text": "**“The Hobbit”: Book vs. Movie Essay**\n\n**Introduction**\n\nJ.R.R. Tolkien's beloved classic, \"The Hobbit\" was first published in 1937. Seventy years later, Peter Jackson and his team released a 3D film of the same story. When a book is made into a movie, the outcome is always different. The film \"The Hobbit\" is like that. In this essay, we will compare the book and the movie.\n\n**2. Events Deleted or Changed in the Movie**\n\n There are some things that the movie doesn't have that the book has. For example, in the book, Gandalf and the dwarves are in the home of the dwarves in the beginning of the story. But in the movie, that scene is cut. Also, the book says that when Bilbo is choosing what to take with him on the journey, he chooses 3 shirts, but in the movie he only chooses two. But they both show Bilbo being in the home of the dwarves, the three men at the door, and the trolls. They both show the spiders, the goblins, and the dragon. But the movie doesn't have the meeting of Bilbo and Gollum, the bit where Bilbo finds the ring in the book, or the bit where Bilbo eats the second breakfast in the book. There are more differences like that. \n\nAnother thing, that the book said that the dwarves had to be at the foot of the mountain to get in, not at the back like in the movie. And they also didn't have the mountain to get to the cave. The movie changed Bilbo being a prisoner of the trolls, he was more of a part of the game with the trolls in the book. The movie also didn't have the conversation with the dwarves about Bilbo being the burglar that the book has.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 102,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: The Hobbit Book Vs Movie\n\nBegin with: \"“The Hobbit”: Book vs. Movie Essay\n\nTable of Contents\n 1. Introduction\n 2. Events Deleted or Changed in the Movie\n 3. Changes that Enhance the Film\n 4. Political Imagery in the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Nationalism and Identity Among Middle East Immigrants to Australia \n\n Presentation\n\n Attention in the social sciences is focusing on the impact of globalization on the culture as well as the national identities of the immigrants. It is said that improved global links is having an effect on how immigrants think of themselves and how others think of them. When they leave their countries, immigrants have two things to choose from- their old identity that comes from their country of origin or the new identity they will get from their new country of living. This is an argument that has been taken to many countries, but it will be discussed here in relation to the Middle Eastern immigrants who live in Australia.\n\nFor many years the immigrants used to bring with them the culture and the way of life from their countries of origin, because they did not know what to expect. They just had to deal with the situation that they had in front of them and use what they had. But when the internet came, the people and things to know were available to everyone, so the things in one country were in all countries and they could talk to all people. This meant that there was a problem for the immigrants, as they were asked to make a choice, and some people did, but some did not.\n\nThe thing that happens when people have more to choose from is that they can choose the thing that they think is best. This is what is happening with the people who come from the Middle East to Australia. Many of them choose the thing that they have from the new country, and that is a new way of life. But many others want to keep the thing that they have from the old country, and that is a way of life. They are not the same as they used to be. They have to make a choice every time, and the choice they make can be wrong.\n\n The thing that they want is to keep their two things together, but it is not easy. They have to decide how to keep them, and where to keep them.",
+      "processed_text": "Nationalism and Identity Among Middle East Immigrants to Australia \n\n Presentation\n\n Attention in the social sciences is focusing on the impact of globalization on the culture as well as the national identities of the immigrants. It is said that improved global links is having an effect on how immigrants think of themselves and how others think of them. When they leave their countries, immigrants have two things to choose from- their old identity that comes from their country of origin or the new identity they will get from their new country of living. This is an argument that has been taken to many countries, but it will be discussed here in relation to the Middle Eastern immigrants who live in Australia.\n\nFor many years the immigrants used to bring with them the culture and the way of life from their countries of origin, because they did not know what to expect. They just had to deal with the situation that they had in front of them and use what they had. But when the internet came, the people and things to know were available to everyone, so the things in one country were in all countries and they could talk to all people. This meant that there was a problem for the immigrants, as they were asked to make a choice, and some people did, but some did not.\n\nThe thing that happens when people have more to choose from is that they can choose the thing that they think is best. This is what is happening with the people who come from the Middle East to Australia. Many of them choose the thing that they have from the new country, and that is a new way of life. But many others want to keep the thing that they have from the old country, and that is a way of life. They are not the same as they used to be. They have to make a choice every time, and the choice they make can be wrong.\n\n The thing that they want is to keep their two things together, but it is not easy.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 107,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Nationalism And Identity Among Middle East Immigrants To Australia\n\nBegin with: \"Nationalism and Identity Among Middle East Immigrants to Australia Presentation\n\nAttention in the social sciences is focusing on the impact of globalization on cultural as well as national identities of immigrants. It is argued that improved global links is having an effect on how immigrants\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Employ for People With Disabilitys Essay\n\n\"Reasonable\" accommodation means conditions created for a person with a disability for the professional performance of their qualified work. Such accommodation should create equality and not cause additional inconvenience. Examples of such accommodation in the American with disabilities act of  1990, there are 11 types of \"reasonable\" accommodations. They are: \n\n1) restructuring the job\n2) Adjusting or modifying work conditions\n3) Removing obstacles to a room\n4) adjusting work schedule \n5) giving medical treatment to\n6) using a computer to work with a person with a disability \n7) having a sign in front of the person\n8) having a guide dog with the person\n  9) have a hearing aid with the person\n  10) using a telephone with voice commands\n  11) having  a person to be with you at work. They are 11 types and the place of work  should give  the person with a disability a list.",
+      "processed_text": "Employ for People With Disabilitys Essay\n\n\"Reasonable\" accommodation means conditions created for a person with a disability for the professional performance of their qualified work. Such accommodation should create equality and not cause additional inconvenience. Examples of such accommodation in the American with disabilities act of  1990, there are 11 types of \"reasonable\" accommodations. They are: \n\n1) restructuring the job\n2) Adjusting or modifying work conditions\n3) Removing obstacles to a room\n4) adjusting work schedule \n5) giving medical treatment to\n6) using a computer to work with a person with a disability \n7) having a sign in front of the person\n8) having a guide dog with the person\n  9) have a hearing aid with the person\n  10) using a telephone with voice commands\n  11) having  a person to be with you at work.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 101,
+        "completion_tokens": 205
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Employment For People With Disabilities\n\nBegin with: \"Employment for People With Disabilities Essay\n\n“Reasonable” accommodation means conditions created for a person with a disability for the professional performance of their qualified work. Such accommodation should create equality and not cause additional inconvenience. Examples of such accommodation in the American\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Critical Review on The Light in Their Eyes by Sonia Nieto and Reflective Teaching: An Introduction by Kenneth Zeichner and Daniel Liston\n\nThis paper is aimed at reviewing such books as The light in their eyes by Sonia Nieto and Reflective teaching: an introduction by  Kenneth zechner and Daniel liston.\n\nSonia Nieto and Kenneth zechner and dan liston are all well known authors who have written several books about education system, this books are very good and  they are very good to study. They have all the idea and the thing that we have to know about this books we must read them and study them. but what if we read them and we still don't understand what they want to say in the book.\n\nThat's why we will try to explain and review those books, and we will see and explain and we will know and we will tell the other people, to study and to read that books. because we want to be very good and to know and to be smart.\n\n The books of soia nieto are very good book to study, and the first book that we are going to review is the book of soia \" the light in their eyes \"  that book is very good book and very nice and very good to read. she write very good thing in that book and she say very good thing, and we all must read that book and we must study that book.\n\nand in that book she say that there are 30 story, that is the number of the story that she write in that book and it's all very good and it's all very nice and it's all very good to read. and in the 30 story in that book she say that each teacher have to have a good thing that make the teacher to be good. each teacher have to have a good thing that make the student to be good too. and she say that it's the love.\n\n and she say that the love is the most thing that make",
+      "processed_text": "Critical Review on The Light in Their Eyes by Sonia Nieto and Reflective Teaching: An Introduction by Kenneth Zeichner and Daniel Liston\n\nThis paper is aimed at reviewing such books as The light in their eyes by Sonia Nieto and Reflective teaching: an introduction by  Kenneth zechner and Daniel liston.\n\nSonia Nieto and Kenneth zechner and dan liston are all well known authors who have written several books about education system, this books are very good and  they are very good to study. They have all the idea and the thing that we have to know about this books we must read them and study them. but what if we read them and we still don't understand what they want to say in the book.\n\nThat's why we will try to explain and review those books, and we will see and explain and we will know and we will tell the other people, to study and to read that books. because we want to be very good and to know and to be smart.\n\n The books of soia nieto are very good book to study, and the first book that we are going to review is the book of soia \" the light in their eyes \"  that book is very good book and very nice and very good to read. she write very good thing in that book and she say very good thing, and we all must read that book and we must study that book.\n\nand in that book she say that there are 30 story, that is the number of the story that she write in that book and it's all very good and it's all very nice and it's all very good to read. and in the 30 story in that book she say that each teacher have to have a good thing that make the teacher to be good. each teacher have to have a good thing that make the student to be good too. and she say that it's the love.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 123,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Critical Review On The Light In Their Eyes By Sonia Nieto And Reflective Teaching An Introduction By Kenneth Zeichner And Daniel Liston\n\nBegin with: \"Critical Review on The light in their eyes by Sonia Nieto and Reflective Teaching: An Introduction by Kenneth Zeichner and Daniel Liston Critical Essay\n\nThis paper is aimed at reviewing such books as The light in their eyes by Sonia Nieto\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "I do not find any evidence for \"Aye\" in your prompt. I believe you meant \"Hume\" or another name like Russell, Frege or Whitehead. I am going to use the Name David Hume who was a British Philosopher and also Immanuel Kant,  a German Philosopher. \n\nAnalytic Philosophy: The Views by Wittgenstein and Hume Essay\n\nPhilosophy is an attempt of human beings to logically explain the processes that take place in the world. There are numerous branches of philosophy, including philosophy of nature, history, and logic. Philosophers have been using different methods to explain the world in different centuries, and there are two famous philosophers who used analytic method to explain the world. One of them is Ludwig Wittgenstein, an Austrian philosopher and the other is David Hume, a Scottish philosopher. \n\nThey are two of the most famous philosophers in the analytic school. They are very important because they used this method to explain the world in a new way that was not used before. Ludwig Wittgenstein was a philosopher who was born in Austria in 1889 and died in England in 1951. He was a very important philosopher in the history of philosophy, and he is the founder of the Vienna Circle. He said that philosophy should be a science and that we should use the scientific method to solve the problems of philosophy. David Hume was a Scottish philosopher who was born in 1711 and died in 1776. He was a very important philosopher in the history of philosophy, and he is one of the most important philosophers of the 18th century. He was an empiricist, and he said that knowledge comes from the senses.\n\nLudwig Wittgenstein and David H use analytical method to explain the world. This method is very important because it is used to explain the world in a new way that was not used before. This method is a method of reasoning that is used to understand the world. It",
+      "processed_text": "I do not find any evidence for \"Aye\" in your prompt. I believe you meant \"Hume\" or another name like Russell, Frege or Whitehead. I am going to use the Name David Hume who was a British Philosopher and also Immanuel Kant,  a German Philosopher. \n\nAnalytic Philosophy: The Views by Wittgenstein and Hume Essay\n\nPhilosophy is an attempt of human beings to logically explain the processes that take place in the world. There are numerous branches of philosophy, including philosophy of nature, history, and logic. Philosophers have been using different methods to explain the world in different centuries, and there are two famous philosophers who used analytic method to explain the world. One of them is Ludwig Wittgenstein, an Austrian philosopher and the other is David Hume, a Scottish philosopher. \n\nThey are two of the most famous philosophers in the analytic school. They are very important because they used this method to explain the world in a new way that was not used before. Ludwig Wittgenstein was a philosopher who was born in Austria in 1889 and died in England in 1951. He was a very important philosopher in the history of philosophy, and he is the founder of the Vienna Circle. He said that philosophy should be a science and that we should use the scientific method to solve the problems of philosophy. David Hume was a Scottish philosopher who was born in 1711 and died in 1776. He was a very important philosopher in the history of philosophy, and he is one of the most important philosophers of the 18th century. He was an empiricist, and he said that knowledge comes from the senses.\n\nLudwig Wittgenstein and David H use analytical method to explain the world. This method is very important because it is used to explain the world in a new way that was not used before. This method is a method of reasoning that is used to understand the world.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 107,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Analytic Philosophy The Views By Wittgenstein And Aye\n\nBegin with: \"Analytic Philosophy: The Views by Wittgenstein and Aye Essay\n\nPhilosophy is an attempt of human beings to logically explain the processes that take place in the world. There are numerous branches of philosophy including philosophy of nature, history,\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "**Bhopal Disaster Report’s Rhetorical Analysis Essay (Critical Writing)**\n\n**Table of Contents**\n1. **Introduction\n2. **Website 1: Rhetorical analysis\n3. **Website  2: Rhetorical analysis\n\n**Introduction\n\nIn 1984, the worst industrial disaster in the history of the world was happened in Bhopal. That disaster was known as Bhopal Gas Tragedy. It was caused by a gas leak in Union Carbide factory. In that day more than 2000 people died and more than 70000 people died after some years. Now the victims of this disaster are still living in India. Some websites are writing about this case. In this essay we will do a rhetorical analysis of these websites. We will see what they want to say and why they want to say this things.\n\n**2. Website 1: Rhtorical Analysis\n\n One of the website is \"The Bhopal Disaster\". It's a website from bhopal disaster group. The main point of this website is to remember the people who died in the bhopal gas tragedy.  The website is written in many language. The writer of this website is very sad because of this tragedy. He said \" The 2nd December 1984 is a black day in the history of India. A big tragedy happened in Bhopal and more than 8000 people died in the first day. It was a gas leak from the Union Carbide factory. The government of India is not doing anything to help the people who are living in Bhopal. He said the government of India is very bad. They are not doing any thing to stop the gas leak. He said they are very bad and they killed many people. They are very bad and they are not sorry. They are not sorry and they are laughing at us. This is a very bad thing.  They are very bad and they are not human.",
+      "processed_text": "**Bhopal Disaster Report’s Rhetorical Analysis Essay (Critical Writing)**\n\n**Table of Contents**\n1. **Introduction\n2. **Website 1: Rhetorical analysis\n3. **Website  2: Rhetorical analysis\n\n**Introduction\n\nIn 1984, the worst industrial disaster in the history of the world was happened in Bhopal. That disaster was known as Bhopal Gas Tragedy. It was caused by a gas leak in Union Carbide factory. In that day more than 2000 people died and more than 70000 people died after some years. Now the victims of this disaster are still living in India. Some websites are writing about this case. In this essay we will do a rhetorical analysis of these websites. We will see what they want to say and why they want to say this things.\n\n**2. Website 1: Rhtorical Analysis\n\n One of the website is \"The Bhopal Disaster\". It's a website from bhopal disaster group. The main point of this website is to remember the people who died in the bhopal gas tragedy.  The website is written in many language. The writer of this website is very sad because of this tragedy. He said \" The 2nd December 1984 is a black day in the history of India. A big tragedy happened in Bhopal and more than 8000 people died in the first day. It was a gas leak from the Union Carbide factory. The government of India is not doing anything to help the people who are living in Bhopal. He said the government of India is very bad. They are not doing any thing to stop the gas leak. He said they are very bad and they killed many people. They are very bad and they are not sorry. They are not sorry and they are laughing at us. This is a very bad thing.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 104,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Bhopal Disaster Reports Rhetorical Analysis\n\nBegin with: \"Bhopal Disaster Report’s Rhetorical Analysis Essay (Critical Writing)\n\nTable of Contents\n 1. Introduction\n 2. Website 1: Rhetorical analysis\n 3. Website 2: Rhetorical analysis\n\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Epiology and Environmental Health Essay\n\nThe 2009 H1N1 pandemic is a term used to describe the spread of a disease over large geographical areas, where a disease starts from a given area or location then spreads to many other locations that are in different states, or in different countries. The study of epidemiology and its connection to environmental health, started to come up when people in Mexico and the United States of America started to get sick, with a very bad cold, when then they later found out that it was the H1N1. Then the people in Mexico and the United states went to other places to see if they could also find more people that were sick with the bad cold then they also found the people in other places that also had the same cold.  This is when they then called the other countries where the people that were sick with the bad cold were, and told them to be very careful so that they don not get sick to and then they will be safe. This is also when the people in Mexico and the United states said that they want to know how this all started so that they can stop it, and they can make the people that got sick better, and they also can keep the people that are healthy from getting sick. So then the people that were good at figuring out what kind of disease this was and how it came about were called and they came to where the people that were sick were and they looked at the people that were sick and they took some of their body fluids to look at them and see what the sickness was, and that is how they found out that the disease was the H1N1 then they took the body fluids that they took from the people that were sick and they took them to the lab and looked at them to see what the sickness was and when they found out what the sickness was then they went to the other people that they were able to find that were sick and they went to the lab to look at them",
+      "processed_text": "Epiology and Environmental Health Essay\n\nThe 2009 H1N1 pandemic is a term used to describe the spread of a disease over large geographical areas, where a disease starts from a given area or location then spreads to many other locations that are in different states, or in different countries. The study of epidemiology and its connection to environmental health, started to come up when people in Mexico and the United States of America started to get sick, with a very bad cold, when then they later found out that it was the H1N1. Then the people in Mexico and the United states went to other places to see if they could also find more people that were sick with the bad cold then they also found the people in other places that also had the same cold.  This is when they then called the other countries where the people that were sick with the bad cold were, and told them to be very careful so that they don not get sick to and then they will be safe. This is also when the people in Mexico and the United states said that they want to know how this all started so that they can stop it, and they can make the people that got sick better, and they also can keep the people that are healthy from getting sick.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 101,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Epidemiology And Environmental Health\n\nBegin with: \"Epidemiology and Environmental Health Essay\n\nThe 2009 H1N1\n\nPandemic is a term used to describe the spread of a disease over large geographical areas, where a disease starts from a given area or location then spreads\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Earnings Management and Earnings Quality Research Paper\n\nIntroduction\n\nEarnings describe the benefits of an organization, which is the content of the wage report and a synopsis thing in budgetary report. Earnings are the fundamental thing in budgetary report because it shows how good an organization is making and how much money the company can make after some years. Earnings quality is the quality of the earnings that a company has. Earnings quality is important for the investors to know that how much profit the company will make if they will invest in the company. It is also important for the investor to know that the earnings of the company are true or not. If the investor knows that the earnings of the company are true then the investor will invest in the company.\n\n The concept of earnings management is about the manager of the company making the earning look good. The manager of the company can make the earning look good by some ways like they can make the profit by doing some things and the they can also make the profit by decreasing some things. The manager of the company can also make the earning look good by accounting way. They can do it by some accounting trick like they can change some things in the account or they can do some things that will make the earning look good. But the problem is that if the investor knows that the manager of the company is making the earning look good then the investor will not invest in the company. That is why the earnings quality is very important.\n\nThe other thing that is important is that the earnings quality can be affected by some things like the experience of the manager of the company, the capital of the company and the good thing that the company is doing. If the manager of the company is experience then the earnings quality will be good. If the company has a lot of money then the earn quality will be good. If the company is doing a good thing then the earn quality will be good.\n\n The paper is going to talk about what is earnings, what is earnings quality and what",
+      "processed_text": "Earnings Management and Earnings Quality Research Paper\n\nIntroduction\n\nEarnings describe the benefits of an organization, which is the content of the wage report and a synopsis thing in budgetary report. Earnings are the fundamental thing in budgetary report because it shows how good an organization is making and how much money the company can make after some years. Earnings quality is the quality of the earnings that a company has. Earnings quality is important for the investors to know that how much profit the company will make if they will invest in the company. It is also important for the investor to know that the earnings of the company are true or not. If the investor knows that the earnings of the company are true then the investor will invest in the company.\n\n The concept of earnings management is about the manager of the company making the earning look good. The manager of the company can make the earning look good by some ways like they can make the profit by doing some things and the they can also make the profit by decreasing some things. The manager of the company can also make the earning look good by accounting way. They can do it by some accounting trick like they can change some things in the account or they can do some things that will make the earning look good. But the problem is that if the investor knows that the manager of the company is making the earning look good then the investor will not invest in the company. That is why the earnings quality is very important.\n\nThe other thing that is important is that the earnings quality can be affected by some things like the experience of the manager of the company, the capital of the company and the good thing that the company is doing. If the manager of the company is experience then the earnings quality will be good. If the company has a lot of money then the earn quality will be good. If the company is doing a good thing then the earn quality will be good.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 103,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Earnings Management And Earnings Quality\n\nBegin with: \"Earnings Management and Earnings Quality Research Paper\n\nIntroduction\n\nEarnings describe the benefits of an organization, which is the content of the wage report and a synopsis thing in budgetary report. Earnings are the fundamental thing in budgetary report because\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Measues of Central Tence and Dispersion Research Paper\n\n Aim of the paper\n\n The paper sees to carr out a descriptive anlys of a data set. Spesificly, the data will focos on esting the measos of centel tence usig the madu numbr and median, and alzo meos of dispesation usig the rang and standrd deviatuon. Also, the pape will look at the imortance of the two descriptiv statiatsitc and how it helps us to undorstand the data better.\n\n In todays wourld, data is collected and analized all the tim. We can see statisitcis all arownd us. But how do we analize the data? First, we need to under stand the descriptiv statisitcs. Descriptiv statisitcs is usd to descibe or sum up the data. It also help us to get a piture of what the data look like. And that is where the meos of centel tence and meos of dispersion comes in.\n\n The meos of centel tence is descriptiv statisitcs that meases the midl val of a se of numbr. It us usd to sum up the data. There are three meos of centel tence usd, and they are madu numbr, median and midl val (aritmethic meos). The madu numbr is the sum of all the numbr divied by the totel num of numbr. The median is the middle numbr in a se of numbr when it is ordrd from smal to big. And the midl val (aritmethic meos) is a meos of centel tence that is cald madu (x + y)/2. The meos of centel tence is import",
+      "processed_text": "Measues of Central Tence and Dispersion Research Paper\n\n Aim of the paper\n\n The paper sees to carr out a descriptive anlys of a data set. Spesificly, the data will focos on esting the measos of centel tence usig the madu numbr and median, and alzo meos of dispesation usig the rang and standrd deviatuon. Also, the pape will look at the imortance of the two descriptiv statiatsitc and how it helps us to undorstand the data better.\n\n In todays wourld, data is collected and analized all the tim. We can see statisitcis all arownd us. But how do we analize the data? First, we need to under stand the descriptiv statisitcs. Descriptiv statisitcs is usd to descibe or sum up the data. It also help us to get a piture of what the data look like. And that is where the meos of centel tence and meos of dispersion comes in.\n\n The meos of centel tence is descriptiv statisitcs that meases the midl val of a se of numbr. It us usd to sum up the data. There are three meos of centel tence usd, and they are madu numbr, median and midl val (aritmethic meos). The madu numbr is the sum of all the numbr divied by the totel num of numbr. The median is the middle numbr in a se of numbr when it is ordrd from smal to big. And the midl val (aritmethic meos) is a meos of centel tence that is cald madu (x + y)/2.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 101,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Measures Of Central Tendency And Dispersion\n\nBegin with: \"Measures of Central Tendency and Dispersion Research Paper\n\nAim of the paper\n\nThe paper seeks to carry out a descriptive analysis of a data set. Specifically, the data will focus on estimating the measures of central tendency using\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-college_essays-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "college_essays",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Importance of Conserving Electricity Research Paper\n\nIt is impossible to imagine the modern world without electricity because it enables the work of all gadgets and house appliances that make every day life easy and convenient. Furthermore, business, medicine, production, and all the rest of the sectors in the world rely on electricity to work. But like with all the resources, we have to think of how to use it without wastefulness and so that it will last for long. Saving electricity is very important because it will be good for everyone.\n\nOne of the reasons why we should save electricity is that it will be good for the environment. You see, to get the electricity that we use in our home, in our business, and in all the other places, there has to be a plant that makes it. And these plants have to be run by fuel like coal, and that makes very bad air that can hurt us. But if we all save a little bit of electricity, there will be less need to make the energy and so there will be less bad air in the air. And so that will be good for everyone.\n\nThe other reason why we should save a little bit of electricity is that it will be good for our money. You see, the company that makes the electricity has to send it to our house or to our business. And that is not for free. So if we all save a little bit of energy, there will be less need to send the electricity to all the houses and so that will save the money of the company that makes the electricity.\n\nWe can save electricity by turning of the light that we are not using. This is easy to do and it is also easy to do this all the time. We can also save the electricity by turning the air conditioner down a little bit if we are not cold. If we do that, the air conditioner will use less energy and that will make us save the money. We can also save the money by using the fan to cool us.",
+      "processed_text": "Importance of Conserving Electricity Research Paper\n\nIt is impossible to imagine the modern world without electricity because it enables the work of all gadgets and house appliances that make every day life easy and convenient. Furthermore, business, medicine, production, and all the rest of the sectors in the world rely on electricity to work. But like with all the resources, we have to think of how to use it without wastefulness and so that it will last for long. Saving electricity is very important because it will be good for everyone.\n\nOne of the reasons why we should save electricity is that it will be good for the environment. You see, to get the electricity that we use in our home, in our business, and in all the other places, there has to be a plant that makes it. And these plants have to be run by fuel like coal, and that makes very bad air that can hurt us. But if we all save a little bit of electricity, there will be less need to make the energy and so there will be less bad air in the air. And so that will be good for everyone.\n\nThe other reason why we should save a little bit of electricity is that it will be good for our money. You see, the company that makes the electricity has to send it to our house or to our business. And that is not for free. So if we all save a little bit of energy, there will be less need to send the electricity to all the houses and so that will save the money of the company that makes the electricity.\n\nWe can save electricity by turning of the light that we are not using. This is easy to do and it is also easy to do this all the time. We can also save the electricity by turning the air conditioner down a little bit if we are not cold. If we do that, the air conditioner will use less energy and that will make us save the money.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 101,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write an academic essay about: Importance Of Conserving Electricity\n\nBegin with: \"Importance of Conserving Electricity Research Paper\n\nIt is impossible to imagine the modern world without electricity because it enables the work of all gadgets and household appliances that make everyday life easy and convenient. Furthermore, business, medical, production, and all the\""
+        }
+      ]
+    }
+  ]
+}

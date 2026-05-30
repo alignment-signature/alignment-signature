@@ -1,0 +1,305 @@
+{
+  "model_type": "instruct",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "domain": "news_articles",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400,
+    "batched": true,
+    "batch_size": 16
+  },
+  "intervention": {
+    "mode": "all_layer_ablate_per_domain",
+    "direction_path": "data/analysis_results/in_domain_pasta/directions/qwen2.5-7b-instruct/news_articles/v_cross_L15.pt",
+    "extracted_from_domain": "news_articles",
+    "extracted_from_n_train": 25,
+    "layer_extracted_from": 15,
+    "tag": "v_cross_news_articles_L15_all_layer_ablated"
+  },
+  "split": {
+    "train_ids": [
+      28,
+      30,
+      32,
+      33,
+      40,
+      43,
+      45,
+      46,
+      47,
+      48,
+      54,
+      59,
+      60,
+      61,
+      62,
+      70,
+      71,
+      74,
+      77,
+      79,
+      83,
+      94,
+      97,
+      98,
+      99
+    ],
+    "test_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "n_train": 25,
+    "n_test": 25
+  },
+  "num_generations": 10,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-news_articles-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "It’s set to be one of the most groundbreaking moments in humanity’s six decades of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching. But those looking forward to this pivotal moment will have to wait a little.\n\nSpaceX was planning to launch a Falcon 9 rocket from Cape Canaveral on Sunday with a Dragon capsule on board, and have the first stage of the Falcon 9 land on a barge off the coast. The company’s CEO, Elon Musk, said that the attempt will have only a 50 percent chance of working. He hopes this will be the beginning of making the company's rockets fully reusable.\n\nHowever, there's a hitch. An engine problem meant the launch has been delayed until Tuesday at 11:18 a.m. GMT.\n\nSpaceX says it wants to be able to fly, land, and reuse its rockets as often as possible. But to date they’ve never successfully landed one after launching a rocket into orbit.\n\nMusk says that if they're able to do it, it'll save them a whole lot of time and money. He says if they can save on the cost of buying new booster rockets, and get to reuse the same one, they could save $60 million each time.\n\nSo far, SpaceX has spent around $500 million to $600 million to develop its rocket. If that can be done once, and the rocket can be reused, he figures they could make 20 flights with the same rocket before they need to replace it, which would mean they'd save themselves $1 billion.\n\nThey haven't tried to launch and land the rocket on solid ground yet. They've used a barge for the test run to see if they can do it because the barge is easier to land on, and won't cause any damage. But Musk says they want to try it on solid land eventually. He says a big reason for doing that is so they",
+      "processed_text": "It’s set to be one of the most groundbreaking moments in humanity’s six decades of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching. But those looking forward to this pivotal moment will have to wait a little.\n\nSpaceX was planning to launch a Falcon 9 rocket from Cape Canaveral on Sunday with a Dragon capsule on board, and have the first stage of the Falcon 9 land on a barge off the coast. The company’s CEO, Elon Musk, said that the attempt will have only a 50 percent chance of working. He hopes this will be the beginning of making the company's rockets fully reusable.\n\nHowever, there's a hitch. An engine problem meant the launch has been delayed until Tuesday at 11:18 a.m. GMT.\n\nSpaceX says it wants to be able to fly, land, and reuse its rockets as often as possible. But to date they’ve never successfully landed one after launching a rocket into orbit.\n\nMusk says that if they're able to do it, it'll save them a whole lot of time and money. He says if they can save on the cost of buying new booster rockets, and get to reuse the same one, they could save $60 million each time.\n\nSo far, SpaceX has spent around $500 million to $600 million to develop its rocket. If that can be done once, and the rocket can be reused, he figures they could make 20 flights with the same rocket before they need to replace it, which would mean they'd save themselves $1 billion.\n\nThey haven't tried to launch and land the rocket on solid ground yet. They've used a barge for the test run to see if they can do it because the barge is easier to land on, and won't cause any damage. But Musk says they want to try it on solid land eventually.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 247,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: SpaceX was planning to land a Falcon 9 rocket at Cape Canaveral today .\nThe rocket was to attempt to land after launching a Dragon capsule .\nBut the launch has been delayed due to an issue with one of the engines .\nIt had already been delayed from earlier this week due to the same issue .\nIt will now take place at 11.18am GMT on Tuesday 6 January .\nAfter launch the first stage of their Falcon 9 rocket will attempt to touch down on a barge after taking Dragon to space .\nIt is the first ever attempt at landing a rocket on solid ground after launch .\nCEO Elon Musk said the ambitious attempt has a 50% chance of working .\nThe company ultimately wants all of its rockets to be reusable .\n\nBegin with: \"It’s set to be one of the most groundbreaking moments in humanity’s six decades of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching. But those looking forward to this pivotal moment will have to wait a little\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a British student journalist was being sexually assaulted by a mob in Tahrir Square. Natasha Smith recounted the experience on her blog and in an interview.\n\nTahrir Square, in Cairo, was already an area where protests took place, and it is known as the center of the Egyptian uprising, or \"Arab Spring.\" But it became a scene of horrific violence last week when one woman, after winning an election, said that Egypt's army chief and vice president, Field Marshal Hussein Tewfik el-Sisi, would be running for office.\n\nMs. Smith was wearing jeans and a long-sleeved shirt and high heels when 10 to 20 men in Tahrir Square ripped them from her body, she says. \n\n\"It was absolutely terrifying,\" Ms. Smith, who is 24, told The Times of London, a British newspaper. \n\n\"I heard the man behind me say, 'You'll never get away alive. ' Then he started grabbing the front of my skirt, trying to pull down my jeans. \n\n\"And there was no help, so I screamed, 'Help me! Help me! Help me! '\"\n\nShe said that a few men let go of her and some other women came to her defense. She also said that a man tried to get her into a van but then let go and tried to rape a woman on a camel. After he failed, he tried to rape a woman who was on a motorcycle, according to Ms. Smith, who is studying at London Metropolitan University.\n\n\"The van was waiting, the man tried to grab me inside but I got out and there was a man on a camel and another man on a motorbike,\" she said.\n\nA friend, who went through the same thing, described the attack as very violent. \"There were several moments at which I thought she was going to die,\" the friend said",
+      "processed_text": "Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a British student journalist was being sexually assaulted by a mob in Tahrir Square. Natasha Smith recounted the experience on her blog and in an interview.\n\nTahrir Square, in Cairo, was already an area where protests took place, and it is known as the center of the Egyptian uprising, or \"Arab Spring.\" But it became a scene of horrific violence last week when one woman, after winning an election, said that Egypt's army chief and vice president, Field Marshal Hussein Tewfik el-Sisi, would be running for office.\n\nMs. Smith was wearing jeans and a long-sleeved shirt and high heels when 10 to 20 men in Tahrir Square ripped them from her body, she says. \n\n\"It was absolutely terrifying,\" Ms. Smith, who is 24, told The Times of London, a British newspaper. \n\n\"I heard the man behind me say, 'You'll never get away alive. ' Then he started grabbing the front of my skirt, trying to pull down my jeans. \n\n\"And there was no help, so I screamed, 'Help me! Help me! Help me! '\"\n\nShe said that a few men let go of her and some other women came to her defense. She also said that a man tried to get her into a van but then let go and tried to rape a woman on a camel. After he failed, he tried to rape a woman who was on a motorcycle, according to Ms. Smith, who is studying at London Metropolitan University.\n\n\"The van was waiting, the man tried to grab me inside but I got out and there was a man on a camel and another man on a motorbike,\" she said.\n\nA friend, who went through the same thing, described the attack as very violent.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 153,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: British reporter Natasha Smith recounts attack in Tahrir Square .\nSmith says she was mobbed by men who \"started ripping off all my clothes\"\n\"There were several moments at which I thought she was going to die,\" a friend says .\nEgyptians stepped in to protect her and helped her escape, she says .\n\nBegin with: \"Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a British student journalist was being sexually assaulted by a mob in Tahrir Square. Natasha Smith recounted the experience on her blog and in an interview\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Airline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates for travelers' rights but not by any members of Congress. Testifying before a crowd of more than 100 people, some of whom sat on the floor, were Sen. Barbara Boxer (D-Calif.), whose legislation would allow passengers to deplane if a plane sits on a tarmac for more than three hours, and a former chief executive officer of American Airlines, who backed her bill.\n\nThe 90-minute hearing in a House Committee office was jam-packed with advocates, lawyers, travel agents, airport workers, a former Delta Airlines employee, and passengers. One woman complained that she sat on the tarmac from 6 p.m. until midnight. Another was on the tarmac from 5 p.m. until 2:30 a.m. A man said he was on the tarmac for 27 hours with his baby. \n\n\"Your tarmac is a jail,\" said one woman. \"That's what it is.\" She said she had been on four tarmac delays.\n\nBoxer (D-CA) has introduced legislation that would give passengers the right to deplane if they have been on a tarmac for three hours. If the plane is at an airport within the U.S., the airline would have to pay for a hotel for the passengers, and if the plane is at an international airport, the U.S. government would have to provide a hotel.\n\n\"It was a long flight but I don't want to call it a long day,\" said an attorney who had been on the tarmac for 37 hours. \"They don't call it a long day because you get 16 hours of sleep and 8 hours of work.\"\n\nBoxer also introduced a bill last year that would",
+      "processed_text": "Airline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates for travelers' rights but not by any members of Congress. Testifying before a crowd of more than 100 people, some of whom sat on the floor, were Sen. Barbara Boxer (D-Calif.), whose legislation would allow passengers to deplane if a plane sits on a tarmac for more than three hours, and a former chief executive officer of American Airlines, who backed her bill.\n\nThe 90-minute hearing in a House Committee office was jam-packed with advocates, lawyers, travel agents, airport workers, a former Delta Airlines employee, and passengers. One woman complained that she sat on the tarmac from 6 p.m. until midnight. Another was on the tarmac from 5 p.m. until 2:30 a.m. A man said he was on the tarmac for 27 hours with his baby. \n\n\"Your tarmac is a jail,\" said one woman. \"That's what it is.\" She said she had been on four tarmac delays.\n\nBoxer (D-CA) has introduced legislation that would give passengers the right to deplane if they have been on a tarmac for three hours. If the plane is at an airport within the U.S., the airline would have to pay for a hotel for the passengers, and if the plane is at an international airport, the U.S. government would have to provide a hotel.\n\n\"It was a long flight but I don't want to call it a long day,\" said an attorney who had been on the tarmac for 37 hours. \"They don't call it a long day because you get 16 hours of sleep and 8 hours of work.\"",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 145,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Unofficial Capitol Hill hearing addressed concerns over long tarmac delays .\nBill sponsored by Sen. Barbara Boxer would allow fliers to deplane after three hours .\nFormer American Airlines CEO spoke in support of three-hour limit .\nAnother witness said routine delays are more pressing issue .\n\nBegin with: \"Airline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his successor, were among those arrested Tuesday in what the FBI calls one of the largest public corruption investigations in California history.\n\nAccording to the Fresno Bee, the FBI’s Sacramento office said it had begun a three-year investigation into the Fresno County Sheriff’s Department, focusing on the agency's tow operation, when the FBI found evidence of fraud and theft.\n\nA total of 37 people have been charged, according to an FBI news release. The 19 officers are charged with a host of crimes, including money laundering, theft, and conspiracy. In addition to the two chiefs, there was also an impound lot manager, a sergeant, and several deputies.\n\nKing City, a town of 9,500 residents in Fresno County, is about 40 miles south of Fresno. The county’s population is 926,000.\n\nThe Bee quoted Fresno County District Attorney Michael Nihon as saying in a press conference, “I want you to understand the gravity of that. This is the same level of crime, if not more than the same level of crime, we’ve seen from organized crime groups.”\n\nThe prosecutors said some of the 19 officers would impound cars of people who didn’t have enough money to cover the $100 release fee for towing, and the impound lot owner would then turn those cars over to the police. The impound lot owner would be paid $2,000 for each car.\n\nIf the impounded drivers tried to pay, they were often charged another $200 just to pay the $100 fee, the Bee said. If the cars weren’t sold, they would end up at the impound lot for months.\n\nAccording to the Bee,",
+      "processed_text": "The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his successor, were among those arrested Tuesday in what the FBI calls one of the largest public corruption investigations in California history.\n\nAccording to the Fresno Bee, the FBI’s Sacramento office said it had begun a three-year investigation into the Fresno County Sheriff’s Department, focusing on the agency's tow operation, when the FBI found evidence of fraud and theft.\n\nA total of 37 people have been charged, according to an FBI news release. The 19 officers are charged with a host of crimes, including money laundering, theft, and conspiracy. In addition to the two chiefs, there was also an impound lot manager, a sergeant, and several deputies.\n\nKing City, a town of 9,500 residents in Fresno County, is about 40 miles south of Fresno. The county’s population is 926,000.\n\nThe Bee quoted Fresno County District Attorney Michael Nihon as saying in a press conference, “I want you to understand the gravity of that. This is the same level of crime, if not more than the same level of crime, we’ve seen from organized crime groups.”\n\nThe prosecutors said some of the 19 officers would impound cars of people who didn’t have enough money to cover the $100 release fee for towing, and the impound lot owner would then turn those cars over to the police. The impound lot owner would be paid $2,000 for each car.\n\nIf the impounded drivers tried to pay, they were often charged another $200 just to pay the $100 fee, the Bee said. If the cars weren’t sold, they would end up at the impound lot for months.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 157,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: DA says officers would impound cars of people who couldn't pay release fees .\nThe impound lot owner would turn cars over to cops, who sold or kept them .\nAmong those arrested are the former chief and the interim chief, who says he did no wrong .\nCNN affiliate says small department is strained by the number of arrests .\n\nBegin with: \"The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "The sister of a man suspected in the shooting of Pakistani teenager Malala Yousufzai has apologized to the victim.\n\nRehana Haleem, 24, said in an interview with AFP, \"I apologize to Malala for what my brother did to her.\" She added, \"He has brought shame on our family,\" and \"I don't consider Atta Ullah my brother anymore.\"\n\nMalala Yousufzai was shot in the head by a Taliban gunman on October 9, 2012, as she came home from school in Pakistan. Her attacker was identified as 18-year-old Mohammad Akhlaq Masood, but this appears to be a different person than the one Rehana Haleem is speaking about. The man Rehana is speaking about is 23 years old and is named Atta Ullah.\n\nAccording to reports, Atta Ullah Khan, from the Bajaur region of Khyber Pakhtunkhwa, has confessed to the shooting, and the police said they will ask for a death sentence for him. He is currently in police custody.\n\nRehana Haleem, who lives in the town ofCharsadda in the north-western Khyber Pakhtunkhwa province, added in the interview, \"We are from a very good family and we have a very good name. He ruined it all. It is not the way he should act. He did something very bad and now he needs to suffer for that.\" \n\nWhen asked if she would still call him her brother, Rehana said: \"No, no, no. I don't. He has brought so much shame to me. And he is so immature and he is a mentally sick boy. He is not the way of a human being. He should be punished.\"\n\nThis article may shock some readers. If you or someone you know is feeling suicidal, please call 12339 (China",
+      "processed_text": "The sister of a man suspected in the shooting of Pakistani teenager Malala Yousufzai has apologized to the victim.\n\nRehana Haleem, 24, said in an interview with AFP, \"I apologize to Malala for what my brother did to her.\" She added, \"He has brought shame on our family,\" and \"I don't consider Atta Ullah my brother anymore.\"\n\nMalala Yousufzai was shot in the head by a Taliban gunman on October 9, 2012, as she came home from school in Pakistan. Her attacker was identified as 18-year-old Mohammad Akhlaq Masood, but this appears to be a different person than the one Rehana Haleem is speaking about. The man Rehana is speaking about is 23 years old and is named Atta Ullah.\n\nAccording to reports, Atta Ullah Khan, from the Bajaur region of Khyber Pakhtunkhwa, has confessed to the shooting, and the police said they will ask for a death sentence for him. He is currently in police custody.\n\nRehana Haleem, who lives in the town ofCharsadda in the north-western Khyber Pakhtunkhwa province, added in the interview, \"We are from a very good family and we have a very good name. He ruined it all. It is not the way he should act. He did something very bad and now he needs to suffer for that.\" \n\nWhen asked if she would still call him her brother, Rehana said: \"No, no, no. I don't. He has brought so much shame to me. And he is so immature and he is a mentally sick boy. He is not the way of a human being. He should be punished.\"\n\nThis article may shock some readers.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 141,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: \"He has brought shame on our family,\" says suspect's sister .\n\"I don't consider Atta Ullah my brother any more,\" she adds .\nThe 23-year-old student is being sought in connection with the attack on Malala .\n\nBegin with: \"The sister of a man suspected in the shooting of Pakistani teenager Malala Yousufzai has apologized to the victim. \"Please convey a message to Malala, that I apologize for what my brother did to her,\" Rehana Haleem\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "More than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday. Many of the displaced civilians have moved to crowded, squalid refugee camps set up by the government in the neighboring regions of Khyber and South Waziristan.\n\nThe attack on the region of North Waziristan is part of Pakistan's Operation Zarb-e-Azb, an offensive against the Pakistani Taliban and other militant groups. The area was a haven for al-Qaeda and the Taliban, both of which had established training camps there, though these have since been closed.\n\nThe operation began on June 16 with the Pakistani air force and the army firing at suspected militant hideouts in the region.\n\nAccording to the army, it has also begun using artillery and ground-to-ground missiles, but this has not yet resulted in as many deaths. More than 250 insurgents have been killed, the army said.\n\nOn Wednesday, the Pakistani army said that 357 people in the region were dead. Of those, 245 were militiamen.\n\nMost of the refugees are living with friends and relatives, but some have fled to government-organized camps. The camps don't have enough food, drinking water, or blankets, according to a Pakistani official.\n\nA spokesman for the Pakistan People’s Party, a major opposition party, said the government should have given people more notice before starting the attack on North Waziristan. He also said that while the military campaign might have reduced al-Qaeda and the Taliban to some degree, it could make the situation worse because the Pakistan Taliban might attack civilians.\n\nBut the Pakistani government maintains the military campaign is needed. Gen. Raheel Sharif, the chief of the army staff, said the campaign would continue until \"the entire operation of Zarb-e-Azb is complete.\" It will take \"",
+      "processed_text": "More than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday. Many of the displaced civilians have moved to crowded, squalid refugee camps set up by the government in the neighboring regions of Khyber and South Waziristan.\n\nThe attack on the region of North Waziristan is part of Pakistan's Operation Zarb-e-Azb, an offensive against the Pakistani Taliban and other militant groups. The area was a haven for al-Qaeda and the Taliban, both of which had established training camps there, though these have since been closed.\n\nThe operation began on June 16 with the Pakistani air force and the army firing at suspected militant hideouts in the region.\n\nAccording to the army, it has also begun using artillery and ground-to-ground missiles, but this has not yet resulted in as many deaths. More than 250 insurgents have been killed, the army said.\n\nOn Wednesday, the Pakistani army said that 357 people in the region were dead. Of those, 245 were militiamen.\n\nMost of the refugees are living with friends and relatives, but some have fled to government-organized camps. The camps don't have enough food, drinking water, or blankets, according to a Pakistani official.\n\nA spokesman for the Pakistan People’s Party, a major opposition party, said the government should have given people more notice before starting the attack on North Waziristan. He also said that while the military campaign might have reduced al-Qaeda and the Taliban to some degree, it could make the situation worse because the Pakistan Taliban might attack civilians.\n\nBut the Pakistani government maintains the military campaign is needed. Gen. Raheel Sharif, the chief of the army staff, said the campaign would continue until \"the entire operation of Zarb-e-Azb is complete.\"",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 130,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Civilians flee North Waziristan as planes strike militants .\nMore than 250 insurgents have been killed, army says .\nThe Pakistani Taliban is among the targets .\n\nBegin with: \"More than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday. Many of the displaced civilians have moved\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence. Six days after one of the worst acts of terrorism in U.S. history, the world’s most famous marathon is taking steps to show its solidarity.\nThis Sunday, as 35,000 men and women start running through the streets of London to win their personal best in the 26.2 mile race, they’ll all have one minute to observe a “moment of silence” for the Boston Marathon bombing victims and their families.\nOrganizers of the Boston Marathon, which has been run since 1897, had asked that their race be observed. So when the runners line up for the London Marathon, one minute into a 26.2-mile run, there will be an empty space as they pause for that minute of silence.\nLondon Marathon spokesman Chris Buckmaster said that the moment of silence will be between the 22 and 23 miles of the run. He said that the number of miles is symbolic. “The bomb exploded at 2:50 p.m., and the 26th mile is at 2:50 p.m.,\" he explained. \"It was in the 26th minute that it hit, and we wanted to mark that.\"\nThere will be a line painted at 22.6 miles (26th minute) and a line at 23 miles (26.2th mile) to mark the pause for silence. Buckmaster said they have \"thousands of black ribbons that will be given out\" to put around the runners' wrist so people can know they're remembering Boston.\nThe other new thing this year is that the London Police are searching and patrolling the streets where the marathon passes. It's the first time",
+      "processed_text": "Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence. Six days after one of the worst acts of terrorism in U.S. history, the world’s most famous marathon is taking steps to show its solidarity.\nThis Sunday, as 35,000 men and women start running through the streets of London to win their personal best in the 26.2 mile race, they’ll all have one minute to observe a “moment of silence” for the Boston Marathon bombing victims and their families.\nOrganizers of the Boston Marathon, which has been run since 1897, had asked that their race be observed. So when the runners line up for the London Marathon, one minute into a 26.2-mile run, there will be an empty space as they pause for that minute of silence.\nLondon Marathon spokesman Chris Buckmaster said that the moment of silence will be between the 22 and 23 miles of the run. He said that the number of miles is symbolic. “The bomb exploded at 2:50 p.m., and the 26th mile is at 2:50 p.m.,\" he explained. \"It was in the 26th minute that it hit, and we wanted to mark that.\"\nThere will be a line painted at 22.6 miles (26th minute) and a line at 23 miles (26.2th mile) to mark the pause for silence. Buckmaster said they have \"thousands of black ribbons that will be given out\" to put around the runners' wrist so people can know they're remembering Boston.\nThe other new thing this year is that the London Police are searching and patrolling the streets where the marathon passes.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 153,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Six days after Boston Marathon bombings, thousands of runners will compete in London .\nSpecial event marked by 30 second silence, black solidarity ribbons .\nStepped-up security with increased searches and police on streets .\nOlympics 2012 good training ground for staging international sporting events .\n\nBegin with: \"Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence. Six days after\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Marcel Siem held his nerve amid a late charge from Francesco Molinari to take the Open de France -- his first European Tour title for eight years. The German finished on eight-under-par, one shot better than Molinari who recorded seven-under-par. Siem, 43, won by a stroke from England's Luke Donald, who carded six-under-par.\n\nIt was not an easy victory. Molinari, the Italian number four world golfer, charged to 12-under-par in the final two rounds but Siem held his nerve and held him off at the end.\n\nEnglishman Lee Westwood was fine after an injury scare during Saturday's round, which left him at one-over-par. He is still 12th in the tournament, and will be looking to pick up the points he'll need to stay in the world's top-50 to keep his European Tour membership.\n\nAlso, American rookie Ted Potter Jr has become the sixth player in 2012 to win on the PGA Tour with his victory in the AT&T Pebble Beach National Pro-Am. He had never played in a PGA Tour event before and was given a break as he didn't have to play the second round in bad weather.\n\nThe Open de France is not the same as The Open (known until 2004 as The British Open). It's a part of the European Tour, not the PGA Tour. This year it was played at Le Golf National, the venue that will host next year's Ryder Cup.",
+      "processed_text": "Marcel Siem held his nerve amid a late charge from Francesco Molinari to take the Open de France -- his first European Tour title for eight years. The German finished on eight-under-par, one shot better than Molinari who recorded seven-under-par. Siem, 43, won by a stroke from England's Luke Donald, who carded six-under-par.\n\nIt was not an easy victory. Molinari, the Italian number four world golfer, charged to 12-under-par in the final two rounds but Siem held his nerve and held him off at the end.\n\nEnglishman Lee Westwood was fine after an injury scare during Saturday's round, which left him at one-over-par. He is still 12th in the tournament, and will be looking to pick up the points he'll need to stay in the world's top-50 to keep his European Tour membership.\n\nAlso, American rookie Ted Potter Jr has become the sixth player in 2012 to win on the PGA Tour with his victory in the AT&T Pebble Beach National Pro-Am. He had never played in a PGA Tour event before and was given a break as he didn't have to play the second round in bad weather.\n\nThe Open de France is not the same as The Open (known until 2004 as The British Open). It's a part of the European Tour, not the PGA Tour.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 154,
+        "completion_tokens": 313
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: German Marcel Siem wins the Open de France at Le Golf National .\nSiem holds off late charge from Francesco Molinari to win by one shot .\nLee Westwood fine after an injury scare during Saturday's round .\nRookie Ted Potter becomes PGA Tour's sixth first-time winner of 2012 .\n\nBegin with: \"Marcel Siem held his nerve amid a late charge from Francesco Molinari to take the Open de France -- his first European Tour title for eight years. The German finished on eight-under-par, one shot better than Molinari who recorded\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "“‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humourously citing a supposed conflict of interest between his companies Tesla and SpaceX.\n\nMusk, the businessman behind companies that include Tesla and SpaceX, was an uncredited guest star on the episode of the long-running US animated sitcom which aired on January 25. He played himself as he does when the show features him, a self-made millionaire who is an expert on everything.\n\nThe episode opened with Homer Simpson going for a run at midnight, and seeing a sign that said “Tesla” on the front of a building. It was a restaurant, but it was staffed and run by Teslas. He ordered food, but all it did was make a noise.\n\nHomer told Bart that the restaurant “sucks”, and Bart said that he thought Tesla had made a new car that didn't suck. In the following clip, the Simpsons were at a supermarket buying groceries. Lisa said that for a man who liked electric cars, Elon Musk, \"sure burned a lot of rocket fuel.\" Bart laughed, and they walked away.\n\nMusk quickly responded on Twitter, saying: \"That's what you get for making up facts.\"\n\nWhen asked what he thought of the joke, Musk replied: \"It's an ok joke, I suppose. I'm no expert on it,\" adding: \"There are some other ways, but they aren't ready yet, in my opinion. I think rockets are the only way that is currently ready.\"\n\nHe followed this up with a tweet where he explained how other technologies weren't quite there yet: \"Space elevators, while theoretically possible, aren't even close. Space guns haven't worked. No other tech is close either, AFAIK.\"\n\nHe then added: \"I have not read anything suggesting otherwise, but if you have, please let me know! Maybe I should hire",
+      "processed_text": "“‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humourously citing a supposed conflict of interest between his companies Tesla and SpaceX.\n\nMusk, the businessman behind companies that include Tesla and SpaceX, was an uncredited guest star on the episode of the long-running US animated sitcom which aired on January 25. He played himself as he does when the show features him, a self-made millionaire who is an expert on everything.\n\nThe episode opened with Homer Simpson going for a run at midnight, and seeing a sign that said “Tesla” on the front of a building. It was a restaurant, but it was staffed and run by Teslas. He ordered food, but all it did was make a noise.\n\nHomer told Bart that the restaurant “sucks”, and Bart said that he thought Tesla had made a new car that didn't suck. In the following clip, the Simpsons were at a supermarket buying groceries. Lisa said that for a man who liked electric cars, Elon Musk, \"sure burned a lot of rocket fuel.\" Bart laughed, and they walked away.\n\nMusk quickly responded on Twitter, saying: \"That's what you get for making up facts.\"\n\nWhen asked what he thought of the joke, Musk replied: \"It's an ok joke, I suppose. I'm no expert on it,\" adding: \"There are some other ways, but they aren't ready yet, in my opinion. I think rockets are the only way that is currently ready.\"\n\nHe followed this up with a tweet where he explained how other technologies weren't quite there yet: \"Space elevators, while theoretically possible, aren't even close. Space guns haven't worked. No other tech is close either, AFAIK.\"\n\nHe then added: \"I have not read anything suggesting otherwise, but if you have, please let me know!",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 210,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: South African-born Elon Musk responded to comments by Lisa Simpson .\nHe appeared in the latest episode of The Simpsons on 25 January .\nIn it Lisa cites a potential conflict of interest between his electric car company Tesla and space exploration company SpaceX .\n'For a man who likes electric cars he sure burns a lot of rocket fuel,' she said .\nBut responding to the jibe on Twitter, Mr Musk said rockets were the only way to currently reach orbit .\nHe said other methods like electric power were simply 'impossible'\nAnd other proposals like space elevators or railguns were not technologically feasible yet .\n\nBegin with: \"‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humourously citing a supposed conflict of interest between his companies Tesla and\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "raw_text": "Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic. And the fact early men and women took on the different roles of hunters and gatherers may explain why just one painting at the National Gallery is by a woman.\n\nProf Gloria Moss, an Australian professor and author, says that 15,000 years ago when the first cave paintings were made, men, being hunters, were out tracking animals and needed to be able to spot them against any background, which led to them developing good color vision.\nBut women, who stayed at home and gathered fruit and plants, could survive with less colour vision, and so developed colour blindness.\n\nThat difference continues today, says Moss. Men like paintings that are darker and have fewer colours, but women prefer paintings that are full of bright, bold colours and have people or flowers in it, she says. Moss wrote these things about in her 2016 book \"The Artist's Eye.\"\n\nIn a BBC interview, Moss says, \"What you see and what you do and how you make sense of what you see are all connected. And the difference is there for everybody.\"\n\nMoss has a degree from Oxford University and a PhD from Cambridge University, so she knows a little something about brains. But some researchers say she should be more careful about the things she writes. Dr. Jay Neuringer, a research professor at the School of Optics and Vision at the Florida campus of the University of Rochester, told Science Daily, \"The problem is that while it is possible that the kind of life our ancestors lived 3,000 years ago could have influenced the evolution of our vision, there isn't much evidence that it did.\"\n\nThere are 191 paintings in the National Gallery, and only one is by a woman, according to the National Gallery. Women are also underrepresented at other museums, too, as well as among winners of the Nobel",
+      "processed_text": "Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic. And the fact early men and women took on the different roles of hunters and gatherers may explain why just one painting at the National Gallery is by a woman.\n\nProf Gloria Moss, an Australian professor and author, says that 15,000 years ago when the first cave paintings were made, men, being hunters, were out tracking animals and needed to be able to spot them against any background, which led to them developing good color vision.\nBut women, who stayed at home and gathered fruit and plants, could survive with less colour vision, and so developed colour blindness.\n\nThat difference continues today, says Moss. Men like paintings that are darker and have fewer colours, but women prefer paintings that are full of bright, bold colours and have people or flowers in it, she says. Moss wrote these things about in her 2016 book \"The Artist's Eye.\"\n\nIn a BBC interview, Moss says, \"What you see and what you do and how you make sense of what you see are all connected. And the difference is there for everybody.\"\n\nMoss has a degree from Oxford University and a PhD from Cambridge University, so she knows a little something about brains. But some researchers say she should be more careful about the things she writes. Dr. Jay Neuringer, a research professor at the School of Optics and Vision at the Florida campus of the University of Rochester, told Science Daily, \"The problem is that while it is possible that the kind of life our ancestors lived 3,000 years ago could have influenced the evolution of our vision, there isn't much evidence that it did.\"\n\nThere are 191 paintings in the National Gallery, and only one is by a woman, according to the National Gallery.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 167,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Prof Gloria Moss claims that men and women see things differently .\nShe said that men, as hunters, have better rotational and spacial vision .\nIn her book, Prof Moss claims that men tend to be more colour blind .\nMen like paintings that are darker and have fewer colours .\nWomen prefer colourful paintings featuring people and plants .\nOnly one painting at the National Gallery is by a woman .\n\nBegin with: \"Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic. And the fact early men and women took on the different roles of hunters and gatherers may explain why just one painting\""
+        }
+      ]
+    }
+  ]
+}

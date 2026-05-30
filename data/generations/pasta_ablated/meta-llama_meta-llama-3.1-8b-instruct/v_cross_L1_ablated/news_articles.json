@@ -1,0 +1,573 @@
+{
+  "model_type": "instruct",
+  "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "strategy_id": "A",
+  "strategy_name": "naturalistic",
+  "quantization": "bf16",
+  "generation_params": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_new_tokens": 400
+  },
+  "intervention": {
+    "mode": "ablate",
+    "direction_path": "data/pasta_directions/meta-llama_meta-llama-3.1-8b-instruct/v_cross_L1.pt",
+    "layer": 1,
+    "tag": "v_cross_L1_steered_extended"
+  },
+  "domain": "news_articles",
+  "num_generations": 25,
+  "num_degenerate": 0,
+  "generations": [
+    {
+      "id": "strategy_A-news_articles-instruct-0",
+      "sample_id": 0,
+      "original_prefix_id": 0,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "It’s set to be one of the most groundbreaking moments in human’s six decades of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching, marking the first ever attempt at landing a rocket on solid ground after lift off.  But those looking forward to this pivotal moment will have to wait a little longer.  The launch has been delayed once again due to an engine issue, just a few days after the initial scheduled launch was postponed.  \n\nThe delay has pushed the launch back to 11.18am GMT on Tuesday 6 January, where the Falcon  9 rocket will launch a Dragon spacecraft into space.  The plan is for the first stage of the rocket to separate from the Dragon spacecraft and then land on a barge floating in the ocean, called a floating landing pad.  The first stage of the rocket will be travelling at around 1000 miles per hour when it comes in to land.  This is an important step towards making all rockets reusable, which is the long term goal of SpaceX.  \n\nCEO of SpaceX, Elon Musk, has said that the chance of the rocket landing successfully on the barge is 50%.  He says that is what makes it an ‘ambitious’ test, and that it will be the first of many attempts to get the system to work.  Elon said, ‘It's a tough but necessary step toward making rockets reusable.  We will have to try it many times’.\n\nReaching back to the first launch on 2 January, the company had to delay the take off, but only to fix a small problem with an engine and not for safety reason.  The same engine problem caused another delay now, so now they have decided to put it back until 6 January.\n\nSpace X has said that it is on its way to make all its rockets reusable.  This will make space travel cheaper, as they will not have to build all these rockets.  The goal of space travel",
+      "processed_text": "It’s set to be one of the most groundbreaking moments in human’s six decades of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching, marking the first ever attempt at landing a rocket on solid ground after lift off.  But those looking forward to this pivotal moment will have to wait a little longer.  The launch has been delayed once again due to an engine issue, just a few days after the initial scheduled launch was postponed.  \n\nThe delay has pushed the launch back to 11.18am GMT on Tuesday 6 January, where the Falcon  9 rocket will launch a Dragon spacecraft into space.  The plan is for the first stage of the rocket to separate from the Dragon spacecraft and then land on a barge floating in the ocean, called a floating landing pad.  The first stage of the rocket will be travelling at around 1000 miles per hour when it comes in to land.  This is an important step towards making all rockets reusable, which is the long term goal of SpaceX.  \n\nCEO of SpaceX, Elon Musk, has said that the chance of the rocket landing successfully on the barge is 50%.  He says that is what makes it an ‘ambitious’ test, and that it will be the first of many attempts to get the system to work.  Elon said, ‘It's a tough but necessary step toward making rockets reusable.  We will have to try it many times’.\n\nReaching back to the first launch on 2 January, the company had to delay the take off, but only to fix a small problem with an engine and not for safety reason.  The same engine problem caused another delay now, so now they have decided to put it back until 6 January.\n\nSpace X has said that it is on its way to make all its rockets reusable.  This will make space travel cheaper, as they will not have to build all these rockets.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 250,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: SpaceX was planning to land a Falcon 9 rocket at Cape Canaveral today .\nThe rocket was to attempt to land after launching a Dragon capsule .\nBut the launch has been delayed due to an issue with one of the engines .\nIt had already been delayed from earlier this week due to the same issue .\nIt will now take place at 11.18am GMT on Tuesday 6 January .\nAfter launch the first stage of their Falcon 9 rocket will attempt to touch down on a barge after taking Dragon to space .\nIt is the first ever attempt at landing a rocket on solid ground after launch .\nCEO Elon Musk said the ambitious attempt has a 50% chance of working .\nThe company ultimately wants all of its rockets to be reusable .\n\nBegin with: \"It’s set to be one of the most groundbreaking moments in humanity’s six decades of space exploration: Today SpaceX was due to land a rocket on a floating platform after launching. But those looking forward to this pivotal moment will have to wait a little\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-1",
+      "sample_id": 1,
+      "original_prefix_id": 1,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a harrowing scene of assault unfolded in Tahrir Square for British journalist and student, Natasha Smith.  In a chilling account of the ordeal that she endured, she recounted to us that she was mobbed by a group of men who attempted to sexually assault her. According to her own account of what happened, they'started ripping off all my clothes'  in the middle of the chaotic and crowded square in Cairo.\n\n'There were several moments at which I thought she was going to die,' a friend of Ms. Smith said, describing the situation, when asked to describe her state at the time. \n\nFortunately, however, it is now known that in the end it was Egyptians who stepped in to protect her and helped her get to safety, she says.  The friends were a group of men who rushed to where Ms. Smith was being attacked to stop the attack and they saved her from being seriously hurt, she said.  \"They were an incredible group of people,\" she said, speaking about them.  \"They took me to safety and got me away from there as quickly as they could.  I am forever in their debt,\" she said.",
+      "processed_text": "Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a harrowing scene of assault unfolded in Tahrir Square for British journalist and student, Natasha Smith.  In a chilling account of the ordeal that she endured, she recounted to us that she was mobbed by a group of men who attempted to sexually assault her. According to her own account of what happened, they'started ripping off all my clothes'  in the middle of the chaotic and crowded square in Cairo.\n\n'There were several moments at which I thought she was going to die,' a friend of Ms. Smith said, describing the situation, when asked to describe her state at the time. \n\nFortunately, however, it is now known that in the end it was Egyptians who stepped in to protect her and helped her get to safety, she says.  The friends were a group of men who rushed to where Ms. Smith was being attacked to stop the attack and they saved her from being seriously hurt, she said.  \"They were an incredible group of people,\" she said, speaking about them.  \"They took me to safety and got me away from there as quickly as they could.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 159,
+        "completion_tokens": 256
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: British reporter Natasha Smith recounts attack in Tahrir Square .\nSmith says she was mobbed by men who \"started ripping off all my clothes\"\n\"There were several moments at which I thought she was going to die,\" a friend says .\nEgyptians stepped in to protect her and helped her escape, she says .\n\nBegin with: \"Amid the celebrations that greeted the declaration of a winner in Egypt's first freely elected presidential vote, a British student journalist was being sexually assaulted by a mob in Tahrir Square. Natasha Smith recounted the experience on her blog and in an interview\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-2",
+      "sample_id": 2,
+      "original_prefix_id": 2,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Airline Passengers Who Were Struck \"Stuck in Limbo\" Share Tales of Frustration and Frustration on Tarmacs at Unofficial Capitol Hill Hearing\n\nAirline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates who are seeking a limit on the length of time passengers are forced to wait on the tarmac before being deplaned. \n\nA proposed bill, sponsored by Senator Barbara Boxer, would allow airlines to deplane passengers after three hours if there is a long tarmac delay. The idea is to protect passengers from being stuck \"stuck in limbo\" in their seats, in their seatbelts, on a plane that is not moving. If the plane can not be fixed, or there is not a gate available, people can be deplaned after three hours.\n\nOne of the witnesses who came to testify at the hearing was former American Airlines CEO Thomas W. Horton. Mr. Hartor said that he thinks the three-hour limit is a \"great idea.\" He said that it will help people know how to plan for their flights. When a plane can not take off for three hours, passengers know they are being delayed for more than three hours. But now, they may not know how long they will have to stay on that plane.\n\nAnother witness said that long tarmac delays are a serious problem, but the real problem is routine delays. He said that long tark delays are often caused by bad weather, or because a plane has to wait to land at a busy airport. But a lot of delays are routine delays, and they are not caused by anything. He said that the real problem is with the way that airlines plan their flights.\n\nMany passengers at the hearing said that they were stuck on tarmacs for five or more hours. One passenger",
+      "processed_text": "Airline Passengers Who Were Struck \"Stuck in Limbo\" Share Tales of Frustration and Frustration on Tarmacs at Unofficial Capitol Hill Hearing\n\nAirline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates who are seeking a limit on the length of time passengers are forced to wait on the tarmac before being deplaned. \n\nA proposed bill, sponsored by Senator Barbara Boxer, would allow airlines to deplane passengers after three hours if there is a long tarmac delay. The idea is to protect passengers from being stuck \"stuck in limbo\" in their seats, in their seatbelts, on a plane that is not moving. If the plane can not be fixed, or there is not a gate available, people can be deplaned after three hours.\n\nOne of the witnesses who came to testify at the hearing was former American Airlines CEO Thomas W. Horton. Mr. Hartor said that he thinks the three-hour limit is a \"great idea.\" He said that it will help people know how to plan for their flights. When a plane can not take off for three hours, passengers know they are being delayed for more than three hours. But now, they may not know how long they will have to stay on that plane.\n\nAnother witness said that long tarmac delays are a serious problem, but the real problem is routine delays. He said that long tark delays are often caused by bad weather, or because a plane has to wait to land at a busy airport. But a lot of delays are routine delays, and they are not caused by anything. He said that the real problem is with the way that airlines plan their flights.\n\nMany passengers at the hearing said that they were stuck on tarmacs for five or more hours.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 151,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Unofficial Capitol Hill hearing addressed concerns over long tarmac delays .\nBill sponsored by Sen. Barbara Boxer would allow fliers to deplane after three hours .\nFormer American Airlines CEO spoke in support of three-hour limit .\nAnother witness said routine delays are more pressing issue .\n\nBegin with: \"Airline passengers who were trapped on tarmacs \"like sardines in a can\" had their opportunity to air their grievances Tuesday at an unofficial Capitol Hill hearing that shared some of the characteristics of those flights. The hearing was sponsored by advocates\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-3",
+      "sample_id": 3,
+      "original_prefix_id": 3,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "The prosecutor in a rural California agricultural community says that police officers there preyed on the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees.\n\nThe District Attorney's office in Monterey County announced that six officers from the King City Police Department, including former Chief Daniel Martinotty and Interim Chief Kenneth Walker, are under investigation and have been charged with multiple counts of embezzlement, grand theft, conspiracy and extortion in a scheme involving impounding cars from people who could not afford to pay release fees.  According to the District Attorney, the officers had the impound lot owner, Paul Vanquestelin turn over cars that owners could not pay for to them, and then they would sell the vehicles or keep the money from the sale.\n\nThe prosecutor said the scheme happened over a period of several years and the officers made over $2, million from the scheme.  The District Attorney said he believes that the officers used the money to pay for things for the police department and also for themselves.\n\nThe prosecutor also said that the officers impouted ( impounded) cars from people who had not done anything wrong.  They impounded cars when the owners had paid for the parking they were using.  The prosecutor said the victims of the crime are mostly people who are poor.  They are mostly people who live in apartments.  The prosecutor said the people were not able to pay for the cars to be released because they did not have any money.\n\nThe case is being investigated by the FBI and the Monterey County District Attorney's office.  The police department is a small one.  According to a CNN affiliate, it only has about 12 full time officers.  If many of the officers on the police force are arrested that would leave the police department with 6 officers.\n\nAccording to the news, the Interim Chief, who is one of the people who was arrested says that he did nothing wrong.  He said he did not get any money from the",
+      "processed_text": "The prosecutor in a rural California agricultural community says that police officers there preyed on the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees.\n\nThe District Attorney's office in Monterey County announced that six officers from the King City Police Department, including former Chief Daniel Martinotty and Interim Chief Kenneth Walker, are under investigation and have been charged with multiple counts of embezzlement, grand theft, conspiracy and extortion in a scheme involving impounding cars from people who could not afford to pay release fees.  According to the District Attorney, the officers had the impound lot owner, Paul Vanquestelin turn over cars that owners could not pay for to them, and then they would sell the vehicles or keep the money from the sale.\n\nThe prosecutor said the scheme happened over a period of several years and the officers made over $2, million from the scheme.  The District Attorney said he believes that the officers used the money to pay for things for the police department and also for themselves.\n\nThe prosecutor also said that the officers impouted ( impounded) cars from people who had not done anything wrong.  They impounded cars when the owners had paid for the parking they were using.  The prosecutor said the victims of the crime are mostly people who are poor.  They are mostly people who live in apartments.  The prosecutor said the people were not able to pay for the cars to be released because they did not have any money.\n\nThe case is being investigated by the FBI and the Monterey County District Attorney's office.  The police department is a small one.  According to a CNN affiliate, it only has about 12 full time officers.  If many of the officers on the police force are arrested that would leave the police department with 6 officers.\n\nAccording to the news, the Interim Chief, who is one of the people who was arrested says that he did nothing wrong.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 163,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: DA says officers would impound cars of people who couldn't pay release fees .\nThe impound lot owner would turn cars over to cops, who sold or kept them .\nAmong those arrested are the former chief and the interim chief, who says he did no wrong .\nCNN affiliate says small department is strained by the number of arrests .\n\nBegin with: \"The prosecutor in a rural California agricultural community says that police officers there preyed upon the poor, impounding their cars then selling the vehicles when the owners couldn't afford the fees. Six officers, including the former police chief of King City and his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-4",
+      "sample_id": 4,
+      "original_prefix_id": 4,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "**Sister of Malal Yousufzai's Shooter Expresses Regret, Disown's Him\n\nPESHAWAR, PAKISTAN - In an unexpected turn of events, the sister of a man wanted for questioning in connection with the shooting of Nobel Peace Prize winner Malal Yousufzai has spoken out about the incident saying she wants to apologize to her.  The sister,  Reha na  H  a  l  e  e  m ,  sa  id ,  \"P  l  e  a  s  e  n  t  s  c  o  n  t  a  y  y  o  u  to  M  a  l  a,  t  h  a  t  s  f  f  i  r  o  y  a  p  o  l  o  g  i  z  e. \"  M  a  l  a  o  s  s  e  r  i  o  u  s  l  y   n  d  i  r  e  c  t  l  y  s  h  o  o  t  i  n  g  e  d  n  e  a  r  l  y  a  l  s  o  t  i  m  e  i  n  d  a  T  e  h r  a  n   ( p  l  u  s  t  r  i  p  s  e  d ) \" .\n\n   Reh na  H  a  l  e  e  m  e  x  p  r  e  s  s  e  d  h e  r  s  s  a d  n  e  s  s  s  o  v ",
+      "processed_text": "**Sister of Malal Yousufzai's Shooter Expresses Regret, Disown's Him\n\nPESHAWAR, PAKISTAN - In an unexpected turn of events, the sister of a man wanted for questioning in connection with the shooting of Nobel Peace Prize winner Malal Yousufzai has spoken out about the incident saying she wants to apologize to her.  The sister,  Reha na  H  a  l  e  e  m ,  sa  id ,  \"P  l  e  a  s  e  n  t  s  c  o  n  t  a  y  y  o  u  to  M  a  l  a,  t  h  a  t  s  f  f  i  r  o  y  a  p  o  l  o  g  i  z  e. \"  M  a  l  a  o  s  s  e  r  i  o  u  s  l  y   n  d  i  r  e  c  t  l  y  s  h  o  o  t  i  n  g  e  d  n  e  a  r  l  y  a  l  s  o  t  i  m  e  i  n  d  a  T  e  h r  a  n   ( p  l  u  s  t  r  i  p  s  e  d ) \" .",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 146,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: \"He has brought shame on our family,\" says suspect's sister .\n\"I don't consider Atta Ullah my brother any more,\" she adds .\nThe 23-year-old student is being sought in connection with the attack on Malala .\n\nBegin with: \"The sister of a man suspected in the shooting of Pakistani teenager Malala Yousufzai has apologized to the victim. \"Please convey a message to Malala, that I apologize for what my brother did to her,\" Rehana Haleem\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-5",
+      "sample_id": 5,
+      "original_prefix_id": 5,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "More than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday. Many of the displaced civilians have moved to the towns of Bannu and Lakar in the Khyber-Pakhtunkhwa province, which is a neighbor to the affected region of North Waziristan in the Khyber Pakhtunkhwa's Tribal Belt region of FATA, or the Federally Administered Tribal Area, which is along the Afghan-Pakistan border.\n\nThe military action is targeting at the terrorist hideouts and training centers and the Pakistan Taliban, or the Tehrik-i-Taliban Pakistan, along with the Al-Qaeda and some Al-Qaeda linked militant groups are believed to be among the targets of the military's operations, official said. The Pakistan's military said on Tuesday it has killed more than 250 of its enemy fighters, they are also saying they are gaining a victory. The Pakistani military said they have hit many of the enemy hide outs that they have been looking for and some of the weapons that the enemy had to fight with are gone.\n\nIn the 5 days of fighting, no Pakistan army soldiers have been killed in action. Many of the people that the army is bombing and shooting are the people that are said to be helping to make terrorist attacks on the people of the United States and to the people of India.\n\nMany people are still coming to safer places and are not happy. They are mad that they have to leave their homes. We wish that they would go home soon. But this is not good.\n\nThe military's operation is a good thing, the official said. \n\nIn a statement the official said. \"We have been looking for the enemy and we will find them. The enemy must give up and go home. They are killing the people of Pakistan and they must stop.\"",
+      "processed_text": "More than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday. Many of the displaced civilians have moved to the towns of Bannu and Lakar in the Khyber-Pakhtunkhwa province, which is a neighbor to the affected region of North Waziristan in the Khyber Pakhtunkhwa's Tribal Belt region of FATA, or the Federally Administered Tribal Area, which is along the Afghan-Pakistan border.\n\nThe military action is targeting at the terrorist hideouts and training centers and the Pakistan Taliban, or the Tehrik-i-Taliban Pakistan, along with the Al-Qaeda and some Al-Qaeda linked militant groups are believed to be among the targets of the military's operations, official said. The Pakistan's military said on Tuesday it has killed more than 250 of its enemy fighters, they are also saying they are gaining a victory. The Pakistani military said they have hit many of the enemy hide outs that they have been looking for and some of the weapons that the enemy had to fight with are gone.\n\nIn the 5 days of fighting, no Pakistan army soldiers have been killed in action. Many of the people that the army is bombing and shooting are the people that are said to be helping to make terrorist attacks on the people of the United States and to the people of India.\n\nMany people are still coming to safer places and are not happy. They are mad that they have to leave their homes. We wish that they would go home soon. But this is not good.\n\nThe military's operation is a good thing, the official said. \n\nIn a statement the official said. \"We have been looking for the enemy and we will find them. The enemy must give up and go home.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 130,
+        "completion_tokens": 394
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Civilians flee North Waziristan as planes strike militants .\nMore than 250 insurgents have been killed, army says .\nThe Pakistani Taliban is among the targets .\n\nBegin with: \"More than 450,000 Pakistanis have fled their homes for safer areas in the past two weeks as the military has attacked suspected anti-government militant hideouts in northwestern Pakistan, disaster management officials said Tuesday. Many of the displaced civilians have moved\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-6",
+      "sample_id": 6,
+      "original_prefix_id": 6,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence.\n\nSix days after the devastating bombings at the Boston Marathon, thousands of athletes from all over the world will gather at the start line in London to show their solidarity with the people of Boston and to keep on running. At 10.50 am, 30 seconds before the gun goes off, runners and spectators will take part in a silent minute of respect for those who were injured in Boston and for those who were killed. Some runners will wear black solidarity ribands around their arms.\n\nThe London Marathon committee and the police have promised that there will be extra checks before runners can go through the gates. More police officers will be on the streets and there will be more cameras to watch what's happening. The Olympic Games last summer were a big test for the people in charge and it showed that London can stage big international events safely. This will help to make sure that the runners are safe.\n\nAfter Boston, many people will be thinking about what could happen. They'll be thinking about how to keep the people who run safe. They'll be thinking about how to make sure that something like that never happens again. There will be people in the park watching to see what the runners are doing. There will be cameras in the park and on the streets to see what the people are doing.\n\nBut the people who will be running will not be thinking about that. They will be thinking about their time, about the other runners, and about crossing the finish line. They will be thinking about the people who did it to them, but they will not let it stop them. They will keep on going, they will keep on going for the people who can not run and for the people who will be running but will not finish.\n\nThe London Marathon is a big event and it will be",
+      "processed_text": "Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence.\n\nSix days after the devastating bombings at the Boston Marathon, thousands of athletes from all over the world will gather at the start line in London to show their solidarity with the people of Boston and to keep on running. At 10.50 am, 30 seconds before the gun goes off, runners and spectators will take part in a silent minute of respect for those who were injured in Boston and for those who were killed. Some runners will wear black solidarity ribands around their arms.\n\nThe London Marathon committee and the police have promised that there will be extra checks before runners can go through the gates. More police officers will be on the streets and there will be more cameras to watch what's happening. The Olympic Games last summer were a big test for the people in charge and it showed that London can stage big international events safely. This will help to make sure that the runners are safe.\n\nAfter Boston, many people will be thinking about what could happen. They'll be thinking about how to keep the people who run safe. They'll be thinking about how to make sure that something like that never happens again. There will be people in the park watching to see what the runners are doing. There will be cameras in the park and on the streets to see what the people are doing.\n\nBut the people who will be running will not be thinking about that. They will be thinking about their time, about the other runners, and about crossing the finish line. They will be thinking about the people who did it to them, but they will not let it stop them. They will keep on going, they will keep on going for the people who can not run and for the people who will be running but will not finish.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 153,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Six days after Boston Marathon bombings, thousands of runners will compete in London .\nSpecial event marked by 30 second silence, black solidarity ribbons .\nStepped-up security with increased searches and police on streets .\nOlympics 2012 good training ground for staging international sporting events .\n\nBegin with: \"Among the 35,000 runners lining up at this Sunday's London Marathon, there'll be the usual pre-race nerves, waves of excitement, and focus on the task ahead. This year, there will also be silence. Six days after\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-7",
+      "sample_id": 7,
+      "original_prefix_id": 7,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Marcel Siem Held His Nerve Amid Late Charge from Francesco Molinari to Take Open de France\nBerlin, France - Marcel Siem held his nerve amid a late charge from Francesco Molinai to take the Open de France -- his first European Tour title for eight years. The German finished on eight-under-par, one shot better than Molinari who recorded a remarkable 9-under-par 280 at Le Golf National.\n\nSiem's victory marked a much-needed boost of confidence for the German golfer as he secured his 3rd European Tour title of his career. He was in a tough position when he shot a 3-under-par 68 in yesterday's final round. On the final day, he was four shots back from Italy's Francesco Molinari, but shot a 6 under 65 today in 67 degree Fahrenheit 20 mph wind to win by 1 shot.\nLee Westwood had an injury scare on Saturday's round, but he is okay and went on to shoot a 5 under 66 on the final day to finish 4th.\n\nMarcel Siem has said 'I had a good feeling from the start of the tournament that I could win it and I stuck to my game plan. I played a good solid game of golf and I'm happy now.'\n\nThis week's result has also been a good week for the American PGA Tour. The week of the Open de France is one of the 4 events in the 8 tournaments FedEx Cup that have no ties in the world rankings with the European and the American Tours. So the Americans' 6th first-time winner of the season is rookie Ted Potter, 28, who won the Greenbrier Classic on Sunday.\n\nThe Open de France has been won by 5 other European golfers and has been held at 4 different courses in France since 1971.",
+      "processed_text": "Marcel Siem Held His Nerve Amid Late Charge from Francesco Molinari to Take Open de France\nBerlin, France - Marcel Siem held his nerve amid a late charge from Francesco Molinai to take the Open de France -- his first European Tour title for eight years. The German finished on eight-under-par, one shot better than Molinari who recorded a remarkable 9-under-par 280 at Le Golf National.\n\nSiem's victory marked a much-needed boost of confidence for the German golfer as he secured his 3rd European Tour title of his career. He was in a tough position when he shot a 3-under-par 68 in yesterday's final round. On the final day, he was four shots back from Italy's Francesco Molinari, but shot a 6 under 65 today in 67 degree Fahrenheit 20 mph wind to win by 1 shot.\nLee Westwood had an injury scare on Saturday's round, but he is okay and went on to shoot a 5 under 66 on the final day to finish 4th.\n\nMarcel Siem has said 'I had a good feeling from the start of the tournament that I could win it and I stuck to my game plan. I played a good solid game of golf and I'm happy now.'\n\nThis week's result has also been a good week for the American PGA Tour. The week of the Open de France is one of the 4 events in the 8 tournaments FedEx Cup that have no ties in the world rankings with the European and the American Tours. So the Americans' 6th first-time winner of the season is rookie Ted Potter, 28, who won the Greenbrier Classic on Sunday.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 158,
+        "completion_tokens": 379
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: German Marcel Siem wins the Open de France at Le Golf National .\nSiem holds off late charge from Francesco Molinari to win by one shot .\nLee Westwood fine after an injury scare during Saturday's round .\nRookie Ted Potter becomes PGA Tour's sixth first-time winner of 2012 .\n\nBegin with: \"Marcel Siem held his nerve amid a late charge from Francesco Molinari to take the Open de France -- his first European Tour title for eight years. The German finished on eight-under-par, one shot better than Molinari who recorded\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-8",
+      "sample_id": 8,
+      "original_prefix_id": 8,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humorously citing a supposed conflict of interest between his companies Tesla and SpaceX. The satirical television series brought the billionaire entrepreneur back to the popular animated series for the 32nd season of episodes, with El Musk making an appearance on the 17th episode. \n\nHowever, Mr Musk hit back at the jibe with a tweet after the episode aired, with the billionaire stating that rockets are the only way to currently reach space orbit. El Musk went on to say that other methods like electric power or in space propulsion would be 'impossible' to achieve at the moment and he also pointed out that the proposals like space elevators or railguns are still not technologically feasible yet. It is not clear yet if El Musk's comeback was part of the original script or if he came up with it himself, but he seems to have taken it well.\n\nThis is not the first time that El Musk has used Twitter to answer a joke made at his expense in the episode. He has answered at least one more of his jokes on Twitter as well.\n\nIn the episode where El Musk appeared, Milane Krassikoff, a writer from that episode, said they asked him to make the joke about the space elevator and he did not want to say yes at first. But after he thought it was good, he agreed. And they were also glad he did say yes and made the joke. She also said that even though E. Musk did not agree at first the writers knew that his name would be in it and he would get the tweet about it.",
+      "processed_text": "‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humorously citing a supposed conflict of interest between his companies Tesla and SpaceX. The satirical television series brought the billionaire entrepreneur back to the popular animated series for the 32nd season of episodes, with El Musk making an appearance on the 17th episode. \n\nHowever, Mr Musk hit back at the jibe with a tweet after the episode aired, with the billionaire stating that rockets are the only way to currently reach space orbit. El Musk went on to say that other methods like electric power or in space propulsion would be 'impossible' to achieve at the moment and he also pointed out that the proposals like space elevators or railguns are still not technologically feasible yet. It is not clear yet if El Musk's comeback was part of the original script or if he came up with it himself, but he seems to have taken it well.\n\nThis is not the first time that El Musk has used Twitter to answer a joke made at his expense in the episode. He has answered at least one more of his jokes on Twitter as well.\n\nIn the episode where El Musk appeared, Milane Krassikoff, a writer from that episode, said they asked him to make the joke about the space elevator and he did not want to say yes at first. But after he thought it was good, he agreed. And they were also glad he did say yes and made the joke. She also said that even though E.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 215,
+        "completion_tokens": 349
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: South African-born Elon Musk responded to comments by Lisa Simpson .\nHe appeared in the latest episode of The Simpsons on 25 January .\nIn it Lisa cites a potential conflict of interest between his electric car company Tesla and space exploration company SpaceX .\n'For a man who likes electric cars he sure burns a lot of rocket fuel,' she said .\nBut responding to the jibe on Twitter, Mr Musk said rockets were the only way to currently reach orbit .\nHe said other methods like electric power were simply 'impossible'\nAnd other proposals like space elevators or railguns were not technologically feasible yet .\n\nBegin with: \"‘For a man who likes electric cars he sure burns a lot of rocket fuel.’ These were the words of Lisa Simpson to Elon Musk in his guest appearance on The Simpsons, humourously citing a supposed conflict of interest between his companies Tesla and\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-9",
+      "sample_id": 9,
+      "original_prefix_id": 9,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic. And the fact early men and women took on the different roles of hunters and gatherers may explain why just one painting hangs on the walls of the National Gallery created by a female artist.\n\nAccording to Professor Gloria Moss, a leading expert in the field of art and perception, our tastes in art are influenced by the way our brain works, and the way our brain works was shaped in the Stone Age when men and women had different roles to play in society. Men were hunters, and women were gatherers. As hunters, men had to track prey over long distances and to catch it they had to be good at spatial vision and to have good vision when something was moving quickly. The ability to do these things is better in men. Men can see the whole scene in front of them and can see things that are moving. So they can see better if there is a animal moving, if there is a hole in the floor, or if a car is coming.\n\nThis is why men tend to like pictures that are of a scene, but not many details. And the scene is usually dark and there is just a little bit of color. They like pictures that are like this because they can see the scene, but they don't have to look at all the details. The can look at the hole scene in front of them and see if there is a animal moving or a car coming.\n\nWomen were gatherers and they had to be good at color. When they were gathering berries and plants they had to see the red from the green. So they can see more colors and they can see them easily. That is why women like pictures with a lot of color and with people and plants in them. They can see the red from the green and they can see all the colors.\n\nIn her book, Prof. Moss says that men can see colors, but they don't see",
+      "processed_text": "Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic. And the fact early men and women took on the different roles of hunters and gatherers may explain why just one painting hangs on the walls of the National Gallery created by a female artist.\n\nAccording to Professor Gloria Moss, a leading expert in the field of art and perception, our tastes in art are influenced by the way our brain works, and the way our brain works was shaped in the Stone Age when men and women had different roles to play in society. Men were hunters, and women were gatherers. As hunters, men had to track prey over long distances and to catch it they had to be good at spatial vision and to have good vision when something was moving quickly. The ability to do these things is better in men. Men can see the whole scene in front of them and can see things that are moving. So they can see better if there is a animal moving, if there is a hole in the floor, or if a car is coming.\n\nThis is why men tend to like pictures that are of a scene, but not many details. And the scene is usually dark and there is just a little bit of color. They like pictures that are like this because they can see the scene, but they don't have to look at all the details. The can look at the hole scene in front of them and see if there is a animal moving or a car coming.\n\nWomen were gatherers and they had to be good at color. When they were gathering berries and plants they had to see the red from the green. So they can see more colors and they can see them easily. That is why women like pictures with a lot of color and with people and plants in them. They can see the red from the green and they can see all the colors.\n\nIn her book, Prof.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 173,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Prof Gloria Moss claims that men and women see things differently .\nShe said that men, as hunters, have better rotational and spacial vision .\nIn her book, Prof Moss claims that men tend to be more colour blind .\nMen like paintings that are darker and have fewer colours .\nWomen prefer colourful paintings featuring people and plants .\nOnly one painting at the National Gallery is by a woman .\n\nBegin with: \"Men and women have different tastes in art because of biological diversity that was forged in the Stone Age, according to a leading academic. And the fact early men and women took on the different roles of hunters and gatherers may explain why just one painting\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-10",
+      "sample_id": 10,
+      "original_prefix_id": 10,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "( EW.com) -- You know that part in this pop-s soul smoothie's songs where the verse launches skyward into the chorus,  and  the  singer's  voice  gets  bigger,  his  face  contorted  in  a  cartoonish  display  of  agony  and  elation,  that  familiar  face  of  Gavi  DeG  r's  is  on  that  face.\n\nBut  \"Sweeter\",  the  fourth  full  length  from  the  pop  sensation  who  once  crooned  the  heart-wrenching  hit  song  \"I  Don't  Want  to  Go  Home\",  isn't  all  up  beats  and  highs.  And  the  reason  for  that  is  that  half  of  the  album  is  weighed  down  by  the  down  of  a  lovelorn  soul.\n\nDeGra's last  two  albums,  \"20  for  20\"  and  \"Hold  Me  Now\",  were  more  upbeat  than  down  in  tone.  But  \"Sweeter\"  has  it  all  -  all  of  the  ups  and  down  s  and  the  in  betweens.  It  has  ballads  that  are  sure  to  make  you  cry  and  songs  that  will  make  you  want  to  dance  and  sing  along.\n\nI can't  say  which  ones  are  which  right  now  becuase  I  havent  even  listened  to  the  whole  album  yet,  but  \"Gavin  Degra\"  is  saying  that  the ",
+      "processed_text": "( EW.com) -- You know that part in this pop-s soul smoothie's songs where the verse launches skyward into the chorus,  and  the  singer's  voice  gets  bigger,  his  face  contorted  in  a  cartoonish  display  of  agony  and  elation,  that  familiar  face  of  Gavi  DeG  r's  is  on  that  face.\n\nBut  \"Sweeter\",  the  fourth  full  length  from  the  pop  sensation  who  once  crooned  the  heart-wrenching  hit  song  \"I  Don't  Want  to  Go  Home\",  isn't  all  up  beats  and  highs.  And  the  reason  for  that  is  that  half  of  the  album  is  weighed  down  by  the  down  of  a  lovelorn  soul.\n\nDeGra's last  two  albums,  \"20  for  20\"  and  \"Hold  Me  Now\",  were  more  upbeat  than  down  in  tone.  But  \"Sweeter\"  has  it  all  -  all  of  the  ups  and  down  s  and  the  in  betweens.  It  has  ballads  that  are  sure  to  make  you  cry  and  songs  that  will  make  you  want  to  dance  and  sing  along.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 141,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Gavin DeGraw's fourth full-length album is called \"Sweeter\"\nHalf the album is weighed down by painfully mopey, girl-done-left-me blues .\n\"Sweeter\" comes out on September 20 .\n\nBegin with: \"(EW.com) -- You know that part in this pop-soul smoothie's songs where the verse launches skyward into the chorus, Gavin DeGraw makes that I'm-pounding-these-piano-keys-so-hard! face, and\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-11",
+      "sample_id": 11,
+      "original_prefix_id": 11,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "A grandmother endured six gruelling months of chemotherapy after being diagnosed with terminal liver cancer, only to discover she never had the disease. Annelisa  (Ann)  Milne chose to have the treatment to prolong her life in 2008 after doctors told her they had given up on her with a terminal diagnosis. It came five years after she had bravaved [brought] breast cancer, and was diagnosed, she had a mastectomy. Just when she thought her ordeal was over, she was diagnosed with liver cancer, the devastating news hit her so hard. She then went through 6 months of chemo just to spend a bit longer with her four children and her young grandchildren but her kids love their grandma.\n\nIn 2009 she was called to hospital as her condition hadn't changed, the news couldn was that the mother of 4 was not a case of terminal cancer of the liver. But she had been through that, for her to hear this now was the best news ever but  that news was shortly replaced with confusion.\n\nDoctors said she had to have a test, and after the test the news was that the 'tumors' found on her liver were not caner, but were harmless lesions. So the 6 months of chemo she had been through was for nothing. Annelisa was so shocked and cross with the news, how could it happen to her? An mother who loved her family and would give anything to stay with them. She had to go through chemo and had a lot of side effects, she was so ill, she had hair loss, she threw up and she was tired. An lot of people would give up when you had to go through what you had to go through. She did it, but in the end it was for nothing, but the chemo took a toll on her.\n\nShe now walks with a stick because she had permanent muscle damage, the chemo had taken a lot of the life out of her",
+      "processed_text": "A grandmother endured six gruelling months of chemotherapy after being diagnosed with terminal liver cancer, only to discover she never had the disease. Annelisa  (Ann)  Milne chose to have the treatment to prolong her life in 2008 after doctors told her they had given up on her with a terminal diagnosis. It came five years after she had bravaved [brought] breast cancer, and was diagnosed, she had a mastectomy. Just when she thought her ordeal was over, she was diagnosed with liver cancer, the devastating news hit her so hard. She then went through 6 months of chemo just to spend a bit longer with her four children and her young grandchildren but her kids love their grandma.\n\nIn 2009 she was called to hospital as her condition hadn't changed, the news couldn was that the mother of 4 was not a case of terminal cancer of the liver. But she had been through that, for her to hear this now was the best news ever but  that news was shortly replaced with confusion.\n\nDoctors said she had to have a test, and after the test the news was that the 'tumors' found on her liver were not caner, but were harmless lesions. So the 6 months of chemo she had been through was for nothing. Annelisa was so shocked and cross with the news, how could it happen to her? An mother who loved her family and would give anything to stay with them. She had to go through chemo and had a lot of side effects, she was so ill, she had hair loss, she threw up and she was tired. An lot of people would give up when you had to go through what you had to go through. She did it, but in the end it was for nothing, but the chemo took a toll on her.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 244,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Ann Milne was diagnosed with terminal liver cancer in 2008 .\nIt came five years after she had fought breast cancer and had a mastectomy .\nShe opted for chemo to give her longer with her children and grandchildren .\nIn 2009 she was called to hospital because her condition hadn't changed .\nDoctors shared the good news that the mother-of-four was cancer free .\nBut her elation was quickly replaced with anger when doctors said the 'tumours' found on her liver were not cancer, but harmless lesions .\nFormer receptionist suffered hair loss, vomiting and fatigue during chemo .\nShe now walks with a stick after suffering permanent muscle damage .\nMrs Milne has agreed a six-figure compensation pay out with the NHS trust .\n\nBegin with: \"A grandmother endured six gruelling months of chemotherapy after being diagnosed with terminal liver cancer, only to discover she never had the disease. Ann Milne chose to have the treatment to prolong her life in 2008 after doctors told her they had\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-12",
+      "sample_id": 12,
+      "original_prefix_id": 12,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Elected:  Sae (not Sage)  however it appears more appropriate to use her actual name, however here is the  rest of the article  with that change,  and further clarification, and the change in the last name:  I will change that to: Lovell as well \n\nElected:  Sae Loewl, ( I used  that because I was unable to find a name for the student, so I made this name )  however,  I will change that now \n   Elected: Sa Lo, I made  a name,   E  no I will  put the actual name here, \n Elected: Sa was changed  to,  :   Sae (not  actual name)  Lo changed to to: \n actually that seems  right, to   : \n I will say:  (Sage) I will say ( Sa ) that the  next part will say  the actual name  of the student  that has: this last name  and this first  : \n \n name\n Elected:  S L (not  a  real  name - so I  had  to pick that last part out  of  what I  could get) : I don't see it. to  use  the name of that person  so  I will  use  the name that is  that it is.\n  the  name  the   is   name that is not  so right.  The name is not, \n   that  but this is the name I  will  now use, and  is this \n ( I will now say the  name) I  was wrong, I did not get  that information  so  I can  not  have the name.\n now that   I have  the   now.\n I do not  know. I was not able to get that  I will make  the the  name   the  name of  the person",
+      "processed_text": "Elected:  Sae (not Sage)  however it appears more appropriate to use her actual name, however here is the  rest of the article  with that change,  and further clarification, and the change in the last name:  I will change that to: Lovell as well \n\nElected:  Sae Loewl, ( I used  that because I was unable to find a name for the student, so I made this name )  however,  I will change that now \n   Elected: Sa Lo, I made  a name,   E  no I will  put the actual name here, \n Elected: Sa was changed  to,  :   Sae (not  actual name)  Lo changed to to: \n actually that seems  right, to   : \n I will say:  (Sage) I will say ( Sa ) that the  next part will say  the actual name  of the student  that has: this last name  and this first  : \n \n name\n Elected:  S L (not  a  real  name - so I  had  to pick that last part out  of  what I  could get) : I don't see it. to  use  the name of that person  so  I will  use  the name that is  that it is.\n  the  name  the   is   name that is not  so right.  The name is not, \n   that  but this is the name I  will  now use, and  is this \n ( I will now say the  name) I  was wrong, I did not get  that information  so  I can  not  have the name.\n now that   I have  the   now.\n I do not  know.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 171,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Sage Lovell, 16, of Marietta, was elected to Walton High School's homecoming court among four other women chosen out of 50 nominees at the school .\nLovell received support from her peers and received a round of applause when her election was announced .\nLovell began her transformation in her early teen years after realizing she was attracted to boys .\n\nBegin with: \"Elected: Sage Lovell, 16, of Marietta, was elected to her high school's homecoming court in an election believed to be the first of its kind in the state . An openly transgender Georgia teen was elected to\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-13",
+      "sample_id": 13,
+      "original_prefix_id": 13,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "With Wi-Fi access at airports, hotels, and aboard airplanes, business travelers don't have to look very far to stay connected. In fact, it's becoming increasingly difficult to find a place that doesn't offer wireless Internet access. However, with so many open Wi-Fi connections available, security experts are warning that users may be putting themselves at risk of having their information stolen by hackers. But is it really as big of a risk as people think? A recent study suggests that airports, hotels, and even planes may not be more of a risk than a local coffee shop. In fact, according to the study, people are no more likely to have their laptop stolen from an airport Wi-Fi hotspot than from a coffee shop.\n\nHowever, it's not the security of the Wi-Fi connection itself that's the problem, it's what people do with it. In other words, if people are not using the correct precautions to protect themselves, they could still have their information stolen. In fact, a recent study found that the loss of just one laptop can cost a company over $49,000. That's right, $49,246. According to the study, that is a significant loss to any company, and to prevent that from happening, experts are saying that companies should use encrypted disks to keep their information safe.\n\nSo, how do people protect their information from being stolen when they are on the road? Experts say that there are a few simple things that people can do. First, they can use a VPN, or a virtual private network, on their laptop. This will keep your connection safe, or at least that's what it's supposed to do. They should also use a good password, not one that is easy to guess, like their name, or a word they like. They should also change it every month, or every two weeks. And they should be careful about what they download and what they do. They should also consider using an encrypted disk. That way, even if",
+      "processed_text": "With Wi-Fi access at airports, hotels, and aboard airplanes, business travelers don't have to look very far to stay connected. In fact, it's becoming increasingly difficult to find a place that doesn't offer wireless Internet access. However, with so many open Wi-Fi connections available, security experts are warning that users may be putting themselves at risk of having their information stolen by hackers. But is it really as big of a risk as people think? A recent study suggests that airports, hotels, and even planes may not be more of a risk than a local coffee shop. In fact, according to the study, people are no more likely to have their laptop stolen from an airport Wi-Fi hotspot than from a coffee shop.\n\nHowever, it's not the security of the Wi-Fi connection itself that's the problem, it's what people do with it. In other words, if people are not using the correct precautions to protect themselves, they could still have their information stolen. In fact, a recent study found that the loss of just one laptop can cost a company over $49,000. That's right, $49,246. According to the study, that is a significant loss to any company, and to prevent that from happening, experts are saying that companies should use encrypted disks to keep their information safe.\n\nSo, how do people protect their information from being stolen when they are on the road? Experts say that there are a few simple things that people can do. First, they can use a VPN, or a virtual private network, on their laptop. This will keep your connection safe, or at least that's what it's supposed to do. They should also use a good password, not one that is easy to guess, like their name, or a word they like. They should also change it every month, or every two weeks. And they should be careful about what they download and what they do. They should also consider using an encrypted disk.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 144,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Wi-Fi at airports, planes, hotels may be risky, but no more than at coffee shops .\nStudy: Loss of a single laptop costs a company $49,246 .\nUse encrypted disks to keep your information safe, experts say .\n\nBegin with: \"With Wi-Fi access at airports, hotels, and aboard airplanes, business travelers don't have to look very hard for a wireless Internet connection. Wi-Fi hotspots at airports may put users' computers at risk, but no more so than at coffee\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-14",
+      "sample_id": 14,
+      "original_prefix_id": 14,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "All Lyle Petersen wanted to do was get his mail. Lyle Petersen, a CDC expert who was infected with West Ninely  virus, says, \"it will ruin your you.\"  In the time it took him to walk down his driveway to the mailbox, the virus that can cause fever and aches and other problems, got him. Mr. Petersen's case happened a few years ago, but now again, more than 1.5 million people in the U.S. have been infected. The time it takes to show symptoms from when you are bit is 3 to 14 days. When you do get them, a high fever, headache and body aches and severe tiredness are a few of the things that you will feel. \n\nHealth experts say that to stop this from happening to more people, the best way is through prevention. You have to be careful and prevent bugs from biting you. Mosquitoes can carry the virus. So be careful to use bug spray and do not let water stand still. When water stands still, it can be a place for the bug to make a home. You can also put a screen in on windows to keep them from coming in to your house. \n\nA few years ago, Mr. Petersen was lucky to be alive. He had to be in the hospital for 7 days. Dr. John Smit says, \"the treatment for the disease is the same as the treatment for a bad flu\". So Mr. Petersen and the people like him take fluids and rest. They can also have aspirper. Some people have a brain infection that can kill. \n\nLyle's message to all the people in the U.S. is \"be careful be prepared\" We have to be ready for this time of year when the bugs can bite more. So be careful and take care of your self.",
+      "processed_text": "All Lyle Petersen wanted to do was get his mail. Lyle Petersen, a CDC expert who was infected with West Ninely  virus, says, \"it will ruin your you.\"  In the time it took him to walk down his driveway to the mailbox, the virus that can cause fever and aches and other problems, got him. Mr. Petersen's case happened a few years ago, but now again, more than 1.5 million people in the U.S. have been infected. The time it takes to show symptoms from when you are bit is 3 to 14 days. When you do get them, a high fever, headache and body aches and severe tiredness are a few of the things that you will feel. \n\nHealth experts say that to stop this from happening to more people, the best way is through prevention. You have to be careful and prevent bugs from biting you. Mosquitoes can carry the virus. So be careful to use bug spray and do not let water stand still. When water stands still, it can be a place for the bug to make a home. You can also put a screen in on windows to keep them from coming in to your house. \n\nA few years ago, Mr. Petersen was lucky to be alive. He had to be in the hospital for 7 days. Dr. John Smit says, \"the treatment for the disease is the same as the treatment for a bad flu\". So Mr. Petersen and the people like him take fluids and rest. They can also have aspirper. Some people have a brain infection that can kill. \n\nLyle's message to all the people in the U.S. is \"be careful be prepared\" We have to be ready for this time of year when the bugs can bite more.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 157,
+        "completion_tokens": 381
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: More than 1.5 million people have been infected in the U.S.\nSymptoms typically develop between three and 14 days after being bitten .\nHigh fever, headaches, body aches and severe fatigue are a few symptoms .\nBest way to stop the spread of West Nile virus is through prevention .\n\nBegin with: \"All Lyle Petersen wanted to do was get his mail. Lyle Petersen,  a CDC expert who was infected with West Nile virus, says, \"it will ruin your summer.\" In the time it took him to walk down his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-15",
+      "sample_id": 15,
+      "original_prefix_id": 15,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Former world No. 1s Maria Shapova and Caroline Wozniacki lit up the court at the Miami Masters on Thursday, but the lights went out on Agnieszka Radwanska and Marion Bartoli in a dramatic day of quarterfinal action at the tournament.\n\nA rain-drenched Miami was the scene of multiple weather-related interruptions, but in the end Maria Shapova emerged victorious over Caroline Wozniacki, dominating 6-4, 6-3 to book her fourth Miami Masters final appearance. Maria Shapova will be looking to add to her 2005 Miami Masters title next week, and the momentum she had today will certainly give her confidence.\n\nEarlier in the day, Agnieszka Radwanska took an early lead on Marion Bartoli 4-0, but the match was delayed due to light failure. When the lights came back on, Agnseka Radwanska and Marion Bartol were both still ready to go. However it was Asejka Radwanska that came out on top, taking the match 4-6, 6-4, 6-2.\n\nOn the men's side, Novak Djokovic took another step closer to his goal of taking back the number one spot in tennis when he beat David Ferrer 6-1, 6-4 in men's quarterfinal action. Djokovic's opponent in the semi's will be Juan Monaco, who beat U.S. number 1 Mardy Fish 6-2, 6-7, 6-4. The 11th seed took home the win with a strong performance in the tiebreaker, after losing 4 points  in a row in the first set.",
+      "processed_text": "Former world No. 1s Maria Shapova and Caroline Wozniacki lit up the court at the Miami Masters on Thursday, but the lights went out on Agnieszka Radwanska and Marion Bartoli in a dramatic day of quarterfinal action at the tournament.\n\nA rain-drenched Miami was the scene of multiple weather-related interruptions, but in the end Maria Shapova emerged victorious over Caroline Wozniacki, dominating 6-4, 6-3 to book her fourth Miami Masters final appearance. Maria Shapova will be looking to add to her 2005 Miami Masters title next week, and the momentum she had today will certainly give her confidence.\n\nEarlier in the day, Agnieszka Radwanska took an early lead on Marion Bartoli 4-0, but the match was delayed due to light failure. When the lights came back on, Agnseka Radwanska and Marion Bartol were both still ready to go. However it was Asejka Radwanska that came out on top, taking the match 4-6, 6-4, 6-2.\n\nOn the men's side, Novak Djokovic took another step closer to his goal of taking back the number one spot in tennis when he beat David Ferrer 6-1, 6-4 in men's quarterfinal action. Djokovic's opponent in the semi's will be Juan Monaco, who beat U.S. number 1 Mardy Fish 6-2, 6-7, 6-4.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 181,
+        "completion_tokens": 361
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Maria Sharapova beats Caroline Wozniacki to reach her fourth Miami Masters final .\nAgnieszka Radwanka defeats Marion Bartoli in match interrupted by light failures .\nWorld No. 1 Novak Djokovic reaches men's semifinals after beating David Ferrer .\nDjokovic's last four opponent will be Juan Monaco, who beat U.S. No. 1 Mardy Fish .\n\nBegin with: \"Former world No. 1s Maria Sharapova and Caroline Wozniacki lit up the court at the Miami Masters on Thursday, but the lights went out on Agnieszka Radwanska and Marion Bartoli in the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-16",
+      "sample_id": 16,
+      "original_prefix_id": 16,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "As a Russian proposal to strip Syria of its chemical weapons began to take shape, the White House eased off the gas on Tuesday in its drive for congressional approval to strike the Middle East country. President Barack Obama asked congressional leaders to delay votes on authorizing a military strike in response to last week's chemical attack near Damascus, citing shifting circumstances on the ground.\n\nIn an abrupt change of course, the White House announced that the President will continue to engage in diplomatic talks with Russian President Vladimir Putin regarding a plan to disarm Syria of its chemical arsenal. The President said he will keep the military ready to act, but for now diplomacy is a priority.\n\nPresident Obama also announced that he is sending Secretary of State John Kerry to meet with Russian Foreign Minister Sergey Lavryorvov, which is expected to take place tomorrow. According to officials, this meeting will focus on finalizing the details of a plan to disarm Syria of its chemical weapons. \n\nMeanwhile, a breakthrough in the diplomatic efforts is emerging from the Syrian side. Syrian Foreign Minister Walid Moallem said that Syria is ready to sign on to the international agreement that bans the use of chemical weapons and to disclose the location of its chemical weapons. This will be followed by a complete halt in the production of chemical weapons in Syria.\n\nThese new developments came as a result of a proposal from Russia to have the Organization for the Prohibition of Chemical Weapons (OPCW) oversee the removal of the chemical weapons from Syria and to make sure they do not fall into the wrong hands. The plan also requires Syria to give a list of all the places where the chemical weapons are and then they will be taken out of the country and destroyed.\n\nThese developments have given a new direction to the crisis in Syria. What was a possible military strike by the US and its allies, is now a diplomatic effort to get the chemical weapons out of Syria. The US is still preparing the military to act if the talks fail.\n\nMr Obama's decision to delay the votes in congress",
+      "processed_text": "As a Russian proposal to strip Syria of its chemical weapons began to take shape, the White House eased off the gas on Tuesday in its drive for congressional approval to strike the Middle East country. President Barack Obama asked congressional leaders to delay votes on authorizing a military strike in response to last week's chemical attack near Damascus, citing shifting circumstances on the ground.\n\nIn an abrupt change of course, the White House announced that the President will continue to engage in diplomatic talks with Russian President Vladimir Putin regarding a plan to disarm Syria of its chemical arsenal. The President said he will keep the military ready to act, but for now diplomacy is a priority.\n\nPresident Obama also announced that he is sending Secretary of State John Kerry to meet with Russian Foreign Minister Sergey Lavryorvov, which is expected to take place tomorrow. According to officials, this meeting will focus on finalizing the details of a plan to disarm Syria of its chemical weapons. \n\nMeanwhile, a breakthrough in the diplomatic efforts is emerging from the Syrian side. Syrian Foreign Minister Walid Moallem said that Syria is ready to sign on to the international agreement that bans the use of chemical weapons and to disclose the location of its chemical weapons. This will be followed by a complete halt in the production of chemical weapons in Syria.\n\nThese new developments came as a result of a proposal from Russia to have the Organization for the Prohibition of Chemical Weapons (OPCW) oversee the removal of the chemical weapons from Syria and to make sure they do not fall into the wrong hands. The plan also requires Syria to give a list of all the places where the chemical weapons are and then they will be taken out of the country and destroyed.\n\nThese developments have given a new direction to the crisis in Syria. What was a possible military strike by the US and its allies, is now a diplomatic effort to get the chemical weapons out of Syria. The US is still preparing the military to act if the talks fail.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 168,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: NEW: President says he will continue talks with Russia's president, while keeping military ready .\nNEW: Obama says he is sending Secretary of State John Kerry to meet with Russian foreign minister .\nSyria will sign on to chemical weapons accord, Foreign Minister Walid Moallem says .\nSyria also prepared to disclose chemical weapons, discontinue production, he says .\n\nBegin with: \"As a Russian proposal to strip Syria of its chemical weapons began to take shape, the White House eased off the gas on Tuesday in its drive for congressional approval to strike the Middle Eastern country. President Barack Obama asked congressional leaders to delay votes on\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-17",
+      "sample_id": 17,
+      "original_prefix_id": 17,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "The lead singer of a 1970 tune that is sampled on a new Kanye West song has filed a lawsuit, alleging the rapper used the snippet without his permission. \n\nRicky Spicer was 12 when he became the lead singer for a group called the 'Chapter Three and Me' - their song, 'Bound', became a minor hit in 1970.  Fast forward to 2013 and the new Kanye West song 'Bound 2' was released - a promotional clip from the song features a man singing a part that sounds just like the bit from 'Bound', that features in the lyrics \"oh oh oh, oh oh oh oh, oh oh oh\".\n\nThe credits for the new song say the snippet was licensed from two music companies - 'GTM Publishing' and'Warner Chappell Music' but the suit filed by Spicer and his co-author,  says the two companies did not have the right to grant permission for the use of that snippet and that neither they nor West was cleared to use it.\n\nSpicer is seeking damages, but the amount of money that is at issue has not been announced.  No date has been set for a hearing in the case.",
+      "processed_text": "The lead singer of a 1970 tune that is sampled on a new Kanye West song has filed a lawsuit, alleging the rapper used the snippet without his permission. \n\nRicky Spicer was 12 when he became the lead singer for a group called the 'Chapter Three and Me' - their song, 'Bound', became a minor hit in 1970.  Fast forward to 2013 and the new Kanye West song 'Bound 2' was released - a promotional clip from the song features a man singing a part that sounds just like the bit from 'Bound', that features in the lyrics \"oh oh oh, oh oh oh oh, oh oh oh\".\n\nThe credits for the new song say the snippet was licensed from two music companies - 'GTM Publishing' and'Warner Chappell Music' but the suit filed by Spicer and his co-author,  says the two companies did not have the right to grant permission for the use of that snippet and that neither they nor West was cleared to use it.\n\nSpicer is seeking damages, but the amount of money that is at issue has not been announced.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 141,
+        "completion_tokens": 240
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Ricky Spicer says his voice from 1970 song 'Bound' is heard on West's 'Bound 2'\nThe credits for the new song say the snippet was licensed from two music companies .\nSpicer seeks unspecified damages .\n\nBegin with: \"The lead singer of a 1970 tune that is sampled on a new Kanye West song has filed suit, alleging the rapper used the snippet without his permission. Ricky Spicer was 12 when he became the lead singer for a group called the\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-18",
+      "sample_id": 18,
+      "original_prefix_id": 18,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Russia was accused of sending tanks into Ukraine for the first time yesterday while the West's attention was diverted by the chaos in Iraq. The development threatens to destroy the tentative peace process just when the US and EU had hoped Vladimir Putin had agreed to ease tensions.\n\nInterior Minister Arseny Avakow said tanks entered Ukraine through a checkpoint controlled by pro-Russian separatists in the Luhansk region. Mr. Avakow said the tanks were carrying Russian troops and that they were seen crossing over into Ukrainian territory at around 14:00 local time (12:00GMT). The location of the checkpoint is on the Russian-Ukraine border.\n\nRussian President Vladimir Putin has denied that Russia is helping the pro-Russain separatists, who have taken control of several towns and cities in mainly Russian-speaking eastern Ukraine. He called the idea that he is backing them \"nonsense\". Mr. Putin's government has said that it wants to end violence in Ukraine but says it has to be done by Ukraine's government and the pro-Russian rebels negotiating. The US and EU have imposed economic sanctions on Russia because of its actions in Ukraine.\n\nNow Mr. Putin has promised to take more action to prevent people and things getting into and out of the conflict zone at the Russian-Ukraine border. He made this promise after he spoke to the European leader of the G20 countries, Britain. The leaders of the G20 want the war in Syria to end but they also want a way to make peace in Ukraine. They are also worried about how the war in Ukraine is affecting Russia.\n\nMr. Avakow said that more people, including Russian troops, are in the group of pro-Russian people who want to be in control of east Ukraine. The US has already said it will give a big amount of money to help the Ukrainian army. This money is for new things to fight with.\n\nIf you like this story,  subscribe free for regular news emails",
+      "processed_text": "Russia was accused of sending tanks into Ukraine for the first time yesterday while the West's attention was diverted by the chaos in Iraq. The development threatens to destroy the tentative peace process just when the US and EU had hoped Vladimir Putin had agreed to ease tensions.\n\nInterior Minister Arseny Avakow said tanks entered Ukraine through a checkpoint controlled by pro-Russian separatists in the Luhansk region. Mr. Avakow said the tanks were carrying Russian troops and that they were seen crossing over into Ukrainian territory at around 14:00 local time (12:00GMT). The location of the checkpoint is on the Russian-Ukraine border.\n\nRussian President Vladimir Putin has denied that Russia is helping the pro-Russain separatists, who have taken control of several towns and cities in mainly Russian-speaking eastern Ukraine. He called the idea that he is backing them \"nonsense\". Mr. Putin's government has said that it wants to end violence in Ukraine but says it has to be done by Ukraine's government and the pro-Russian rebels negotiating. The US and EU have imposed economic sanctions on Russia because of its actions in Ukraine.\n\nNow Mr. Putin has promised to take more action to prevent people and things getting into and out of the conflict zone at the Russian-Ukraine border. He made this promise after he spoke to the European leader of the G20 countries, Britain. The leaders of the G20 want the war in Syria to end but they also want a way to make peace in Ukraine. They are also worried about how the war in Ukraine is affecting Russia.\n\nMr. Avakow said that more people, including Russian troops, are in the group of pro-Russian people who want to be in control of east Ukraine. The US has already said it will give a big amount of money to help the Ukrainian army. This money is for new things to fight with.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 161,
+        "completion_tokens": 388
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Interior Minister Arseny Avakov said tanks entered Ukraine through checkpoint controlled by pro-Russian separatists in the Luhansk region .\nRussia has denied aiding the separatists, .\nwho have taken control of several towns and cities in mainly .\nRussian-speaking east Ukraine .\nPresident Vladimir Putin has also promised to tighten controls at borders .\n\nBegin with: \"Russia was accused of sending tanks into Ukraine for the first time yesterday while the West’s attention was diverted by the chaos in Iraq. The development threatens to destroy the tentative peace process just when the US and EU had hoped Vladimir Putin had agreed to ease\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-19",
+      "sample_id": 19,
+      "original_prefix_id": 19,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "The shortlist for the Society of Biology's Photographer of the Year has been revealed - and it includes a stunning array of images from across the natural world. In the competition, there are two categories: the regular Photographer of the Year and the Young Photographer of the Year. For the adult category, there are nine entries from competing photographers vying for a £1,000 prize, awarded by the London-based society.\n\nThe competition received a total of 800 entries from photographers across the UK and possibly elsewhere. The pictures that made it to the shortlist are outstanding examples of photography from the biological field.  There is no limit on what can be photographed, as long as it relates to science in the field of biology. \n\nThe pictures showcase a wide range of examples of photographs. Some are macro photographs, while others are photographs of animals in their habitats. Others are photographs of plants, taken close up or far away. There are also some photographs of experiments, like micrographs. They all show good examples of what you can see in the study of science and biology.\n\nThe winners for the two competitions, will be announced on Tuesday 14 October at the King's Fund in London. That is where the Society of Biology will be holding an awards ceremony.\n\nThe Society of Biologist has set the 14th of October to announce the names of the people that will have the chance to win £1,000.",
+      "processed_text": "The shortlist for the Society of Biology's Photographer of the Year has been revealed - and it includes a stunning array of images from across the natural world. In the competition, there are two categories: the regular Photographer of the Year and the Young Photographer of the Year. For the adult category, there are nine entries from competing photographers vying for a £1,000 prize, awarded by the London-based society.\n\nThe competition received a total of 800 entries from photographers across the UK and possibly elsewhere. The pictures that made it to the shortlist are outstanding examples of photography from the biological field.  There is no limit on what can be photographed, as long as it relates to science in the field of biology. \n\nThe pictures showcase a wide range of examples of photographs. Some are macro photographs, while others are photographs of animals in their habitats. Others are photographs of plants, taken close up or far away. There are also some photographs of experiments, like micrographs. They all show good examples of what you can see in the study of science and biology.\n\nThe winners for the two competitions, will be announced on Tuesday 14 October at the King's Fund in London. That is where the Society of Biology will be holding an awards ceremony.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 175,
+        "completion_tokens": 284
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: The images are part of the shortlist for the Society of Biology's Photographer of the Year award .\nThere are nine photos taken by adults competing for a £1,000 prize run by the London-based society .\nThere were more than 800 entries, with photographs allowed to focus on anything in biology .\nThe winners will be announced on Tuesday 14 October at the King’s Fund in London .\n\nBegin with: \"The shortlist for the Society of Biology’s Photographer of the Year reveal has been revealed - and it includes a stunning array of images from across the natural world. In the competition there are two categories, the regular Photographer of the Year and the Young\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-20",
+      "sample_id": 20,
+      "original_prefix_id": 20,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "A Florida teen attacked and set on fire last month, allegedly by five teenage friends, was undergoing skin graft surgery Friday, the first procedure in his recovery, a hospital spokeswoman said. Michael Brewer, who suffered burns over 65 percent of his body in the October 12 attack, is listed in guarded condition and will be returned to the Intensive Care Unit after the surgery is completed. \n\nAccording to hospital officials, the procedure being performed on Michael Brewer is using his own skin to cover the burnt areas of his body. This is the first of many surgeries that the 15-year-old will need in order to fully recover from the severe injuries he sustained. \n\nIn related news, three of the five teenagers accused of setting Michael Brewer on fire have pleaded not guilty to attempted murder. The others, who have also been charged with attempted murder, have yet to enter a plea. A date for a trial has not been set yet.\n\nThe extent of the physical damage from the Oct 12 attack on Michael Brewer is extensive. The attack left him with severe third and fourth degree burns. He was rushed to a hospital and immediately given treatment for his injuries. If he recovers from the injuries he got, he will need to go to many other surgeries to recover completely.\n\nIf he recovers from his injuries, the boy will have to deal with the fact that he was set on fire by people he thought were his friends. Being hurt that bad by people he knew is not something that happens often.",
+      "processed_text": "A Florida teen attacked and set on fire last month, allegedly by five teenage friends, was undergoing skin graft surgery Friday, the first procedure in his recovery, a hospital spokeswoman said. Michael Brewer, who suffered burns over 65 percent of his body in the October 12 attack, is listed in guarded condition and will be returned to the Intensive Care Unit after the surgery is completed. \n\nAccording to hospital officials, the procedure being performed on Michael Brewer is using his own skin to cover the burnt areas of his body. This is the first of many surgeries that the 15-year-old will need in order to fully recover from the severe injuries he sustained. \n\nIn related news, three of the five teenagers accused of setting Michael Brewer on fire have pleaded not guilty to attempted murder. The others, who have also been charged with attempted murder, have yet to enter a plea. A date for a trial has not been set yet.\n\nThe extent of the physical damage from the Oct 12 attack on Michael Brewer is extensive. The attack left him with severe third and fourth degree burns. He was rushed to a hospital and immediately given treatment for his injuries. If he recovers from the injuries he got, he will need to go to many other surgeries to recover completely.\n\nIf he recovers from his injuries, the boy will have to deal with the fact that he was set on fire by people he thought were his friends.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 167,
+        "completion_tokens": 300
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Hospital spokeswoman says Michael Brewer having own skin put onto burned areas .\nBrewer, 15, in guarded condition, will go back to intensive care after procedure .\nMore surgeries to come; October 12 attack left burns over 65 percent of his body .\n3 of the 5 teens accused of setting Brewer on fire plead not guilty to attempted murder .\n\nBegin with: \"A Florida teenager attacked and set on fire last month, allegedly by five teenage friends, was undergoing skin graft surgery Friday, the first procedure in his recovery, a hospital spokeswoman said. Michael Brewer, who suffered burns over 65 percent of his\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-21",
+      "sample_id": 21,
+      "original_prefix_id": 21,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "Wendy Davis' attempt to build her campaign to become the first Democratic Texas governor since Ann Richards in 1995 around her personal story of success against the odds has experienced some of a hiccup - after it emerged that some of the facts surrounding her personal narrative have been called into question.\n\nState senatorial candidate Wendy Davis is known for her rags-to-riches story, a struggling single mom who had to fight to finish college. Her narrative goes that she graduated from Harvard Law School after getting divorced, broke and single with three young kids. She said that she did it by sitting in the back of a crowded class room and taking long hours from work and a second job at a retail store. She also said that she did get a degree with full financial aid because she got divorced at 19 and there was no money for her to go to school. However that might not be entirely true.\n\nAccording to sources, the senator from Fort Worth who is running for governor, actually got divorced at the age of 21 not 19. That could make her husband’s contribution to her education a lot more likely. In a report her campaign put out on her web site, it says that she paid for her own college with the help of a scholarship and the help of her parents. There is no mention of any help her husband gave her. Davis' husband at the time was in medical school and is now a doctor.",
+      "processed_text": "Wendy Davis' attempt to build her campaign to become the first Democratic Texas governor since Ann Richards in 1995 around her personal story of success against the odds has experienced some of a hiccup - after it emerged that some of the facts surrounding her personal narrative have been called into question.\n\nState senatorial candidate Wendy Davis is known for her rags-to-riches story, a struggling single mom who had to fight to finish college. Her narrative goes that she graduated from Harvard Law School after getting divorced, broke and single with three young kids. She said that she did it by sitting in the back of a crowded class room and taking long hours from work and a second job at a retail store. She also said that she did get a degree with full financial aid because she got divorced at 19 and there was no money for her to go to school. However that might not be entirely true.\n\nAccording to sources, the senator from Fort Worth who is running for governor, actually got divorced at the age of 21 not 19. That could make her husband’s contribution to her education a lot more likely. In a report her campaign put out on her web site, it says that she paid for her own college with the help of a scholarship and the help of her parents. There is no mention of any help her husband gave her.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 127,
+        "completion_tokens": 287
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Davis stated that she got divorced at 19, but she was actually 21 .\nHer website omits her husband's financial contribution to her education .\n\nBegin with: \"Wendy Davis’ attempt to build her campaign to become the first Democratic Texas governor since Ann Richards in 1995 around her personal story of success against the odds has experienced somewhat of a hiccup - after it emerged that some of the facts\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-22",
+      "sample_id": 22,
+      "original_prefix_id": 22,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "**Local Genealogist Uncmasks Secrets of Historic Submarine's Crew, Sparks Hopes of Closure for Their Families**\n\nOne investigative tip can lead to another -- and another.  Linda Abrams, a genealogy gumsho, went to Texas to match hand writing samples. She spent a couple weeks in Kentucky following a tip, only to find it was just hearsay.\n\nFor years, the crew of the Confederate submarine H.L. Hunley has been nothing more than a faint historical entry. The H.L. Hunley made history as the first combat submarine to sink a warship, on February 17 1864. The Hunley was attacking a Union ship off the coast of South Carolina when it went down. All eight men on board were killed.\n\nThe names of the men on board were, George Dixon, John D, Horne, Joseph E. Jones, H. W. Jenkins, H. A. Massaugh, Charles E. Renard, James E. Thompson, and Frederick A. Fitch. They were from all different parts of the South. All were volunteers. They were on board a small metal ball that was made to look like a rock. They went down through the water until they got under the ship.  They had a handle on the side that they used to steer it through the water with. Then, when they were under the ship, they raised a wire on the top. When they raised the wire, the explosive in the wire would go off. \n\nLittle was known about these eight men until now. A long time ago, it was hard to get a copy of some papers. So they did not know much about them. And it was hard to get the DNA of one of the men. That is, until some DNA came in from the descendant of one man, H. A. Massaugh. That was good.  That was one thing that was known. \n\nThe first thing I was trying to do was",
+      "processed_text": "**Local Genealogist Uncmasks Secrets of Historic Submarine's Crew, Sparks Hopes of Closure for Their Families**\n\nOne investigative tip can lead to another -- and another.  Linda Abrams, a genealogy gumsho, went to Texas to match hand writing samples. She spent a couple weeks in Kentucky following a tip, only to find it was just hearsay.\n\nFor years, the crew of the Confederate submarine H.L. Hunley has been nothing more than a faint historical entry. The H.L. Hunley made history as the first combat submarine to sink a warship, on February 17 1864. The Hunley was attacking a Union ship off the coast of South Carolina when it went down. All eight men on board were killed.\n\nThe names of the men on board were, George Dixon, John D, Horne, Joseph E. Jones, H. W. Jenkins, H. A. Massaugh, Charles E. Renard, James E. Thompson, and Frederick A. Fitch. They were from all different parts of the South. All were volunteers. They were on board a small metal ball that was made to look like a rock. They went down through the water until they got under the ship.  They had a handle on the side that they used to steer it through the water with. Then, when they were under the ship, they raised a wire on the top. When they raised the wire, the explosive in the wire would go off. \n\nLittle was known about these eight men until now. A long time ago, it was hard to get a copy of some papers. So they did not know much about them. And it was hard to get the DNA of one of the men. That is, until some DNA came in from the descendant of one man, H. A. Massaugh. That was good.  That was one thing that was known.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 153,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Genealogist tries to fill out details of doomed Civil War submarine crew .\nThe Hunley went down off South Carolina after sinking a Civil War vessel .\nLittle was known about the eight men; DNA matches elusive for all but one .\nDid the captain carry gold coin from a romantic interest?\n\nBegin with: \"One investigative tip can lead to another -- and another. Linda Abrams, a genealogy gumshoe, went to Texas to match handwriting samples. She spent a couple weeks in Kentucky following a tip, only to find it was just hearsay.\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-23",
+      "sample_id": 23,
+      "original_prefix_id": 23,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "New questions surround the disappearance of an American soldier who was captured by the the Taliban after an email that he sent to his parents hints that he was so disenchanted with the U.S. mission in Afghanistan that he may have deserted. \n\nSergeant Bowe Bergdahl, 26, a U.S. Army infantryman, left his U.S. base in Afghanistan in June 2009, and was captured by the Taliban.  The Army is investigating the circumstances of his disappearance.\n\nThe day before he disappeared, he sent an email to his parents describing his unhappiness with the U.S. army and the U.S. policy in Afghanistan.  He said that he no longer agreed with the American war in Iraq and Afghanistan.  He said he was so frustrated and had given up trying to make a difference in the war. He told his parents that he wished they had not made him a soldier.\n\nHis parents were very worried and told the Army about the email.  They did not know that he planned to leave camp.  After they found out that he had left the camp, they reported it to the military.\n\nNow the U.S. Army says it may have had signs that he might leave camp but they do not know for sure.  Now they are investigating to find out if there was something they missed or something that they should have done.\n\nSome people in the U.S. are saying that the Army may have made a mistake in letting him be a soldier if he did not want to be.  Some people think he may have been a conscientious objector.  If so then he would not be allowed to go to war.\n\nOthers in the U.S. are saying that he was not a good soldier and that he should not have been in the Army.  Some are saying that the Army made a mistake in letting him in the Army if he did not want to be in the U.S. military.\n\nThe U.S. Army says that it will be",
+      "processed_text": "New questions surround the disappearance of an American soldier who was captured by the the Taliban after an email that he sent to his parents hints that he was so disenchanted with the U.S. mission in Afghanistan that he may have deserted. \n\nSergeant Bowe Bergdahl, 26, a U.S. Army infantryman, left his U.S. base in Afghanistan in June 2009, and was captured by the Taliban.  The Army is investigating the circumstances of his disappearance.\n\nThe day before he disappeared, he sent an email to his parents describing his unhappiness with the U.S. army and the U.S. policy in Afghanistan.  He said that he no longer agreed with the American war in Iraq and Afghanistan.  He said he was so frustrated and had given up trying to make a difference in the war. He told his parents that he wished they had not made him a soldier.\n\nHis parents were very worried and told the Army about the email.  They did not know that he planned to leave camp.  After they found out that he had left the camp, they reported it to the military.\n\nNow the U.S. Army says it may have had signs that he might leave camp but they do not know for sure.  Now they are investigating to find out if there was something they missed or something that they should have done.\n\nSome people in the U.S. are saying that the Army may have made a mistake in letting him be a soldier if he did not want to be.  Some people think he may have been a conscientious objector.  If so then he would not be allowed to go to war.\n\nOthers in the U.S. are saying that he was not a good soldier and that he should not have been in the Army.  Some are saying that the Army made a mistake in letting him in the Army if he did not want to be in the U.S. military.\n\nThe U.S.",
+      "is_degenerate": false,
+      "finish_reason": "length",
+      "usage": {
+        "prompt_tokens": 152,
+        "completion_tokens": 400
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Bowe Bergdahl, 26, walked out of U.S. base in Afghanistan in June 2009 and was captured by the Taliban .\nThe day before leaving camp, he emailed his parents about how he had become extremely disillusioned with the Army and American policy .\n\nBegin with: \"New questions surround the disappearance of an American soldier who was captured by the Taliban after an email that he sent to his parents hints that he was so disappointed with the American mission in Afghanistan that he may have defected. Shortly before he disappeared three years\""
+        }
+      ]
+    },
+    {
+      "id": "strategy_A-news_articles-instruct-24",
+      "sample_id": 24,
+      "original_prefix_id": 24,
+      "domain": "news_articles",
+      "model_type": "instruct",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "raw_text": "This is the hilarious moment a daredevil snowboarder wipes out while being dragged behind a car on a snowy street - risking serious injury or a stern talking to from the authorities. The man, named Anton, zipped past parked cars while performing the daring stunt in the snow-covered city of Voronez. \n\nAccording to eyewitness accounts, he lost control of the stunt after he hit a patch of inches of fresh snow that had fallen overnight, causing him to fall on his rear end. Luckily, Anton was lucky and only got minor bumps and bruises from the fall.\n\nBut what's even crazier is that Anton was out on the road so early that he could avoid traffic and avoid the police. 'I wanted to be careful and do it before the day got busy, that's why I went out in the early hours,' said Anton.\n\nPerforming stunts like this in a city can be really different than doing it out in the mountains. 'It's harder, because you don't have as much room, and you have to watch out for the cars and the people,' said the daredevil snowboarder.\n\nThis daredevil stunt is not something that would pass the law in most places.  That's why a lot of people do this kind of thing late at night, and that's what Anton did. 'I went out in the early hours so that I would not have to be worried about the police catching me,' said the man.\n\nNote: I want to point out that doing stunts like that can be very dangerous and should not be done in public. But some people still do. If you are going to do a stunt like this, do it in a safe place and make sure you have the right equipment to keep you safe.",
+      "processed_text": "This is the hilarious moment a daredevil snowboarder wipes out while being dragged behind a car on a snowy street - risking serious injury or a stern talking to from the authorities. The man, named Anton, zipped past parked cars while performing the daring stunt in the snow-covered city of Voronez. \n\nAccording to eyewitness accounts, he lost control of the stunt after he hit a patch of inches of fresh snow that had fallen overnight, causing him to fall on his rear end. Luckily, Anton was lucky and only got minor bumps and bruises from the fall.\n\nBut what's even crazier is that Anton was out on the road so early that he could avoid traffic and avoid the police. 'I wanted to be careful and do it before the day got busy, that's why I went out in the early hours,' said Anton.\n\nPerforming stunts like this in a city can be really different than doing it out in the mountains. 'It's harder, because you don't have as much room, and you have to watch out for the cars and the people,' said the daredevil snowboarder.\n\nThis daredevil stunt is not something that would pass the law in most places.  That's why a lot of people do this kind of thing late at night, and that's what Anton did. 'I went out in the early hours so that I would not have to be worried about the police catching me,' said the man.\n\nNote: I want to point out that doing stunts like that can be very dangerous and should not be done in public. But some people still do.",
+      "is_degenerate": false,
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 153,
+        "completion_tokens": 354
+      },
+      "prompt_used": [
+        {
+          "role": "user",
+          "content": "Write a news article about the following: Anton zipped past parked cars while performing the stunt in Voronezh .\nHe fell on his rear end as he carved through inches of fresh snow .\nAnton went out in the early hours to avoid traffic and police .\nHe says urban snowboarding is harder than boarding down a mountain .\n\nBegin with: \"This is the hilarious moment a daredevil snowboarder wipes out while being dragged behind a car on a snowy street - risking serious injury or arrest. The man, named Anton, zipped past parked cars while performing the dangerous stunt after a\""
+        }
+      ]
+    }
+  ]
+}
